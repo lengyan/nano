@@ -1,5 +1,5 @@
 // QoS_Session_Impl.cpp
-// $Id: QoS_Util.cpp 91671 2010-09-08 18:39:23Z johnnyw $
+// $Id: QoS_Util.cpp 80826 2008-03-04 14:51:23Z wotte $
 
 #define SENDER_PORT 10001
 
@@ -8,7 +8,7 @@
 #include "QoS_Util.h"
 #include "ace/OS_NS_strings.h"
 
-
+ACE_RCSID(QOS, QoS_Util,"$Id: QoS_Util.cpp 80826 2008-03-04 14:51:23Z wotte $")
 
 // constructor.
 QoS_Util::QoS_Util (int argc,

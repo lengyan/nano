@@ -72,6 +72,7 @@ target_triplet = @target@
 @BUILD_ACE_FOR_TAO_FALSE@  Arg_Shifter.h \
 @BUILD_ACE_FOR_TAO_FALSE@  Argv_Type_Converter.h \
 @BUILD_ACE_FOR_TAO_FALSE@  Argv_Type_Converter.inl \
+@BUILD_ACE_FOR_TAO_FALSE@  Array.h \
 @BUILD_ACE_FOR_TAO_FALSE@  Array_Base.cpp \
 @BUILD_ACE_FOR_TAO_FALSE@  Array_Base.h \
 @BUILD_ACE_FOR_TAO_FALSE@  Array_Base.inl \
@@ -211,6 +212,7 @@ target_triplet = @target@
 @BUILD_ACE_FOR_TAO_FALSE@  Event_Handler_T.cpp \
 @BUILD_ACE_FOR_TAO_FALSE@  Event_Handler_T.h \
 @BUILD_ACE_FOR_TAO_FALSE@  Event_Handler_T.inl \
+@BUILD_ACE_FOR_TAO_FALSE@  Exception_Macros.h \
 @BUILD_ACE_FOR_TAO_FALSE@  FIFO.h \
 @BUILD_ACE_FOR_TAO_FALSE@  FIFO.inl \
 @BUILD_ACE_FOR_TAO_FALSE@  FIFO_Recv.h \
@@ -388,6 +390,7 @@ target_triplet = @target@
 @BUILD_ACE_FOR_TAO_FALSE@  Message_Queue_T.h \
 @BUILD_ACE_FOR_TAO_FALSE@  Message_Queue_Vx.h \
 @BUILD_ACE_FOR_TAO_FALSE@  Message_Queue_Vx.inl \
+@BUILD_ACE_FOR_TAO_FALSE@  Method_Object.h \
 @BUILD_ACE_FOR_TAO_FALSE@  Method_Request.h \
 @BUILD_ACE_FOR_TAO_FALSE@  Min_Max.h \
 @BUILD_ACE_FOR_TAO_FALSE@  Module.cpp \
@@ -427,7 +430,9 @@ target_triplet = @target@
 @BUILD_ACE_FOR_TAO_FALSE@  Null_Mutex.h \
 @BUILD_ACE_FOR_TAO_FALSE@  Null_Semaphore.h \
 @BUILD_ACE_FOR_TAO_FALSE@  Numeric_Limits.h \
-@BUILD_ACE_FOR_TAO_FALSE@  Obstack.h \
+@BUILD_ACE_FOR_TAO_FALSE@  OS.h \
+@BUILD_ACE_FOR_TAO_FALSE@  OS.inl \
+@BUILD_ACE_FOR_TAO_FALSE@  OS_Dirent.h \
 @BUILD_ACE_FOR_TAO_FALSE@  OS_Errno.h \
 @BUILD_ACE_FOR_TAO_FALSE@  OS_Errno.inl \
 @BUILD_ACE_FOR_TAO_FALSE@  OS_Log_Msg_Attributes.h \
@@ -502,6 +507,7 @@ target_triplet = @target@
 @BUILD_ACE_FOR_TAO_FALSE@  OS_NS_wctype.inl \
 @BUILD_ACE_FOR_TAO_FALSE@  OS_NS_wchar.inl \
 @BUILD_ACE_FOR_TAO_FALSE@  OS_QoS.h \
+@BUILD_ACE_FOR_TAO_FALSE@  OS_String.h \
 @BUILD_ACE_FOR_TAO_FALSE@  OS_TLI.h \
 @BUILD_ACE_FOR_TAO_FALSE@  OS_TLI.inl \
 @BUILD_ACE_FOR_TAO_FALSE@  OS_Thread_Adapter.h \
@@ -522,6 +528,7 @@ target_triplet = @target@
 @BUILD_ACE_FOR_TAO_FALSE@  POSIX_Proactor.inl \
 @BUILD_ACE_FOR_TAO_FALSE@  Pagefile_Memory_Pool.h \
 @BUILD_ACE_FOR_TAO_FALSE@  Pagefile_Memory_Pool.inl \
+@BUILD_ACE_FOR_TAO_FALSE@  Pair.h \
 @BUILD_ACE_FOR_TAO_FALSE@  Pair_T.cpp \
 @BUILD_ACE_FOR_TAO_FALSE@  Pair_T.h \
 @BUILD_ACE_FOR_TAO_FALSE@  Pair_T.inl \
@@ -567,6 +574,7 @@ target_triplet = @target@
 @BUILD_ACE_FOR_TAO_FALSE@  Recursive_Thread_Mutex.inl \
 @BUILD_ACE_FOR_TAO_FALSE@  Recyclable.h \
 @BUILD_ACE_FOR_TAO_FALSE@  Recyclable.inl \
+@BUILD_ACE_FOR_TAO_FALSE@  Refcountable.h \
 @BUILD_ACE_FOR_TAO_FALSE@  Refcountable_T.cpp \
 @BUILD_ACE_FOR_TAO_FALSE@  Refcountable_T.h \
 @BUILD_ACE_FOR_TAO_FALSE@  Refcountable_T.inl \
@@ -696,6 +704,8 @@ target_triplet = @target@
 @BUILD_ACE_FOR_TAO_FALSE@  Svc_Handler.h \
 @BUILD_ACE_FOR_TAO_FALSE@  Synch.h \
 @BUILD_ACE_FOR_TAO_FALSE@  Synch_Options.h \
+@BUILD_ACE_FOR_TAO_FALSE@  Synch_T.cpp \
+@BUILD_ACE_FOR_TAO_FALSE@  Synch_T.h \
 @BUILD_ACE_FOR_TAO_FALSE@  Synch_Traits.h \
 @BUILD_ACE_FOR_TAO_FALSE@  System_Time.h \
 @BUILD_ACE_FOR_TAO_FALSE@  TLI.h \
@@ -829,6 +839,7 @@ target_triplet = @target@
 @BUILD_ACE_FOR_TAO_FALSE@  config-minimal.h \
 @BUILD_ACE_FOR_TAO_FALSE@  config-win32-borland.h \
 @BUILD_ACE_FOR_TAO_FALSE@  config-win32-common.h \
+@BUILD_ACE_FOR_TAO_FALSE@  config-win32-ghs.h \
 @BUILD_ACE_FOR_TAO_FALSE@  config-win32-msvc-7.h \
 @BUILD_ACE_FOR_TAO_FALSE@  config-win32-msvc-8.h \
 @BUILD_ACE_FOR_TAO_FALSE@  config-win32-msvc.h \
@@ -1534,7 +1545,7 @@ am__nobase_include_HEADERS_DIST = ACE.h ACE.inl ACE_export.h ARGV.cpp \
 	Active_Map_Manager.inl Active_Map_Manager_T.cpp \
 	Active_Map_Manager_T.h Active_Map_Manager_T.inl Addr.h \
 	Addr.inl Arg_Shifter.cpp Arg_Shifter.h Argv_Type_Converter.h \
-	Argv_Type_Converter.inl Array_Base.cpp Array_Base.h \
+	Argv_Type_Converter.inl Array.h Array_Base.cpp Array_Base.h \
 	Array_Base.inl Array_Map.cpp Array_Map.h Array_Map.inl \
 	Assert.h Asynch_Acceptor.cpp Asynch_Acceptor.h \
 	Asynch_Connector.cpp Asynch_Connector.h Asynch_IO.h \
@@ -1578,12 +1589,13 @@ am__nobase_include_HEADERS_DIST = ACE.h ACE.inl ACE_export.h ARGV.cpp \
 	Encoding_Converter_Factory.h Env_Value_T.cpp Env_Value_T.h \
 	Env_Value_T.inl Event.h Event.inl Event_Handler.h \
 	Event_Handler.inl Event_Handler_T.cpp Event_Handler_T.h \
-	Event_Handler_T.inl FIFO.h FIFO.inl FIFO_Recv.h FIFO_Recv.inl \
-	FIFO_Recv_Msg.h FIFO_Recv_Msg.inl FIFO_Send.h FIFO_Send.inl \
-	FIFO_Send_Msg.h FIFO_Send_Msg.inl FILE.h FILE.inl FILE_Addr.h \
-	FILE_Addr.inl FILE_Connector.h FILE_Connector.inl FILE_IO.h \
-	FILE_IO.inl File_Lock.h File_Lock.inl Filecache.h Flag_Manip.h \
-	Flag_Manip.inl Framework_Component.h Framework_Component.inl \
+	Event_Handler_T.inl Exception_Macros.h FIFO.h FIFO.inl \
+	FIFO_Recv.h FIFO_Recv.inl FIFO_Recv_Msg.h FIFO_Recv_Msg.inl \
+	FIFO_Send.h FIFO_Send.inl FIFO_Send_Msg.h FIFO_Send_Msg.inl \
+	FILE.h FILE.inl FILE_Addr.h FILE_Addr.inl FILE_Connector.h \
+	FILE_Connector.inl FILE_IO.h FILE_IO.inl File_Lock.h \
+	File_Lock.inl Filecache.h Flag_Manip.h Flag_Manip.inl \
+	Framework_Component.h Framework_Component.inl \
 	Framework_Component_T.cpp Framework_Component_T.h \
 	Free_List.cpp Free_List.h Functor.h Functor.inl \
 	Functor_String.h Functor_String.inl Functor_T.cpp Functor_T.h \
@@ -1629,78 +1641,80 @@ am__nobase_include_HEADERS_DIST = ACE.h ACE.inl ACE_export.h ARGV.cpp \
 	Message_Block_T.h Message_Block_T.inl Message_Queue.h \
 	Message_Queue.inl Message_Queue_NT.h Message_Queue_NT.inl \
 	Message_Queue_T.cpp Message_Queue_T.h Message_Queue_Vx.h \
-	Message_Queue_Vx.inl Method_Request.h Min_Max.h Module.cpp \
-	Module.h Module.inl Monitor_Admin.h Monitor_Admin_Manager.h \
-	Monitor_Base.h Monitor_Base.inl Monitor_Control_Action.h \
-	Monitor_Control_Types.h Monitor_Point_Registry.h \
-	Monitor_Size.h Msg_WFMO_Reactor.h Msg_WFMO_Reactor.inl \
-	Multihomed_INET_Addr.h Multihomed_INET_Addr.inl Mutex.h \
-	Mutex.inl NT_Service.h NT_Service.inl Name_Proxy.h \
-	Name_Request_Reply.h Name_Space.h Naming_Context.h \
-	Naming_Context.inl Netlink_Addr.h Netlink_Addr.inl Node.cpp \
-	Node.h Notification_Queue.h Notification_Queue.inl \
-	Notification_Strategy.h Notification_Strategy.inl \
-	Null_Barrier.h Null_Condition.h Null_Mutex.h Null_Semaphore.h \
-	Numeric_Limits.h Obstack.h OS_Errno.h OS_Errno.inl \
-	OS_Log_Msg_Attributes.h OS_Log_Msg_Attributes.inl OS_Memory.h \
-	OS_NS_Thread.h OS_NS_Thread.inl OS_NS_arpa_inet.h \
-	OS_NS_arpa_inet.inl OS_NS_ctype.h OS_NS_ctype.inl \
-	OS_NS_dirent.h OS_NS_dirent.inl OS_NS_dlfcn.h OS_NS_dlfcn.inl \
-	OS_NS_errno.h OS_NS_errno.inl OS_NS_fcntl.h OS_NS_fcntl.inl \
-	OS_NS_macros.h OS_NS_math.h OS_NS_math.inl OS_NS_netdb.h \
-	OS_NS_netdb.inl OS_NS_poll.h OS_NS_poll.inl OS_NS_pwd.h \
-	OS_NS_pwd.inl OS_NS_regex.h OS_NS_regex.inl OS_NS_signal.h \
-	OS_NS_signal.inl OS_NS_stdio.h OS_NS_stdio.inl OS_NS_stdlib.h \
-	OS_NS_stdlib.inl OS_NS_string.h OS_NS_string.inl \
-	OS_NS_strings.h OS_NS_strings.inl OS_NS_stropts.h \
-	OS_NS_stropts.inl OS_NS_sys_mman.h OS_NS_sys_mman.inl \
-	OS_NS_sys_msg.h OS_NS_sys_msg.inl OS_NS_sys_resource.h \
-	OS_NS_sys_resource.inl OS_NS_sys_select.h OS_NS_sys_select.inl \
-	OS_NS_sys_sendfile.h OS_NS_sys_sendfile.inl OS_NS_sys_shm.h \
-	OS_NS_sys_shm.inl OS_NS_sys_socket.h OS_NS_sys_socket.inl \
-	OS_NS_sys_stat.h OS_NS_sys_stat.inl OS_NS_sys_time.h \
-	OS_NS_sys_time.inl OS_NS_sys_uio.h OS_NS_sys_uio.inl \
-	OS_NS_sys_utsname.h OS_NS_sys_wait.h OS_NS_sys_wait.inl \
-	OS_NS_time.h OS_NS_time.inl OS_NS_unistd.h OS_NS_unistd.inl \
-	OS_NS_wchar.h OS_NS_wctype.h OS_NS_wctype.inl OS_NS_wchar.inl \
-	OS_QoS.h OS_TLI.h OS_TLI.inl OS_Thread_Adapter.h OS_main.h \
+	Message_Queue_Vx.inl Method_Object.h Method_Request.h \
+	Min_Max.h Module.cpp Module.h Module.inl Monitor_Admin.h \
+	Monitor_Admin_Manager.h Monitor_Base.h Monitor_Base.inl \
+	Monitor_Control_Action.h Monitor_Control_Types.h \
+	Monitor_Point_Registry.h Monitor_Size.h Msg_WFMO_Reactor.h \
+	Msg_WFMO_Reactor.inl Multihomed_INET_Addr.h \
+	Multihomed_INET_Addr.inl Mutex.h Mutex.inl NT_Service.h \
+	NT_Service.inl Name_Proxy.h Name_Request_Reply.h Name_Space.h \
+	Naming_Context.h Naming_Context.inl Netlink_Addr.h \
+	Netlink_Addr.inl Node.cpp Node.h Notification_Queue.h \
+	Notification_Queue.inl Notification_Strategy.h \
+	Notification_Strategy.inl Null_Barrier.h Null_Condition.h \
+	Null_Mutex.h Null_Semaphore.h Numeric_Limits.h OS.h OS.inl \
+	OS_Dirent.h OS_Errno.h OS_Errno.inl OS_Log_Msg_Attributes.h \
+	OS_Log_Msg_Attributes.inl OS_Memory.h OS_NS_Thread.h \
+	OS_NS_Thread.inl OS_NS_arpa_inet.h OS_NS_arpa_inet.inl \
+	OS_NS_ctype.h OS_NS_ctype.inl OS_NS_dirent.h OS_NS_dirent.inl \
+	OS_NS_dlfcn.h OS_NS_dlfcn.inl OS_NS_errno.h OS_NS_errno.inl \
+	OS_NS_fcntl.h OS_NS_fcntl.inl OS_NS_macros.h OS_NS_math.h \
+	OS_NS_math.inl OS_NS_netdb.h OS_NS_netdb.inl OS_NS_poll.h \
+	OS_NS_poll.inl OS_NS_pwd.h OS_NS_pwd.inl OS_NS_regex.h \
+	OS_NS_regex.inl OS_NS_signal.h OS_NS_signal.inl OS_NS_stdio.h \
+	OS_NS_stdio.inl OS_NS_stdlib.h OS_NS_stdlib.inl OS_NS_string.h \
+	OS_NS_string.inl OS_NS_strings.h OS_NS_strings.inl \
+	OS_NS_stropts.h OS_NS_stropts.inl OS_NS_sys_mman.h \
+	OS_NS_sys_mman.inl OS_NS_sys_msg.h OS_NS_sys_msg.inl \
+	OS_NS_sys_resource.h OS_NS_sys_resource.inl OS_NS_sys_select.h \
+	OS_NS_sys_select.inl OS_NS_sys_sendfile.h \
+	OS_NS_sys_sendfile.inl OS_NS_sys_shm.h OS_NS_sys_shm.inl \
+	OS_NS_sys_socket.h OS_NS_sys_socket.inl OS_NS_sys_stat.h \
+	OS_NS_sys_stat.inl OS_NS_sys_time.h OS_NS_sys_time.inl \
+	OS_NS_sys_uio.h OS_NS_sys_uio.inl OS_NS_sys_utsname.h \
+	OS_NS_sys_wait.h OS_NS_sys_wait.inl OS_NS_time.h \
+	OS_NS_time.inl OS_NS_unistd.h OS_NS_unistd.inl OS_NS_wchar.h \
+	OS_NS_wctype.h OS_NS_wctype.inl OS_NS_wchar.inl OS_QoS.h \
+	OS_String.h OS_TLI.h OS_TLI.inl OS_Thread_Adapter.h OS_main.h \
 	Obchunk.h Obchunk.inl Object_Manager.h Object_Manager.inl \
 	Object_Manager_Base.h Obstack_T.cpp Obstack_T.h Obstack_T.inl \
 	PI_Malloc.h PI_Malloc.inl POSIX_Asynch_IO.h \
 	POSIX_CB_Proactor.h POSIX_Proactor.h POSIX_Proactor.inl \
-	Pagefile_Memory_Pool.h Pagefile_Memory_Pool.inl Pair_T.cpp \
-	Pair_T.h Pair_T.inl Parse_Node.h Ping_Socket.h Ping_Socket.inl \
-	Pipe.h Pipe.inl Priority_Reactor.h Proactor.h Proactor.inl \
-	Proactor_Impl.h Process.h Process.inl Process_Manager.h \
-	Process_Manager.inl Process_Mutex.h Process_Mutex.inl \
-	Process_Semaphore.h Process_Semaphore.inl Profile_Timer.h \
-	Profile_Timer.inl RB_Tree.cpp RB_Tree.h RB_Tree.inl RW_Mutex.h \
-	RW_Mutex.inl RW_Process_Mutex.h RW_Process_Mutex.inl \
-	RW_Thread_Mutex.h RW_Thread_Mutex.inl Reactor.h Reactor.inl \
-	Reactor_Impl.h Reactor_Notification_Strategy.h \
+	Pagefile_Memory_Pool.h Pagefile_Memory_Pool.inl Pair.h \
+	Pair_T.cpp Pair_T.h Pair_T.inl Parse_Node.h Ping_Socket.h \
+	Ping_Socket.inl Pipe.h Pipe.inl Priority_Reactor.h Proactor.h \
+	Proactor.inl Proactor_Impl.h Process.h Process.inl \
+	Process_Manager.h Process_Manager.inl Process_Mutex.h \
+	Process_Mutex.inl Process_Semaphore.h Process_Semaphore.inl \
+	Profile_Timer.h Profile_Timer.inl RB_Tree.cpp RB_Tree.h \
+	RB_Tree.inl RW_Mutex.h RW_Mutex.inl RW_Process_Mutex.h \
+	RW_Process_Mutex.inl RW_Thread_Mutex.h RW_Thread_Mutex.inl \
+	Reactor.h Reactor.inl Reactor_Impl.h \
+	Reactor_Notification_Strategy.h \
 	Reactor_Notification_Strategy.inl Reactor_Timer_Interface.h \
 	Reactor_Token_T.cpp Reactor_Token_T.h Read_Buffer.h \
 	Read_Buffer.inl Recursive_Thread_Mutex.h \
 	Recursive_Thread_Mutex.inl Recyclable.h Recyclable.inl \
-	Refcountable_T.cpp Refcountable_T.h Refcountable_T.inl \
-	Refcounted_Auto_Ptr.cpp Refcounted_Auto_Ptr.h \
-	Refcounted_Auto_Ptr.inl Registry.h Registry_Name_Space.h \
-	Remote_Name_Space.h Remote_Tokens.h Remote_Tokens.inl \
-	Reverse_Lock_T.cpp Reverse_Lock_T.h Reverse_Lock_T.inl SOCK.h \
-	SOCK.inl SOCK_Acceptor.h SOCK_Acceptor.inl SOCK_CODgram.h \
-	SOCK_CODgram.inl SOCK_Connector.h SOCK_Connector.inl \
-	SOCK_Dgram.h SOCK_Dgram.inl SOCK_Dgram_Bcast.h \
-	SOCK_Dgram_Bcast.inl SOCK_Dgram_Mcast.h SOCK_Dgram_Mcast.inl \
-	SOCK_IO.h SOCK_IO.inl SOCK_Netlink.h SOCK_Netlink.inl \
-	SOCK_SEQPACK_Acceptor.h SOCK_SEQPACK_Acceptor.inl \
-	SOCK_SEQPACK_Association.h SOCK_SEQPACK_Association.inl \
-	SOCK_SEQPACK_Connector.h SOCK_SEQPACK_Connector.inl \
-	SOCK_Stream.h SOCK_Stream.inl SPIPE.h SPIPE.inl \
-	SPIPE_Acceptor.h SPIPE_Addr.h SPIPE_Addr.inl SPIPE_Connector.h \
-	SPIPE_Connector.inl SPIPE_Stream.h SPIPE_Stream.inl SString.h \
-	SString.inl SStringfwd.h Stack_Trace.h SUN_Proactor.h \
-	SV_Message.h SV_Message.inl SV_Message_Queue.h \
-	SV_Message_Queue.inl SV_Semaphore_Complex.h \
+	Refcountable.h Refcountable_T.cpp Refcountable_T.h \
+	Refcountable_T.inl Refcounted_Auto_Ptr.cpp \
+	Refcounted_Auto_Ptr.h Refcounted_Auto_Ptr.inl Registry.h \
+	Registry_Name_Space.h Remote_Name_Space.h Remote_Tokens.h \
+	Remote_Tokens.inl Reverse_Lock_T.cpp Reverse_Lock_T.h \
+	Reverse_Lock_T.inl SOCK.h SOCK.inl SOCK_Acceptor.h \
+	SOCK_Acceptor.inl SOCK_CODgram.h SOCK_CODgram.inl \
+	SOCK_Connector.h SOCK_Connector.inl SOCK_Dgram.h \
+	SOCK_Dgram.inl SOCK_Dgram_Bcast.h SOCK_Dgram_Bcast.inl \
+	SOCK_Dgram_Mcast.h SOCK_Dgram_Mcast.inl SOCK_IO.h SOCK_IO.inl \
+	SOCK_Netlink.h SOCK_Netlink.inl SOCK_SEQPACK_Acceptor.h \
+	SOCK_SEQPACK_Acceptor.inl SOCK_SEQPACK_Association.h \
+	SOCK_SEQPACK_Association.inl SOCK_SEQPACK_Connector.h \
+	SOCK_SEQPACK_Connector.inl SOCK_Stream.h SOCK_Stream.inl \
+	SPIPE.h SPIPE.inl SPIPE_Acceptor.h SPIPE_Addr.h SPIPE_Addr.inl \
+	SPIPE_Connector.h SPIPE_Connector.inl SPIPE_Stream.h \
+	SPIPE_Stream.inl SString.h SString.inl SStringfwd.h \
+	Stack_Trace.h SUN_Proactor.h SV_Message.h SV_Message.inl \
+	SV_Message_Queue.h SV_Message_Queue.inl SV_Semaphore_Complex.h \
 	SV_Semaphore_Complex.inl SV_Semaphore_Simple.h \
 	SV_Semaphore_Simple.inl SV_Shared_Memory.h \
 	SV_Shared_Memory.inl Sample_History.h Sample_History.inl \
@@ -1722,20 +1736,21 @@ am__nobase_include_HEADERS_DIST = ACE.h ACE.inl ACE_export.h ARGV.cpp \
 	String_Base.h String_Base.inl String_Base_Const.h Svc_Conf.h \
 	Svc_Conf_Lexer.h Svc_Conf_Tokens.h Svc_Conf_Token_Table.h \
 	Svc_Handler.cpp Svc_Handler.h Synch.h Synch_Options.h \
-	Synch_Traits.h System_Time.h TLI.h TLI.inl TLI_Acceptor.h \
-	TLI_Connector.h TLI_Connector.inl TLI_Stream.h TLI_Stream.inl \
-	TP_Reactor.h TP_Reactor.inl TSS_Adapter.h TSS_T.cpp TSS_T.h \
-	TSS_T.inl TTY_IO.h Task.h Task.inl Task_Ex_T.cpp Task_Ex_T.h \
-	Task_Ex_T.inl Task_T.cpp Task_T.h Task_T.inl Test_and_Set.cpp \
-	Test_and_Set.h Thread.h Thread.inl Thread_Adapter.h \
-	Thread_Adapter.inl Thread_Control.h Thread_Control.inl \
-	Thread_Exit.h Thread_Hook.h Thread_Manager.h \
-	Thread_Manager.inl Thread_Mutex.h Thread_Mutex.inl \
-	Thread_Semaphore.h Thread_Semaphore.inl Throughput_Stats.h \
-	Time_Value.h Time_Value.inl Timeprobe.h Timeprobe.inl \
-	Timeprobe_T.cpp Timeprobe_T.h Timer_Hash_T.cpp Timer_Hash_T.h \
-	Timer_Heap_T.cpp Timer_Heap_T.h Timer_List_T.cpp \
-	Timer_List_T.h Timer_Queue_Adapters.cpp Timer_Queue_Adapters.h \
+	Synch_T.cpp Synch_T.h Synch_Traits.h System_Time.h TLI.h \
+	TLI.inl TLI_Acceptor.h TLI_Connector.h TLI_Connector.inl \
+	TLI_Stream.h TLI_Stream.inl TP_Reactor.h TP_Reactor.inl \
+	TSS_Adapter.h TSS_T.cpp TSS_T.h TSS_T.inl TTY_IO.h Task.h \
+	Task.inl Task_Ex_T.cpp Task_Ex_T.h Task_Ex_T.inl Task_T.cpp \
+	Task_T.h Task_T.inl Test_and_Set.cpp Test_and_Set.h Thread.h \
+	Thread.inl Thread_Adapter.h Thread_Adapter.inl \
+	Thread_Control.h Thread_Control.inl Thread_Exit.h \
+	Thread_Hook.h Thread_Manager.h Thread_Manager.inl \
+	Thread_Mutex.h Thread_Mutex.inl Thread_Semaphore.h \
+	Thread_Semaphore.inl Throughput_Stats.h Time_Value.h \
+	Time_Value.inl Timeprobe.h Timeprobe.inl Timeprobe_T.cpp \
+	Timeprobe_T.h Timer_Hash_T.cpp Timer_Hash_T.h Timer_Heap_T.cpp \
+	Timer_Heap_T.h Timer_List_T.cpp Timer_List_T.h \
+	Timer_Queue_Adapters.cpp Timer_Queue_Adapters.h \
 	Timer_Queue_Adapters.inl Timer_Queue_T.cpp Timer_Queue_T.h \
 	Timer_Queue_T.inl Timer_Wheel_T.cpp Timer_Wheel_T.h \
 	Tokenizer_T.cpp Tokenizer_T.h Timer_Hash.h Timer_Heap.h \
@@ -1760,7 +1775,7 @@ am__nobase_include_HEADERS_DIST = ACE.h ACE.inl ACE_export.h ARGV.cpp \
 	XTI_ATM_Mcast.h XTI_ATM_Mcast.inl ace_wchar.h ace_wchar.inl \
 	checked_iterator.h config-WinCE.h config-all.h config-lite.h \
 	config-macros.h config-minimal.h config-win32-borland.h \
-	config-win32-common.h config-win32-msvc-7.h \
+	config-win32-common.h config-win32-ghs.h config-win32-msvc-7.h \
 	config-win32-msvc-8.h config-win32-msvc.h config-win32.h \
 	config.h iosfwd.h os_include/arpa/os_inet.h \
 	os_include/net/os_if.h os_include/netinet/os_in.h \

@@ -3,7 +3,7 @@
 	ProjectType="Visual C++"
 	Version="8.00"
 	Name="Thread_Manager_Test"
-	ProjectGUID="{B5775ECC-FECA-1BAD-2431-8A1100722433}"
+	ProjectGUID="{B5775ECC-FECA-1BAD-2431-8A11337F6D50}"
 	RootNamespace="Thread_Manager_Test"
 	Keyword="Win32Proj"
 	SignManifests="true"

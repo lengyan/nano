@@ -3,7 +3,7 @@
 	ProjectType="Visual C++"
 	Version="8.00"
 	Name="Memory_Usage"
-	ProjectGUID="{C74EF950-FECA-1BAD-E4AF-D6C5D6D0BA85}"
+	ProjectGUID="{C74EF950-FECA-1BAD-E4AF-D6C5E5DDF3E6}"
 	RootNamespace="Memory_Usage"
 	Keyword="Win32Proj"
 	SignManifests="true"

@@ -1,4 +1,4 @@
-// $Id: Collection_Test.cpp 91671 2010-09-08 18:39:23Z johnnyw $
+// $Id: Collection_Test.cpp 80826 2008-03-04 14:51:23Z wotte $
 
 // ============================================================================
 //
@@ -19,7 +19,7 @@
 
 #include "test_config.h"
 
-
+ACE_RCSID(tests, Collection_Test, "$Id: Collection_Test.cpp 80826 2008-03-04 14:51:23Z wotte $")
 
 #include "ace/Containers.h"
 #include "Collection_Test.h"

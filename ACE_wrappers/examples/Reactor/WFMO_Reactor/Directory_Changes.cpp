@@ -1,4 +1,4 @@
-// $Id: Directory_Changes.cpp 91671 2010-09-08 18:39:23Z johnnyw $
+// $Id: Directory_Changes.cpp 80826 2008-03-04 14:51:23Z wotte $
 //
 // ============================================================================
 //
@@ -27,7 +27,7 @@
 #include "ace/OS_NS_fcntl.h"
 #include "ace/Log_Msg.h"
 
-
+ACE_RCSID(WFMO_Reactor, Directory_Changes, "$Id: Directory_Changes.cpp 80826 2008-03-04 14:51:23Z wotte $")
 
 static int stop_test = 0;
 static const ACE_TCHAR *directory = ACE_TEXT (".");

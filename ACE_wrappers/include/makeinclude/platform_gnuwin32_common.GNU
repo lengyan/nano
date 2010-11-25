@@ -1,5 +1,5 @@
 # -*- Makefile -*-
-# $Id: platform_gnuwin32_common.GNU 91285 2010-08-05 08:29:30Z johnnyw $
+# $Id: platform_gnuwin32_common.GNU 90650 2010-06-16 21:54:18Z mitza $
 
 ifneq ($(mingw32),1)
   ifneq ($(cygwin32),1)
@@ -16,6 +16,7 @@ no_hidden_visibility ?= 1
 GNUWIN32_CXX_VERSION := $(shell $(CXX) -dumpversion)
 
 winsock2 ?= 1
+exceptions ?= 1
 debug ?= 1
 optimize ?= 1
 threads ?= 1

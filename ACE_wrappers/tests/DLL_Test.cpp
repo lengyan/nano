@@ -1,4 +1,4 @@
-// $Id: DLL_Test.cpp 91671 2010-09-08 18:39:23Z johnnyw $
+// $Id: DLL_Test.cpp 90501 2010-06-09 14:44:52Z mitza $
 
 // ============================================================================
 //
@@ -24,7 +24,7 @@
 #include "ace/SString.h"
 #include "DLL_Test.h"
 
-
+ACE_RCSID(tests, DLL_Test, "$Id: DLL_Test.cpp 90501 2010-06-09 14:44:52Z mitza $")
 
 #if defined (ACE_LD_DECORATOR_STR)
 # define OBJ_SUFFIX ACE_LD_DECORATOR_STR ACE_DLL_SUFFIX

@@ -1,10 +1,12 @@
-// $Id: Assoc_Array.cpp 91670 2010-09-08 18:02:26Z johnnyw $
+// $Id: Assoc_Array.cpp 80826 2008-03-04 14:51:23Z wotte $
 
 #ifndef JAWS_ASSOC_ARRAY_CPP
 #define JAWS_ASSOC_ARRAY_CPP
 
 #include "ace/config-all.h"
 #include "JAWS/Assoc_Array.h"
+
+ACE_RCSID(JAWS, Assoc_Array, "$Id: Assoc_Array.cpp 80826 2008-03-04 14:51:23Z wotte $")
 
 template <class KEY, class DATA>
 JAWS_Assoc_Array<KEY,DATA>::JAWS_Assoc_Array (int maxsize)

@@ -1,4 +1,4 @@
-// $Id: server_test.cpp 91670 2010-09-08 18:02:26Z johnnyw $
+// $Id: server_test.cpp 80826 2008-03-04 14:51:23Z wotte $
 
 // The main test driver for the dynamically configured server.
 
@@ -8,6 +8,8 @@
 #include "ace/Log_Msg.h"
 #include "ace/Signal.h"
 #include "ace/Sig_Adapter.h"
+
+ACE_RCSID(server, server_test, "$Id: server_test.cpp 80826 2008-03-04 14:51:23Z wotte $")
 
 int
 ACE_TMAIN (int argc, ACE_TCHAR *argv[])

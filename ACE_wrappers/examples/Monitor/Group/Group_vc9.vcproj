@@ -3,7 +3,7 @@
 	ProjectType="Visual C++"
 	Version="9.00"
 	Name="Group"
-	ProjectGUID="{BD862C9E-FECA-1BAD-4822-8A23A725AAA8}"
+	ProjectGUID="{BD862C9E-FECA-1BAD-4822-8A2397F13C9B}"
 	RootNamespace="Group"
 	Keyword="Win32Proj"
 	SignManifests="true"

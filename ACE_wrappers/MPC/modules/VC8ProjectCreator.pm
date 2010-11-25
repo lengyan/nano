@@ -83,7 +83,6 @@ sub post_file_creation {
   ## created a new project file, we will remove the corresponding
   ## .user file to avoid strange conflicts.
   unlink("$file.user");
-  return undef;
 }
 
 sub get_configurable {

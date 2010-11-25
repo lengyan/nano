@@ -1,4 +1,4 @@
-// $Id: Reactor_Dispatch_Order_Test.cpp 91671 2010-09-08 18:39:23Z johnnyw $
+// $Id: Reactor_Dispatch_Order_Test.cpp 87226 2009-10-26 10:19:27Z olli $
 
 // ============================================================================
 //
@@ -26,7 +26,7 @@
 #include "ace/Pipe.h"
 #include "ace/ACE.h"
 
-
+ACE_RCSID(tests, Reactor_Dispatch_Order_Test, "$Id: Reactor_Dispatch_Order_Test.cpp 87226 2009-10-26 10:19:27Z olli $")
 
 static const char *message =
 "Hello there! Hope you get this message";

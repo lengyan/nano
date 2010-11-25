@@ -1,4 +1,4 @@
-// $Id: FTP_IOStream.cpp 91671 2010-09-08 18:39:23Z johnnyw $
+// $Id: FTP_IOStream.cpp 90891 2010-06-28 09:55:39Z mcorino $
 
 #include "ace/INet/FTP_IOStream.h"
 #include "ace/INet/IOS_util.h"
@@ -9,7 +9,7 @@
 
 #include "ace/Truncate.h"
 
-
+ACE_RCSID(NET_CLIENT,ACE_FTP_IOStream,"$Id: FTP_IOStream.cpp 90891 2010-06-28 09:55:39Z mcorino $")
 
 ACE_BEGIN_VERSIONED_NAMESPACE_DECL
 

@@ -4,7 +4,7 @@
 /**
  *  @file    DTDHandler.h
  *
- *  $Id: DTDHandler.h 91257 2010-08-03 11:54:04Z johnnyw $
+ *  $Id: DTDHandler.h 80826 2008-03-04 14:51:23Z wotte $
  *
  *  @author Nanbor Wang <nanbor@cs.wustl.edu>
  */
@@ -19,6 +19,7 @@
 #pragma once
 #endif /* ACE_LACKS_PRAGMA_ONCE */
 
+#include "ACEXML/common/Env.h"
 #include "ACEXML/common/SAXExceptions.h"
 
 /**
@@ -58,7 +59,7 @@ public:
    */
   virtual void notationDecl (const ACEXML_Char *name,
                              const ACEXML_Char *publicId,
-                             const ACEXML_Char *systemId)
+                             const ACEXML_Char *systemId ACEXML_ENV_ARG_DECL)
         = 0;
 
   /**
@@ -67,7 +68,8 @@ public:
   virtual void unparsedEntityDecl (const ACEXML_Char *name,
                                    const ACEXML_Char *publicId,
                                    const ACEXML_Char *systemId,
-                                   const ACEXML_Char *notationName) = 0;
+                                   const ACEXML_Char *notationName ACEXML_ENV_ARG_DECL)
+        = 0;
 };
 
 

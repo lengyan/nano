@@ -1,7 +1,7 @@
 /**
  * @file Bug_3710_Regression_Test.cpp
  *
- * $Id: Bug_3710_Regression_Test.cpp 91671 2010-09-08 18:39:23Z johnnyw $
+ * $Id: Bug_3710_Regression_Test.cpp 86202 2009-07-23 18:39:24Z johnnyw $
  *
  * Reproduces the problems reported in bug 3710
  *   http://deuce.doc.wustl.edu/bugzilla/show_bug.cgi?id=3710
@@ -13,7 +13,7 @@
 #include "ace/OS_NS_unistd.h"
 #include "ace/OS_Memory.h"
 
-
+ACE_RCSID(tests, Bug_3710_Regression, "$Id: Bug_3710_Regression_Test.cpp 86202 2009-07-23 18:39:24Z johnnyw $")
 
 // Main function.
 

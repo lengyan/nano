@@ -1,5 +1,6 @@
-// $Id: Reassemble.h 91626 2010-09-07 10:59:20Z johnnyw $
+// file      : ace/RMCast/Reassemble.h
 // author    : Boris Kolpackov <boris@kolpackov.net>
+// cvs-id    : $Id: Reassemble.h 80826 2008-03-04 14:51:23Z wotte $
 
 #ifndef ACE_RMCAST_REASSEMBLE_H
 #define ACE_RMCAST_REASSEMBLE_H

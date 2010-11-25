@@ -1,4 +1,4 @@
-// $Id: barrier2.cpp 91671 2010-09-08 18:39:23Z johnnyw $
+// $Id: barrier2.cpp 80826 2008-03-04 14:51:23Z wotte $
 
 // This test program illustrates how the ACE task workers/barrier
 // synchronization mechanisms work in conjunction with the ACE_Task
@@ -16,7 +16,7 @@
 #include "ace/Task.h"
 #include "ace/Service_Config.h"
 
-
+ACE_RCSID(Threads, barrier2, "$Id: barrier2.cpp 80826 2008-03-04 14:51:23Z wotte $")
 
 #if defined (ACE_HAS_THREADS)
 
@@ -197,7 +197,7 @@ Worker_Task<BARRIER>::producer (void)
   for (;;)
     {
       // Allocate a new message.
-      ACE_Message_Block *mb = 0;
+      ACE_Message_Block *mb;
 
       ACE_NEW_RETURN (mb,
                       ACE_Message_Block (BUFSIZ),

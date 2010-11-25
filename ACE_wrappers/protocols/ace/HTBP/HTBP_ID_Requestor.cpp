@@ -1,4 +1,4 @@
-// $Id: HTBP_ID_Requestor.cpp 91673 2010-09-08 18:49:47Z johnnyw $
+// $Id: HTBP_ID_Requestor.cpp 87228 2009-10-26 10:45:28Z vzykov $
 
 #include "HTBP_ID_Requestor.h"
 #include "HTBP_Environment.h"
@@ -8,6 +8,10 @@
 #include "ace/SOCK_Stream.h"
 #include "ace/SOCK_Connector.h"
 #include "ace/UUID.h"
+
+ACE_RCSID(HTBP,
+          ACE_HTBP_ID_Requestor,
+          "$Id: HTBP_ID_Requestor.cpp 87228 2009-10-26 10:45:28Z vzykov $")
 
 ACE_BEGIN_VERSIONED_NAMESPACE_DECL
 
@@ -97,7 +101,7 @@ ACE::HTBP::ID_Requestor::get_HTID ()
   if (ACE::HTBP::ID_Requestor::htid_.length() != 0)
     return ACE::HTBP::ID_Requestor::htid_.rep();
 
-  ACE_GUARD_RETURN (ACE_SYNCH_MUTEX, guard, ACE::HTBP::ID_Requestor::htid_lock_, 0);
+  ACE_Guard<ACE_SYNCH_MUTEX> guard (ACE::HTBP::ID_Requestor::htid_lock_);
 
   if (ACE::HTBP::ID_Requestor::htid_.length() != 0)
     return ACE::HTBP::ID_Requestor::htid_.rep();

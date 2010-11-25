@@ -3,7 +3,7 @@
 	ProjectType="Visual C++"
 	Version="9.00"
 	Name="netsvcs"
-	ProjectGUID="{8D001A18-FECA-1BAD-6AF0-8A634041F2D1}"
+	ProjectGUID="{8D001A18-FECA-1BAD-6AF0-8A632372FF98}"
 	RootNamespace="netsvcs"
 	Keyword="Win32Proj"
 	SignManifests="true"
@@ -372,6 +372,9 @@
 			</File>
 			<File
 				RelativePath="Server_Logging_Handler.cpp">
+			</File>
+			<File
+				RelativePath="Server_Logging_Handler_T.cpp">
 			</File>
 			<File
 				RelativePath="Time_Request_Reply.cpp">

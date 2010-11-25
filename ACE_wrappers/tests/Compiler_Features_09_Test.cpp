@@ -1,4 +1,4 @@
-// $Id: Compiler_Features_09_Test.cpp 91626 2010-09-07 10:59:20Z johnnyw $
+// $Id: Compiler_Features_09_Test.cpp 86360 2009-08-04 22:45:15Z coryan $
 
 /**
  * @file
@@ -55,6 +55,8 @@ public:
   {}
 };
 }
+
+ACE_RCSID(tests, Compiler_Features_09_Test, "$Id: Compiler_Features_09_Test.cpp 86360 2009-08-04 22:45:15Z coryan $")
 
 int
 run_main (int, ACE_TCHAR *[])

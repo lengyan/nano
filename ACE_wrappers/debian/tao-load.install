@@ -1,2 +1,2 @@
-usr/bin/tao_loadmanager
-usr/bin/tao_loadmonitor
+usr/bin/LoadManager
+usr/bin/LoadMonitor

@@ -1,9 +1,11 @@
-// $Id: test_multiple_contexts.cpp 91670 2010-09-08 18:02:26Z johnnyw $
+// $Id: test_multiple_contexts.cpp 80826 2008-03-04 14:51:23Z wotte $
 
 #include "ace/OS_main.h"
 #include "ace/Naming_Context.h"
 #include "ace/Log_Msg.h"
 #include "ace/OS_NS_stdio.h"
+
+ACE_RCSID(Naming, test_multiple_contexts, "$Id: test_multiple_contexts.cpp 80826 2008-03-04 14:51:23Z wotte $")
 
 int ACE_TMAIN (int, ACE_TCHAR *[])
 {

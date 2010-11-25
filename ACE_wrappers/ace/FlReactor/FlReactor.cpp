@@ -1,6 +1,8 @@
-// $Id: FlReactor.cpp 91368 2010-08-16 13:03:34Z mhengstmengel $
+// $Id: FlReactor.cpp 84632 2009-02-27 08:23:23Z olli $
 
 #include "ace/FlReactor/FlReactor.h"
+
+ACE_RCSID(ace, FlReactor, "$Id: FlReactor.cpp 84632 2009-02-27 08:23:23Z olli $")
 
 #include /**/ <FL/Fl.H>
 

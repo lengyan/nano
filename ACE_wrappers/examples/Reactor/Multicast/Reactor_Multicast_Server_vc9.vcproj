@@ -3,7 +3,7 @@
 	ProjectType="Visual C++"
 	Version="9.00"
 	Name="Reactor_Multicast_Server"
-	ProjectGUID="{F1D7A333-FECA-1BAD-D1A8-860E7607F174}"
+	ProjectGUID="{F1D7A333-FECA-1BAD-D1A8-860EE034C1A0}"
 	RootNamespace="Reactor_Multicast_Server"
 	Keyword="Win32Proj"
 	SignManifests="true"

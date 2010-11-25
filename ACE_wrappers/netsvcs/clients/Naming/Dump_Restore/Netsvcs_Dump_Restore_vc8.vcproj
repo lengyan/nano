@@ -3,7 +3,7 @@
 	ProjectType="Visual C++"
 	Version="8.00"
 	Name="Netsvcs_Dump_Restore"
-	ProjectGUID="{1099669E-FECA-1BAD-1BE2-2E43250F5E17}"
+	ProjectGUID="{1099669E-FECA-1BAD-1BE2-2E43463C535E}"
 	RootNamespace="Netsvcs_Dump_Restore"
 	Keyword="Win32Proj"
 	SignManifests="true"

@@ -1,4 +1,4 @@
-// $Id: Options.cpp 91671 2010-09-08 18:39:23Z johnnyw $
+// $Id: Options.cpp 80826 2008-03-04 14:51:23Z wotte $
 
 #include "ace/Get_Opt.h"
 #include "ace/Log_Msg.h"
@@ -6,9 +6,9 @@
 #include "Options.h"
 #include "ace/OS_NS_string.h"
 
+ACE_RCSID(Web_Crawler, Options, "$Id: Options.cpp 80826 2008-03-04 14:51:23Z wotte $")
 
-
-int
+int 
 Options::parse_args (int argc, ACE_TCHAR *argv[])
 {
   //FUZZ: disable check_for_lack_ACE_OS
@@ -26,7 +26,7 @@ Options::parse_args (int argc, ACE_TCHAR *argv[])
   this->verbose_ = 0;
   this->order_ = ACE_TEXT ("FIFO");
   this->port_no_ = ACE_DEFAULT_HTTP_PORT;
-
+  
   // The default is to make this limit as large as possible.
   this->handle_limit_ = -1;
 
@@ -97,7 +97,7 @@ Options::parse_args (int argc, ACE_TCHAR *argv[])
   return 0;
 }
 
-int
+int 
 Options::port_no (void) const
 {
   return this->port_no_;
@@ -174,7 +174,7 @@ Options::visitor (URL_Visitor *v)
   this->visitor_ = v;
 }
 
-int
+int 
 Options::handle_limit (void)
 {
   return this->handle_limit_;

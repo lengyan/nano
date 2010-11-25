@@ -1,4 +1,6 @@
-// $Id: SS_State_DONE.cpp 91730 2010-09-13 09:31:11Z johnnyw $
+// $Id: SS_State_DONE.cpp 80826 2008-03-04 14:51:23Z wotte $
+
+#include "ace/OS.h"
 
 #include "SS_State_DONE.h"
 #include "SS_Data.h"

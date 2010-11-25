@@ -1,6 +1,8 @@
-// $Id: JAWS_Pipeline.cpp 91670 2010-09-08 18:02:26Z johnnyw $
+// $Id: JAWS_Pipeline.cpp 80826 2008-03-04 14:51:23Z wotte $
 
 #include "JAWS_Pipeline.h"
+
+ACE_RCSID(server, JAWS_Pipeline, "$Id: JAWS_Pipeline.cpp 80826 2008-03-04 14:51:23Z wotte $")
 
 JAWS_Pipeline::JAWS_Pipeline (void)
 {

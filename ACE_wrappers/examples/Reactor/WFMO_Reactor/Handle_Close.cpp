@@ -1,4 +1,4 @@
-// $Id: Handle_Close.cpp 91671 2010-09-08 18:39:23Z johnnyw $
+// $Id: Handle_Close.cpp 80826 2008-03-04 14:51:23Z wotte $
 //
 // ============================================================================
 //
@@ -28,7 +28,7 @@
 #include "ace/Pipe.h"
 #include "ace/OS_main.h"
 
-
+ACE_RCSID(WFMO_Reactor, Handle_Close, "$Id: ")
 
 // Use the WFMO_Reactor
 static int opt_wfmo_reactor = 0;

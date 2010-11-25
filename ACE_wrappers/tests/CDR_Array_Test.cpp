@@ -1,4 +1,4 @@
-// $Id: CDR_Array_Test.cpp 92176 2010-10-08 07:00:00Z olli $
+// $Id: CDR_Array_Test.cpp 84565 2009-02-23 08:20:39Z johnnyw $
 
 // ============================================================================
 //
@@ -53,7 +53,7 @@
 #error "Can't define USE_GETRUSAGE on this platform."
 #endif
 
-
+ACE_RCSID(tests, CDR_Array_Test, "$Id: CDR_Array_Test.cpp 84565 2009-02-23 08:20:39Z johnnyw $")
 
 // Default number of elements for check buffer, for each tested CDR type.
 // Be aware that time will be affected by the buffer fitting/not fitting
@@ -617,7 +617,7 @@ CDR_Test<T, H>::do_test (int total, int niter, int use_array,
         tellalign (src);
 
         T cv = CDR_Test<T, H>::checkval (i);
-        if (!ACE::is_equal (rv, cv))
+        if (rv != cv)
           {
             static char rs[32 + 1];
             static char cs[32 + 1];

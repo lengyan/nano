@@ -1,4 +1,4 @@
-// $Id: Pipe_Test.cpp 91626 2010-09-07 10:59:20Z johnnyw $
+// $Id: Pipe_Test.cpp 84565 2009-02-23 08:20:39Z johnnyw $
 
 // ============================================================================
 //
@@ -24,6 +24,8 @@
 #include "ace/OS_NS_stdio.h"
 #include "ace/OS_NS_stdlib.h"
 #include "ace/OS_NS_unistd.h"
+
+ACE_RCSID(tests, Pipe_Test, "$Id: Pipe_Test.cpp 84565 2009-02-23 08:20:39Z johnnyw $")
 
 // Indicates whether we should close the pipe or not.
 static int close_pipe = 1;

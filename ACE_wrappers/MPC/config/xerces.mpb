@@ -1,5 +1,5 @@
 // -*- MPC -*-
-// $Id: xerces.mpb 1869 2010-08-05 03:50:05Z elliott_c $
+// $Id: xerces.mpb 1577 2009-05-07 15:44:53Z elliott_c $
 feature(!xerces2, !xerces3) {
   requires += xerces
 }
@@ -10,7 +10,7 @@ feature(xerces2) {
 
   specific(prop:microsoft) {
     xerceslib = xerces-c_2
-
+  
     // Linking the optimized version of xerces-c_2 into a debug application
     // has been known to cause run-time issues (as of 4/25/2005), so we
     // will link in the debug version for the "Debug" configuration.
@@ -35,7 +35,7 @@ feature(xerces3) {
 
   specific(prop:microsoft) {
     xerceslib = xerces-c_3
-
+  
     // Linking the optimized version of xerces-c_2 into a debug application
     // has been known to cause run-time issues (as of 4/25/2005), so we
     // will link in the debug version for the "Debug" configuration.

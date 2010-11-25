@@ -1,9 +1,10 @@
-# $Id: platform_hpux_gcc.GNU 91285 2010-08-05 08:29:30Z johnnyw $
+# $Id: platform_hpux_gcc.GNU 80826 2008-03-04 14:51:23Z wotte $
 #
 
 buildbits ?= 64
 debug ?= 1
 distrib ?= 0
+exceptions ?= 1
 optimize ?= 1
 stdcpplib ?= 1
 threads ?= 1

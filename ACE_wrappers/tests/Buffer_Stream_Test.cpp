@@ -1,4 +1,4 @@
-// $Id: Buffer_Stream_Test.cpp 91671 2010-09-08 18:39:23Z johnnyw $
+// $Id: Buffer_Stream_Test.cpp 83583 2008-11-06 13:08:46Z johnnyw $
 
 // ============================================================================
 //
@@ -28,7 +28,7 @@
 #include "ace/OS_NS_string.h"
 #include "ace/OS_NS_time.h"
 
-
+ACE_RCSID(tests, Buffer_Stream_Test, "$Id: Buffer_Stream_Test.cpp 83583 2008-11-06 13:08:46Z johnnyw $")
 
 #if defined (ACE_HAS_THREADS)
 

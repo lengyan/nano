@@ -1,4 +1,4 @@
-// $Id: HTTP_Request.cpp 91670 2010-09-08 18:02:26Z johnnyw $
+// $Id: HTTP_Request.cpp 80826 2008-03-04 14:51:23Z wotte $
 
 #include "ace/Message_Block.h"
 #include "HTTP_Request.h"
@@ -7,6 +7,8 @@
 #include "ace/OS_NS_string.h"
 #include "ace/OS_NS_pwd.h"
 #include "ace/Log_Msg.h"
+
+ACE_RCSID(server, HTTP_Request, "$Id: HTTP_Request.cpp 80826 2008-03-04 14:51:23Z wotte $")
 
 const char *const
 HTTP_Request::static_header_strings_[HTTP_Request::NUM_HEADER_STRINGS] =

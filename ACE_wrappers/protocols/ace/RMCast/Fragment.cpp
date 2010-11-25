@@ -1,5 +1,6 @@
+// file      : ace/RMCast/Fragment.cpp
 // author    : Boris Kolpackov <boris@kolpackov.net>
-// $Id: Fragment.cpp 91626 2010-09-07 10:59:20Z johnnyw $
+// cvs-id    : $Id: Fragment.cpp 80826 2008-03-04 14:51:23Z wotte $
 
 #include "Fragment.h"
 

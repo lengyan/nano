@@ -1,4 +1,4 @@
-// $Id: Token_Handler.cpp 91673 2010-09-08 18:49:47Z johnnyw $
+// $Id: Token_Handler.cpp 84481 2009-02-17 10:58:31Z johnnyw $
 
 #include "ace/Get_Opt.h"
 #include "Token_Handler.h"
@@ -6,6 +6,10 @@
 #if defined (ACE_HAS_TOKENS_LIBRARY)
 
 #include "ace/Signal.h"
+
+ACE_RCSID (lib,
+           Token_Handler,
+           "$Id: Token_Handler.cpp 84481 2009-02-17 10:58:31Z johnnyw $")
 
 int
 ACE_Token_Acceptor::parse_args (int argc, ACE_TCHAR *argv[])

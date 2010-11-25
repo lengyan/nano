@@ -3,7 +3,7 @@
 	ProjectType="Visual C++"
 	Version="9.00"
 	Name="Timer_Queue_Thread_Custom_Handlers"
-	ProjectGUID="{83EE7225-FECA-1BAD-60CC-ADC54D81BEB4}"
+	ProjectGUID="{83EE7225-FECA-1BAD-60CC-ADC57EB16A22}"
 	RootNamespace="Timer_Queue_Thread_Custom_Handlers"
 	Keyword="Win32Proj"
 	SignManifests="true"

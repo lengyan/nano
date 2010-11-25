@@ -1,7 +1,7 @@
 # Set the version number here.
-%define ACEVER  5.8.3
-%define TAOVER  1.8.3
-%define CIAOVER 0.8.3
+%define ACEVER  5.8
+%define TAOVER  1.8
+%define CIAOVER 0.8
 
 # Conditional build
 # Default values are
@@ -72,7 +72,7 @@ BuildRoot:    %{_tmppath}/%{name}-%{version}-%{release}-root-%(%{__id_u} -n)
 
 %if 0%{?fedora} || 0%{?rhel_version} || 0%{?centos_version}
 %define _extension .gz
-BuildRequires: redhat-rpm-config elfutils sendmail
+BuildRequires: redhat-rpm-config elfutils
 %endif
 
 %if 0%{?suse_version}
@@ -88,10 +88,6 @@ PreReq:         %install_info_prereq %insserv_prereq  %fillup_prereq
 PreReq:         pwdutils
 %endif
 
-%if 0%{?mdkversion}
-BuildRequires:  sendmail
-%endif
-
 BuildRequires:  openssl-devel
 BuildRequires:  gcc-c++
 BuildRequires:  libstdc++-devel
@@ -103,6 +99,10 @@ BuildRequires:  zlib-devel
 
 %if %{?_with_bzip2:1}%{!?_with_bzip2:0}
 BuildRequires:  bzip2
+%endif
+
+%if 0%{?mdkversion}
+BuildRequires: sendmail
 %endif
 
 BuildRequires:  perl
@@ -814,7 +814,7 @@ export ACE_ROOT=$(pwd)
 export TAO_ROOT=$ACE_ROOT/TAO
 export CIAO_ROOT=$TAO_ROOT/CIAO
 export DANCE_ROOT=$CIAO_ROOT/DAnCE
-export LD_LIBRARY_PATH=$ACE_ROOT/lib
+export LD_LIBRARY_PATH=$ACE_ROOT/lib  
 
 # Dump the g++ versions, in case the g++ version is broken we can
 # easily see this in the build log
@@ -1191,7 +1191,6 @@ cat mmraw.list |\
 echo ace/QtReactor/QtReactor.h >> allhdrs.list
 echo TAO/tao/QtResource/QtResource_Factory.h >> allhdrs.list
 echo TAO/tao/QtResource/QtResource_Loader.h >> allhdrs.list
-echo TAO/tao/PortableServer/get_arg.h >> allhdrs.list
 
 # Install headers and create header lists
 rm -f ace-headers.tmp
@@ -1961,8 +1960,6 @@ fi
 %{_libdir}/libACE_RMCast.so.%{ACEVERSO}
 %{_libdir}/libACE_TMCast.so.%{ACEVERSO}
 %{_libdir}/libACE_SSL.so.%{ACEVERSO}
-%{_libdir}/libACE_INet.so.%{ACEVERSO}
-%{_libdir}/libACE_INet_SSL.so.%{ACEVERSO}
 
 %doc ACE-INSTALL.html
 %doc AUTHORS
@@ -1985,8 +1982,6 @@ fi
 %{_libdir}/libACE_RMCast.so
 %{_libdir}/libACE_TMCast.so
 %{_libdir}/libACE_SSL.so
-%{_libdir}/libACE_INet.so
-%{_libdir}/libACE_INet_SSL.so
 %dir %{_datadir}/ace
 %{_datadir}/ace/include
 %{_datadir}/ace/include/makeinclude
@@ -2039,6 +2034,7 @@ fi
 %files -n ace-gperf
 %defattr(-,root,root,-)
 %{_bindir}/ace_gperf
+%{_libdir}/libACE_gperf_lib.so.%{ACEVERSO}
 %attr(0644,root,root) %{_mandir}/man1/ace_gperf.1%{_extension}
 %attr(0644,root,root) %{_infodir}/ace_gperf.info%{_extension}
 

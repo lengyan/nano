@@ -1,7 +1,8 @@
-# $Id: platform_macosx_panther.GNU 91285 2010-08-05 08:29:30Z johnnyw $
+# $Id: platform_macosx_panther.GNU 80826 2008-03-04 14:51:23Z wotte $
 # platform_macosx.GNU
 # support for Mac OS X 10.3 (Panther)
 
+exceptions ?= 1
 threads ?= 1
 debug ?= 1
 optimize ?= 0

@@ -3,7 +3,7 @@
 	ProjectType="Visual C++"
 	Version="9.00"
 	Name="Aio_Platform_Test"
-	ProjectGUID="{71461B78-FECA-1BAD-2431-8A1100722433}"
+	ProjectGUID="{71461B78-FECA-1BAD-2431-8A11337F6D50}"
 	RootNamespace="Aio_Platform_Test"
 	Keyword="Win32Proj"
 	SignManifests="true"

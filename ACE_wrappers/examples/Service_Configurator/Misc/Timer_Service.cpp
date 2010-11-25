@@ -1,10 +1,10 @@
-// $Id: Timer_Service.cpp 91671 2010-09-08 18:39:23Z johnnyw $
+// $Id: Timer_Service.cpp 81978 2008-06-16 16:57:12Z sowayaa $
 
 #include "ace/OS_NS_string.h"
 #include "Timer_Service.h"
 #include "ace/Log_Msg.h"
 
-
+ACE_RCSID(Misc, Timer_Service, "$Id: Timer_Service.cpp 81978 2008-06-16 16:57:12Z sowayaa $")
 
 Timer_Service_1::Timer_Service_1 (void)
 {

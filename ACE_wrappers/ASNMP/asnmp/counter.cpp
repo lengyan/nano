@@ -1,4 +1,4 @@
-// $Id: counter.cpp 91670 2010-09-08 18:02:26Z johnnyw $
+// $Id: counter.cpp 80826 2008-03-04 14:51:23Z wotte $
 
 // ============================================================================
 //
@@ -32,6 +32,8 @@
 =====================================================================*/
 
 #include "asnmp/counter.h"
+
+ACE_RCSID(asnmp, counter, "$Id: counter.cpp 80826 2008-03-04 14:51:23Z wotte $")
 
 // constructor with a value
 Counter32::Counter32( const unsigned long i):SnmpUInt32(i)

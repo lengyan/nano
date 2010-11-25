@@ -1,4 +1,4 @@
-// $Id: udp_test.cpp 91670 2010-09-08 18:02:26Z johnnyw $
+// $Id: udp_test.cpp 84565 2009-02-23 08:20:39Z johnnyw $
 
 // ============================================================================
 //
@@ -33,6 +33,8 @@
 
 // FUZZ: disable check_for_math_include
 #include <math.h>
+
+ACE_RCSID(UDP, udp_test, "$Id: udp_test.cpp 84565 2009-02-23 08:20:39Z johnnyw $")
 
 // Global variables (evil).
 static const u_short DEFPORT = 5050;

@@ -1,8 +1,8 @@
 // -*- MPC -*-
-// $Id: servers.mpc 91489 2010-08-26 13:08:43Z johnnyw $
+// $Id: servers.mpc 80826 2008-03-04 14:51:23Z wotte $
 
 project(Netsvcs_server) : aceexe, avoids_ace_for_tao {
-  exename  = ace_netsvcs
+  exename  = main
   libs     += netsvcs
   after    += netsvcs
   includes += $(ACE_ROOT)/netsvcs/lib

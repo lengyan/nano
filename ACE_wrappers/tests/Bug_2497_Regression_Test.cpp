@@ -1,7 +1,7 @@
 /**
  * @file Bug_2497_Regression_Test.cpp
  *
- * $Id: Bug_2497_Regression_Test.cpp 91673 2010-09-08 18:49:47Z johnnyw $
+ * $Id: Bug_2497_Regression_Test.cpp 80826 2008-03-04 14:51:23Z wotte $
  *
  * Reproduces the problems reported in bug 2497
  *   http://deuce.doc.wustl.edu/bugzilla/show_bug.cgi?id=2497
@@ -13,6 +13,10 @@
 #include "ace/Module.h"
 #include "ace/Task.h"
 #include "ace/Stream.h"
+
+ACE_RCSID (tests,
+           Bug_2497_Regression_Test,
+           "$Id: Bug_2497_Regression_Test.cpp 80826 2008-03-04 14:51:23Z wotte $")
 
 class Test_Task : public ACE_Task<ACE_SYNCH>
 {

@@ -1,4 +1,4 @@
-// $Id: Log_Wrapper.cpp 91671 2010-09-08 18:39:23Z johnnyw $
+// $Id: Log_Wrapper.cpp 82610 2008-08-12 19:46:36Z parsons $
 
 // client.C
 
@@ -12,7 +12,7 @@
 #include "ace/OS_NS_time.h"
 #include "ace/OS_NS_stdlib.h"
 
-
+ACE_RCSID(Multicast, Log_Wrapper, "$Id: Log_Wrapper.cpp 82610 2008-08-12 19:46:36Z parsons $")
 
 Log_Wrapper::Log_Wrapper (void)
 {

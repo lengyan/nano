@@ -1,4 +1,4 @@
-// $Id: collection.cpp 91671 2010-09-08 18:39:23Z johnnyw $
+// $Id: collection.cpp 82739 2008-09-16 12:20:46Z johnnyw $
 
 // ============================================================================
 //
@@ -26,7 +26,7 @@
 #include "ace/Thread_Manager.h"
 #include "ace/Service_Config.h"
 
-
+ACE_RCSID(collection, collection, "$Id: collection.cpp 82739 2008-09-16 12:20:46Z johnnyw $")
 
 #if defined (ACE_HAS_THREADS) && defined (ACE_HAS_THREADS_LIBRARY)
 

@@ -3,7 +3,7 @@
 	ProjectType="Visual C++"
 	Version="9.00"
 	Name="MEM_Stream_Test"
-	ProjectGUID="{91632B73-FECA-1BAD-2431-8A1100722433}"
+	ProjectGUID="{91632B73-FECA-1BAD-2431-8A11337F6D50}"
 	RootNamespace="MEM_Stream_Test"
 	Keyword="Win32Proj"
 	SignManifests="true"

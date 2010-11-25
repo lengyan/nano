@@ -3,7 +3,7 @@
 /**
  *  @file    main_async.cpp
  *
- *  $Id: main_async.cpp 91673 2010-09-08 18:49:47Z johnnyw $
+ *  $Id: main_async.cpp 90086 2010-05-06 12:02:19Z johnnyw $
  *
  *    Implements an asynchronous timer queue.
  *    This code exercises the Timer_Queue_Test_Driver class using
@@ -19,6 +19,10 @@
 #include "ace/Auto_Ptr.h"
 #include "Driver.h"
 #include "Async_Timer_Queue_Test.h"
+
+ACE_RCSID (Timer_Queue,
+           main_async,
+           "$Id: main_async.cpp 90086 2010-05-06 12:02:19Z johnnyw $")
 
 typedef Timer_Queue_Test_Driver<Async_Timer_Queue *,
                                 Async_Timer_Queue,

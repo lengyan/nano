@@ -1,4 +1,4 @@
-// $Id: test_callback.cpp 91671 2010-09-08 18:39:23Z johnnyw $
+// $Id: test_callback.cpp 80826 2008-03-04 14:51:23Z wotte $
 
 // ============================================================================
 //
@@ -24,7 +24,7 @@
 #include "ace/Log_Record.h"
 #include "ace/OS_NS_stdio.h"
 
-
+ACE_RCSID(Log_Msg, test_callback, "$Id: test_callback.cpp 80826 2008-03-04 14:51:23Z wotte $")
 
 class Logger : public ACE_Log_Msg_Callback
 // Subclassing from ACE_Log_Msg_Callback means that an instance of

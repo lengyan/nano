@@ -1,4 +1,4 @@
-// $Id: Debug_Attributes_Builder.cpp 91257 2010-08-03 11:54:04Z johnnyw $
+// $Id: Debug_Attributes_Builder.cpp 80826 2008-03-04 14:51:23Z wotte $
 
 #include "ACEXML/common/SAXExceptions.h"
 #include "ACEXML/parser/debug_validator/Debug_Attributes_Builder.h"
@@ -36,7 +36,8 @@ ACEXML_Debug_Attribute_Builder::getName (void)
 }
 
 int
-ACEXML_Debug_Attribute_Builder::setAttType (const ATT_TYPE type)
+ACEXML_Debug_Attribute_Builder::setAttType (const ATT_TYPE type
+                                            ACEXML_ENV_ARG_DECL)
 {
   if (this->type_ == ERROR_TYPE)
     {
@@ -48,7 +49,8 @@ ACEXML_Debug_Attribute_Builder::setAttType (const ATT_TYPE type)
 }
 
 int
-ACEXML_Debug_Attribute_Builder::insertList (const ACEXML_Char *n)
+ACEXML_Debug_Attribute_Builder::insertList (const ACEXML_Char *n
+                                            ACEXML_ENV_ARG_DECL_NOT_USED)
 {
   ACEXML_String str (n, 0, 0);
 
@@ -58,7 +60,8 @@ ACEXML_Debug_Attribute_Builder::insertList (const ACEXML_Char *n)
 
 int
 ACEXML_Debug_Attribute_Builder::setDefault (const DEFAULT_DECL def,
-                                            const ACEXML_Char *value)
+                                            const ACEXML_Char *value
+                                            ACEXML_ENV_ARG_DECL_NOT_USED)
 {
   this->default_decl_ = def;
   this->default_value_.set (value, 0);
@@ -156,7 +159,7 @@ ACEXML_Debug_Attributes_Builder::~ACEXML_Debug_Attributes_Builder ()
 int
 ACEXML_Debug_Attributes_Builder::setElement (const ACEXML_Char *,
                                              const ACEXML_Char *,
-                                             const ACEXML_Char *qName)
+                                             const ACEXML_Char *qName ACEXML_ENV_ARG_DECL_NOT_USED)
 {
   this->element_name_.set (qName, 0);
   return 0;
@@ -174,8 +177,7 @@ ACEXML_Debug_Attributes_Builder::getAttribute_Def_Builder ()
 }
 
 int
-ACEXML_Debug_Attributes_Builder::insertAttribute (
-  ACEXML_Attribute_Def_Builder *def)
+ACEXML_Debug_Attributes_Builder::insertAttribute (ACEXML_Attribute_Def_Builder *def ACEXML_ENV_ARG_DECL)
 {
   ACEXML_Attribute_Def_Builder::VAR ptr (def);
 

@@ -3,7 +3,7 @@
 	ProjectType="Visual C++"
 	Version="8.00"
 	Name="Misc_Test_Timestamp"
-	ProjectGUID="{CBDA558A-FECA-1BAD-BE51-8A67A27959F5}"
+	ProjectGUID="{CBDA558A-FECA-1BAD-BE51-8A6791741096}"
 	RootNamespace="Misc_Test_Timestamp"
 	Keyword="Win32Proj"
 	SignManifests="true"

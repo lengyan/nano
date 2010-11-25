@@ -1,4 +1,4 @@
-// $Id: num_threads.cpp 91813 2010-09-17 07:52:52Z johnnyw $
+// $Id: num_threads.cpp 82330 2008-07-15 17:30:06Z parsons $
 
 #include "ace/OS_NS_unistd.h"
 
@@ -83,7 +83,7 @@ ACE_TMAIN (int /* argc */, ACE_TCHAR * /* argv */ [])
   STOP_PERIODIC_MONITORS;
 
   num_threads_monitor->remove_ref ();
-
+  
 #endif /* ACE_HAS_MONITOR_FRAMEWORK==1 */
 
   return 0;

@@ -1,4 +1,4 @@
-// $Id: Registry_Changes.cpp 91671 2010-09-08 18:39:23Z johnnyw $
+// $Id: Registry_Changes.cpp 83697 2008-11-12 18:40:55Z johnnyw $
 //
 // ============================================================================
 //
@@ -27,7 +27,7 @@
 #include "ace/Auto_Event.h"
 #include "ace/OS_NS_unistd.h"
 
-
+ACE_RCSID(WFMO_Reactor, Registry_Changes, "$Id: Registry_Changes.cpp 83697 2008-11-12 18:40:55Z johnnyw $")
 
 static int stop_test = 0;
 static HKEY context_to_monitor = HKEY_CURRENT_USER;

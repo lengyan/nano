@@ -3,7 +3,7 @@
 	ProjectType="Visual C++"
 	Version="9.00"
 	Name="Priorities"
-	ProjectGUID="{5BA1531E-FECA-1BAD-B689-C9110A2960DF}"
+	ProjectGUID="{5BA1531E-FECA-1BAD-B689-C911392429BC}"
 	RootNamespace="Priorities"
 	Keyword="Win32Proj"
 	SignManifests="true"

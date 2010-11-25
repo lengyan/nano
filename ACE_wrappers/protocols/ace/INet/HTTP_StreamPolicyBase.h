@@ -1,4 +1,4 @@
-// $Id: HTTP_StreamPolicyBase.h 91118 2010-07-17 10:29:57Z mcorino $
+// $Id: HTTP_StreamPolicyBase.h 90737 2010-06-21 09:46:14Z mcorino $
 
 /**
  * @file HTTP_StreamPolicyBase.h
@@ -23,7 +23,7 @@ namespace ACE
         /**
         * @class ACE_IOS_StreamPolicyBase
         *
-        * @brief Abstract base for HTTP stream policies.
+        * @brief
         *
         */
         template <class STREAM_BUFFER>

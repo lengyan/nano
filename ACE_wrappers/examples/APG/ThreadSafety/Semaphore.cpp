@@ -1,4 +1,4 @@
-// $Id: Semaphore.cpp 91626 2010-09-07 10:59:20Z johnnyw $
+// $Id: Semaphore.cpp 80826 2008-03-04 14:51:23Z wotte $
 
 #include "ace/config-lite.h"
 #if defined (ACE_HAS_THREADS)
@@ -29,7 +29,7 @@ public:
     csema_.acquire ();
     if (!is_closed ())
       {
-        ACE_Message_Block *mb = 0;
+        ACE_Message_Block *mb;
         this->getq (mb);
         if (mb->msg_type () == ACE_Message_Block::MB_HANGUP)
           {

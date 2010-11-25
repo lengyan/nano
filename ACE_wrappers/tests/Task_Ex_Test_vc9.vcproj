@@ -3,7 +3,7 @@
 	ProjectType="Visual C++"
 	Version="9.00"
 	Name="Task_Ex_Test"
-	ProjectGUID="{494587B7-FECA-1BAD-2431-8A1100722433}"
+	ProjectGUID="{494587B7-FECA-1BAD-2431-8A11337F6D50}"
 	RootNamespace="Task_Ex_Test"
 	Keyword="Win32Proj"
 	SignManifests="true"

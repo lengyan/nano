@@ -1,4 +1,4 @@
-// $Id: CPP-inserver.cpp 91671 2010-09-08 18:39:23Z johnnyw $
+// $Id: CPP-inserver.cpp 80826 2008-03-04 14:51:23Z wotte $
 
 // This example tests the features of the <ACE_SOCK_Acceptor>,
 // <ACE_SOCK_Stream>, and <ACE_Svc_Handler> classes.  If the platform
@@ -13,7 +13,7 @@
 #include "ace/OS_NS_sys_select.h"
 #include "ace/OS_main.h"
 
-
+ACE_RCSID(SOCK_SAP, CPP_inserver, "$Id: CPP-inserver.cpp 80826 2008-03-04 14:51:23Z wotte $")
 
 // Are we running verbosely?
 static int verbose = 0;

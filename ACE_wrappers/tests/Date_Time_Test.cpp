@@ -1,4 +1,4 @@
-// $Id: Date_Time_Test.cpp 91671 2010-09-08 18:39:23Z johnnyw $
+// $Id: Date_Time_Test.cpp 80826 2008-03-04 14:51:23Z wotte $
 
 // ============================================================================
 //
@@ -16,7 +16,7 @@
 #include "ace/Date_Time.h"
 #include "test_config.h"
 
-
+ACE_RCSID(tests, Date_Time_Test, "$Id: Date_Time_Test.cpp 80826 2008-03-04 14:51:23Z wotte $")
 
 static ACE_Date_Time static_dt;   // Making sure it doesn't crash.
 

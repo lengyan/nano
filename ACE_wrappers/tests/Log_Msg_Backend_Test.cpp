@@ -1,4 +1,4 @@
-// $Id: Log_Msg_Backend_Test.cpp 91671 2010-09-08 18:39:23Z johnnyw $
+// $Id: Log_Msg_Backend_Test.cpp 84688 2009-03-03 07:36:36Z johnnyw $
 
 // ============================================================================
 //
@@ -24,7 +24,7 @@
 #include "ace/Log_Msg_Backend.h"
 #include "ace/Log_Record.h"
 
-
+ACE_RCSID(tests, Log_Msg_Backend_Test, "$Id: Log_Msg_Backend_Test.cpp 84688 2009-03-03 07:36:36Z johnnyw $")
 
 class Backend : public ACE_Log_Msg_Backend
 {

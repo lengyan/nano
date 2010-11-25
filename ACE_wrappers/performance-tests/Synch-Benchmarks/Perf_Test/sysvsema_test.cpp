@@ -1,9 +1,11 @@
-// $Id: sysvsema_test.cpp 91670 2010-09-08 18:02:26Z johnnyw $
+// $Id: sysvsema_test.cpp 80826 2008-03-04 14:51:23Z wotte $
 
 #define  ACE_BUILD_SVC_DLL
 #include "ace/SV_Semaphore_Simple.h"
 #include "Performance_Test_Options.h"
 #include "Benchmark_Performance.h"
+
+ACE_RCSID(Synch_Benchmarks, sysvsema_test, "$Id: sysvsema_test.cpp 80826 2008-03-04 14:51:23Z wotte $")
 
 #if defined (ACE_HAS_THREADS)
 

@@ -1,4 +1,4 @@
-// $Id: thread_manager.cpp 91671 2010-09-08 18:39:23Z johnnyw $
+// $Id: thread_manager.cpp 81978 2008-06-16 16:57:12Z sowayaa $
 
 // Test out the group management mechanisms provided by the
 // ACE_Thread_Manager, including the group signal handling, group
@@ -11,7 +11,7 @@
 #include "ace/Thread_Manager.h"
 #include "ace/Signal.h"
 
-
+ACE_RCSID(Threads, thread_manager, "$Id: thread_manager.cpp 81978 2008-06-16 16:57:12Z sowayaa $")
 
 #if defined (ACE_HAS_THREADS)
 

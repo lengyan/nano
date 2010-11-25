@@ -1,4 +1,4 @@
-// $Id: walk.cpp 91670 2010-09-08 18:02:26Z johnnyw $
+// $Id: walk.cpp 84565 2009-02-23 08:20:39Z johnnyw $
 
 // ============================================================================
 //
@@ -38,6 +38,8 @@
 #include "ace/Get_Opt.h"
 // FUZZ: disable check_for_streams_include
 #include "ace/streams.h"
+
+ACE_RCSID(walk, walk, "$Id: walk.cpp 84565 2009-02-23 08:20:39Z johnnyw $")
 
 //
 // SNMPv1 Walk Mib Application

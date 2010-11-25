@@ -1,4 +1,4 @@
-// $Id: Compiler_Features_13_Test.cpp 91813 2010-09-17 07:52:52Z johnnyw $
+// $Id: Compiler_Features_13_Test.cpp 86333 2009-08-03 17:05:19Z coryan $
 
 /**
  * @file
@@ -15,6 +15,8 @@
 #include "test_config.h"
 
 #include <stdexcept>
+
+ACE_RCSID(tests, Compiler_Features_13_Test, "$Id: Compiler_Features_13_Test.cpp 86333 2009-08-03 17:05:19Z coryan $")
 
 namespace
 {
@@ -91,7 +93,7 @@ run_main (int, ACE_TCHAR *[])
                  ACE_TEXT("Wrong value after dynamic_cast, expected %d, got %d\n"),
                  42, d.value));
     }
-
+  
   // Make sure dynamic cast detects invalid casts
   Another a;
   Base * b2 = &a;

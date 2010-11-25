@@ -3,7 +3,7 @@
 	ProjectType="Visual C++"
 	Version="9.00"
 	Name="Event_Server"
-	ProjectGUID="{DE059D3F-FECA-1BAD-0396-8A213C52C5E6}"
+	ProjectGUID="{DE059D3F-FECA-1BAD-0396-8A210C8653D5}"
 	RootNamespace="Event_Server"
 	Keyword="Win32Proj"
 	SignManifests="true"

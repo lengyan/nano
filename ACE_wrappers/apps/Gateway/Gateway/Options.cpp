@@ -1,4 +1,4 @@
-// $Id: Options.cpp 91671 2010-09-08 18:39:23Z johnnyw $
+// $Id: Options.cpp 80826 2008-03-04 14:51:23Z wotte $
 
 #define ACE_BUILD_SVC_DLL
 
@@ -10,7 +10,7 @@
 #include "ace/OS_NS_strings.h"
 #include "ace/os_include/os_fcntl.h"
 
-
+ACE_RCSID(Gateway, Options, "$Id: Options.cpp 80826 2008-03-04 14:51:23Z wotte $")
 
 // Static initialization.
 Options *Options::instance_ = 0;

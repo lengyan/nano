@@ -1,4 +1,4 @@
-// $Id: Logging_Strategy_Test.cpp 91626 2010-09-07 10:59:20Z johnnyw $
+// $Id: Logging_Strategy_Test.cpp 85347 2009-05-15 07:15:26Z johnnyw $
 
 //==========================================================================
 //
@@ -51,6 +51,8 @@
 #include "ace/Auto_Ptr.cpp"
 #include "ace/Get_Opt.h"
 #include "ace/OS_NS_time.h"
+
+ACE_RCSID(tests, Logging_Strategy_Test, "$Id: Logging_Strategy_Test.cpp 85347 2009-05-15 07:15:26Z johnnyw $")
 
 // Considering UNIX OS to be default. On Win32 platforms, the symbols
 // are got form the .exe as one cant have .exe and .dll for the same

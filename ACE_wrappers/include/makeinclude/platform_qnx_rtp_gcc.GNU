@@ -1,13 +1,19 @@
-# $Id: platform_qnx_rtp_gcc.GNU 91626 2010-09-07 10:59:20Z johnnyw $
+# $Id: platform_qnx_rtp_gcc.GNU 80826 2008-03-04 14:51:23Z wotte $
 #
-# QNX/RTP hosted, using GCC
+# QNX/RTP hosted, using gcc-2.95.2
 
 inline ?= 1
 debug ?= 1
 optimize ?= 0
+exceptions ?= 1
 threads ?= 1
-CCFLAGS += -fexceptions
-LDFLAGS += -fexceptions
+ifeq ($(exceptions),1)
+  CCFLAGS += -fexceptions
+  LDFLAGS += -fexceptions
+else
+  CCFLAGS += -fno-exceptions
+  LDFLAGS += -fno-exceptions
+endif # ! exceptions
 
 ifeq ($(inline),1)
   CCFLAGS += -finline-functions
@@ -43,6 +49,3 @@ PRELIB  = @true
 #
 include $(ACE_ROOT)/include/makeinclude/platform_g++_common.GNU
 CCFLAGS += $(CFLAGS) $(TEMPLATES_FLAG)
-
-CFLAGS  += $(FLAGS_C_CC)
-CCFLAGS += $(FLAGS_C_CC) 

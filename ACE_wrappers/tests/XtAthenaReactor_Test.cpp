@@ -1,5 +1,5 @@
 /* -*- C++ -*- */
-// $Id: XtAthenaReactor_Test.cpp 91673 2010-09-08 18:49:47Z johnnyw $
+// $Id: XtAthenaReactor_Test.cpp 84989 2009-03-27 13:23:08Z olli $
 
 // ============================================================================
 //
@@ -27,6 +27,11 @@
 // ============================================================================
 
 #include "test_config.h"
+
+ACE_RCSID (tests,
+           XtAthenaReactor_Test,
+           "$Id: XtAthenaReactor_Test.cpp 84989 2009-03-27 13:23:08Z olli $")
+
 #include "ace/XtReactor/XtReactor.h"
 #include "ace/Event_Handler.h"
 #include "ace/Acceptor.h"

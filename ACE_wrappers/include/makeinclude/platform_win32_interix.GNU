@@ -1,9 +1,10 @@
-# $Id: platform_win32_interix.GNU 91285 2010-08-05 08:29:30Z johnnyw $
+# $Id: platform_win32_interix.GNU 87578 2009-11-16 14:41:47Z olli $
 
 # platform_win32_interix.GNU
 
 versioned_so ?= 0
 
+exceptions ?= 1
 debug ?= 1
 optimize ?= 1
 threads ?= 1

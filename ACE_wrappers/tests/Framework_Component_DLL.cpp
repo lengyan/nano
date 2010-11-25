@@ -1,4 +1,4 @@
-// $Id: Framework_Component_DLL.cpp 91673 2010-09-08 18:49:47Z johnnyw $
+// $Id: Framework_Component_DLL.cpp 80826 2008-03-04 14:51:23Z wotte $
 
 // ============================================================================
 //
@@ -22,6 +22,10 @@
 #include "ace/Service_Config.h"
 #include "ace/Service_Object.h"
 #include "ace/Framework_Component_T.h"
+
+ACE_RCSID (tests,
+           Framework_Component_DLL,
+           "$Id: Framework_Component_DLL.cpp 80826 2008-03-04 14:51:23Z wotte $")
 
 ACE_DLL_UNLOAD_POLICY (Framework_Component_DLL, ACE_DLL_UNLOAD_POLICY_LAZY)
 

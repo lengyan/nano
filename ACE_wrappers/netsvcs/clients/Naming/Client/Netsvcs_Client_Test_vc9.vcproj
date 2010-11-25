@@ -3,7 +3,7 @@
 	ProjectType="Visual C++"
 	Version="9.00"
 	Name="Netsvcs_Client_Test"
-	ProjectGUID="{74F8AB0F-FECA-1BAD-F396-8E392B1F0415}"
+	ProjectGUID="{74F8AB0F-FECA-1BAD-F396-8E3918124D76}"
 	RootNamespace="Netsvcs_Client_Test"
 	Keyword="Win32Proj"
 	SignManifests="true"

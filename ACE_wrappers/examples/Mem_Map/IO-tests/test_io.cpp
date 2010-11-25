@@ -1,4 +1,4 @@
-// $Id: test_io.cpp 91671 2010-09-08 18:39:23Z johnnyw $
+// $Id: test_io.cpp 81978 2008-06-16 16:57:12Z sowayaa $
 
 // Test program for different methods of copying files.
 
@@ -11,7 +11,7 @@
 #include "ace/Log_Msg.h"
 #include "IO_Test.h"
 
-
+ACE_RCSID(IO_tests, test_io, "$Id: test_io.cpp 81978 2008-06-16 16:57:12Z sowayaa $")
 
 #if !defined(_WIN32)
 

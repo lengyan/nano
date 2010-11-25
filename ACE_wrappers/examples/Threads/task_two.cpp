@@ -1,4 +1,4 @@
-// $Id: task_two.cpp 91671 2010-09-08 18:39:23Z johnnyw $
+// $Id: task_two.cpp 80826 2008-03-04 14:51:23Z wotte $
 
 // Exercise more tests for the ACE Tasks.  This test can spawn off
 // zillions of tasks and then wait for them using both polling and the
@@ -10,7 +10,7 @@
 #include "ace/Service_Config.h"
 #include "ace/Atomic_Op.h"
 
-
+ACE_RCSID(Threads, task_two, "$Id: task_two.cpp 80826 2008-03-04 14:51:23Z wotte $")
 
 #if defined (ACE_HAS_THREADS)
 

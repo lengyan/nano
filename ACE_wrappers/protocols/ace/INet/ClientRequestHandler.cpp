@@ -1,4 +1,4 @@
-// $Id: ClientRequestHandler.cpp 91671 2010-09-08 18:39:23Z johnnyw $
+// $Id: ClientRequestHandler.cpp 90737 2010-06-21 09:46:14Z mcorino $
 
 #include "ace/INet/ClientRequestHandler.h"
 #include "ace/Functor_String.h"
@@ -7,7 +7,7 @@
 #include "ace/INet/ClientRequestHandler.inl"
 #endif
 
-
+ACE_RCSID(NET_CLIENT,ACE_INet_ClientRequestHandler,"$Id: ClientRequestHandler.cpp 90737 2010-06-21 09:46:14Z mcorino $")
 
 ACE_BEGIN_VERSIONED_NAMESPACE_DECL
 
@@ -57,13 +57,8 @@ namespace ACE
 
     bool ClientINetRequestHandler::INetConnectionKey::equal (const ConnectionKey& key) const
       {
-        try {
-          const INetConnectionKey& ikey = dynamic_cast<const INetConnectionKey&> (key);
-          return this->host_ == ikey.host_ && this->port_ == ikey.port_;
-        }
-        catch (...) {
-          return false;
-        }
+        const INetConnectionKey& ikey = dynamic_cast<const INetConnectionKey&> (key);
+        return this->host_ == ikey.host_ && this->port_ == ikey.port_;
       }
 
   }

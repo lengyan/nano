@@ -1,5 +1,5 @@
 // -*- C++ -*-
-// $Id: HTBP_ID_Requestor.h 91633 2010-09-07 14:27:13Z johnnyw $
+// $Id: HTBP_ID_Requestor.h 80826 2008-03-04 14:51:23Z wotte $
 
 #ifndef HTID_REQUESTOR_H
 #define HTID_REQUESTOR_H
@@ -7,7 +7,7 @@
 
 #include "HTBP_Export.h"
 #include "ace/SString.h"
-#include "ace/Synch_Traits.h"
+#include "ace/Synch.h"
 
 #if !defined (ACE_LACKS_PRAGMA_ONCE)
 # pragma once

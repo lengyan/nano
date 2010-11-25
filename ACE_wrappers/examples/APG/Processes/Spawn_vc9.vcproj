@@ -3,7 +3,7 @@
 	ProjectType="Visual C++"
 	Version="9.00"
 	Name="Spawn"
-	ProjectGUID="{FF65CC9F-FECA-1BAD-4556-C3316EC87AEE}"
+	ProjectGUID="{FF65CC9F-FECA-1BAD-4556-C3315E1CECDD}"
 	RootNamespace="Spawn"
 	Keyword="Win32Proj"
 	SignManifests="true"

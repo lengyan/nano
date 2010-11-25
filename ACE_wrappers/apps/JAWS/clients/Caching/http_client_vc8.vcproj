@@ -3,7 +3,7 @@
 	ProjectType="Visual C++"
 	Version="8.00"
 	Name="http_client"
-	ProjectGUID="{00CE590F-FECA-1BAD-EF85-EF1657C132F1}"
+	ProjectGUID="{00CE590F-FECA-1BAD-EF85-EF161EA201FC}"
 	RootNamespace="http_client"
 	Keyword="Win32Proj"
 	SignManifests="true"

@@ -1,4 +1,4 @@
-// $Id: TMQ_Server.cpp 91671 2010-09-08 18:39:23Z johnnyw $
+// $Id: TMQ_Server.cpp 80826 2008-03-04 14:51:23Z wotte $
 
 #include "ace/Signal.h"
 #include "ace/Typed_SV_Message_Queue.h"
@@ -13,7 +13,7 @@
 #include "ace/OS_NS_stdlib.h"
 #include "ace/OS_NS_unistd.h"
 
-
+ACE_RCSID(SV_Message_Queues, TMQ_Server, "$Id: TMQ_Server.cpp 80826 2008-03-04 14:51:23Z wotte $")
 
 #if defined (ACE_HAS_SYSV_IPC) && !defined(ACE_LACKS_SYSV_SHMEM)
 

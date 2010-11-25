@@ -3,7 +3,7 @@
 	ProjectType="Visual C++"
 	Version="9.00"
 	Name="Thread_Pool_Reactor_Test"
-	ProjectGUID="{880D1570-FECA-1BAD-2431-8A1100722433}"
+	ProjectGUID="{880D1570-FECA-1BAD-2431-8A11337F6D50}"
 	RootNamespace="Thread_Pool_Reactor_Test"
 	Keyword="Win32Proj"
 	SignManifests="true"

@@ -3,7 +3,7 @@
 	ProjectType="Visual C++"
 	Version="8.00"
 	Name="blobby"
-	ProjectGUID="{0041BCFE-FECA-1BAD-945B-8C296561D98E}"
+	ProjectGUID="{0041BCFE-FECA-1BAD-945B-8C29B1F7EABE}"
 	RootNamespace="blobby"
 	Keyword="Win32Proj"
 	SignManifests="true"

@@ -1,4 +1,4 @@
-// $Id: test_hash_map_manager.cpp 91671 2010-09-08 18:39:23Z johnnyw $
+// $Id: test_hash_map_manager.cpp 80826 2008-03-04 14:51:23Z wotte $
 
 #include "ace/OS_main.h"
 #include "ace/Hash_Map_Manager.h"
@@ -9,7 +9,7 @@
 #include "ace/OS_NS_stdio.h"
 #include "ace/os_include/os_assert.h"
 
-
+ACE_RCSID(Map_Manager, test_hash_map_manager, "$Id: test_hash_map_manager.cpp 80826 2008-03-04 14:51:23Z wotte $")
 
 const int MAX_KEY_LEN = 1000;
 

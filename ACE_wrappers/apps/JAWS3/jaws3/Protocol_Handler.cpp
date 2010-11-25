@@ -1,4 +1,4 @@
-// $Id: Protocol_Handler.cpp 91813 2010-09-17 07:52:52Z johnnyw $
+// $Id: Protocol_Handler.cpp 80826 2008-03-04 14:51:23Z wotte $
 
 #ifndef JAWS_BUILD_DLL
 #define JAWS_BUILD_DLL
@@ -29,7 +29,7 @@ JAWS_Protocol_Handler::~JAWS_Protocol_Handler (void)
 }
 
 
-int
+int 
 JAWS_Protocol_Handler::service (void)
 {
   if (this->state_ == 0)

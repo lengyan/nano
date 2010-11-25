@@ -1,4 +1,4 @@
-// $Id: synch_driver.cpp 91670 2010-09-08 18:02:26Z johnnyw $
+// $Id: synch_driver.cpp 80826 2008-03-04 14:51:23Z wotte $
 
 // Driver program that measures the performance of synchronization
 // mechanisms provided by ACE and the underlying OS.
@@ -7,6 +7,8 @@
 #include "ace/Service_Config.h"
 #include "ace/Service_Repository.h"
 #include "Synch_Lib/Benchmark_Base.h"
+
+ACE_RCSID(Synch_Benchmarks, synch_driver, "$Id: synch_driver.cpp 80826 2008-03-04 14:51:23Z wotte $")
 
 #if defined (ACE_HAS_THREADS)
 int

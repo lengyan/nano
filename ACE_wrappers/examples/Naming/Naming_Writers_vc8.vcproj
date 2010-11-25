@@ -3,7 +3,7 @@
 	ProjectType="Visual C++"
 	Version="8.00"
 	Name="Naming_Writers"
-	ProjectGUID="{30D936D6-FECA-1BAD-BF85-8EE479601925}"
+	ProjectGUID="{30D936D6-FECA-1BAD-BF85-8EE474297A16}"
 	RootNamespace="Naming_Writers"
 	Keyword="Win32Proj"
 	SignManifests="true"

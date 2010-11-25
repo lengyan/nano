@@ -1,10 +1,12 @@
-// $Id: Connection_Handler.cpp 91670 2010-09-08 18:02:26Z johnnyw $
+// $Id: Connection_Handler.cpp 81993 2008-06-16 20:26:16Z sowayaa $
 
 #define ACE_BUILD_SVC_DLL
 
 #include "ace/OS_NS_string.h"
 #include "Event_Channel.h"
 #include "Concrete_Connection_Handlers.h"
+
+ACE_RCSID(Gateway, Connection_Handler, "$Id: Connection_Handler.cpp 81993 2008-06-16 20:26:16Z sowayaa $")
 
 Event_Channel *
 Connection_Handler::event_channel (void) const

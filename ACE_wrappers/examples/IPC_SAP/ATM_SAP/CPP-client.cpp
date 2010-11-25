@@ -1,4 +1,4 @@
-// $Id: CPP-client.cpp 91671 2010-09-08 18:39:23Z johnnyw $
+// $Id: CPP-client.cpp 84565 2009-02-23 08:20:39Z johnnyw $
 
 #include "ace/OS_main.h"
 #include "ace/ATM_Connector.h"
@@ -6,7 +6,7 @@
 #include "ace/High_Res_Timer.h"
 #include "ace/Log_Msg.h"
 
-
+ACE_RCSID(ATM_SAP, CPP_client, "$Id: CPP-client.cpp 84565 2009-02-23 08:20:39Z johnnyw $")
 
 #if defined (ACE_HAS_ATM)
 

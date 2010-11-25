@@ -1,11 +1,11 @@
-// $Id: Pipeline_Handler_T.cpp 91671 2010-09-08 18:39:23Z johnnyw $
+// $Id: Pipeline_Handler_T.cpp 80826 2008-03-04 14:51:23Z wotte $
 
 #ifndef JAWS_PIPELINE_HANDLER_T_CPP
 #define JAWS_PIPELINE_HANDLER_T_CPP
 
 #include "JAWS/Pipeline_Handler_T.h"
 
-
+ACE_RCSID(JAWS, Pipeline_Handler_T, "$Id: Pipeline_Handler_T.cpp 80826 2008-03-04 14:51:23Z wotte $")
 
 template <class TYPE>
 JAWS_Pipeline_Abstract_Handler<TYPE>::JAWS_Pipeline_Abstract_Handler (void)

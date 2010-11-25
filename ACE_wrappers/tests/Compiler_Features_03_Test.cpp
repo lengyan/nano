@@ -1,4 +1,4 @@
-// $Id: Compiler_Features_03_Test.cpp 91626 2010-09-07 10:59:20Z johnnyw $
+// $Id: Compiler_Features_03_Test.cpp 86333 2009-08-03 17:05:19Z coryan $
 
 /**
  * @file
@@ -17,6 +17,8 @@
 // The first part of the test is to compile this line.  If the program
 // does not compile the platform is just too broken.
 #include <vector>
+
+ACE_RCSID(tests, Compiler_Features_03_Test, "$Id: Compiler_Features_03_Test.cpp 86333 2009-08-03 17:05:19Z coryan $")
 
 int
 run_main (int, ACE_TCHAR *[])

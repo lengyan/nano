@@ -1,7 +1,8 @@
-// $Id: HTTP_Service_Handler.cpp 91730 2010-09-13 09:31:11Z johnnyw $
+// $Id: HTTP_Service_Handler.cpp 82739 2008-09-16 12:20:46Z johnnyw $
 
 #define ACE_BUILD_SVC_DLL
 
+#include "ace/OS.h"
 #include "ace/Get_Opt.h"
 
 #include "jaws3/Concurrency.h"

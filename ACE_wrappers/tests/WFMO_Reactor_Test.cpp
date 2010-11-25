@@ -1,4 +1,4 @@
-// $Id: WFMO_Reactor_Test.cpp 91671 2010-09-08 18:39:23Z johnnyw $
+// $Id: WFMO_Reactor_Test.cpp 90163 2010-05-18 21:42:20Z mitza $
 
 // ============================================================================
 //
@@ -22,7 +22,7 @@
 #include "ace/WFMO_Reactor.h"
 #include "ace/Pipe.h"
 
-
+ACE_RCSID(tests, WFMO_Reactor_Test, "$Id: WFMO_Reactor_Test.cpp 90163 2010-05-18 21:42:20Z mitza $")
 
 #if defined (ACE_WIN32)
 

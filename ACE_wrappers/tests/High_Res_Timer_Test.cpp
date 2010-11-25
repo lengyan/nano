@@ -1,4 +1,4 @@
-// $Id: High_Res_Timer_Test.cpp 91671 2010-09-08 18:39:23Z johnnyw $
+// $Id: High_Res_Timer_Test.cpp 89673 2010-03-29 07:23:46Z johnnyw $
 //============================================================================
 //
 // = LIBRARY
@@ -22,7 +22,7 @@
 #include "ace/Get_Opt.h"
 #include "ace/OS_NS_unistd.h"
 
-
+ACE_RCSID(tests, High_Res_Timer_Test, "$Id: High_Res_Timer_Test.cpp 89673 2010-03-29 07:23:46Z johnnyw $")
 
 static
 u_int

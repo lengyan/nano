@@ -5,7 +5,7 @@
 /**
  *  @file test_config.h
  *
- *  $Id: test_config.h 91730 2010-09-13 09:31:11Z johnnyw $
+ *  $Id: test_config.h 80826 2008-03-04 14:51:23Z wotte $
  *
  *   This file factors out common macros and other utilities used by the
  *   ACE automated regression tests.
@@ -32,6 +32,7 @@
 
 // This first #undef protects against command-line definitions.
 #undef ACE_NDEBUG
+#include "ace/OS.h"
 #include "ace/streams.h"
 #include "ace/Singleton.h"
 #include "ace/Synch.h"

@@ -1,4 +1,4 @@
-// $Id: HTTP_StreamPolicy.h 91118 2010-07-17 10:29:57Z mcorino $
+// $Id: HTTP_StreamPolicy.h 90737 2010-06-21 09:46:14Z mcorino $
 
 /**
  * @file HTTP_StreamPolicy.h
@@ -25,8 +25,7 @@ namespace ACE
         /**
         * @class ACE_HTTP_FixedLengthStreamPolicy
         *
-        * @brief Implements stream policy for fixed length data stream
-        *   in HTTP response or request.
+        * @brief
         *
         */
         template <class STREAM_BUFFER>
@@ -54,8 +53,7 @@ namespace ACE
         /**
         * @class ACE_HTTP_ChunkedTransferStreamPolicy
         *
-        * @brief Implements stream policy for chunked data streams
-        *   in HTTP response or request.
+        * @brief
         *
         */
         template <class STREAM_BUFFER>

@@ -3,7 +3,7 @@
 	ProjectType="Visual C++"
 	Version="9.00"
 	Name="Pipe_Test"
-	ProjectGUID="{1B2502FA-FECA-1BAD-2431-8A1100722433}"
+	ProjectGUID="{1B2502FA-FECA-1BAD-2431-8A11337F6D50}"
 	RootNamespace="Pipe_Test"
 	Keyword="Win32Proj"
 	SignManifests="true"

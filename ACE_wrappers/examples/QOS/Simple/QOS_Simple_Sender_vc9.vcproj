@@ -3,7 +3,7 @@
 	ProjectType="Visual C++"
 	Version="9.00"
 	Name="QOS_Simple_Sender"
-	ProjectGUID="{DE85F655-FECA-1BAD-A3FD-E03CBCFDDE18}"
+	ProjectGUID="{DE85F655-FECA-1BAD-A3FD-E03CDFCED351}"
 	RootNamespace="QOS_Simple_Sender"
 	Keyword="Win32Proj"
 	SignManifests="true"

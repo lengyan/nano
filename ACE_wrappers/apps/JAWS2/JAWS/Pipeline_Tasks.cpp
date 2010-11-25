@@ -1,4 +1,4 @@
-// $Id: Pipeline_Tasks.cpp 91671 2010-09-08 18:39:23Z johnnyw $
+// $Id: Pipeline_Tasks.cpp 85415 2009-05-22 07:26:32Z johnnyw $
 
 #include "JAWS/Jaws_IO.h"
 #include "JAWS/Pipeline_Tasks.h"
@@ -7,7 +7,7 @@
 #include "JAWS/IO_Handler.h"
 #include "JAWS/Policy.h"
 
-
+ACE_RCSID(JAWS, Pipeline_Tasks, "$Id: Pipeline_Tasks.cpp 85415 2009-05-22 07:26:32Z johnnyw $")
 
 JAWS_Pipeline_Handler::JAWS_Pipeline_Handler (void)
   : policy_ (0)

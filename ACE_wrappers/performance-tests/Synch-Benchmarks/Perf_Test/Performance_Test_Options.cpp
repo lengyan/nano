@@ -1,8 +1,10 @@
-// $Id: Performance_Test_Options.cpp 91670 2010-09-08 18:02:26Z johnnyw $
+// $Id: Performance_Test_Options.cpp 84565 2009-02-23 08:20:39Z johnnyw $
 
 #define  ACE_BUILD_SVC_DLL
 #include "Performance_Test_Options.h"
 #include "ace/OS_NS_strings.h"
+
+ACE_RCSID(Synch_Benchmarks, Performance_Test_Options, "$Id: Performance_Test_Options.cpp 84565 2009-02-23 08:20:39Z johnnyw $")
 
 #if defined (ACE_HAS_THREADS)
 // Manages the options.

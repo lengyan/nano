@@ -1,4 +1,4 @@
-// $Id: Multicast_Test_IPV6.cpp 91626 2010-09-07 10:59:20Z johnnyw $
+// $Id: Multicast_Test_IPV6.cpp 90163 2010-05-18 21:42:20Z mitza $
 // ============================================================================
 //FUZZ: disable check_for_lack_ACE_OS
 /**
@@ -560,7 +560,7 @@ MCT_Event_Handler::join (const ACE_INET_Addr &mcast_addr,
                       -1);
   ACE_DEBUG ((LM_DEBUG, ACE_TEXT ("Joined %C\n"), buf));
 
-  ACE_CString *str = 0;
+  ACE_CString *str;
   ACE_NEW_RETURN (str, ACE_CString (buf), -1);
   this->address_vec_.push_back (str);
   return 0;

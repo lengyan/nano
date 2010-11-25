@@ -3,7 +3,7 @@
 	ProjectType="Visual C++"
 	Version="8.00"
 	Name="ASX_CCM_App_Server"
-	ProjectGUID="{F4F41488-FECA-1BAD-F21F-3D1BDD5F2C60}"
+	ProjectGUID="{F4F41488-FECA-1BAD-F21F-3D1BEE6FF8F6}"
 	RootNamespace="ASX_CCM_App_Server"
 	Keyword="Win32Proj"
 	SignManifests="true"

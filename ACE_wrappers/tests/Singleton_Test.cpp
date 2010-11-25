@@ -1,4 +1,4 @@
-// $Id: Singleton_Test.cpp 91671 2010-09-08 18:39:23Z johnnyw $
+// $Id: Singleton_Test.cpp 90163 2010-05-18 21:42:20Z mitza $
 
 // ============================================================================
 //
@@ -19,7 +19,7 @@
 #include "test_config.h"
 #include "ace/Singleton.h"
 
-
+ACE_RCSID(tests, Singleton_Test, "$Id: Singleton_Test.cpp 90163 2010-05-18 21:42:20Z mitza $")
 
 int
 run_main (int, ACE_TCHAR *[])

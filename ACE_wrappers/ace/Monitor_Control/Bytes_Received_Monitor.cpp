@@ -1,4 +1,4 @@
-// $Id: Bytes_Received_Monitor.cpp 91813 2010-09-17 07:52:52Z johnnyw $
+// $Id: Bytes_Received_Monitor.cpp 86518 2009-08-18 12:30:56Z olli $
 
 #include "ace/Monitor_Control/Bytes_Received_Monitor.h"
 
@@ -35,7 +35,7 @@ namespace ACE
     Bytes_Received_Monitor::update (void)
     {
       this->update_i ();
-
+      
       /// On some platforms, value_ is an ACE_UINT64.
       this->receive (static_cast<double> (this->value_));
     }
@@ -45,7 +45,7 @@ namespace ACE
     {
       return Bytes_Received_Monitor::default_name_;
     }
-
+    
     void
     Bytes_Received_Monitor::clear_i (void)
     {

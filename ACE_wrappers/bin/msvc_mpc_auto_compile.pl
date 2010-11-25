@@ -2,7 +2,7 @@ eval '(exit $?0)' && eval 'exec perl -S $0 ${1+"$@"}'
     & eval 'exec perl -S $0 $argv:q'
     if 0;
 
-# $Id: msvc_mpc_auto_compile.pl 91938 2010-09-22 18:43:23Z wotte $
+# $Id: msvc_mpc_auto_compile.pl 83250 2008-10-15 09:47:41Z johnnyw $
 #   Win32 auto_compile script.
 
 use File::Find;
@@ -32,8 +32,6 @@ else {
                   "$ACE_ROOT\\TAO\\tests");
 
 @orbsvcs_core_dirs = ("$ACE_ROOT\\TAO\\orbsvcs\\orbsvcs");
-
-@dance_core_dirs = ("$ACE_ROOT\\TAO\\DAnCE");
 
 @ciao_core_dirs = ("$ACE_ROOT\\TAO\\CIAO");
 
@@ -160,7 +158,6 @@ sub Build_All ()
     push @directories, @ace_core_dirs;
     push @directories, @tao_core_dirs;
     push @directories, @orbsvcs_core_dirs;
-    push @directories, @dance_core_dirs;
     push @directories, @ciao_core_dirs;
 
     print STDERR "First pass (libraries)\n" if ($print_status == 1);
@@ -222,7 +219,6 @@ sub Build_All_VC7 ()
     push @directories, @ace_core_dirs;
     push @directories, @tao_core_dirs;
     push @directories, @orbsvcs_core_dirs;
-    push @directories, @dance_core_dirs;
     push @directories, @ciao_core_dirs;
 
     print STDERR "First pass (libraries)\n" if ($print_status == 1);
@@ -307,7 +303,6 @@ while ( $#ARGV >= 0  &&  $ARGV[0] =~ /^(-|\/)/ )
         push @directories, @ace_core_dirs;
         push @directories, @tao_core_dirs;
         push @directories, @orbsvcs_core_dirs;
-        push @directories, @dance_core_dirs;
         push @directories, @ciao_core_dirs;
     }
     elsif ($ARGV[0] =~ '-ALL') {# Build the CIAO and related

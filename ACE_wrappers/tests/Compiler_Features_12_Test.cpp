@@ -1,4 +1,4 @@
-// $Id: Compiler_Features_12_Test.cpp 91671 2010-09-08 18:39:23Z johnnyw $
+// $Id: Compiler_Features_12_Test.cpp 86335 2009-08-03 20:45:13Z olli $
 
 /**
  * @file
@@ -14,7 +14,7 @@
 
 #include "test_config.h"
 
-
+ACE_RCSID(tests, Compiler_Features_12_Test, "$Id: Compiler_Features_12_Test.cpp 86335 2009-08-03 20:45:13Z olli $")
 
 template<typename T>
 struct Pair

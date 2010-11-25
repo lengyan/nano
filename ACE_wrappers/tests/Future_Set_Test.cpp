@@ -1,4 +1,4 @@
-// $Id: Future_Set_Test.cpp 91671 2010-09-08 18:39:23Z johnnyw $
+// $Id: Future_Set_Test.cpp 88128 2009-12-14 02:17:22Z schmidt $
 
 // ============================================================================
 //
@@ -36,7 +36,7 @@
 #include "ace/Atomic_Op.h"
 #include "ace/Null_Mutex.h"
 
-
+ACE_RCSID(tests, Future_Set_Test, "$Id: Future_Set_Test.cpp 88128 2009-12-14 02:17:22Z schmidt $")
 
 #if defined (ACE_HAS_THREADS)
 

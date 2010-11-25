@@ -1,4 +1,4 @@
-// $Id: RequestHandler.h 91118 2010-07-17 10:29:57Z mcorino $
+// $Id: RequestHandler.h 90737 2010-06-21 09:46:14Z mcorino $
 
 /**
  * @file RequestHandler.h
@@ -25,7 +25,7 @@ namespace ACE
         /**
         * @class ACE_INet_RequestHandler
         *
-        * @brief Abstract base for request handlers.
+        * @brief
         *
         */
         class ACE_INET_Export RequestHandler

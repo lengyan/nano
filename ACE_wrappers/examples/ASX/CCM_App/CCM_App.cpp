@@ -1,4 +1,4 @@
-// $Id: CCM_App.cpp 91671 2010-09-08 18:39:23Z johnnyw $
+// $Id: CCM_App.cpp 81239 2008-04-04 22:28:48Z iliyan $
 
 #define ACE_BUILD_SVC_DLL
 
@@ -7,7 +7,7 @@
 #include "ace/Module.h"
 #include "ace/svc_export.h"
 
-
+ACE_RCSID(CCM_App, CCM_App, "$Id: CCM_App.cpp 81239 2008-04-04 22:28:48Z iliyan $")
 
 typedef ACE_Task<ACE_SYNCH> MT_Task;
 typedef ACE_Stream<ACE_SYNCH> MT_Stream;

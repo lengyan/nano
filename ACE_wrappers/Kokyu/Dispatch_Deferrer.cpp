@@ -1,4 +1,4 @@
-// $Id: Dispatch_Deferrer.cpp 91670 2010-09-08 18:02:26Z johnnyw $
+// $Id: Dispatch_Deferrer.cpp 80826 2008-03-04 14:51:23Z wotte $
 
 #include "ace/Sched_Params.h"
 #include "Dispatch_Deferrer.h"
@@ -11,6 +11,7 @@
 #include "kokyu_config.h"
 #include "kokyu_dsui_families.h"
 #include <dsui.h>
+ACE_RCSID(Kokyu, Dispatch_Deferrer, "$Id: Dispatch_Deferrer.cpp 80826 2008-03-04 14:51:23Z wotte $")
 
 namespace Kokyu
 {
@@ -67,7 +68,7 @@ Dispatch_Deferrer::handle_timeout (const ACE_Time_Value &,
   //get all expired Dispatch_Queue_Items
   ACE_Message_Block *begin,*end;
   this->rgq_.remove_messages(begin,end,
-                             (u_int) (ACE_Dynamic_Message_Strategy::LATE |
+                             (u_int) (ACE_Dynamic_Message_Strategy::LATE | 
                                       ACE_Dynamic_Message_Strategy::BEYOND_LATE));
 
   //dispatch them back to Dispatcher_Impl

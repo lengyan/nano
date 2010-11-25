@@ -1,4 +1,4 @@
-// $Id: HTTP_10_Parse.cpp 91671 2010-09-08 18:39:23Z johnnyw $
+// $Id: HTTP_10_Parse.cpp 80826 2008-03-04 14:51:23Z wotte $
 
 #include "HTTP_10.h"
 
@@ -9,7 +9,7 @@
 
 #include "HTTP_10_Request.h"
 
-
+ACE_RCSID(PROTOTYPE, HTTP_10_Parse, "$Id: HTTP_10_Parse.cpp 80826 2008-03-04 14:51:23Z wotte $")
 
 // --------------- PARSE TASK ----------------------
 

@@ -3,7 +3,7 @@
 	ProjectType="Visual C++"
 	Version="8.00"
 	Name="UPIPE_SAP_Ex2"
-	ProjectGUID="{F6EB06EB-FECA-1BAD-A712-C623708DC272}"
+	ProjectGUID="{F6EB06EB-FECA-1BAD-A712-C623E6BEF2A6}"
 	RootNamespace="UPIPE_SAP_Ex2"
 	Keyword="Win32Proj"
 	SignManifests="true"

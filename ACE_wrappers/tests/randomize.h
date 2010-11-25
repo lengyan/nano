@@ -4,7 +4,7 @@
 /**
  * @file randomize.h
  *
- * $Id: randomize.h 91743 2010-09-13 18:24:51Z johnnyw $
+ * $Id: randomize.h 80826 2008-03-04 14:51:23Z wotte $
  *
  * Randomize the contents of an array.
  *
@@ -78,7 +78,7 @@ namespace
     // The array.
     T * const array_;
 
-    // Factor out the constant coefficient.
+    // Factor out the constant coefficient.  
     double const coefficient_;
 
     // Random number generator seed value.

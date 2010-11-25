@@ -1,4 +1,4 @@
-// $Id: HTTP_IOStream.cpp 91671 2010-09-08 18:39:23Z johnnyw $
+// $Id: HTTP_IOStream.cpp 90737 2010-06-21 09:46:14Z mcorino $
 
 #include "ace/INet/HTTP_IOStream.h"
 #include "ace/INet/IOS_util.h"
@@ -9,7 +9,7 @@
 
 #include "ace/Truncate.h"
 
-
+ACE_RCSID(NET_CLIENT,ACE_HTTP_IOStream,"$Id: HTTP_IOStream.cpp 90737 2010-06-21 09:46:14Z mcorino $")
 
 ACE_BEGIN_VERSIONED_NAMESPACE_DECL
 

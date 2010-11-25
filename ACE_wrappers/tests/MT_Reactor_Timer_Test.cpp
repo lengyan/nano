@@ -1,4 +1,4 @@
-// $Id: MT_Reactor_Timer_Test.cpp 91671 2010-09-08 18:39:23Z johnnyw $
+// $Id: MT_Reactor_Timer_Test.cpp 85321 2009-05-12 08:31:31Z johnnyw $
 
 // ============================================================================
 //
@@ -24,7 +24,7 @@
 #include "ace/ACE.h"
 #include "ace/OS_NS_unistd.h"
 
-
+ACE_RCSID(tests, MT_Reactor_Timer_Test, "$Id: MT_Reactor_Timer_Test.cpp 85321 2009-05-12 08:31:31Z johnnyw $")
 
 #if defined (ACE_HAS_THREADS)
 

@@ -1,7 +1,11 @@
-// $Id: test_event_handler_t.cpp 91685 2010-09-09 09:35:14Z johnnyw $
+// $Id: test_event_handler_t.cpp 80826 2008-03-04 14:51:23Z wotte $
 
 #include "ace/Event_Handler_T.h"
 #include "ace/Log_Msg.h"
+
+ACE_RCSID(Misc, test_event_handler_t, "$Id: test_event_handler_t.cpp 80826 2008-03-04 14:51:23Z wotte $")
+
+#if defined (ACE_HAS_TEMPLATE_TYPEDEFS)
 
 class ACE_Test_Sig_Handler
 {
@@ -37,3 +41,11 @@ ACE_TMAIN (int, ACE_TCHAR *[])
                  &ACE_Test_Sig_Handler::signal_handler);
   return 0;
 }
+
+#else
+int
+ACE_TMAIN (int, ACE_TCHAR *[])
+{
+  ACE_ERROR_RETURN ((LM_ERROR, "your platform does not support template typedefs\n"), 1);
+}
+#endif /* ACE_HAS_TEMPLATE_TYPEDEFS */

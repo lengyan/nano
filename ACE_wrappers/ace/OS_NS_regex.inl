@@ -1,5 +1,6 @@
 // -*- C++ -*-
-// $Id: OS_NS_regex.inl 91781 2010-09-15 12:49:15Z johnnyw $
+//
+// $Id: OS_NS_regex.inl 80826 2008-03-04 14:51:23Z wotte $
 
 #include "ace/OS_NS_errno.h"
 #include "ace/os_include/os_regex.h"

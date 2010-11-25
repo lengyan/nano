@@ -1,4 +1,4 @@
-// $Id: FTP_Request.cpp 91671 2010-09-08 18:39:23Z johnnyw $
+// $Id: FTP_Request.cpp 90891 2010-06-28 09:55:39Z mcorino $
 
 #include "ace/String_Base.h"
 #include "ace/OS_NS_ctype.h"
@@ -11,7 +11,7 @@
 #include "ace/INet/INet_Log.h"
 #include "ace/INet/String_IOStream.h"
 
-
+ACE_RCSID(NET_CLIENT,ACE_FTP_Request,"$Id: FTP_Request.cpp 90891 2010-06-28 09:55:39Z mcorino $")
 
 ACE_BEGIN_VERSIONED_NAMESPACE_DECL
 

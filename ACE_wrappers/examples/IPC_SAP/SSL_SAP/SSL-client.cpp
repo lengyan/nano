@@ -1,4 +1,4 @@
-// $Id: SSL-client.cpp 91671 2010-09-08 18:39:23Z johnnyw $
+// $Id: SSL-client.cpp 82610 2008-08-12 19:46:36Z parsons $
 
 // This tests the features of the <ACE_SSL_SOCK_Connector> and
 // <ACE_SSL_SOCK_Stream> classes.  In addition, it can be used to test the
@@ -19,7 +19,7 @@
 
 #include "SSL-client.h"
 
-
+ACE_RCSID(SSL_SAP, SSL_client, "$Id: SSL-client.cpp 82610 2008-08-12 19:46:36Z parsons $")
 
 Options::Options (void)
   : host_ (ACE_DEFAULT_SERVER_HOST),
@@ -63,7 +63,7 @@ Options::init (void)
   // Copy the length into the beginning of the message.
   ACE_UINT32 length =
     ntohl (ACE_Utils::truncate_cast<u_long> (this->message_len_));
-
+    
   ACE_OS::memcpy ((void *) this->message_buf_,
                   (void *) &length,
                   sizeof length);

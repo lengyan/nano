@@ -1,4 +1,4 @@
-// $Id: Get_Opt_Test.cpp 91671 2010-09-08 18:39:23Z johnnyw $
+// $Id: Get_Opt_Test.cpp 90163 2010-05-18 21:42:20Z mitza $
 
 // ============================================================================
 //
@@ -21,7 +21,7 @@
 #include "ace/OS_NS_stdlib.h"
 #include "test_config.h"
 
-
+ACE_RCSID(tests, Get_Opt_Test, "$Id: Get_Opt_Test.cpp 90163 2010-05-18 21:42:20Z mitza $")
 
 /*
  * This is the heart of the test. It sets up the optstring, instantiates

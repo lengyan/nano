@@ -1,4 +1,4 @@
-// $Id: transaction.cpp 91670 2010-09-08 18:02:26Z johnnyw $
+// $Id: transaction.cpp 80826 2008-03-04 14:51:23Z wotte $
 
 // ============================================================================
 //
@@ -19,6 +19,8 @@
 #include "ace/Reactor.h"
 #include "asnmp/transaction.h"
 #include "ace/OS_NS_string.h"
+
+ACE_RCSID(asnmp, transaction, "$Id: transaction.cpp 80826 2008-03-04 14:51:23Z wotte $")
 
 // pre: pdu, target report  valid() == 1
 // post: pdu sent out over the wire

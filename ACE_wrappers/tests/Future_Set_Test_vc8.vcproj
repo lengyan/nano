@@ -3,7 +3,7 @@
 	ProjectType="Visual C++"
 	Version="8.00"
 	Name="Future_Set_Test"
-	ProjectGUID="{3960CDA9-FECA-1BAD-2431-8A1100722433}"
+	ProjectGUID="{3960CDA9-FECA-1BAD-2431-8A11337F6D50}"
 	RootNamespace="Future_Set_Test"
 	Keyword="Win32Proj"
 	SignManifests="true"

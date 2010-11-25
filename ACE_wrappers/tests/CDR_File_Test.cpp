@@ -1,4 +1,4 @@
-// $Id: CDR_File_Test.cpp 92176 2010-10-08 07:00:00Z olli $
+// $Id: CDR_File_Test.cpp 83595 2008-11-06 19:26:36Z johnnyw $
 
 // ============================================================================
 //
@@ -32,7 +32,7 @@
 // FUZZ: disable check_for_streams_include
 #include "ace/streams.h"
 
-
+ACE_RCSID(tests, CDR_File_Test, "$Id: CDR_File_Test.cpp 83595 2008-11-06 19:26:36Z johnnyw $")
 
 #if !defined (ACE_LACKS_IOSTREAM_TOTALLY)
 
@@ -185,9 +185,9 @@ CDR_Test::operator == (const CDR_Test &rhs) const
     return false;
   if (this->word8_ != rhs.word8_)
     return false;
-  if (!ACE::is_equal (this->fpoint_, rhs.fpoint_))
+  if (this->fpoint_ != rhs.fpoint_)
     return false;
-  if (!ACE::is_equal (this->dprec_, rhs.dprec_))
+  if (this->dprec_ != rhs.dprec_)
     return false;
   return true;
 }

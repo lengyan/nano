@@ -1,4 +1,4 @@
-// $Id: test_read_buffer.cpp 91673 2010-09-08 18:49:47Z johnnyw $
+// $Id: test_read_buffer.cpp 80826 2008-03-04 14:51:23Z wotte $
 
 #include "ace/OS_main.h"
 #include "ace/OS_NS_fcntl.h"
@@ -7,6 +7,11 @@
 #include "ace/Service_Config.h"
 #include "ace/Read_Buffer.h"
 #include "ace/OS_NS_stdlib.h"
+
+
+ACE_RCSID (Misc,
+           test_read_buffer,
+           "$Id: test_read_buffer.cpp 80826 2008-03-04 14:51:23Z wotte $")
 
 int
 ACE_TMAIN (int argc, ACE_TCHAR *argv[])

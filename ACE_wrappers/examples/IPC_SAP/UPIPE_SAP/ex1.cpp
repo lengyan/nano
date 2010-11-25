@@ -1,4 +1,4 @@
-// $Id: ex1.cpp 91671 2010-09-08 18:39:23Z johnnyw $
+// $Id: ex1.cpp 80826 2008-03-04 14:51:23Z wotte $
 
 // ============================================================================
 //
@@ -23,7 +23,7 @@
 #include "ace/UPIPE_Acceptor.h"
 #include "ace/UPIPE_Connector.h"
 
-
+ACE_RCSID(UPIPE_SAP, ex1, "$Id: ex1.cpp 80826 2008-03-04 14:51:23Z wotte $")
 
 #if defined (ACE_HAS_THREADS)
 
@@ -45,7 +45,7 @@ peer1 (void *)
     ACE_ERROR ((LM_ERROR,
                 "(%t) peer1 ACE_UPIPE_Connector failed\n"));
 
-  ACE_Message_Block *mb = 0;
+  ACE_Message_Block *mb;
   ACE_NEW_RETURN (mb,
                   ACE_Message_Block (20),
                   0);

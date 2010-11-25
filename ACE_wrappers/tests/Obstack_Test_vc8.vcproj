@@ -3,7 +3,7 @@
 	ProjectType="Visual C++"
 	Version="8.00"
 	Name="Obstack_Test"
-	ProjectGUID="{42744BC4-FECA-1BAD-2431-8A1100722433}"
+	ProjectGUID="{42744BC4-FECA-1BAD-2431-8A11337F6D50}"
 	RootNamespace="Obstack_Test"
 	Keyword="Win32Proj"
 	SignManifests="true"

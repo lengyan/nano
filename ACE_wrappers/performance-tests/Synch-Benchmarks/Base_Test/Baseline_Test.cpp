@@ -1,4 +1,4 @@
-// $Id: Baseline_Test.cpp 91670 2010-09-08 18:02:26Z johnnyw $
+// $Id: Baseline_Test.cpp 80826 2008-03-04 14:51:23Z wotte $
 
 #define  ACE_BUILD_SVC_DLL
 
@@ -14,6 +14,10 @@
 #if !defined (__ACE_INLINE__)
 #include "Baseline_Test.inl"
 #endif /* __ACE_INLINE__ */
+
+ACE_RCSID (Base_Test,
+           Baseline_Test,
+           "$Id: Baseline_Test.cpp 80826 2008-03-04 14:51:23Z wotte $")
 
 Baseline_Test_Options baseline_options;
 // Static Baseline Options holds the test configuration information
@@ -36,15 +40,17 @@ Baseline_Test_Base::init (int argc, ACE_TCHAR *argv[])
 int
 Baseline_Test_Base::parse_args (int argc, ACE_TCHAR *argv[])
 {
-  ACE_Get_Opt get_opt (argc, argv, ACE_TEXT("i:ylrw"), 0);
+  //FUZZ: disable check_for_lack_ACE_OS
+  ACE_Get_Opt getopt (argc, argv, ACE_TEXT("i:ylrw"), 0);
   int c;
 
-  while ((c = get_opt ()) != -1)
+  while ((c = getopt ()) != -1)
+  //FUZZ: enable check_for_lack_ACE_OS
     switch (c)
       {
       case 'i':                 // Total iterations
         {
-          int tmp = ACE_OS::atoi (get_opt.opt_arg ());
+          int tmp = ACE_OS::atoi (getopt.opt_arg ());
           if (tmp <= 0)
             ACE_ERROR_RETURN ((LM_ERROR,
                                "%d is not a valid value for iteration\n",

@@ -1,4 +1,4 @@
-// $Id: HTTP_URL.h 91118 2010-07-17 10:29:57Z mcorino $
+// $Id: HTTP_URL.h 90737 2010-06-21 09:46:14Z mcorino $
 
 /**
  * @file HTTP_URL.h
@@ -29,7 +29,7 @@ namespace ACE
         /**
         * @class ACE_HTTP_URL
         *
-        * @brief Implements HTTP url support.
+        * @brief
         *
         */
         class ACE_INET_Export URL
@@ -49,7 +49,7 @@ namespace ACE
 
               virtual const ACE_CString& get_fragment () const;
 
-              virtual ACE_CString get_request_uri () const;
+              ACE_CString get_request_uri () const;
 
               virtual void set_query (const ACE_CString& query);
 
@@ -67,9 +67,7 @@ namespace ACE
 
               virtual u_short default_port () const;
 
-              static const char* PROTOCOL;
-
-              static const ACE_CString& protocol ();
+              static const ACE_CString PROTOCOL;
 
               enum
               {
@@ -78,8 +76,6 @@ namespace ACE
               };
 
             protected:
-              URL (u_short port);
-
               virtual ACE::INet::ClientRequestHandler* create_default_request_handler () const;
 
             private:

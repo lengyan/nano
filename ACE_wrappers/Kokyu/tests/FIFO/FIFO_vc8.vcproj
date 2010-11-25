@@ -3,7 +3,7 @@
 	ProjectType="Visual C++"
 	Version="8.00"
 	Name="FIFO"
-	ProjectGUID="{EBD6DC9A-FECA-1BAD-2D2D-8A679AD55509}"
+	ProjectGUID="{EBD6DC9A-FECA-1BAD-2D2D-8A674E436639}"
 	RootNamespace="FIFO"
 	Keyword="Win32Proj"
 	SignManifests="true"

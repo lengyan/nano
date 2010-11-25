@@ -1,4 +1,4 @@
-// $Id: Unbounded_Set_Test.cpp 91671 2010-09-08 18:39:23Z johnnyw $
+// $Id: Unbounded_Set_Test.cpp 84688 2009-03-03 07:36:36Z johnnyw $
 
 // ============================================================================
 //
@@ -23,7 +23,7 @@
 #include <ace/Auto_Ptr.h>
 #include <ace/SString.h>
 
-
+ACE_RCSID(tests, Unbounded_Set_Test, "$Id: Unbounded_Set_Test.cpp 84688 2009-03-03 07:36:36Z johnnyw $")
 
 struct MyNode
 {

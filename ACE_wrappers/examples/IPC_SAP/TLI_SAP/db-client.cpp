@@ -1,10 +1,12 @@
-// $Id: db-client.cpp 91670 2010-09-08 18:02:26Z johnnyw $
+// $Id: db-client.cpp 81983 2008-06-16 17:53:25Z sowayaa $
 
 #include "ace/TLI_Connector.h"
 #include "ace/Log_Msg.h"
 #include "ace/OS_NS_stdio.h"
 #include "ace/OS_NS_stdlib.h"
 #include "ace/OS_NS_string.h"
+
+ACE_RCSID(TLI_SAP, db_client, "$Id: db-client.cpp 81983 2008-06-16 17:53:25Z sowayaa $")
 
 #if defined (ACE_HAS_TLI)
 const int MAXLINE = 255;

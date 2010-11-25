@@ -1,6 +1,6 @@
 // -*- C++ -*-
 //
-// $Id: HTTP_ClientRequestHandler.inl 91118 2010-07-17 10:29:57Z mcorino $
+// $Id: HTTP_ClientRequestHandler.inl 90450 2010-06-08 07:25:58Z mcorino $
 
 ACE_BEGIN_VERSIONED_NAMESPACE_DECL
 
@@ -9,33 +9,15 @@ namespace ACE
   namespace HTTP
   {
     ACE_INLINE
-    SessionBase& SessionHolder::operator *()
+    ClientRequestHandler::SessionHolder::session_type& ClientRequestHandler::SessionHolder::operator *()
       {
-        return this->session ();
+        return this->session_;
       }
 
     ACE_INLINE
-    SessionBase* SessionHolder::operator -> ()
+    ClientRequestHandler::SessionHolder::session_type* ClientRequestHandler::SessionHolder::operator -> ()
       {
-        return &this->session ();
-      }
-
-    ACE_INLINE
-    bool ClientRequestHandler::HttpConnectionKey::is_proxy_connection () const
-      {
-        return this->proxy_connection_;
-      }
-
-    ACE_INLINE
-    const ACE_CString& ClientRequestHandler::HttpConnectionKey::proxy_target_host () const
-      {
-        return this->proxy_target_host_;
-      }
-
-    ACE_INLINE
-    u_short ClientRequestHandler::HttpConnectionKey::proxy_target_port () const
-      {
-        return this->proxy_target_port_;
+        return &this->session_;
       }
 
     ACE_INLINE
@@ -63,7 +45,7 @@ namespace ACE
       }
 
     ACE_INLINE
-    SessionHolder& ClientRequestHandler::session ()
+    ClientRequestHandler::SessionHolder& ClientRequestHandler::session ()
       {
         return *this->session_;
       }

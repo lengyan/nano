@@ -1,4 +1,4 @@
-// $Id: Notify_Performance_Test.cpp 91671 2010-09-08 18:39:23Z johnnyw $
+// $Id: Notify_Performance_Test.cpp 83583 2008-11-06 13:08:46Z johnnyw $
 
 // ============================================================================
 //
@@ -30,7 +30,7 @@
 #include "ace/Auto_Ptr.h"
 #include "ace/Atomic_Op.h"
 
-
+ACE_RCSID(tests, Notify_Performance_Test, "$Id: Notify_Performance_Test.cpp 83583 2008-11-06 13:08:46Z johnnyw $")
 
 #if defined (ACE_HAS_THREADS)
 

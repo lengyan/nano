@@ -1,4 +1,4 @@
-// $Id: main.cpp 91671 2010-09-08 18:39:23Z johnnyw $
+// $Id: main.cpp 80826 2008-03-04 14:51:23Z wotte $
 
 #include "ace/Service_Config.h"
 #include "ace/Logging_Strategy.h"
@@ -10,7 +10,7 @@
 #include "Token_Handler.h"
 #include "Server_Logging_Handler.h"
 
-
+ACE_RCSID(servers, main, "$Id: main.cpp 80826 2008-03-04 14:51:23Z wotte $")
 
 int
 ACE_TMAIN (int argc, ACE_TCHAR *argv[])

@@ -3,7 +3,7 @@
 	ProjectType="Visual C++"
 	Version="9.00"
 	Name="cinset"
-	ProjectGUID="{40566CFF-FECA-1BAD-2431-8A1123F3B457}"
+	ProjectGUID="{40566CFF-FECA-1BAD-2431-8A11F7658767}"
 	RootNamespace="cinset"
 	Keyword="Win32Proj"
 	SignManifests="true"

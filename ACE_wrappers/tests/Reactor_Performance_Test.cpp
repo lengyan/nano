@@ -1,4 +1,4 @@
-// $Id: Reactor_Performance_Test.cpp 91671 2010-09-08 18:39:23Z johnnyw $
+// $Id: Reactor_Performance_Test.cpp 88870 2010-02-06 12:59:37Z mcorino $
 
 // ============================================================================
 //
@@ -31,7 +31,7 @@
 #include "ace/Select_Reactor.h"
 #include "ace/Auto_Ptr.h"
 
-
+ACE_RCSID(tests, Reactor_Performance_Test, "$Id: Reactor_Performance_Test.cpp 88870 2010-02-06 12:59:37Z mcorino $")
 
 #if defined (ACE_HAS_THREADS)
 

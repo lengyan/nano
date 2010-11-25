@@ -1,4 +1,4 @@
-// $Id: URLBase.h 91801 2010-09-16 13:38:56Z mcorino $
+// $Id: URLBase.h 90891 2010-06-28 09:55:39Z mcorino $
 
 /**
  * @file URLBase.h
@@ -19,7 +19,6 @@
 #include "ace/Refcounted_Auto_Ptr.h"
 #include "ace/INet/INet_Export.h"
 #include "ace/INet/AuthenticationBase.h"
-#include "ace/INet/ClientRequestHandler.h"
 #include <iosfwd>
 
 ACE_BEGIN_VERSIONED_NAMESPACE_DECL
@@ -28,15 +27,13 @@ namespace ACE
   {
     namespace INet
       {
+        class ClientRequestHandler; // Forward
 
         /**
         * @class ACE_INet_URLStream
         *
-        * @brief Provides abstracted wrapper class for the resulting
-        *   stream of an URL <open> operation.
+        * @brief
         *
-        * Provides proper life cycle management for either factory provided
-        * or user provided request handlers.
         */
         class ACE_INET_Export URLStream
           {
@@ -130,11 +127,7 @@ namespace ACE
               ACE_CString path_;
 
             public:
-#if (_MSC_VER < 1600)
-              class ACE_INET_Export Factory
-#else
               class Factory
-#endif
                 {
                   public:
                     Factory ();
@@ -149,7 +142,7 @@ namespace ACE
             private:
               typedef ACE_Map_Manager<ACE_CString,
                                       Factory*,
-                                      ACE_SYNCH::MUTEX> TURLFactoryMap;
+                                      ACE_SYNCH::RECURSIVE_MUTEX> TURLFactoryMap;
               typedef ACE_Singleton<TURLFactoryMap,
                                     ACE_SYNCH::NULL_MUTEX> TURLFactorySingleton;
               static TURLFactoryMap* factories_;

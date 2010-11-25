@@ -1,8 +1,8 @@
-// $Id: URL.cpp 91671 2010-09-08 18:39:23Z johnnyw $
+// $Id: URL.cpp 80826 2008-03-04 14:51:23Z wotte $
 
 #include "URL.h"
 
-
+ACE_RCSID(Web_Crawler, URL, "$Id: URL.cpp 80826 2008-03-04 14:51:23Z wotte $")
 
 Mem_Map_Stream &
 URL::stream (void)
@@ -20,7 +20,7 @@ URL::reply_status (void)
   return this->reply_status_;
 }
 
-void
+void 
 URL::reply_status (const URL_Status &rs)
 {
   this->reply_status_ = rs;
@@ -32,7 +32,7 @@ URL::content_type (void)
   return this->content_type_;
 }
 
-void
+void 
 URL::content_type (const ACE_CString &ct)
 {
   this->content_type_ = ct;

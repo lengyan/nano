@@ -1,4 +1,4 @@
-// $Id: Compiler_Features_10_Test.cpp 91671 2010-09-08 18:39:23Z johnnyw $
+// $Id: Compiler_Features_10_Test.cpp 86333 2009-08-03 17:05:19Z coryan $
 
 /**
  * @file
@@ -127,7 +127,7 @@ namespace
   };
 }
 
-
+ACE_RCSID(tests, Compiler_Features_10_Test, "$Id: Compiler_Features_10_Test.cpp 86333 2009-08-03 17:05:19Z coryan $")
 
 int
 run_main (int, ACE_TCHAR *[])

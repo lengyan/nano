@@ -1,4 +1,4 @@
-// $Id: Bug_3432_Regression_Test.cpp 91671 2010-09-08 18:39:23Z johnnyw $
+// $Id: Bug_3432_Regression_Test.cpp 83583 2008-11-06 13:08:46Z johnnyw $
 
 // ============================================================================
 //
@@ -20,7 +20,7 @@
 #include "ace/OS_NS_sys_time.h"
 #include "ace/OS_NS_time.h"
 
-
+ACE_RCSID(tests, Bug_3432_Regression_Test, "$Id: Bug_3432_Regression_Test.cpp 83583 2008-11-06 13:08:46Z johnnyw $")
 
 int
 strptime_test (void)

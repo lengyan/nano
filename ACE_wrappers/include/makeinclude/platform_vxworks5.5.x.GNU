@@ -1,4 +1,4 @@
-# $Id: platform_vxworks5.5.x.GNU 91285 2010-08-05 08:29:30Z johnnyw $
+# $Id: platform_vxworks5.5.x.GNU 86432 2009-08-09 18:56:15Z johnnyw $
 # VxWorks 5.5.x (x > 0).
 
 #### Notes:
@@ -32,6 +32,7 @@ endif
 debug ?= 1
 optimize ?= 1
 threads ?= 1
+exceptions ?= 1
 xerces ?= 0
 versioned_so ?= 0
 
@@ -275,12 +276,19 @@ endif
 endif  # TOOL == gnu
 
 ifeq ("$(TOOL)","diab")
+ifeq ($(exceptions),1)
   C++FLAGS += -Xexceptions
+else
+  C++FLAGS += -Xexceptions-off
 endif
 else
 ifeq ("$(TOOL)","gnu")
 C++FLAGS += -ftemplate-depth-50
-C++FLAGS += -fexceptions
+ifeq ($(exceptions),1)
+  C++FLAGS += -fexceptions
+else
+  C++FLAGS += -fno-exceptions
+endif
 endif
 endif
 

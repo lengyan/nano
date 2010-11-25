@@ -3,7 +3,7 @@
 	ProjectType="Visual C++"
 	Version="8.00"
 	Name="Ping_Client"
-	ProjectGUID="{0352EE2F-FECA-1BAD-6F85-8A64CD2507FC}"
+	ProjectGUID="{0352EE2F-FECA-1BAD-6F85-8A64844634F1}"
 	RootNamespace="Ping_Client"
 	Keyword="Win32Proj"
 	SignManifests="true"

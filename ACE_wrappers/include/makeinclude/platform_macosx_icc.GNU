@@ -1,5 +1,6 @@
-# $Id: platform_macosx_icc.GNU 91285 2010-08-05 08:29:30Z johnnyw $
+# $Id: platform_macosx_icc.GNU 81676 2008-05-11 06:30:26Z johnnyw $
 
+exceptions ?= 1
 threads ?= 1
 debug ?= 1
 optimize ?= 0

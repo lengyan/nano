@@ -1,4 +1,4 @@
-// $Id: DSRT_Dispatch_Item_T.cpp 91670 2010-09-08 18:02:26Z johnnyw $
+// $Id: DSRT_Dispatch_Item_T.cpp 80826 2008-03-04 14:51:23Z wotte $
 
 #ifndef DSRT_DISPATCH_ITEM_T_CPP
 #define DSRT_DISPATCH_ITEM_T_CPP
@@ -8,6 +8,8 @@
 #if ! defined (__ACE_INLINE__)
 #include "DSRT_Dispatch_Item_T.inl"
 #endif /* __ACE_INLINE__ */
+
+ACE_RCSID(Kokyu, DSRT_Dispatch_Item, "$Id: DSRT_Dispatch_Item_T.cpp 80826 2008-03-04 14:51:23Z wotte $")
 
 namespace Kokyu
 {

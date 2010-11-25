@@ -1,7 +1,7 @@
 /**
  * @file Notification_Queue_Unit_Test.cpp
  *
- * $Id: Notification_Queue_Unit_Test.cpp 91673 2010-09-08 18:49:47Z johnnyw $
+ * $Id: Notification_Queue_Unit_Test.cpp 80826 2008-03-04 14:51:23Z wotte $
  *
  * A unit test for the ACE_Notification_Queue class.
  *
@@ -11,6 +11,9 @@
 
 #include "test_config.h"
 #include "ace/Notification_Queue.h"
+
+ACE_RCSID(tests,
+          Notification_Queue_Unit_Test, "$Id: Notification_Queue_Unit_Test.cpp 80826 2008-03-04 14:51:23Z wotte $")
 
 #define TEST_LIST \
   ACTION(null_test) \

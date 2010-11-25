@@ -1,9 +1,10 @@
 /* -*- c++ -*- */
-// $Id: HTTP_Data.h 91730 2010-09-13 09:31:11Z johnnyw $
+// $Id: HTTP_Data.h 80826 2008-03-04 14:51:23Z wotte $
 
 #ifndef JAWS_HTTP_DATA_H
 #define JAWS_HTTP_DATA_H
 
+#include "ace/OS.h"
 #include "ace/FILE_IO.h"
 #include "ace/SOCK_Stream.h"
 #include "ace/Message_Block.h"

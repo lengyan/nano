@@ -1,6 +1,8 @@
-// $Id: JAWS_Concurrency.cpp 91670 2010-09-08 18:02:26Z johnnyw $
+// $Id: JAWS_Concurrency.cpp 80826 2008-03-04 14:51:23Z wotte $
 
 #include "JAWS_Concurrency.h"
+
+ACE_RCSID(server, JAWS_Concurrency, "$Id: JAWS_Concurrency.cpp 80826 2008-03-04 14:51:23Z wotte $")
 
 JAWS_Concurrency_Base::JAWS_Concurrency_Base (void)
 {

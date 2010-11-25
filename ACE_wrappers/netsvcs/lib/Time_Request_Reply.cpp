@@ -1,4 +1,4 @@
-// $Id: Time_Request_Reply.cpp 91688 2010-09-09 11:21:50Z johnnyw $
+// $Id: Time_Request_Reply.cpp 84481 2009-02-17 10:58:31Z johnnyw $
 
 #include "ace/Basic_Types.h"
 #include "ace/CDR_Base.h"
@@ -9,7 +9,7 @@
 
 #include "Time_Request_Reply.h"
 
-
+ACE_RCSID(lib, Time_Request_Reply, "$Id: Time_Request_Reply.cpp 84481 2009-02-17 10:58:31Z johnnyw $")
 
 // Default "do nothing" constructor.
 
@@ -44,6 +44,14 @@ ACE_Time_Request::ACE_Time_Request (ACE_INT32 t, // Type of request.
 
   // Copy time into request
   this->transfer_.time_ = this->time_ = time;
+}
+
+// Initialize length_ in order to avoid problems with byte-ordering
+void
+ACE_Time_Request::init (void)
+{
+  ACE_TRACE ("ACE_Time_Request::init");
+//  this->length (sizeof this->transfer_);
 }
 
 // Get the fixed size of message

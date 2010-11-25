@@ -1,5 +1,5 @@
 /*
-** $Id: HA_Proactive_Status.cpp 91626 2010-09-07 10:59:20Z johnnyw $
+** $Id: HA_Proactive_Status.cpp 80826 2008-03-04 14:51:23Z wotte $
 **
 ** Example program from The ACE Programmer's Guide, Chapter 8.
 ** Copyright 2003 Addison-Wesley. All Rights Reserved.
@@ -27,7 +27,7 @@ HA_Proactive_Service::open (ACE_HANDLE h, ACE_Message_Block&)
       return;
     }
 
-  ACE_Message_Block *mb = 0;
+  ACE_Message_Block *mb;
   ACE_NEW_NORETURN (mb, ACE_Message_Block (1024));
   if (this->reader_.read (*mb, mb->space ()) != 0)
     {

@@ -3,7 +3,7 @@
 /**
  *  @file    Gadget_Part_Impl.cpp
  *
- *  $Id: Gadget_Part_Impl.cpp 91813 2010-09-17 07:52:52Z johnnyw $
+ *  $Id: Gadget_Part_Impl.cpp 80826 2008-03-04 14:51:23Z wotte $
  *
  *  @author Christopher Kohlhoff <chris@kohlhoff.com>
  */
@@ -23,7 +23,7 @@ Gadget_Part_Impl::Gadget_Part_Impl (Gadget_ptr owner,
 {
   ACE_DEBUG ((LM_DEBUG, "Gadget_Part_Impl constructor\n"));
 }
-
+  
 Gadget_Part_Impl::~Gadget_Part_Impl (void)
 {
   ACE_DEBUG ((LM_DEBUG, "Gadget_Part_Impl destructor\n"));

@@ -1,4 +1,4 @@
-// $Id: Options.cpp 91670 2010-09-08 18:02:26Z johnnyw $
+// $Id: Options.cpp 81993 2008-06-16 20:26:16Z sowayaa $
 
 #define ACE_BUILD_SVC_DLL
 
@@ -9,6 +9,8 @@
 #include "ace/OS_NS_string.h"
 #include "ace/OS_Memory.h"
 #include "Options.h"
+
+ACE_RCSID(Peer, Options, "$Id: Options.cpp 81993 2008-06-16 20:26:16Z sowayaa $")
 
 // Static initialization.
 Options *Options::instance_ = 0;

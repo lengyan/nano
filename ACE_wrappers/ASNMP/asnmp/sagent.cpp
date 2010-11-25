@@ -1,4 +1,4 @@
-// $Id: sagent.cpp 91670 2010-09-08 18:02:26Z johnnyw $
+// $Id: sagent.cpp 80826 2008-03-04 14:51:23Z wotte $
 
 // ============================================================================
 //
@@ -29,6 +29,8 @@
 #include "asnmp/snmp.h"               // manager snmp interface
 #include "asnmp/sagent.h"             // agent interface
 #include "asnmp/transaction.h"        // convert from wire to API
+
+ACE_RCSID(asnmp, sagent, "$Id: sagent.cpp 80826 2008-03-04 14:51:23Z wotte $")
 
 sagent::sagent(unsigned short port): Snmp(port)
 {

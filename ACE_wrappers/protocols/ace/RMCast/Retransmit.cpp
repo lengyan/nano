@@ -1,11 +1,18 @@
+// file      : ace/RMCast/Retransmit.cpp
 // author    : Boris Kolpackov <boris@kolpackov.net>
-// $Id: Retransmit.cpp 91626 2010-09-07 10:59:20Z johnnyw $
+// cvs-id    : $Id: Retransmit.cpp 80826 2008-03-04 14:51:23Z wotte $
 
 #include "ace/Time_Value.h"     // ACE_Time_Value
 #include "ace/OS_NS_stdlib.h"   // abort
 #include "ace/OS_NS_sys_time.h" // gettimeofday
 
 #include "Retransmit.h"
+
+/*
+#include <iostream>
+using std::cerr;
+using std::endl;
+*/
 
 namespace ACE_RMCast
 {

@@ -1,4 +1,4 @@
-// $Id: consumer_read.cpp 91671 2010-09-08 18:39:23Z johnnyw $
+// $Id: consumer_read.cpp 81983 2008-06-16 17:53:25Z sowayaa $
 
 #include "ace/OS_main.h"
 #include "ace/SPIPE_Addr.h"
@@ -8,7 +8,7 @@
 #include "ace/OS_NS_unistd.h"
 #include "ace/Time_Value.h"
 
-
+ACE_RCSID(SPIPE_SAP, consumer_read, "$Id: consumer_read.cpp 81983 2008-06-16 17:53:25Z sowayaa $")
 
 #if defined (ACE_HAS_STREAM_PIPES)
 

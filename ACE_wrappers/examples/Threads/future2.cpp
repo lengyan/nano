@@ -1,4 +1,4 @@
-// $Id: future2.cpp 91670 2010-09-08 18:02:26Z johnnyw $
+// $Id: future2.cpp 80826 2008-03-04 14:51:23Z wotte $
 
 // ============================================================================
 //
@@ -38,6 +38,7 @@
 #include "ace/Auto_Ptr.h"
 #include "ace/Atomic_Op.h"
 
+ACE_RCSID(Threads, future2, "$Id: future2.cpp 80826 2008-03-04 14:51:23Z wotte $")
 #if defined (ACE_HAS_THREADS)
 
 typedef ACE_Atomic_Op<ACE_Thread_Mutex, int> ATOMIC_INT;

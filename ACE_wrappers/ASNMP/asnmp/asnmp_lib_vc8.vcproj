@@ -3,7 +3,7 @@
 	ProjectType="Visual C++"
 	Version="8.00"
 	Name="asnmp_lib"
-	ProjectGUID="{F0AD6910-FECA-1BAD-58A2-8A0582961CDA}"
+	ProjectGUID="{F0AD6910-FECA-1BAD-58A2-8A05E1A51193}"
 	RootNamespace="asnmp_lib"
 	Keyword="Win32Proj"
 	SignManifests="true"

@@ -1,5 +1,6 @@
-// $Id: Bits.h 91626 2010-09-07 10:59:20Z johnnyw $
+// file      : ace/RMCast/Bits.h
 // author    : Boris Kolpackov <boris@kolpackov.net>
+// cvs-id    : $Id: Bits.h 80826 2008-03-04 14:51:23Z wotte $
 
 #ifndef ACE_RMCAST_BITS_H
 #define ACE_RMCAST_BITS_H
@@ -12,10 +13,13 @@
 namespace ACE_RMCast
 {
   typedef ACE_SYNCH_MUTEX Mutex;
-// FUZZ: disable check_for_ACE_Guard
   typedef ACE_Guard<Mutex> Lock;
   typedef ACE_Condition<Mutex> Condition;
-// FUZZ: enable check_for_ACE_Guard
+
+  // tmp
+  //
+  //using std::cerr;
+  //using std::endl;
 }
 
 

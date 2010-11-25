@@ -1,10 +1,10 @@
-// $Id: TPR_Concurrency.cpp 91813 2010-09-17 07:52:52Z johnnyw $
+// $Id: TPR_Concurrency.cpp 80826 2008-03-04 14:51:23Z wotte $
 
 #include "ace/Message_Block.h"
 
 #ifndef JAWS_BUILD_DLL
 #define JAWS_BUILD_DLL
-#endif
+#endif 
 
 #include "jaws3/Concurrency.h"
 #include "jaws3/TPR_Concurrency.h"

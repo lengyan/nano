@@ -3,7 +3,7 @@
 	ProjectType="Visual C++"
 	Version="9.00"
 	Name="Misc_Test_Set"
-	ProjectGUID="{1D00CEBA-FECA-1BAD-BE51-8A67A27959F5}"
+	ProjectGUID="{1D00CEBA-FECA-1BAD-BE51-8A6791741096}"
 	RootNamespace="Misc_Test_Set"
 	Keyword="Win32Proj"
 	SignManifests="true"

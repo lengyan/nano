@@ -1,9 +1,10 @@
-# $Id: platform_netbsd.GNU 91285 2010-08-05 08:29:30Z johnnyw $
+# $Id: platform_netbsd.GNU 82160 2008-06-25 06:01:22Z jtc $
 
 # platform_netbsd.GNU
 
 versioned_so = 1
 
+exceptions ?= 1
 debug ?= 1
 optimize ?= 1
 threads ?= 1

@@ -3,7 +3,7 @@
 	ProjectType="Visual C++"
 	Version="9.00"
 	Name="Reactor_Remove_Resume_Test_Dev_Poll"
-	ProjectGUID="{E6FBA99B-FECA-1BAD-2431-8A1100722433}"
+	ProjectGUID="{E6FBA99B-FECA-1BAD-2431-8A11337F6D50}"
 	RootNamespace="Reactor_Remove_Resume_Test_Dev_Poll"
 	Keyword="Win32Proj"
 	SignManifests="true"

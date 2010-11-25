@@ -3,7 +3,7 @@
 	ProjectType="Visual C++"
 	Version="9.00"
 	Name="NT_Service"
-	ProjectGUID="{E9BA66C8-FECA-1BAD-0BE6-2F4603877603}"
+	ProjectGUID="{E9BA66C8-FECA-1BAD-0BE6-2F4660B47B4A}"
 	RootNamespace="NT_Service"
 	Keyword="Win32Proj"
 	SignManifests="true"

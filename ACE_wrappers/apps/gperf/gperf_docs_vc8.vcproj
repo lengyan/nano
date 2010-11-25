@@ -3,7 +3,7 @@
 	ProjectType="Visual C++"
 	Version="8.00"
 	Name="gperf_docs"
-	ProjectGUID="{3BF07ED9-FECA-1BAD-6223-DAF371906421}"
+	ProjectGUID="{3BF07ED9-FECA-1BAD-6223-DAF3E7A354F5}"
 	RootNamespace="gperf_docs"
 	Keyword="Win32Proj"
 	SignManifests="true"

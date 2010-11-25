@@ -3,7 +3,7 @@
 	ProjectType="Visual C++"
 	Version="9.00"
 	Name="Compiler_Features_14_Test"
-	ProjectGUID="{D341E92B-FECA-1BAD-2431-8A1100722433}"
+	ProjectGUID="{D341E92B-FECA-1BAD-2431-8A11337F6D50}"
 	RootNamespace="Compiler_Features_14_Test"
 	Keyword="Win32Proj"
 	SignManifests="true"

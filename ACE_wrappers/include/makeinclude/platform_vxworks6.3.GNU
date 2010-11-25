@@ -1,5 +1,5 @@
 # -*- Makefile -*-
-# $Id: platform_vxworks6.3.GNU 91326 2010-08-09 16:04:31Z mitza $
+# $Id: platform_vxworks6.3.GNU 86432 2009-08-09 18:56:15Z johnnyw $
 # VxWorks 6.3
 
 #### Notes:
@@ -20,6 +20,7 @@ CROSS-COMPILE = 1
 debug ?= 1
 optimize ?= 1
 threads ?= 1
+exceptions ?= 1
 rtp ?= 1
 ifeq ($(rtp),0)
   pthread ?= 0
@@ -203,11 +204,10 @@ ifeq ($(rtp),1)
   LDFLAGS := $(filter-out -N, $(LDFLAGS))
   LD := $(CPLUS)
   DLD := $(CPLUS)
-  WIND_USR_LIB ?= lib
   ifeq ($(findstring *sf,*$(TOOL)),*sf)
-    LDFLAGS += -L$(WIND_USR)/$(WIND_USR_LIB)/$(VX_CPU_FAMILY)/$(CPU)/sfcommon$(PICDIR)
+    LDFLAGS += -L$(WIND_USR)/lib/$(VX_CPU_FAMILY)/$(CPU)/sfcommon$(PICDIR)
   else
-    LDFLAGS += -L$(WIND_USR)/$(WIND_USR_LIB)/$(VX_CPU_FAMILY)/$(CPU)/common$(PICDIR)
+    LDFLAGS += -L$(WIND_USR)/lib/$(VX_CPU_FAMILY)/$(CPU)/common$(PICDIR)
   endif
 else
   include $(TGT_DIR)/h/make/defs.default
@@ -340,10 +340,18 @@ endif
 endif  # TOOL_FAMILY == gnu
 
 ifeq ("$(TOOL_FAMILY)","diab")
+ifeq ($(exceptions),1)
   C++FLAGS += -Xexceptions
 else
+  C++FLAGS += -Xexceptions-off
+endif
+else
 ifeq ("$(TOOL_FAMILY)","gnu")
+ifeq ($(exceptions),1)
   C++FLAGS += -fexceptions
+else
+  C++FLAGS += -fno-exceptions
+endif
 endif
 endif
 

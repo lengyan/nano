@@ -3,7 +3,7 @@
 	ProjectType="Visual C++"
 	Version="8.00"
 	Name="Refcounted_Event_Handler_Test_DevPoll"
-	ProjectGUID="{F1755D99-FECA-1BAD-2431-8A1100722433}"
+	ProjectGUID="{F1755D99-FECA-1BAD-2431-8A11337F6D50}"
 	RootNamespace="Refcounted_Event_Handler_Test_DevPoll"
 	Keyword="Win32Proj"
 	SignManifests="true"

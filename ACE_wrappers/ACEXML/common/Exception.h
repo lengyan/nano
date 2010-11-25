@@ -4,7 +4,7 @@
 /**
  *  @file    Exception.h
  *
- *  $Id: Exception.h 91257 2010-08-03 11:54:04Z johnnyw $
+ *  $Id: Exception.h 80826 2008-03-04 14:51:23Z wotte $
  *
  *  @author Nanbor Wang <nanbor@cs.wustl.edu>
  */
@@ -21,6 +21,14 @@
 #endif /* ACE_LACKS_PRAGMA_ONCE */
 
 #include "ACEXML/common/XML_Types.h"
+#include "ACEXML/common/XML_Macros.h"
+
+#if defined (ACE_USES_NATIVE_EXCEPTIONS)
+# define ACEXML_RAISE(EXCEPTION) throw EXCEPTION
+#else
+# define ACEXML_RAISE(EXCEPTION)
+#endif
+
 
 /**
  * @class ACEXML_Exception Exception.h "ACEXML/common/Exception.h"

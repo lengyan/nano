@@ -1,4 +1,4 @@
-// $Id: Logging_Acceptor.cpp 91671 2010-09-08 18:39:23Z johnnyw $
+// $Id: Logging_Acceptor.cpp 80826 2008-03-04 14:51:23Z wotte $
 
 #include "ace/WFMO_Reactor.h"
 #include "ace/Log_Msg.h"
@@ -7,7 +7,7 @@
 #include "Logging_Handler.h"
 #include "Reactor_Singleton.h"
 
-
+ACE_RCSID(simple_server, Logging_Acceptor, "$Id: Logging_Acceptor.cpp 80826 2008-03-04 14:51:23Z wotte $")
 
 // Initialize peer_acceptor object.
 

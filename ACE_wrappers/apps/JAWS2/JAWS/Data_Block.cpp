@@ -1,9 +1,9 @@
-// $Id: Data_Block.cpp 91671 2010-09-08 18:39:23Z johnnyw $
+// $Id: Data_Block.cpp 80826 2008-03-04 14:51:23Z wotte $
 
 #include "JAWS/Data_Block.h"
 #include "JAWS/Policy.h"
 
-
+ACE_RCSID(JAWS, Data_Block, "$Id: Data_Block.cpp 80826 2008-03-04 14:51:23Z wotte $")
 
 JAWS_Data_Block::JAWS_Data_Block (void)
   : ACE_Message_Block (JAWS_DATA_BLOCK_SIZE),

@@ -1,10 +1,10 @@
-// $Id: Proactor_UDP_Test.cpp 91626 2010-09-07 10:59:20Z johnnyw $
+// $Id: Proactor_UDP_Test.cpp 90004 2010-04-26 09:08:04Z vzykov $
 
 // ============================================================================
 /**
  *  @file Proactor_UDP_Test.cpp
  *
- *  $Id: Proactor_UDP_Test.cpp 91626 2010-09-07 10:59:20Z johnnyw $
+ *  $Id: Proactor_UDP_Test.cpp 90004 2010-04-26 09:08:04Z vzykov $
  *
  *  This program illustrates how the ACE_Proactor can be used to
  *  implement an application that uses UDP/IP communications.
@@ -14,6 +14,10 @@
 // ============================================================================
 
 #include "test_config.h"
+
+ACE_RCSID (tests,
+           Proactor_UDP_Test,
+           "$Id: Proactor_UDP_Test.cpp 90004 2010-04-26 09:08:04Z vzykov $")
 
 #if defined (ACE_HAS_THREADS) && (defined (ACE_HAS_WIN32_OVERLAPPED_IO) || defined (ACE_HAS_AIO_CALLS))
   // This only works on Win32 platforms and on Unix platforms
@@ -1206,7 +1210,7 @@ Server::handle_read_dgram (const ACE_Asynch_Read_Dgram::Result &result)
     else
       mb->release ();
 
-    --this->io_count_;
+    this->io_count_--;
     if (this->io_count_ > 0)
       return;
   }
@@ -1302,7 +1306,7 @@ Server::handle_write_dgram (const ACE_Asynch_Write_Dgram::Result &result)
           this->initiate_read ();
       }
 
-    --this->io_count_;
+    this->io_count_--;
     if (this->io_count_ > 0)
       return;
   }
@@ -1850,7 +1854,7 @@ Client::handle_write_dgram (const ACE_Asynch_Write_Dgram::Result &result)
           this->initiate_read ();
       }
 
-    --this->io_count_;
+    this->io_count_--;
     if (this->io_count_ > 0)
       return;
   }
@@ -1977,7 +1981,7 @@ Client::handle_read_dgram (const ACE_Asynch_Read_Dgram::Result &result)
       }
 
     mb->release ();
-    --this->io_count_;
+    this->io_count_--;
     if (this->io_count_ > 0)
       return;
   }

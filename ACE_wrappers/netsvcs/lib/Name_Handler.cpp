@@ -1,4 +1,4 @@
-// $Id: Name_Handler.cpp 91673 2010-09-08 18:49:47Z johnnyw $
+// $Id: Name_Handler.cpp 84565 2009-02-23 08:20:39Z johnnyw $
 
 #include "ace/Containers.h"
 #include "ace/Get_Opt.h"
@@ -7,6 +7,10 @@
 #include "Name_Handler.h"
 #include "ace/Signal.h"
 #include "ace/OS_NS_string.h"
+
+ACE_RCSID(lib,
+          Name_Handler,
+          "$Id: Name_Handler.cpp 84565 2009-02-23 08:20:39Z johnnyw $")
 
 // Simple macro that does bitwise AND -- useful in table lookup
 #define ACE_TABLE_MAP(INDEX, MASK) (INDEX & MASK)

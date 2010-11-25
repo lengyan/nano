@@ -1,4 +1,4 @@
-// $Id: CPP-unclient.cpp 91671 2010-09-08 18:39:23Z johnnyw $
+// $Id: CPP-unclient.cpp 81978 2008-06-16 16:57:12Z sowayaa $
 
 // ACE_LSOCK Client.
 
@@ -8,7 +8,7 @@
 #include "ace/OS_main.h"
 #include "ace/OS_NS_unistd.h"
 
-
+ACE_RCSID(SOCK_SAP, CPP_unclient, "$Id: CPP-unclient.cpp 81978 2008-06-16 16:57:12Z sowayaa $")
 
 #if !defined (ACE_LACKS_UNIX_DOMAIN_SOCKETS)
 int

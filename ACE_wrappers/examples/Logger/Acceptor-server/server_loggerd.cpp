@@ -1,4 +1,4 @@
-// $Id: server_loggerd.cpp 91670 2010-09-08 18:02:26Z johnnyw $
+// $Id: server_loggerd.cpp 81978 2008-06-16 16:57:12Z sowayaa $
 // server_loggerd.cpp,v 4.29 2003/12/30 23:18:59 shuston Exp
 
 // This server daemon collects, formats, and displays logging
@@ -24,6 +24,8 @@
 #include "ace/Test_and_Set.h"
 
 #include "server_loggerd.h"
+
+ACE_RCSID(Acceptor_server, server_loggerd, "$Id: server_loggerd.cpp 81978 2008-06-16 16:57:12Z sowayaa $")
 
 // ----------------------------------------
 

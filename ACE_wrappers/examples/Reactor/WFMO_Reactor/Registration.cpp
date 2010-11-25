@@ -1,4 +1,4 @@
-// $Id: Registration.cpp 91671 2010-09-08 18:39:23Z johnnyw $
+// $Id: Registration.cpp 80826 2008-03-04 14:51:23Z wotte $
 //
 // ============================================================================
 //
@@ -42,7 +42,7 @@
 #include "ace/OS_NS_unistd.h"
 #include "ace/Log_Msg.h"
 
-
+ACE_RCSID(WFMO_Reactor, Registration, "$Id: Registration.cpp 80826 2008-03-04 14:51:23Z wotte $")
 
 // Globals for this test
 int stop_test = 0;

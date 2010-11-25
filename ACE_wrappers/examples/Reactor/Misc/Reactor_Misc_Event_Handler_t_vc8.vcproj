@@ -3,7 +3,7 @@
 	ProjectType="Visual C++"
 	Version="8.00"
 	Name="Reactor_Misc_Event_Handler_t"
-	ProjectGUID="{DDB5A2BF-FECA-1BAD-FD25-A21D8A731A81}"
+	ProjectGUID="{DDB5A2BF-FECA-1BAD-FD25-A21DB97E53E2}"
 	RootNamespace="Reactor_Misc_Event_Handler_t"
 	Keyword="Win32Proj"
 	SignManifests="true"
@@ -382,6 +382,37 @@
 					Name="Release|x64"
 					ExcludedFromBuild="true"
 				>
+				</FileConfiguration>
+			</File>
+		</Filter>
+		<Filter
+			Name="Template Files"
+			Filter="">
+			<File
+				RelativePath="test_event_handler_t.cpp">
+				<FileConfiguration
+					Name="Debug|Win32"
+					ExcludedFromBuild="true">
+					<Tool
+						Name="VCCLCompilerTool"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Win32"
+					ExcludedFromBuild="true">
+					<Tool
+						Name="VCCLCompilerTool"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Debug|x64"
+					ExcludedFromBuild="true">
+					<Tool
+						Name="VCCLCompilerTool"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|x64"
+					ExcludedFromBuild="true">
+					<Tool
+						Name="VCCLCompilerTool"/>
 				</FileConfiguration>
 			</File>
 		</Filter>

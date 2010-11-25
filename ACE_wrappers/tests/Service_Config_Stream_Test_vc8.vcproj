@@ -3,7 +3,7 @@
 	ProjectType="Visual C++"
 	Version="8.00"
 	Name="Service_Config_Stream_Test"
-	ProjectGUID="{718392E2-FECA-1BAD-2431-8A1100722433}"
+	ProjectGUID="{718392E2-FECA-1BAD-2431-8A11337F6D50}"
 	RootNamespace="Service_Config_Stream_Test"
 	Keyword="Win32Proj"
 	SignManifests="true"

@@ -1,4 +1,4 @@
-// $Id: Capabilities_Test.cpp 91671 2010-09-08 18:39:23Z johnnyw $
+// $Id: Capabilities_Test.cpp 80826 2008-03-04 14:51:23Z wotte $
 
 // ============================================================================
 //
@@ -22,7 +22,7 @@
 #include "ace/OS_NS_unistd.h"
 #include "ace/Capabilities.h"
 
-
+ACE_RCSID(tests, Capabilities_Test, "$Id: Capabilities_Test.cpp 80826 2008-03-04 14:51:23Z wotte $")
 
 static const ACE_TCHAR config[] = ACE_TEXT ("Capabilities_Test.cfg");
 

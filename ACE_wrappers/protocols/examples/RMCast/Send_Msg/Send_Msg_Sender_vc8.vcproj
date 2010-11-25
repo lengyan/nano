@@ -3,7 +3,7 @@
 	ProjectType="Visual C++"
 	Version="8.00"
 	Name="Send_Msg_Sender"
-	ProjectGUID="{109C5B6C-FECA-1BAD-BA50-D9E259FB2871}"
+	ProjectGUID="{109C5B6C-FECA-1BAD-BA50-D9E2CFC818A5}"
 	RootNamespace="Send_Msg_Sender"
 	Keyword="Win32Proj"
 	SignManifests="true"

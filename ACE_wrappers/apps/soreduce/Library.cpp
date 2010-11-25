@@ -1,5 +1,5 @@
 // -*- C++ -*-
-// $Id: Library.cpp 91670 2010-09-08 18:02:26Z johnnyw $
+// $Id: Library.cpp 82543 2008-08-06 18:21:48Z parsons $
 
 // File: Library.cpp
 
@@ -19,6 +19,8 @@
 #include "ace/Log_Msg.h"
 
 #include "Library.h"
+
+ACE_RCSID(src, Library, "$Id: Library.cpp 82543 2008-08-06 18:21:48Z parsons $")
 
 MPC_Generator::MPC_Generator (const ACE_CString& libname)
   : mpcfile_(),
@@ -181,12 +183,12 @@ Library::~Library ()
 {
   delete mpcfile_;
   int i;
-
+  
   for (i = 0; i < num_modules_; delete modules_[i++])
     {
       // No action.
     }
-
+  
   delete [] modules_;
 }
 

@@ -3,7 +3,7 @@
 	ProjectType="Visual C++"
 	Version="8.00"
 	Name="ACEXML_XML_Svc_Conf_Parser"
-	ProjectGUID="{3D8365B5-FECA-1BAD-5984-FE664DEC7B87}"
+	ProjectGUID="{3D8365B5-FECA-1BAD-5984-FE662EDF76CE}"
 	RootNamespace="ACEXML_XML_Svc_Conf_Parser"
 	Keyword="Win32Proj"
 	SignManifests="true"
@@ -380,33 +380,6 @@
 			Filter="mpc;mpb;mwc">
 			<File
 				RelativePath="svcconf.mpc">
-				<FileConfiguration
-					Name="Debug|Win32"
-					ExcludedFromBuild="true"
-				>
-				</FileConfiguration>
-				<FileConfiguration
-					Name="Release|Win32"
-					ExcludedFromBuild="true"
-				>
-				</FileConfiguration>
-				<FileConfiguration
-					Name="Debug|x64"
-					ExcludedFromBuild="true"
-				>
-				</FileConfiguration>
-				<FileConfiguration
-					Name="Release|x64"
-					ExcludedFromBuild="true"
-				>
-				</FileConfiguration>
-			</File>
-		</Filter>
-		<Filter
-			Name="Pkgconfig Files"
-			Filter="pcin">
-			<File
-				RelativePath="ACEXML_XML_Svc_Conf_Parser.pc.in">
 				<FileConfiguration
 					Name="Debug|Win32"
 					ExcludedFromBuild="true"

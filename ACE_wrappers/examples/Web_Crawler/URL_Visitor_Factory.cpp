@@ -1,7 +1,12 @@
 /* -*- C++ -*- */
-// $Id: URL_Visitor_Factory.cpp 91673 2010-09-08 18:49:47Z johnnyw $
+// $Id: URL_Visitor_Factory.cpp 80826 2008-03-04 14:51:23Z wotte $
 
 #include "URL_Visitor_Factory.h"
+
+ACE_RCSID (Web_Crawler,
+           URL_Visitor_Factory,
+           "$Id: URL_Visitor_Factory.cpp 80826 2008-03-04 14:51:23Z wotte $")
+
 
 URL_Visitor_Factory::~URL_Visitor_Factory (void)
 {

@@ -1,4 +1,4 @@
-// $Id: Message_Blocks.cpp 91626 2010-09-07 10:59:20Z johnnyw $
+// $Id: Message_Blocks.cpp 80826 2008-03-04 14:51:23Z wotte $
 
 #include "ace/OS_main.h"
 #include "ace/OS_Memory.h"
@@ -13,7 +13,7 @@ int ACE_TMAIN (int, ACE_TCHAR **)
 // Just for the book...
 
 // Listing 1 code/ch12
-  ACE_Message_Block *mb = 0;
+  ACE_Message_Block *mb;
   ACE_NEW_RETURN (mb, ACE_Message_Block (128), -1);
 
   const char *deviceAddr= "Dev#12";
@@ -21,7 +21,7 @@ int ACE_TMAIN (int, ACE_TCHAR **)
 // Listing 1
 #endif /* 0 */
 // Listing 2 code/ch12
-  ACE_Message_Block *mb = 0;
+  ACE_Message_Block *mb;
   ACE_NEW_RETURN (mb, ACE_Message_Block (128), -1);
 
   const char *commandSeq= "CommandSeq#14";

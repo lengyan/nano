@@ -3,7 +3,7 @@
 	ProjectType="Visual C++"
 	Version="9.00"
 	Name="Process_Mutex"
-	ProjectGUID="{6FB388F4-FECA-1BAD-4556-C3316EC87AEE}"
+	ProjectGUID="{6FB388F4-FECA-1BAD-4556-C3315E1CECDD}"
 	RootNamespace="Process_Mutex"
 	Keyword="Win32Proj"
 	SignManifests="true"

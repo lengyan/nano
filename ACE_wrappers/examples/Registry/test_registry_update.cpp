@@ -1,4 +1,4 @@
-// $Id: test_registry_update.cpp 91671 2010-09-08 18:39:23Z johnnyw $
+// $Id: test_registry_update.cpp 81978 2008-06-16 16:57:12Z sowayaa $
 
 // Suppose this application belonged to AcmeSoft. AcmeSoft wants to
 // keep track of the number of times this application is
@@ -22,7 +22,7 @@
 // FUZZ: disable check_for_streams_include
 #include "ace/streams.h"
 
-
+ACE_RCSID(Registry, test_registry_update, "$Id: test_registry_update.cpp 81978 2008-06-16 16:57:12Z sowayaa $")
 
 // Name for application's naming context
 static ACE_Registry::Name application_context_name;

@@ -1,4 +1,4 @@
-// $Id: test_naming.cpp 91670 2010-09-08 18:02:26Z johnnyw $
+// $Id: test_naming.cpp 80826 2008-03-04 14:51:23Z wotte $
 
 // ============================================================================
 //
@@ -24,6 +24,9 @@
 #include "ace/Profile_Timer.h"
 #include "ace/Log_Msg.h"
 #include "ace/OS_NS_stdio.h"
+
+ACE_RCSID(Misc, test_naming, "$Id: test_naming.cpp 80826 2008-03-04 14:51:23Z wotte $")
+
 
 #define ACE_NS_MAX_ENTRIES 4000
 

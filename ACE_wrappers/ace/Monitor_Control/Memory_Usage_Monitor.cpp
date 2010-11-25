@@ -1,4 +1,4 @@
-// $Id: Memory_Usage_Monitor.cpp 91813 2010-09-17 07:52:52Z johnnyw $
+// $Id: Memory_Usage_Monitor.cpp 86518 2009-08-18 12:30:56Z olli $
 
 #if defined (ACE_HAS_KSTAT)
 #include <sys/sysinfo.h>
@@ -60,7 +60,7 @@ namespace ACE
     {
       return Memory_Usage_Monitor::default_name_;
     }
-
+    
     void
     Memory_Usage_Monitor::clear_i (void)
     {

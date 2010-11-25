@@ -1,8 +1,8 @@
-// $Id: Handle_L_FIFO.cpp 91671 2010-09-08 18:39:23Z johnnyw $
+// $Id: Handle_L_FIFO.cpp 80826 2008-03-04 14:51:23Z wotte $
 
 #include "Handle_L_FIFO.h"
 
-
+ACE_RCSID(server, Handle_L_FIFO, "$Id: Handle_L_FIFO.cpp 80826 2008-03-04 14:51:23Z wotte $")
 
 #if defined (SunOS4)
 extern "C"

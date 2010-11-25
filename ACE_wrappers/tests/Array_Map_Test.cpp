@@ -2,7 +2,7 @@
 /**
  * @file    Array_Map_Test.cpp
  *
- * $Id: Array_Map_Test.cpp 91673 2010-09-08 18:49:47Z johnnyw $
+ * $Id: Array_Map_Test.cpp 80826 2008-03-04 14:51:23Z wotte $
  *
  * Regression test for ACE_Array_Map.
  *
@@ -18,6 +18,12 @@
 
 #include <algorithm>
 //#include <map>  /* For STL portability testing. */
+
+
+ACE_RCSID (tests,
+           Array_Map_Test,
+           "$Id: Array_Map_Test.cpp 80826 2008-03-04 14:51:23Z wotte $")
+
 
 static char const letters[] =
   { 'A', 'C', 'E', ' ', 'r', 'u', 'l', 'e', 'z', '!' };

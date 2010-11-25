@@ -1,4 +1,4 @@
-// $Id: SPIPE-acceptor.cpp 91671 2010-09-08 18:39:23Z johnnyw $
+// $Id: SPIPE-acceptor.cpp 80826 2008-03-04 14:51:23Z wotte $
 
 #if !defined (SPIPE_ACCEPTOR_C)
 #define SPIPE_ACCEPTOR_C
@@ -11,7 +11,7 @@
 #include "ace/Signal.h"
 #include "SPIPE-acceptor.h"
 
-
+ACE_RCSID(blocking, SPIPE_acceptor, "$Id: SPIPE-acceptor.cpp 80826 2008-03-04 14:51:23Z wotte $")
 
 #if defined (ACE_HAS_WIN32_OVERLAPPED_IO) || defined (ACE_HAS_AIO_CALLS)
 

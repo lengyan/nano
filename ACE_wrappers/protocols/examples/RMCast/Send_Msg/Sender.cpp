@@ -1,9 +1,9 @@
 // file      : Sender.cpp
 // author    : Boris Kolpackov <boris@kolpackov.net>
-// cvs-id    : $Id: Sender.cpp 91750 2010-09-14 09:40:06Z johnnyw $
+// cvs-id    : $Id: Sender.cpp 80826 2008-03-04 14:51:23Z wotte $
 
+#include "ace/OS.h"
 #include "ace/Log_Msg.h"
-#include "ace/OS_NS_unistd.h"
 
 #include "ace/RMCast/Socket.h"
 

@@ -1,5 +1,5 @@
 #! /bin/sh
-# $Id: run_test.sh 91813 2010-09-17 07:52:52Z johnnyw $
+# $Id: run_test.sh 82503 2008-08-05 07:12:03Z johnnyw $
 #
 # Spawns CPP-inserver-fancy and CPP-inclient executables on a single host.
 
@@ -9,7 +9,7 @@ user=`whoami`
 iterations=1000
 
 if [ $# -ne 1 ]; then
-  echo $usage;
+  echo $usage; 
   exit 1
 fi
 threads=$1;

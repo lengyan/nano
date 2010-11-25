@@ -3,7 +3,7 @@
 	ProjectType="Visual C++"
 	Version="8.00"
 	Name="ACEXML"
-	ProjectGUID="{D9CDECDF-FECA-1BAD-BB9C-8C3AE91CCB57}"
+	ProjectGUID="{D9CDECDF-FECA-1BAD-BB9C-8C3ADA118234}"
 	RootNamespace="ACEXML"
 	Keyword="Win32Proj"
 	SignManifests="true"
@@ -392,6 +392,9 @@
 				RelativePath="EntityResolver.cpp">
 			</File>
 			<File
+				RelativePath="Env.cpp">
+			</File>
+			<File
 				RelativePath="ErrorHandler.cpp">
 			</File>
 			<File
@@ -492,6 +495,9 @@
 				RelativePath="EntityResolver.h">
 			</File>
 			<File
+				RelativePath="Env.h">
+			</File>
+			<File
 				RelativePath="ErrorHandler.h">
 			</File>
 			<File
@@ -538,6 +544,9 @@
 			</File>
 			<File
 				RelativePath="XML_Codecs.h">
+			</File>
+			<File
+				RelativePath="XML_Macros.h">
 			</File>
 			<File
 				RelativePath="XML_Types.h">
@@ -610,7 +619,7 @@
 		</Filter>
 		<Filter
 			Name="Pkgconfig Files"
-			Filter="pcin">
+			Filter="in">
 			<File
 				RelativePath="ACEXML.pc.in">
 				<FileConfiguration
@@ -640,6 +649,9 @@
 			Filter="i;ipp;inl">
 			<File
 				RelativePath="AttributesImpl.inl">
+			</File>
+			<File
+				RelativePath="Env.inl">
 			</File>
 			<File
 				RelativePath="Exception.inl">

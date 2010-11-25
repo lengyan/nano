@@ -3,7 +3,7 @@
 	ProjectType="Visual C++"
 	Version="9.00"
 	Name="asnmp_agent"
-	ProjectGUID="{CE58E6C3-FECA-1BAD-1396-8A04829757EE}"
+	ProjectGUID="{CE58E6C3-FECA-1BAD-1396-8A04E1A45AA7}"
 	RootNamespace="asnmp_agent"
 	Keyword="Win32Proj"
 	SignManifests="true"

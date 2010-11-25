@@ -1,9 +1,11 @@
-// $Id: Event_Forwarding_Discriminator.cpp 91670 2010-09-08 18:02:26Z johnnyw $
+// $Id: Event_Forwarding_Discriminator.cpp 81993 2008-06-16 20:26:16Z sowayaa $
 
 #if !defined (_CONSUMER_MAP_C)
 #define _CONSUMER_MAP_C
 
 #include "Event_Forwarding_Discriminator.h"
+
+ACE_RCSID(Gateway, Event_Forwarding_Discriminator, "$Id: Event_Forwarding_Discriminator.cpp 81993 2008-06-16 20:26:16Z sowayaa $")
 
 // Bind the Event_Key to the INT_ID.
 

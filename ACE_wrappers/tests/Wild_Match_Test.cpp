@@ -1,9 +1,9 @@
-// $Id: Wild_Match_Test.cpp 91671 2010-09-08 18:39:23Z johnnyw $
+// $Id: Wild_Match_Test.cpp 83755 2008-11-14 19:23:46Z mitza $
 
 #include "ace/ACE.h"
 #include "test_config.h"
 
-
+ACE_RCSID (tests, Wild_Match_Test, "$Id: Wild_Match_Test.cpp 83755 2008-11-14 19:23:46Z mitza $")
 
 bool match (const char *str, const char *pat, bool cs = true, bool cc = false)
 {

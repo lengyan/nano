@@ -1,4 +1,4 @@
-// $Id: Reactor_Registration_Test.cpp 91626 2010-09-07 10:59:20Z johnnyw $
+// $Id: Reactor_Registration_Test.cpp 90163 2010-05-18 21:42:20Z mitza $
 
 // ============================================================================
 //
@@ -23,6 +23,8 @@
 #include "ace/TP_Reactor.h"
 #include "ace/WFMO_Reactor.h"
 #include "ace/ACE.h"
+
+ACE_RCSID(tests, Reactor_Registration_Test, "$Id: Reactor_Registration_Test.cpp 90163 2010-05-18 21:42:20Z mitza $")
 
 static const char message[] = "abcdefghijklmnopqrstuvwxyz";
 static const size_t message_size = 26;

@@ -3,7 +3,7 @@
 	ProjectType="Visual C++"
 	Version="9.00"
 	Name="SV_Message_Queues_MQ_Server"
-	ProjectGUID="{FC1E9529-FECA-1BAD-6606-BBB2EAC4C36E}"
+	ProjectGUID="{FC1E9529-FECA-1BAD-6606-BBB2E78DA05D}"
 	RootNamespace="SV_Message_Queues_MQ_Server"
 	Keyword="Win32Proj"
 	SignManifests="true"

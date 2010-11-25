@@ -3,7 +3,7 @@
 	ProjectType="Visual C++"
 	Version="9.00"
 	Name="HTBP"
-	ProjectGUID="{F4032C9A-FECA-1BAD-D072-8A67F7EE4C1D}"
+	ProjectGUID="{F4032C9A-FECA-1BAD-D072-8A6761DD7CC9}"
 	RootNamespace="HTBP"
 	Keyword="Win32Proj"
 	SignManifests="true"
@@ -464,7 +464,7 @@
 		</Filter>
 		<Filter
 			Name="Pkgconfig Files"
-			Filter="pcin">
+			Filter="in">
 			<File
 				RelativePath="ACE_HTBP.pc.in">
 				<FileConfiguration

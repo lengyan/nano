@@ -3,7 +3,7 @@
 	ProjectType="Visual C++"
 	Version="9.00"
 	Name="Threads_Tss2"
-	ProjectGUID="{48B03BAC-FECA-1BAD-3731-D8978C8E5D14}"
+	ProjectGUID="{48B03BAC-FECA-1BAD-3731-D89758186E24}"
 	RootNamespace="Threads_Tss2"
 	Keyword="Win32Proj"
 	SignManifests="true"

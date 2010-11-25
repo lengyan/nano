@@ -1,4 +1,4 @@
-// $Id: Binary_Search.cpp 91813 2010-09-17 07:52:52Z johnnyw $
+// $Id: Binary_Search.cpp 80826 2008-03-04 14:51:23Z wotte $
 
 #include "Options.h"
 #include "Binary_Search.h"
@@ -23,13 +23,13 @@ Protocol_Record *
 Binary_Search::get_next_entry (void)
 {
   // Reset the iterator if we are starting from the beginning.
-
+  
   if (this->current_ptr_ == 0)
     this->current_ptr_ = this->sorted_record_;
-
+  
   // Now check to see if we've hit the end, in which case we set
   // things up for the next round!
-
+  
   if (this->current_ptr_ < this->sorted_record_ + this->count_)
     return *this->current_ptr_++;
   else
@@ -48,13 +48,13 @@ Protocol_Record *
 Binary_Search::get_each_entry (void)
 {
   // Reset the iterator if we are starting from the beginning.
-
+  
   if (this->current_index_ == -1)
     this->current_index_ = 0;
-
+  
   // Now check to see if we've hit the end, in which case we set
   // things up for the next round!
-
+  
   for (;
        this->current_index_ < this->count_;
        this->current_index_++)
@@ -70,7 +70,7 @@ Binary_Search::~Binary_Search (void)
   if (Options::get_opt (Options::DEBUGGING))
     ACE_DEBUG ((LM_DEBUG,
                 "disposing Binary_Search\n"));
-}
+} 
 
 // Used to initialize the values for the iterators...
 

@@ -1,4 +1,4 @@
-// $Id: Timeprobe_Test.cpp 91671 2010-09-08 18:39:23Z johnnyw $
+// $Id: Timeprobe_Test.cpp 90163 2010-05-18 21:42:20Z mitza $
 
 // ============================================================================
 //
@@ -28,7 +28,7 @@
 #include "ace/OS_NS_unistd.h"
 #include "ace/Timeprobe.h"
 
-
+ACE_RCSID(tests, Timeprobe_Test, "$Id: Timeprobe_Test.cpp 90163 2010-05-18 21:42:20Z mitza $")
 
 #if defined (ACE_ENABLE_TIMEPROBES)
 

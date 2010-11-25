@@ -1,4 +1,4 @@
-# $Id: platform_integrity_ghs.GNU 91285 2010-08-05 08:29:30Z johnnyw $
+# $Id: platform_integrity_ghs.GNU 80826 2008-03-04 14:51:23Z wotte $
 CROSS-COMPILE = 1
 
 debug ?= 1
@@ -6,6 +6,7 @@ optimize ?= 1
 
 shared_libs =
 static_libs = 1
+exceptions ?= 1
 
 #### CPU type
 ifndef CPU
@@ -53,7 +54,9 @@ CXX = $(GHSROOT)/cx$(CPU)
 
 # undefine "vector" because it's predefined for 7400 boards
 IOPS = -bspname=$(RTOSROOT)/target/$(BSP).bld -os_dir $(RTOSROOT) --one_instantiation_per_object -non_shared -Uvector
-IOPS += --exceptions
+ifeq (1, $(exceptions))
+   IOPS += --exceptions
+endif # exceptions
 
 CCFLAGS  += $(CFLAGS) -integrate -dynamic -I$(RTOSROOT)/INTEGRITY-include-SCA $(IOPS) -bspfile=$(TARGET_BSP) $(TARGET_LD)
 DCFLAGS  += -G

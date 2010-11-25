@@ -1,4 +1,4 @@
-// $Id: TS_Clerk_Handler.cpp 91671 2010-09-08 18:39:23Z johnnyw $
+// $Id: TS_Clerk_Handler.cpp 84481 2009-02-17 10:58:31Z johnnyw $
 
 #include "ace/Get_Opt.h"
 #include "TS_Clerk_Handler.h"
@@ -8,7 +8,7 @@
 #include "ace/OS_NS_time.h"
 #include "ace/os_include/os_netdb.h"
 
-
+ACE_RCSID(lib, TS_Clerk_Handler, "$Id: TS_Clerk_Handler.cpp 84481 2009-02-17 10:58:31Z johnnyw $")
 
 ACE_TS_Clerk_Handler::ACE_TS_Clerk_Handler (ACE_TS_Clerk_Processor *processor,
                                             ACE_INET_Addr &addr)

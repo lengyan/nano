@@ -1,4 +1,4 @@
-// $Id: simple_test_proactor.cpp 91822 2010-09-17 09:00:19Z johnnyw $
+// $Id: simple_test_proactor.cpp 80826 2008-03-04 14:51:23Z wotte $
 
 // ============================================================================
 //
@@ -24,7 +24,7 @@
 #include "ace/Get_Opt.h"
 #include "ace/OS_main.h"
 
-
+ACE_RCSID(Proactor, test_proactor, "simple_test_proactor.cpp,v 1.1 1999/05/18 22:15:30 alex Exp")
 
 #if defined (ACE_HAS_WIN32_OVERLAPPED_IO) || defined (ACE_HAS_AIO_CALLS)
   // This only works on Win32 platforms and on Unix platforms supporting
@@ -127,7 +127,7 @@ Simple_Tester::open (void)
     ACE_ERROR_RETURN ((LM_ERROR, "%p\n", "ACE_Asynch_Write_File::open"), -1);
 
   ACE_DEBUG ((LM_DEBUG,
-              "Simple_Tester::open: Files and Asynch Operations opened successfully\n"));
+              "Simple_Tester::open: Files and Asynch Operations opened sucessfully\n"));
 
 
   // Start an asynchronous read file
@@ -150,7 +150,7 @@ Simple_Tester::initiate_read_file (void)
     ACE_ERROR_RETURN ((LM_ERROR, "%p\n", "ACE_Asynch_Read_File::read"), -1);
 
   ACE_DEBUG ((LM_DEBUG,
-              "Simple_Tester:initiate_read_file: Asynch Read File issued successfully\n"));
+              "Simple_Tester:initiate_read_file: Asynch Read File issued sucessfully\n"));
 
   return 0;
 }

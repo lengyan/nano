@@ -3,7 +3,7 @@
 	ProjectType="Visual C++"
 	Version="9.00"
 	Name="TP_Reactor"
-	ProjectGUID="{CD7D56D9-FECA-1BAD-EB45-BD55AD295160}"
+	ProjectGUID="{CD7D56D9-FECA-1BAD-EB45-BD5579BF6250}"
 	RootNamespace="TP_Reactor"
 	Keyword="Win32Proj"
 	SignManifests="true"

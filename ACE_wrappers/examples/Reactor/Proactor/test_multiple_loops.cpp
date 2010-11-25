@@ -1,4 +1,4 @@
-// $Id: test_multiple_loops.cpp 91671 2010-09-08 18:39:23Z johnnyw $
+// $Id: test_multiple_loops.cpp 81978 2008-06-16 16:57:12Z sowayaa $
 
 // ============================================================================
 //
@@ -25,7 +25,7 @@
 #include "ace/Atomic_Op.h"
 #include "ace/OS_NS_unistd.h"
 
-
+ACE_RCSID(Proactor, test_multiple_loops, "$Id: test_multiple_loops.cpp 81978 2008-06-16 16:57:12Z sowayaa $")
 
 #if defined (ACE_HAS_WIN32_OVERLAPPED_IO)
 

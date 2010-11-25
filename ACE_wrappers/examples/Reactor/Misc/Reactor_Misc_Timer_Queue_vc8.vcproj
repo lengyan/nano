@@ -3,7 +3,7 @@
 	ProjectType="Visual C++"
 	Version="8.00"
 	Name="Reactor_Misc_Timer_Queue"
-	ProjectGUID="{E28F2132-FECA-1BAD-FD25-A21D8A731A81}"
+	ProjectGUID="{E28F2132-FECA-1BAD-FD25-A21DB97E53E2}"
 	RootNamespace="Reactor_Misc_Timer_Queue"
 	Keyword="Win32Proj"
 	SignManifests="true"

@@ -3,7 +3,7 @@
 	ProjectType="Visual C++"
 	Version="8.00"
 	Name="Reactor_Dgram_CO"
-	ProjectGUID="{93343AA9-FECA-1BAD-333D-0D85A7384955}"
+	ProjectGUID="{93343AA9-FECA-1BAD-333D-0D8597ECDF66}"
 	RootNamespace="Reactor_Dgram_CO"
 	Keyword="Win32Proj"
 	SignManifests="true"

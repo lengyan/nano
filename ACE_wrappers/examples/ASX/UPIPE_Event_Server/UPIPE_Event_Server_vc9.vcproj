@@ -3,7 +3,7 @@
 	ProjectType="Visual C++"
 	Version="9.00"
 	Name="UPIPE_Event_Server"
-	ProjectGUID="{2E55D17F-FECA-1BAD-53DA-CAD1A7F87CBD}"
+	ProjectGUID="{2E55D17F-FECA-1BAD-53DA-CAD1AAB11F8E}"
 	RootNamespace="UPIPE_Event_Server"
 	Keyword="Win32Proj"
 	SignManifests="true"

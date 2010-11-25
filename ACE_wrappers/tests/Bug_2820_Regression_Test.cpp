@@ -1,7 +1,7 @@
 /**
  * @file Bug_2820_Regression_Test.cpp
  *
- * $Id: Bug_2820_Regression_Test.cpp 91673 2010-09-08 18:49:47Z johnnyw $
+ * $Id: Bug_2820_Regression_Test.cpp 80826 2008-03-04 14:51:23Z wotte $
  *
  * Verify that the event handler reference counting works correctly
  * when the reactor is destroyed.
@@ -20,6 +20,9 @@
 #include "ace/Auto_Ptr.h"
 #include "ace/Reactor.h"
 #include "ace/Select_Reactor.h"
+
+ACE_RCSID(tests,
+          Bug_2820_Regression_Test, "$Id: Bug_2820_Regression_Test.cpp 80826 2008-03-04 14:51:23Z wotte $")
 
 /**
  * @class Simple_Handler

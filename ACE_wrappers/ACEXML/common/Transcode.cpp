@@ -1,4 +1,4 @@
-// -*- C++ -*-  $Id: Transcode.cpp 91813 2010-09-17 07:52:52Z johnnyw $
+// -*- C++ -*-  $Id: Transcode.cpp 82574 2008-08-08 19:35:06Z parsons $
 
 #include "ACEXML/common/Transcode.h"
 #include "ace/OS_NS_string.h"
@@ -233,7 +233,7 @@ ACEXML_Transcoder::utf162ucs4 (const ACEXML_UTF16 *src,
         {
           return ACEXML_END_OF_SOURCE;
         }
-
+        
       return ACEXML_Transcoder::surrogate2ucs4 (*src,
                                                 *(src+1),
                                                 dst);
@@ -244,7 +244,7 @@ ACEXML_Transcoder::utf162ucs4 (const ACEXML_UTF16 *src,
         {
           return ACEXML_END_OF_SOURCE;
         }
-
+        
       dst = *src;
     }
 

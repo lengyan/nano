@@ -1,4 +1,4 @@
-// $Id: file-reverse.cpp 91671 2010-09-08 18:39:23Z johnnyw $
+// $Id: file-reverse.cpp 82610 2008-08-12 19:46:36Z parsons $
 
 // Print a file in reverse by using the ACE memory mapped file
 // wrapper.  It is SO easy to do compared with alternatives!
@@ -8,7 +8,7 @@
 #include "ace/Log_Msg.h"
 #include "ace/Truncate.h"
 
-
+ACE_RCSID(file_reverse, file_reverse, "$Id: file-reverse.cpp 82610 2008-08-12 19:46:36Z parsons $")
 
 static void
 putline (const char *s)

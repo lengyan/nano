@@ -3,7 +3,7 @@
 	ProjectType="Visual C++"
 	Version="8.00"
 	Name="Synch_Benchmarks_Perf_Test"
-	ProjectGUID="{F326A832-FECA-1BAD-A22A-C0E6EC045D12}"
+	ProjectGUID="{F326A832-FECA-1BAD-A22A-C0E6DF348984}"
 	RootNamespace="Synch_Benchmarks_Perf_Test"
 	Keyword="Win32Proj"
 	SignManifests="true"

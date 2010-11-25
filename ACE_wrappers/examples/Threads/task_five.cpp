@@ -1,4 +1,4 @@
-// $Id: task_five.cpp 91670 2010-09-08 18:02:26Z johnnyw $
+// $Id: task_five.cpp 80826 2008-03-04 14:51:23Z wotte $
 
 // ============================================================================
 //
@@ -22,6 +22,8 @@
 #include "ace/Thread_Manager.h"
 #include "ace/Task.h"
 #include "ace/OS_NS_unistd.h"
+
+ACE_RCSID(Threads, task_five, "$Id: task_five.cpp 80826 2008-03-04 14:51:23Z wotte $")
 
 static const int DEFAULT_TASKS = 100;
 static const int DEFAULT_ITERATIONS = 10;

@@ -1,4 +1,4 @@
-// $Id: global.features 92271 2010-10-20 09:26:46Z johnnyw $
+// $Id: global.features 90789 2010-06-23 10:30:53Z mcorino $
 // The global features file contains the default feature settings.
 // By default, if a feature isn't listed here then it is enabled.
 // If it is listed, then the value assigned to the feature is interpreted
@@ -59,12 +59,9 @@ xerces2       = 0
 xerces3       = 0
 ofccm         = 0
 ndds          = 0
-nddsmonitor   = 0
 mcpp          = 0
 wireshark     = 0
 old_stdstream = 0
-exclude_inet  = 0
-inet_ssl      = 0
 
 dds4ccm_opendds = 0
 dds4ccm_ndds = 0
@@ -149,7 +146,5 @@ link_codecfactory = 0
 
 // Feature for LwCCM
 ccm_lw = 1
-// Feature for CCM for disabling events.
-ccm_noevent = 0
 
 valuetype_out_indirection=1

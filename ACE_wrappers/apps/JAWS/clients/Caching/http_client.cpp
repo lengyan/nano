@@ -1,4 +1,4 @@
-// $Id: http_client.cpp 91670 2010-09-08 18:02:26Z johnnyw $
+// $Id: http_client.cpp 80826 2008-03-04 14:51:23Z wotte $
 
 // ============================================================================
 //
@@ -21,6 +21,8 @@
 #include "ace/OS_NS_string.h"
 #include "ace/OS_NS_ctype.h"
 #include "http_handler.h"
+
+ACE_RCSID(Caching, http_client, "$Id: http_client.cpp 80826 2008-03-04 14:51:23Z wotte $")
 
 int
 ACE_TMAIN (int, ACE_TCHAR *[])

@@ -1,6 +1,8 @@
-// $Id: connection.cpp 91670 2010-09-08 18:02:26Z johnnyw $
+// $Id: connection.cpp 81993 2008-06-16 20:26:16Z sowayaa $
 
 #include "connection.h"
+
+ACE_RCSID(stress_testing, connection, "$Id: connection.cpp 81993 2008-06-16 20:26:16Z sowayaa $")
 
 // Make the connection to the WEB server
 

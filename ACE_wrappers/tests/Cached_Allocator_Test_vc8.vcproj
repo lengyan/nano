@@ -3,7 +3,7 @@
 	ProjectType="Visual C++"
 	Version="8.00"
 	Name="Cached_Allocator_Test"
-	ProjectGUID="{F6EB3FAE-FECA-1BAD-2431-8A1100722433}"
+	ProjectGUID="{F6EB3FAE-FECA-1BAD-2431-8A11337F6D50}"
 	RootNamespace="Cached_Allocator_Test"
 	Keyword="Win32Proj"
 	SignManifests="true"

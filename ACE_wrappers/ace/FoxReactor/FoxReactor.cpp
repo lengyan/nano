@@ -1,6 +1,10 @@
-// $Id: FoxReactor.cpp 91626 2010-09-07 10:59:20Z johnnyw $
+// $Id: FoxReactor.cpp 85914 2009-07-07 12:59:36Z olli $
 
 #include "ace/FoxReactor/FoxReactor.h"
+
+ACE_RCSID(ace, FoxReactor, "$Id: FoxReactor.cpp 85914 2009-07-07 12:59:36Z olli $")
+
+#include "ace/Synch_T.h"
 
 FXDEFMAP(ACE_FoxReactor) ACE_FoxReactorMap[]={
   FXMAPFUNCS(SEL_IO_READ,0,MAXKEY,ACE_FoxReactor::onFileEvents),

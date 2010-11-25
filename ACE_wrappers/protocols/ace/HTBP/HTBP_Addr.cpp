@@ -1,7 +1,11 @@
-// $Id: HTBP_Addr.cpp 91673 2010-09-08 18:49:47Z johnnyw $
+// $Id: HTBP_Addr.cpp 80826 2008-03-04 14:51:23Z wotte $
 
 #include "HTBP_Addr.h"
 #include "ace/OS_NS_string.h"
+
+ACE_RCSID (HTBP,
+           ACE_HTBP_Addr,
+           "$Id: HTBP_Addr.cpp 80826 2008-03-04 14:51:23Z wotte $")
 
 ACE_BEGIN_VERSIONED_NAMESPACE_DECL
 

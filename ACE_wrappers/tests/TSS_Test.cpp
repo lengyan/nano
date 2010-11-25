@@ -1,4 +1,4 @@
-// $Id: TSS_Test.cpp 91671 2010-09-08 18:39:23Z johnnyw $
+// $Id: TSS_Test.cpp 80826 2008-03-04 14:51:23Z wotte $
 
 // ============================================================================
 //
@@ -28,7 +28,7 @@
 #include "ace/Signal.h"
 #include "TSS_Test_Errno.h"
 
-
+ACE_RCSID(tests, TSS_Test, "$Id: TSS_Test.cpp 80826 2008-03-04 14:51:23Z wotte $")
 
 static u_int errors = 0;
 
@@ -168,7 +168,7 @@ worker (void *c)
 
       // Demonstrate use of ACE_TSS_Type_Adapter to wrap built-in
       // types when used with ACE_TSS.  See DESCRIPTION of template
-      // class ACE_TSS_Type_Adapter for what this
+      // class ACE_TSS_Type_Adapter in ace/Synch_T.h for what this
       // should look like.  Unfortunately, some compilers have trouble
       // with the implicit type conversions.  Others have problems with
       // the *explicit* type conversions.

@@ -1,7 +1,7 @@
 /**
  * @file Bug_1576_Regression_Test.cpp
  *
- * $Id: Bug_1576_Regression_Test.cpp 91626 2010-09-07 10:59:20Z johnnyw $
+ * $Id: Bug_1576_Regression_Test.cpp 80826 2008-03-04 14:51:23Z wotte $
  *
  * Reproduces the problems reported in bug 1576:
  *   http://deuce.doc.wustl.edu/bugzilla/show_bug.cgi?id=1576
@@ -11,6 +11,10 @@
 
 #include "test_config.h"
 #include "ace/DLL.h"
+
+ACE_RCSID (tests,
+           Bug_1576_Regression_Test,
+           "$Id: Bug_1576_Regression_Test.cpp 80826 2008-03-04 14:51:23Z wotte $")
 
 int
 run_main (int, ACE_TCHAR *[])

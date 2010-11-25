@@ -3,7 +3,7 @@
 	ProjectType="Visual C++"
 	Version="9.00"
 	Name="Service_Configurator_Misc_Timer"
-	ProjectGUID="{C108C399-FECA-1BAD-ECF7-1F18EF61CB2B}"
+	ProjectGUID="{C108C399-FECA-1BAD-ECF7-1F187952FBFF}"
 	RootNamespace="Service_Configurator_Misc_Timer"
 	Keyword="Win32Proj"
 	SignManifests="true"

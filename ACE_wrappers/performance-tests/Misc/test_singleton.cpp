@@ -1,4 +1,4 @@
-// $Id: test_singleton.cpp 91670 2010-09-08 18:02:26Z johnnyw $
+// $Id: test_singleton.cpp 80826 2008-03-04 14:51:23Z wotte $
 
 // This example illustrates the performance impact of using the
 // Double-Checked Locking pattern compared with using the "standard"
@@ -35,6 +35,8 @@
 #include "ace/Log_Msg.h"
 
 #include "test_singleton.h"
+
+ACE_RCSID(Misc, test_singleton, "$Id: test_singleton.cpp 80826 2008-03-04 14:51:23Z wotte $")
 
 #if defined (ACE_HAS_THREADS)
 

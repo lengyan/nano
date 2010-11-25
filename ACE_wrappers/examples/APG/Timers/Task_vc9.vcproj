@@ -3,7 +3,7 @@
 	ProjectType="Visual C++"
 	Version="9.00"
 	Name="Task"
-	ProjectGUID="{EB619C9A-FECA-1BAD-B251-8D4CFC8DCBF0}"
+	ProjectGUID="{EB619C9A-FECA-1BAD-B251-8D4C9FBEC6B9}"
 	RootNamespace="Task"
 	Keyword="Win32Proj"
 	SignManifests="true"

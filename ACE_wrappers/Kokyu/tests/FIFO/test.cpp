@@ -1,4 +1,4 @@
-// $Id: test.cpp 91822 2010-09-17 09:00:19Z johnnyw $
+// $Id: test.cpp 80826 2008-03-04 14:51:23Z wotte $
 
 #include "ace/Auto_Ptr.h"
 
@@ -161,6 +161,6 @@ int parse_args (int argc, ACE_TCHAR *argv[])
                            "-p <fifo|rr|other>"),
                           -1);
       }
-  // Indicates successful parsing of the command line
+  // Indicates sucessful parsing of the command line
   return 0;
 }

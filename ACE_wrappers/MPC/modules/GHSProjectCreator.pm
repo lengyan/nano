@@ -63,8 +63,6 @@ sub post_file_creation {
       close($fh);
     }
   }
-
-  return undef;
 }
 
 sub compare_output {

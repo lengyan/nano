@@ -3,7 +3,7 @@
 	ProjectType="Visual C++"
 	Version="9.00"
 	Name="Reference_Counted_Event_Handler_Test"
-	ProjectGUID="{906FE286-FECA-1BAD-2431-8A1100722433}"
+	ProjectGUID="{906FE286-FECA-1BAD-2431-8A11337F6D50}"
 	RootNamespace="Reference_Counted_Event_Handler_Test"
 	Keyword="Win32Proj"
 	SignManifests="true"

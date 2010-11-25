@@ -1,4 +1,4 @@
-// $Id: MQ_Client.cpp 91671 2010-09-08 18:39:23Z johnnyw $
+// $Id: MQ_Client.cpp 80826 2008-03-04 14:51:23Z wotte $
 
 #include "ace/SV_Message_Queue.h"
 #include "test.h"
@@ -11,7 +11,7 @@
 #include "ace/OS_NS_unistd.h"
 #include "ace/OS_NS_stdlib.h"
 
-
+ACE_RCSID(SV_Message_Queues, MQ_Client, "$Id: MQ_Client.cpp 80826 2008-03-04 14:51:23Z wotte $")
 
 #if defined (ACE_HAS_SYSV_IPC) && !defined(ACE_LACKS_SYSV_SHMEM)
 

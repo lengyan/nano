@@ -3,7 +3,7 @@
 	ProjectType="Visual C++"
 	Version="8.00"
 	Name="Kokyu"
-	ProjectGUID="{70CA7C9E-FECA-1BAD-9CE7-8A2E004D9CE5}"
+	ProjectGUID="{70CA7C9E-FECA-1BAD-9CE7-8A2E3340D586}"
 	RootNamespace="Kokyu"
 	Keyword="Win32Proj"
 	SignManifests="true"
@@ -472,7 +472,7 @@
 		</Filter>
 		<Filter
 			Name="Pkgconfig Files"
-			Filter="pcin">
+			Filter="in">
 			<File
 				RelativePath="Kokyu.pc.in">
 				<FileConfiguration

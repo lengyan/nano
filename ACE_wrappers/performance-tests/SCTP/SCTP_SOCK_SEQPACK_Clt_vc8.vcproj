@@ -3,7 +3,7 @@
 	ProjectType="Visual C++"
 	Version="8.00"
 	Name="SCTP_SOCK_SEQPACK_Clt"
-	ProjectGUID="{DE3A8F7F-FECA-1BAD-7612-8A66F3FD4CB6}"
+	ProjectGUID="{DE3A8F7F-FECA-1BAD-7612-8A66C329DA85}"
 	RootNamespace="SCTP_SOCK_SEQPACK_Clt"
 	Keyword="Win32Proj"
 	SignManifests="true"

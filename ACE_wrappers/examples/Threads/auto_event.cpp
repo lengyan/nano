@@ -1,4 +1,4 @@
-// $Id: auto_event.cpp 91670 2010-09-08 18:02:26Z johnnyw $
+// $Id: auto_event.cpp 84565 2009-02-23 08:20:39Z johnnyw $
 
 // This test shows the use of an ACE_Auto_Event as a signaling
 // mechanism. Two threads are created (one a reader, the other a
@@ -13,6 +13,8 @@
 #include "ace/Auto_Event.h"
 #include "ace/Singleton.h"
 #include "ace/Thread_Manager.h"
+
+ACE_RCSID(Threads, auto_event, "$Id: auto_event.cpp 84565 2009-02-23 08:20:39Z johnnyw $")
 
 #if defined (ACE_HAS_THREADS)
 // Shared event between reader and writer.  The ACE_Thread_Mutex is

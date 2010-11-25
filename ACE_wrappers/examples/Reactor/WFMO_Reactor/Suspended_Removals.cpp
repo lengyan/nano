@@ -1,4 +1,4 @@
-// $Id: Suspended_Removals.cpp 91671 2010-09-08 18:39:23Z johnnyw $
+// $Id: Suspended_Removals.cpp 80826 2008-03-04 14:51:23Z wotte $
 //
 // ============================================================================
 //
@@ -25,7 +25,7 @@
 #include "ace/Reactor.h"
 #include "ace/WFMO_Reactor.h"
 
-
+ACE_RCSID(WFMO_Reactor, Suspended_Removals, "$Id: Suspended_Removals.cpp 80826 2008-03-04 14:51:23Z wotte $")
 
 class Event_Handler : public ACE_Event_Handler
 {

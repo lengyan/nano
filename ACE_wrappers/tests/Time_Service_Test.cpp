@@ -1,4 +1,4 @@
-// $Id: Time_Service_Test.cpp 91626 2010-09-07 10:59:20Z johnnyw $
+// $Id: Time_Service_Test.cpp 80826 2008-03-04 14:51:23Z wotte $
 
 // ============================================================================
 //
@@ -26,6 +26,8 @@
 #include "ace/ACE.h"
 #include "ace/OS_NS_string.h"
 #include "ace/OS_NS_unistd.h"
+
+ACE_RCSID(tests, Time_Service_Test, "$Id: Time_Service_Test.cpp 80826 2008-03-04 14:51:23Z wotte $")
 
 #define APPLICATION \
 ACE_TEXT ("..") ACE_DIRECTORY_SEPARATOR_STR \

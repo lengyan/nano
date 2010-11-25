@@ -1,4 +1,4 @@
-// $Id: Codecs_Test.cpp 91671 2010-09-08 18:39:23Z johnnyw $
+// $Id: Codecs_Test.cpp 80826 2008-03-04 14:51:23Z wotte $
 
 // ============================================================================
 //
@@ -21,7 +21,7 @@
 #include "ace/Auto_Ptr.h"
 #include "ace/ACE.h"
 
-
+ACE_RCSID(tests, Codecs_Test, "$Id: Codecs_Test.cpp 80826 2008-03-04 14:51:23Z wotte $")
 
 // Don't change the strings thinking that they are typos
 

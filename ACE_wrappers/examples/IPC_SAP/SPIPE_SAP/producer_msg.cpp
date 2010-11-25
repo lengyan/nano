@@ -1,4 +1,4 @@
-// $Id: producer_msg.cpp 91671 2010-09-08 18:39:23Z johnnyw $
+// $Id: producer_msg.cpp 81978 2008-06-16 16:57:12Z sowayaa $
 
 #include "ace/OS_main.h"
 #include "ace/OS_Memory.h"
@@ -10,7 +10,7 @@
 #include "ace/OS_NS_unistd.h"
 #include "ace/Time_Value.h"
 
-
+ACE_RCSID(SPIPE_SAP, producer_msg, "$Id: producer_msg.cpp 81978 2008-06-16 16:57:12Z sowayaa $")
 
 #if defined (ACE_HAS_STREAM_PIPES)
 

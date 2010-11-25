@@ -3,7 +3,7 @@
 	ProjectType="Visual C++"
 	Version="8.00"
 	Name="CPU_Load"
-	ProjectGUID="{13932ACA-FECA-1BAD-A972-EF683B232306}"
+	ProjectGUID="{13932ACA-FECA-1BAD-A972-EF687240100B}"
 	RootNamespace="CPU_Load"
 	Keyword="Win32Proj"
 	SignManifests="true"

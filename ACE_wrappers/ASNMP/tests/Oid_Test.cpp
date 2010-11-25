@@ -1,4 +1,4 @@
-// $Id: Oid_Test.cpp 91670 2010-09-08 18:02:26Z johnnyw $
+// $Id: Oid_Test.cpp 80826 2008-03-04 14:51:23Z wotte $
 
 // ============================================================================
 //
@@ -41,6 +41,8 @@ DAMAGES.
 #include "ace/OS_main.h"
 #include "asnmp/oid.h"
 #include "test_config.h"
+
+ACE_RCSID(tests, Oid_Test, "$Id: Oid_Test.cpp 80826 2008-03-04 14:51:23Z wotte $")
 
 /*
   Oid( const char * dotted_oid_string = "", size_t size = -1);

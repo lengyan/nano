@@ -32,25 +32,18 @@ use vars qw(@ISA);
 # 3 means that parameters to perform_ should not be evaluated
 # 4 means there is a post_ method available (called after the results of
 #   calling perform_ for a nested function are written to the output)
-# 5 means that the get_ method performs the get_ and doif_ functionality
 #
 # Perl Function		Parameter Type		Return Type
 # get_			string			string or array
 # perform_		array reference		array
 # doif_			array reference		boolean
 #
-my $get_type             = 1 << 0;
-my $perform_type         = 1 << 1;
-my $doif_type            = 1 << 2;
-my $perform_no_eval_type = 1 << 3;
-my $post_type            = 1 << 4;
-my $get_combined_type    = 1 << 5;
 my %keywords = ('if'              => 0,
                 'else'            => 0,
                 'endif'           => 0,
-                'noextension'     => $get_type|$perform_type,
-                'dirname'         => $get_type|$perform_type|$doif_type,
-                'basename'        => $get_type|$perform_type|$doif_type,
+                'noextension'     => 3,
+                'dirname'         => 7,
+                'basename'        => 0,
                 'basenoextension' => 0,
                 'foreach'         => 0,
                 'forfirst'        => 0,
@@ -61,35 +54,31 @@ my %keywords = ('if'              => 0,
                 'eval'            => 0,
                 'comment'         => 0,
                 'marker'          => 0,
-                'uc'              => $get_type|$perform_type,
-                'lc'              => $get_type|$perform_type,
+                'uc'              => 3,
+                'lc'              => 3,
                 'ucw'             => 0,
-                'normalize'       => $get_type|$perform_type,
-                'flag_overrides'  => $get_type,
-                'reverse'         => $get_type|$perform_type,
-                'sort'            => $get_type|$perform_type,
-                'uniq'            => $get_type|$perform_type,
-                'multiple'        => $get_type|$doif_type|$get_combined_type,
-                'starts_with'     => $get_type|$doif_type|$get_combined_type,
-                'ends_with'       => $get_type|$doif_type|$get_combined_type,
-                'contains'        => $get_type|$doif_type|$get_combined_type,
-                'remove_from'     => $get_type|$perform_type|$doif_type|$perform_no_eval_type|$get_combined_type,
-                'compares'        => $get_type|$doif_type|$get_combined_type,
-                'vars_equal'      => $get_type|$perform_type,
-                'duplicate_index' => $get_type|$doif_type|$get_combined_type,
-                'transdir'        => $get_type|$doif_type,
-                'has_extension'   => $get_type|$doif_type|$get_combined_type,
+                'normalize'       => 3,
+                'flag_overrides'  => 1,
+                'reverse'         => 3,
+                'sort'            => 3,
+                'uniq'            => 3,
+                'multiple'        => 5,
+                'starts_with'     => 5,
+                'ends_with'       => 5,
+                'contains'        => 5,
+                'remove_from'     => 0xf,
+                'compares'        => 5,
+                'duplicate_index' => 5,
+                'transdir'        => 5,
+                'has_extension'   => 5,
                 'keyname_used'    => 0,
                 'scope'           => 0,
-                'full_path'       => $get_type|$perform_type,
-                'extensions'      => $perform_type|$perform_no_eval_type,
-                'create_aux_file' => $perform_type|$post_type,
+                'full_path'       => 3,
+                'extensions'      => 0xa,
+                'create_aux_file' => 0x12,
                 'end_aux_file'    => 0,
-                'translate_vars'  => $get_type|$perform_type,
-                'convert_slashes' => $perform_type,
-                'new_guid'        => 0,
-                'deref'           => 0,
-                'set'             => 0,
+                'translate_vars'  => 2 | 1,
+                'convert_slashes' => 2,
                );
 
 my %target_type_vars = ('type_is_static'   => 1,
@@ -254,7 +243,7 @@ sub split_parameters {
   my($self, $str) = @_;
   my @params;
 
-  while($str =~ /^(\w+\([^\)]+\))(.*)/ || $str =~ /^([^,]+)(.*)/) {
+  while ($str =~ /^(\w+\([^\)]+\))(.*)/ || $str =~ /^([^,]+)(.*)/) {
     push(@params, $1);
     $str = $2;
     $str =~ s/^\s*,\s*//;
@@ -262,7 +251,7 @@ sub split_parameters {
 
   ## Return the parameters (which includes whatever is left in the
   ## string).  Just return it instead of pushing it onto @params.
-  return $str eq '' ? @params : (@params, $str);
+  return ($str eq '') ? @params : (@params, $str);
 }
 
 
@@ -493,12 +482,12 @@ sub process_foreach {
   }
   else {
     ## Pull out modifying commands first
-    while($val =~ /(\w+)\((.+)\)/) {
+    while ($val =~ /(\w+)\((.+)\)/) {
       my $cmd = $1;
       $val = $2;
-      if (($keywords{$cmd} & $perform_type) != 0) {
+      if (($keywords{$cmd} & 0x02) != 0) {
         push(@cmds, 'perform_' . $cmd);
-        if (($keywords{$cmd} & $perform_no_eval_type) != 0) {
+        if (($keywords{$cmd} & 0x08) != 0) {
           my @params = $self->split_parameters($val);
           $val = \@params;
           last;
@@ -1018,30 +1007,6 @@ sub handle_compares {
   $self->generic_handle('doif_compares', $str);
 }
 
-sub get_vars_equal {
-  my($self, $str) = @_;
-  return $self->doif_vars_equal([$str]);
-}
-
-
-sub doif_vars_equal {
-  my($self, $val) = @_;
-
-  if (defined $val) {
-    my($var1, $var2) = $self->split_parameters("@$val");
-    if (defined $var1 && defined $var2) {
-      return ($self->get_value_with_default($var1) eq $self->get_value_with_default($var2));
-    }
-  }
-  return undef;
-}
-
-
-sub handle_vars_equal {
-  my($self, $str) = @_;
-  $self->generic_handle('doif_vars_equal', $str);
-}
-
 
 sub get_reverse {
   my($self, $name) = @_;
@@ -1165,7 +1130,7 @@ sub process_compound_if {
     ## Get the value based on the string
     my @cmds;
     my $val;
-    while($str =~ /(\w+)\((.+)\)(.*)/) {
+    while ($str =~ /(\w+)\((.+)\)(.*)/) {
       if ($3 eq '') {
         push(@cmds, $1);
         $str = $2;
@@ -1180,21 +1145,10 @@ sub process_compound_if {
 
     if (defined $cmds[0]) {
       ## Start out calling get_xxx on the string
-      my $type = $get_type;
+      my $type = 0x01;
       my $prefix = 'get_';
 
       $val = $str;
-
-      ## If there is only one command, we have to add it to the list
-      ## again so that we can get the variable value and then use
-      ## the doif_ version to test it, unless the get_ function
-      ## also performs the doif_ functionality.
-      if ($#cmds == 0 && defined $keywords{$cmds[0]} &&
-          ($keywords{$cmds[0]} & $doif_type) != 0 &&
-          ($keywords{$cmds[0]} & $get_combined_type) == 0) {
-        push(@cmds, $cmds[0]);
-      }
-
       foreach my $cmd (reverse @cmds) {
         if (defined $keywords{$cmd} && ($keywords{$cmd} & $type) != 0) {
           my $func = "$prefix$cmd";
@@ -1202,7 +1156,7 @@ sub process_compound_if {
 
           ## Now that we have a value, we need to switch over
           ## to calling doif_xxx
-          $type = $doif_type;
+          $type = 0x04;
           $prefix = 'doif_';
         }
         else {
@@ -1547,7 +1501,7 @@ sub evaluate_nested_functions {
     my @cmds;
     my $val = $param;
 
-    while($val =~ /(\w+)\((.+)\)/) {
+    while ($val =~ /(\w+)\((.+)\)/) {
       push(@cmds, $1);
       $val = $2;
     }
@@ -1557,17 +1511,17 @@ sub evaluate_nested_functions {
       next;
     }
 
-    my $type = $get_type;
+    my $type = 0x01;
     my $prefix = 'get_';
     foreach my $cmd (reverse @cmds) {
       if (defined $keywords{$cmd} && ($keywords{$cmd} & $type) != 0) {
         my $func = "$prefix$cmd";
-        if ($type == $get_type) {
+        if ($type == 0x01) {
           $val = $self->$func($val);
           $val = [ $val ] if (!UNIVERSAL::isa($val, 'ARRAY'));
           ## Now that we have a value, we need to switch over
           ## to calling perform_xxx
-          $type = $perform_type;
+          $type = 0x02;
           $prefix = 'perform_';
         }
         else {
@@ -1583,11 +1537,11 @@ sub evaluate_nested_functions {
     push @results, "@$val";
   }
 
-  if (defined $keywords{$funcname} && ($keywords{$funcname} & $perform_type)) {
+  if (defined $keywords{$funcname} && ($keywords{$funcname} & 0x02)) {
     my $func = 'perform_' . $funcname;
     my @array = $self->$func(\@results);
     $self->append_current("@array");
-    if ($keywords{$funcname} & $post_type) {
+    if ($keywords{$funcname} & 0x10) {
       $func = 'post_' . $funcname;
       $self->$func();
     }
@@ -1603,7 +1557,7 @@ sub perform_dirname {
   my($self, $value) = @_;
   my @val;
   foreach my $val (@$value) {
-    push(@val, $self->tp_dirname($val));
+    push(@val, $self->validated_dirname($val));
   }
   return @val;
 }
@@ -1611,7 +1565,7 @@ sub perform_dirname {
 
 sub get_dirname {
   my($self, $name) = @_;
-  return $self->tp_dirname($self->get_value_with_default($name));
+  return $self->doif_dirname($self->get_value_with_default($name));
 }
 
 
@@ -1619,7 +1573,7 @@ sub doif_dirname {
   my($self, $value) = @_;
 
   if (defined $value) {
-    $value = $self->tp_dirname($value);
+    $value = $self->validated_dirname($value);
     return ($value ne '.');
   }
   return undef;
@@ -1630,34 +1584,7 @@ sub handle_dirname {
   my($self, $name) = @_;
 
   $self->append_current(
-            $self->tp_dirname($self->get_value_with_default($name)));
-}
-
-
-sub perform_basename {
-  my($self, $value) = @_;
-  my @val;
-  foreach my $val (@$value) {
-    push(@val, $self->tp_basename($val));
-  }
-  return @val;
-}
-
-
-sub get_basename {
-  my($self, $name) = @_;
-  return $self->tp_basename($self->get_value_with_default($name));
-}
-
-
-sub doif_basename {
-  my($self, $value) = @_;
-
-  if (defined $value) {
-    $value = $self->tp_basename($value);
-    return ($value ne '.');
-  }
-  return undef;
+            $self->validated_dirname($self->get_value_with_default($name)));
 }
 
 
@@ -1767,8 +1694,15 @@ sub handle_duplicate_index {
   $self->append_current($value) if (defined $value);
 }
 
-sub actual_transdir {
- my($self, $value) = @_;
+
+sub get_transdir {
+  my($self, $name) = @_;
+  return $self->doif_transdir($self->get_value_with_default($name));
+}
+
+
+sub doif_transdir {
+  my($self, $value) = @_;
 
   if ($value =~ /([\/\\])/) {
     return $self->{'prjc'}->translate_directory(
@@ -1778,22 +1712,10 @@ sub actual_transdir {
   return undef;
 }
 
-sub get_transdir {
-  my($self, $name) = @_;
-  return $self->actual_transdir($self->get_value_with_default($name));
-}
-
-
-sub doif_transdir {
-  my($self, $value) = @_;
-
-  return (defined $value ? $self->actual_transdir($value) : undef);
-}
-
 
 sub handle_transdir {
   my($self, $name) = @_;
-  my $value = $self->actual_transdir($self->get_value_with_default($name));
+  my $value = $self->doif_transdir($self->get_value_with_default($name));
   $self->append_current($value) if (defined $value);
 }
 
@@ -1814,11 +1736,11 @@ sub post_create_aux_file {
 
 
 sub perform_create_aux_file {
-  my($self, $argsref) = @_;
+  my $self = shift;
+  my $argsref = shift;
 
   if (defined $self->{'aux_file'}) {
-    $self->{'error_in_handle'} = "Can't nest create_aux_file commands.";
-    return undef;
+    die "Can't nest create_aux_file commands.";
   }
 
   my $fname = '';
@@ -1842,27 +1764,25 @@ sub perform_create_aux_file {
 sub handle_end_aux_file {
   my $self = shift;
   if (!defined $self->{'aux_file'}) {
-    $self->{'error_in_handle'} = 'end_aux_file seen before create_aux_file';
+    return 'end_aux_file seen before create_aux_file';
   }
   else {
     my $af = $self->{'aux_file'};
     mkpath($af->{'dir'}, 0, 0777) if ($af->{'dir'} ne '.');
     my $fh = new FileHandle('> ' . $af->{'dir'} . '/' . $af->{'filename'});
-    if (defined $fh) {
-      print $fh $af->{'text'};
-      close($fh);
+    if (!defined $fh) {
+      die "Couldn't open: " . $af->{'dir'} . '/' . $af->{'filename'};
     }
-    else {
-      $self->{'error_in_handle'} = "Couldn't open: " . $af->{'dir'} . '/' .
-                                   $af->{'filename'};
-    }
+    print $fh $af->{'text'};
+    close $fh;
     $self->{'aux_file'} = undef;
   }
 }
 
 
 sub handle_translate_vars {
-  my($self, $arg) = @_;
+  my $self = shift;
+  my $arg = shift;
   my @params = $self->split_parameters($arg);
   $self->append_current($self->perform_translate_vars([@params]));
 }
@@ -1874,23 +1794,13 @@ sub get_translate_vars {
 }
 
 sub perform_translate_vars {
-  my($self, $arg) = @_;
-
-  ## If the first parameter is a template variable with a value, use it.
-  ## Otherwise, use the parameter as the value.
+  my $self = shift;
+  my $arg = shift;
   my $val = $self->get_value($arg->[0]);
   $val = $arg->[0] unless defined $val;
-
-  ## If the second optional parameter is provided, use it.  Otherwise,
-  ## use the operating system found in the command substitution map.
-  my $os = (defined $arg->[1] && $arg->[1] ne '') ?
-           $arg->[1] : $self->{'prjc'}->{'command_subs'}->{'os'};
-
-  ## Get the variable reference characters based on the operating system
-  ## for which we are generating this project.
+  my $os = (defined $arg->[1] && $arg->[1] ne '')
+      ? $arg->[1] : $self->{'prjc'}->{'command_subs'}->{'os'};
   my ($pre, $post) = ($os eq 'win32') ? ('%', '%') : ('${', '}');
-
-  ## Replace $() with the environment variable reference characters.
   $val =~ s[\$\(([^)]+)\)(\S*)][my ($var, $rest) = ($1, $2);
                                 $rest =~ s!/!\\!g if $os eq 'win32';
                                 "$pre$var$post$rest"]ge;
@@ -1899,62 +1809,24 @@ sub perform_translate_vars {
 
 
 sub handle_convert_slashes {
-  my($self, $arg) = @_;
+  my $self = shift;
+  my $arg = shift;
   my @params = $self->split_parameters($arg);
   $self->append_current($self->perform_convert_slashes([@params]));
 }
 
 
 sub perform_convert_slashes {
-  my($self, $arg) = @_;
-
-  ## If the first parameter is a template variable with a value, use it.
-  ## Otherwise, use the parameter as the value.
+  my $self = shift;
+  my $arg = shift;
   my $val = $self->get_value($arg->[0]);
   $val = $arg->[0] unless defined $val;
-
-  ## If the second optional parameter is provided, use it.  Otherwise,
-  ## use the operating system found in the command substitution map.
-  my $os = (defined $arg->[1] && $arg->[1] ne '') ?
-           $arg->[1] : $self->{'prjc'}->{'command_subs'}->{'os'};
-
-  ## Replace forward slashes with backslashes if we're generating this
-  ## project specific to Windows.
+  my $os = (defined $arg->[1] && $arg->[1] ne '')
+      ? $arg->[1] : $self->{'prjc'}->{'command_subs'}->{'os'};
   $val =~ s!/!\\!g if $os eq 'win32';
-
   return $val;
 }
 
-
-sub handle_new_guid {
-  my($self, $name) = @_;
-  my $val = $self->get_value_with_default($name);
-  my $prjc = $self->{'prjc'};
-  my $guid = GUID::generate($val ? $val : $name,
-                            $prjc->{'current_input'},
-                            File::Spec->abs2rel($prjc->getcwd(),
-                                                $prjc->getstartdir()));
-  $self->append_current($guid);
-}
-
-
-sub handle_deref {
-  my($self, $name) = @_;
-  my $val = $self->get_value_with_default($self->get_value_with_default($name));
-  $self->append_current($val);
-}
-
-
-sub handle_set {
-  my($self, $val) = @_;
-  my @params = $self->split_parameters($val);
-  if ($#params == 1) {
-    $self->{'values'}->{lc($params[0])} = $params[1];
-  }
-  else {
-    $self->{'error_in_handle'} = 'set() requires a name and a value';
-  }
-}
 
 sub prepare_parameters {
   my($self, $prefix) = @_;

@@ -1,4 +1,4 @@
-// $Id: Reactors_Test.cpp 91671 2010-09-08 18:39:23Z johnnyw $
+// $Id: Reactors_Test.cpp 84565 2009-02-23 08:20:39Z johnnyw $
 
 // ============================================================================
 //
@@ -25,7 +25,7 @@
 #include "ace/Atomic_Op.h"
 #include "ace/Recursive_Thread_Mutex.h"
 
-
+ACE_RCSID(tests, Reactors_Test, "$Id: Reactors_Test.cpp 84565 2009-02-23 08:20:39Z johnnyw $")
 
 #if defined (ACE_HAS_THREADS)
 

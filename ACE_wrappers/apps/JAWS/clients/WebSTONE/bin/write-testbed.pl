@@ -1,6 +1,6 @@
 #!/pkg/gnu/bin//perl5
 #
-#$Id: write-testbed.pl 91813 2010-09-17 07:52:52Z johnnyw $
+#$Id: write-testbed.pl 80826 2008-03-04 14:51:23Z wotte $
 #
 # write new values from form to $wd/conf/testbed, and run WebStone
 #
@@ -28,12 +28,12 @@ html_end();
 # end main
 
 sub write_data {
-    rename("$wd/conf/testbed", "$wd/conf/testbed.bak") ||
+    rename("$wd/conf/testbed", "$wd/conf/testbed.bak") || 
 	die "rename testbed: $!\n";
     open(TESTBED, ">>$wd/conf/testbed") || die "open testbed: $!\n";
-
+    
     print CLIENT "<PRE>";
-
+    
     foreach $key (@keylist) {
 	$$key =~ s/\+/ /g;
 	$newvalue = "$key=\"$$key\"\n";

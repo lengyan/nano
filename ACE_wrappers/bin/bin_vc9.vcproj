@@ -3,7 +3,7 @@
 	ProjectType="Visual C++"
 	Version="9.00"
 	Name="bin"
-	ProjectGUID="{BF4BCC9A-FECA-1BAD-64FC-8A63000064FE}"
+	ProjectGUID="{BF4BCC9A-FECA-1BAD-64FC-8A63633369B7}"
 	RootNamespace="bin"
 	Keyword="Win32Proj"
 	SignManifests="true"

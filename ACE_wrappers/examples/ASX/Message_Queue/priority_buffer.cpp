@@ -1,4 +1,4 @@
-// $Id: priority_buffer.cpp 91671 2010-09-08 18:39:23Z johnnyw $
+// $Id: priority_buffer.cpp 82610 2008-08-12 19:46:36Z parsons $
 
 // This short program prints the contents of stdin to stdout sorted by
 // the length of each line via the use of an ASX Message_Queue.  It
@@ -12,7 +12,7 @@
 #include "ace/Service_Config.h"
 #include "ace/Truncate.h"
 
-
+ACE_RCSID(Message_Queue, priority_buffer, "$Id: priority_buffer.cpp 82610 2008-08-12 19:46:36Z parsons $")
 
 #if defined (ACE_HAS_THREADS)
 
@@ -36,7 +36,7 @@ consumer (ACE_Message_Queue<ACE_MT_SYNCH> *msg_queue)
 
   for (;;)
     {
-      ACE_Message_Block *mb = 0;
+      ACE_Message_Block *mb;
 
       if (msg_queue->dequeue_head (mb) == -1)
         break;
@@ -75,7 +75,7 @@ producer (ACE_Message_Queue<ACE_MT_SYNCH> *msg_queue)
       // Allocate a new buffer.
       char *buffer = rb.read ('\n');
 
-      ACE_Message_Block *mb = 0;
+      ACE_Message_Block *mb;
 
       if (buffer == 0)
         {

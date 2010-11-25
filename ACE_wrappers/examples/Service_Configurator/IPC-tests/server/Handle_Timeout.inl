@@ -1,5 +1,5 @@
 /* -*- C++ -*- */
-// $Id: Handle_Timeout.inl 91813 2010-09-17 07:52:52Z johnnyw $
+// $Id: Handle_Timeout.inl 82574 2008-08-08 19:35:06Z parsons $
 
 #include "ace/Service_Config.h"
 #include "ace/Get_Opt.h"
@@ -27,7 +27,7 @@ Handle_Timeout::info (ACE_TCHAR **strp, size_t length) const
     {
       ACE_OS::strncpy (*strp, buf, length);
     }
-
+    
   return ACE_Utils::truncate_cast<int> (ACE_OS::strlen (buf));
 }
 

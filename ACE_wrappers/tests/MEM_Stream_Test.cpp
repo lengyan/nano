@@ -1,4 +1,4 @@
-// $Id: MEM_Stream_Test.cpp 91671 2010-09-08 18:39:23Z johnnyw $
+// $Id: MEM_Stream_Test.cpp 83689 2008-11-12 15:38:19Z johnnyw $
 
 // ============================================================================
 //
@@ -32,7 +32,7 @@
 #include "ace/Singleton.h"
 #include "ace/Atomic_Op.h"
 
-
+ACE_RCSID(tests, MEM_Stream_Test, "$Id: MEM_Stream_Test.cpp 83689 2008-11-12 15:38:19Z johnnyw $")
 
 #if (defined (ACE_HAS_THREADS) || defined (ACE_HAS_PROCESS_SPAWN)) && \
     (ACE_HAS_POSITION_INDEPENDENT_POINTERS == 1)

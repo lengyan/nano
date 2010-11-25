@@ -3,7 +3,7 @@
 	ProjectType="Visual C++"
 	Version="8.00"
 	Name="RB_Tree_Functors"
-	ProjectGUID="{DFB1FBD8-FECA-1BAD-8408-181CEBDC7FA8}"
+	ProjectGUID="{DFB1FBD8-FECA-1BAD-8408-181CE6951C9B}"
 	RootNamespace="RB_Tree_Functors"
 	Keyword="Win32Proj"
 	SignManifests="true"

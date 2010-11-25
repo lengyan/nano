@@ -1,5 +1,6 @@
-// $Id: Protocol.h 91626 2010-09-07 10:59:20Z johnnyw $
+// file      : ace/RMCast/Protocol.h
 // author    : Boris Kolpackov <boris@kolpackov.net>
+// cvs-id    : $Id: Protocol.h 84890 2009-03-18 14:28:12Z johnnyw $
 
 #ifndef ACE_RMCAST_PROTOCOL_H
 #define ACE_RMCAST_PROTOCOL_H
@@ -20,6 +21,10 @@
 #include "ace/OS_NS_stdlib.h"
 
 #include "Bits.h"
+
+/*
+#include <iostream>
+*/
 
 namespace ACE_RMCast
 {

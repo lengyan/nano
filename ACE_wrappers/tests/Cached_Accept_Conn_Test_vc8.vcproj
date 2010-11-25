@@ -3,7 +3,7 @@
 	ProjectType="Visual C++"
 	Version="8.00"
 	Name="Cached_Accept_Conn_Test"
-	ProjectGUID="{720A8613-FECA-1BAD-2431-8A1100722433}"
+	ProjectGUID="{720A8613-FECA-1BAD-2431-8A11337F6D50}"
 	RootNamespace="Cached_Accept_Conn_Test"
 	Keyword="Win32Proj"
 	SignManifests="true"

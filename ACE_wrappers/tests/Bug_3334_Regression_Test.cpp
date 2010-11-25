@@ -1,4 +1,4 @@
-// $Id: Bug_3334_Regression_Test.cpp 91671 2010-09-08 18:39:23Z johnnyw $
+// $Id: Bug_3334_Regression_Test.cpp 89925 2010-04-19 12:49:11Z cbeaulac $
 
 // ============================================================================
 //
@@ -6,8 +6,8 @@
 //    tests
 //
 // = DESCRIPTION
-//    This test exercises ACE_Service_Config SEGV during shutdown when
-//    Modules get double deleted. Once by Stream parent,
+//    This test exercises ACE_Service_Config SEGV during shutdown when 
+//    Modules get double deleted. Once by Stream parent, 
 //    once by ACE_Service_Repository
 //
 // = AUTHOR
@@ -19,7 +19,7 @@
 #include "ace/Log_Msg.h"
 #include "ace/Service_Config.h"
 
-
+ACE_RCSID(tests, Bug_3334_Regression_Test, "$Id: Bug_3334_Regression_Test.cpp 89925 2010-04-19 12:49:11Z cbeaulac $")
 
 int
 run_main (int, ACE_TCHAR *argv[])
@@ -42,7 +42,7 @@ run_main (int, ACE_TCHAR *argv[])
                 1));
 
   ACE_Service_Config::fini_svcs ();
-
+  
   ACE_END_TEST;
   return status;
 }

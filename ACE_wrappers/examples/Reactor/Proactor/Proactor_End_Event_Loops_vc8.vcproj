@@ -3,7 +3,7 @@
 	ProjectType="Visual C++"
 	Version="8.00"
 	Name="Proactor_End_Event_Loops"
-	ProjectGUID="{6F8B09F0-FECA-1BAD-4285-FEF4D045C8F0}"
+	ProjectGUID="{6F8B09F0-FECA-1BAD-4285-FEF49926FBFD}"
 	RootNamespace="Proactor_End_Event_Loops"
 	Keyword="Win32Proj"
 	SignManifests="true"

@@ -3,7 +3,7 @@
 	ProjectType="Visual C++"
 	Version="9.00"
 	Name="Shared_Malloc_Posind"
-	ProjectGUID="{DEB0B927-FECA-1BAD-4CD2-91813C3C36BA}"
+	ProjectGUID="{DEB0B927-FECA-1BAD-4CD2-91810CE8A089}"
 	RootNamespace="Shared_Malloc_Posind"
 	Keyword="Win32Proj"
 	SignManifests="true"

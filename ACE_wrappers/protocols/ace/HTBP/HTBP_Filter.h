@@ -4,7 +4,7 @@
 /**
  *  @file    HTBP_Filter.h
  *
- *  $Id: HTBP_Filter.h 91751 2010-09-14 09:44:43Z johnnyw $
+ *  $Id: HTBP_Filter.h 80826 2008-03-04 14:51:23Z wotte $
  *
  *  @author Phil Mesnier
  */
@@ -14,13 +14,12 @@
 #define ACE_HTBP_FILTER_H
 #include /**/ "ace/pre.h"
 
-#include "HTBP_Export.h"
-
+#include "ace/OS.h"
 #if !defined (ACE_LACKS_PRAGMA_ONCE)
 # pragma once
 #endif /* ACE_LACKS_PRAGMA_ONCE */
 
-#include "ace/os_include/sys/os_types.h"
+#include "HTBP_Export.h"
 
 ACE_BEGIN_VERSIONED_NAMESPACE_DECL
 

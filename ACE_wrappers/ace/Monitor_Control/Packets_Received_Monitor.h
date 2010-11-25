@@ -4,7 +4,7 @@
 /**
  * @file Packets_Received_Monitor.h
  *
- * $Id: Packets_Received_Monitor.h 91743 2010-09-13 18:24:51Z johnnyw $
+ * $Id: Packets_Received_Monitor.h 86518 2009-08-18 12:30:56Z olli $
  *
  * @author Jeff Parsons <j.parsons@vanderbilt.edu>
  */
@@ -31,7 +31,7 @@
 #include "ace/Monitor_Control/Solaris_Network_Interface_Monitor.h"
 #elif defined (__FreeBSD__) || defined (__Lynx__)
 #include "ace/Monitor_Control/FreeBSD_Network_Interface_Monitor.h"
-#elif defined (__NetBSD__) || defined (__OpenBSD__)
+#elif defined (__NetBSD__) || defined (__OpenBSD__) 
 #include "ace/Monitor_Control/BSD_Network_Interface_Monitor.h"
 #else
 #include "ace/Monitor_Control/Null_Network_Interface_Monitor.h"
@@ -74,7 +74,7 @@ namespace ACE
 
       /// Stores the default name, used if none is supplied by the user.
       static const char* default_name (void);
-
+      
     private:
       /// Overridden reset, calls platform-specific reset.
       virtual void clear_i (void);

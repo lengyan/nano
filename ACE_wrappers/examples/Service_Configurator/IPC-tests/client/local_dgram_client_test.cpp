@@ -1,4 +1,4 @@
-// $Id: local_dgram_client_test.cpp 91670 2010-09-08 18:02:26Z johnnyw $
+// $Id: local_dgram_client_test.cpp 81978 2008-06-16 16:57:12Z sowayaa $
 
 // Tests out the UNIX domain IPC-SAP abstraction.
 
@@ -12,6 +12,8 @@
 #include "ace/OS_NS_stdlib.h"
 #include "ace/OS_NS_unistd.h"
 #include "ace/OS_NS_fcntl.h"
+
+ACE_RCSID(client, local_dgram_client_test, "$Id: local_dgram_client_test.cpp 81978 2008-06-16 16:57:12Z sowayaa $")
 
 #if defined (ACE_HAS_MSG) && !defined (ACE_LACKS_UNIX_DOMAIN_SOCKETS)
 // Name of the program.

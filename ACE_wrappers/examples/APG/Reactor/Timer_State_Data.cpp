@@ -1,5 +1,5 @@
 /**
- * $Id: Timer_State_Data.cpp 91813 2010-09-17 07:52:52Z johnnyw $
+ * $Id: Timer_State_Data.cpp 80826 2008-03-04 14:51:23Z wotte $
  *
  * Reactor examples
  *
@@ -124,7 +124,7 @@ int ACE_TMAIN (int, ACE_TCHAR *[])
   // Listing 3 code/ch07
   TemperatureSensor *sensorOne =
     new TemperatureSensor ("Kitchen");
-
+  
   ACE_Reactor::instance ()->schedule_timer (temperatureMonitor,
                                             sensorOne,
                                             initialDelay,
@@ -135,7 +135,7 @@ int ACE_TMAIN (int, ACE_TCHAR *[])
   // Listing 4 code/ch07
   TemperatureSensor *sensorTwo =
     new TemperatureSensor ("Foyer");
-
+  
   ACE_Reactor::instance ()->schedule_timer (temperatureMonitor,
                                             sensorTwo,
                                             initialDelay,

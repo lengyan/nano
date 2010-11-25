@@ -1,4 +1,4 @@
-// $Id: Priority_Buffer_Test.cpp 91671 2010-09-08 18:39:23Z johnnyw $
+// $Id: Priority_Buffer_Test.cpp 80826 2008-03-04 14:51:23Z wotte $
 
 // ============================================================================
 //
@@ -24,7 +24,7 @@
 #include "ace/Message_Queue.h"
 #include "ace/Thread_Manager.h"
 
-
+ACE_RCSID(tests, Priority_Buffer_Test, "$Id: Priority_Buffer_Test.cpp 80826 2008-03-04 14:51:23Z wotte $")
 
 #if defined (ACE_HAS_THREADS)
 

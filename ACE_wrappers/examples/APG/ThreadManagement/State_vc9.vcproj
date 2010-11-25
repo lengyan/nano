@@ -3,7 +3,7 @@
 	ProjectType="Visual C++"
 	Version="9.00"
 	Name="State"
-	ProjectGUID="{FB667C9F-FECA-1BAD-B689-C9110A2960DF}"
+	ProjectGUID="{FB667C9F-FECA-1BAD-B689-C911392429BC}"
 	RootNamespace="State"
 	Keyword="Win32Proj"
 	SignManifests="true"

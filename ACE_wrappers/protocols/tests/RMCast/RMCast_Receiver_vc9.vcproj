@@ -3,7 +3,7 @@
 	ProjectType="Visual C++"
 	Version="9.00"
 	Name="RMCast_Receiver"
-	ProjectGUID="{D147ADC6-FECA-1BAD-5646-8F0A8605F692}"
+	ProjectGUID="{D147ADC6-FECA-1BAD-5646-8F0AB6D160A1}"
 	RootNamespace="RMCast_Receiver"
 	Keyword="Win32Proj"
 	SignManifests="true"

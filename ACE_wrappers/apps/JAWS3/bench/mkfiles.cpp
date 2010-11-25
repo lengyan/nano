@@ -1,5 +1,6 @@
-// $Id: mkfiles.cpp 91730 2010-09-13 09:31:11Z johnnyw $
+// $Id: mkfiles.cpp 82739 2008-09-16 12:20:46Z johnnyw $
 
+#include "ace/OS.h"
 #include "ace/Get_Opt.h"
 //FUZZ: disable check_for_math_include/
 #include <math.h>

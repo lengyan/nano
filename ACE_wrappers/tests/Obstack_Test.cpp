@@ -1,4 +1,4 @@
-// $Id: Obstack_Test.cpp 91671 2010-09-08 18:39:23Z johnnyw $
+// $Id: Obstack_Test.cpp 80826 2008-03-04 14:51:23Z wotte $
 //
 // ============================================================================
 //
@@ -21,7 +21,7 @@
 #include "ace/Obstack.h"
 #include "ace/Log_Msg.h"
 
-
+ACE_RCSID(tests, Obstack_Test, "$Id: Obstack_Test.cpp 80826 2008-03-04 14:51:23Z wotte $")
 
 
 int run_main (int, ACE_TCHAR *[])

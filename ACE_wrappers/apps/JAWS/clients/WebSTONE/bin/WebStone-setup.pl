@@ -1,6 +1,6 @@
 #!/pkg/gnu/bin//perl5
 #
-#$Id: WebStone-setup.pl 91813 2010-09-17 07:52:52Z johnnyw $
+#$Id: WebStone-setup.pl 80826 2008-03-04 14:51:23Z wotte $
 #
 
 push(@INC, "$wd/bin");
@@ -58,7 +58,7 @@ sub gettestbed {
 	}
 	else {
 	    ( $textvalue, $thevalue ) = split( '=', $_ );
-	    ( $thevalue ) = split( '#', $thevalue);
+	    ( $thevalue ) = split( '#', $thevalue);	    
 	    $testbed{$textvalue} = $thevalue;
 	    push(@keylist, $textvalue);
 	}

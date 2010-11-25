@@ -1,7 +1,7 @@
 /**
  * @file Bug_3532_Regression_Test.cpp
  *
- * $Id: Bug_3532_Regression_Test.cpp 91626 2010-09-07 10:59:20Z johnnyw $
+ * $Id: Bug_3532_Regression_Test.cpp 84959 2009-03-24 11:44:24Z johnnyw $
  *
  * Reproduces the problems reported in bug 3532
  *   http://deuce.doc.wustl.edu/bugzilla/show_bug.cgi?id=3532
@@ -11,6 +11,10 @@
 
 #include "test_config.h"
 #include "ace/ACE.h"
+
+ACE_RCSID (tests,
+           Bug_3532_Regression_Test,
+           "$Id: Bug_3532_Regression_Test.cpp 84959 2009-03-24 11:44:24Z johnnyw $")
 
 int
 run_main (int, ACE_TCHAR *[])

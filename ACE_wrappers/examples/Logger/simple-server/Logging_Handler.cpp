@@ -1,4 +1,4 @@
-// $Id: Logging_Handler.cpp 91670 2010-09-08 18:02:26Z johnnyw $
+// $Id: Logging_Handler.cpp 81978 2008-06-16 16:57:12Z sowayaa $
 
 #include "ace/Log_Msg.h"
 #include "ace/Message_Block.h"
@@ -9,6 +9,8 @@
 
 #include "Logging_Handler.h"
 #include "Reactor_Singleton.h"
+
+ACE_RCSID(simple_server, Logging_Handler, "$Id: Logging_Handler.cpp 81978 2008-06-16 16:57:12Z sowayaa $")
 
 // Default constructor.
 

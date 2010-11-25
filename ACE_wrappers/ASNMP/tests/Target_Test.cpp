@@ -1,4 +1,4 @@
-// $Id: Target_Test.cpp 91670 2010-09-08 18:02:26Z johnnyw $
+// $Id: Target_Test.cpp 80826 2008-03-04 14:51:23Z wotte $
 
 // ============================================================================
 //
@@ -43,6 +43,8 @@ DAMAGES.
 #include "asnmp/octet.h"
 #include "asnmp/target.h"
 #include "test_config.h"
+
+ACE_RCSID(tests, Target_Test, "$Id: Target_Test.cpp 80826 2008-03-04 14:51:23Z wotte $")
 
 /*
   Percieved Problems with this CTarget aka UdpTarget Interface:

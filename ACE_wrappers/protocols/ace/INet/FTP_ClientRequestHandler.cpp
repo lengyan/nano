@@ -1,4 +1,4 @@
-// $Id: FTP_ClientRequestHandler.cpp 91671 2010-09-08 18:39:23Z johnnyw $
+// $Id: FTP_ClientRequestHandler.cpp 90925 2010-06-29 10:50:40Z mcorino $
 
 #include "ace/INet/FTP_ClientRequestHandler.h"
 
@@ -14,7 +14,7 @@
 #include "ace/Acceptor.h"
 #include "ace/SOCK_Acceptor.h"
 
-
+ACE_RCSID(NET_CLIENT,ACE_FTP_ClientRequestHandler,"$Id: FTP_ClientRequestHandler.cpp 90925 2010-06-29 10:50:40Z mcorino $")
 
 ACE_BEGIN_VERSIONED_NAMESPACE_DECL
 
@@ -79,7 +79,7 @@ namespace ACE
 
     const ACE_CString& ClientRequestHandler::Authentication::scheme () const
       {
-        return URL::protocol ();
+        return URL::PROTOCOL;
       }
 
     const ACE_CString& ClientRequestHandler::Authentication::realm () const

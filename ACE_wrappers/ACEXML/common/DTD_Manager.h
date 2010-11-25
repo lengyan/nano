@@ -4,7 +4,7 @@
 /**
  *  @file    DTD_Manager.h
  *
- *  $Id: DTD_Manager.h 91265 2010-08-03 16:50:54Z johnnyw $
+ *  $Id: DTD_Manager.h 80826 2008-03-04 14:51:23Z wotte $
  *
  *  @author Nanbor Wang <nanbor@cs.wustl.edu>
  */
@@ -50,7 +50,7 @@ public:
    *
    * @retval 0 if success, -1 if error.
    */
-  virtual int insertElement_Definition (ACEXML_Element_Def_Builder *def) = 0;
+  virtual int insertElement_Definition (ACEXML_Element_Def_Builder *def ACEXML_ENV_ARG_DECL) = 0;
 
   /**
    * Acquire a pointer to an attributes definition builder.
@@ -63,7 +63,7 @@ public:
    *
    * @retval 0 if success, -1 otherwise.
    */
-  virtual int insertAttributes_Definition (ACEXML_Attributes_Def_Builder *def) = 0;
+  virtual int insertAttributes_Definition (ACEXML_Attributes_Def_Builder *def ACEXML_ENV_ARG_DECL) = 0;
 
   /**
    * Acquire an element validator to validate an XML element.
@@ -73,7 +73,7 @@ public:
    */
   virtual ACEXML_Validator *getValidator (const ACEXML_Char *namespaceURI,
                                           const ACEXML_Char *localName,
-                                          const ACEXML_Char *qName) = 0;
+                                          const ACEXML_Char *qName ACEXML_ENV_ARG_DECL) = 0;
 };
 
 

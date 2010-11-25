@@ -1,4 +1,4 @@
-// $Id: indirect_logging.cpp 91671 2010-09-08 18:39:23Z johnnyw $
+// $Id: indirect_logging.cpp 80826 2008-03-04 14:51:23Z wotte $
 
 // This is a simple test that sends logging records to the Client
 // Logging Daemon running on the localhost.  This daemon then forwards
@@ -10,7 +10,7 @@
 #include "ace/Log_Msg.h"
 #include "ace/Log_Record.h"
 
-
+ACE_RCSID(Logger, indirect_logging, "$Id: indirect_logging.cpp 80826 2008-03-04 14:51:23Z wotte $")
 
 int
 ACE_TMAIN (int argc, ACE_TCHAR *argv[])

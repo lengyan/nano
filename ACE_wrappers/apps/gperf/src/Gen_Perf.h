@@ -1,7 +1,7 @@
 // -*- C++ -*-
 
 /**
- * $Id: Gen_Perf.h 91273 2010-08-04 16:24:59Z johnnyw $
+ * $Id: Gen_Perf.h 86019 2009-07-14 12:13:09Z wotte $
  *
  * Copyright (C) 1989 Free Software Foundation, Inc.
  * written by Douglas C. Schmidt (schmidt@cs.wustl.edu)
@@ -29,6 +29,7 @@
 #include "Options.h"
 #include "Key_List.h"
 #include "Bool_Array.h"
+#include "gperf_export.h"
 #include "ace/Copy_Disabled.h"
 
 #if defined (ACE_HAS_GPERF)
@@ -37,7 +38,7 @@
  * Provides high-level routines to manipulate the keyword list
  * structures the code generation output.
  */
-class Gen_Perf : private ACE_Copy_Disabled
+class ACE_GPERF_Export Gen_Perf : private ACE_Copy_Disabled
 {
 public:
   /// Constructor.

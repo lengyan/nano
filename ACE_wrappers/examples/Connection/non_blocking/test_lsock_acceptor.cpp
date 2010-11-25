@@ -1,4 +1,4 @@
-// $Id: test_lsock_acceptor.cpp 91673 2010-09-08 18:49:47Z johnnyw $
+// $Id: test_lsock_acceptor.cpp 80826 2008-03-04 14:51:23Z wotte $
 
 // ACE_LSOCK Server.
 
@@ -22,6 +22,10 @@ ACE_TMAIN (int, ACE_TCHAR *argv[])
 
 #include "ace/UNIX_Addr.h"
 #include "CPP-acceptor.h"
+
+ACE_RCSID (non_blocking,
+           test_lsock_acceptor,
+           "$Id: test_lsock_acceptor.cpp 80826 2008-03-04 14:51:23Z wotte $")
 
 typedef Svc_Handler<ACE_LSOCK_STREAM> SVC_HANDLER;
 typedef IPC_Server<SVC_HANDLER, ACE_LSOCK_ACCEPTOR> IPC_SERVER;

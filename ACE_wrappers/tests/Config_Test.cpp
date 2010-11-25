@@ -1,4 +1,4 @@
-// $Id: Config_Test.cpp 91671 2010-09-08 18:39:23Z johnnyw $
+// $Id: Config_Test.cpp 86430 2009-08-09 05:01:58Z johnnyw $
 
 // ============================================================================
 //
@@ -28,7 +28,7 @@
 #include "ace/OS_NS_string.h"
 #include "ace/OS_NS_unistd.h"
 
-
+ACE_RCSID(tests, Config_Test, "$Id: Config_Test.cpp 86430 2009-08-09 05:01:58Z johnnyw $")
 
 static int
 test (ACE_Configuration *config,

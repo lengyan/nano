@@ -4,7 +4,7 @@
 /**
  *  @file    ErrorHandler.h
  *
- *  $Id: ErrorHandler.h 91257 2010-08-03 11:54:04Z johnnyw $
+ *  $Id: ErrorHandler.h 80826 2008-03-04 14:51:23Z wotte $
  *
  *  @author Nanbor Wang <nanbor@cs.wustl.edu>
  */
@@ -19,6 +19,7 @@
 #pragma once
 #endif /* ACE_LACKS_PRAGMA_ONCE */
 
+#include "ACEXML/common/Env.h"
 #include "ACEXML/common/SAXExceptions.h"
 
 /**
@@ -52,17 +53,20 @@ public:
   /**
    * Receive notification of a recoverable error.
    */
-  virtual void error (ACEXML_SAXParseException &exception) = 0;
+  virtual void error (ACEXML_SAXParseException &exception ACEXML_ENV_ARG_DECL)
+        = 0;
 
   /**
    * Receive notification of a non-recoverable error.
    */
-  virtual void fatalError (ACEXML_SAXParseException &exception) = 0;
+  virtual void fatalError (ACEXML_SAXParseException &exception ACEXML_ENV_ARG_DECL)
+        = 0;
 
   /**
    * Receive notification of a warning.
    */
-  virtual void warning (ACEXML_SAXParseException &exception) = 0;
+  virtual void warning (ACEXML_SAXParseException &exception ACEXML_ENV_ARG_DECL)
+        = 0;
 };
 
 

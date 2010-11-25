@@ -1,4 +1,4 @@
-// $Id: Network_Adapters_Test.cpp 91969 2010-09-23 12:37:59Z vzykov $
+// $Id: Network_Adapters_Test.cpp 85334 2009-05-14 10:11:28Z johnnyw $
 //
 // ============================================================================
 //
@@ -36,6 +36,10 @@
 
 #include "Network_Adapters_Test.h"
 
+ACE_RCSID (tests,
+           Network_Adapters_Test,
+           "$Id: Network_Adapters_Test.cpp 85334 2009-05-14 10:11:28Z johnnyw $")
+
 /**
  * There are two major uses of the functionality:
  *
@@ -67,7 +71,7 @@
  *
  * -p  IPv4 addresses of the remote CEs, which we are going to check
  *     (purpose 2), or they are 3rd points for the purpose 1,
- *     e.g. -p 192.168.5.120: 192.168.5.122: 192.168.5.125
+ *     e.g. “-p 192.168.5.120: 192.168.5.122: 192.168.5.125
  *
  * -w  milliseconds to wait for echo-reply, on lan 100-200 msec, on
  *     WAN may be 2000-5000 msec, for GPRS may reach 10000 - 20000

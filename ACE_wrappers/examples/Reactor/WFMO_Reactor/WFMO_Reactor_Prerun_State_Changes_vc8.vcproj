@@ -3,7 +3,7 @@
 	ProjectType="Visual C++"
 	Version="8.00"
 	Name="WFMO_Reactor_Prerun_State_Changes"
-	ProjectGUID="{90043463-FECA-1BAD-701A-2E512E45D4CA}"
+	ProjectGUID="{90043463-FECA-1BAD-701A-2E511D489DA9}"
 	RootNamespace="WFMO_Reactor_Prerun_State_Changes"
 	Keyword="Win32Proj"
 	SignManifests="true"

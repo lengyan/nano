@@ -1,8 +1,8 @@
-// $Id: Main.cpp 91626 2010-09-07 10:59:20Z johnnyw $
+// $Id: Main.cpp 90963 2010-07-01 08:55:51Z mcorino $
 
 #include "ace/Get_Opt.h"
 #include "ace/Task.h"
-#include "ace/Containers_T.h"
+#include "ace/Array.h"
 #include "ace/Reactor.h"
 #include "ace/INet/HTTP_URL.h"
 #include "ace/INet/HTTP_ClientRequestHandler.h"
@@ -37,10 +37,8 @@ Get_Task::Get_Task (ACE_Thread_Manager *thr_mgr,
     n_threads_ (n_threads)
 {
   // Create worker threads.
-  if (this->activate (THR_NEW_LWP, n_threads_) == -1)
+  if (this->activate (THR_NEW_LWP, n_threads) == -1)
     ACE_ERROR ((LM_ERROR, ACE_TEXT ("%p\n"), ACE_TEXT ("activate failed")));
-  else
-    ACE_DEBUG ((LM_INFO, ACE_TEXT ("(%P|%t) started %d threads\n"), n_threads_));
 }
 
 void Get_Task::shutdown ()
@@ -50,7 +48,7 @@ void Get_Task::shutdown ()
              lock_);
 
   --n_threads_;
-  if (n_threads_ <= 0)
+  if (n_threads_ >= 0)
     {
       ACE_DEBUG ((LM_INFO, ACE_TEXT ("(%P|%t) ending event loop\n")));
       ACE_Reactor::instance ()->end_event_loop ();
@@ -180,7 +178,7 @@ void Get_MultiTask::shutdown ()
              lock_);
 
   --n_threads_;
-  if (n_threads_ <= 0)
+  if (n_threads_ >= 0)
     {
       ACE_DEBUG ((LM_INFO, ACE_TEXT ("(%P|%t) ending event loop\n")));
       ACE_Reactor::instance ()->end_event_loop ();

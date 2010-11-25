@@ -1,7 +1,7 @@
 /**
  * @file Bug_3102_Regression_Test.cpp
  *
- * $Id: Bug_3102_Regression_Test.cpp 91673 2010-09-08 18:49:47Z johnnyw $
+ * $Id: Bug_3102_Regression_Test.cpp 80826 2008-03-04 14:51:23Z wotte $
  *
  * Reproduces the problems reported in bug 3102
  *   http://deuce.doc.wustl.edu/bugzilla/show_bug.cgi?id=3102
@@ -14,6 +14,10 @@
 #include "ace/Managed_Object.h"
 #include "ace/Guard_T.h"
 #include "ace/OS_NS_stdio.h"
+
+ACE_RCSID (tests,
+           Bug_3102_Regression_Test,
+           "$Id: Bug_3102_Regression_Test.cpp 80826 2008-03-04 14:51:23Z wotte $")
 
 #if defined (ACE_HAS_THREADS)
 

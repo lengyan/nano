@@ -1,5 +1,5 @@
 // -*- C++ -*-
-// $Id: Sig_List.h 91743 2010-09-13 18:24:51Z johnnyw $
+// $Id: Sig_List.h 80826 2008-03-04 14:51:23Z wotte $
 
 // File: Sig_List.h
 
@@ -9,11 +9,11 @@
 #ifndef _SIG_LIST_H_
 #define _SIG_LIST_H_
 
-// A Sig_List is a specialized container of signatures. The initial use of a
-// Sig_List was to manage a variable length of undefined Signatures, so the
-// program could know when all possible resolutions were determined. As the
-// program grows in complexity, Sig_Lists are used to store other groups as
-// well.  The methods provide simple list traversal, as well as efficient use
+// A Sig_List is a specialized container of signatures. The initial use of a 
+// Sig_List was to manage a variable length of undefined Signatures, so the 
+// program could know when all possible resolutions were determined. As the 
+// program grows in complexity, Sig_Lists are used to store other groups as 
+// well.  The methods provide simple list traversal, as well as efficient use 
 // of space.
 
 #include "Signature.h"

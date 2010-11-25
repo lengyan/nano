@@ -1,4 +1,4 @@
-// $Id: Async_Cancel.cpp 91813 2010-09-17 07:52:52Z johnnyw $
+// $Id: Async_Cancel.cpp 83251 2008-10-15 10:55:13Z vzykov $
 
 #include "ace/OS_NS_unistd.h"
 #include "ace/Task.h"
@@ -23,10 +23,10 @@ public:
         // Put this thread in a compute loop.. no
         // cancellation points are available.
       }
-#if defined (__HP_aCC)
+#if defined (__HP_aCC) 
     // This is only to workaround a warning on HP-UX compiler.
     return 0;
-#endif /* __HP_aCC */
+#endif /* __HP_aCC */ 
   }
 
   int set_cancel_mode (void)

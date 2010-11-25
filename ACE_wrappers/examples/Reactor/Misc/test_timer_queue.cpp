@@ -1,4 +1,4 @@
-// $Id: test_timer_queue.cpp 91671 2010-09-08 18:39:23Z johnnyw $
+// $Id: test_timer_queue.cpp 80826 2008-03-04 14:51:23Z wotte $
 
 #include "ace/OS_NS_sys_time.h"
 #include "ace/Timer_Heap.h"
@@ -8,7 +8,7 @@
 #include "ace/Recursive_Thread_Mutex.h"
 #include "ace/Null_Mutex.h"
 
-
+ACE_RCSID(Misc, test_timer_queue, "$Id: test_timer_queue.cpp 80826 2008-03-04 14:51:23Z wotte $")
 
 class Example_Handler : public ACE_Event_Handler
 {

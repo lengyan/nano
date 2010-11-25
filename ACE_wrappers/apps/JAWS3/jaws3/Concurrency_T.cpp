@@ -1,4 +1,4 @@
-// $Id: Concurrency_T.cpp 91813 2010-09-17 07:52:52Z johnnyw $
+// $Id: Concurrency_T.cpp 80826 2008-03-04 14:51:23Z wotte $
 
 #include "ace/Message_Block.h"
 #include "ace/Singleton.h"
@@ -26,7 +26,7 @@ JAWS_Concurrency_Bridge<CONCURRENCY_IMPL>::putq (JAWS_Protocol_Handler *ph)
 {
   return this->impl_->putq (ph);
 }
-
+  
 
 template <class CONCURRENCY_IMPL> int
 JAWS_Concurrency_Bridge<CONCURRENCY_IMPL>::getq (JAWS_Protocol_Handler *&ph)

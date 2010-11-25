@@ -7,7 +7,7 @@
    Copyright (C) 1998-2005 Gilles Vollant
 
    Read zip.h for more info
-   $Id: zip.c 91813 2010-09-17 07:52:52Z johnnyw $
+   $Id: zip.c 80826 2008-03-04 14:51:23Z wotte $
 */
 
 
@@ -944,7 +944,7 @@ extern MINIZIP_EXPORT int zipWriteInFileInZip (zipFile file,const void* buf,unsi
         {
           uLong uTotalOutBefore = zi->ci.stream.total_out;
           err=deflate(&zi->ci.stream,  Z_NO_FLUSH);
-          zi->ci.pos_in_buffered_data +=
+          zi->ci.pos_in_buffered_data += 
             (uInt)(zi->ci.stream.total_out - uTotalOutBefore);
         }
       else

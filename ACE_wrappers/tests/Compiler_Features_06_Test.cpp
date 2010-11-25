@@ -1,4 +1,4 @@
-// $Id: Compiler_Features_06_Test.cpp 91671 2010-09-08 18:39:23Z johnnyw $
+// $Id: Compiler_Features_06_Test.cpp 86342 2009-08-04 10:57:41Z coryan $
 
 /**
  * @file
@@ -23,7 +23,7 @@
 // header.  Only a few platforms enforce this though...
 #include <functional>
 
-
+ACE_RCSID(tests, Compiler_Features_06_Test, "$Id: Compiler_Features_06_Test.cpp 86342 2009-08-04 10:57:41Z coryan $")
 
 int
 run_main (int, ACE_TCHAR *[])

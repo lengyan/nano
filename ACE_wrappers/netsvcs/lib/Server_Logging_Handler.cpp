@@ -1,11 +1,11 @@
-// $Id: Server_Logging_Handler.cpp 91671 2010-09-08 18:39:23Z johnnyw $
+// $Id: Server_Logging_Handler.cpp 81085 2008-03-25 10:43:41Z johnnyw $
 
 #if !defined (ACE_SERVER_LOGGING_HANDLER_C)
 #define ACE_SERVER_LOGGING_HANDLER_C
 
 #include "Server_Logging_Handler.h"
 
-
+ACE_RCSID(lib, Server_Logging_Handler, "$Id: Server_Logging_Handler.cpp 81085 2008-03-25 10:43:41Z johnnyw $")
 
 // The following are "Factories" used by the ACE_Service_Config and
 // svc.conf file to dynamically initialize the state of the

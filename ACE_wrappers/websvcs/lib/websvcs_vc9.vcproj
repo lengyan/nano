@@ -3,7 +3,7 @@
 	ProjectType="Visual C++"
 	Version="9.00"
 	Name="websvcs"
-	ProjectGUID="{ED001B89-FECA-1BAD-6AF0-8A634041EBC7}"
+	ProjectGUID="{ED001B89-FECA-1BAD-6AF0-8A632372E68E}"
 	RootNamespace="websvcs"
 	Keyword="Win32Proj"
 	SignManifests="true"

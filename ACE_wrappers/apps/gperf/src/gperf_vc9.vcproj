@@ -3,7 +3,7 @@
 	ProjectType="Visual C++"
 	Version="9.00"
 	Name="gperf"
-	ProjectGUID="{BF204C9C-FECA-1BAD-6244-8A036423F5D3}"
+	ProjectGUID="{BF204C9C-FECA-1BAD-6244-8A0354F763E0}"
 	RootNamespace="gperf"
 	Keyword="Win32Proj"
 	SignManifests="true"
@@ -76,7 +76,7 @@
 			/>
 			<Tool
 				Name="VCLinkerTool"
-				AdditionalDependencies="ACEd.lib"
+				AdditionalDependencies="ACEd.lib ACE_gperf_libd.lib"
 				OutputFile="$(OutDir)\ace_gperf.exe"
 				LinkIncremental="2"
 				SuppressStartupBanner="true"
@@ -155,7 +155,7 @@
 			/>
 			<Tool
 				Name="VCLinkerTool"
-				AdditionalDependencies="ACE.lib"
+				AdditionalDependencies="ACE.lib ACE_gperf_lib.lib"
 				OutputFile="$(OutDir)\ace_gperf.exe"
 				LinkIncremental="1"
 				SuppressStartupBanner="true"
@@ -240,7 +240,7 @@
 			<Tool
 				Name="VCLinkerTool"
 				AdditionalOptions="/machine:AMD64"
-				AdditionalDependencies="ACEd.lib"
+				AdditionalDependencies="ACEd.lib ACE_gperf_libd.lib"
 				OutputFile="$(OutDir)\ace_gperf.exe"
 				LinkIncremental="2"
 				SuppressStartupBanner="true"
@@ -320,7 +320,7 @@
 			<Tool
 				Name="VCLinkerTool"
 				AdditionalOptions="/machine:AMD64"
-				AdditionalDependencies="ACE.lib"
+				AdditionalDependencies="ACE.lib ACE_gperf_lib.lib"
 				OutputFile="$(OutDir)\ace_gperf.exe"
 				LinkIncremental="1"
 				SuppressStartupBanner="true"
@@ -355,34 +355,7 @@
 			Name="Source Files"
 			Filter="cpp;cxx;cc;c;C">
 			<File
-				RelativePath="Bool_Array.cpp">
-			</File>
-			<File
-				RelativePath="Gen_Perf.cpp">
-			</File>
-			<File
 				RelativePath="gperf.cpp">
-			</File>
-			<File
-				RelativePath="Hash_Table.cpp">
-			</File>
-			<File
-				RelativePath="Iterator.cpp">
-			</File>
-			<File
-				RelativePath="Key_List.cpp">
-			</File>
-			<File
-				RelativePath="List_Node.cpp">
-			</File>
-			<File
-				RelativePath="Options.cpp">
-			</File>
-			<File
-				RelativePath="Vectors.cpp">
-			</File>
-			<File
-				RelativePath="Version.cpp">
 			</File>
 		</Filter>
 		<Filter
@@ -393,6 +366,9 @@
 			</File>
 			<File
 				RelativePath="Gen_Perf.h">
+			</File>
+			<File
+				RelativePath="gperf_export.h">
 			</File>
 			<File
 				RelativePath="Hash_Table.h">

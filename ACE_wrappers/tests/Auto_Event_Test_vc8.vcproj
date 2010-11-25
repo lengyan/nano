@@ -3,7 +3,7 @@
 	ProjectType="Visual C++"
 	Version="8.00"
 	Name="Auto_Event_Test"
-	ProjectGUID="{21926B69-FECA-1BAD-2431-8A1100722433}"
+	ProjectGUID="{21926B69-FECA-1BAD-2431-8A11337F6D50}"
 	RootNamespace="Auto_Event_Test"
 	Keyword="Win32Proj"
 	SignManifests="true"

@@ -3,7 +3,7 @@
 	ProjectType="Visual C++"
 	Version="8.00"
 	Name="Threads_Task_Five"
-	ProjectGUID="{6A8B7587-FECA-1BAD-3731-D8978C8E5D14}"
+	ProjectGUID="{6A8B7587-FECA-1BAD-3731-D89758186E24}"
 	RootNamespace="Threads_Task_Five"
 	Keyword="Win32Proj"
 	SignManifests="true"

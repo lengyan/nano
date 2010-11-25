@@ -1,4 +1,4 @@
-// $Id: Windows_Multi_Instance_Monitor.cpp 91813 2010-09-17 07:52:52Z johnnyw $
+// $Id: Windows_Multi_Instance_Monitor.cpp 84218 2009-01-22 19:21:39Z mitza $
 
 #include "ace/Monitor_Control/Windows_Multi_Instance_Monitor.h"
 
@@ -88,7 +88,7 @@ namespace ACE
           this->value_ += (*current_instance)->value_;
         }
     }
-
+    
     void
     Windows_Multi_Instance_Monitor::clear_impl (void)
     {

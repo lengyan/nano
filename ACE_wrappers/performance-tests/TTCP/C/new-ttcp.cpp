@@ -1,4 +1,4 @@
-// $Id: new-ttcp.cpp 91670 2010-09-08 18:02:26Z johnnyw $
+// $Id: new-ttcp.cpp 80826 2008-03-04 14:51:23Z wotte $
 
 /*
  *    T T C P . C
@@ -92,6 +92,8 @@ struct rusage
 #else
 #include <sys/resource.h>
 #endif
+
+ACE_RCSID(C, new_ttcp, "$Id: new-ttcp.cpp 80826 2008-03-04 14:51:23Z wotte $")
 
 struct sockaddr_in sinme;
 struct sockaddr_un sunme;

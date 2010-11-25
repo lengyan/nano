@@ -1,5 +1,5 @@
 //  -*- MPC -*-
-// $Id: common.mpc 91258 2010-08-03 11:57:54Z johnnyw $
+// $Id: common.mpc 90163 2010-05-18 21:42:20Z mitza $
 
 project(ACEXML): acelib, ace_output, codecs, install, zzip, zlib {
   avoids       += ace_for_tao
@@ -26,6 +26,7 @@ project(ACEXML): acelib, ace_output, codecs, install, zzip, zlib {
     Locator.h
     XMLFilter.h
     XMLReader.h
+    XML_Macros.h
     XML_Types.h
     XML_Util.h
   }

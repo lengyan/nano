@@ -3,7 +3,7 @@
 	ProjectType="Visual C++"
 	Version="8.00"
 	Name="Reverse_Lock_Test"
-	ProjectGUID="{5E2E87C6-FECA-1BAD-2431-8A1100722433}"
+	ProjectGUID="{5E2E87C6-FECA-1BAD-2431-8A11337F6D50}"
 	RootNamespace="Reverse_Lock_Test"
 	Keyword="Win32Proj"
 	SignManifests="true"

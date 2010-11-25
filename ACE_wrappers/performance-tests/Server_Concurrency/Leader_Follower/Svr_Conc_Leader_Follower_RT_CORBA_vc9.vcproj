@@ -3,7 +3,7 @@
 	ProjectType="Visual C++"
 	Version="9.00"
 	Name="Svr_Conc_Leader_Follower_RT_CORBA"
-	ProjectGUID="{39BD6967-FECA-1BAD-FAD8-7885071DD3E2}"
+	ProjectGUID="{39BD6967-FECA-1BAD-FAD8-7885342D0774}"
 	RootNamespace="Svr_Conc_Leader_Follower_RT_CORBA"
 	Keyword="Win32Proj"
 	SignManifests="true"

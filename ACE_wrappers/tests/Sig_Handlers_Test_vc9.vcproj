@@ -3,7 +3,7 @@
 	ProjectType="Visual C++"
 	Version="9.00"
 	Name="Sig_Handlers_Test"
-	ProjectGUID="{FCA791E7-FECA-1BAD-2431-8A1100722433}"
+	ProjectGUID="{FCA791E7-FECA-1BAD-2431-8A11337F6D50}"
 	RootNamespace="Sig_Handlers_Test"
 	Keyword="Win32Proj"
 	SignManifests="true"

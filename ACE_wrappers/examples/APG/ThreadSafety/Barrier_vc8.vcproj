@@ -3,7 +3,7 @@
 	ProjectType="Visual C++"
 	Version="8.00"
 	Name="Barrier"
-	ProjectGUID="{FDF608DC-FECA-1BAD-2D78-F933D2AB8F03}"
+	ProjectGUID="{FDF608DC-FECA-1BAD-2D78-F9339BC8BC0E}"
 	RootNamespace="Barrier"
 	Keyword="Win32Proj"
 	SignManifests="true"

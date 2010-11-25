@@ -3,7 +3,7 @@
 	ProjectType="Visual C++"
 	Version="9.00"
 	Name="Queues"
-	ProjectGUID="{8B361CCC-FECA-1BAD-8408-181CEBDC7FA8}"
+	ProjectGUID="{8B361CCC-FECA-1BAD-8408-181CE6951C9B}"
 	RootNamespace="Queues"
 	Keyword="Win32Proj"
 	SignManifests="true"

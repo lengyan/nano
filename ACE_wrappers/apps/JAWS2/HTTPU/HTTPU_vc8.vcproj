@@ -3,7 +3,7 @@
 	ProjectType="Visual C++"
 	Version="8.00"
 	Name="HTTPU"
-	ProjectGUID="{78117C9E-FECA-1BAD-3377-8A0C67CCAF11}"
+	ProjectGUID="{78117C9E-FECA-1BAD-3377-8A0CB35A9C21}"
 	RootNamespace="HTTPU"
 	Keyword="Win32Proj"
 	SignManifests="true"

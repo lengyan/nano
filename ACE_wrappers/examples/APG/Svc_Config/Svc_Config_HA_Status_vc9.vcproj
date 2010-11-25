@@ -3,7 +3,7 @@
 	ProjectType="Visual C++"
 	Version="9.00"
 	Name="Svc_Config_HA_Status"
-	ProjectGUID="{C41B6DA6-FECA-1BAD-87B5-E33A12FA7C15}"
+	ProjectGUID="{C41B6DA6-FECA-1BAD-87B5-E33A1FB31F26}"
 	RootNamespace="Svc_Config_HA_Status"
 	Keyword="Win32Proj"
 	SignManifests="true"

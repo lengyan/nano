@@ -3,7 +3,7 @@
 	ProjectType="Visual C++"
 	Version="9.00"
 	Name="SigInfo"
-	ProjectGUID="{8684D9C5-FECA-1BAD-87B1-FF92CFD61D8C}"
+	ProjectGUID="{8684D9C5-FECA-1BAD-87B1-FF92FCE6C91A}"
 	RootNamespace="SigInfo"
 	Keyword="Win32Proj"
 	SignManifests="true"

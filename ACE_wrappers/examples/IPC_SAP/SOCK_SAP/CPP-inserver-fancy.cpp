@@ -1,4 +1,4 @@
- // $Id: CPP-inserver-fancy.cpp 91671 2010-09-08 18:39:23Z johnnyw $
+ // $Id: CPP-inserver-fancy.cpp 80826 2008-03-04 14:51:23Z wotte $
 
 // This example tests the features of the <ACE_SOCK_Acceptor>,
 // <ACE_SOCK_Stream>, and <ACE_Svc_Handler> classes.  If the platform
@@ -15,7 +15,7 @@
 
 #include "CPP-inserver-fancy.h"
 
-
+ACE_RCSID(SOCK_SAP, CPP_inserver_fancy, "$Id: CPP-inserver-fancy.cpp 80826 2008-03-04 14:51:23Z wotte $")
 
 // Forward declaration.
 class Handler;

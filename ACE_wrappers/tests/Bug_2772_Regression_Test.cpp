@@ -1,4 +1,4 @@
-// $Id: Bug_2772_Regression_Test.cpp 91671 2010-09-08 18:39:23Z johnnyw $
+// $Id: Bug_2772_Regression_Test.cpp 83780 2008-11-17 08:37:37Z johnnyw $
 
 // ============================================================================
 //
@@ -18,7 +18,7 @@
 #include "ace/Condition_Recursive_Thread_Mutex.h"
 #include "ace/Thread.h"
 
-
+ACE_RCSID(tests, Bug_2772_Regression_Test, "$Id: Bug_2772_Regression_Test.cpp 83780 2008-11-17 08:37:37Z johnnyw $")
 
 class ThreadTest
 {

@@ -3,7 +3,7 @@
 	ProjectType="Visual C++"
 	Version="8.00"
 	Name="Transcoder_Test"
-	ProjectGUID="{7275FB89-FECA-1BAD-2431-8A119E86733F}"
+	ProjectGUID="{7275FB89-FECA-1BAD-2431-8A11ADB6A7A9}"
 	RootNamespace="Transcoder_Test"
 	Keyword="Win32Proj"
 	SignManifests="true"

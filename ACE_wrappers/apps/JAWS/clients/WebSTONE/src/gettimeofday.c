@@ -1,13 +1,13 @@
-/* $Id: gettimeofday.c 91813 2010-09-17 07:52:52Z johnnyw $ */
+/* $Id: gettimeofday.c 81994 2008-06-16 21:23:17Z sowayaa $ */
 
 /*
  *  This file defines functions that are required for unix compatibility.
  *
- *  These functions are not available in the Microsoft C/C++ Run Time
+ *  These functions are not available in the Microsoft C/C++ Run Time 
  *  and the Win32 API.
  *
  *  The following functions list may not be complete
- *
+ *  
  *  FUNCTIONS:
  *     SHARED   _gettimeofday
  *
@@ -34,7 +34,7 @@ int gettimeofday(curTimeP)
 {
 struct _timeb  localTime;
 
-    if (curTimeP == (struct timeval *) 0)
+    if (curTimeP == (struct timeval *) 0) 
     {
       errno = EFAULT;
       return (-1);

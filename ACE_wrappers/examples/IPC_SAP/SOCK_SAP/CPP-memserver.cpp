@@ -1,4 +1,4 @@
-// $Id: CPP-memserver.cpp 91671 2010-09-08 18:39:23Z johnnyw $
+// $Id: CPP-memserver.cpp 80826 2008-03-04 14:51:23Z wotte $
 
 // This example tests the features of the <ACE_MEM_Acceptor>,
 // <ACE_MEM_Stream>, and <ACE_Svc_Handler> classes.  If the platform
@@ -10,7 +10,7 @@
 #include "ace/Handle_Set.h"
 #include "ace/Profile_Timer.h"
 
-
+ACE_RCSID(SOCK_SAP, CPP_inserver, "$Id: CPP-memserver.cpp 80826 2008-03-04 14:51:23Z wotte $")
 
 static int
 run_event_loop (u_short port)

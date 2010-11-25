@@ -1,7 +1,7 @@
 // -*- C++ -*-
 
 /**
- * $Id: Key_List.cpp 91671 2010-09-08 18:39:23Z johnnyw $
+ * $Id: Key_List.cpp 86019 2009-07-14 12:13:09Z wotte $
  *
  * Copyright (C) 1989 Free Software Foundation, Inc.
  * written by Douglas C. Schmidt (schmidt@cs.wustl.edu)
@@ -25,7 +25,7 @@
 
 #include "Key_List.h"
 
-
+ACE_RCSID(src, Key_List, "$Id: Key_List.cpp 86019 2009-07-14 12:13:09Z wotte $")
 
 #if defined (ACE_HAS_GPERF)
 
@@ -1728,7 +1728,7 @@ Key_List::output (void)
                 {
                   output_keylength_table ();
                 }
-
+                
               if (option[POINTER] && option[TYPE])
                 {
                   output_keyword_table ();
@@ -1740,9 +1740,9 @@ Key_List::output (void)
                 {
                   output_keylength_table ();
                 }
-
+                
               output_keyword_table ();
-
+              
               if (output_lookup_array () == -1)
                 {
                   ACE_ERROR_RETURN ((LM_DEBUG,

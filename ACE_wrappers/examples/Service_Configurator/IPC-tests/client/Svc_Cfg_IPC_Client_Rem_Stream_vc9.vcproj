@@ -3,7 +3,7 @@
 	ProjectType="Visual C++"
 	Version="9.00"
 	Name="Svc_Cfg_IPC_Client_Rem_Stream"
-	ProjectGUID="{9897CEE3-FECA-1BAD-DD12-8A69A8383EB6}"
+	ProjectGUID="{9897CEE3-FECA-1BAD-DD12-8A6998ECA885}"
 	RootNamespace="Svc_Cfg_IPC_Client_Rem_Stream"
 	Keyword="Win32Proj"
 	SignManifests="true"

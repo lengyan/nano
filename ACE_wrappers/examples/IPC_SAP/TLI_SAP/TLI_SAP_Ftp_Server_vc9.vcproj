@@ -3,7 +3,7 @@
 	ProjectType="Visual C++"
 	Version="9.00"
 	Name="TLI_SAP_Ftp_Server"
-	ProjectGUID="{D9E7B598-FECA-1BAD-A742-DAEF32B06A25}"
+	ProjectGUID="{D9E7B598-FECA-1BAD-A742-DAEFE6265915}"
 	RootNamespace="TLI_SAP_Ftp_Server"
 	Keyword="Win32Proj"
 	SignManifests="true"

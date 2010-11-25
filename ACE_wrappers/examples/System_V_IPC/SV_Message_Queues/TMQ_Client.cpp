@@ -1,4 +1,4 @@
-// $Id: TMQ_Client.cpp 91671 2010-09-08 18:39:23Z johnnyw $
+// $Id: TMQ_Client.cpp 81978 2008-06-16 16:57:12Z sowayaa $
 
 #include "ace/Typed_SV_Message_Queue.h"
 
@@ -10,7 +10,7 @@
 #include "ace/OS_NS_stdio.h"
 #include "ace/OS_NS_unistd.h"
 
-
+ACE_RCSID(SV_Message_Queues, TMQ_Client, "$Id: TMQ_Client.cpp 81978 2008-06-16 16:57:12Z sowayaa $")
 
 int
 ACE_TMAIN (int, ACE_TCHAR *[])

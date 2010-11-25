@@ -3,7 +3,7 @@
 	ProjectType="Visual C++"
 	Version="9.00"
 	Name="ACE"
-	ProjectGUID="{BD537C9A-FECA-1BAD-6757-8A6300006755}"
+	ProjectGUID="{BD537C9A-FECA-1BAD-6757-8A6363336A1C}"
 	RootNamespace="ACE"
 	Keyword="Win32Proj"
 	TargetFrameworkVersion="0"
@@ -82,7 +82,7 @@
 				AdditionalLibraryDirectories=".;..\lib"
 				GenerateDebugInformation="true"
 				SubSystem="2"
-				ImportLibrary="$(SolutionDir)lib/ACEd.lib"
+				ImportLibrary="$(SolutionDir)lib\ACEd.lib"
 				TargetMachine="1"
 			/>
 			<Tool
@@ -109,7 +109,7 @@
 		</Configuration>
 		<Configuration
 			Name="Release|Win32"
-			OutputDirectory="$(SolutionDir)lib"
+			OutputDirectory="..\lib"
 			IntermediateDirectory="Release\ACE_vc9\I386"
 			ConfigurationType="2"
 			CharacterSet="0"
@@ -169,7 +169,7 @@
 				SubSystem="2"
 				OptimizeReferences="2"
 				EnableCOMDATFolding="2"
-				ImportLibrary="$(SolutionDir)lib\ACE.lib"
+				ImportLibrary="..\lib\ACE.lib"
 				TargetMachine="1"
 			/>
 			<Tool
@@ -1645,6 +1645,10 @@
 				>
 			</File>
 			<File
+				RelativePath="Array.h"
+				>
+			</File>
+			<File
 				RelativePath="Array_Base.h"
 				>
 			</File>
@@ -1845,6 +1849,14 @@
 				>
 			</File>
 			<File
+				RelativePath="config-cray.h"
+				>
+			</File>
+			<File
+				RelativePath="config-cxx-common.h"
+				>
+			</File>
+			<File
 				RelativePath="config-cygwin32.h"
 				>
 			</File>
@@ -1877,7 +1889,19 @@
 				>
 			</File>
 			<File
-				RelativePath="config-kfreebsd.h"
+				RelativePath="config-irix6.5.x-sgic++.h"
+				>
+			</File>
+			<File
+				RelativePath="config-irix6.x-common.h"
+				>
+			</File>
+			<File
+				RelativePath="config-irix6.x-g++.h"
+				>
+			</File>
+			<File
+				RelativePath="config-irix6.x-sgic++.h"
 				>
 			</File>
 			<File
@@ -1985,6 +2009,14 @@
 				>
 			</File>
 			<File
+				RelativePath="config-sco-5.0.0-nothread.h"
+				>
+			</File>
+			<File
+				RelativePath="config-sco-5.0.0.h"
+				>
+			</File>
+			<File
 				RelativePath="config-suncc-common.h"
 				>
 			</File>
@@ -2037,6 +2069,18 @@
 				>
 			</File>
 			<File
+				RelativePath="config-tru64.h"
+				>
+			</File>
+			<File
+				RelativePath="config-unixware-7.1.0.h"
+				>
+			</File>
+			<File
+				RelativePath="config-unixware-7.1.0.udk.h"
+				>
+			</File>
+			<File
 				RelativePath="config-visualage.h"
 				>
 			</File>
@@ -2078,6 +2122,10 @@
 			</File>
 			<File
 				RelativePath="config-win32-dmc.h"
+				>
+			</File>
+			<File
+				RelativePath="config-win32-ghs.h"
 				>
 			</File>
 			<File
@@ -2250,6 +2298,10 @@
 			</File>
 			<File
 				RelativePath="Event_Handler_T.h"
+				>
+			</File>
+			<File
+				RelativePath="Exception_Macros.h"
 				>
 			</File>
 			<File
@@ -2553,6 +2605,10 @@
 				>
 			</File>
 			<File
+				RelativePath="Map.h"
+				>
+			</File>
+			<File
 				RelativePath="Map_Manager.h"
 				>
 			</File>
@@ -2614,6 +2670,10 @@
 			</File>
 			<File
 				RelativePath="Message_Queue_Vx.h"
+				>
+			</File>
+			<File
+				RelativePath="Method_Object.h"
 				>
 			</File>
 			<File
@@ -2757,6 +2817,10 @@
 				>
 			</File>
 			<File
+				RelativePath="OS.h"
+				>
+			</File>
+			<File
 				RelativePath="os_include\os_aio.h"
 				>
 			</File>
@@ -2778,6 +2842,10 @@
 			</File>
 			<File
 				RelativePath="os_include\os_ctype.h"
+				>
+			</File>
+			<File
+				RelativePath="OS_Dirent.h"
 				>
 			</File>
 			<File
@@ -3177,6 +3245,10 @@
 				>
 			</File>
 			<File
+				RelativePath="OS_String.h"
+				>
+			</File>
+			<File
 				RelativePath="os_include\os_string.h"
 				>
 			</File>
@@ -3305,6 +3377,10 @@
 				>
 			</File>
 			<File
+				RelativePath="Pair.h"
+				>
+			</File>
+			<File
 				RelativePath="Pair_T.h"
 				>
 			</File>
@@ -3413,6 +3489,10 @@
 				>
 			</File>
 			<File
+				RelativePath="Refcountable.h"
+				>
+			</File>
+			<File
 				RelativePath="Refcountable_T.h"
 				>
 			</File>
@@ -3498,6 +3578,10 @@
 			</File>
 			<File
 				RelativePath="Service_Repository.h"
+				>
+			</File>
+			<File
+				RelativePath="Service_Templates.h"
 				>
 			</File>
 			<File
@@ -3722,6 +3806,10 @@
 			</File>
 			<File
 				RelativePath="Synch_Options.h"
+				>
+			</File>
+			<File
+				RelativePath="Synch_T.h"
 				>
 			</File>
 			<File
@@ -4062,7 +4150,175 @@
 				/>
 			</File>
 			<File
+				RelativePath="ace_flreactor.mpc"
+				>
+				<FileConfiguration
+					Name="Debug|Win32"
+					ExcludedFromBuild="true"
+					>
+					<Tool
+						Name="VCCustomBuildTool"
+					/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Win32"
+					ExcludedFromBuild="true"
+					>
+					<Tool
+						Name="VCCustomBuildTool"
+					/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Debug|x64"
+					ExcludedFromBuild="true"
+				/>
+				<FileConfiguration
+					Name="Release|x64"
+					ExcludedFromBuild="true"
+				/>
+			</File>
+			<File
 				RelativePath="ace_for_tao.mpc"
+				>
+				<FileConfiguration
+					Name="Debug|Win32"
+					ExcludedFromBuild="true"
+					>
+					<Tool
+						Name="VCCustomBuildTool"
+					/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Win32"
+					ExcludedFromBuild="true"
+					>
+					<Tool
+						Name="VCCustomBuildTool"
+					/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Debug|x64"
+					ExcludedFromBuild="true"
+				/>
+				<FileConfiguration
+					Name="Release|x64"
+					ExcludedFromBuild="true"
+				/>
+			</File>
+			<File
+				RelativePath="ace_foxreactor.mpc"
+				>
+				<FileConfiguration
+					Name="Debug|Win32"
+					ExcludedFromBuild="true"
+					>
+					<Tool
+						Name="VCCustomBuildTool"
+					/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Win32"
+					ExcludedFromBuild="true"
+					>
+					<Tool
+						Name="VCCustomBuildTool"
+					/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Debug|x64"
+					ExcludedFromBuild="true"
+				/>
+				<FileConfiguration
+					Name="Release|x64"
+					ExcludedFromBuild="true"
+				/>
+			</File>
+			<File
+				RelativePath="ace_qt3reactor.mpc"
+				>
+				<FileConfiguration
+					Name="Debug|Win32"
+					ExcludedFromBuild="true"
+					>
+					<Tool
+						Name="VCCustomBuildTool"
+					/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Win32"
+					ExcludedFromBuild="true"
+					>
+					<Tool
+						Name="VCCustomBuildTool"
+					/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Debug|x64"
+					ExcludedFromBuild="true"
+				/>
+				<FileConfiguration
+					Name="Release|x64"
+					ExcludedFromBuild="true"
+				/>
+			</File>
+			<File
+				RelativePath="ace_qt4reactor.mpc"
+				>
+				<FileConfiguration
+					Name="Debug|Win32"
+					ExcludedFromBuild="true"
+					>
+					<Tool
+						Name="VCCustomBuildTool"
+					/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Win32"
+					ExcludedFromBuild="true"
+					>
+					<Tool
+						Name="VCCustomBuildTool"
+					/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Debug|x64"
+					ExcludedFromBuild="true"
+				/>
+				<FileConfiguration
+					Name="Release|x64"
+					ExcludedFromBuild="true"
+				/>
+			</File>
+			<File
+				RelativePath="ace_tkreactor.mpc"
+				>
+				<FileConfiguration
+					Name="Debug|Win32"
+					ExcludedFromBuild="true"
+					>
+					<Tool
+						Name="VCCustomBuildTool"
+					/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Win32"
+					ExcludedFromBuild="true"
+					>
+					<Tool
+						Name="VCCustomBuildTool"
+					/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Debug|x64"
+					ExcludedFromBuild="true"
+				/>
+				<FileConfiguration
+					Name="Release|x64"
+					ExcludedFromBuild="true"
+				/>
+			</File>
+			<File
+				RelativePath="ace_xtreactor.mpc"
 				>
 				<FileConfiguration
 					Name="Debug|Win32"
@@ -4712,7 +4968,7 @@
 		</Filter>
 		<Filter
 			Name="Pkgconfig Files"
-			Filter="pcin"
+			Filter="in"
 			>
 			<File
 				RelativePath="ACE.pc.in"
@@ -5289,6 +5545,10 @@
 			</File>
 			<File
 				RelativePath="Obstack_T.inl"
+				>
+			</File>
+			<File
+				RelativePath="OS.inl"
 				>
 			</File>
 			<File
@@ -8197,6 +8457,42 @@
 			</File>
 			<File
 				RelativePath="Svc_Handler.cpp"
+				>
+				<FileConfiguration
+					Name="Debug|Win32"
+					ExcludedFromBuild="true"
+					>
+					<Tool
+						Name="VCCLCompilerTool"
+					/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Win32"
+					ExcludedFromBuild="true"
+					>
+					<Tool
+						Name="VCCLCompilerTool"
+					/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Debug|x64"
+					ExcludedFromBuild="true"
+					>
+					<Tool
+						Name="VCCLCompilerTool"
+					/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|x64"
+					ExcludedFromBuild="true"
+					>
+					<Tool
+						Name="VCCLCompilerTool"
+					/>
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath="Synch_T.cpp"
 				>
 				<FileConfiguration
 					Name="Debug|Win32"

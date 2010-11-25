@@ -3,7 +3,7 @@
 	ProjectType="Visual C++"
 	Version="9.00"
 	Name="Timer_Cancellation_Test"
-	ProjectGUID="{93FD11AB-FECA-1BAD-2431-8A1100722433}"
+	ProjectGUID="{93FD11AB-FECA-1BAD-2431-8A11337F6D50}"
 	RootNamespace="Timer_Cancellation_Test"
 	Keyword="Win32Proj"
 	SignManifests="true"

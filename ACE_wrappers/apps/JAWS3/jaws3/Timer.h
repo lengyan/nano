@@ -1,5 +1,5 @@
 /* -*- c++ -*- */
-// $Id: Timer.h 91743 2010-09-13 18:24:51Z johnnyw $
+// $Id: Timer.h 80826 2008-03-04 14:51:23Z wotte $
 
 #ifndef JAWS_TIMER_H
 #define JAWS_TIMER_H
@@ -87,7 +87,7 @@ public:
 private:
 
   JAWS_Timer_Impl *impl_;
-
+  
 };
 
 

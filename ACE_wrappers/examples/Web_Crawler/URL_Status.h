@@ -1,5 +1,5 @@
 /* -*- C++ -*- */
-// $Id: URL_Status.h 91743 2010-09-13 18:24:51Z johnnyw $
+// $Id: URL_Status.h 80826 2008-03-04 14:51:23Z wotte $
 
 // ============================================================================
 //
@@ -55,7 +55,7 @@ public:
   void status (STATUS_CODE);
   int destroy (void);
 private:
-  STATUS_CODE status_;
+  STATUS_CODE status_;  
 };
 
 #endif /* _URL_STATUS_H */

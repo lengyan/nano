@@ -3,7 +3,7 @@
 	ProjectType="Visual C++"
 	Version="8.00"
 	Name="Arg_Shifter_Test"
-	ProjectGUID="{AECF38FF-FECA-1BAD-2431-8A1100722433}"
+	ProjectGUID="{AECF38FF-FECA-1BAD-2431-8A11337F6D50}"
 	RootNamespace="Arg_Shifter_Test"
 	Keyword="Win32Proj"
 	SignManifests="true"

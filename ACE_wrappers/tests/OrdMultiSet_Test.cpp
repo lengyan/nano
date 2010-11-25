@@ -1,4 +1,4 @@
-// $Id: OrdMultiSet_Test.cpp 91671 2010-09-08 18:39:23Z johnnyw $
+// $Id: OrdMultiSet_Test.cpp 83312 2008-10-17 18:59:07Z johnnyw $
 
 // ============================================================================
 //
@@ -25,7 +25,7 @@
 #include "test_config.h"
 #include "ace/Containers.h"
 
-
+ACE_RCSID(tests, OrdMultiSet_Test, "$Id: OrdMultiSet_Test.cpp 83312 2008-10-17 18:59:07Z johnnyw $")
 
 int
 run_main (int, ACE_TCHAR *[])

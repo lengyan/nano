@@ -1,4 +1,4 @@
-// $Id: Peer.cpp 91670 2010-09-08 18:02:26Z johnnyw $
+// $Id: Peer.cpp 80826 2008-03-04 14:51:23Z wotte $
 
 #define ACE_BUILD_SVC_DLL
 
@@ -7,6 +7,8 @@
 #include "ace/OS_NS_unistd.h"
 #include "ace/Signal.h"
 #include "Peer.h"
+
+ACE_RCSID(Peer, Peer, "$Id: Peer.cpp 80826 2008-03-04 14:51:23Z wotte $")
 
 Peer_Handler::Peer_Handler (void)
   : connection_id_ (-1),  // Maybe it's better than 0.
@@ -114,7 +116,7 @@ Peer_Handler::transmit_stdin (void)
   int result = 0;
   if (this->connection_id_ != -1)
     {
-      ACE_Message_Block *mb = 0;
+      ACE_Message_Block *mb;
 
       ACE_NEW_RETURN (mb,
                       ACE_Message_Block (sizeof (Event)),
@@ -549,7 +551,7 @@ Peer_Handler::await_connection_id (void)
 int
 Peer_Handler::subscribe (void)
 {
-  ACE_Message_Block *mb = 0;
+  ACE_Message_Block *mb;
 
   ACE_NEW_RETURN (mb,
                   ACE_Message_Block (sizeof (Event)),

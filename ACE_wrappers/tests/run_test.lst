@@ -1,5 +1,5 @@
 
-# $Id: run_test.lst 92222 2010-10-14 18:33:51Z johnnyw $
+# $Id: run_test.lst 90445 2010-06-07 22:58:04Z mitza $
 #
 # This is the list of tests that need to be run by run_test.pl.
 # Each line has its own test, and a test can be followed by a
@@ -47,21 +47,18 @@ Bug_2820_Regression_Test
 Bug_2980_Regression_Test: !STATIC !Win32 !VxWorks !WCHAR
 Bug_3102_Regression_Test
 Bug_3319_Regression_Test
-Bug_3334_Regression_Test: !STATIC
+Bug_3334_Regression_Test: !STATIC 
 Bug_3432_Regression_Test
 Bug_3500_Regression_Test
-Bug_3505_Regression_Test
 Bug_3532_Regression_Test
-Bug_3539_Regression_Test
 Bug_3541_Regression_Test
+Bug_3505_Regression_Test
 Bug_3673_Regression_Test
 Bug_3709_Regression_Test: !LabVIEW_RT
 Bug_3710_Regression_Test
 Bug_3729_Regression_Test:
 Bug_3744_Regression_Test: !FIXED_BUGS_ONLY
 Bug_3758_Regression_Test: !FIXED_BUGS_ONLY
-Bug_3878_Regression_Test
-Bug_3911_Regression_Test: !FIXED_BUGS_ONLY !ACE_FOR_TAO
 CDR_Array_Test: !ACE_FOR_TAO
 CDR_File_Test: !ACE_FOR_TAO
 CDR_Test
@@ -195,7 +192,6 @@ Stack_Trace_Test:
 SV_Shared_Memory_Test: !MSVC !Unicos !VxWorks !RH_7.1 !nsk !ACE_FOR_TAO
 Semaphore_Test: !ACE_FOR_TAO
 Service_Config_Test: !STATIC
-Missing_Svc_Conf_Test: !STATIC
 Service_Config_Stream_Test: !STATIC !FIXED_BUGS_ONLY
 Sigset_Ops_Test
 Simple_Message_Block_Test

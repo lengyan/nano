@@ -1,4 +1,4 @@
-// $Id: Based_Pointer_Test_Lib.cpp 91673 2010-09-08 18:49:47Z johnnyw $
+// $Id: Based_Pointer_Test_Lib.cpp 84535 2009-02-20 08:52:29Z msmit $
 
 // ============================================================================
 //
@@ -19,6 +19,10 @@
 #include "ace/ACE.h"
 #include "ace/svc_export.h"
 #include "ace/Based_Pointer_Repository.h"
+
+ACE_RCSID (tests,
+           Based_Pointer_Repository_DLL_Test,
+           "$Id: Based_Pointer_Test_Lib.cpp 84535 2009-02-20 08:52:29Z msmit $")
 
 #if defined (ACE_OPENVMS)
     // with OPENVMS symbol names > 31 cause us trouble with dlsym()

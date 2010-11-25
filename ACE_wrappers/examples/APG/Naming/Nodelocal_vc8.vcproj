@@ -3,7 +3,7 @@
 	ProjectType="Visual C++"
 	Version="8.00"
 	Name="Nodelocal"
-	ProjectGUID="{005765B9-FECA-1BAD-BF85-8CE4FD25C624}"
+	ProjectGUID="{005765B9-FECA-1BAD-BF85-8CE49E16CB6D}"
 	RootNamespace="Nodelocal"
 	Keyword="Win32Proj"
 	SignManifests="true"

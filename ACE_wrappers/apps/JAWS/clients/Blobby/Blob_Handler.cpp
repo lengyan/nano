@@ -1,9 +1,11 @@
-// $Id: Blob_Handler.cpp 91670 2010-09-08 18:02:26Z johnnyw $
+// $Id: Blob_Handler.cpp 84700 2009-03-03 20:00:30Z olli $
 
 #include "Blob_Handler.h"
 #include "ace/OS_NS_stdio.h"
 #include "ace/OS_NS_string.h"
 #include "ace/OS_NS_strings.h"
+
+ACE_RCSID(Blobby, Blob_Handler, "$Id: Blob_Handler.cpp 84700 2009-03-03 20:00:30Z olli $")
 
 // Empty constructor for compliance with new Connector behavior.
 ACE_Blob_Handler::ACE_Blob_Handler (void)

@@ -1,4 +1,4 @@
-// $Id: client.cpp 91671 2010-09-08 18:39:23Z johnnyw $
+// $Id: client.cpp 82610 2008-08-12 19:46:36Z parsons $
 
 #include "ace/OS_main.h"
 #include "ace/FILE_Addr.h"
@@ -8,7 +8,7 @@
 #include "ace/OS_NS_string.h"
 #include "ace/OS_NS_stdio.h"
 
-
+ACE_RCSID(FILE_SAP, client, "$Id: client.cpp 82610 2008-08-12 19:46:36Z parsons $")
 
 int
 ACE_TMAIN (int argc, ACE_TCHAR *argv[])

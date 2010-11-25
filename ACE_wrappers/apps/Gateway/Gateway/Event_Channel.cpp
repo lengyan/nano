@@ -1,4 +1,4 @@
-// $Id: Event_Channel.cpp 91670 2010-09-08 18:02:26Z johnnyw $
+// $Id: Event_Channel.cpp 80826 2008-03-04 14:51:23Z wotte $
 
 #define ACE_BUILD_SVC_DLL
 
@@ -6,6 +6,8 @@
 #include "Event_Channel.h"
 #include "ace/OS_NS_sys_select.h"
 #include "ace/Signal.h"
+
+ACE_RCSID(Gateway, Event_Channel, "$Id: Event_Channel.cpp 80826 2008-03-04 14:51:23Z wotte $")
 
 Event_Channel::~Event_Channel (void)
 {

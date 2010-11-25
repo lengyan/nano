@@ -1,4 +1,4 @@
-// $Id: integer.cpp 91670 2010-09-08 18:02:26Z johnnyw $
+// $Id: integer.cpp 80826 2008-03-04 14:51:23Z wotte $
 
 // ============================================================================
 //
@@ -34,6 +34,8 @@
 
 #include "asnmp/integer.h"        // header file for gauge class
 #include "ace/OS_NS_stdio.h"
+
+ACE_RCSID(asnmp, integer, "$Id: integer.cpp 80826 2008-03-04 14:51:23Z wotte $")
 
 // constructor with value
 SnmpUInt32::SnmpUInt32 (const unsigned long i)

@@ -3,7 +3,7 @@
 	ProjectType="Visual C++"
 	Version="9.00"
 	Name="Timers"
-	ProjectGUID="{42211CC8-FECA-1BAD-B251-8D4CFC8DCBF0}"
+	ProjectGUID="{42211CC8-FECA-1BAD-B251-8D4C9FBEC6B9}"
 	RootNamespace="Timers"
 	Keyword="Win32Proj"
 	SignManifests="true"

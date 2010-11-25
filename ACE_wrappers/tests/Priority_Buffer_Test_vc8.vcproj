@@ -3,7 +3,7 @@
 	ProjectType="Visual C++"
 	Version="8.00"
 	Name="Priority_Buffer_Test"
-	ProjectGUID="{973CE85E-FECA-1BAD-2431-8A1100722433}"
+	ProjectGUID="{973CE85E-FECA-1BAD-2431-8A11337F6D50}"
 	RootNamespace="Priority_Buffer_Test"
 	Keyword="Win32Proj"
 	SignManifests="true"

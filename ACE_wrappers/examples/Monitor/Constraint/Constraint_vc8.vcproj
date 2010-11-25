@@ -3,7 +3,7 @@
 	ProjectType="Visual C++"
 	Version="8.00"
 	Name="Constraint"
-	ProjectGUID="{EEB8F5D9-FECA-1BAD-7BCF-1E57BCBE0D93}"
+	ProjectGUID="{EEB8F5D9-FECA-1BAD-7BCF-1E57DF8D00DA}"
 	RootNamespace="Constraint"
 	Keyword="Win32Proj"
 	SignManifests="true"

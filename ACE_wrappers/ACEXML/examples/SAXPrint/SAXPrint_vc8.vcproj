@@ -3,7 +3,7 @@
 	ProjectType="Visual C++"
 	Version="8.00"
 	Name="SAXPrint"
-	ProjectGUID="{DDFD3BD7-FECA-1BAD-4F93-FEB4C47D7318}"
+	ProjectGUID="{DDFD3BD7-FECA-1BAD-4F93-FEB410EB4028}"
 	RootNamespace="SAXPrint"
 	Keyword="Win32Proj"
 	SignManifests="true"

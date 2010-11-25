@@ -3,7 +3,7 @@
 	ProjectType="Visual C++"
 	Version="8.00"
 	Name="Reactor_Multicast_Client"
-	ProjectGUID="{6BECC323-FECA-1BAD-D1A8-860E7607F174}"
+	ProjectGUID="{6BECC323-FECA-1BAD-D1A8-860EE034C1A0}"
 	RootNamespace="Reactor_Multicast_Client"
 	Keyword="Win32Proj"
 	SignManifests="true"

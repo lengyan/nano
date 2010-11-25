@@ -1,5 +1,5 @@
 // -*- C++ -*-
-// $Id: SO_Group.h 91743 2010-09-13 18:24:51Z johnnyw $
+// $Id: SO_Group.h 80826 2008-03-04 14:51:23Z wotte $
 
 // File: SO_Group.h
 
@@ -14,7 +14,7 @@
 // analize a collection of applications so that common shared libraries can
 // be reduced.
 
-class SO_Group
+class SO_Group 
 {
 public:
   SO_Group ();
@@ -25,7 +25,7 @@ public:
   // libraries if found. Finally, add the undefined symbols from the executable
   // to the undefs collection.
   void add_executable(const char * );
-
+  
   // Do the actual business of the program
   void analize ();
 

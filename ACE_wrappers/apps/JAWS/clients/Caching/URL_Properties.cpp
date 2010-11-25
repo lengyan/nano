@@ -1,4 +1,4 @@
-// $Id: URL_Properties.cpp 91670 2010-09-08 18:02:26Z johnnyw $
+// $Id: URL_Properties.cpp 80826 2008-03-04 14:51:23Z wotte $
 
 #if !defined (ACE_URL_PROPERTIES_C)
 #define ACE_URL_PROPERTIES_C
@@ -11,6 +11,8 @@
 
 #include "ace/Auto_Ptr.h"
 #include "URL_Array_Helper.h"
+
+ACE_RCSID(Caching, URL_Properties, "$Id: URL_Properties.cpp 80826 2008-03-04 14:51:23Z wotte $")
 
 size_t
 ACE_WString_Helper::encode (void *buf, const ACE_WString &wstr)

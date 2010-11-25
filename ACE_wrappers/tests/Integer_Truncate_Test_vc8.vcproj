@@ -3,7 +3,7 @@
 	ProjectType="Visual C++"
 	Version="8.00"
 	Name="Integer_Truncate_Test"
-	ProjectGUID="{C73B28C4-FECA-1BAD-2431-8A1100722433}"
+	ProjectGUID="{C73B28C4-FECA-1BAD-2431-8A11337F6D50}"
 	RootNamespace="Integer_Truncate_Test"
 	Keyword="Win32Proj"
 	SignManifests="true"

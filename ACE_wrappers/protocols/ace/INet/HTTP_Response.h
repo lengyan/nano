@@ -1,4 +1,4 @@
-// $Id: HTTP_Response.h 91626 2010-09-07 10:59:20Z johnnyw $
+// $Id: HTTP_Response.h 90737 2010-06-21 09:46:14Z mcorino $
 
 /**
  * @file HTTP_Response.h
@@ -17,7 +17,7 @@
 # pragma once
 #endif /* ACE_LACKS_PRAGMA_ONCE */
 
-#include "ace/Containers_T.h"
+#include "ace/Array.h"
 #include "ace/INet/INet_Export.h"
 #include "ace/INet/Response.h"
 #include "ace/INet/HTTP_Header.h"

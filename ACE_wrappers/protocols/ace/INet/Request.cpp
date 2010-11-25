@@ -1,8 +1,8 @@
-// $Id: Request.cpp 91671 2010-09-08 18:39:23Z johnnyw $
+// $Id: Request.cpp 90737 2010-06-21 09:46:14Z mcorino $
 
 #include "ace/INet/Request.h"
 
-
+ACE_RCSID(NET_CLIENT,ACE_INet_Request,"$Id: Request.cpp 90737 2010-06-21 09:46:14Z mcorino $")
 
 ACE_BEGIN_VERSIONED_NAMESPACE_DECL
 

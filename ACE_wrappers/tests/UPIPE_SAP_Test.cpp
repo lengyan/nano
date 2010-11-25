@@ -1,4 +1,4 @@
-// $Id: UPIPE_SAP_Test.cpp 91671 2010-09-08 18:39:23Z johnnyw $
+// $Id: UPIPE_SAP_Test.cpp 80826 2008-03-04 14:51:23Z wotte $
 
 // ============================================================================
 //
@@ -25,7 +25,7 @@
 #include "ace/UPIPE_Connector.h"
 #include "ace/OS_NS_unistd.h"
 
-
+ACE_RCSID(tests, UPIPE_SAP_Test, "$Id: UPIPE_SAP_Test.cpp 80826 2008-03-04 14:51:23Z wotte $")
 
 #if defined (ACE_HAS_THREADS) && \
     (defined (ACE_HAS_STREAM_PIPES) || defined (ACE_HAS_WIN32_NAMED_PIPES))
@@ -48,7 +48,7 @@ connector (void *)
   if (con.connect (c_stream, addr) == -1)
     ACE_DEBUG ((LM_DEBUG, ACE_TEXT ("(%t) connector ACE_UPIPE_Connector failed\n")));
 
-  ACE_Message_Block *mb = 0;
+  ACE_Message_Block *mb;
 
   ACE_NEW_RETURN (mb, ACE_Message_Block (sizeof ("hello thanks") * sizeof (char)), 0);
 

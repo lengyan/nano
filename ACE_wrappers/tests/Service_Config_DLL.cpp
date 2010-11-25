@@ -3,7 +3,7 @@
 /**
  *  @file    Service_Config_DLL.cpp
  *
- *  $Id: Service_Config_DLL.cpp 91673 2010-09-08 18:49:47Z johnnyw $
+ *  $Id: Service_Config_DLL.cpp 80826 2008-03-04 14:51:23Z wotte $
  *
  *  This file is related to, and used with, Service_Config_Test. It's
  *  used when testing the reentrance/thread-safety of the
@@ -19,6 +19,10 @@
 #include "ace/Service_Config.h"
 #include "ace/OS_NS_stdio.h"
 #include "ace/OS_NS_string.h"
+
+ACE_RCSID (tests,
+           Service_Config_DLL,
+           "$Id: Service_Config_DLL.cpp 80826 2008-03-04 14:51:23Z wotte $")
 
 static ACE_THR_FUNC_RETURN
 invoke_service_config (void *arg)

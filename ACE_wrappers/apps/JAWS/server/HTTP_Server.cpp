@@ -1,4 +1,4 @@
-// $Id: HTTP_Server.cpp 91670 2010-09-08 18:02:26Z johnnyw $
+// $Id: HTTP_Server.cpp 85437 2009-05-26 05:56:14Z johnnyw $
 
 #ifndef ACE_BUILD_SVC_DLL
 #define ACE_BUILD_SVC_DLL
@@ -14,6 +14,8 @@
 
 #include "JAWS_IO.h"
 #include "HTTP_Server.h"
+
+ACE_RCSID(server, HTTP_Server, "$Id: HTTP_Server.cpp 85437 2009-05-26 05:56:14Z johnnyw $")
 
 // class is overkill
 class JAWS
@@ -226,7 +228,7 @@ Synch_Thread_Pool_Task::svc (void)
         ACE_ERROR_RETURN ((LM_ERROR, ACE_TEXT("%p\n"),
                            ACE_TEXT ("HTTP_Acceptor::accept")), -1);
 
-      ACE_Message_Block *mb = 0;
+      ACE_Message_Block *mb;
       ACE_NEW_RETURN (mb,
                       ACE_Message_Block (HTTP_Handler::MAX_REQUEST_SIZE + 1),
                       -1);
@@ -332,7 +334,7 @@ Thread_Per_Request_Task::open (void *)
 int
 Thread_Per_Request_Task::svc (void)
 {
-  ACE_Message_Block *mb = 0;
+  ACE_Message_Block *mb;
   ACE_NEW_RETURN (mb, ACE_Message_Block (HTTP_Handler::MAX_REQUEST_SIZE + 1),
                   -1);
   //Synch_HTTP_Handler_Factory factory;

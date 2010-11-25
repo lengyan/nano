@@ -3,7 +3,7 @@
 	ProjectType="Visual C++"
 	Version="9.00"
 	Name="Bytes_Sent"
-	ProjectGUID="{1C788EBC-FECA-1BAD-57C8-A8090AE02194}"
+	ProjectGUID="{1C788EBC-FECA-1BAD-57C8-A80969D32CDD}"
 	RootNamespace="Bytes_Sent"
 	Keyword="Win32Proj"
 	SignManifests="true"

@@ -1,4 +1,4 @@
-// $Id: Multicast_Test.cpp 91671 2010-09-08 18:39:23Z johnnyw $
+// $Id: Multicast_Test.cpp 90163 2010-05-18 21:42:20Z mitza $
 
 // ============================================================================
 //
@@ -49,7 +49,7 @@
 #include "ace/Signal.h"
 #include "ace/Min_Max.h"
 
-
+ACE_RCSID(tests, Multicast_Test, "$Id: Multicast_Test.cpp 90163 2010-05-18 21:42:20Z mitza $")
 
 #if defined (ACE_HAS_IP_MULTICAST) && defined (ACE_HAS_THREADS)
 

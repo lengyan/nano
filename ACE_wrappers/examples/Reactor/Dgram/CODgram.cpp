@@ -1,4 +1,4 @@
-// $Id: CODgram.cpp 91671 2010-09-08 18:39:23Z johnnyw $
+// $Id: CODgram.cpp 80826 2008-03-04 14:51:23Z wotte $
 
 // Exercise the <ACE_SOCK_CODgram> wrapper along with the
 // <ACE_Reactor>.  This test simply ping-pongs datagrams back and
@@ -34,7 +34,7 @@
 #include "ace/Process.h"
 #include "ace/Log_Msg.h"
 
-
+ACE_RCSID(Dgram, CODgram, "$Id: CODgram.cpp 80826 2008-03-04 14:51:23Z wotte $")
 
 // Port used to receive for dgrams.
 static u_short port1;

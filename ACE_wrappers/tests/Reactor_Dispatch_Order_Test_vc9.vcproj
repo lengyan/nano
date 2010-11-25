@@ -3,7 +3,7 @@
 	ProjectType="Visual C++"
 	Version="9.00"
 	Name="Reactor_Dispatch_Order_Test"
-	ProjectGUID="{38F51CF7-FECA-1BAD-2431-8A1100722433}"
+	ProjectGUID="{38F51CF7-FECA-1BAD-2431-8A11337F6D50}"
 	RootNamespace="Reactor_Dispatch_Order_Test"
 	Keyword="Win32Proj"
 	SignManifests="true"

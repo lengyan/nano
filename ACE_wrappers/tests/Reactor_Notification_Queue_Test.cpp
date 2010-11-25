@@ -1,7 +1,7 @@
 /**
  * @file Reactor_Notification_Queue_Test.cpp
  *
- * $Id: Reactor_Notification_Queue_Test.cpp 91626 2010-09-07 10:59:20Z johnnyw $
+ * $Id: Reactor_Notification_Queue_Test.cpp 84565 2009-02-23 08:20:39Z johnnyw $
  *
  * Verify that the notification queue can be used with large numbers
  * of events.
@@ -22,6 +22,9 @@
 #include "ace/TP_Reactor.h"
 #include "ace/Select_Reactor.h"
 #include "ace/WFMO_Reactor.h"
+
+ACE_RCSID(tests,
+          Reactor_Notification_Queue_Test, "$Id: Reactor_Notification_Queue_Test.cpp 84565 2009-02-23 08:20:39Z johnnyw $")
 
 class Event_Handler : public ACE_Event_Handler
 {

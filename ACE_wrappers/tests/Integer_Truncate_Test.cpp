@@ -2,7 +2,7 @@
 /**
  * @file Integer_Truncate_Test.cpp
  *
- * $Id: Integer_Truncate_Test.cpp 91813 2010-09-17 07:52:52Z johnnyw $
+ * $Id: Integer_Truncate_Test.cpp 80826 2008-03-04 14:51:23Z wotte $
  *
  * Test @c ACE_Utils::truncate_cast<> function template.
  *
@@ -117,7 +117,7 @@ sizeof_from_lt_sizeof_to (void)
               success
               ? ACE_TEXT ("PASSED")
               : ACE_TEXT ("FAILED")));
-
+  
   return success;
 }
 
@@ -353,7 +353,7 @@ int
 run_main (int, ACE_TCHAR *[])
 {
   ACE_START_TEST (ACE_TEXT ("Integer_Truncate_Test"));
-
+  
   typedef bool (*test_func) ();
 
   static test_func const tests[] =

@@ -3,7 +3,7 @@
 	ProjectType="Visual C++"
 	Version="9.00"
 	Name="Start_Hook"
-	ProjectGUID="{07C9BACB-FECA-1BAD-B689-C9110A2960DF}"
+	ProjectGUID="{07C9BACB-FECA-1BAD-B689-C911392429BC}"
 	RootNamespace="Start_Hook"
 	Keyword="Win32Proj"
 	SignManifests="true"

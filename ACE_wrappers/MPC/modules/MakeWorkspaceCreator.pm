@@ -23,7 +23,7 @@ use vars qw(@ISA);
 # Data Section
 # ************************************************************
 
-my $targets = 'clean depend generated realclean check-syntax $(CUSTOM_TARGETS)';
+my $targets = 'clean depend generated realclean $(CUSTOM_TARGETS)';
 
 # ************************************************************
 # Subroutine Section
@@ -47,7 +47,7 @@ sub write_project_targets {
 sub pre_workspace {
   my($self, $fh) = @_;
   $self->workspace_preamble($fh, $self->crlf(), 'Make Workspace',
-                            '$Id: MakeWorkspaceCreator.pm 1908 2010-09-17 11:27:20Z elliott_c $');
+                            '$Id: MakeWorkspaceCreator.pm 1611 2009-08-06 15:11:29Z elliott_c $');
 }
 
 

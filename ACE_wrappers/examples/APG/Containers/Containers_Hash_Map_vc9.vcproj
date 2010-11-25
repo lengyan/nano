@@ -3,7 +3,7 @@
 	ProjectType="Visual C++"
 	Version="9.00"
 	Name="Containers_Hash_Map"
-	ProjectGUID="{E4BD0080-FECA-1BAD-8408-181CEBDC7FA8}"
+	ProjectGUID="{E4BD0080-FECA-1BAD-8408-181CE6951C9B}"
 	RootNamespace="Containers_Hash_Map"
 	Keyword="Win32Proj"
 	SignManifests="true"

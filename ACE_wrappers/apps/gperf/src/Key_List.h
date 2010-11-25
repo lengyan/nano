@@ -1,7 +1,7 @@
 // -*- C++ -*-
 
 /**
- * $Id: Key_List.h 91273 2010-08-04 16:24:59Z johnnyw $
+ * $Id: Key_List.h 88332 2009-12-24 10:19:24Z johnnyw $
  *
  * Copyright (C) 1989 Free Software Foundation, Inc.
  * written by Douglas C. Schmidt (schmidt@cs.wustl.edu)
@@ -34,6 +34,10 @@
 #include "Vectors.h"
 #include "ace/Copy_Disabled.h"
 
+#if defined (__BORLANDC__) && (__BORLANDC__ < 0x630)
+#include "gperf_export.h"
+#endif
+
 /**
  * Describes a duplicate entry.
  *
@@ -60,7 +64,11 @@ public:
  * the Gen_Perf.hash function.  A Key_List is a singly-linked list
  * of List_Nodes.
  */
+#if defined (__BORLANDC__) && (__BORLANDC__ < 0x630)
+class ACE_GPERF_Export Key_List : private ACE_Copy_Disabled
+#else
 class Key_List : private ACE_Copy_Disabled
+#endif
 {
 public:
   Key_List (void);

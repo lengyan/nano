@@ -3,7 +3,7 @@
 	ProjectType="Visual C++"
 	Version="8.00"
 	Name="Config_HA_Status"
-	ProjectGUID="{801D9DA6-FECA-1BAD-80F5-8C3AFDFBF954}"
+	ProjectGUID="{801D9DA6-FECA-1BAD-80F5-8C3A9EC8F41D}"
 	RootNamespace="Config_HA_Status"
 	Keyword="Win32Proj"
 	SignManifests="true"

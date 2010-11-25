@@ -3,7 +3,7 @@
 	ProjectType="Visual C++"
 	Version="8.00"
 	Name="Reactor_FIFO_Server"
-	ProjectGUID="{F2685217-FECA-1BAD-6E59-A21D8A7389FD}"
+	ProjectGUID="{F2685217-FECA-1BAD-6E59-A21DB97EC09E}"
 	RootNamespace="Reactor_FIFO_Server"
 	Keyword="Win32Proj"
 	SignManifests="true"

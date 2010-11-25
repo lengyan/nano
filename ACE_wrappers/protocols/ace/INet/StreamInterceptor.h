@@ -1,4 +1,4 @@
-// $Id: StreamInterceptor.h 91118 2010-07-17 10:29:57Z mcorino $
+// $Id: StreamInterceptor.h 90789 2010-06-23 10:30:53Z mcorino $
 
 /**
  * @file StreamInterceptor.h
@@ -30,7 +30,7 @@ namespace ACE
         /**
         * @class ACE_IOS_StreamInterceptorBase
         *
-        * @brief Abstract base for stream interceptors.
+        * @brief
         *
         */
         template <class ACE_CHAR_T, class TR = std::char_traits<ACE_CHAR_T> >

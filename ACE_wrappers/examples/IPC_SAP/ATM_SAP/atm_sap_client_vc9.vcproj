@@ -3,7 +3,7 @@
 	ProjectType="Visual C++"
 	Version="9.00"
 	Name="atm_sap_client"
-	ProjectGUID="{3EB80969-FECA-1BAD-8562-EC4B26346A25}"
+	ProjectGUID="{3EB80969-FECA-1BAD-8562-EC4BF2A25915}"
 	RootNamespace="atm_sap_client"
 	Keyword="Win32Proj"
 	SignManifests="true"

@@ -4,7 +4,7 @@
 /**
  *  @file    Connector.h
  *
- *  $Id: Connector.h 91527 2010-08-27 15:03:31Z shuston $
+ *  $Id: Connector.h 89510 2010-03-17 12:21:14Z vzykov $
  *
  *  @author Douglas C. Schmidt <schmidt@cs.wustl.edu>
  */
@@ -101,9 +101,6 @@ public:
 
   /// Called by ACE_Reactor when asynchronous connections fail.
   virtual int handle_input (ACE_HANDLE);
-
-  /// Called by ACE_Dev_Poll_Reactor when asynchronous connections fail.
-  virtual int handle_close (ACE_HANDLE, ACE_Reactor_Mask);
 
   /// Called by ACE_Reactor when asynchronous connections succeed.
   virtual int handle_output (ACE_HANDLE);
@@ -427,7 +424,7 @@ public:
   SUPER;
 
   /**
-   * Initialize a connector.  @a flags indicates how SVC_HANDLER's
+   * Initialize a connector.  @a flags indicates how <SVC_HANDLER>'s
    * should be initialized prior to being activated.  Right now, the
    * only flag that is processed is ACE_NONBLOCK, which enabled
    * non-blocking I/O on the SVC_HANDLER when it is opened.
@@ -538,21 +535,21 @@ protected:
   /// Creation strategy for an Connector.
   CREATION_STRATEGY *creation_strategy_;
 
-  /// True if Connector created the creation strategy and thus should
+  /// true if Connector created the creation strategy and thus should
   /// delete it, else false.
   bool delete_creation_strategy_;
 
   /// Connect strategy for a Connector.
   CONNECT_STRATEGY *connect_strategy_;
 
-  /// True if Connector created the connect strategy and thus should
+  /// true if Connector created the connect strategy and thus should
   /// delete it, else false.
   bool delete_connect_strategy_;
 
-  /// Concurrency strategy for a Connector.
+  /// Concurrency strategy for an <Connector>.
   CONCURRENCY_STRATEGY *concurrency_strategy_;
 
-  /// True if Connector created the concurrency strategy and thus should
+  /// true if Connector created the concurrency strategy and thus should
   /// delete it, else false.
   bool delete_concurrency_strategy_;
 };

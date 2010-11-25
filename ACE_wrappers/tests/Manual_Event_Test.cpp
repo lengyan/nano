@@ -1,4 +1,4 @@
-// $Id: Manual_Event_Test.cpp 91671 2010-09-08 18:39:23Z johnnyw $
+// $Id: Manual_Event_Test.cpp 81077 2008-03-24 18:28:35Z schmidt $
 
 // ============================================================================
 //
@@ -27,7 +27,7 @@
 #include "ace/OS_NS_unistd.h"
 #include "ace/Atomic_Op.h"
 
-
+ACE_RCSID(tests, Manual_Event_Test, "$Id: Manual_Event_Test.cpp 81077 2008-03-24 18:28:35Z schmidt $")
 
 // msec that times are allowed to differ before test fails.
 #if defined (ACE_HAS_HI_RES_TIMER) || defined (ACE_HAS_AIX_HI_RES_TIMER) || \

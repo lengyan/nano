@@ -3,7 +3,7 @@
 	ProjectType="Visual C++"
 	Version="8.00"
 	Name="Service_Config_DLL"
-	ProjectGUID="{D2EC519A-FECA-1BAD-2431-8A1100722433}"
+	ProjectGUID="{D2EC519A-FECA-1BAD-2431-8A11337F6D50}"
 	RootNamespace="Service_Config_DLL"
 	Keyword="Win32Proj"
 	SignManifests="true"

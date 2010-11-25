@@ -1,4 +1,4 @@
-// $Id: Framework_Component_Test.h 92208 2010-10-13 06:20:39Z johnnyw $
+// $Id: Framework_Component_Test.h 80826 2008-03-04 14:51:23Z wotte $
 
 // ============================================================================
 //
@@ -22,7 +22,7 @@
 
 #include "ace/Log_Msg.h"
 
-/// This we will use to test the ACE_Framework_Repository
+/// This  we will use to test the ACE_Framework_Repository
 class Simple_Service
 {
 public:

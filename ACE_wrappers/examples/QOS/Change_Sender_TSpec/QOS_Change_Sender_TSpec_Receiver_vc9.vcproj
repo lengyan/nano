@@ -3,7 +3,7 @@
 	ProjectType="Visual C++"
 	Version="9.00"
 	Name="QOS_Change_Sender_TSpec_Receiver"
-	ProjectGUID="{27555BA2-FECA-1BAD-A054-796E2D70CA71}"
+	ProjectGUID="{27555BA2-FECA-1BAD-A054-796EF9E6F941}"
 	RootNamespace="QOS_Change_Sender_TSpec_Receiver"
 	Keyword="Win32Proj"
 	SignManifests="true"

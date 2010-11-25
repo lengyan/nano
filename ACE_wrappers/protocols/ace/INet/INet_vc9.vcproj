@@ -3,7 +3,7 @@
 	ProjectType="Visual C++"
 	Version="9.00"
 	Name="INet"
-	ProjectGUID="{F4866C9A-FECA-1BAD-F826-8A65F7EE4449}"
+	ProjectGUID="{F4866C9A-FECA-1BAD-F826-8A6561DD749D}"
 	RootNamespace="INet"
 	Keyword="Win32Proj"
 	SignManifests="true"
@@ -386,9 +386,6 @@
 				RelativePath="HeaderBase.cpp">
 			</File>
 			<File
-				RelativePath="HTTP_BasicAuthentication.cpp">
-			</File>
-			<File
 				RelativePath="HTTP_ClientRequestHandler.cpp">
 			</File>
 			<File
@@ -402,9 +399,6 @@
 			</File>
 			<File
 				RelativePath="HTTP_Response.cpp">
-			</File>
-			<File
-				RelativePath="HTTP_SessionBase.cpp">
 			</File>
 			<File
 				RelativePath="HTTP_Status.cpp">
@@ -471,9 +465,6 @@
 				RelativePath="HeaderBase.h">
 			</File>
 			<File
-				RelativePath="HTTP_BasicAuthentication.h">
-			</File>
-			<File
 				RelativePath="HTTP_ClientRequestHandler.h">
 			</File>
 			<File
@@ -490,9 +481,6 @@
 			</File>
 			<File
 				RelativePath="HTTP_Session.h">
-			</File>
-			<File
-				RelativePath="HTTP_SessionBase.h">
 			</File>
 			<File
 				RelativePath="HTTP_Status.h">
@@ -566,29 +554,6 @@
 				>
 				</FileConfiguration>
 			</File>
-			<File
-				RelativePath="inet_ssl.mpc">
-				<FileConfiguration
-					Name="Debug|Win32"
-					ExcludedFromBuild="true"
-				>
-				</FileConfiguration>
-				<FileConfiguration
-					Name="Release|Win32"
-					ExcludedFromBuild="true"
-				>
-				</FileConfiguration>
-				<FileConfiguration
-					Name="Debug|x64"
-					ExcludedFromBuild="true"
-				>
-				</FileConfiguration>
-				<FileConfiguration
-					Name="Release|x64"
-					ExcludedFromBuild="true"
-				>
-				</FileConfiguration>
-			</File>
 		</Filter>
 		<Filter
 			Name="Inline Files"
@@ -621,9 +586,6 @@
 				RelativePath="HeaderBase.inl">
 			</File>
 			<File
-				RelativePath="HTTP_BasicAuthentication.inl">
-			</File>
-			<File
 				RelativePath="HTTP_ClientRequestHandler.inl">
 			</File>
 			<File
@@ -637,9 +599,6 @@
 			</File>
 			<File
 				RelativePath="HTTP_Response.inl">
-			</File>
-			<File
-				RelativePath="HTTP_SessionBase.inl">
 			</File>
 			<File
 				RelativePath="HTTP_Status.inl">

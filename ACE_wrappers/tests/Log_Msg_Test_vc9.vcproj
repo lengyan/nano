@@ -3,7 +3,7 @@
 	ProjectType="Visual C++"
 	Version="9.00"
 	Name="Log_Msg_Test"
-	ProjectGUID="{51B2D6C8-FECA-1BAD-2431-8A1100722433}"
+	ProjectGUID="{51B2D6C8-FECA-1BAD-2431-8A11337F6D50}"
 	RootNamespace="Log_Msg_Test"
 	Keyword="Win32Proj"
 	SignManifests="true"

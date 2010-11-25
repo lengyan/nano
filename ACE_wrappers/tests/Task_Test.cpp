@@ -1,4 +1,4 @@
-// $Id: Task_Test.cpp 91671 2010-09-08 18:39:23Z johnnyw $
+// $Id: Task_Test.cpp 80826 2008-03-04 14:51:23Z wotte $
 
 // ============================================================================
 //
@@ -24,7 +24,7 @@
 #include "ace/Task.h"
 #include "ace/Thread_Hook.h"
 
-
+ACE_RCSID(tests, Task_Test, "$Id: Task_Test.cpp 80826 2008-03-04 14:51:23Z wotte $")
 
 #if defined (ACE_HAS_THREADS)
 #include "ace/Atomic_Op.h"

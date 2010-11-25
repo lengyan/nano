@@ -1,8 +1,8 @@
-// $Id: Timer_Helpers.cpp 91813 2010-09-17 07:52:52Z johnnyw $
+// $Id: Timer_Helpers.cpp 80826 2008-03-04 14:51:23Z wotte $
 
 #ifndef JAWS_BUILD_DLL
 #define JAWS_BUILD_DLL
-#endif
+#endif 
 
 #include "jaws3/Timer_Helpers.h"
 

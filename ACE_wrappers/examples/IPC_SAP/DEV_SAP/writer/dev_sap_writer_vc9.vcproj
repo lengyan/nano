@@ -3,7 +3,7 @@
 	ProjectType="Visual C++"
 	Version="9.00"
 	Name="dev_sap_writer"
-	ProjectGUID="{D4A36978-FECA-1BAD-DA76-D4457A271480}"
+	ProjectGUID="{D4A36978-FECA-1BAD-DA76-D445776E77B3}"
 	RootNamespace="dev_sap_writer"
 	Keyword="Win32Proj"
 	SignManifests="true"

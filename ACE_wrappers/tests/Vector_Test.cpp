@@ -1,4 +1,4 @@
-// $Id: Vector_Test.cpp 91671 2010-09-08 18:39:23Z johnnyw $
+// $Id: Vector_Test.cpp 83312 2008-10-17 18:59:07Z johnnyw $
 
 // ============================================================================
 //
@@ -19,7 +19,7 @@
 
 #include "test_config.h"
 
-
+ACE_RCSID(tests, Vector_Test, "$Id: Vector_Test.cpp 83312 2008-10-17 18:59:07Z johnnyw $")
 
 #include "ace/Vector_T.h"
 

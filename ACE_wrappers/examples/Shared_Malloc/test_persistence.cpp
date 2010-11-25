@@ -1,4 +1,4 @@
-// $Id: test_persistence.cpp 91673 2010-09-08 18:49:47Z johnnyw $
+// $Id: test_persistence.cpp 80826 2008-03-04 14:51:23Z wotte $
 
 // Test the persistence capabilities of <ACE_Malloc> when configured
 // for mmap-based shared memory management.
@@ -14,6 +14,10 @@
 #include "ace/streams.h"
 
 #include "ace/Null_Mutex.h"
+
+ACE_RCSID (Shared_Malloc,
+           test_persistence,
+           "$Id: test_persistence.cpp 80826 2008-03-04 14:51:23Z wotte $")
 
 typedef ACE_Malloc <ACE_MMAP_MEMORY_POOL, ACE_Null_Mutex> TEST_MALLOC;
 typedef ACE_Malloc_LIFO_Iterator <ACE_MMAP_MEMORY_POOL, ACE_Null_Mutex> MALLOC_LIFO_ITERATOR;

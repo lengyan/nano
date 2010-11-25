@@ -2,7 +2,7 @@
 /**
  *  @file  DSRT_Direct_Dispatcher_Impl_T.h
  *
- *  $Id: DSRT_Direct_Dispatcher_Impl_T.h 91743 2010-09-13 18:24:51Z johnnyw $
+ *  $Id: DSRT_Direct_Dispatcher_Impl_T.h 80826 2008-03-04 14:51:23Z wotte $
  *
  *  @author Venkita Subramonian (venkita@cs.wustl.edu)
  *
@@ -38,7 +38,7 @@ namespace Kokyu
     typedef typename
     DSRT_Scheduler_Traits::QoSDescriptor_t DSRT_QoSDescriptor;
 
-    DSRT_Direct_Dispatcher_Impl (ACE_Sched_Params::Policy sched_policy,
+    DSRT_Direct_Dispatcher_Impl (ACE_Sched_Params::Policy sched_policy, 
                                  int sched_scope);
 
     int init_i (const DSRT_ConfigInfo&);

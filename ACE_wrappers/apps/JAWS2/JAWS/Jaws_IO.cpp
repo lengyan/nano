@@ -1,4 +1,4 @@
-// $Id: Jaws_IO.cpp 91671 2010-09-08 18:39:23Z johnnyw $
+// $Id: Jaws_IO.cpp 85415 2009-05-22 07:26:32Z johnnyw $
 
 #include "ace/Message_Block.h"
 #include "ace/SOCK_Stream.h"
@@ -20,7 +20,7 @@
 
 // #include "HTTP_Helpers.h"
 
-
+ACE_RCSID(JAWS, IO, "$Id: Jaws_IO.cpp 85415 2009-05-22 07:26:32Z johnnyw $")
 
 JAWS_IO::JAWS_IO (void)
   : handle_ (ACE_INVALID_HANDLE),
@@ -562,7 +562,7 @@ JAWS_Asynch_IO::send_message (JAWS_IO_Handler *ioh,
   JAWS_Asynch_IO_Handler *aioh =
     dynamic_cast<JAWS_Asynch_IO_Handler *> (ioh);
 
-  ACE_Message_Block *mb = 0;
+  ACE_Message_Block *mb;
   ACE_NEW (mb, ACE_Message_Block (buffer, length));
 
   if (mb == 0)

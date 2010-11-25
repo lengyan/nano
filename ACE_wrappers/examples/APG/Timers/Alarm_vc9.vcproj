@@ -3,7 +3,7 @@
 	ProjectType="Visual C++"
 	Version="9.00"
 	Name="Alarm"
-	ProjectGUID="{C360FC9E-FECA-1BAD-B251-8D4CFC8DCBF0}"
+	ProjectGUID="{C360FC9E-FECA-1BAD-B251-8D4C9FBEC6B9}"
 	RootNamespace="Alarm"
 	Keyword="Win32Proj"
 	SignManifests="true"

@@ -1,4 +1,4 @@
-// $Id: Recursive_Mutex_Test.cpp 91671 2010-09-08 18:39:23Z johnnyw $
+// $Id: Recursive_Mutex_Test.cpp 85131 2009-04-21 06:02:48Z johnnyw $
 
 // ============================================================================
 //
@@ -26,7 +26,7 @@
 #include "ace/OS_NS_unistd.h"
 #include "ace/Recursive_Thread_Mutex.h"
 
-
+ACE_RCSID(tests, Recursive_Mutex_Test, "$Id: Recursive_Mutex_Test.cpp 85131 2009-04-21 06:02:48Z johnnyw $")
 
 #if defined (ACE_HAS_THREADS)
 
@@ -211,7 +211,6 @@ test_timed_wait (int nesting_level,
                       ACE_TEXT ("(%P|%t) = released on iteration %d\n"),
                       i));
 
-          // FUZZ: disable check_for_ACE_Guard
           // Basic ACE_Guard usage - automatically acquire the mutex on
           // guard construction and automatically release it on
           // destruction.
@@ -270,7 +269,7 @@ test_timed_wait (int nesting_level,
             ACE_ASSERT (guard.locked () == 0);
 
             // ACE_Guard object's destructor will not release the mutex.
-        }
+          }
           // We are now responsible for releasing the mutex.
           result = rm->release ();
           ACE_ASSERT (result == 0);
@@ -319,7 +318,6 @@ test_timed_wait (int nesting_level,
               // ACE_Guard object is destroyed when exiting scope and guard
               // destructor automatically releases mutex.
             }
-          // FUZZ: enable check_for_ACE_Guard
         }
 
       return;

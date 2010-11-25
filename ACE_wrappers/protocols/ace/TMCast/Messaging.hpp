@@ -1,5 +1,6 @@
-// $Id: Messaging.hpp 91626 2010-09-07 10:59:20Z johnnyw $
+// file      : ACE_TMCast/Messaging.hpp
 // author    : Boris Kolpackov <boris@dre.vanderbilt.edu>
+// cvs-id    : $Id: Messaging.hpp 80826 2008-03-04 14:51:23Z wotte $
 
 #ifndef TMCAST_MESSAGING_HPP
 #define TMCAST_MESSAGING_HPP

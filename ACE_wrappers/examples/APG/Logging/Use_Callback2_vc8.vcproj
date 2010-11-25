@@ -3,7 +3,7 @@
 	ProjectType="Visual C++"
 	Version="8.00"
 	Name="Use_Callback2"
-	ProjectGUID="{CB575B35-FECA-1BAD-1F85-E0F2D0B685B8}"
+	ProjectGUID="{CB575B35-FECA-1BAD-1F85-E0F2E386512E}"
 	RootNamespace="Use_Callback2"
 	Keyword="Win32Proj"
 	SignManifests="true"

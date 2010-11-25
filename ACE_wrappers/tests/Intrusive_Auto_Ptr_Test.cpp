@@ -1,4 +1,4 @@
-// $Id: Intrusive_Auto_Ptr_Test.cpp 91671 2010-09-08 18:39:23Z johnnyw $
+// $Id: Intrusive_Auto_Ptr_Test.cpp 81190 2008-04-01 07:38:35Z johnnyw $
 
 // ============================================================================
 //
@@ -21,7 +21,7 @@
 #include "ace/Intrusive_Auto_Ptr.h"
 #include "ace/Thread_Manager.h"
 
-
+ACE_RCSID(tests, Intrusive_Auto_Ptr_Test, "$Id: Intrusive_Auto_Ptr_Test.cpp 81190 2008-04-01 07:38:35Z johnnyw $")
 
 class One {
 

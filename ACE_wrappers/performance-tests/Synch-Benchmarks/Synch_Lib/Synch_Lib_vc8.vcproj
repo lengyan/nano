@@ -3,7 +3,7 @@
 	ProjectType="Visual C++"
 	Version="8.00"
 	Name="Synch_Lib"
-	ProjectGUID="{72AE431F-FECA-1BAD-3A9E-1C813063C5A6}"
+	ProjectGUID="{72AE431F-FECA-1BAD-3A9E-1C8103531130}"
 	RootNamespace="Synch_Lib"
 	Keyword="Win32Proj"
 	SignManifests="true"

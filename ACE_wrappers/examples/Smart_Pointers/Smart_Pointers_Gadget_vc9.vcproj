@@ -3,7 +3,7 @@
 	ProjectType="Visual C++"
 	Version="9.00"
 	Name="Smart_Pointers_Gadget"
-	ProjectGUID="{69512047-FECA-1BAD-474B-E6C11145E1EB}"
+	ProjectGUID="{69512047-FECA-1BAD-474B-E6C11C0C82D8}"
 	RootNamespace="Smart_Pointers_Gadget"
 	Keyword="Win32Proj"
 	SignManifests="true"

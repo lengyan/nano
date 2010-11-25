@@ -1,4 +1,4 @@
-// $Id: broadcast_client_test.cpp 91670 2010-09-08 18:02:26Z johnnyw $
+// $Id: broadcast_client_test.cpp 81978 2008-06-16 16:57:12Z sowayaa $
 
 // Tests out the broadcast service of the
 // Internet domain IPC-SAP dgram abstraction.
@@ -11,6 +11,8 @@
 #include "ace/SOCK_Dgram_Bcast.h"
 #include "ace/Get_Opt.h"
 #include "ace/Log_Msg.h"
+
+ACE_RCSID(client, broadcast_client_test, "$Id: broadcast_client_test.cpp 81978 2008-06-16 16:57:12Z sowayaa $")
 
 /* Name of the program. */
 static ACE_TCHAR *program_name;

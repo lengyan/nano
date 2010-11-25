@@ -1,4 +1,4 @@
-// $Id: Custom_Handler.cpp 91813 2010-09-17 07:52:52Z johnnyw $
+// $Id: Custom_Handler.cpp 90133 2010-05-12 08:42:29Z msmit $
 // ============================================================================
 // = LIBRARY
 //    examples
@@ -7,7 +7,7 @@
 //    Custom_Handler.cpp
 //
 // = DESCRIPTION
-//    This is a custom event handler to be used with the thread timer queue
+//    This is a custom event handler to be used with the thread timer queue 
 //    adapter, and its appropriate upcall.
 //
 // = AUTHOR

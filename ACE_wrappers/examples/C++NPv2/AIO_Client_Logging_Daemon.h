@@ -1,5 +1,5 @@
 /*
-** $Id: AIO_Client_Logging_Daemon.h 92046 2010-09-27 11:26:41Z vzykov $
+** $Id: AIO_Client_Logging_Daemon.h 83251 2008-10-15 10:55:13Z vzykov $
 **
 ** Copyright 2002 Addison Wesley. All Rights Reserved.
 */
@@ -55,15 +55,13 @@ public:
   virtual int put (ACE_Message_Block *, ACE_Time_Value * = 0);
 
   // Hook method called when server connection is established.
+  using ACE_Service_Handler::open;
   virtual void open (ACE_HANDLE new_handle,
                      ACE_Message_Block &message_block);
 
-  // A trivial implementation that is needed to suppress compile
-  // warnings/errors.
-  virtual int open (void *args)
-  {
-    return ACE_Task<ACE_NULL_SYNCH>::open (args);
-  }
+  // This is to make happy a compiler on HP-UX which complains
+  // that the 'open' above hides "int ACE_Task_Base::open(void *)"
+  using ACE_Task<ACE_NULL_SYNCH>::open;
 
 protected:
   ACE_Asynch_Read_Stream  reader_;   // Detects connection loss

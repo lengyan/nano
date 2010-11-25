@@ -3,7 +3,7 @@
 	ProjectType="Visual C++"
 	Version="8.00"
 	Name="fifo_sap_server"
-	ProjectGUID="{86836F10-FECA-1BAD-8564-85690EE67112}"
+	ProjectGUID="{86836F10-FECA-1BAD-8564-85694785421F}"
 	RootNamespace="fifo_sap_server"
 	Keyword="Win32Proj"
 	SignManifests="true"

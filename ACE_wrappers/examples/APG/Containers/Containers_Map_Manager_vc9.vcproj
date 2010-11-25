@@ -3,7 +3,7 @@
 	ProjectType="Visual C++"
 	Version="9.00"
 	Name="Containers_Map_Manager"
-	ProjectGUID="{CC87AF4D-FECA-1BAD-8408-181CEBDC7FA8}"
+	ProjectGUID="{CC87AF4D-FECA-1BAD-8408-181CE6951C9B}"
 	RootNamespace="Containers_Map_Manager"
 	Keyword="Win32Proj"
 	SignManifests="true"

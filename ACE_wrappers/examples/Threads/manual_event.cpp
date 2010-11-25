@@ -1,4 +1,4 @@
-// $Id: manual_event.cpp 91671 2010-09-08 18:39:23Z johnnyw $
+// $Id: manual_event.cpp 84565 2009-02-23 08:20:39Z johnnyw $
 
 // The test shows the use of an ACE_Manual_Event to create a
 // Pseudo_Barrier. Multiple threads are created which do the
@@ -19,7 +19,7 @@
 #include "ace/Thread_Manager.h"
 #include "ace/Atomic_Op.h"
 
-
+ACE_RCSID(Threads, manual_event, "$Id: manual_event.cpp 84565 2009-02-23 08:20:39Z johnnyw $")
 
 #if defined (ACE_HAS_THREADS)
 static ACE_Atomic_Op <ACE_Thread_Mutex, int> amount_of_work = 0;

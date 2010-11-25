@@ -1,4 +1,4 @@
-// $Id: Task_ThreadPool.cpp 91813 2010-09-17 07:52:52Z johnnyw $
+// $Id: Task_ThreadPool.cpp 80826 2008-03-04 14:51:23Z wotte $
 
 #include "ace/config-lite.h"
 #if defined (ACE_HAS_THREADS)
@@ -80,7 +80,7 @@ public:
         ACE_Message_Block *mb = 0;
         ACE_Time_Value tv ((long)MAX_TIMEOUT);
         tv += ACE_OS::time (0);
-
+          
         // Get a message request.
         if (this->getq (mb, &tv) < 0)
           {
@@ -118,7 +118,7 @@ int ACE_TMAIN (int, ACE_TCHAR *[])
   ACE_Time_Value tv;
   tv.msec (100);
 
-  ACE_Message_Block *mb = 0;
+  ACE_Message_Block *mb;
   for (int i = 0; i < 30; i++)
     {
       ACE_NEW_RETURN

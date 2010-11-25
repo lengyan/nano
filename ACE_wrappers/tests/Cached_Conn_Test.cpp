@@ -1,4 +1,4 @@
-// $Id: Cached_Conn_Test.cpp 92097 2010-09-30 05:41:49Z msmit $
+// $Id: Cached_Conn_Test.cpp 87226 2009-10-26 10:19:27Z olli $
 
 // ============================================================================
 //
@@ -44,10 +44,10 @@
 #pragma warning(disable:4503)
 #endif /* _MSC_VER */
 
-
+ACE_RCSID(tests, Cached_Conn_Test, "$Id: Cached_Conn_Test.cpp 87226 2009-10-26 10:19:27Z olli $")
 
 typedef size_t ATTRIBUTES;
-typedef std::pair<Svc_Handler *, ATTRIBUTES>
+typedef ACE_Pair<Svc_Handler *, ATTRIBUTES>
         CACHED_HANDLER;
 typedef ACE_Refcounted_Hash_Recyclable<ACE_INET_Addr>
         ACE_ADDR;

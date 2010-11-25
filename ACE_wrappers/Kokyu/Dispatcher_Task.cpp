@@ -1,4 +1,4 @@
-// $Id: Dispatcher_Task.cpp 91670 2010-09-08 18:02:26Z johnnyw $
+// $Id: Dispatcher_Task.cpp 82513 2008-08-05 18:52:53Z parsons $
 
 #include "Dispatcher_Task.h"
 
@@ -8,6 +8,8 @@
 #if ! defined (__ACE_INLINE__)
 #include "Dispatcher_Task.inl"
 #endif /* __ACE_INLINE__ */
+
+ACE_RCSID(Kokyu, Dispatcher_Task, "$Id: Dispatcher_Task.cpp 82513 2008-08-05 18:52:53Z parsons $")
 
 namespace
 //anonymous namespace - use this to avoid polluting the global namespace
@@ -95,8 +97,8 @@ Dispatcher_Task::svc (void)
 
   while (!done)
     {
-      ACE_Message_Block *mb = 0;
-
+      ACE_Message_Block *mb;
+      
       if (this->getq (mb) == -1)
         {
           if (ACE_OS::last_error () == ESHUTDOWN)

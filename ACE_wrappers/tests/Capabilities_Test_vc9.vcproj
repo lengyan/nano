@@ -3,7 +3,7 @@
 	ProjectType="Visual C++"
 	Version="9.00"
 	Name="Capabilities_Test"
-	ProjectGUID="{548A15DB-FECA-1BAD-2431-8A1100722433}"
+	ProjectGUID="{548A15DB-FECA-1BAD-2431-8A11337F6D50}"
 	RootNamespace="Capabilities_Test"
 	Keyword="Win32Proj"
 	SignManifests="true"

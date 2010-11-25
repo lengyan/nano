@@ -1,4 +1,4 @@
-// $Id: wix.mpb 1849 2010-07-14 05:01:18Z hillj $
+// $Id: wix.mpb 1814 2010-06-17 03:32:37Z hillj $
 
 project {
   custom_only = 1
@@ -16,13 +16,11 @@ project {
     inputext = .wxi
   }
 
+  postbuild = \
+    <%quote%>$(WIX_ROOT)/bin/light.exe<%quote%> -out <%project_name%>.msi \
+    <%light_flags%> <%foreach(wxs_files)%><%noextension(wxs_file)%>.wixobj <%endfor%>
 
-  specific {
+  specific(prop:microsoft) {
     wix_flags += -dtype=<%prj_type%>
-
-    prebuild  += <%rm%> <%project_name%>.msi
-    postbuild += \
-      <%quote%>$(WIX_ROOT)/bin/light.exe<%quote%> -out <%project_name%>.msi \
-      <%light_flags%> <%foreach(wxs_files)%><%noextension(wxs_file)%>.wixobj <%endfor%>
   }
 }

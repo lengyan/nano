@@ -1,4 +1,4 @@
-// $Id: Gateway.cpp 91670 2010-09-08 18:02:26Z johnnyw $
+// $Id: Gateway.cpp 80826 2008-03-04 14:51:23Z wotte $
 
 #define ACE_BUILD_SVC_DLL
 
@@ -10,6 +10,8 @@
 #include "Config_Files.h"
 #include "Event_Channel.h"
 #include "Gateway.h"
+
+ACE_RCSID(Gateway, Gateway, "$Id: Gateway.cpp 80826 2008-03-04 14:51:23Z wotte $")
 
 class ACE_Svc_Export Gateway : public ACE_Service_Object
 {

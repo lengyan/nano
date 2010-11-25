@@ -1,4 +1,4 @@
-// $Id: remote_thr_stream_client_test.cpp 91670 2010-09-08 18:02:26Z johnnyw $
+// $Id: remote_thr_stream_client_test.cpp 80826 2008-03-04 14:51:23Z wotte $
 
 // Test program for the INET ACE_TLI-SAPs...
 
@@ -10,6 +10,8 @@
 #include "ace/INET_Addr.h"
 #include "ace/Get_Opt.h"
 #include "ace/Log_Msg.h"
+
+ACE_RCSID(client, remote_thr_stream_client_test, "$Id: remote_thr_stream_client_test.cpp 80826 2008-03-04 14:51:23Z wotte $")
 
 #if defined (ACE_HAS_TLI)
 

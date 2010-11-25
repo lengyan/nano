@@ -1,4 +1,4 @@
-// $Id: Object_Manager_Flipping_Test.cpp 91671 2010-09-08 18:39:23Z johnnyw $
+// $Id: Object_Manager_Flipping_Test.cpp 81247 2008-04-05 16:43:10Z iliyan $
 
 // ============================================================================
 //
@@ -29,7 +29,7 @@
 #include "ace/Service_Config.h"
 #include "ace/Intrusive_Auto_Ptr.h"
 
-
+ACE_RCSID(tests, Object_Manager_Flipping_Test, "$Id: Object_Manager_Flipping_Test.cpp 81247 2008-04-05 16:43:10Z iliyan $")
 
 static u_int *ip;
 

@@ -1,4 +1,4 @@
-// $Id: Bug_2653_Regression_Test.cpp 91671 2010-09-08 18:39:23Z johnnyw $
+// $Id: Bug_2653_Regression_Test.cpp 87226 2009-10-26 10:19:27Z olli $
 
 // ============================================================================
 //
@@ -29,7 +29,7 @@
 #include "ace/Task.h"
 #include "ace/OS_NS_unistd.h"
 
-
+ACE_RCSID(tests, Bug_2653_Regression_Test, "$Id: Bug_2653_Regression_Test.cpp 87226 2009-10-26 10:19:27Z olli $")
 
 static const char *message =
 "Hello there! Hope you get this message";

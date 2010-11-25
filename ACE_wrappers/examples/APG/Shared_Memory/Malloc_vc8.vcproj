@@ -3,7 +3,7 @@
 	ProjectType="Visual C++"
 	Version="8.00"
 	Name="Malloc"
-	ProjectGUID="{D3AD1CD1-FECA-1BAD-5E18-93A5247C7980}"
+	ProjectGUID="{D3AD1CD1-FECA-1BAD-5E18-93A5B24F4954}"
 	RootNamespace="Malloc"
 	Keyword="Win32Proj"
 	SignManifests="true"

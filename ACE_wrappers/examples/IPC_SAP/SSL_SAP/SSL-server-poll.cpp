@@ -1,4 +1,4 @@
-// $Id: SSL-server-poll.cpp 91673 2010-09-08 18:49:47Z johnnyw $
+// $Id: SSL-server-poll.cpp 80826 2008-03-04 14:51:23Z wotte $
 
 // IPC_SAP/poll server, which illustrates how to integrate the ACE
 // SSL socket wrappers with the SVR4 <poll> system call to create a
@@ -9,6 +9,10 @@
 #include "ace/OS_NS_unistd.h"
 #include "ace/Time_Value.h"
 #include "ace/SSL/SSL_SOCK_Acceptor.h"
+
+ACE_RCSID (SSL_SAP,
+           SSL_server_poll,
+           "$Id: SSL-server-poll.cpp 80826 2008-03-04 14:51:23Z wotte $")
 
 #if defined (ACE_HAS_POLL)
 

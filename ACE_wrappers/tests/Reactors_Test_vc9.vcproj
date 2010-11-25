@@ -3,7 +3,7 @@
 	ProjectType="Visual C++"
 	Version="9.00"
 	Name="Reactors_Test"
-	ProjectGUID="{585444C9-FECA-1BAD-2431-8A1100722433}"
+	ProjectGUID="{585444C9-FECA-1BAD-2431-8A11337F6D50}"
 	RootNamespace="Reactors_Test"
 	Keyword="Win32Proj"
 	SignManifests="true"

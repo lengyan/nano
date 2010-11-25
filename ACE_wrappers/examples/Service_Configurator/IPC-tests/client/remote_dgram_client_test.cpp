@@ -1,4 +1,4 @@
-// $Id: remote_dgram_client_test.cpp 91670 2010-09-08 18:02:26Z johnnyw $
+// $Id: remote_dgram_client_test.cpp 80826 2008-03-04 14:51:23Z wotte $
 
 // Tests out the Internet domain IPC-SAP dgram abstraction.
 
@@ -9,6 +9,8 @@
 #include "ace/INET_Addr.h"
 #include "ace/Get_Opt.h"
 #include "ace/Log_Msg.h"
+
+ACE_RCSID(client, remote_dgram_client_test, "$Id: remote_dgram_client_test.cpp 80826 2008-03-04 14:51:23Z wotte $")
 
 // Name of the program.
 static const ACE_TCHAR *program_name;

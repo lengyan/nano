@@ -1,4 +1,4 @@
-// $Id: Performance_Test.cpp 91670 2010-09-08 18:02:26Z johnnyw $
+// $Id: Performance_Test.cpp 80826 2008-03-04 14:51:23Z wotte $
 
 #define  ACE_BUILD_SVC_DLL
 
@@ -11,6 +11,10 @@
 
 #include "ace/Service_Repository.h"
 #include "ace/Reactor.h"
+
+ACE_RCSID (Perf_Test,
+           Performance_Test,
+           "$Id: Performance_Test.cpp 80826 2008-03-04 14:51:23Z wotte $")
 
 Performance_Test::Performance_Test (void)
   : n_lwps_ (0),

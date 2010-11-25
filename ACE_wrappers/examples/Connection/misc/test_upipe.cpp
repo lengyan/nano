@@ -1,4 +1,4 @@
-// $Id: test_upipe.cpp 91671 2010-09-08 18:39:23Z johnnyw $
+// $Id: test_upipe.cpp 80826 2008-03-04 14:51:23Z wotte $
 
 // This short program illustrates in implementation of the classic
 // "bounded buffer" program using ACE_UPIPEs.  This program also shows
@@ -11,7 +11,7 @@
 #include "ace/Connector.h"
 #include "ace/UPIPE_Addr.h"
 
-
+ACE_RCSID(misc, test_upipe, "$Id: test_upipe.cpp 80826 2008-03-04 14:51:23Z wotte $")
 
 #if defined (ACE_HAS_THREADS)
 

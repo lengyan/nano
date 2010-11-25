@@ -1,6 +1,6 @@
 // -*- C++ -*-
 //
-// $Id: OS_NS_stdio.inl 92182 2010-10-08 08:21:27Z olli $
+// $Id: OS_NS_stdio.inl 87232 2009-10-26 13:25:55Z johnnyw $
 
 #include "ace/OS_NS_unistd.h"
 #include "ace/OS_NS_stdlib.h"
@@ -339,11 +339,13 @@ ACE_OS::flock_wrlock (ACE_OS::ace_flock_t *lock,
 #endif /* ACE_WIN32 */
 }
 
+#if !defined (ACE_LACKS_CLEARERR)
 ACE_INLINE void
 ACE_OS::clearerr (FILE* fp)
 {
   ace_clearerr_helper (fp);
 }
+#endif /* !ACE_LACKS_CLEARERR */
 
 #if !defined (ACE_LACKS_CUSERID)
 ACE_INLINE char *
@@ -805,7 +807,12 @@ ACE_OS::rename (const char *old_name,
                 const char *new_name,
                 int flags)
 {
-# if defined (ACE_HAS_WINCE)
+# if defined (ACE_LACKS_RENAME)
+  ACE_UNUSED_ARG (old_name);
+  ACE_UNUSED_ARG (new_name);
+  ACE_UNUSED_ARG (flags);
+  ACE_NOTSUP_RETURN (-1);
+# elif defined (ACE_HAS_WINCE)
   // Win CE is always wide-char.
   ACE_UNUSED_ARG (flags);
   if (0 == ::MoveFile (ACE_TEXT_CHAR_TO_TCHAR (old_name),
@@ -822,10 +829,10 @@ ACE_OS::rename (const char *old_name,
   if (::MoveFileExA (old_name, new_name, flags) == 0)
     ACE_FAIL_RETURN (-1);
   return 0;
-# else
+# else /* ACE_LACKS_RENAME */
   ACE_UNUSED_ARG (flags);
   ACE_OSCALL_RETURN (::rename (old_name, new_name), int, -1);
-# endif /* ACE_HAS_WINCE */
+# endif /* ACE_LACKS_RENAME */
 }
 
 #if defined (ACE_HAS_WCHAR)
@@ -834,7 +841,12 @@ ACE_OS::rename (const wchar_t *old_name,
                 const wchar_t *new_name,
                 int flags)
 {
-# if defined (ACE_HAS_WINCE)
+# if defined (ACE_LACKS_RENAME)
+  ACE_UNUSED_ARG (old_name);
+  ACE_UNUSED_ARG (new_name);
+  ACE_UNUSED_ARG (flags);
+  ACE_NOTSUP_RETURN (-1);
+# elif defined (ACE_HAS_WINCE)
   ACE_UNUSED_ARG (flags);
   if (::MoveFileW (old_name, new_name) == 0)
     ACE_FAIL_RETURN (-1);
@@ -852,11 +864,11 @@ ACE_OS::rename (const wchar_t *old_name,
 # elif defined (ACE_WIN32)
   ACE_UNUSED_ARG (flags);
   ACE_OSCALL_RETURN (::_wrename (old_name, new_name), int, -1);
-# else
+# else /* ACE_LACKS_RENAME */
   ACE_Wide_To_Ascii nold_name (old_name);
   ACE_Wide_To_Ascii nnew_name (new_name);
   return ACE_OS::rename (nold_name.char_rep (), nnew_name.char_rep (), flags);
-# endif /* ACE_HAS_WINCE */
+# endif /* ACE_LACKS_RENAME */
 }
 #endif /* ACE_HAS_WCHAR */
 

@@ -3,7 +3,7 @@
 	ProjectType="Visual C++"
 	Version="9.00"
 	Name="WFMO_Reactor_Console_Input"
-	ProjectGUID="{5AC4F740-FECA-1BAD-701A-2E512E45D4CA}"
+	ProjectGUID="{5AC4F740-FECA-1BAD-701A-2E511D489DA9}"
 	RootNamespace="WFMO_Reactor_Console_Input"
 	Keyword="Win32Proj"
 	SignManifests="true"

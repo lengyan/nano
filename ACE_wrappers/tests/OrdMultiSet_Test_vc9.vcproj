@@ -3,7 +3,7 @@
 	ProjectType="Visual C++"
 	Version="9.00"
 	Name="OrdMultiSet_Test"
-	ProjectGUID="{B892E1FB-FECA-1BAD-2431-8A1100722433}"
+	ProjectGUID="{B892E1FB-FECA-1BAD-2431-8A11337F6D50}"
 	RootNamespace="OrdMultiSet_Test"
 	Keyword="Win32Proj"
 	SignManifests="true"

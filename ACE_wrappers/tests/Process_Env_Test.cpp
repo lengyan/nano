@@ -1,4 +1,4 @@
-// $Id: Process_Env_Test.cpp 91673 2010-09-08 18:49:47Z johnnyw $
+// $Id: Process_Env_Test.cpp 83346 2008-10-21 14:15:38Z sma $
 
 // ============================================================================
 //
@@ -20,6 +20,10 @@
 #include "test_config.h"
 #include "ace/Process.h"
 #include "ace/SString.h"
+
+ACE_RCSID(tests,
+          Process_Env_Test,
+          "$Id: Process_Env_Test.cpp 83346 2008-10-21 14:15:38Z sma $")
 
 typedef void (*setenvfn_t) (const ACE_TCHAR *name, const ACE_TCHAR *value,
                             void *ctx);

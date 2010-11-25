@@ -1,7 +1,7 @@
 // -*- C++ -*-
 
 /**
- * $Id: Options.h 91273 2010-08-04 16:24:59Z johnnyw $
+ * $Id: Options.h 86019 2009-07-14 12:13:09Z wotte $
  *
  * Copyright (C) 1989 Free Software Foundation, Inc.
  * written by Douglas C. Schmidt (schmidt@cs.wustl.edu)
@@ -29,6 +29,7 @@
 #include "ace/Log_Msg.h"
 #include "ace/SString.h"
 #include "ace/Copy_Disabled.h"
+#include "gperf_export.h"
 
 #if !defined (ACE_LACKS_PRAGMA_ONCE)
 # pragma once
@@ -101,7 +102,7 @@ enum
  *
  * @todo The Options class should be changed to use the Singleton pattern.
  */
-class Options : private ACE_Copy_Disabled
+class ACE_GPERF_Export Options : private ACE_Copy_Disabled
 {
 public:
   Options (void);
@@ -188,7 +189,7 @@ private:
 };
 
 /// Global option coordinator for the entire program.
-extern Options option;
+extern ACE_GPERF_Export Options option;
 
 #endif /* ACE_HAS_GPERF */
 #endif /* OPTIONS_H */

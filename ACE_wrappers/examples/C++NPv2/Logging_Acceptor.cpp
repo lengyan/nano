@@ -1,5 +1,5 @@
 /*
-** $Id: Logging_Acceptor.cpp 91813 2010-09-17 07:52:52Z johnnyw $
+** $Id: Logging_Acceptor.cpp 80826 2008-03-04 14:51:23Z wotte $
 **
 ** Copyright 2002 Addison Wesley. All Rights Reserved.
 */
@@ -30,9 +30,9 @@ int Logging_Acceptor::handle_input (ACE_HANDLE) {
   return 0;
 }
 
-int Logging_Acceptor::handle_close (ACE_HANDLE,
-                                    ACE_Reactor_Mask) {
+int Logging_Acceptor::handle_close (ACE_HANDLE, 
+                                    ACE_Reactor_Mask) { 
   acceptor_.close ();
   delete this;
-  return 0;
+  return 0; 
 }

@@ -1,4 +1,4 @@
-// $Id: main.cpp 91670 2010-09-08 18:02:26Z johnnyw $
+// $Id: main.cpp 80826 2008-03-04 14:51:23Z wotte $
 
 #include "ace/Service_Config.h"
 #include "ace/Reactor.h"
@@ -7,6 +7,8 @@
 #include "HTTP_Server.h"
 #include "ace/OS_main.h"
 #include "ace/OS_NS_signal.h"
+
+ACE_RCSID(server, main, "$Id: main.cpp 80826 2008-03-04 14:51:23Z wotte $")
 
 ACE_STATIC_SVC_REQUIRE(HTTP_Server)
 

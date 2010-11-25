@@ -3,7 +3,7 @@
 	ProjectType="Visual C++"
 	Version="9.00"
 	Name="Monitor_Control"
-	ProjectGUID="{A465937A-FECA-1BAD-D619-74620E01B14C}"
+	ProjectGUID="{A465937A-FECA-1BAD-D619-74626D32BC05}"
 	RootNamespace="Monitor_Control"
 	Keyword="Win32Proj"
 	SignManifests="true"

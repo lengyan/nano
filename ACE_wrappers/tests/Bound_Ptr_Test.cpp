@@ -1,10 +1,10 @@
-// $Id: Bound_Ptr_Test.cpp 91671 2010-09-08 18:39:23Z johnnyw $
+// $Id: Bound_Ptr_Test.cpp 83501 2008-10-30 12:16:38Z johnnyw $
 
 //=============================================================================
 /**
  *  @file    Bound_Ptr_Test.cpp
  *
- *  $Id: Bound_Ptr_Test.cpp 91671 2010-09-08 18:39:23Z johnnyw $
+ *  $Id: Bound_Ptr_Test.cpp 83501 2008-10-30 12:16:38Z johnnyw $
  *
  *  This example tests the <ACE_Strong_Bound_Ptr> and
  *  <ACE_Weak_Bound_Ptr> and illustrates how they may be dispersed
@@ -21,7 +21,7 @@
 #include "ace/Method_Request.h"
 #include "Bound_Ptr_Test.h"
 
-
+ACE_RCSID (tests, Bound_Ptr_Test, "Bound_Ptr_Test.cpp,v 4.8 2000/04/23 04:43:58 brunsch Exp")
 
 // The following Parent and Child classes illustrate how you might use the
 // ACE_Strong_Bound_Ptr and ACE_Weak_Bound_Ptr together in cyclic

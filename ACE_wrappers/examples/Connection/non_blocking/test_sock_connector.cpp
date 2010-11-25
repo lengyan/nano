@@ -1,4 +1,4 @@
-// $Id: test_sock_connector.cpp 91671 2010-09-08 18:39:23Z johnnyw $
+// $Id: test_sock_connector.cpp 80826 2008-03-04 14:51:23Z wotte $
 
 #include "ace/SOCK_Connector.h"
 #include "ace/INET_Addr.h"
@@ -6,7 +6,7 @@
 #include "ace/WFMO_Reactor.h"
 #include "CPP-connector.h"
 
-
+ACE_RCSID(non_blocking, test_sock_connector, "$Id: test_sock_connector.cpp 80826 2008-03-04 14:51:23Z wotte $")
 
 typedef Peer_Handler<ACE_SOCK_STREAM> PEER_HANDLER;
 typedef IPC_Client<PEER_HANDLER, ACE_SOCK_CONNECTOR> IPC_CLIENT;

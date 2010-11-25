@@ -3,7 +3,7 @@
 /**
  *  @file    Thread_Timer_Queue_Test.cpp
  *
- *  $Id: Thread_Timer_Queue_Test.cpp 91671 2010-09-08 18:39:23Z johnnyw $
+ *  $Id: Thread_Timer_Queue_Test.cpp 90088 2010-05-06 12:48:00Z johnnyw $
  *
  *    This test exercises the <ACE_Thread_Timer_Queue_Adapter>
  *    using an <ACE_Timer_Heap>.
@@ -25,7 +25,7 @@
 #include "ace/Condition_T.h"
 #include "ace/Thread_Mutex.h"
 
-
+ACE_RCSID(Timer_Queue, Thread_Timer_Queue_Test, "$Id: Thread_Timer_Queue_Test.cpp 90088 2010-05-06 12:48:00Z johnnyw $")
 
 // Administrivia methods...
 Handler::Handler(const ACE_Time_Value &expiration_time)

@@ -3,7 +3,7 @@
 	ProjectType="Visual C++"
 	Version="8.00"
 	Name="Connection_Non_Blocking_TLIClient"
-	ProjectGUID="{51880F22-FECA-1BAD-D57C-7CD528BEBF5B}"
+	ProjectGUID="{51880F22-FECA-1BAD-D57C-7CD5FC288C6B}"
 	RootNamespace="Connection_Non_Blocking_TLIClient"
 	Keyword="Win32Proj"
 	SignManifests="true"

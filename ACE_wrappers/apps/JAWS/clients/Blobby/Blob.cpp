@@ -1,8 +1,10 @@
-// $Id: Blob.cpp 91670 2010-09-08 18:02:26Z johnnyw $
+// $Id: Blob.cpp 80826 2008-03-04 14:51:23Z wotte $
 
 #include "Blob.h"
 #include "Blob_Handler.h"
 #include "ace/OS_NS_string.h"
+
+ACE_RCSID(Blobby, Blob, "$Id: Blob.cpp 80826 2008-03-04 14:51:23Z wotte $")
 
 ACE_Blob::ACE_Blob (void)
 {

@@ -1,4 +1,4 @@
-// $Id: Reactor.cpp 91368 2010-08-16 13:03:34Z mhengstmengel $
+// $Id: Reactor.cpp 88832 2010-02-04 09:57:42Z johnnyw $
 
 #include "ace/Reactor.h"
 
@@ -50,6 +50,10 @@
 #if !defined (__ACE_INLINE__)
   #include "ace/Reactor.inl"
 #endif /* __ACE_INLINE__ */
+
+ACE_RCSID (ace,
+           Reactor,
+           "$Id: Reactor.cpp 88832 2010-02-04 09:57:42Z johnnyw $")
 
 ACE_BEGIN_VERSIONED_NAMESPACE_DECL
 

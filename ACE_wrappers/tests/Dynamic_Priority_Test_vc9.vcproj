@@ -3,7 +3,7 @@
 	ProjectType="Visual C++"
 	Version="9.00"
 	Name="Dynamic_Priority_Test"
-	ProjectGUID="{505F9DC8-FECA-1BAD-2431-8A1100722433}"
+	ProjectGUID="{505F9DC8-FECA-1BAD-2431-8A11337F6D50}"
 	RootNamespace="Dynamic_Priority_Test"
 	Keyword="Win32Proj"
 	SignManifests="true"

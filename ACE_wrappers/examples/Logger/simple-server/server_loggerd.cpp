@@ -1,4 +1,4 @@
-// $Id: server_loggerd.cpp 91671 2010-09-08 18:39:23Z johnnyw $
+// $Id: server_loggerd.cpp 81978 2008-06-16 16:57:12Z sowayaa $
 
 // This server daemon collects, formats, and displays logging
 // information forwarded from client daemons running on other hosts in
@@ -14,7 +14,7 @@
 #include "Logging_Acceptor.h"
 #include "Reactor_Singleton.h"
 
-
+ACE_RCSID(simple_server, server_loggerd, "$Id: server_loggerd.cpp 81978 2008-06-16 16:57:12Z sowayaa $")
 
 static sig_atomic_t finished = 0;
 

@@ -1,4 +1,4 @@
-// $Id: RW_Process_Mutex_Test.cpp 91671 2010-09-08 18:39:23Z johnnyw $
+// $Id: RW_Process_Mutex_Test.cpp 83689 2008-11-12 15:38:19Z johnnyw $
 // ============================================================================
 //
 // = LIBRARY
@@ -27,7 +27,7 @@
 #include "ace/OS_NS_sys_time.h"
 #include "ace/OS_NS_unistd.h"
 
-
+ACE_RCSID(tests, RW_Process_Mutex_Test, "$Id: RW_Process_Mutex_Test.cpp 83689 2008-11-12 15:38:19Z johnnyw $")
 
 // The parent process is number -1. Writer is 0; Readers are 1-3.
 static int child_nr = -1;

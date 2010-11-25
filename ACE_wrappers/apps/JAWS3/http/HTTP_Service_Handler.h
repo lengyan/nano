@@ -1,9 +1,10 @@
 /* -*- c++ -*- */
-// $Id: HTTP_Service_Handler.h 91863 2010-09-20 13:33:11Z johnnyw $
+// $Id: HTTP_Service_Handler.h 80826 2008-03-04 14:51:23Z wotte $
 
 #ifndef JAWS_HTTP_SERVICE_HANDLER_H
 #define JAWS_HTTP_SERVICE_HANDLER_H
 
+#include "ace/OS.h"
 #include "ace/Synch.h"
 #include "ace/Acceptor.h"
 #include "ace/Svc_Handler.h"
@@ -20,7 +21,7 @@ class JAWS_HTTP_Service_Handler
 //     An HTTP Server service handler.
 //
 // = DESCRIPTION
-//     This class is responsible for initializing the JAWS_Protocol_Handler
+//     This class is reponsible for initializing the JAWS_Protocol_Handler
 //     with the correct state and data so that the HTTP Server can
 //     be properly serviced by the underlying framework.
 //

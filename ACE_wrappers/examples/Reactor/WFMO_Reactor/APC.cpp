@@ -1,4 +1,4 @@
-// $Id: APC.cpp 91671 2010-09-08 18:39:23Z johnnyw $
+// $Id: APC.cpp 83697 2008-11-12 18:40:55Z johnnyw $
 
 // ============================================================================
 //
@@ -27,7 +27,7 @@
 #include "ace/Auto_Event.h"
 #include "ace/Log_Msg.h"
 
-
+ACE_RCSID(WFMO_Reactor, APC, "$Id: APC.cpp 83697 2008-11-12 18:40:55Z johnnyw $")
 
 class Event_Handler : public ACE_Event_Handler
 {

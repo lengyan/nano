@@ -6,7 +6,7 @@
  *
  *  sockets local interfaces
  *
- *  $Id: os_if.h 91688 2010-09-09 11:21:50Z johnnyw $
+ *  $Id: os_if.h 88719 2010-01-26 12:55:03Z sowayaa $
  *
  *  @author Don Hinton <dhinton@dresystems.com>
  *  @author This code was originally in various places including ace/OS.h.
@@ -46,6 +46,10 @@
 extern "C"
 {
 #endif /* __cplusplus */
+
+#if defined (ACE_HAS_BROKEN_IF_HEADER)
+   struct ifafilt;
+#endif /* ACE_HAS_BROKEN_IF_HEADER */
 
 #if defined (ACE_LACKS_IFREQ)
 struct  ifreq {

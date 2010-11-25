@@ -1,4 +1,4 @@
-// $Id: CDR_Test.cpp 92176 2010-10-08 07:00:00Z olli $
+// $Id: CDR_Test.cpp 84565 2009-02-23 08:20:39Z johnnyw $
 
 // ============================================================================
 //
@@ -29,7 +29,7 @@
 #include "ace/OS_NS_string.h"
 #include "ace/OS_NS_wchar.h"
 
-
+ACE_RCSID(tests, CDR_Test, "$Id: CDR_Test.cpp 84565 2009-02-23 08:20:39Z johnnyw $")
 
 static int n = 4096;
 static int nloops = 100;
@@ -265,13 +265,13 @@ short_stream (void)
                        ACE_TEXT ("ulong transfer error")),
                       1);
 
-  if (!ACE::is_equal (f1, f))
+  if (f1 != f)
     ACE_ERROR_RETURN ((LM_ERROR,
                        ACE_TEXT ("%p\n"),
                        ACE_TEXT ("float transfer error")),
                       1);
 
-  if (!ACE::is_equal (d1, d))
+  if (d1 != d)
     ACE_ERROR_RETURN ((LM_ERROR,
                        ACE_TEXT ("%p\n"),
                        ACE_TEXT ("double transfer error")),
@@ -292,14 +292,14 @@ short_stream (void)
                         1);
 
   for (i = 0 ; i < 3; i++)
-    if (!ACE::is_equal (f_array1[i], f_array[i]))
+    if (f_array1[i] != f_array[i])
       ACE_ERROR_RETURN ((LM_ERROR,
                          ACE_TEXT ("%p\n"),
                          ACE_TEXT ("float array transfer error")),
                         1);
 
   for (i = 0 ; i < 3; i++)
-    if (!ACE::is_equal (d_array1[i], d_array[i]))
+    if (d_array1[i] != d_array[i])
       ACE_ERROR_RETURN ((LM_ERROR,
                          ACE_TEXT ("%p\n"),
                          ACE_TEXT ("double array transfer error")),

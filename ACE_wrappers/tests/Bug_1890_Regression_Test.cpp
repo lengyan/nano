@@ -1,7 +1,7 @@
 /**
  * @file Bug_1890_Regression_Test.cpp
  *
- * $Id: Bug_1890_Regression_Test.cpp 91673 2010-09-08 18:49:47Z johnnyw $
+ * $Id: Bug_1890_Regression_Test.cpp 85559 2009-06-08 09:51:49Z johnnyw $
  *
  * Reproduces the problems reported in bug 1890
  *   http://deuce.doc.wustl.edu/bugzilla/show_bug.cgi?id=1890
@@ -17,6 +17,10 @@
 #include "ace/Reactor.h"
 #include "ace/Select_Reactor.h"
 #include "ace/Auto_Ptr.h"
+
+ACE_RCSID (tests,
+           Bug_1890_Regression_Test,
+           "$Id: Bug_1890_Regression_Test.cpp 85559 2009-06-08 09:51:49Z johnnyw $")
 
 int const nhandlers = 3;
 

@@ -1,4 +1,4 @@
-// $Id: Stack_Trace_Test.cpp 91671 2010-09-08 18:39:23Z johnnyw $
+// $Id: Stack_Trace_Test.cpp 84075 2008-12-31 15:40:56Z mitza $
 
 // ============================================================================
 //
@@ -17,7 +17,7 @@
 #include "ace/OS_NS_string.h"
 #include "test_config.h"
 
-
+ACE_RCSID(tests, Stack_Trace_Test, "$Id: Stack_Trace_Test.cpp 84075 2008-12-31 15:40:56Z mitza $")
 
 /*
  * Ultra-basic test of stack trace.

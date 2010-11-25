@@ -1,4 +1,4 @@
-// $Id: Prerun_State_Changes.cpp 91671 2010-09-08 18:39:23Z johnnyw $
+// $Id: Prerun_State_Changes.cpp 80826 2008-03-04 14:51:23Z wotte $
 //
 // ============================================================================
 //
@@ -24,7 +24,7 @@
 #include "ace/OS_NS_sys_socket.h"
 #include "ace/Log_Msg.h"
 
-
+ACE_RCSID(WFMO_Reactor, Prerun_State_Changes, "$Id: Prerun_State_Changes.cpp 80826 2008-03-04 14:51:23Z wotte $")
 
 class Event_Handler : public ACE_Event_Handler
 // = TITLE

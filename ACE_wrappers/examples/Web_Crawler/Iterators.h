@@ -1,5 +1,5 @@
 /* -*- C++ -*- */
-// $Id: Iterators.h 91743 2010-09-13 18:24:51Z johnnyw $
+// $Id: Iterators.h 80826 2008-03-04 14:51:23Z wotte $
 
 // ============================================================================
 //
@@ -27,7 +27,7 @@ class URL_Iterator
 {
   // = TITLE
   //    An abstract base class that defines an iterator.
-  //
+  // 
   // = DESCRIPTION
   //    Subclasses of this base class can define what strings
   //    to return from <next>.  This class decouples higher-level
@@ -97,7 +97,7 @@ class URL_Download_Iterator : public URL_Iterator
   // = TITLE
   //    An iterator that iterates over the contents of an entire URL,
   //    i.e., both header and body, and returns it in <BUFSIZ>
-  //    <buffer>s.
+  //    <buffer>s. 
 public:
   // = Initialization and termination methods.
   URL_Download_Iterator (URL &url);

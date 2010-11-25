@@ -1,5 +1,5 @@
 /**
- * $Id: Answerer.cpp 91626 2010-09-07 10:59:20Z johnnyw $
+ * $Id: Answerer.cpp 81708 2008-05-16 07:42:15Z johnnyw $
  *
  * Streams Listing 01
  *
@@ -348,7 +348,7 @@ public:
   // Listing 13 code/ch18
   int record (RecordingDevice *recorder)
   {
-    ACE_Message_Block * mb = 0;
+    ACE_Message_Block * mb;
     ACE_NEW_RETURN (mb, ACE_Message_Block (sizeof(Message)), -1);
 
     Message *message = (Message *)mb->wr_ptr ();

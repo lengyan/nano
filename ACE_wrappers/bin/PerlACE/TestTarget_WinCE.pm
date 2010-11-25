@@ -5,7 +5,7 @@ package PerlACE::TestTarget_WinCE;
 # Description : Creates a PerlACE::WiNCE
 # Author      : Johnny Willemsen
 # Create Date : 29/20/2008
-#          $Id: TestTarget_WinCE.pm 91813 2010-09-17 07:52:52Z johnnyw $
+#          $Id: TestTarget_WinCE.pm 89840 2010-04-12 09:36:32Z mcorino $
 # ******************************************************************
 
 # ******************************************************************
@@ -183,7 +183,7 @@ sub KillAll ($)
 {
     my $self = shift;
     my $procmask = shift;
-    PerlACE::ProcessVX::kill_all ($procmask, $self);
+    PerlACE::ProcessVX::kill_all ($procmask, $self);    
 }
 
 1;

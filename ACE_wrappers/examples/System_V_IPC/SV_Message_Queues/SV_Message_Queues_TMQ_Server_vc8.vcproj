@@ -3,7 +3,7 @@
 	ProjectType="Visual C++"
 	Version="8.00"
 	Name="SV_Message_Queues_TMQ_Server"
-	ProjectGUID="{8D975959-FECA-1BAD-6606-BBB2EAC4C36E}"
+	ProjectGUID="{8D975959-FECA-1BAD-6606-BBB2E78DA05D}"
 	RootNamespace="SV_Message_Queues_TMQ_Server"
 	Keyword="Win32Proj"
 	SignManifests="true"

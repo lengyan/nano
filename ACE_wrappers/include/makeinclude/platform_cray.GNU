@@ -1,4 +1,4 @@
-# $Id: platform_cray.GNU 91285 2010-08-05 08:29:30Z johnnyw $
+# $Id: platform_cray.GNU 80826 2008-03-04 14:51:23Z wotte $
 
 # Platform macros for SGI/Cray UNICOS (vector) & UNICOS/mk (mpp) -
 #    UNICOS 9.0.2.8
@@ -10,6 +10,7 @@
 # Contributed by Doug Anderson <dla@home.com>
 
 debug = 1
+exceptions = 1
 static_libs_only = 1
 quantify =
 purify =
@@ -27,7 +28,11 @@ DCCFLAGS        += $(DCFLAGS)
 OCFLAGS         += -O2
 OCCFLAGS        += $(OCFLAGS)
 
-CCFLAGS += -h exceptions
+ifeq (1,$(exceptions))
+  CCFLAGS += -h exceptions
+else
+  CCFLAGS += -h noexceptions
+endif # exceptions
 
 DLD             = $(CXX)
 LD              = $(CXX)

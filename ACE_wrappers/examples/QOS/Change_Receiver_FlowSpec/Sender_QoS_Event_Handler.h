@@ -1,5 +1,5 @@
 /* -*- C++ -*- */
-// $Id: Sender_QoS_Event_Handler.h 91683 2010-09-09 09:07:49Z johnnyw $
+// $Id: Sender_QoS_Event_Handler.h 80826 2008-03-04 14:51:23Z wotte $
 
 // ============================================================================
 //
@@ -25,6 +25,8 @@
 
 //#define MY_DEFPORT 5001
 //#define DEFAULT_MULTICASTGROUP "234.5.6.7"
+
+ACE_RCSID(Sender_QoS_Event_Handler, Sender_QoS_Event_Handler, "$Id: Sender_QoS_Event_Handler.h 80826 2008-03-04 14:51:23Z wotte $")
 
 class Sender_QoS_Event_Handler : public ACE_Event_Handler
 {

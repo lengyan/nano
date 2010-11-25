@@ -3,7 +3,7 @@
 	ProjectType="Visual C++"
 	Version="9.00"
 	Name="RB_Tree"
-	ProjectGUID="{1A4779FD-FECA-1BAD-8408-181CEBDC7FA8}"
+	ProjectGUID="{1A4779FD-FECA-1BAD-8408-181CE6951C9B}"
 	RootNamespace="RB_Tree"
 	Keyword="Win32Proj"
 	SignManifests="true"

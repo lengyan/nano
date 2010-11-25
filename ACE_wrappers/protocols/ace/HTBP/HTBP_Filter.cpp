@@ -1,4 +1,4 @@
-// $Id: HTBP_Filter.cpp 91671 2010-09-08 18:39:23Z johnnyw $
+// $Id: HTBP_Filter.cpp 80826 2008-03-04 14:51:23Z wotte $
 
 #include "ace/Log_Msg.h"
 
@@ -9,7 +9,7 @@
 #include "HTBP_Filter.inl"
 #endif
 
-
+ACE_RCSID(HTBP,ACE_HTBP_Filter,"$Id: HTBP_Filter.cpp 80826 2008-03-04 14:51:23Z wotte $")
 
 ACE_BEGIN_VERSIONED_NAMESPACE_DECL
 

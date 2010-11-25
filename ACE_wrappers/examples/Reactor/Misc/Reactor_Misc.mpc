@@ -1,12 +1,10 @@
 // -*- MPC -*-
-// $Id: Reactor_Misc.mpc 91371 2010-08-16 22:02:01Z mitza $
+// $Id: Reactor_Misc.mpc 80826 2008-03-04 14:51:23Z wotte $
 
 project(*event_handler_t) : aceexe {
   exename = event_handler_t
   Source_Files {
     test_event_handler_t.cpp
-  }
-  Template_Files {
   }
 }
 project(*demuxing) : aceexe {

@@ -3,7 +3,7 @@
 	ProjectType="Visual C++"
 	Version="8.00"
 	Name="Misc_Context_Switch_Time"
-	ProjectGUID="{7AE7470D-FECA-1BAD-BE51-8A67F3FC84F5}"
+	ProjectGUID="{7AE7470D-FECA-1BAD-BE51-8A67C32812C6}"
 	RootNamespace="Misc_Context_Switch_Time"
 	Keyword="Win32Proj"
 	SignManifests="true"

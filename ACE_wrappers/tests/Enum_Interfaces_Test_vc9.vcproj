@@ -3,7 +3,7 @@
 	ProjectType="Visual C++"
 	Version="9.00"
 	Name="Enum_Interfaces_Test"
-	ProjectGUID="{7AF39245-FECA-1BAD-2431-8A1100722433}"
+	ProjectGUID="{7AF39245-FECA-1BAD-2431-8A11337F6D50}"
 	RootNamespace="Enum_Interfaces_Test"
 	Keyword="Win32Proj"
 	SignManifests="true"

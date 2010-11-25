@@ -1,4 +1,4 @@
-// $Id: ACE_Test.cpp 92066 2010-09-28 08:33:14Z vzykov $
+// $Id: ACE_Test.cpp 83749 2008-11-14 18:39:10Z johnnyw $
 
 // ============================================================================
 //
@@ -17,9 +17,8 @@
 #include "test_config.h"
 
 #include "ace/ACE.h"
-#include "ace/OS_NS_stdlib.h"
 
-
+ACE_RCSID(tests, ACE_Test, "$Id: ACE_Test.cpp 83749 2008-11-14 18:39:10Z johnnyw $")
 
 int
 log2_test (void)

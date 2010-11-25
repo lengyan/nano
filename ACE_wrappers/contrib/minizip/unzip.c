@@ -4,7 +4,7 @@
    Copyright (C) 1998-2005 Gilles Vollant
 
    Read unzip.h for more info
-   $Id: unzip.c 91813 2010-09-17 07:52:52Z johnnyw $
+   $Id: unzip.c 80826 2008-03-04 14:51:23Z wotte $
 */
 
 /* Decryption code comes from crypt.c by Info-ZIP but has been greatly reduced in terms of
@@ -670,12 +670,12 @@ local int unzlocal_GetCurrentFileInfoInternal (unzFile file,
             else
                 err=UNZ_ERRNO;
         }
-
+      
         if ((file_info.size_file_extra>0) && (extraFieldBufferSize>0))
-        {
+        {   
             if (ZREAD(s->z_filefunc, s->filestream,extraField,uSizeRead)!=uSizeRead)
               err=UNZ_ERRNO;
-
+              
             lSeek += file_info.size_file_extra - uSizeRead;
         }
     }

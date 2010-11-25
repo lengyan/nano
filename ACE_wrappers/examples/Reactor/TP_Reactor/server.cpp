@@ -1,12 +1,13 @@
 /*
  * ACE reactor demonstration
  *
- * $Id: server.cpp 91730 2010-09-13 09:31:11Z johnnyw $
+ * $Id: server.cpp 85359 2009-05-18 06:12:45Z johnnyw $
  * Date: 26-Jan-2006
  */
 
 #include <ace/Event_Handler.h>
 #include <ace/Log_Msg.h>
+#include <ace/OS.h>
 #include <ace/Reactor.h>
 #include <ace/Signal.h>
 #include <ace/streams.h>

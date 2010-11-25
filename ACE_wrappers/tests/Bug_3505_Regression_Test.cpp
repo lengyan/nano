@@ -1,4 +1,4 @@
-// $Id: Bug_3505_Regression_Test.cpp 91671 2010-09-08 18:39:23Z johnnyw $
+// $Id: Bug_3505_Regression_Test.cpp 83775 2008-11-16 06:54:11Z johnnyw $
 
 // ============================================================================
 //
@@ -16,7 +16,7 @@
 #include "ace/Service_Gestalt.h"
 #include "test_config.h"
 
-
+ACE_RCSID(tests, Bug_3505_Regression_Test, "$Id: Bug_3505_Regression_Test.cpp 83775 2008-11-16 06:54:11Z johnnyw $")
 
 int
 run_main (int, ACE_TCHAR *[])

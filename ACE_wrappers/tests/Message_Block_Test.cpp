@@ -1,4 +1,4 @@
-// $Id: Message_Block_Test.cpp 91673 2010-09-08 18:49:47Z johnnyw $
+// $Id: Message_Block_Test.cpp 86660 2009-09-08 18:53:16Z shuston $
 
 // ============================================================================
 //
@@ -25,6 +25,10 @@
 #include "ace/Malloc_T.h"
 #include "ace/Profile_Timer.h"
 #include "ace/Free_List.h"
+
+ACE_RCSID (tests,
+           Message_Block_Test,
+           "$Id: Message_Block_Test.cpp 86660 2009-09-08 18:53:16Z shuston $")
 
 // Number of memory allocation strategies used in this test.
 static const int ACE_ALLOC_STRATEGY_NO = 2;
@@ -244,7 +248,7 @@ static int
 produce (Worker_Task &worker_task,
          ACE_Allocator *alloc_strategy)
 {
-  ACE_Message_Block *mb = 0;
+  ACE_Message_Block *mb;
   int status;
 
   // Send <n_iteration> messages through the pipeline.

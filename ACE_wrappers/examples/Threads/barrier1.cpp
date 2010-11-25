@@ -1,4 +1,4 @@
-// $Id: barrier1.cpp 91671 2010-09-08 18:39:23Z johnnyw $
+// $Id: barrier1.cpp 80826 2008-03-04 14:51:23Z wotte $
 
 // This test program illustrates how the ACE barrier synchronization
 // mechanisms work.
@@ -8,7 +8,7 @@
 #include "ace/Thread_Manager.h"
 #include "ace/Service_Config.h"
 
-
+ACE_RCSID(Threads, barrier1, "$Id: barrier1.cpp 80826 2008-03-04 14:51:23Z wotte $")
 
 #if defined (ACE_HAS_THREADS)
 

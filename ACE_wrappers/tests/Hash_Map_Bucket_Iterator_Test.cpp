@@ -1,4 +1,4 @@
-// $Id: Hash_Map_Bucket_Iterator_Test.cpp 91626 2010-09-07 10:59:20Z johnnyw $
+// $Id: Hash_Map_Bucket_Iterator_Test.cpp 80826 2008-03-04 14:51:23Z wotte $
 
 // ============================================================================
 //
@@ -23,6 +23,8 @@
 #include "ace/Null_Mutex.h"
 #include "ace/Get_Opt.h"
 #include "ace/Functor.h"
+
+ACE_RCSID(tests, Hash_Map_Bucket_Iterator_Test, "$Id: Hash_Map_Bucket_Iterator_Test.cpp 80826 2008-03-04 14:51:23Z wotte $")
 
 static ACE_UINT32 iterations = ACE_MAX_ITERATIONS * 10;
 static ACE_UINT32 table_size = ACE_MAX_ITERATIONS;

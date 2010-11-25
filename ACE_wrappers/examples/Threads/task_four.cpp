@@ -1,4 +1,4 @@
-// $Id: task_four.cpp 91670 2010-09-08 18:02:26Z johnnyw $
+// $Id: task_four.cpp 82610 2008-08-12 19:46:36Z parsons $
 
 // The following test was written by Hamutal Yanay & Ari Erev's
 // (Ari_Erev@comverse.com).
@@ -35,6 +35,8 @@
 #include "ace/OS_main.h"
 #include "ace/Task.h"
 #include "ace/Service_Config.h"
+
+ACE_RCSID(Threads, task_four, "$Id: task_four.cpp 82610 2008-08-12 19:46:36Z parsons $")
 
 #if defined (ACE_HAS_THREADS)
 

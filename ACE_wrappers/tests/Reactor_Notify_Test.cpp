@@ -1,4 +1,4 @@
-// $Id: Reactor_Notify_Test.cpp 91671 2010-09-08 18:39:23Z johnnyw $
+// $Id: Reactor_Notify_Test.cpp 85321 2009-05-12 08:31:31Z johnnyw $
 
 // ============================================================================
 //
@@ -31,7 +31,7 @@
 #include "ace/Select_Reactor.h"
 #include "ace/Thread_Semaphore.h"
 
-
+ACE_RCSID(tests, Reactor_Notify_Test, "$Id: Reactor_Notify_Test.cpp 85321 2009-05-12 08:31:31Z johnnyw $")
 
 #if defined (ACE_HAS_THREADS)
 

@@ -1,4 +1,4 @@
-// $Id: Activate.cpp 91813 2010-09-17 07:52:52Z johnnyw $
+// $Id: Activate.cpp 80826 2008-03-04 14:51:23Z wotte $
 
 // Listing 1 code/ch12
 #include "ace/Task.h"
@@ -24,7 +24,7 @@ int ACE_TMAIN (int, ACE_TCHAR *[])
   HA_CommandHandler handler;
   int result = handler.activate ();
   ACE_ASSERT (result == 0);
-
+ 
   ACE_UNUSED_ARG (result);
 
   handler.wait ();

@@ -1,4 +1,4 @@
-// $Id: Dirent_Test.cpp 91688 2010-09-09 11:21:50Z johnnyw $
+// $Id: Dirent_Test.cpp 85425 2009-05-22 16:11:04Z johnnyw $
 
 // ============================================================================
 //
@@ -29,7 +29,12 @@
 #include "ace/Dirent_Selector.h"
 #include "ace/OS_NS_sys_stat.h"
 #include "ace/OS_NS_unistd.h"
+#include "ace/OS_String.h"
 #include "ace/SString.h"
+
+ACE_RCSID (tests,
+           Dirent_Test,
+           "$Id Dirent_Test.cpp,v 4.10 2003/05/18 19:17:34 dhinton Exp$")
 
 #if (defined (ACE_VXWORKS) && (ACE_VXWORKS < 0x600))
 #  define TEST_DIR "log"

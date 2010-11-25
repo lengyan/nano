@@ -4,7 +4,7 @@
 /**
  *  @file    Service_Config_Test.cpp
  *
- *  $Id: Service_Config_Test.cpp 91673 2010-09-08 18:49:47Z johnnyw $
+ *  $Id: Service_Config_Test.cpp 90718 2010-06-18 20:34:55Z shuston $
  *
  *  This is a simple test to make sure the ACE Service Configurator
  *  framework is working correctly.
@@ -27,6 +27,10 @@
 #include "ace/Reactor.h"
 #include "ace/Thread_Manager.h"
 #include "ace/ARGV.h"
+
+ACE_RCSID (tests,
+           Service_Config_Test,
+           "$Id: Service_Config_Test.cpp 90718 2010-06-18 20:34:55Z shuston $")
 
 static const u_int VARIETIES = 3;
 

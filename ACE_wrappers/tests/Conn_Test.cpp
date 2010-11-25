@@ -1,4 +1,4 @@
-// $Id: Conn_Test.cpp 91688 2010-09-09 11:21:50Z johnnyw $
+// $Id: Conn_Test.cpp 80826 2008-03-04 14:51:23Z wotte $
 
 // ============================================================================
 //
@@ -41,7 +41,7 @@
 #include "ace/OS_NS_unistd.h"
 #include "ace/os_include/os_netdb.h"
 
-
+ACE_RCSID(tests, Conn_Test, "$Id: Conn_Test.cpp 80826 2008-03-04 14:51:23Z wotte $")
 
 static const char ACE_ALPHABET[] = "abcdefghijklmnopqrstuvwxyz";
 
@@ -76,8 +76,14 @@ static const char ACE_ALPHABET[] = "abcdefghijklmnopqrstuvwxyz";
 #  endif /* ACE_HAS_THREAD_SAFE_ACCEPT */
 #endif /* ACE_LACKS_FORK */
 
+#if defined (ACE_HAS_TEMPLATE_TYPEDEFS)
+#define LOCK_SOCK_ACCEPTOR ACE_LOCK_SOCK_Acceptor<ACCEPTOR_LOCKING>
+#else
+#define LOCK_SOCK_ACCEPTOR ACE_LOCK_SOCK_Acceptor<ACCEPTOR_LOCKING>, ACE_INET_Addr
+#endif /* ACE_HAS_TEMPLATE_TYPEDEFS */
+
 typedef ACE_Oneshot_Acceptor<Svc_Handler,
-                             ACE_LOCK_SOCK_Acceptor<ACCEPTOR_LOCKING> >
+                             LOCK_SOCK_ACCEPTOR>
         ACCEPTOR;
 typedef ACE_Connector<Svc_Handler,
                       ACE_SOCK_CONNECTOR>

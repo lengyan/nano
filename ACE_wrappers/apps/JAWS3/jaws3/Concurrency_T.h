@@ -1,9 +1,10 @@
 /* -*- c++ -*- */
-// $Id: Concurrency_T.h 91730 2010-09-13 09:31:11Z johnnyw $
+// $Id: Concurrency_T.h 80826 2008-03-04 14:51:23Z wotte $
 
 #ifndef JAWS_CONCURRENCY_T_H
 #define JAWS_CONCURRENCY_T_H
 
+// This gets me the ACE template defines without having to #include "ace/OS.h".
 #include "ace/config-lite.h"
 
 class JAWS_Protocol_Handler;

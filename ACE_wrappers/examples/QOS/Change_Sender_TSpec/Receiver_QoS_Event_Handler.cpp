@@ -1,5 +1,5 @@
 /* -*- C++ -*- */
-// $Id: Receiver_QoS_Event_Handler.cpp 91813 2010-09-17 07:52:52Z johnnyw $
+// $Id: Receiver_QoS_Event_Handler.cpp 80826 2008-03-04 14:51:23Z wotte $
 
 // ============================================================================
 //
@@ -133,7 +133,7 @@ Receiver_QoS_Event_Handler::handle_qos (ACE_HANDLE fd)
               ace_get_qos.receiving_flowspec ()->minimum_policed_size (),
               ace_get_qos.sending_flowspec ()->minimum_policed_size ()));
 
-
+  
 return 0;
 
 }

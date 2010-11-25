@@ -3,7 +3,7 @@
 	ProjectType="Visual C++"
 	Version="8.00"
 	Name="Reactor_Ntalker"
-	ProjectGUID="{A7FE724B-FECA-1BAD-EFA7-6773336A8585}"
+	ProjectGUID="{A7FE724B-FECA-1BAD-EFA7-6773E7FCB6B5}"
 	RootNamespace="Reactor_Ntalker"
 	Keyword="Win32Proj"
 	SignManifests="true"

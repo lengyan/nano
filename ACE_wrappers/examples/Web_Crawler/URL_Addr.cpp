@@ -1,4 +1,4 @@
-// $Id: URL_Addr.cpp 91673 2010-09-08 18:49:47Z johnnyw $
+// $Id: URL_Addr.cpp 80826 2008-03-04 14:51:23Z wotte $
 
 #include "URL_Addr.h"
 #include "ace/Log_Msg.h"
@@ -6,6 +6,11 @@
 #include "ace/OS_NS_stdio.h"
 #include "ace/OS_NS_stdlib.h"
 #include "ace/OS_Memory.h"
+
+ACE_RCSID (Web_Crawler,
+           URL_Addr,
+           "$Id: URL_Addr.cpp 80826 2008-03-04 14:51:23Z wotte $")
+
 
 ACE_URL_Addr::ACE_URL_Addr (void)
   : path_name_ (0),

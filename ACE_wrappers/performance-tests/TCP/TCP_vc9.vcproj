@@ -3,7 +3,7 @@
 	ProjectType="Visual C++"
 	Version="9.00"
 	Name="TCP"
-	ProjectGUID="{BC022C9A-FECA-1BAD-5062-8A636F3FD3CA}"
+	ProjectGUID="{BC022C9A-FECA-1BAD-5062-8A635C329AA9}"
 	RootNamespace="TCP"
 	Keyword="Win32Proj"
 	SignManifests="true"

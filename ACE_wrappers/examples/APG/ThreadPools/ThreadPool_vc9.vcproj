@@ -3,7 +3,7 @@
 	ProjectType="Visual C++"
 	Version="9.00"
 	Name="ThreadPool"
-	ProjectGUID="{AFCF18AD-FECA-1BAD-EB45-BD55AD295160}"
+	ProjectGUID="{AFCF18AD-FECA-1BAD-EB45-BD5579BF6250}"
 	RootNamespace="ThreadPool"
 	Keyword="Win32Proj"
 	SignManifests="true"

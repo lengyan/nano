@@ -1,8 +1,10 @@
-// $Id: Bug_2980_Regression_Dll.cpp 91730 2010-09-13 09:31:11Z johnnyw $
+// $Id: Bug_2980_Regression_Dll.cpp 81163 2008-03-31 11:00:50Z johnnyw $
 
 #include "ace/Init_ACE.h"
+#include "ace/OS.h"
 #include "ace/Log_Msg.h"
 #include "test_config.h"
+
 
 extern "C"
 {

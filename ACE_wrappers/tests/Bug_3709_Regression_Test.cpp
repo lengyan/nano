@@ -1,7 +1,7 @@
 /**
  * @file Bug_3709_Regression_Test.cpp
  *
- * $Id: Bug_3709_Regression_Test.cpp 91626 2010-09-07 10:59:20Z johnnyw $
+ * $Id: Bug_3709_Regression_Test.cpp 88756 2010-01-27 22:52:17Z mitza $
  *
  * Reproduces the problems reported in bug 3709
  *   http://deuce.doc.wustl.edu/bugzilla/show_bug.cgi?id=3709
@@ -13,6 +13,10 @@
 #include <vector>
 
 using namespace std;
+
+ACE_RCSID (tests,
+           Bug_3709_Regression_Test,
+           "$Id: Bug_3709_Regression_Test.cpp 88756 2010-01-27 22:52:17Z mitza $")
 
 #if defined(_MSC_VER) && _MSC_VER < 1400
 #define MSVC_71_OR_OLDER

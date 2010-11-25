@@ -1,4 +1,4 @@
-// $Id: Proactor_Timer_Test.cpp 91673 2010-09-08 18:49:47Z johnnyw $
+// $Id: Proactor_Timer_Test.cpp 80826 2008-03-04 14:51:23Z wotte $
 
 // ============================================================================
 //
@@ -22,6 +22,10 @@
 
 #include "test_config.h"
 #include "ace/Trace.h"
+
+ACE_RCSID (tests,
+           Proactor_Timer_Test,
+           "$Id: Proactor_Timer_Test.cpp 80826 2008-03-04 14:51:23Z wotte $")
 
 #if defined (ACE_HAS_WIN32_OVERLAPPED_IO) || defined (ACE_HAS_AIO_CALLS)
   // This only works on Win32 platforms and on Unix platforms

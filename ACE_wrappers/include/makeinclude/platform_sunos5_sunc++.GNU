@@ -1,6 +1,6 @@
 # -*- Makefile -*-
 
-# $Id: platform_sunos5_sunc++.GNU 92140 2010-10-04 12:37:52Z johnnyw $
+# $Id: platform_sunos5_sunc++.GNU 89251 2010-02-25 19:20:08Z stallions $
 
 # SunOS 5.x (Solaris 2.x) with Sun C++ 4.2 and 5.x
 #
@@ -112,6 +112,7 @@ ifeq (C++ 5,$(findstring C++ 5,$(CC_VERSION)))
       inline = 0
     else # ! 5.1
       inline ?= 1
+      exceptions ?= 1
     endif # 5.2 or greater
   endif #! 5.0
 
@@ -163,6 +164,28 @@ endif # CC 5.0 or later
 
 CCFLAGS         += $(TEMPLATES_FLAG)
 
+#### Sun CC-specific "Pure virtual function called" bug fix trigger.
+#### XXX: Shouldn't this go into a compiler version specific guard ???
+CPPFLAGS       += -DSUN_CC_HAS_PVFC_BUG
+
+#### Exception handling breaks on MP machines prior to Sun C++ 4.2
+#### with jumbo patch 104631-02, see ace/config-sunos5.5.h.
+#### If you are using a version of Sun C++ prior to 4,2, or haven't
+#### applied that jumbo patch to your 4.2, or don't want to pay the
+#### performance penalty of exception handling, then use the default
+#### of no exceptions.  If you want to enable exception handling,
+#### add "exceptions=1" to your "make" invocation.
+ifeq (0,$(exceptions))
+  CCFLAGS += -noex
+  ifeq (C++ 5.6,$(findstring C++ 5.6,$(CC_VERSION)))
+    override stlport = 1
+  else
+    ifeq (C++ 5.7,$(findstring C++ 5.7,$(CC_VERSION)))
+      override stlport = 1
+    endif
+  endif
+endif # ! exceptions
+
 ifeq ($(shared_libs), 1)
   ifneq ($(static_libs_only), 1)
 
@@ -209,7 +232,7 @@ else
     ifeq ($(stdcpplib),1)
       CC_LIBRARY = Cstd
     else
-      CC_LIBRARY = no%Cstd,iostream
+      CC_LIBRARY = no%Cstd,iostream 
       CPPFLAGS += -DACE_USES_OLD_IOSTREAMS
     endif
   endif

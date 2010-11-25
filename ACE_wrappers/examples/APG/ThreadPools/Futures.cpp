@@ -1,4 +1,4 @@
-// $Id: Futures.cpp 91639 2010-09-08 05:57:10Z johnnyw $
+// $Id: Futures.cpp 80826 2008-03-04 14:51:23Z wotte $
 
 #include "ace/config-lite.h"
 #if defined (ACE_HAS_THREADS)
@@ -12,7 +12,6 @@
 #include "ace/Method_Request.h"
 #include "ace/Future.h"
 #include "ace/Activation_Queue.h"
-#include "ace/Condition_T.h"
 
 #define OUTSTANDING_REQUESTS 20
 

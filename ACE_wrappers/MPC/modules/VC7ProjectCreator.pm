@@ -87,9 +87,7 @@ sub fill_value {
     ## provided will be hashed and returned in a format expected by
     ## Visual Studio.
     return GUID::generate($self->project_file_name(),
-                          $self->{'current_input'},
-                          File::Spec->abs2rel($self->getcwd(),
-                                              $self->getstartdir()));
+                          $self->{'current_input'}, $self->getcwd());
   }
   elsif ($name eq 'language') {
     ## If this project is a Web Application, the language is website.

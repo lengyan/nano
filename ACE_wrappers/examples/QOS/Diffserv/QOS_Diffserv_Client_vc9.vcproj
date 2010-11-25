@@ -3,7 +3,7 @@
 	ProjectType="Visual C++"
 	Version="9.00"
 	Name="QOS_Diffserv_Client"
-	ProjectGUID="{12355400-FECA-1BAD-083F-A5678D79EFEB}"
+	ProjectGUID="{12355400-FECA-1BAD-083F-A567BE74A688}"
 	RootNamespace="QOS_Diffserv_Client"
 	Keyword="Win32Proj"
 	SignManifests="true"

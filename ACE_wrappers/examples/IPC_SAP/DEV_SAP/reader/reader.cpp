@@ -1,10 +1,10 @@
-// $Id: reader.cpp 91671 2010-09-08 18:39:23Z johnnyw $
+// $Id: reader.cpp 80826 2008-03-04 14:51:23Z wotte $
 
 #include "ace/DEV_Addr.h"
 #include "ace/DEV_Connector.h"
 #include "ace/TTY_IO.h"
 
-
+ACE_RCSID(reader, reader, "$Id: reader.cpp 80826 2008-03-04 14:51:23Z wotte $")
 
 int ACE_TMAIN (int argc, ACE_TCHAR *argv[])
 {
@@ -50,7 +50,7 @@ int ACE_TMAIN (int argc, ACE_TCHAR *argv[])
                       1);
 
   // Read till character 'q'.
-  for (char readback = 'x'; readback != 'q'; )
+  for (char readback = 'x'; readback != 'q'; )  
     {
       ssize_t bytes_read =
         read_dev.recv ((void *) &readback, 1);

@@ -1,4 +1,4 @@
-// $Id: CB.cpp 91813 2010-09-17 07:52:52Z johnnyw $
+// $Id: CB.cpp 80826 2008-03-04 14:51:23Z wotte $
 
 #include "ace/Log_Msg.h"
 #include "CB.h"
@@ -22,12 +22,12 @@ int CB::handle_timeout (const ACE_Time_Value &,
 
   if (count_ == 5)
     {
-      ACE_DEBUG ((LM_DEBUG,
+      ACE_DEBUG ((LM_DEBUG, 
                   ACE_TEXT ("Reseting interval for timer %d\n"),
                   timerID_));
 
       // New interval is 10 ms.
-      ACE_Time_Value interval (0L, 1000L);
+      ACE_Time_Value interval (0L, 1000L); 
       int status = Timer::instance ()->reset_interval
                                          (timerID_, interval);
 #if defined (ACE_NDEBUG)

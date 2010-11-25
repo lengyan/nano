@@ -3,7 +3,7 @@
 	ProjectType="Visual C++"
 	Version="8.00"
 	Name="Reactor_Timers"
-	ProjectGUID="{65639B6C-FECA-1BAD-4280-FE54CE10D8BD}"
+	ProjectGUID="{65639B6C-FECA-1BAD-4280-FE54FD200C2B}"
 	RootNamespace="Reactor_Timers"
 	Keyword="Win32Proj"
 	SignManifests="true"

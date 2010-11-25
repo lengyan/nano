@@ -1,4 +1,4 @@
-// $Id: test_demuxing.cpp 91671 2010-09-08 18:39:23Z johnnyw $
+// $Id: test_demuxing.cpp 83286 2008-10-16 09:52:06Z johnnyw $
 
 // Perform an extensive test of all the ACE_Reactor's event handler
 // dispatching mechanisms.  These mechanisms illustrate how I/O,
@@ -17,7 +17,7 @@
 #include "ace/OS_NS_fcntl.h"
 #include "ace/OS_NS_unistd.h"
 
-
+ACE_RCSID(Misc, test_demuxing, "$Id: test_demuxing.cpp 83286 2008-10-16 09:52:06Z johnnyw $")
 
 // Default is to have a 2 second timeout.
 static int timeout = 2;
@@ -299,7 +299,7 @@ Message_Handler::svc (void)
 {
   for (int i = 0;; i++)
     {
-      ACE_Message_Block *mb = 0;
+      ACE_Message_Block *mb;
 
       ACE_NEW_RETURN (mb,
                       ACE_Message_Block (1),
@@ -334,7 +334,7 @@ Message_Handler::handle_input (ACE_HANDLE)
   ACE_DEBUG ((LM_DEBUG,
               "(%t) Message_Handler::handle_input\n"));
 
-  ACE_Message_Block *mb = 0;
+  ACE_Message_Block *mb;
 
   if (this->getq (mb, (ACE_Time_Value *) &ACE_Time_Value::zero) == -1)
     ACE_ERROR ((LM_ERROR,

@@ -3,7 +3,7 @@
 	ProjectType="Visual C++"
 	Version="8.00"
 	Name="Proactor_Test_IPV6"
-	ProjectGUID="{3D7C27AF-FECA-1BAD-2431-8A1100722433}"
+	ProjectGUID="{3D7C27AF-FECA-1BAD-2431-8A11337F6D50}"
 	RootNamespace="Proactor_Test_IPV6"
 	Keyword="Win32Proj"
 	SignManifests="true"

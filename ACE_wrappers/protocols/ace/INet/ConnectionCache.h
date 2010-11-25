@@ -1,4 +1,4 @@
-// $Id: ConnectionCache.h 91118 2010-07-17 10:29:57Z mcorino $
+// $Id: ConnectionCache.h 90925 2010-06-29 10:50:40Z mcorino $
 
 /**
  * @file ConnectionCache.h
@@ -31,7 +31,7 @@ namespace ACE
         * @brief Base class for connection keys.
         *
         */
-        class ACE_INET_Export ConnectionKey
+        class ConnectionKey
           {
             public:
               ConnectionKey ();
@@ -85,7 +85,7 @@ namespace ACE
         * @brief Generic base for connection wrappers.
         *
         */
-        class ACE_INET_Export ConnectionHolder
+        class ConnectionHolder
           {
             public:
               virtual ~ConnectionHolder ();
@@ -103,7 +103,7 @@ namespace ACE
         * return those for caching wrapped in a connection
         * holder.
         */
-        class ACE_INET_Export ConnectionFactory
+        class ConnectionFactory
           {
             public:
               ConnectionFactory ();

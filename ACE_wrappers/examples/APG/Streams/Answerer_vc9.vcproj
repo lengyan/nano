@@ -3,7 +3,7 @@
 	ProjectType="Visual C++"
 	Version="9.00"
 	Name="Answerer"
-	ProjectGUID="{AB464B0E-FECA-1BAD-37A1-FE57CE13AD9C}"
+	ProjectGUID="{AB464B0E-FECA-1BAD-37A1-FE57FD23790A}"
 	RootNamespace="Answerer"
 	Keyword="Win32Proj"
 	SignManifests="true"

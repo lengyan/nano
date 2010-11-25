@@ -1,4 +1,4 @@
-// $Id: Reverse_Lock_Test.cpp 91671 2010-09-08 18:39:23Z johnnyw $
+// $Id: Reverse_Lock_Test.cpp 80826 2008-03-04 14:51:23Z wotte $
 
 // ============================================================================
 //
@@ -24,7 +24,7 @@
 #include "ace/Guard_T.h"
 #include "ace/Reverse_Lock_T.h"
 
-
+ACE_RCSID(tests, Reverse_Lock_Test, "$Id: Reverse_Lock_Test.cpp 80826 2008-03-04 14:51:23Z wotte $")
 
 typedef ACE_Reverse_Lock<ACE_SYNCH_MUTEX> REVERSE_MUTEX;
 

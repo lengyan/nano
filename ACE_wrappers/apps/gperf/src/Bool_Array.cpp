@@ -3,7 +3,7 @@
 // Fast lookup table abstraction implemented as an Iteration Number Array
 
 /**
- * $Id: Bool_Array.cpp 91671 2010-09-08 18:39:23Z johnnyw $
+ * $Id: Bool_Array.cpp 86019 2009-07-14 12:13:09Z wotte $
  *
  * Copyright (C) 1989 Free Software Foundation, Inc.
  * written by Douglas C. Schmidt (schmidt@cs.wustl.edu)
@@ -28,7 +28,7 @@
 #include "Bool_Array.h"
 #include "ace/OS_NS_string.h"
 
-
+ACE_RCSID(src, Bool_Array, "$Id: Bool_Array.cpp 86019 2009-07-14 12:13:09Z wotte $")
 
 #if defined (ACE_HAS_GPERF)
 

@@ -1,4 +1,4 @@
-// $Id: FIFO-Msg-server.cpp 91671 2010-09-08 18:39:23Z johnnyw $
+// $Id: FIFO-Msg-server.cpp 81978 2008-06-16 16:57:12Z sowayaa $
 
 #include "ace/FIFO_Recv_Msg.h"
 #include "ace/Log_Msg.h"
@@ -8,7 +8,7 @@
 #include "ace/OS_NS_stropts.h"
 #include "ace/OS_main.h"
 
-
+ACE_RCSID(FIFO_SAP, FIFO_Msg_server, "$Id: FIFO-Msg-server.cpp 81978 2008-06-16 16:57:12Z sowayaa $")
 
 #if defined (ACE_HAS_STREAM_PIPES)
 

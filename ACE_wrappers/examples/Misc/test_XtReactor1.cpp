@@ -1,4 +1,4 @@
-// $Id: test_XtReactor1.cpp 91673 2010-09-08 18:49:47Z johnnyw $
+// $Id: test_XtReactor1.cpp 84677 2009-03-02 14:53:06Z olli $
 
 // The following is another test that exercises the Eric C. Newton's
 // <ecn@clark.net> XtReactor implementation.
@@ -11,6 +11,11 @@
 #include "ace/OS_NS_unistd.h"
 #include "ace/OS_NS_fcntl.h"
 
+ACE_RCSID (Misc,
+           test_XtReactor1,
+           "$Id: test_XtReactor1.cpp 84677 2009-03-02 14:53:06Z olli $")
+
+//#define String XtString
 #include <Xm/PushB.h>
 
 class Stdout : public ACE_Event_Handler

@@ -1,4 +1,4 @@
-// $Id: Thread_Attrs_Test.cpp 91671 2010-09-08 18:39:23Z johnnyw $
+// $Id: Thread_Attrs_Test.cpp 88682 2010-01-23 13:58:06Z mcorino $
 
 // ============================================================================
 //
@@ -20,7 +20,7 @@
 #include "test_config.h"
 #include "ace/Task.h"
 
-
+ACE_RCSID(tests, Thread_Attrs_Test, "$Id: Thread_Attrs_Test.cpp 88682 2010-01-23 13:58:06Z mcorino $")
 
 #if defined (ACE_HAS_THREADS)
 

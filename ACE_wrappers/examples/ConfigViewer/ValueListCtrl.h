@@ -1,5 +1,5 @@
 /* -*- C++ -*- */
-// $Id: ValueListCtrl.h 91743 2010-09-13 18:24:51Z johnnyw $
+// $Id: ValueListCtrl.h 80826 2008-03-04 14:51:23Z wotte $
 
 #ifndef _ConfigurationViewer_ValueListCtrl_H
 #define _ConfigurationViewer_ValueListCtrl_H
@@ -10,9 +10,9 @@ public:
   ///////////////////////////////////////////
   // Initializers
   ///////////////////////////////////////////
-  ValueListCtrl(wxWindow* parent, wxWindowID id, const wxPoint& pos = wxDefaultPosition,
-        const wxSize& size = wxDefaultSize, long style = wxLC_ICON,
-        const wxValidator& validator = wxDefaultValidator,
+  ValueListCtrl(wxWindow* parent, wxWindowID id, const wxPoint& pos = wxDefaultPosition, 
+        const wxSize& size = wxDefaultSize, long style = wxLC_ICON, 
+        const wxValidator& validator = wxDefaultValidator, 
         const wxString& name = "listCtrl");
   virtual ~ValueListCtrl();
 

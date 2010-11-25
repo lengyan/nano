@@ -1,18 +1,18 @@
 /*
  * ACE reactor demonstration
  *
- * $Id: client.cpp 92066 2010-09-28 08:33:14Z vzykov $
+ * $Id: client.cpp 85321 2009-05-12 08:31:31Z johnnyw $
  * Date: 26-Jan-2006
  */
 
 #include <ace/Auto_Ptr.h>
 #include <ace/INET_Addr.h>
 #include <ace/Log_Msg.h>
+#include <ace/OS.h>
 #include <ace/SOCK_Acceptor.h>
 #include <ace/SOCK_Connector.h>
 #include <ace/SOCK_Stream.h>
 #include <ace/streams.h>
-#include <ace/OS_NS_stdlib.h>
 
 #include "common.h"
 

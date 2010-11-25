@@ -1,4 +1,4 @@
-// $Id: tss1.cpp 91671 2010-09-08 18:39:23Z johnnyw $
+// $Id: tss1.cpp 80826 2008-03-04 14:51:23Z wotte $
 
 // ============================================================================
 //
@@ -25,7 +25,7 @@
 #include "ace/Service_Config.h"
 #include "ace/Task.h"
 
-
+ACE_RCSID(Threads, tss1, "$Id: tss1.cpp 80826 2008-03-04 14:51:23Z wotte $")
 
 #if defined (ACE_HAS_THREADS)
 
@@ -41,6 +41,12 @@ int Errno::flags_;
 // This is our thread-specific error handler...
 // (Sun C++ 4.2 with -O3 won't link if the following is static.)
 ACE_TSS<Errno> TSS_Error;
+
+#if defined (ACE_HAS_THREADS)
+  typedef ACE_TSS_Guard<ACE_Thread_Mutex> GUARD;
+#else
+  typedef ACE_Guard<ACE_Null_Mutex> GUARD;
+#endif /* ACE_HAS_THREADS */
 
 // Keeps track of whether Tester::close () has started.
 // (Sun C++ 4.2 with -O3 won't link if the following is static.)

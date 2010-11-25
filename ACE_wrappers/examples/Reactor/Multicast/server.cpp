@@ -1,4 +1,4 @@
-// $Id: server.cpp 91671 2010-09-08 18:39:23Z johnnyw $
+// $Id: server.cpp 82747 2008-09-16 13:11:23Z johnnyw $
 
 // server.cpp (written by Tim Harrison)
 
@@ -16,7 +16,7 @@
 #include "ace/OS_NS_unistd.h"
 #include "ace/os_include/os_netdb.h"
 
-
+ACE_RCSID(Multicast, server, "$Id: server.cpp 82747 2008-09-16 13:11:23Z johnnyw $")
 
 #if defined (ACE_HAS_IP_MULTICAST)
 class Server_Events : public ACE_Event_Handler

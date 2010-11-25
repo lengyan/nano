@@ -1,4 +1,4 @@
-// $Id: CPU_Load_Monitor.cpp 92173 2010-10-07 12:36:17Z olli $
+// $Id: CPU_Load_Monitor.cpp 86518 2009-08-18 12:30:56Z olli $
 
 #include "ace/Monitor_Control/CPU_Load_Monitor.h"
 
@@ -63,7 +63,7 @@ namespace ACE
         this->user_ + this->wait_ + this->kernel_ + this->idle_;
       double delta_total = total - this->prev_total_;
 
-      if (ACE::is_equal (delta_total, 0.0))
+      if (delta_total == 0.0)
         {
           /// The system hasn't updated /proc/stat since the last call
           /// to update(), we must avoid dividing by 0.
@@ -85,7 +85,7 @@ namespace ACE
     {
       return CPU_Load_Monitor::default_name_;
     }
-
+    
     void
     CPU_Load_Monitor::clear_i (void)
     {
@@ -96,7 +96,7 @@ namespace ACE
       this->init ();
       this->Monitor_Base::clear_i ();
     }
-
+    
     void
     CPU_Load_Monitor::init (void)
     {

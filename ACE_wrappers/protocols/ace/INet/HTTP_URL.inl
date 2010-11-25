@@ -1,6 +1,6 @@
 // -*- C++ -*-
 //
-// $Id: HTTP_URL.inl 91118 2010-07-17 10:29:57Z mcorino $
+// $Id: HTTP_URL.inl 90737 2010-06-21 09:46:14Z mcorino $
 
 ACE_BEGIN_VERSIONED_NAMESPACE_DECL
 
@@ -12,7 +12,7 @@ namespace ACE
     ACE_INLINE
     const ACE_CString& URL::get_scheme () const
       {
-        return protocol ();
+        return PROTOCOL;
       }
 
     ACE_INLINE

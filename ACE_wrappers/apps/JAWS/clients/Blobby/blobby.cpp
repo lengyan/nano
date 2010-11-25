@@ -1,4 +1,4 @@
-// $Id: blobby.cpp 91670 2010-09-08 18:02:26Z johnnyw $
+// $Id: blobby.cpp 81993 2008-06-16 20:26:16Z sowayaa $
 
 //============================================================================
 //
@@ -26,6 +26,8 @@
 #include "ace/OS_main.h"
 #include "ace/OS_NS_fcntl.h"
 #include "ace/OS_NS_unistd.h"
+
+ACE_RCSID(Blobby, blobby, "$Id: blobby.cpp 81993 2008-06-16 20:26:16Z sowayaa $")
 
 int
 ACE_TMAIN (int argc, ACE_TCHAR *argv[])

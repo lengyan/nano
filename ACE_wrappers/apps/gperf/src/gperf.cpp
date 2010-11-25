@@ -3,7 +3,7 @@
 // Driver program for the gperf hash function generator.
 
 /**
- * $Id: gperf.cpp 91671 2010-09-08 18:39:23Z johnnyw $
+ * $Id: gperf.cpp 86019 2009-07-14 12:13:09Z wotte $
  *
  * Copyright (C) 1989 Free Software Foundation, Inc.
  * written by Douglas C. Schmidt (schmidt@cs.wustl.edu)
@@ -27,7 +27,7 @@
 
 #include "Gen_Perf.h"
 
-
+ACE_RCSID(src, gperf, "$Id: gperf.cpp 86019 2009-07-14 12:13:09Z wotte $")
 
 #if defined (ACE_HAS_GPERF)
 

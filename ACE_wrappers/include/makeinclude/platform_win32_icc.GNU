@@ -1,9 +1,11 @@
-# $Id: platform_win32_icc.GNU 91285 2010-08-05 08:29:30Z johnnyw $
+# $Id: platform_win32_icc.GNU 80826 2008-03-04 14:51:23Z wotte $
 
 # debug = 1
 # optimize = 1
+# exceptions = 0
 
 winsock2 ?= 1
+exceptions ?= 1
 debug ?= 1
 optimize ?= 1
 threads ?= 1

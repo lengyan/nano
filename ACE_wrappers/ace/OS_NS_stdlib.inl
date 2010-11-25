@@ -1,6 +1,6 @@
 // -*- C++ -*-
 //
-// $Id: OS_NS_stdlib.inl 91683 2010-09-09 09:07:49Z johnnyw $
+// $Id: OS_NS_stdlib.inl 87347 2009-11-05 12:00:29Z olli $
 
 #include "ace/config-all.h"           /* Need ACE_TRACE */
 #include "ace/Object_Manager_Base.h"
@@ -411,11 +411,13 @@ ACE_OS::rand_r (ACE_RANDR_TYPE &seed)
   ACE_OS_TRACE ("ACE_OS::rand_r");
 # if defined (ACE_HAS_REENTRANT_FUNCTIONS) && \
     !defined (ACE_LACKS_RAND_REENTRANT_FUNCTIONS)
-#   if defined (ACE_HAS_BROKEN_RANDR)
+#   if defined (DIGITAL_UNIX)
+  ACE_OSCALL_RETURN (::_Prand_r (&seed), int, -1);
+#   elif defined (ACE_HAS_BROKEN_RANDR)
   ACE_OSCALL_RETURN (::rand_r (seed), int, -1);
 #   else
   ACE_OSCALL_RETURN (::rand_r (&seed), int, -1);
-#   endif /* ACE_HAS_BROKEN_RANDR */
+#   endif /* DIGITAL_UNIX */
 # else
   ACE_UNUSED_ARG (seed);
   ACE_OSCALL_RETURN (::rand (), int, -1);

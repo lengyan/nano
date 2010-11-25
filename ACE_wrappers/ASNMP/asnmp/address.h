@@ -6,7 +6,7 @@
 /**
  *  @file    address.h
  *
- *  $Id: address.h 91743 2010-09-13 18:24:51Z johnnyw $
+ *  $Id: address.h 80826 2008-03-04 14:51:23Z wotte $
  *
  *  Address class definition. Encapsulates various network
  *  addresses into easy to use, safe and portable classes.
@@ -99,7 +99,7 @@ class SIPAddress; // aka ipv6
 //----[ Address class ]-----------------------------------------------
 //--------------------------------------------------------------------
 /**
- * @class
+ * @class 
  *
  * @brief Defines the member functions for the abstract base class
  * Address. An Address is a unique network endpoint.
@@ -340,7 +340,7 @@ private:
 //---------[ UDP/IPv4 Address Class ]-------------------------------------
 //------------------------------------------------------------------------
 /**
- * @class
+ * @class 
  *
  * @brief Defines the member functions for the concrete class UdpAddress
  * A Udp Address consists of an IP Version 4 Address (IpAddress)
@@ -411,7 +411,7 @@ protected:
 //---------[ 802.3 MAC Address Class ]-------------------------------------
 //-------------------------------------------------------------------------
 /**
- * @class
+ * @class 
  *
  * @brief Defines the member functions for the concrete class MacAddress.
  * A Media Access Control Address consists of 48 bits as defined
@@ -474,7 +474,7 @@ protected:
 //---------[ Netbios Address Class ]--------------------------------------
 //------------------------------------------------------------------------
 /**
- * @class
+ * @class 
  *
  * @brief Defines the member functions for the concrete class NetbiosAddress.
  * The IBM/Microsoft address for NETBIOS, NETBEUI protocol transport.
@@ -536,7 +536,7 @@ protected:
 //---------[ DecNet Address Class ]---------------------------------------
 //------------------------------------------------------------------------
 /**
- * @class
+ * @class 
  *
  * @brief Defines the member functions for the concrete class DecNetAddress.
  * DecNet Phase ? address consists of two octets (CISCO-TC.my)
@@ -585,7 +585,7 @@ class  ASNMP_Export DecNetAddress : public Address
 //---------[ AppleTalk Address Class ]------------------------------------
 //------------------------------------------------------------------------
 /**
- * @class
+ * @class 
  *
  * @brief Defines the member functions for the concrete class DecNetAddress.
  * DecNet Phase ? address consists of two octets (CISCO-TC.my)

@@ -1,8 +1,10 @@
-// $Id: Bug_3744_Regression_Test.cpp 91626 2010-09-07 10:59:20Z johnnyw $
+// $Id: Bug_3744_Regression_Test.cpp 87111 2009-10-15 07:46:14Z johnnyw $
 
 #include "test_config.h"
 #include "ace/OS_NS_string.h"
 #include "ace/OS_NS_netdb.h"
+
+ACE_RCSID(tests, OS_Test, "$Id: Bug_3744_Regression_Test.cpp 87111 2009-10-15 07:46:14Z johnnyw $")
 
 #undef THIS_IS_NOT_AN_ASSERT_IT_IS_A_NON_DEBUG_TEST_AS_WELL
 #define THIS_IS_NOT_AN_ASSERT_IT_IS_A_NON_DEBUG_TEST_AS_WELL(X) \

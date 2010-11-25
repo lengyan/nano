@@ -6,7 +6,7 @@
  *
  *  threads
  *
- *  $Id: os_pthread.h 91781 2010-09-15 12:49:15Z johnnyw $
+ *  $Id: os_pthread.h 80826 2008-03-04 14:51:23Z wotte $
  *
  *  @author Don Hinton <dhinton@dresystems.com>
  *  @author This code was originally in various places including ace/OS.h.
@@ -43,6 +43,10 @@
 #   define ACE_DONT_INCLUDE_ACE_SIGNAL_H
 #     include "ace/os_include/os_signal.h"
 #   undef ACE_DONT_INCLUDE_ACE_SIGNAL_H
+#   if defined (DIGITAL_UNIX)
+#     define pthread_self __pthread_self
+extern "C" pthread_t pthread_self (void);
+#   endif /* DIGITAL_UNIX */
 # endif /* ACE_HAS_PTHREADS */
 
 
@@ -75,7 +79,8 @@
 // programs to have their own ACE-wide "default".
 
 // PROCESS-level values
-#  if (defined (_POSIX_PRIORITY_SCHEDULING) || defined (ACE_TANDEM_T1248_PTHREADS))
+#  if (defined (_POSIX_PRIORITY_SCHEDULING) || defined (ACE_TANDEM_T1248_PTHREADS)) \
+   && !defined(_UNICOS) && !defined(UNIXWARE_7_1)
 #    define ACE_PROC_PRI_FIFO_MIN  (sched_get_priority_min(SCHED_FIFO))
 #    define ACE_PROC_PRI_RR_MIN    (sched_get_priority_min(SCHED_RR))
 #    if defined (HPUX)
@@ -89,13 +94,14 @@
 #    else
 #      define ACE_PROC_PRI_OTHER_MIN (sched_get_priority_min(SCHED_OTHER))
 #    endif /* HPUX */
-#  else /* UNICOS is missing a sched_get_priority_min() implementation */
+#  else /* UNICOS is missing a sched_get_priority_min() implementation,
+              SCO too */
 #    define ACE_PROC_PRI_FIFO_MIN  0
 #    define ACE_PROC_PRI_RR_MIN    0
 #    define ACE_PROC_PRI_OTHER_MIN 0
 #  endif
 
-#  if defined (_POSIX_PRIORITY_SCHEDULING)
+#  if defined (_POSIX_PRIORITY_SCHEDULING) && !defined(UNIXWARE_7_1)
 #    define ACE_PROC_PRI_FIFO_MAX  (sched_get_priority_max(SCHED_FIFO))
 #    define ACE_PROC_PRI_RR_MAX    (sched_get_priority_max(SCHED_RR))
 #    if defined (HPUX)
@@ -104,7 +110,7 @@
 #    else
 #      define ACE_PROC_PRI_OTHER_MAX (sched_get_priority_max(SCHED_OTHER))
 #    endif /* HPUX */
-#  else
+#  else /* SCO missing sched_get_priority_max() implementation */
 #    define ACE_PROC_PRI_FIFO_MAX  59
 #    define ACE_PROC_PRI_RR_MAX    59
 #    define ACE_PROC_PRI_OTHER_MAX 59
@@ -292,6 +298,7 @@
 #  endif /* ACE_HAS_STHREADS */
 
    /* MM-Graz:  prevent warnings */
+#  if !defined (UNIXWARE_7_1)
 #    undef THR_BOUND
 #    undef THR_NEW_LWP
 #    undef THR_DETACHED
@@ -306,10 +313,15 @@
 #    define THR_SCHED_FIFO          0x00020000
 #    define THR_SCHED_RR            0x00040000
 #    define THR_SCHED_DEFAULT       0x00080000
+#  endif /* UNIXWARE_7_1 */
 
 #  define THR_JOINABLE            0x00010000
 
-#  define THR_SCOPE_SYSTEM        0x00100000
+#  if defined (ACE_HAS_IRIX62_THREADS)
+#    define THR_SCOPE_SYSTEM        0x00100000
+#  else
+#    define THR_SCOPE_SYSTEM        THR_BOUND
+#  endif /*ACE_HAS_IRIX62_THREADS*/
 
 #  define THR_SCOPE_PROCESS       0x00200000
 #  define THR_INHERIT_SCHED       0x00400000

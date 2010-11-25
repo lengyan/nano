@@ -3,7 +3,7 @@
 	ProjectType="Visual C++"
 	Version="9.00"
 	Name="JAWS"
-	ProjectGUID="{F7461C9A-FECA-1BAD-5020-8D317F23EE66}"
+	ProjectGUID="{F7461C9A-FECA-1BAD-5020-8D31ABB5DD56}"
 	RootNamespace="JAWS"
 	Keyword="Win32Proj"
 	SignManifests="true"

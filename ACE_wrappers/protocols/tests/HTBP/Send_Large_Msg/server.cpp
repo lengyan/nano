@@ -1,4 +1,4 @@
-// $Id: server.cpp 91826 2010-09-17 09:11:31Z johnnyw $
+// $Id: server.cpp 84565 2009-02-23 08:20:39Z johnnyw $
 
 #include "ace/Log_Msg.h"
 #include "ace/Get_Opt.h"
@@ -10,8 +10,6 @@
 #include "ace/SOCK_Acceptor.h"
 #include "ace/SOCK_Stream.h"
 #include "ace/OS_NS_stdio.h"
-#include "ace/OS_NS_sys_socket.h"
-#include "ace/os_include/os_netdb.h"
 
 const size_t Send_Size = 4*1024;
 const size_t Loops = 10;
@@ -43,7 +41,7 @@ parse_args (int argc, ACE_TCHAR *argv[])
                            argv [0]),
                           -1);
       }
-  // Indicates successful parsing of the command line
+  // Indicates sucessful parsing of the command line
   return 0;
 }
 
@@ -121,7 +119,7 @@ ACE_TMAIN (int argc, ACE_TCHAR *argv[])
 
   ACE_DEBUG ((LM_DEBUG,
               ACE_TEXT("(%P|%t) Server: ")
-              ACE_TEXT("using streams %d, %d. Got session = %x\n"),
+              ACE_TEXT("using streams %d, %d. Got sesssion = %x\n"),
               sock[0].get_handle(),sock[1].get_handle(),session));
 
   ssize_t got = 1;

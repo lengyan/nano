@@ -1,4 +1,4 @@
-// $Id: HTTP_10_Read.cpp 91671 2010-09-08 18:39:23Z johnnyw $
+// $Id: HTTP_10_Read.cpp 80826 2008-03-04 14:51:23Z wotte $
 
 #include "HTTP_10.h"
 
@@ -7,7 +7,7 @@
 #include "JAWS/IO_Handler.h"
 #include "JAWS/Policy.h"
 
-
+ACE_RCSID(PROTOTYPE, HTTP_10_Read, "$Id: HTTP_10_Read.cpp 80826 2008-03-04 14:51:23Z wotte $")
 
 // --------------- READ TASK ----------------------
 

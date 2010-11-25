@@ -1,4 +1,4 @@
-// $Id: childbirth_time.cpp 91670 2010-09-08 18:02:26Z johnnyw $
+// $Id: childbirth_time.cpp 80826 2008-03-04 14:51:23Z wotte $
 
 // ============================================================================
 //
@@ -68,6 +68,8 @@
 #include "ace/Process.h"
 #include "ace/Profile_Timer.h"
 #include "ace/Thread_Manager.h"
+
+ACE_RCSID(Misc, childbirth_time, "$Id: childbirth_time.cpp 80826 2008-03-04 14:51:23Z wotte $")
 
 #define  ACE_STOP_SIGN  ACE_OS::sleep (0)
 

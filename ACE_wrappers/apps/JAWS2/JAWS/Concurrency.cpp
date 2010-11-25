@@ -1,4 +1,4 @@
-// $Id: Concurrency.cpp 91671 2010-09-08 18:39:23Z johnnyw $
+// $Id: Concurrency.cpp 80826 2008-03-04 14:51:23Z wotte $
 
 #include "JAWS/Concurrency.h"
 #include "JAWS/IO_Handler.h"
@@ -9,7 +9,7 @@
 #include "JAWS/Waiter.h"
 #include "JAWS/Reaper.h"
 
-
+ACE_RCSID(JAWS, Concurrency, "$Id: Concurrency.cpp 80826 2008-03-04 14:51:23Z wotte $")
 
 JAWS_Concurrency_Base::JAWS_Concurrency_Base (void)
   : ACE_Task<ACE_SYNCH> (new ACE_Thread_Manager),
@@ -30,7 +30,7 @@ JAWS_Concurrency_Base::singleton_mb (void)
 {
   if (this->mb_acquired_ == 0)
     {
-      ACE_GUARD_RETURN (ACE_SYNCH_MUTEX, g, this->lock_, 0);
+      ACE_Guard<ACE_SYNCH_MUTEX> g(this->lock_);
 
       if (this->mb_acquired_ == 0)
         {

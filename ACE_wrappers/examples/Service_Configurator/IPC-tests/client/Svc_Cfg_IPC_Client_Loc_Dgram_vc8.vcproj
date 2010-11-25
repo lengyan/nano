@@ -3,7 +3,7 @@
 	ProjectType="Visual C++"
 	Version="8.00"
 	Name="Svc_Cfg_IPC_Client_Loc_Dgram"
-	ProjectGUID="{5818555C-FECA-1BAD-DD12-8A69A8383EB6}"
+	ProjectGUID="{5818555C-FECA-1BAD-DD12-8A6998ECA885}"
 	RootNamespace="Svc_Cfg_IPC_Client_Loc_Dgram"
 	Keyword="Win32Proj"
 	SignManifests="true"

@@ -3,7 +3,7 @@
 	ProjectType="Visual C++"
 	Version="9.00"
 	Name="Lazy_Map_Manager_Test"
-	ProjectGUID="{0684A6DC-FECA-1BAD-2431-8A1100722433}"
+	ProjectGUID="{0684A6DC-FECA-1BAD-2431-8A11337F6D50}"
 	RootNamespace="Lazy_Map_Manager_Test"
 	Keyword="Win32Proj"
 	SignManifests="true"

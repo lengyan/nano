@@ -3,7 +3,7 @@
 	ProjectType="Visual C++"
 	Version="8.00"
 	Name="Vector_Test"
-	ProjectGUID="{0E232E1D-FECA-1BAD-2431-8A1100722433}"
+	ProjectGUID="{0E232E1D-FECA-1BAD-2431-8A11337F6D50}"
 	RootNamespace="Vector_Test"
 	Keyword="Win32Proj"
 	SignManifests="true"

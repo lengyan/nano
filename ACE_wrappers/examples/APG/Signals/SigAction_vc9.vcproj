@@ -3,7 +3,7 @@
 	ProjectType="Visual C++"
 	Version="9.00"
 	Name="SigAction"
-	ProjectGUID="{FBF893AD-FECA-1BAD-87B1-FF92CFD61D8C}"
+	ProjectGUID="{FBF893AD-FECA-1BAD-87B1-FF92FCE6C91A}"
 	RootNamespace="SigAction"
 	Keyword="Win32Proj"
 	SignManifests="true"

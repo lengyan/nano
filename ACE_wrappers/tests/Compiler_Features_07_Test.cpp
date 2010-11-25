@@ -1,4 +1,4 @@
-// $Id: Compiler_Features_07_Test.cpp 91671 2010-09-08 18:39:23Z johnnyw $
+// $Id: Compiler_Features_07_Test.cpp 86316 2009-08-01 12:42:14Z coryan $
 
 /**
  * @file
@@ -19,7 +19,7 @@
 #include <set>
 #include <string>
 
-
+ACE_RCSID(tests, Compiler_Features_07_Test, "$Id: Compiler_Features_07_Test.cpp 86316 2009-08-01 12:42:14Z coryan $")
 
 int
 run_main (int, ACE_TCHAR *[])

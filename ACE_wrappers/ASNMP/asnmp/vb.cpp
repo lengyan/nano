@@ -1,4 +1,4 @@
-// $Id: vb.cpp 91670 2010-09-08 18:02:26Z johnnyw $
+// $Id: vb.cpp 80826 2008-03-04 14:51:23Z wotte $
 
 // ============================================================================
 //
@@ -42,6 +42,8 @@
 #include "ace/OS_NS_stdio.h"
 #include "ace/OS_NS_string.h"
 #include "ace/OS_Memory.h"
+
+ACE_RCSID(asnmp, vb, "$Id: vb.cpp 80826 2008-03-04 14:51:23Z wotte $")
 
 //---------------[ Vb::Vb( void) ]--------------------------------------
 // constructor with no arguments

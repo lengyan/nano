@@ -3,7 +3,7 @@
 	ProjectType="Visual C++"
 	Version="9.00"
 	Name="Get_Opt_Long"
-	ProjectGUID="{42BDE4EB-FECA-1BAD-80F5-8C3AFDFBF954}"
+	ProjectGUID="{42BDE4EB-FECA-1BAD-80F5-8C3A9EC8F41D}"
 	RootNamespace="Get_Opt_Long"
 	Keyword="Win32Proj"
 	SignManifests="true"

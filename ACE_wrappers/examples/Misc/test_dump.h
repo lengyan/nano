@@ -1,4 +1,4 @@
-// $Id: test_dump.h 92052 2010-09-27 14:20:22Z vzykov $
+// $Id: test_dump.h 82610 2008-08-12 19:46:36Z parsons $
 
 // Define the classes used with templates in test_dump.cpp
 
@@ -16,7 +16,7 @@ public:
   ~SOCK (void) { ACE_REMOVE_OBJECT; }
 
   void dump (void) const {
-    ACE_DEBUG ((LM_DEBUG, "hello from SOCK = %@\n", this));
+    ACE_OS::fprintf (stderr, "hello from SOCK = %@\n", this);
   }
 
   // ...
@@ -29,7 +29,7 @@ public:
   ~SOCK_Acceptor (void) { ACE_REMOVE_OBJECT; }
 
   void dump (void) const {
-    ACE_DEBUG ((LM_DEBUG, "hello from SOCK_Acceptor = %@\n", this));
+    ACE_OS::fprintf (stderr, "hello from SOCK_Acceptor = %@\n", this);
   }
 
   // ...
@@ -42,7 +42,7 @@ public:
   ~SOCK_Stream (void) { ACE_REMOVE_OBJECT; }
 
   void dump (void) const {
-    ACE_DEBUG ((LM_DEBUG, "hello from SOCK_Stream = %@\n", this));
+    ACE_OS::fprintf (stderr, "hello from SOCK_Stream = %@\n", this);
   }
 
   // ...

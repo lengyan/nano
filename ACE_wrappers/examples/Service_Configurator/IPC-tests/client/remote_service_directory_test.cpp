@@ -1,4 +1,4 @@
-// $Id: remote_service_directory_test.cpp 91670 2010-09-08 18:02:26Z johnnyw $
+// $Id: remote_service_directory_test.cpp 80826 2008-03-04 14:51:23Z wotte $
 
 // Test program for the INET IPC-SAPs...
 
@@ -10,6 +10,8 @@
 #include "ace/INET_Addr.h"
 #include "ace/Get_Opt.h"
 #include "ace/Log_Msg.h"
+
+ACE_RCSID(client, remote_service_directory_test, "$Id: remote_service_directory_test.cpp 80826 2008-03-04 14:51:23Z wotte $")
 
 // Port number to use.
 static unsigned short port_number = ACE_DEFAULT_SERVICE_PORT;

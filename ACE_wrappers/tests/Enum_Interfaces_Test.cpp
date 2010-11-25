@@ -1,5 +1,5 @@
 /* -*- C++ -*- */
-// $Id: Enum_Interfaces_Test.cpp 91671 2010-09-08 18:39:23Z johnnyw $
+// $Id: Enum_Interfaces_Test.cpp 83501 2008-10-30 12:16:38Z johnnyw $
 
 // ============================================================================
 //
@@ -31,7 +31,7 @@
 #include "ace/OS_NS_sys_utsname.h"
 #include "ace/INET_Addr.h"
 
-
+ACE_RCSID(tests, Enum_Interfaces_Test, "$Id: Enum_Interfaces_Test.cpp 83501 2008-10-30 12:16:38Z johnnyw $")
 
 int
 run_main (int, ACE_TCHAR *[])

@@ -3,7 +3,7 @@
 	ProjectType="Visual C++"
 	Version="8.00"
 	Name="Threads_Reader_Writer"
-	ProjectGUID="{8B175855-FECA-1BAD-3731-D8978C8E5D14}"
+	ProjectGUID="{8B175855-FECA-1BAD-3731-D89758186E24}"
 	RootNamespace="Threads_Reader_Writer"
 	Keyword="Win32Proj"
 	SignManifests="true"

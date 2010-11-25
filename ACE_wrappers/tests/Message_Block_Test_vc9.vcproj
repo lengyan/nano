@@ -3,7 +3,7 @@
 	ProjectType="Visual C++"
 	Version="9.00"
 	Name="Message_Block_Test"
-	ProjectGUID="{0BDFE193-FECA-1BAD-2431-8A1100722433}"
+	ProjectGUID="{0BDFE193-FECA-1BAD-2431-8A11337F6D50}"
 	RootNamespace="Message_Block_Test"
 	Keyword="Win32Proj"
 	SignManifests="true"

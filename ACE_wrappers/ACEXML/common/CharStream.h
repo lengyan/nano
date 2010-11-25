@@ -4,7 +4,7 @@
 /**
  *  @file    CharStream.h
  *
- *  $Id: CharStream.h 91257 2010-08-03 11:54:04Z johnnyw $
+ *  $Id: CharStream.h 80826 2008-03-04 14:51:23Z wotte $
  *
  *  @author Nanbor Wang <nanbor@cs.wustl.edu>
  */
@@ -35,7 +35,7 @@ public:
   /**
    * Virtual destructor, must have.
    */
-  virtual ~ACEXML_CharStream (void) = 0;
+  virtual ~ACEXML_CharStream () = 0;
 
   /**
    * Returns the available ACEXML_Char in the buffer.  -1

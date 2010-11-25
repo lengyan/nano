@@ -1,4 +1,4 @@
-// $Id: test.cpp 91671 2010-09-08 18:39:23Z johnnyw $
+// $Id: test.cpp 80826 2008-03-04 14:51:23Z wotte $
 
 // Tests the generated perfect hash function.
 
@@ -8,7 +8,7 @@
 #include "ace/OS_NS_string.h"
 #include "ace/OS_NS_stdio.h"
 
-
+ACE_RCSID(tests, test, "$Id: test.cpp 80826 2008-03-04 14:51:23Z wotte $")
 
 static const int MAX_LEN = 80;
 

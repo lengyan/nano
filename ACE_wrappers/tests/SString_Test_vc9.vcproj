@@ -3,7 +3,7 @@
 	ProjectType="Visual C++"
 	Version="9.00"
 	Name="SString_Test"
-	ProjectGUID="{4D632318-FECA-1BAD-2431-8A1100722433}"
+	ProjectGUID="{4D632318-FECA-1BAD-2431-8A11337F6D50}"
 	RootNamespace="SString_Test"
 	Keyword="Win32Proj"
 	SignManifests="true"

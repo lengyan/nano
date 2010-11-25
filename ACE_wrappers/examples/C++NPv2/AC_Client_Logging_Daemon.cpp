@@ -1,5 +1,5 @@
 /*
-** $Id: AC_Client_Logging_Daemon.cpp 91813 2010-09-17 07:52:52Z johnnyw $
+** $Id: AC_Client_Logging_Daemon.cpp 82610 2008-08-12 19:46:36Z parsons $
 **
 ** Copyright 2002 Addison Wesley. All Rights Reserved.
 */
@@ -285,7 +285,7 @@ int AC_Input_Handler::handle_input (ACE_HANDLE handle) {
           mblk->release ();
         }
     }
-
+    
   return -1; // Error return.
 }
 

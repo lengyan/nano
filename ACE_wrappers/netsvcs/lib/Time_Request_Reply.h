@@ -4,7 +4,7 @@
 /**
  *  @file    Time_Request_Reply.h
  *
- *  $Id: Time_Request_Reply.h 91688 2010-09-09 11:21:50Z johnnyw $
+ *  $Id: Time_Request_Reply.h 84498 2009-02-17 18:08:47Z johnnyw $
  *
  *  Define the format used to exchange messages between the
  *  ACE time server and clerks.
@@ -57,6 +57,13 @@ public:
   ACE_Time_Request (ACE_INT32 msg_type,
                     const time_t time,
                     ACE_Time_Value *timeout = 0);
+
+  /**
+   * Initialize length_ in order to ensure correct byte ordering before a
+   * request is sent.
+   * @deprecated This method is a no-op.
+   */
+  void init (void);
 
   // Get the fixed size of message
   ssize_t size (void) const;

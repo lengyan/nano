@@ -1,4 +1,4 @@
-// $Id: Octet_Test.cpp 91670 2010-09-08 18:02:26Z johnnyw $
+// $Id: Octet_Test.cpp 80826 2008-03-04 14:51:23Z wotte $
 
 // ============================================================================
 //
@@ -43,6 +43,8 @@ DAMAGES.
 #include "ace/OS_NS_string.h"
 #include "asnmp/octet.h"
 #include "test_config.h"
+
+ACE_RCSID(tests, Octet_Test, "$Id: Octet_Test.cpp 80826 2008-03-04 14:51:23Z wotte $")
 
 /*
   OctetStr( const char *string, long size = -1);

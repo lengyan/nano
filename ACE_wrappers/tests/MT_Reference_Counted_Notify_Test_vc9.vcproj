@@ -3,7 +3,7 @@
 	ProjectType="Visual C++"
 	Version="9.00"
 	Name="MT_Reference_Counted_Notify_Test"
-	ProjectGUID="{48F2713A-FECA-1BAD-2431-8A1100722433}"
+	ProjectGUID="{48F2713A-FECA-1BAD-2431-8A11337F6D50}"
 	RootNamespace="MT_Reference_Counted_Notify_Test"
 	Keyword="Win32Proj"
 	SignManifests="true"

@@ -1,5 +1,5 @@
 #! /usr/bin/perl
-# $Id: Process_Win32.pm 91813 2010-09-17 07:52:52Z johnnyw $
+# $Id: Process_Win32.pm 90204 2010-05-20 21:51:54Z mitza $
 
 use PerlACE::Run_Test;
 
@@ -459,7 +459,7 @@ sub kill_all
   my $procmask = shift;
   my $target = shift;
   my $pid = -1;
-  for my $line (`tasklist /nh /fo csv`) {
+  for my $line (`tasklist /nh /fo csv`) {    
     # find matching process line
     if ($line =~ /$procmask/) {
       # find process PID

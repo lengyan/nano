@@ -1,5 +1,5 @@
 /* -*- C++ -*- */
-// $Id: Magazine.h 91743 2010-09-13 18:24:51Z johnnyw $
+// $Id: Magazine.h 80826 2008-03-04 14:51:23Z wotte $
 
 // ===========================================================
 //
@@ -11,7 +11,7 @@
 //    Magazine.h
 //
 // = DESCRIPTION
-//    Abstract class whose methods are implemented by the derived
+//    Abstract class whose methods are implemented by the derived 
 //    classes.
 //
 // = AUTHOR
@@ -22,19 +22,19 @@
 #ifndef MAGAZINE_H
 #define MAGAZINE_H
 
-class Magazine
+class Magazine 
 {
-  // = TITLE
+  // = TITLE 
   //   This is an abstract class used in the DLL example.
   //
-  // = DESCRIPTION
-  //   This class simply is an inetrface which the derived classes
+  // = DESCRIPTION 
+  //   This class simply is an inetrface which the derived classes 
   //   will exploit.
 public:
 
   virtual ~Magazine (void) {};
   // No-op virtual destructor.
-
+  
   virtual void title (void) = 0;
   // This method gives the title of the magazine.
 };

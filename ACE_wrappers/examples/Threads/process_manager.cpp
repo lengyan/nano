@@ -1,4 +1,4 @@
-// $Id: process_manager.cpp 91670 2010-09-08 18:02:26Z johnnyw $
+// $Id: process_manager.cpp 80826 2008-03-04 14:51:23Z wotte $
 
 // ============================================================================
 //
@@ -32,6 +32,8 @@
 #include "ace/Thread_Manager.h"
 #include "ace/Process_Manager.h"
 #include "ace/Get_Opt.h"
+
+ACE_RCSID(Threads, process_manager, "$Id: process_manager.cpp 80826 2008-03-04 14:51:23Z wotte $")
 
 class ExitHandler : public ACE_Event_Handler
 {

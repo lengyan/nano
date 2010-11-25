@@ -1,4 +1,4 @@
-// $Id: Process_Semaphore_Test.cpp 91671 2010-09-08 18:39:23Z johnnyw $
+// $Id: Process_Semaphore_Test.cpp 90501 2010-06-09 14:44:52Z mitza $
 
 // ============================================================================
 //
@@ -36,7 +36,7 @@
 #include "ace/OS_NS_stdlib.h"
 #include "ace/SString.h"
 
-
+ACE_RCSID(tests, Process_Semaphore_Test, "$Id: Process_Semaphore_Test.cpp 90501 2010-06-09 14:44:52Z mitza $")
 
 #if !defined (ACE_LACKS_FORK)
 static int iterations = 10;

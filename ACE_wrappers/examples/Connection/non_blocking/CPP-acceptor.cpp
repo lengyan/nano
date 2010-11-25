@@ -1,4 +1,4 @@
-// $Id: CPP-acceptor.cpp 91671 2010-09-08 18:39:23Z johnnyw $
+// $Id: CPP-acceptor.cpp 80826 2008-03-04 14:51:23Z wotte $
 
 #if !defined (CPP_ACCEPTOR_C)
 
@@ -9,7 +9,7 @@
 #include "ace/OS_NS_unistd.h"
 #include "ace/Signal.h"
 
-
+ACE_RCSID(non_blocking, CPP_acceptor, "$Id: CPP-acceptor.cpp 80826 2008-03-04 14:51:23Z wotte $")
 
 #define PR_ST_1 ACE_PEER_STREAM_1
 #define PR_ST_2 ACE_PEER_STREAM_2

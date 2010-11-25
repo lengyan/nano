@@ -1,4 +1,4 @@
-// $Id: Map_Manager_Test.cpp 92097 2010-09-30 05:41:49Z msmit $
+// $Id: Map_Manager_Test.cpp 85253 2009-05-01 17:53:12Z johnnyw $
 
 // ============================================================================
 //
@@ -27,6 +27,9 @@
 #include "ace/Profile_Timer.h"
 #include "ace/Hash_Cache_Map_Manager_T.h"
 #include "ace/Caching_Strategies_T.h"
+#include "ace/Pair_T.h"
+
+ACE_RCSID(tests, Map_Manager_Test, "$Id: Map_Manager_Test.cpp 85253 2009-05-01 17:53:12Z johnnyw $")
 
 typedef ACE_Null_Mutex MUTEX;
 typedef ACE_UINT32 TYPE;
@@ -56,11 +59,11 @@ typedef ACE_Hash_Map_Entry <TYPE, TYPE>
 typedef ACE_Active_Map_Manager <TYPE>
         ACTIVE_MAP_MANAGER;
 
-typedef ACE_Hash_Map_Manager_Ex<TYPE, std::pair<TYPE, int>, HASH_KEY, COMPARE_KEYS, MUTEX>
+typedef ACE_Hash_Map_Manager_Ex<TYPE, ACE_Pair<TYPE, int>, HASH_KEY, COMPARE_KEYS, MUTEX>
         CACHE_MAP_IMPL;
-typedef ACE_Hash_Map_Iterator_Ex<TYPE, std::pair<TYPE, int>, HASH_KEY, COMPARE_KEYS, MUTEX>
+typedef ACE_Hash_Map_Iterator_Ex<TYPE, ACE_Pair<TYPE, int>, HASH_KEY, COMPARE_KEYS, MUTEX>
         CACHE_ITER_IMPL;
-typedef ACE_Hash_Map_Reverse_Iterator_Ex<TYPE, std::pair<TYPE, int>, HASH_KEY, COMPARE_KEYS, MUTEX>
+typedef ACE_Hash_Map_Reverse_Iterator_Ex<TYPE, ACE_Pair<TYPE, int>, HASH_KEY, COMPARE_KEYS, MUTEX>
         CACHE_REV_ITER_IMPL;
 typedef int ATTR;
 typedef ACE_Null_Cleanup_Strategy<TYPE, TYPE, CACHE_MAP_IMPL>

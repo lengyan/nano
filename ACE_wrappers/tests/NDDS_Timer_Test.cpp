@@ -1,4 +1,4 @@
-// $Id: NDDS_Timer_Test.cpp 91671 2010-09-08 18:39:23Z johnnyw $
+// $Id: NDDS_Timer_Test.cpp 89696 2010-03-29 13:33:41Z johnnyw $
 //============================================================================
 //
 // = LIBRARY
@@ -24,7 +24,7 @@
 #include <ndds/ndds_cpp.h>
 #include <ndds/clock/clock_highResolution.h>
 
-
+ACE_RCSID(tests, NDDS_Timer_Test, "$Id: NDDS_Timer_Test.cpp 89696 2010-03-29 13:33:41Z johnnyw $")
 
 static
 u_int

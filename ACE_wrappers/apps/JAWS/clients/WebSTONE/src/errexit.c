@@ -1,4 +1,4 @@
-/* $Id: errexit.c 91813 2010-09-17 07:52:52Z johnnyw $ */
+/* $Id: errexit.c 81998 2008-06-17 09:31:15Z sma $ */
 /**************************************************************************
  *
  *     Copyright (C) 1995 Silicon Graphics, Inc.
@@ -84,7 +84,7 @@ va_list args;
     va_start(args, format);
     VPRINTF(debugfile, format, args);
     va_end(args);
-
+    
     fflush(debugfile);
     return 0;
 }
@@ -101,6 +101,6 @@ static char buf[200];
     sprintf(buf, "errno = %d: %s", errno, strerror(errno));
     errno = 0;
 #endif /* WIN32 */
-
+   
     return buf;
 }

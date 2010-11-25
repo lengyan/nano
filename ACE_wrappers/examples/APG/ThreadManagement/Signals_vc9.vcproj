@@ -3,7 +3,7 @@
 	ProjectType="Visual C++"
 	Version="9.00"
 	Name="Signals"
-	ProjectGUID="{A17F19C5-FECA-1BAD-B689-C9110A2960DF}"
+	ProjectGUID="{A17F19C5-FECA-1BAD-B689-C911392429BC}"
 	RootNamespace="Signals"
 	Keyword="Win32Proj"
 	SignManifests="true"

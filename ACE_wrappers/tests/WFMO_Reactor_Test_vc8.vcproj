@@ -3,7 +3,7 @@
 	ProjectType="Visual C++"
 	Version="8.00"
 	Name="WFMO_Reactor_Test"
-	ProjectGUID="{AF121C87-FECA-1BAD-2431-8A1100722433}"
+	ProjectGUID="{AF121C87-FECA-1BAD-2431-8A11337F6D50}"
 	RootNamespace="WFMO_Reactor_Test"
 	Keyword="Win32Proj"
 	SignManifests="true"

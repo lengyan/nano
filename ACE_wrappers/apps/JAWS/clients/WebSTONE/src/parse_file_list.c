@@ -1,4 +1,4 @@
-/* $Id: parse_file_list.c 91813 2010-09-17 07:52:52Z johnnyw $ */
+/* $Id: parse_file_list.c 81994 2008-06-16 21:23:17Z sowayaa $ */
 /**************************************************************************
  *
  *  Copyright (C) 1995 Silicon Graphics, Inc.
@@ -157,7 +157,7 @@ parse_file_list (const char *url_list_file, page_list_t *page_list,
           loadnum = 0;
 
           if (textvalue != 0)
-            {
+            { 
               /* is there more? */
               /* check for weighting factor */
               D_PRINTF( "Setting page values from: %s\n", textvalue );

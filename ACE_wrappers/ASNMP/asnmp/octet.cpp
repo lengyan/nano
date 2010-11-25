@@ -1,4 +1,4 @@
-// $Id: octet.cpp 91670 2010-09-08 18:02:26Z johnnyw $
+// $Id: octet.cpp 80826 2008-03-04 14:51:23Z wotte $
 
 // ============================================================================
 //
@@ -39,6 +39,8 @@
 #include "ace/OS_NS_stdio.h"
 #include "ace/OS_NS_ctype.h"
 #include "ace/os_include/os_ctype.h"
+
+ACE_RCSID(asnmp, octet, "$Id: octet.cpp 80826 2008-03-04 14:51:23Z wotte $")
 
 //============[ syntax type ]=========================================
 SmiUINT32 OctetStr::get_syntax()

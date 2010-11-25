@@ -1,4 +1,4 @@
-// $Id: StreamFactory.cpp 91671 2010-09-08 18:39:23Z johnnyw $
+// $Id: StreamFactory.cpp 80826 2008-03-04 14:51:23Z wotte $
 
 #include "ace/OS_NS_string.h"
 
@@ -10,7 +10,7 @@
 #include "ACEXML/common/ZipCharStream.h"
 #endif /* USE_ZZIP */
 
-
+ACE_RCSID (common, StreamFactory, "$Id: StreamFactory.cpp 80826 2008-03-04 14:51:23Z wotte $")
 
 ACEXML_CharStream*
 ACEXML_StreamFactory::create_stream (const ACEXML_Char* uri)

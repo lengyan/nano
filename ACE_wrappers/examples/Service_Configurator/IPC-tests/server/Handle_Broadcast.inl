@@ -1,5 +1,5 @@
 /* -*- C++ -*- */
-// $Id: Handle_Broadcast.inl 91813 2010-09-17 07:52:52Z johnnyw $
+// $Id: Handle_Broadcast.inl 82574 2008-08-08 19:35:06Z parsons $
 
 #include "ace/Get_Opt.h"
 #include "ace/Truncate.h"
@@ -50,7 +50,7 @@ Handle_Broadcast::info (ACE_TCHAR **strp, size_t length) const
     {
       ACE_OS::strncpy (*strp, buf, length);
     }
-
+    
   return ACE_Utils::truncate_cast<int> (ACE_OS::strlen (buf));
 }
 

@@ -38,7 +38,8 @@
 <%if(exename || sharedname || staticname)%>
     <OutputType><%if(exename)%><%if(winapp)%>Win<%endif%>Exe<%else%>Library<%endif%></OutputType>
 <%endif%>
-    <RootNamespace><%project_name%></RootNamespace>
+    <RootNamespace>
+    </RootNamespace>
     <RunPostBuildEvent>OnBuildSuccess</RunPostBuildEvent>
     <StartupObject><%startupobject%></StartupObject>
     <ReferencePath><%foreach(libpaths)%><%libpath%><%fornotlast(";")%><%endfor%></ReferencePath>
@@ -48,9 +49,6 @@
     </UpgradeBackupLocation>
 <%if(TargetFrameworkVersion)%>
     <TargetFrameworkVersion>v<%TargetFrameworkVersion%></TargetFrameworkVersion>
-<%endif%>
-<%if(TargetFrameworkProfile)%>
-    <TargetFrameworkProfile><%TargetFrameworkProfile%></TargetFrameworkProfile>
 <%endif%>
   </PropertyGroup>
 <%foreach(platforms)%>
@@ -70,9 +68,8 @@
     <DebugSymbols><%if(optimize)%>false<%else%>true<%endif%></DebugSymbols>
     <FileAlignment>4096</FileAlignment>
     <NoStdLib>false</NoStdLib>
-<%if(DisableSpecificWarnings)%>
-    <NoWarn><%foreach(DisableSpecificWarnings)%><%DisableSpecificWarning%><%fornotlast(";")%><%endfor%></NoWarn>
-<%endif%>
+    <NoWarn>
+    </NoWarn>
     <Optimize><%if(optimize)%>true<%else%>false<%endif%></Optimize>
     <RegisterForComInterop><%RegisterForComInterop("false")%></RegisterForComInterop>
     <RemoveIntegerChecks>false</RemoveIntegerChecks>
@@ -83,15 +80,6 @@
   </PropertyGroup>
 <%endfor%>
 <%endfor%>
-<%if(!compares(vcversion, 8.00))%>
-<%foreach(source_files)%>
-<%if(ends_with(source_file, \.manifest))%>
-  <PropertyGroup>
-    <ApplicationManifest><%source_file%></ApplicationManifest>
-  </PropertyGroup>
-<%endif%>
-<%endfor%>
-<%endif%>
   <ItemGroup>
 <%if(after)%>
     <!-- MPC ADD DEPENDENCIES -->
@@ -110,20 +98,6 @@
     <Reference Include="<%lib%>">
       <Name><%lib%></Name>
     </Reference>
-<%endfor%>
-<%foreach(comreferences)%>
-    <COMReference Include="<%comreference->_default%>">
-      <Guid>{<%uc(comreference->guid)%>}</Guid>
-      <VersionMajor><%comreference->majorver("1")%></VersionMajor>
-      <VersionMinor><%comreference->minorver("0")%></VersionMinor>
-      <Lcid><%comreference->lcid("0")%></Lcid>
-      <WrapperTool><%comreference->wrapper("tlbimp")%></WrapperTool>
-      <Isolated><%comreference->isolated("False")%></Isolated>
-      <Private><%comreference->copylocal("False")%></Private>
-<%if(comreference->embed)%>
-      <EmbedInteropTypes><%comreference->embed%></EmbedInteropTypes>
-<%endif%>
-    </COMReference>
 <%endfor%>
   </ItemGroup>
   <ItemGroup>
@@ -156,15 +130,11 @@
 <%endfor%>
 <%foreach(source_files)%>
 <%if(!contains(flag_overrides(source_file, subtype), ^(Form|Component)$))%>
-<%if(!compares(vcversion, 8.00) && ends_with(source_file, \.manifest))%>
-    <None Include="<%source_file%>" />
-<%else%>
     <Compile Include="<%source_file%>">
 <%if(flag_overrides(source_file, dependent_upon))%>
       <DependentUpon><%flag_overrides(source_file, dependent_upon)%></DependentUpon>
 <%endif%>
     </Compile>
-<%endif%>
 <%endif%>
 <%endfor%>
 <%foreach(custom_types)%>
@@ -206,9 +176,6 @@
       <DependentUpon><%basename(resx_file)%></DependentUpon>
     </Compile>
 <%endif%>
-<%endfor%>
-<%foreach(embedded_resource_files)%>
-    <EmbeddedResource Include="<%embedded_resource_file%>" />
 <%endfor%>
 <%foreach(ico_files)%>
     <Content Include="<%ico_file%>" />

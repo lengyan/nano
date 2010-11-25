@@ -1,4 +1,4 @@
-// $Id: Recursive_Condition_Bug_Test.cpp 91673 2010-09-08 18:49:47Z johnnyw $
+// $Id: Recursive_Condition_Bug_Test.cpp 80826 2008-03-04 14:51:23Z wotte $
 
 // ============================================================================
 //
@@ -29,6 +29,10 @@
 #include "ace/Timer_Heap.h"
 #include "ace/Timer_Queue_Adapters.h"
 #include "ace/Condition_Recursive_Thread_Mutex.h"
+
+ACE_RCSID (tests,
+           Recursive_Condition_Bug_Test,
+           "$Id: Recursive_Condition_Bug_Test.cpp 80826 2008-03-04 14:51:23Z wotte $")
 
 #if defined (ACE_HAS_THREADS)
 

@@ -1,4 +1,4 @@
-// $Id: Thread_Bounded_Packet_Relay.cpp 91671 2010-09-08 18:39:23Z johnnyw $
+// $Id: Thread_Bounded_Packet_Relay.cpp 81978 2008-06-16 16:57:12Z sowayaa $
 
 // ============================================================================
 //
@@ -34,7 +34,7 @@ typedef Thread_Bounded_Packet_Relay_Driver::MYCOMMAND DRIVER_CMD;
 typedef ACE_Command_Callback<BPR_Handler_Base, BPR_Handler_Base::ACTION> HANDLER_CMD;
 typedef ACE_Command_Callback<Send_Handler, Send_Handler::ACTION> SEND_HANDLER_CMD;
 
-
+ACE_RCSID(Bounded_Packet_Relay, Thread_Bounded_Packet_Relay, "$Id: Thread_Bounded_Packet_Relay.cpp 81978 2008-06-16 16:57:12Z sowayaa $")
 
 // Constructor.
 
@@ -84,7 +84,7 @@ Text_Input_Device_Wrapper::create_input_message (void)
 {
 
   // Construct a new message block to send.
-  ACE_Message_Block *mb = 0;
+  ACE_Message_Block *mb;
   ACE_NEW_RETURN (mb,
                   ACE_Message_Block (read_length_),
                   0);

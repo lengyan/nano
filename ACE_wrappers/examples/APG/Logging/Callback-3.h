@@ -1,10 +1,9 @@
-// $Id: Callback-3.h 91762 2010-09-14 12:08:05Z shuston $
+// $Id: Callback-3.h 81978 2008-06-16 16:57:12Z sowayaa $
 
 #ifndef APG_CALLBACK3_H
 #define APG_CALLBACK3_H
 
 #include "ace/streams.h"
-#include "ace/CDR_Stream.h"
 #include "ace/Log_Msg.h"
 #include "ace/Log_Msg_Callback.h"
 #include "ace/Log_Record.h"
@@ -51,9 +50,10 @@ public:
           return;
         }
 
-      ACE_OutputCDR cdr;
-      cdr << log_record;
-      if (this->logger_->send_n (cdr.begin ()) == -1)
+      size_t len = log_record.length();
+      log_record.encode ();
+
+      if (this->logger_->send_n ((char *) &log_record, len) == -1)
         {
           delete this->logger_;
           this->logger_ = 0;

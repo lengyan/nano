@@ -1,4 +1,4 @@
-// $Id: test_profile_timer.cpp 91671 2010-09-08 18:39:23Z johnnyw $
+// $Id: test_profile_timer.cpp 81978 2008-06-16 16:57:12Z sowayaa $
 
 #include "ace/OS_main.h"
 #include "ace/Profile_Timer.h"
@@ -6,7 +6,7 @@
 #include "ace/OS_NS_stdlib.h"
 #include "ace/OS_NS_unistd.h"
 
-
+ACE_RCSID(Misc, test_profile_timer, "$Id: test_profile_timer.cpp 81978 2008-06-16 16:57:12Z sowayaa $")
 
 static const int DEFAULT_ITERATIONS = 100000000;
 

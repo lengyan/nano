@@ -1,4 +1,4 @@
-// $Id: Semaphores_1.cpp 91673 2010-09-08 18:49:47Z johnnyw $
+// $Id: Semaphores_1.cpp 80826 2008-03-04 14:51:23Z wotte $
 
 #include "ace/SV_Shared_Memory.h"
 #include "ace/SV_Semaphore_Simple.h"
@@ -6,6 +6,12 @@
 #include "ace/Shared_Memory_Pool.h"
 #include "ace/Malloc_T.h"
 #include "ace/OS_NS_unistd.h"
+
+
+ACE_RCSID (SV_Semaphores,
+           Semaphores_1,
+           "$Id: Semaphores_1.cpp 80826 2008-03-04 14:51:23Z wotte $")
+
 
 #if defined (ACE_HAS_SYSV_IPC) && !defined(ACE_LACKS_SYSV_SHMEM)
 

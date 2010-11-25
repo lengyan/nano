@@ -1,4 +1,4 @@
-// $Id: HTTP_Handler.cpp 91670 2010-09-08 18:02:26Z johnnyw $
+// $Id: HTTP_Handler.cpp 85442 2009-05-27 06:16:27Z johnnyw $
 
 // HTTP_Service.cpp -- simple implementation of the HTTP protocol
 
@@ -10,6 +10,8 @@
 #include "JAWS_IO.h"
 #include "ace/OS_NS_sys_socket.h"
 #include "ace/OS_NS_stdio.h"
+
+ACE_RCSID(server, HTTP_Handler, "$Id: HTTP_Handler.cpp 85442 2009-05-27 06:16:27Z johnnyw $")
 
 HTTP_Handler::HTTP_Handler (JAWS_IO &io,
                             HTTP_Handler_Factory &factory)

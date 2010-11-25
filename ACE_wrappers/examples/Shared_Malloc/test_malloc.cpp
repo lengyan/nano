@@ -1,4 +1,4 @@
-// $Id: test_malloc.cpp 91671 2010-09-08 18:39:23Z johnnyw $
+// $Id: test_malloc.cpp 82610 2008-08-12 19:46:36Z parsons $
 
 // This program tests out all the various ACE_Malloc combinations and
 // the ACE_Allocator_Adapter.
@@ -15,7 +15,7 @@
 #include "Malloc.h"
 #include "Options.h"
 
-
+ACE_RCSID(Shared_Malloc, test_malloc, "$Id: test_malloc.cpp 82610 2008-08-12 19:46:36Z parsons $")
 
 static int
 gen_size (void)
@@ -23,7 +23,7 @@ gen_size (void)
 #if defined (ACE_HAS_THREADS)
   ACE_RANDR_TYPE seed =
     static_cast<ACE_RANDR_TYPE> (reinterpret_cast<uintptr_t> (&seed));
-
+    
   return (
     ACE_Utils::truncate_cast<int> (
       ACE_OS::rand_r (seed) % Options::instance ()->max_msg_size ()) + 1);

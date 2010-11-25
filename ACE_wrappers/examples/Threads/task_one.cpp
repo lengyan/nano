@@ -1,4 +1,4 @@
-// $Id: task_one.cpp 91671 2010-09-08 18:39:23Z johnnyw $
+// $Id: task_one.cpp 81978 2008-06-16 16:57:12Z sowayaa $
 
 // This test program illustrates how the ACE barrier synchronization
 // mechanisms work in conjunction with the ACE_Task and the
@@ -9,7 +9,7 @@
 #include "ace/Task.h"
 #include "ace/Service_Config.h"
 
-
+ACE_RCSID(Threads, task_one, "$Id: task_one.cpp 81978 2008-06-16 16:57:12Z sowayaa $")
 
 #if defined (ACE_HAS_THREADS)
 

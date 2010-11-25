@@ -1,18 +1,19 @@
 // SOCK_Stream.cpp
-// $Id: HTBP_Session.cpp 91730 2010-09-13 09:31:11Z johnnyw $
+// $Id: HTBP_Session.cpp 90511 2010-06-10 01:34:04Z mesnier_p $
 
 #include "ace/Log_Msg.h"
 
 #include "HTBP_Session.h"
 #include "ace/SOCK_Connector.h"
 #include "ace/Event_Handler.h"
-#include "ace/os_include/netinet/os_tcp.h"
 #include "HTBP_Filter.h"
 #include "HTBP_ID_Requestor.h"
 
 #if !defined (__ACE_INLINE__)
 #include "HTBP_Session.inl"
 #endif
+
+ACE_RCSID(HTBP,HTBP_Session,"$Id: HTBP_Session.cpp 90511 2010-06-10 01:34:04Z mesnier_p $")
 
 ACE_BEGIN_VERSIONED_NAMESPACE_DECL
 
@@ -24,7 +25,7 @@ ACE_SYNCH_MUTEX ACE::HTBP::Session::session_id_lock_;
 ACE_UINT32
 ACE::HTBP::Session::next_session_id ()
 {
-  ACE_GUARD_RETURN (ACE_SYNCH_MUTEX, g, ACE::HTBP::Session::session_id_lock_, 0);
+  ACE_Guard<ACE_SYNCH_MUTEX> g(ACE::HTBP::Session::session_id_lock_);
   return ++last_session_id_;
 }
 
@@ -190,7 +191,7 @@ ACE::HTBP::Session::reconnect_i (ACE::HTBP::Channel *s) const
       if (result == -1)
         ACE_DEBUG ((LM_DEBUG, "HTBP::Session::reconnect_i, %p\n", "set_option" ));
 #endif /* ! ACE_LACKS_TCP_NODELAY */
-
+      
     }
   s->register_notifier(this->reactor_);
   if (s == this->inbound_)

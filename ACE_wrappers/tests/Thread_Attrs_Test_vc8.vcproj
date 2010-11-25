@@ -3,7 +3,7 @@
 	ProjectType="Visual C++"
 	Version="8.00"
 	Name="Thread_Attrs_Test"
-	ProjectGUID="{7A93708F-FECA-1BAD-2431-8A1100722433}"
+	ProjectGUID="{7A93708F-FECA-1BAD-2431-8A11337F6D50}"
 	RootNamespace="Thread_Attrs_Test"
 	Keyword="Win32Proj"
 	SignManifests="true"

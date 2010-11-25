@@ -1,5 +1,5 @@
 /* -*- C++ -*- */
-// $Id: FlReactor_Test.cpp 91671 2010-09-08 18:39:23Z johnnyw $
+// $Id: FlReactor_Test.cpp 90263 2010-05-24 14:44:39Z johnnyw $
 
 // ============================================================================
 //
@@ -24,7 +24,7 @@
 
 #include "test_config.h"
 
-
+ACE_RCSID(tests, FlReactor_Test, "$Id: FlReactor_Test.cpp 90263 2010-05-24 14:44:39Z johnnyw $")
 
 
 #include "ace/FlReactor/FlReactor.h"

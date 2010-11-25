@@ -3,7 +3,7 @@
 	ProjectType="Visual C++"
 	Version="9.00"
 	Name="C++NPv2_TP_Reactor_Log_Server"
-	ProjectGUID="{17E3DC03-FECA-1BAD-B750-CBFC9FE5DD75}"
+	ProjectGUID="{17E3DC03-FECA-1BAD-B750-CBFC4B73EE45}"
 	RootNamespace="C++NPv2_TP_Reactor_Log_Server"
 	Keyword="Win32Proj"
 	SignManifests="true"

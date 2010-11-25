@@ -1,10 +1,16 @@
-// $Id: test_spipe_acceptor.cpp 91673 2010-09-08 18:49:47Z johnnyw $
+// $Id: test_spipe_acceptor.cpp 80826 2008-03-04 14:51:23Z wotte $
 
 #include "ace/SPIPE_Acceptor.h"
 #include "ace/SPIPE_Addr.h"
 #include "ace/Service_Config.h"
 
 #include "CPP-acceptor.h"
+
+
+ACE_RCSID (non_blocking,
+           test_spipe_acceptor,
+           "$Id: test_spipe_acceptor.cpp 80826 2008-03-04 14:51:23Z wotte $")
+
 
 #if !defined (ACE_WIN32)
 typedef Svc_Handler<ACE_SPIPE_STREAM> SVC_HANDLER;

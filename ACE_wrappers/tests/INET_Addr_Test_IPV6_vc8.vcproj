@@ -3,7 +3,7 @@
 	ProjectType="Visual C++"
 	Version="8.00"
 	Name="INET_Addr_Test_IPV6"
-	ProjectGUID="{32F16F6C-FECA-1BAD-2431-8A1100722433}"
+	ProjectGUID="{32F16F6C-FECA-1BAD-2431-8A11337F6D50}"
 	RootNamespace="INET_Addr_Test_IPV6"
 	Keyword="Win32Proj"
 	SignManifests="true"

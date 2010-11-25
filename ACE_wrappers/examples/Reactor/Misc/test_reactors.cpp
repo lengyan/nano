@@ -1,4 +1,4 @@
-// $Id: test_reactors.cpp 91671 2010-09-08 18:39:23Z johnnyw $
+// $Id: test_reactors.cpp 80826 2008-03-04 14:51:23Z wotte $
 
 // Perform a torture test of multiple ACE_Reactors and ACE_Tasks in
 // the same process...  Thanks to Detlef Becker for contributing this.
@@ -8,7 +8,7 @@
 #include "ace/Task.h"
 #include "ace/Atomic_Op.h"
 
-
+ACE_RCSID(Misc, test_reactors, "$Id: test_reactors.cpp 80826 2008-03-04 14:51:23Z wotte $")
 
 #if defined (ACE_HAS_THREADS)
 

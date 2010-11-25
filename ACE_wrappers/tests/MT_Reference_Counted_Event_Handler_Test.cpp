@@ -1,4 +1,4 @@
-// $Id: MT_Reference_Counted_Event_Handler_Test.cpp 91671 2010-09-08 18:39:23Z johnnyw $
+// $Id: MT_Reference_Counted_Event_Handler_Test.cpp 90004 2010-04-26 09:08:04Z vzykov $
 
 // ============================================================================
 //
@@ -43,7 +43,7 @@
 #include "ace/OS_NS_sys_socket.h"
 #include "ace/OS_NS_unistd.h"
 
-
+ACE_RCSID(tests, MT_Reference_Counted_Event_Handler_Test, "$Id: MT_Reference_Counted_Event_Handler_Test.cpp 90004 2010-04-26 09:08:04Z vzykov $")
 
 #if defined (ACE_HAS_THREADS)
 

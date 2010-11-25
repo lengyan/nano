@@ -1,4 +1,4 @@
-// $Id: Message_Queue_Test.cpp 91685 2010-09-09 09:35:14Z johnnyw $
+// $Id: Message_Queue_Test.cpp 87795 2009-11-26 13:33:44Z johnnyw $
 
 // ============================================================================
 //
@@ -43,7 +43,7 @@
 #include "ace/OS_NS_sys_time.h"
 #include "ace/OS_NS_unistd.h"
 
-
+ACE_RCSID(tests, Message_Queue_Test, "$Id: Message_Queue_Test.cpp 87795 2009-11-26 13:33:44Z johnnyw $")
 
 const ACE_TCHAR usage[] = ACE_TEXT ("usage: Message_Queue_Test <number of messages>\n");
 
@@ -327,9 +327,13 @@ iterator_test (void)
   // Use queue size from of 32 Kb (more if using wide-char), instead of the
   // default of 16 Kb (defined by ACE_Message_Queue_Base::DEFAULT_HWM),
   // so that the test runs on machines with 8Kb pagesizes.
-
+#if !defined(_UNICOS)
   //  QUEUE queue (32 * 1024 * sizeof (ACE_TCHAR));
   QUEUE queue (sizeof(buffer));
+#else
+  // this works on the Cray, where BUFSIZ is defined as 32Kb
+  QUEUE queue (ITERATIONS * BUFSIZ - 1);
+#endif
 
   int i;
 

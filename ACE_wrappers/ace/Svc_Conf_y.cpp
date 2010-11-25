@@ -1,4 +1,3 @@
-// $Id: Svc_Conf_y.cpp 91368 2010-08-16 13:03:34Z mhengstmengel $
 /* A Bison parser, made by GNU Bison 2.3.  */
 
 /* Skeleton implementation for Bison's Yacc-like parsers in C
@@ -105,7 +104,7 @@
 /* Copy the first part of user declarations.  */
 
 
-// $Id: Svc_Conf_y.cpp 91368 2010-08-16 13:03:34Z mhengstmengel $
+// $Id: Svc_Conf_y.cpp 82137 2008-06-23 15:30:20Z sma $
 
 #include "ace/Svc_Conf.h"
 
@@ -116,6 +115,9 @@
 #include "ace/Service_Types.h"
 #include "ace/ace_wchar.h"
 
+ACE_RCSID (ace,
+           Svc_Conf_y,
+           "$Id: Svc_Conf_y.cpp 82137 2008-06-23 15:30:20Z sma $")
 
 ACE_BEGIN_VERSIONED_NAMESPACE_DECL
 

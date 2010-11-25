@@ -1,7 +1,12 @@
-// $Id: OS_NS_stdio.cpp 91286 2010-08-05 09:04:31Z johnnyw $
+// $Id: OS_NS_stdio.cpp 86912 2009-10-04 14:26:19Z schmidt $
 
 #include "ace/OS_NS_stdio.h"
 #include "ace/OS_NS_Thread.h"
+
+ACE_RCSID (ace,
+           OS_NS_stdio,
+           "$Id: OS_NS_stdio.cpp 86912 2009-10-04 14:26:19Z schmidt $")
+
 
 #if !defined (ACE_HAS_INLINED_OSCALLS)
 # include "ace/OS_NS_stdio.inl"

@@ -1,5 +1,5 @@
 #! /usr/bin/perl
-# $Id: TestTarget.pm 91813 2010-09-17 07:52:52Z johnnyw $
+# $Id: TestTarget.pm 90487 2010-06-08 22:02:49Z mitza $
 #
 # The TestTarget class is for operations that are per-target while testing.
 # They can be overridden for specific needs like embedded systems, etc.
@@ -447,7 +447,7 @@ sub KillAll ($)
 {
     my $self = shift;
     my $procmask = shift;
-    PerlACE::Process::kill_all ($procmask, $self);
+    PerlACE::Process::kill_all ($procmask, $self);    
 }
 
 1;

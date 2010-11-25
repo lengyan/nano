@@ -1,4 +1,4 @@
-// $Id: Based_Pointer_Test.cpp 91750 2010-09-14 09:40:06Z johnnyw $
+// $Id: Based_Pointer_Test.cpp 90501 2010-06-09 14:44:52Z mitza $
 
 // ============================================================================
 //
@@ -19,6 +19,7 @@
 #include "test_config.h"
 #include "ace/DLL.h"
 #include "ace/ACE.h"
+#include "ace/OS.h"
 #ifdef ACE_HAS_POSITION_INDEPENDENT_POINTERS
 #include "ace/Based_Pointer_Repository.h"
 #endif /* ACE_HAS_POSITION_INDEPENDENT_POINTERS */
@@ -28,7 +29,10 @@
 #include "ace/Null_Mutex.h"
 #include "ace/Based_Pointer_T.h"
 #include "ace/SString.h"
-#include "ace/OS_NS_unistd.h"
+
+ACE_RCSID (tests,
+           Based_Pointer_Repository_Test,
+           "$Id: Based_Pointer_Test.cpp 90501 2010-06-09 14:44:52Z mitza $")
 
 class Foo
 {

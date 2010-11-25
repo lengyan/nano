@@ -1,4 +1,4 @@
-// $Id: RB_Tree_Test.cpp 91671 2010-09-08 18:39:23Z johnnyw $
+// $Id: RB_Tree_Test.cpp 80826 2008-03-04 14:51:23Z wotte $
 
 // ============================================================================
 //
@@ -33,7 +33,7 @@
 
 #include "RB_Tree_Test.h"
 
-
+ACE_RCSID(tests, RB_Tree_Test, "$Id: RB_Tree_Test.cpp 80826 2008-03-04 14:51:23Z wotte $")
 
 // Type definitions for the four distinct parameterizations of the
 // test.

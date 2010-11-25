@@ -3,7 +3,7 @@
 /**
  *  @file    main_thread.cpp
  *
- *  $Id: main_thread.cpp 91673 2010-09-08 18:49:47Z johnnyw $
+ *  $Id: main_thread.cpp 90086 2010-05-06 12:02:19Z johnnyw $
  *
  *    Implements an threaded timer queue.
  *    This code exercises the Timer_Queue_Test_Driver class using
@@ -19,6 +19,10 @@
 #include "ace/Auto_Ptr.h"
 #include "Driver.h"
 #include "Thread_Timer_Queue_Test.h"
+
+ACE_RCSID (Timer_Queue,
+           main_thread,
+           "$Id: main_thread.cpp 90086 2010-05-06 12:02:19Z johnnyw $")
 
 typedef Timer_Queue_Test_Driver<Thread_Timer_Queue,
                                 Input_Task,

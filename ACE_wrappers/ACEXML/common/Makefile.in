@@ -104,7 +104,7 @@ am__libACEXML_la_SOURCES_DIST = Attributes.cpp AttributesImpl.cpp \
 	Attributes_Def_Builder.cpp CharStream.cpp ContentHandler.cpp \
 	DTDHandler.cpp DTD_Manager.cpp DefaultHandler.cpp \
 	Element_Def_Builder.cpp Encoding.cpp EntityResolver.cpp \
-	ErrorHandler.cpp Exception.cpp FileCharStream.cpp \
+	Env.cpp ErrorHandler.cpp Exception.cpp FileCharStream.cpp \
 	HttpCharStream.cpp InputSource.cpp Locator.cpp LocatorImpl.cpp \
 	Mem_Map_Stream.cpp NamespaceSupport.cpp SAXExceptions.cpp \
 	StrCharStream.cpp StreamFactory.cpp Transcode.cpp URL_Addr.cpp \
@@ -122,6 +122,7 @@ am__libACEXML_la_SOURCES_DIST = Attributes.cpp AttributesImpl.cpp \
 @BUILD_ACE_FOR_TAO_FALSE@	libACEXML_la-Element_Def_Builder.lo \
 @BUILD_ACE_FOR_TAO_FALSE@	libACEXML_la-Encoding.lo \
 @BUILD_ACE_FOR_TAO_FALSE@	libACEXML_la-EntityResolver.lo \
+@BUILD_ACE_FOR_TAO_FALSE@	libACEXML_la-Env.lo \
 @BUILD_ACE_FOR_TAO_FALSE@	libACEXML_la-ErrorHandler.lo \
 @BUILD_ACE_FOR_TAO_FALSE@	libACEXML_la-Exception.lo \
 @BUILD_ACE_FOR_TAO_FALSE@	libACEXML_la-FileCharStream.lo \
@@ -167,14 +168,14 @@ am__nobase_include_HEADERS_DIST = ACEXML_Export.h Attributes.h \
 	AttributesImpl.h AttributesImpl.inl Attributes_Def_Builder.h \
 	CharStream.h ContentHandler.h DTDHandler.h DTD_Manager.h \
 	DefaultHandler.h Element_Def_Builder.h Encoding.h \
-	EntityResolver.h ErrorHandler.h Exception.h Exception.inl \
-	FileCharStream.h HttpCharStream.h InputSource.h Locator.h \
-	LocatorImpl.h LocatorImpl.inl Mem_Map_Stream.h \
+	EntityResolver.h Env.h Env.inl ErrorHandler.h Exception.h \
+	Exception.inl FileCharStream.h HttpCharStream.h InputSource.h \
+	Locator.h LocatorImpl.h LocatorImpl.inl Mem_Map_Stream.h \
 	NamespaceSupport.h SAXExceptions.h SAXExceptions.inl \
 	StrCharStream.h StreamFactory.h Transcode.h URL_Addr.h \
 	URL_Addr.inl Validator.h XMLFilter.h XMLFilterImpl.h \
-	XMLFilterImpl.inl XMLReader.h XML_Codecs.h XML_Types.h \
-	XML_Util.h ZipCharStream.h
+	XMLFilterImpl.inl XMLReader.h XML_Codecs.h XML_Macros.h \
+	XML_Types.h XML_Util.h ZipCharStream.h
 HEADERS = $(nobase_include_HEADERS)
 ETAGS = etags
 CTAGS = ctags
@@ -381,6 +382,7 @@ ACE_ROOT = $(top_srcdir)
 @BUILD_ACE_FOR_TAO_FALSE@  Element_Def_Builder.cpp \
 @BUILD_ACE_FOR_TAO_FALSE@  Encoding.cpp \
 @BUILD_ACE_FOR_TAO_FALSE@  EntityResolver.cpp \
+@BUILD_ACE_FOR_TAO_FALSE@  Env.cpp \
 @BUILD_ACE_FOR_TAO_FALSE@  ErrorHandler.cpp \
 @BUILD_ACE_FOR_TAO_FALSE@  Exception.cpp \
 @BUILD_ACE_FOR_TAO_FALSE@  FileCharStream.cpp \
@@ -421,6 +423,8 @@ ACE_ROOT = $(top_srcdir)
 @BUILD_ACE_FOR_TAO_FALSE@  Element_Def_Builder.h \
 @BUILD_ACE_FOR_TAO_FALSE@  Encoding.h \
 @BUILD_ACE_FOR_TAO_FALSE@  EntityResolver.h \
+@BUILD_ACE_FOR_TAO_FALSE@  Env.h \
+@BUILD_ACE_FOR_TAO_FALSE@  Env.inl \
 @BUILD_ACE_FOR_TAO_FALSE@  ErrorHandler.h \
 @BUILD_ACE_FOR_TAO_FALSE@  Exception.h \
 @BUILD_ACE_FOR_TAO_FALSE@  Exception.inl \
@@ -445,6 +449,7 @@ ACE_ROOT = $(top_srcdir)
 @BUILD_ACE_FOR_TAO_FALSE@  XMLFilterImpl.inl \
 @BUILD_ACE_FOR_TAO_FALSE@  XMLReader.h \
 @BUILD_ACE_FOR_TAO_FALSE@  XML_Codecs.h \
+@BUILD_ACE_FOR_TAO_FALSE@  XML_Macros.h \
 @BUILD_ACE_FOR_TAO_FALSE@  XML_Types.h \
 @BUILD_ACE_FOR_TAO_FALSE@  XML_Util.h \
 @BUILD_ACE_FOR_TAO_FALSE@  ZipCharStream.h
@@ -543,6 +548,7 @@ distclean-compile:
 @AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/libACEXML_la-Element_Def_Builder.Plo@am__quote@
 @AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/libACEXML_la-Encoding.Plo@am__quote@
 @AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/libACEXML_la-EntityResolver.Plo@am__quote@
+@AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/libACEXML_la-Env.Plo@am__quote@
 @AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/libACEXML_la-ErrorHandler.Plo@am__quote@
 @AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/libACEXML_la-Exception.Plo@am__quote@
 @AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/libACEXML_la-FileCharStream.Plo@am__quote@
@@ -661,6 +667,13 @@ libACEXML_la-EntityResolver.lo: EntityResolver.cpp
 @AMDEP_TRUE@@am__fastdepCXX_FALSE@	source='EntityResolver.cpp' object='libACEXML_la-EntityResolver.lo' libtool=yes @AMDEPBACKSLASH@
 @AMDEP_TRUE@@am__fastdepCXX_FALSE@	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) @AMDEPBACKSLASH@
 @am__fastdepCXX_FALSE@	$(LIBTOOL)  --tag=CXX $(AM_LIBTOOLFLAGS) $(LIBTOOLFLAGS) --mode=compile $(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(libACEXML_la_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o libACEXML_la-EntityResolver.lo `test -f 'EntityResolver.cpp' || echo '$(srcdir)/'`EntityResolver.cpp
+
+libACEXML_la-Env.lo: Env.cpp
+@am__fastdepCXX_TRUE@	$(LIBTOOL)  --tag=CXX $(AM_LIBTOOLFLAGS) $(LIBTOOLFLAGS) --mode=compile $(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(libACEXML_la_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT libACEXML_la-Env.lo -MD -MP -MF $(DEPDIR)/libACEXML_la-Env.Tpo -c -o libACEXML_la-Env.lo `test -f 'Env.cpp' || echo '$(srcdir)/'`Env.cpp
+@am__fastdepCXX_TRUE@	$(am__mv) $(DEPDIR)/libACEXML_la-Env.Tpo $(DEPDIR)/libACEXML_la-Env.Plo
+@AMDEP_TRUE@@am__fastdepCXX_FALSE@	source='Env.cpp' object='libACEXML_la-Env.lo' libtool=yes @AMDEPBACKSLASH@
+@AMDEP_TRUE@@am__fastdepCXX_FALSE@	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) @AMDEPBACKSLASH@
+@am__fastdepCXX_FALSE@	$(LIBTOOL)  --tag=CXX $(AM_LIBTOOLFLAGS) $(LIBTOOLFLAGS) --mode=compile $(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(libACEXML_la_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o libACEXML_la-Env.lo `test -f 'Env.cpp' || echo '$(srcdir)/'`Env.cpp
 
 libACEXML_la-ErrorHandler.lo: ErrorHandler.cpp
 @am__fastdepCXX_TRUE@	$(LIBTOOL)  --tag=CXX $(AM_LIBTOOLFLAGS) $(LIBTOOLFLAGS) --mode=compile $(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(libACEXML_la_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT libACEXML_la-ErrorHandler.lo -MD -MP -MF $(DEPDIR)/libACEXML_la-ErrorHandler.Tpo -c -o libACEXML_la-ErrorHandler.lo `test -f 'ErrorHandler.cpp' || echo '$(srcdir)/'`ErrorHandler.cpp

@@ -2,7 +2,7 @@
 /**
  *  @file   Dispatch_Deferrer.h
  *
- *  $Id: Dispatch_Deferrer.h 91688 2010-09-09 11:21:50Z johnnyw $
+ *  $Id: Dispatch_Deferrer.h 80826 2008-03-04 14:51:23Z wotte $
  *
  *  @author Bryan Thrall (thrall@cse.wustl.edu)
  *
@@ -20,10 +20,11 @@
 #include "Kokyu_defs.h"
 #include "ace/Event_Handler.h"
 #include "ace/Thread_Mutex.h"
+#include "ace/Synch_T.h"
 #include "ace/Message_Block.h"
 #include "ace/Message_Queue.h"
 #include "ace/Reactor.h"
-#include "ace/Map_T.h"
+#include "ace/Map.h"
 
 namespace Kokyu
 {

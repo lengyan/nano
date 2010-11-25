@@ -1,4 +1,4 @@
-// $Id: JAWS_IO.cpp 91670 2010-09-08 18:02:26Z johnnyw $
+// $Id: JAWS_IO.cpp 86111 2009-07-19 08:18:09Z johnnyw $
 
 #include "ace/OS_NS_string.h"
 #include "ace/OS_NS_sys_uio.h"
@@ -15,6 +15,11 @@
 #include "ace/OS_NS_sys_stat.h"
 #include "ace/Auto_Ptr.h"
 #include "ace/Basic_Types.h"
+
+ACE_RCSID (server,
+           IO,
+           "$Id: JAWS_IO.cpp 86111 2009-07-19 08:18:09Z johnnyw $")
+
 
 JAWS_IO::JAWS_IO (void)
   : handler_ (0)
@@ -383,7 +388,7 @@ JAWS_Asynch_IO::send_message (const char *buffer,
                               int length,
                               int act)
 {
-  ACE_Message_Block *mb = 0;
+  ACE_Message_Block *mb;
   ACE_NEW (mb, ACE_Message_Block (buffer, length));
 
   if (mb == 0)

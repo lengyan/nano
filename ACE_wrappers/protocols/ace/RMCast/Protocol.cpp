@@ -1,5 +1,6 @@
+// file      : ace/RMCast/Protocol.cpp
 // author    : Boris Kolpackov <boris@kolpackov.net>
-// $Id: Protocol.cpp 91626 2010-09-07 10:59:20Z johnnyw $
+// cvs-id    : $Id: Protocol.cpp 80826 2008-03-04 14:51:23Z wotte $
 
 #include "Protocol.h"
 

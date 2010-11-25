@@ -1,4 +1,4 @@
-// $Id: test_registry_iterator.cpp 91671 2010-09-08 18:39:23Z johnnyw $
+// $Id: test_registry_iterator.cpp 80826 2008-03-04 14:51:23Z wotte $
 
 // This example uses the ACE_Registry class to iterator through the
 // entries in the predefined registries. The host of iteration can be
@@ -16,7 +16,7 @@
 // FUZZ: disable check_for_streams_include
 #include "ace/streams.h"
 
-
+ACE_RCSID(Registry, test_registry_iterator, "$Id: test_registry_iterator.cpp 80826 2008-03-04 14:51:23Z wotte $")
 
 // Indentation while printing names
 static const u_long INDENTATION_LEVEL = 3;

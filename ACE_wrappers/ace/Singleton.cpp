@@ -1,4 +1,4 @@
-// $Id: Singleton.cpp 91368 2010-08-16 13:03:34Z mhengstmengel $
+// $Id: Singleton.cpp 84273 2009-01-30 12:55:25Z johnnyw $
 
 #ifndef ACE_SINGLETON_CPP
 #define ACE_SINGLETON_CPP
@@ -18,6 +18,10 @@
 #include "ace/Framework_Component.h"
 #include "ace/Guard_T.h"
 #include "ace/os_include/os_typeinfo.h"
+
+ACE_RCSID (ace,
+           Singleton,
+           "$Id: Singleton.cpp 84273 2009-01-30 12:55:25Z johnnyw $")
 
 ACE_BEGIN_VERSIONED_NAMESPACE_DECL
 

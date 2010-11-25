@@ -1,4 +1,4 @@
-// $Id: test_signals_1.cpp 91671 2010-09-08 18:39:23Z johnnyw $
+// $Id: test_signals_1.cpp 81978 2008-06-16 16:57:12Z sowayaa $
 
 // This simple program illustrates the difference between handling
 // signals via the Reactor (which doesn't cause the event loop to
@@ -10,7 +10,7 @@
 #include "ace/Log_Msg.h"
 #include "ace/Signal.h"
 
-
+ACE_RCSID(Misc, test_signals_1, "$Id: test_signals_1.cpp 81978 2008-06-16 16:57:12Z sowayaa $")
 
 // Number of times to allow signal to execute until we quit.
 static size_t signal_count = 10;

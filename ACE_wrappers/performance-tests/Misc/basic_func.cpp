@@ -1,6 +1,8 @@
-// $Id: basic_func.cpp 91670 2010-09-08 18:02:26Z johnnyw $
+// $Id: basic_func.cpp 80826 2008-03-04 14:51:23Z wotte $
 
 #include "basic_func.h"
+
+ACE_RCSID(Misc, basic_func, "$Id: basic_func.cpp 80826 2008-03-04 14:51:23Z wotte $")
 
 int A, BB, C, D, E, F;
 

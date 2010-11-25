@@ -1,4 +1,4 @@
-// $Id: trap.cpp 91670 2010-09-08 18:02:26Z johnnyw $
+// $Id: trap.cpp 84565 2009-02-23 08:20:39Z johnnyw $
 
 // ============================================================================
 //
@@ -41,6 +41,8 @@
 
 // FUZZ: disable check_for_streams_include
 #include "ace/streams.h"
+
+ACE_RCSID(trap, trap, "$Id: trap.cpp 84565 2009-02-23 08:20:39Z johnnyw $")
 
 //
 // SNMPv1 Trap Application

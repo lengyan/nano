@@ -3,7 +3,7 @@
 	ProjectType="Visual C++"
 	Version="8.00"
 	Name="TLI_SAP_Db_Server"
-	ProjectGUID="{F85823F5-FECA-1BAD-A742-DAEF32B06A25}"
+	ProjectGUID="{F85823F5-FECA-1BAD-A742-DAEFE6265915}"
 	RootNamespace="TLI_SAP_Db_Server"
 	Keyword="Win32Proj"
 	SignManifests="true"

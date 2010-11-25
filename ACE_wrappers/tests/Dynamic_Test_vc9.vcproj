@@ -3,7 +3,7 @@
 	ProjectType="Visual C++"
 	Version="9.00"
 	Name="Dynamic_Test"
-	ProjectGUID="{58D8176C-FECA-1BAD-2431-8A1100722433}"
+	ProjectGUID="{58D8176C-FECA-1BAD-2431-8A11337F6D50}"
 	RootNamespace="Dynamic_Test"
 	Keyword="Win32Proj"
 	SignManifests="true"

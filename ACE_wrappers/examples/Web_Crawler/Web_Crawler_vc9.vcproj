@@ -3,7 +3,7 @@
 	ProjectType="Visual C++"
 	Version="9.00"
 	Name="Web_Crawler"
-	ProjectGUID="{DDB577DE-FECA-1BAD-4B17-3E25DE61956F}"
+	ProjectGUID="{DDB577DE-FECA-1BAD-4B17-3E25ED5141F9}"
 	RootNamespace="Web_Crawler"
 	Keyword="Win32Proj"
 	SignManifests="true"

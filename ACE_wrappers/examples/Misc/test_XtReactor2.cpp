@@ -1,4 +1,4 @@
-// $Id: test_XtReactor2.cpp 91673 2010-09-08 18:49:47Z johnnyw $
+// $Id: test_XtReactor2.cpp 84677 2009-03-02 14:53:06Z olli $
 
 // The following test exercises the Eric C. Newton's <ecn@clark.net>
 // XtReactor implementation.
@@ -9,6 +9,11 @@
 #include "ace/Message_Block.h"
 #include "ace/Log_Msg.h"
 #include "ace/OS_NS_unistd.h"
+
+ACE_RCSID (Misc,
+           test_XtReactor2,
+           "$Id: test_XtReactor2.cpp 84677 2009-03-02 14:53:06Z olli $")
+
 
 #include <Xm/PushB.h>
 

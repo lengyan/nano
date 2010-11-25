@@ -1,4 +1,4 @@
-// $Id: HTTP_10_Write.cpp 91671 2010-09-08 18:39:23Z johnnyw $
+// $Id: HTTP_10_Write.cpp 80826 2008-03-04 14:51:23Z wotte $
 
 #include "JAWS/JAWS.h"
 #include "JAWS/IO.h"
@@ -9,7 +9,7 @@
 
 #include "HTTP_10_Request.h"
 
-
+ACE_RCSID(PROTOTYPE, HTTP_10_Write, "$Id: HTTP_10_Write.cpp 80826 2008-03-04 14:51:23Z wotte $")
 
 // --------------- WRITE TASK ----------------------
 

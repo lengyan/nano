@@ -1,5 +1,5 @@
 /* -*- C++ -*- */
-// $Id: PCB.h 91743 2010-09-13 18:24:51Z johnnyw $
+// $Id: PCB.h 80826 2008-03-04 14:51:23Z wotte $
 
 #if !defined(PCB_H)
 #define PCB_H
@@ -19,7 +19,7 @@ public:
   virtual int handleEvent (const void *arg);
   virtual int handleCancel (void);
   virtual int handleClose (void);
-
+ 
 private:
   long timerID_;
   int count_;

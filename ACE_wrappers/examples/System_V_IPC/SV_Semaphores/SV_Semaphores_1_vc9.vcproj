@@ -3,7 +3,7 @@
 	ProjectType="Visual C++"
 	Version="9.00"
 	Name="SV_Semaphores_1"
-	ProjectGUID="{5E535F11-FECA-1BAD-BE72-3C5B13526565}"
+	ProjectGUID="{5E535F11-FECA-1BAD-BE72-3C5B7061682C}"
 	RootNamespace="SV_Semaphores_1"
 	Keyword="Win32Proj"
 	SignManifests="true"

@@ -1,4 +1,4 @@
-// $Id: test_ostream.cpp 91671 2010-09-08 18:39:23Z johnnyw $
+// $Id: test_ostream.cpp 80826 2008-03-04 14:51:23Z wotte $
 
 // ============================================================================
 //
@@ -24,7 +24,7 @@
 
 #include "ace/Log_Msg.h"
 
-
+ACE_RCSID(Log_Msg, test_ostream, "$Id: test_ostream.cpp 80826 2008-03-04 14:51:23Z wotte $")
 
 int
 ACE_TMAIN (int, ACE_TCHAR *[])
@@ -76,7 +76,7 @@ ACE_TMAIN (int, ACE_TCHAR *[])
   if (infile.bad ())
     return 1;
 
-  // This loop should print out the contents of file "output", which should
+  // This loop should print out the contents of file "output", which should 
   // have the strings "fourth\n" and "fifth\n" in them.
 
   char line[BUFSIZ];

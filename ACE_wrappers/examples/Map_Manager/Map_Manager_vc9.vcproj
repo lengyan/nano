@@ -3,7 +3,7 @@
 	ProjectType="Visual C++"
 	Version="9.00"
 	Name="Map_Manager"
-	ProjectGUID="{3AA0572D-FECA-1BAD-3A45-311BD15FE43D}"
+	ProjectGUID="{3AA0572D-FECA-1BAD-3A45-311BE26F30AB}"
 	RootNamespace="Map_Manager"
 	Keyword="Win32Proj"
 	SignManifests="true"

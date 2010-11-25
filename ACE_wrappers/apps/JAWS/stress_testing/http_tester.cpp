@@ -1,6 +1,8 @@
-// $Id: http_tester.cpp 91670 2010-09-08 18:02:26Z johnnyw $
+// $Id: http_tester.cpp 81993 2008-06-16 20:26:16Z sowayaa $
 
 #include "client.h"
+
+ACE_RCSID(stress_testing, http_tester, "$Id: http_tester.cpp 81993 2008-06-16 20:26:16Z sowayaa $")
 
 int Client_Parameters::tcp_nodelay;
 int Client_Parameters::sockbufsiz;

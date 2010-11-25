@@ -3,7 +3,7 @@
 	ProjectType="Visual C++"
 	Version="8.00"
 	Name="Sockets_Basic"
-	ProjectGUID="{B6063FF4-FECA-1BAD-D231-FFF6CFB2480C}"
+	ProjectGUID="{B6063FF4-FECA-1BAD-D231-FFF6FC829C9A}"
 	RootNamespace="Sockets_Basic"
 	Keyword="Win32Proj"
 	SignManifests="true"

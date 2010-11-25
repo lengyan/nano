@@ -1,4 +1,4 @@
-// $Id: Sigset_Ops_Test.cpp 91671 2010-09-08 18:39:23Z johnnyw $
+// $Id: Sigset_Ops_Test.cpp 80826 2008-03-04 14:51:23Z wotte $
 
 // ============================================================================
 //
@@ -22,7 +22,7 @@
 #include "ace/OS_NS_signal.h"
 #include "ace/OS_NS_errno.h"
 
-
+ACE_RCSID(tests, Sigset_Ops_Test, "$Id: Sigset_Ops_Test.cpp 80826 2008-03-04 14:51:23Z wotte $")
 
 void
 siglistset (sigset_t x, int *sigset, int can_miss = 0)

@@ -3,7 +3,7 @@
 	ProjectType="Visual C++"
 	Version="9.00"
 	Name="DLL_Newsweek"
-	ProjectGUID="{B8BE24BA-FECA-1BAD-408E-8A636A279EF6}"
+	ProjectGUID="{B8BE24BA-FECA-1BAD-408E-8A6359174A60}"
 	RootNamespace="DLL_Newsweek"
 	Keyword="Win32Proj"
 	SignManifests="true"

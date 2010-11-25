@@ -3,7 +3,7 @@
 	ProjectType="Visual C++"
 	Version="8.00"
 	Name="Fifo_Sap_Msg_Server"
-	ProjectGUID="{EDB3549A-FECA-1BAD-8564-85690EE67112}"
+	ProjectGUID="{EDB3549A-FECA-1BAD-8564-85694785421F}"
 	RootNamespace="Fifo_Sap_Msg_Server"
 	Keyword="Win32Proj"
 	SignManifests="true"

@@ -1,5 +1,5 @@
 /* -*- C++ -*- */
-// $Id: URL_Visitor.h 92097 2010-09-30 05:41:49Z msmit $
+// $Id: URL_Visitor.h 80826 2008-03-04 14:51:23Z wotte $
 
 // ============================================================================
 //
@@ -31,6 +31,7 @@
 #include "ace/Caching_Strategies_T.h"
 #include "ace/Cached_Connect_Strategy_T.h"
 #include "Options.h"
+#include "ace/Pair_T.h"
 
 // Forward declarations.
 class URL_Validation_Visitor;
@@ -238,7 +239,7 @@ protected:
 typedef int ATTRIBUTES;
 typedef ACE_Svc_Handler <ACE_SOCK_STREAM, ACE_NULL_SYNCH>
         Client_Svc_Handler;
-typedef std::pair<Client_Svc_Handler *, ATTRIBUTES>
+typedef ACE_Pair<Client_Svc_Handler *, ATTRIBUTES>
         CACHED_HANDLER;
 typedef ACE_Refcounted_Hash_Recyclable<ACE_INET_Addr>
         ACE_ADDR;
@@ -305,6 +306,51 @@ public:
   URL_CACHE &url_cache (void);
   // Returns a reference to the URL cache.
 
+
+  /*
+
+
+  typedef ACE_Svc_Handler<ACE_SOCK_STREAM, ACE_NULL_SYNCH>
+          Svc_Handler;
+  typedef ACE_Strategy_Connector<Svc_Handler, ACE_SOCK_CONNECTOR>
+          STRAT_CONNECTOR;
+  typedef ACE_Refcounted_Hash_Recyclable<ACE_INET_Addr>
+          REFCOUNTED_HASH_RECYCLABLE_ADDRESS;
+  typedef ACE_NOOP_Creation_Strategy<Svc_Handler>
+          NULL_CREATION_STRATEGY;
+  typedef ACE_NOOP_Concurrency_Strategy<Svc_Handler>
+          NULL_ACTIVATION_STRATEGY;
+
+  typedef ACE_Hash_Map_Manager_Ex<REFCOUNTED_HASH_RECYCLABLE_ADDRESS,\
+                                  ACE_Pair<Svc_Handler *, int>,\
+                                  ACE_Hash<REFCOUNTED_HASH_RECYCLABLE_ADDRESS>, \
+                                  ACE_Equal_To<REFCOUNTED_HASH_RECYCLABLE_ADDRESS>,\
+                                  ACE_Null_Mutex>
+          CONNECTION_HASH_MAP;
+  typedef ACE_Hash_Map_Iterator_Ex<REFCOUNTED_HASH_RECYCLABLE_ADDRESS,\
+                                  ACE_Pair<Svc_Handler *, int>,\
+                                  ACE_Hash<REFCOUNTED_HASH_RECYCLABLE_ADDRESS>, \
+                                  ACE_Equal_To<REFCOUNTED_HASH_RECYCLABLE_ADDRESS>,\
+                                  ACE_Null_Mutex>
+          CONNECTION_HASH_MAP_ITERATOR;
+  typedef ACE_Hash_Map_Reverse_Iterator_Ex<REFCOUNTED_HASH_RECYCLABLE_ADDRESS,\
+                                  ACE_Pair<Svc_Handler *, int>,\
+                                  ACE_Hash<REFCOUNTED_HASH_RECYCLABLE_ADDRESS>, \
+                                  ACE_Equal_To<REFCOUNTED_HASH_RECYCLABLE_ADDRESS>,\
+                                  ACE_Null_Mutex>
+          CONNECTION_HASH_MAP_REVERSE_ITERATOR;
+  typedef ACE_Pair_Caching_Utility <REFCOUNTED_HASH_RECYCLABLE_ADDRESS, \
+                                            ACE_Pair<Svc_Handler *, int>, \
+                                            CONNECTION_HASH_MAP, CONNECTION_HASH_MAP_ITERATOR, int >
+          CACHING_STRATEGY_UTILITY;
+  typedef ACE_LRU_Caching_Strategy<REFCOUNTED_HASH_RECYCLABLE_ADDRESS,\
+                                   ACE_Pair<Svc_Handler *, int>,\
+                                   CONNECTION_HASH_MAP, int,\
+                                   CACHING_STRATEGY_UTILITY >
+          LRU;
+  typedef ACE_Cached_Connect_Strategy_Ex<Svc_Handler,ACE_SOCK_CONNECTOR, LRU,int, ACE_SYNCH_NULL_MUTEX>
+          CACHED_CONNECT_STRATEGY;
+  */
 protected:
   virtual ~URL_Validation_Visitor (void);
   virtual URL_Visitation_Strategy_Factory *make_visitation_strategy_factory (URL &);

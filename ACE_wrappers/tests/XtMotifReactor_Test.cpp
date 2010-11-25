@@ -1,5 +1,5 @@
 /* -*- C++ -*- */
-// $Id: XtMotifReactor_Test.cpp 91673 2010-09-08 18:49:47Z johnnyw $
+// $Id: XtMotifReactor_Test.cpp 84677 2009-03-02 14:53:06Z olli $
 
 // ============================================================================
 //
@@ -28,6 +28,9 @@
 
 #include "test_config.h"
 
+ACE_RCSID (tests,
+           XtMotifReactor_Test,
+           "$Id: XtMotifReactor_Test.cpp 84677 2009-03-02 14:53:06Z olli $")
 #include "ace/XtReactor/XtReactor.h"
 #include "ace/Event_Handler.h"
 #include "ace/Acceptor.h"

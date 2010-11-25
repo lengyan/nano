@@ -3,7 +3,7 @@
 	ProjectType="Visual C++"
 	Version="9.00"
 	Name="Buffer_Stream_Test"
-	ProjectGUID="{61261FE0-FECA-1BAD-2431-8A1100722433}"
+	ProjectGUID="{61261FE0-FECA-1BAD-2431-8A11337F6D50}"
 	RootNamespace="Buffer_Stream_Test"
 	Keyword="Win32Proj"
 	SignManifests="true"

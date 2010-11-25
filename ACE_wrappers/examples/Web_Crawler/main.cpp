@@ -1,4 +1,4 @@
-// $Id: main.cpp 91671 2010-09-08 18:39:23Z johnnyw $
+// $Id: main.cpp 80826 2008-03-04 14:51:23Z wotte $
 
 // ============================================================================
 //
@@ -22,7 +22,7 @@
 #include "Web_Crawler.h"
 #include "Options.h"
 
-
+ACE_RCSID(Web_Crawler, main, "$Id: main.cpp 80826 2008-03-04 14:51:23Z wotte $")
 
 void sig_handler (int)
 {
@@ -31,14 +31,14 @@ void sig_handler (int)
   ACE_OS::abort ();
 }
 
-int
+int 
 ACE_TMAIN (int argc, ACE_TCHAR *argv[])
 {
 #if !defined (ACE_HAS_WINCE)
   ACE_Sig_Action sa ((ACE_SignalHandler) sig_handler, SIGFPE);
 #endif
   Web_Crawler crawler;
-
+  
   if (crawler.open (argc, argv) == -1)
     return 1;
   else if (crawler.run () == -1)

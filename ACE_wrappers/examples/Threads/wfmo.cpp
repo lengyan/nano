@@ -1,4 +1,4 @@
-// $Id: wfmo.cpp 91671 2010-09-08 18:39:23Z johnnyw $
+// $Id: wfmo.cpp 80826 2008-03-04 14:51:23Z wotte $
 
 // This test program illustrates that the Win32
 // <WaitForMultipleObjects> function can be called in multiple
@@ -12,7 +12,7 @@
 #include "ace/OS_NS_unistd.h"
 #include "ace/OS_main.h"
 
-
+ACE_RCSID(Threads, wfmo, "$Id: wfmo.cpp 80826 2008-03-04 14:51:23Z wotte $")
 
 #if defined (ACE_WIN32)
 

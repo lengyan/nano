@@ -1,4 +1,4 @@
-/* $Id: rexec.c 91813 2010-09-17 07:52:52Z johnnyw $ */
+/* $Id: rexec.c 81994 2008-06-16 21:23:17Z sowayaa $ */
 /*
  * Copyright (c) 1994-1995 Ataman Software, Inc.  All rights reserved.
  *
@@ -147,9 +147,9 @@ static void MyOpenService(const char *remote_host)
             returnerr("Invalid IP address %s\n", remote_host);
             return;
         }
-
+        
         server_addr.sin_addr.S_un.S_addr = addr;
-    }
+    } 
     else {
         struct hostent *hent;
 

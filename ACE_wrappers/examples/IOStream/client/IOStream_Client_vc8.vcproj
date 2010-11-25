@@ -3,7 +3,7 @@
 	ProjectType="Visual C++"
 	Version="8.00"
 	Name="IOStream_Client"
-	ProjectGUID="{457E10F5-FECA-1BAD-C7A1-4C9D6A84AD84}"
+	ProjectGUID="{457E10F5-FECA-1BAD-C7A1-4C9DBE129EB4}"
 	RootNamespace="IOStream_Client"
 	Keyword="Win32Proj"
 	SignManifests="true"

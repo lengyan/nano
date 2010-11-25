@@ -3,7 +3,7 @@
 	ProjectType="Visual C++"
 	Version="8.00"
 	Name="Futures"
-	ProjectGUID="{9B461888-FECA-1BAD-EB45-BD55AD295160}"
+	ProjectGUID="{9B461888-FECA-1BAD-EB45-BD5579BF6250}"
 	RootNamespace="Futures"
 	Keyword="Win32Proj"
 	SignManifests="true"

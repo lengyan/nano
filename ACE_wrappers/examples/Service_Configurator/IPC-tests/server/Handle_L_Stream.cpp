@@ -1,6 +1,8 @@
-// $Id: Handle_L_Stream.cpp 91670 2010-09-08 18:02:26Z johnnyw $
+// $Id: Handle_L_Stream.cpp 80826 2008-03-04 14:51:23Z wotte $
 
 #include "Handle_L_Stream.h"
+
+ACE_RCSID(server, Handle_L_Stream, "$Id: Handle_L_Stream.cpp 80826 2008-03-04 14:51:23Z wotte $")
 
 #if !defined (ACE_LACKS_UNIX_DOMAIN_SOCKETS)
 

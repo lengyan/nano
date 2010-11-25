@@ -3,7 +3,7 @@
 	ProjectType="Visual C++"
 	Version="9.00"
 	Name="INET_Addr_Test"
-	ProjectGUID="{BB3B1EE0-FECA-1BAD-2431-8A1100722433}"
+	ProjectGUID="{BB3B1EE0-FECA-1BAD-2431-8A11337F6D50}"
 	RootNamespace="INET_Addr_Test"
 	Keyword="Win32Proj"
 	SignManifests="true"

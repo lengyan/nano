@@ -1,4 +1,4 @@
-dnl $Id: configure.ac 92183 2010-10-08 08:44:15Z olli $
+dnl $Id: configure.ac 89759 2010-04-06 06:07:24Z johnnyw $
 
 dnl An autoconf script to automatically configure ACE.
 dnl Process this file with autoconf to produce a configure script.
@@ -16,7 +16,7 @@ define([ACE_VERSION], patsubst(esyscmd(grep ACE_VERSION ace/Version.h | sed 's/.
 
 AC_INIT([ACE],[ACE_VERSION],[ace-bugs@cs.wustl.edu],[ace])
 
-AC_REVISION([$Id: configure.ac 92183 2010-10-08 08:44:15Z olli $])
+AC_REVISION([$Id: configure.ac 89759 2010-04-06 06:07:24Z johnnyw $])
 
 AC_COPYRIGHT([ACE(TM), TAO(TM), CIAO(TM), and CoSMIC(TM) (henceforth
 referred to as "DOC software") are copyrighted by Douglas C.
@@ -1295,11 +1295,6 @@ AC_CHECK_TYPE([sigset_t],
               [AC_DEFINE([ACE_LACKS_SIGSET], 1,
                          [Define to 1 if the system lacks the type `sigset_t'.])],
               [#include <signal.h>])
-AC_CHECK_TYPE([struct lifnum],
-              [],
-              [AC_DEFINE([ACE_LACKS_STRUCT_LIFNUM], 1,
-                         [Define to 1 if the system uses int instead of `struct lifnum' for SIOCGIFNUM ioctl.])],
-              [#include <net/if.h>])
 AC_CHECK_TYPE([struct utsname],
               [],
               [AC_DEFINE([ACE_LACKS_UTSNAME_T], 1,
@@ -3479,6 +3474,30 @@ if test $ac_cv_func_gethrtime = "yes"; then
                 [],
                 [#include <sys/time.h>])
 fi
+
+AC_CHECK_FUNC([pread],
+  [AC_CHECK_FUNC([pwrite],
+    [
+     AC_DEFINE([ACE_HAS_P_READ_WRITE])
+     dnl Check if _XOPEN_SOURCE=500 macro is needed to make the pread() and
+     dnl pwrite() prototypes visible.
+     ACE_CACHE_CHECK([for pread prototype],
+       [ace_cv_lib_has_pread_prototype],
+       [
+        ace_save_CPPFLAGS="$CPPFLAGS"
+        ace_no_xopen="-U_XOPEN_SOURCE"
+        CPPFLAGS="$CPPFLAGS $ace_no_xopen"
+        AC_EGREP_HEADER([[^_]+pread], [unistd.h],
+          [
+           ace_cv_lib_has_pread_prototype=yes
+          ],
+          [
+           ace_cv_lib_has_pread_prototype=no
+          ])
+        dnl Reset the compiler flags
+        CPPFLAGS="$ace_save_CPPFLAGS"
+       ],,[AC_DEFINE([ACE_LACKS_PREAD_PROTOTYPE])])
+    ],)],)
 
 ACE_CHECK_LACKS_FUNCS(readv writev)
 
@@ -7094,7 +7113,7 @@ the generated ace/config.h file and the following information:
 
   ACE 'configure' Script Information
   ==================================
-  [RCS] translit([$Id: configure.ac 92183 2010-10-08 08:44:15Z olli $], [$"])
+  [RCS] translit([$Id: configure.ac 89759 2010-04-06 06:07:24Z johnnyw $], [$"])
 
 
   ACE Version:        ACE_VERSION

@@ -1,4 +1,4 @@
-# $Id: platform_rtems.x_g++.GNU 91285 2010-08-05 08:29:30Z johnnyw $
+# $Id: platform_rtems.x_g++.GNU 86432 2009-08-09 18:56:15Z johnnyw $
 #
 # RTEMS 4.6.6 and later with GNU g++.
 
@@ -6,6 +6,7 @@ CROSS-COMPILE = 1
 
 debug ?= 1
 optimize ?= 1
+exceptions ?= 1
 threads ?= 1
 pipes ?= 1
 

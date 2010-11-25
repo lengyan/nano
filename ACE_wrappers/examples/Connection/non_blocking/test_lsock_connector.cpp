@@ -1,4 +1,4 @@
-// $Id: test_lsock_connector.cpp 91671 2010-09-08 18:39:23Z johnnyw $
+// $Id: test_lsock_connector.cpp 80826 2008-03-04 14:51:23Z wotte $
 
 #include "ace/LSOCK_Connector.h"
 #include "ace/Log_Msg.h"
@@ -19,7 +19,7 @@ ACE_TMAIN (int, ACE_TCHAR *argv[])
 #include "ace/UNIX_Addr.h"
 #include "CPP-connector.h"
 
-
+ACE_RCSID(non_blocking, test_lsock_connector, "$Id: test_lsock_connector.cpp 80826 2008-03-04 14:51:23Z wotte $")
 
 typedef Peer_Handler<ACE_LSOCK_STREAM> PEER_HANDLER;
 typedef IPC_Client<PEER_HANDLER, ACE_LSOCK_CONNECTOR> IPC_CLIENT;

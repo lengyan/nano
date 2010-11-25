@@ -3,7 +3,7 @@
 	ProjectType="Visual C++"
 	Version="9.00"
 	Name="indirect_logging"
-	ProjectGUID="{4CC82AB1-FECA-1BAD-1120-8ECA0471D6B5}"
+	ProjectGUID="{4CC82AB1-FECA-1BAD-1120-8ECA34A54086}"
 	RootNamespace="indirect_logging"
 	Keyword="Win32Proj"
 	SignManifests="true"

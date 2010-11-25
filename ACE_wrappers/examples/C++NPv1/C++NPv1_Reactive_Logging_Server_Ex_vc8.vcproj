@@ -3,7 +3,7 @@
 	ProjectType="Visual C++"
 	Version="8.00"
 	Name="C++NPv1_Reactive_Logging_Server_Ex"
-	ProjectGUID="{C272FF2E-FECA-1BAD-B753-CBFC9FE5DD76}"
+	ProjectGUID="{C272FF2E-FECA-1BAD-B753-CBFC4B73EE46}"
 	RootNamespace="C++NPv1_Reactive_Logging_Server_Ex"
 	Keyword="Win32Proj"
 	SignManifests="true"

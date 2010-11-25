@@ -1,4 +1,4 @@
-// $Id: SOCK_Send_Recv_Test.cpp 91671 2010-09-08 18:39:23Z johnnyw $
+// $Id: SOCK_Send_Recv_Test.cpp 83501 2008-10-30 12:16:38Z johnnyw $
 
 // ===========================================================================
 //
@@ -34,7 +34,7 @@
 #include "ace/SOCK_Acceptor.h"
 #include "ace/SOCK_Stream.h"
 
-
+ACE_RCSID(tests, SOCK_Send_Recv_Test, "$Id: SOCK_Send_Recv_Test.cpp 83501 2008-10-30 12:16:38Z johnnyw $")
 
 // Change to non-zero if test fails
 static int Test_Result = 0;

@@ -3,7 +3,7 @@
 	ProjectType="Visual C++"
 	Version="9.00"
 	Name="SPIPE_SAP_Consumer_Msg"
-	ProjectGUID="{3B78B83B-FECA-1BAD-A714-C623708DC274}"
+	ProjectGUID="{3B78B83B-FECA-1BAD-A714-C623E6BEF2A0}"
 	RootNamespace="SPIPE_SAP_Consumer_Msg"
 	Keyword="Win32Proj"
 	SignManifests="true"

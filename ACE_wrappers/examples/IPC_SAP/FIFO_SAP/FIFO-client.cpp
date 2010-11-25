@@ -1,4 +1,4 @@
-// $Id: FIFO-client.cpp 91671 2010-09-08 18:39:23Z johnnyw $
+// $Id: FIFO-client.cpp 82610 2008-08-12 19:46:36Z parsons $
 
 #include "ace/FIFO_Send.h"
 #include "ace/Log_Msg.h"
@@ -7,7 +7,7 @@
 #include "ace/OS_NS_stdio.h"
 #include "ace/OS_main.h"
 
-
+ACE_RCSID(FIFO_SAP, FIFO_client, "$Id: FIFO-client.cpp 82610 2008-08-12 19:46:36Z parsons $")
 
 int
 ACE_TMAIN (int, ACE_TCHAR *[])

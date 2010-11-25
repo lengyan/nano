@@ -1,4 +1,4 @@
-// $Id: process_mutex.cpp 91671 2010-09-08 18:39:23Z johnnyw $
+// $Id: process_mutex.cpp 80826 2008-03-04 14:51:23Z wotte $
 
 // This program tests ACE_Process_Mutexes.  To run it, open 3 or 4
 // windows and run this program in each window...
@@ -10,7 +10,7 @@
 #include "ace/Log_Msg.h"
 #include "ace/Process_Mutex.h"
 
-
+ACE_RCSID(Threads, process_mutex, "$Id: process_mutex.cpp 80826 2008-03-04 14:51:23Z wotte $")
 
 #if defined (ACE_HAS_THREADS)
 

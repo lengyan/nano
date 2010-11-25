@@ -1,4 +1,4 @@
-// $Id: preempt.cpp 91670 2010-09-08 18:02:26Z johnnyw $
+// $Id: preempt.cpp 80826 2008-03-04 14:51:23Z wotte $
 
 // ============================================================================
 //
@@ -40,6 +40,8 @@
 #include "ace/OS_NS_time.h"
 #include "ace/OS_NS_errno.h"
 #include "ace/OS_NS_unistd.h"
+
+ACE_RCSID(Misc, preempt, "$Id: preempt.cpp 80826 2008-03-04 14:51:23Z wotte $")
 
 #if defined (ACE_HAS_THREADS) || ! defined (ACE_LACKS_FORK)
 

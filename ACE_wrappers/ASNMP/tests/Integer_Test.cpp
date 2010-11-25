@@ -1,4 +1,4 @@
-// $Id: Integer_Test.cpp 91670 2010-09-08 18:02:26Z johnnyw $
+// $Id: Integer_Test.cpp 80826 2008-03-04 14:51:23Z wotte $
 
 // ============================================================================
 //
@@ -41,6 +41,10 @@ DAMAGES.
 #include "ace/OS_main.h"
 #include "asnmp/integer.h"
 #include "test_config.h"
+
+ACE_RCSID (tests,
+           Integer_Test,
+           "$Id: Integer_Test.cpp 80826 2008-03-04 14:51:23Z wotte $")
 
 #if !defined (ACE_WIN32)
 static long l = LONG_MAX, nl = LONG_MIN;  // limits.h

@@ -3,7 +3,7 @@
 	ProjectType="Visual C++"
 	Version="9.00"
 	Name="asnmp_tests_Target_Test"
-	ProjectGUID="{FB5E099D-FECA-1BAD-2431-8A1182826049}"
+	ProjectGUID="{FB5E099D-FECA-1BAD-2431-8A11E1B16D00}"
 	RootNamespace="asnmp_tests_Target_Test"
 	Keyword="Win32Proj"
 	SignManifests="true"

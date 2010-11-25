@@ -1,5 +1,5 @@
 /*
-** $Id: Service_Reporter.cpp 91813 2010-09-17 07:52:52Z johnnyw $
+** $Id: Service_Reporter.cpp 82610 2008-08-12 19:46:36Z parsons $
 **
 ** Copyright 2002 Addison Wesley. All Rights Reserved.
 */
@@ -51,23 +51,23 @@ int Service_Reporter::handle_input (ACE_HANDLE) {
        iterator.advance ()) {
     iovec iov[3];
     iov[0].iov_base = const_cast<ACE_TCHAR *> (st->name ());
-
+    
     iov[0].iov_len =
       ACE_Utils::truncate_cast<u_long> (
         ACE_OS::strlen (st->name ()) * sizeof (ACE_TCHAR));
-
+        
     const ACE_TCHAR *state = st->active () ?
            ACE_TEXT (" (active) ") : ACE_TEXT (" (paused) ");
     iov[1].iov_base = const_cast<ACE_TCHAR *> (state);
-
+    
     iov[1].iov_len =
       ACE_Utils::truncate_cast<u_long> (
         ACE_OS::strlen (state) * sizeof (ACE_TCHAR));
-
+        
     ACE_TCHAR *report = 0;   // Ask info() to allocate buffer
     int len = st->type ()->info (&report, 0);
     iov[2].iov_base = static_cast<ACE_TCHAR *> (report);
-
+    
     iov[2].iov_len = static_cast<u_long> (len);
     iov[2].iov_len *= sizeof (ACE_TCHAR);
     peer_stream.sendv_n (iov, 3);
@@ -93,7 +93,7 @@ int Service_Reporter::info (ACE_TCHAR **bufferp,
     *bufferp = ACE::strnew (buf);
   else
     ACE_OS::strncpy (*bufferp, buf, length);
-
+    
   return ACE_Utils::truncate_cast<int> (ACE_OS::strlen (*bufferp));
 }
 

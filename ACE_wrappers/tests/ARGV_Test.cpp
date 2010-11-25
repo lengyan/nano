@@ -1,4 +1,4 @@
-// $Id: ARGV_Test.cpp 91671 2010-09-08 18:39:23Z johnnyw $
+// $Id: ARGV_Test.cpp 84218 2009-01-22 19:21:39Z mitza $
 
 // ============================================================================
 //
@@ -21,7 +21,7 @@
 #include "ace/Argv_Type_Converter.h"
 #include "test_config.h"
 
-
+ACE_RCSID (tests, ARGV_Test, "$Id: ARGV_Test.cpp 84218 2009-01-22 19:21:39Z mitza $")
 
 static void
 consume_arg (int argc, ACE_TCHAR *argv[])

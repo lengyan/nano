@@ -3,7 +3,7 @@
 /**
 *  @file    Reactor_Timer_Queue_Test.cpp
  *
- *  $Id: Reactor_Timer_Queue_Test.cpp 91671 2010-09-08 18:39:23Z johnnyw $
+ *  $Id: Reactor_Timer_Queue_Test.cpp 90088 2010-05-06 12:48:00Z johnnyw $
  *
  *  This example tests the timer queue mechanism of ACE_Reactor.
  *
@@ -22,7 +22,7 @@
 #include "Driver.h"
 #include "Reactor_Timer_Queue_Test.h"
 
-
+ACE_RCSID(Timer_Queue, Reactor_Timer_Queue_Test, "$Id: Reactor_Timer_Queue_Test.cpp 90088 2010-05-06 12:48:00Z johnnyw $")
 
 void
 Reactor_Timer_Handler::set_timer_id (long tid)

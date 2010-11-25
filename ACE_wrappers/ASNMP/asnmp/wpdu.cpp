@@ -1,4 +1,4 @@
-// $Id: wpdu.cpp 91670 2010-09-08 18:02:26Z johnnyw $
+// $Id: wpdu.cpp 85030 2009-04-06 08:57:59Z johnnyw $
 
 // ============================================================================
 // = LIBRARY
@@ -24,6 +24,8 @@
 
 #define DEFINE_TRAP_CONSTANTS_
 #include "asnmp/enttraps.h"
+
+ACE_RCSID(asnmp, wpdu, "$Id: wpdu.cpp 85030 2009-04-06 08:57:59Z johnnyw $")
 
 #define MAX_COMM_STR_LEN 255
 #define V1_COLD_START 0

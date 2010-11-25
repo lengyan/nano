@@ -1,10 +1,10 @@
-// $Id: writer.cpp 91671 2010-09-08 18:39:23Z johnnyw $
+// $Id: writer.cpp 81978 2008-06-16 16:57:12Z sowayaa $
 
 #include "ace/DEV_Connector.h"
 #include "ace/TTY_IO.h"
 #include "ace/OS_NS_unistd.h"
 
-
+ACE_RCSID(writer, writer, "$Id: writer.cpp 81978 2008-06-16 16:57:12Z sowayaa $")
 
 int ACE_TMAIN (int argc, ACE_TCHAR *argv[])
 {

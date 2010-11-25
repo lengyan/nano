@@ -1,6 +1,6 @@
 # -*- Makefile -*-
 #----------------------------------------------------------------------------
-#       $Id: rules.lib.GNU 91974 2010-09-23 16:17:42Z mitza $
+#       $Id: rules.lib.GNU 90262 2010-05-24 14:42:09Z mitza $
 #
 #       Build libraries (i.e., contain no binary executables)
 #       GNU version
@@ -20,7 +20,7 @@ ifeq ($(versioned_so),1)
   # Version number of the libraries
   #
   ifeq ($(SOVERSION),)
-    SOVERSION = .$(GNUACE_PROJECT_VERSION)
+    SOVERSION = .$(ACE_MAJOR_VERSION).$(ACE_MINOR_VERSION).$(ACE_BETA_VERSION)
   endif # SOVERSION
 
   # Name that will be written into the dynamic library

@@ -1,4 +1,4 @@
-// $Id: ntalker.cpp 91671 2010-09-08 18:39:23Z johnnyw $
+// $Id: ntalker.cpp 81978 2008-06-16 16:57:12Z sowayaa $
 
 // Listens to multicast address.  After first message received, will
 // listen for 5 more seconds.  Prints Mbits/sec received from client.
@@ -12,7 +12,7 @@
 #include "ace/Thread_Manager.h"
 #include "ace/Service_Config.h"
 
-
+ACE_RCSID(Ntalker, ntalker, "$Id: ntalker.cpp 81978 2008-06-16 16:57:12Z sowayaa $")
 
 #if defined (ACE_HAS_IP_MULTICAST)
 // Network interface to subscribe to.  This is hardware specific.  use

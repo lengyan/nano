@@ -1,4 +1,4 @@
-// $Id: test_get_opt.cpp 91671 2010-09-08 18:39:23Z johnnyw $
+// $Id: test_get_opt.cpp 81978 2008-06-16 16:57:12Z sowayaa $
 
 // Test the ACE_Get_Opt class.
 
@@ -6,7 +6,7 @@
 #include "ace/Get_Opt.h"
 #include "ace/Log_Msg.h"
 
-
+ACE_RCSID(Misc, test_get_opt, "$Id: test_get_opt.cpp 81978 2008-06-16 16:57:12Z sowayaa $")
 
 int
 ACE_TMAIN (int argc, ACE_TCHAR *argv[])

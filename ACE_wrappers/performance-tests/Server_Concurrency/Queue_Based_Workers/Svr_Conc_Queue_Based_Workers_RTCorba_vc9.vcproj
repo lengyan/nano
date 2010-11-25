@@ -3,7 +3,7 @@
 	ProjectType="Visual C++"
 	Version="9.00"
 	Name="Svr_Conc_Queue_Based_Workers_RTCorba"
-	ProjectGUID="{D442DA61-FECA-1BAD-5029-42D0E18BA5D0}"
+	ProjectGUID="{D442DA61-FECA-1BAD-5029-42D0351D96E0}"
 	RootNamespace="Svr_Conc_Queue_Based_Workers_RTCorba"
 	Keyword="Win32Proj"
 	SignManifests="true"

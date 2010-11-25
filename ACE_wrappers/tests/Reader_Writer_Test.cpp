@@ -1,4 +1,4 @@
-// $Id: Reader_Writer_Test.cpp 91671 2010-09-08 18:39:23Z johnnyw $
+// $Id: Reader_Writer_Test.cpp 80826 2008-03-04 14:51:23Z wotte $
 
 // ============================================================================
 //
@@ -28,7 +28,7 @@
 #include "ace/RW_Thread_Mutex.h"
 #include "ace/Time_Value.h"
 
-
+ACE_RCSID(tests, Reader_Writer_Test, "$Id: Reader_Writer_Test.cpp 80826 2008-03-04 14:51:23Z wotte $")
 
 #if defined (ACE_HAS_THREADS)
 
@@ -113,7 +113,7 @@ reader (void *)
   for (size_t iterations = 1; iterations <= n_iterations; iterations++)
     {
       ACE_OS::sleep (pause);
-      ACE_READ_GUARD_RETURN (ACE_RW_Thread_Mutex, g, rw_mutex, 0);
+      ACE_Read_Guard<ACE_RW_Thread_Mutex> g (rw_mutex);
       // int n = ++current_readers;
       // ACE_DEBUG ((LM_DEBUG, ACE_TEXT (" (%t) I'm reader number %d\n"), n));
 
@@ -213,7 +213,7 @@ writer (void *)
     {
       ACE_OS::sleep (pause);
 
-      ACE_WRITE_GUARD_RETURN (ACE_RW_Thread_Mutex, g, rw_mutex, 0);
+      ACE_Write_Guard<ACE_RW_Thread_Mutex> g (rw_mutex);
 
       ++current_writers;
 

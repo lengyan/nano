@@ -3,7 +3,7 @@
 	ProjectType="Visual C++"
 	Version="8.00"
 	Name="Logger_client"
-	ProjectGUID="{AF2C4B0B-FECA-1BAD-6284-F3732ECE18EC}"
+	ProjectGUID="{AF2C4B0B-FECA-1BAD-6284-F3731E1A8EDF}"
 	RootNamespace="Logger_client"
 	Keyword="Win32Proj"
 	SignManifests="true"

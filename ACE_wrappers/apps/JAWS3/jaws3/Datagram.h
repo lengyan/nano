@@ -1,5 +1,5 @@
 /* -*- c++ -*- */
-// $Id: Datagram.h 91743 2010-09-13 18:24:51Z johnnyw $
+// $Id: Datagram.h 80826 2008-03-04 14:51:23Z wotte $
 
 #ifndef JAWS_DATAGRAM_H
 #define JAWS_DATAGRAM_H
@@ -80,7 +80,7 @@ public:
 
 class JAWS_Export JAWS_Datagram
 {
-public:
+public: 
 
   JAWS_Datagram (JAWS_Datagram_Impl *impl = 0);
 

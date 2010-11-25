@@ -1,4 +1,4 @@
-// $Id: Gauge_Test.cpp 91670 2010-09-08 18:02:26Z johnnyw $
+// $Id: Gauge_Test.cpp 80826 2008-03-04 14:51:23Z wotte $
 
 // ============================================================================
 //
@@ -40,6 +40,10 @@ DAMAGES.
 #include "ace/OS_main.h"
 #include "asnmp/gauge.h"
 #include "test_config.h"
+
+ACE_RCSID (tests,
+           Gauge_Test,
+           "$Id: Gauge_Test.cpp 80826 2008-03-04 14:51:23Z wotte $")
 
 /*
    Gauge32( void);

@@ -40,8 +40,7 @@ sub project_file_name {
 
   ## Fill in the name and template if they weren't provided
   $name = $self->project_name() if (!defined $name);
-  $template = 'cdt6project' if (!defined $template ||
-                                !defined $templates{$template});
+  $template = 'cdt6' if (!defined $template || !defined $templates{$template});
 
   if ($self->{'make_coexistence'}) {
     return $self->get_modified_project_file_name("cdt_$name",
@@ -56,10 +55,7 @@ sub fill_value {
   my($self, $name) = @_;
 
   if ($name eq 'platforms') {
-    if (defined $ENV{'MPC_CDT_PLATFORMS'}) {
-      return $ENV{'MPC_CDT_PLATFORMS'};
-    }
-    elsif ($^O eq 'darwin') {
+    if ($^O eq 'darwin') {
       return 'macosx';
     }
     elsif ($^O eq 'MSWin32') {
@@ -68,10 +64,6 @@ sub fill_value {
     else {
       return $^O; # cygwin, solaris, linux match what we expect
     }
-  }
-  elsif ($name eq 'nocross') {
-    # return the value of the 'nocross' element from the project_info array
-    return $self->get_project_info()->[5];
   }
 
   return undef;

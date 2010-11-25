@@ -1,4 +1,4 @@
-// $Id: Priority_Task_Test.cpp 91626 2010-09-07 10:59:20Z johnnyw $
+// $Id: Priority_Task_Test.cpp 85321 2009-05-12 08:31:31Z johnnyw $
 
 // ============================================================================
 //
@@ -23,6 +23,8 @@
 #include "ace/Sched_Params.h"
 #include "ace/OS_NS_errno.h"
 #include "ace/OS_NS_string.h"
+
+ACE_RCSID(tests, Priority_Task_Test, "$Id: Priority_Task_Test.cpp 85321 2009-05-12 08:31:31Z johnnyw $")
 
 static const ACE_TCHAR *usage = ACE_TEXT ("usage: %s [-d]\n");
 

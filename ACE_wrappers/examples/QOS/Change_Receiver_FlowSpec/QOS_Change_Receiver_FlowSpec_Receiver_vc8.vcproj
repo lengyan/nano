@@ -3,7 +3,7 @@
 	ProjectType="Visual C++"
 	Version="8.00"
 	Name="QOS_Change_Receiver_FlowSpec_Receiver"
-	ProjectGUID="{9984C96E-FECA-1BAD-0E85-EBA2C3BCE951}"
+	ProjectGUID="{9984C96E-FECA-1BAD-0E85-EBA2F0B1A032}"
 	RootNamespace="QOS_Change_Receiver_FlowSpec_Receiver"
 	Keyword="Win32Proj"
 	SignManifests="true"

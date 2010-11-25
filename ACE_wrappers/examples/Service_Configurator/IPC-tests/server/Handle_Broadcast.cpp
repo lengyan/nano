@@ -1,6 +1,8 @@
-// $Id: Handle_Broadcast.cpp 91670 2010-09-08 18:02:26Z johnnyw $
+// $Id: Handle_Broadcast.cpp 80826 2008-03-04 14:51:23Z wotte $
 
 #include "Handle_Broadcast.h"
+
+ACE_RCSID(server, Handle_Broadcast, "$Id: Handle_Broadcast.cpp 80826 2008-03-04 14:51:23Z wotte $")
 
 #if defined (SunOS4)
 extern "C"

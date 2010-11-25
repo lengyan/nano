@@ -3,7 +3,7 @@
 	ProjectType="Visual C++"
 	Version="8.00"
 	Name="ACEXML_Parser"
-	ProjectGUID="{9B5A9538-FECA-1BAD-5520-8D0596E4677C}"
+	ProjectGUID="{9B5A9538-FECA-1BAD-5520-8D05A5D4B3EA}"
 	RootNamespace="ACEXML_Parser"
 	Keyword="Win32Proj"
 	SignManifests="true"
@@ -419,7 +419,7 @@
 		</Filter>
 		<Filter
 			Name="Pkgconfig Files"
-			Filter="pcin">
+			Filter="in">
 			<File
 				RelativePath="ACEXML_Parser.pc.in">
 				<FileConfiguration

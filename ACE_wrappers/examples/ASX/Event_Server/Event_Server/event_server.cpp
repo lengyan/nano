@@ -1,4 +1,4 @@
-// $Id: event_server.cpp 91673 2010-09-08 18:49:47Z johnnyw $
+// $Id: event_server.cpp 80826 2008-03-04 14:51:23Z wotte $
 
 // Main driver program for the event server example.
 
@@ -11,6 +11,10 @@
 #include "Supplier_Router.h"
 #include "ace/Sig_Adapter.h"
 #include "ace/Stream.h"
+
+ACE_RCSID (Event_Server,
+           event_server,
+           "$Id: event_server.cpp 80826 2008-03-04 14:51:23Z wotte $")
 
 // Typedef these components to handle multi-threading correctly.
 typedef ACE_Stream<ACE_SYNCH> MT_Stream;

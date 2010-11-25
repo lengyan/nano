@@ -79,8 +79,7 @@ sub get_outputexts {
   ## This method is expected to return an array reference containing the
   ## extensions for files returned by the get_output() method.  They will
   ## be used as regular expressions so regular expression characters
-  ## (such as '.', '[', ']', etc.) must be escaped.  This can be done by
-  ## calling $self->Parser::escape_regex_special($str);
+  ## (such as '.', '[', ']', etc.) must be escaped.
   return [];
 }
 

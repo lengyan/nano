@@ -1,4 +1,4 @@
-// $Id: Cached_Allocator_Test.cpp 91671 2010-09-08 18:39:23Z johnnyw $
+// $Id: Cached_Allocator_Test.cpp 80826 2008-03-04 14:51:23Z wotte $
 
 // ============================================================================
 //
@@ -21,7 +21,7 @@
 #include "ace/Malloc_T.h"
 #include "ace/High_Res_Timer.h"
 
-
+ACE_RCSID(tests, Cached_Allocator_Test, "$Id: Cached_Allocator_Test.cpp 80826 2008-03-04 14:51:23Z wotte $")
 
 #include "ace/Synch_Traits.h"
 #include "ace/Null_Mutex.h"

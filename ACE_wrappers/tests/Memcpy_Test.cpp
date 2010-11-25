@@ -2,14 +2,14 @@
 /**
  *  @file    Memcpy_Test.cpp
  *
- *  $Id: Memcpy_Test.cpp 91813 2010-09-17 07:52:52Z johnnyw $
+ *  $Id: Memcpy_Test.cpp 80826 2008-03-04 14:51:23Z wotte $
  *
  *  @author Mike Marinez <mmartinez@oci.com>
  *
  * This test compares the performance of ACE_OS::memcpy with
  * that of smemcpy which unrolls the memcpy loop upto size = 16.
  * This test is also run via autoconf and if smemcpy is faster,
- * ACE_HAS_MEMCPY_LOOP_UNROLL flag is set.
+ * ACE_HAS_MEMCPY_LOOP_UNROLL flag is set. 
  *
  */
 //=============================================================================
@@ -53,7 +53,7 @@ testit (int type)
   char buffer[16];
   size_t size = 16;
 
-  switch (type)
+  switch (type) 
     {
     case 0: smemcpy ((void*)buffer, (void*)" THIS IS A TEST", size); break;
     case 1:  ACE_OS::memcpy ((void*)buffer, (void*)" THIS IS A TEST", size); break;
@@ -71,11 +71,11 @@ run_main (int, ACE_TCHAR *[])
   //ACE_Time_Value start, now;
   struct timeval start, now;
 
-  for (int i = ITERATIONS; i > 0; --i)
+  for (int i = ITERATIONS; i > 0; --i) 
     testit (0);
 
   start = ACE_High_Res_Timer::gettimeofday_hr ();
-  for (int j = ITERATIONS; j > 0; --j)
+  for (int j = ITERATIONS; j > 0; --j) 
     testit (0);
 
   now = ACE_High_Res_Timer::gettimeofday_hr ();
@@ -87,7 +87,7 @@ run_main (int, ACE_TCHAR *[])
                fast / ITERATIONS));
 
   start = ACE_High_Res_Timer::gettimeofday_hr ();
-  for (int k = ITERATIONS; k > 0; --k)
+  for (int k = ITERATIONS; k > 0; --k) 
     testit (1);
 
   now = ACE_High_Res_Timer::gettimeofday_hr ();

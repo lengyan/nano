@@ -1,9 +1,11 @@
-// $Id: HTTP_Config.cpp 91670 2010-09-08 18:02:26Z johnnyw $
+// $Id: HTTP_Config.cpp 81993 2008-06-16 20:26:16Z sowayaa $
 
 // HTTP_Config.cpp
 
 #include "ace/OS_NS_stdlib.h"
 #include "HTTP_Config.h"
+
+ACE_RCSID(server, HTTP_Config, "$Id: HTTP_Config.cpp 81993 2008-06-16 20:26:16Z sowayaa $")
 
 // static HTTP_Config_Info config_info;
 

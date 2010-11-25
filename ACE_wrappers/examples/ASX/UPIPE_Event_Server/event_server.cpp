@@ -1,4 +1,4 @@
-// $Id: event_server.cpp 91673 2010-09-08 18:49:47Z johnnyw $
+// $Id: event_server.cpp 82610 2008-08-12 19:46:36Z parsons $
 
 // Test the event server.
 
@@ -18,6 +18,10 @@
 #include "Supplier_Router.h"
 #include "ace/Sig_Adapter.h"
 #include "ace/OS_NS_unistd.h"
+
+ACE_RCSID (UPIPE_Event_Server,
+           event_server,
+           "$Id: event_server.cpp 82610 2008-08-12 19:46:36Z parsons $")
 
 #if defined (ACE_HAS_THREADS)
 
@@ -234,7 +238,7 @@ ACE_TMAIN (int argc, ACE_TCHAR *argv[])
                        ACE_TEXT ("push (setting low watermark)")), -1);
 
   wm = ACE_Utils::truncate_cast<int> (options.high_water_mark ());
-
+  
   if (event_server.control (ACE_IO_Cntl_Msg::SET_HWM, &wm) == -1)
     ACE_ERROR_RETURN ((LM_ERROR, ACE_TEXT ("%p\n"),
                        ACE_TEXT ("push (setting high watermark)")), -1);

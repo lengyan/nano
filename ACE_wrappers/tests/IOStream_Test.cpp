@@ -1,4 +1,4 @@
-// $Id: IOStream_Test.cpp 91671 2010-09-08 18:39:23Z johnnyw $
+// $Id: IOStream_Test.cpp 84565 2009-02-23 08:20:39Z johnnyw $
 
 // ============================================================================
 //
@@ -25,7 +25,7 @@
 #include "ace/IOStream.h"
 #include "ace/OS_NS_sys_wait.h"
 
-
+ACE_RCSID (tests, IOStream_Test, "$Id: IOStream_Test.cpp 84565 2009-02-23 08:20:39Z johnnyw $")
 
 #if !defined (ACE_LACKS_ACE_IOSTREAM)
 #  include "ace/OS_NS_unistd.h"

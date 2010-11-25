@@ -1,4 +1,4 @@
-// $Id: NPServer.cpp 91671 2010-09-08 18:39:23Z johnnyw $
+// $Id: NPServer.cpp 81978 2008-06-16 16:57:12Z sowayaa $
 
 #include "ace/SPIPE_Addr.h"
 #include "ace/SPIPE_Acceptor.h"
@@ -6,7 +6,7 @@
 #include "ace/OS_NS_stdio.h"
 #include "ace/OS_NS_unistd.h"
 
-
+ACE_RCSID(SPIPE_SAP, NPServer, "$Id: NPServer.cpp 81978 2008-06-16 16:57:12Z sowayaa $")
 
 #if defined (ACE_WIN32)
 #define MAKE_PIPE_NAME(X) ACE_TEXT ("\\\\.\\pipe\\") ACE_TEXT (X)

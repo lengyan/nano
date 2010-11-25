@@ -1,4 +1,4 @@
-// $Id: recursive_mutex.cpp 91671 2010-09-08 18:39:23Z johnnyw $
+// $Id: recursive_mutex.cpp 81978 2008-06-16 16:57:12Z sowayaa $
 
 // This test program verifies the functionality of the ACE_OS
 // implementation of recursive mutexes on Win32 and Posix pthreads.
@@ -8,7 +8,7 @@
 #include "ace/Thread_Manager.h"
 #include "ace/Get_Opt.h"
 
-
+ACE_RCSID(Threads, recursive_mutex, "$Id: recursive_mutex.cpp 81978 2008-06-16 16:57:12Z sowayaa $")
 
 #if defined (ACE_HAS_THREADS)
 
@@ -62,7 +62,7 @@ recursive_worker (size_t nesting_level,
                   "(%P|%t) = trying to acquire, nesting = %d, thread id = %u\n",
       rm->get_nesting_level (), rm->get_thread_id ()));
       {
-        // This illustrates the use of the ACE_GUARD with an
+        // This illustrates the use of the ACE_Guard<LOCK> with an
         // ACE_Recursive_Thread_Mutex.
         ACE_GUARD (ACE_Recursive_Thread_Mutex, ace_mon, *rm);
         ACE_DEBUG ((LM_DEBUG,

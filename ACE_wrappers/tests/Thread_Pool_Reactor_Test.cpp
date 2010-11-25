@@ -1,4 +1,4 @@
-// $Id: Thread_Pool_Reactor_Test.cpp 91671 2010-09-08 18:39:23Z johnnyw $
+// $Id: Thread_Pool_Reactor_Test.cpp 90163 2010-05-18 21:42:20Z mitza $
 
 // ============================================================================
 //
@@ -48,7 +48,7 @@
 #include "ace/Thread_Manager.h"
 #include "ace/TP_Reactor.h"
 
-
+ACE_RCSID(tests, Thread_Pool_Reactor_Test, "$Id: Thread_Pool_Reactor_Test.cpp 90163 2010-05-18 21:42:20Z mitza $")
 
 #if defined (ACE_HAS_THREADS)
 

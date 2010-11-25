@@ -3,7 +3,7 @@
 	ProjectType="Visual C++"
 	Version="8.00"
 	Name="asnmp_example_trap"
-	ProjectGUID="{B8C3D29F-FECA-1BAD-3462-8A64208A97BC}"
+	ProjectGUID="{B8C3D29F-FECA-1BAD-3462-8A6443B99AF5}"
 	RootNamespace="asnmp_example_trap"
 	Keyword="Win32Proj"
 	SignManifests="true"

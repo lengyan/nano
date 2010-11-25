@@ -1,4 +1,4 @@
-// $Id: bpr_thread.cpp 91673 2010-09-08 18:49:47Z johnnyw $
+// $Id: bpr_thread.cpp 82747 2008-09-16 13:11:23Z johnnyw $
 
 // ============================================================================
 //
@@ -25,6 +25,10 @@
 
 #include "ace/Auto_Ptr.h"
 #include "Thread_Bounded_Packet_Relay.h"
+
+ACE_RCSID (Bounded_Packet_Relay,
+           bpr_thread,
+           "$Id: bpr_thread.cpp 82747 2008-09-16 13:11:23Z johnnyw $")
 
 typedef Bounded_Packet_Relay_Driver<Thread_Timer_Queue>
   THREAD_BOUNDED_PACKET_RELAY_DRIVER;

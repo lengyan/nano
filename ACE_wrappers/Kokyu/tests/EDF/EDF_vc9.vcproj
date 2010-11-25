@@ -3,7 +3,7 @@
 	ProjectType="Visual C++"
 	Version="9.00"
 	Name="EDF"
-	ProjectGUID="{BD144C9A-FECA-1BAD-4104-8A6369AD5684}"
+	ProjectGUID="{BD144C9A-FECA-1BAD-4104-8A6364E435B7}"
 	RootNamespace="EDF"
 	Keyword="Win32Proj"
 	SignManifests="true"

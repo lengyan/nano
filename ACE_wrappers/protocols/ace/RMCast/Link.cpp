@@ -1,5 +1,6 @@
+// file      : ace/RMCast/Link.cpp
 // author    : Boris Kolpackov <boris@kolpackov.net>
-// $Id: Link.cpp 91626 2010-09-07 10:59:20Z johnnyw $
+// cvs-id    : $Id: Link.cpp 80826 2008-03-04 14:51:23Z wotte $
 
 #include "ace/Time_Value.h"        // ACE_Time_Value
 #include "ace/OS_NS_stdio.h"

@@ -3,7 +3,7 @@
 	ProjectType="Visual C++"
 	Version="9.00"
 	Name="SOCK_Dgram_Test"
-	ProjectGUID="{65926D99-FECA-1BAD-2431-8A1100722433}"
+	ProjectGUID="{65926D99-FECA-1BAD-2431-8A11337F6D50}"
 	RootNamespace="SOCK_Dgram_Test"
 	Keyword="Win32Proj"
 	SignManifests="true"

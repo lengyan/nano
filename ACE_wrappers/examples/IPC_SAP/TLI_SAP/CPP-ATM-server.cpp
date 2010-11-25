@@ -1,10 +1,10 @@
-// $Id: CPP-ATM-server.cpp 91671 2010-09-08 18:39:23Z johnnyw $
+// $Id: CPP-ATM-server.cpp 81978 2008-06-16 16:57:12Z sowayaa $
 
 #include "ace/TLI_Acceptor.h"
 #include "ace/ATM_Addr.h"
 #include "ace/Log_Msg.h"
 
-
+ACE_RCSID(TLI_SAP, CPP_ATM_server, "$Id: CPP-ATM-server.cpp 81978 2008-06-16 16:57:12Z sowayaa $")
 
 #if defined (ACE_HAS_FORE_ATM_XTI)
 // ACE_TLI Server

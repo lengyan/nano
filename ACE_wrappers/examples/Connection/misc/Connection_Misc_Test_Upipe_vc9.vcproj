@@ -3,7 +3,7 @@
 	ProjectType="Visual C++"
 	Version="9.00"
 	Name="Connection_Misc_Test_Upipe"
-	ProjectGUID="{8BFC7BBD-FECA-1BAD-3D13-3640622B5736}"
+	ProjectGUID="{8BFC7BBD-FECA-1BAD-3D13-3640B6BD6406}"
 	RootNamespace="Connection_Misc_Test_Upipe"
 	Keyword="Win32Proj"
 	SignManifests="true"

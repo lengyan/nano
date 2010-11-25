@@ -1,4 +1,4 @@
-// $Id: Thread_Pool_Reactor_SSL_Test.h 91685 2010-09-09 09:35:14Z johnnyw $
+// $Id: Thread_Pool_Reactor_SSL_Test.h 80826 2008-03-04 14:51:23Z wotte $
 
 // ============================================================================
 //
@@ -30,7 +30,7 @@
 
 #include "ace/Svc_Handler.h"
 
-class Request_Handler : public ACE_Svc_Handler<ACE_SSL_SOCK_Stream,
+class Request_Handler : public ACE_Svc_Handler<ACE_SSL_SOCK_STREAM,
                                                ACE_MT_SYNCH>
 {
   // = TITLE

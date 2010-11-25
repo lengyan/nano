@@ -1,4 +1,4 @@
-// $Id: HTTP_URL.cpp 91671 2010-09-08 18:39:23Z johnnyw $
+// $Id: HTTP_URL.cpp 80826 2008-03-04 14:51:23Z wotte $
 
 #include "ace/OS_NS_stdio.h"
 #include "ace/OS_NS_string.h"
@@ -7,7 +7,7 @@
 #include "Options.h"
 #include "HTTP_URL.h"
 
-
+ACE_RCSID(Web_Crawler, HTTP_URL, "$Id: HTTP_URL.cpp 80826 2008-03-04 14:51:23Z wotte $")
 
 const ACE_URL_Addr &
 HTTP_URL::url_addr (void) const

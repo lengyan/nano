@@ -4,7 +4,7 @@
 
    Copyright (C) 1998-2005 Gilles Vollant
 
-   $Id: miniunz.c 91813 2010-09-17 07:52:52Z johnnyw $
+   $Id: miniunz.c 80826 2008-03-04 14:51:23Z wotte $
 */
 
 
@@ -319,7 +319,7 @@ int do_extract_currentfile(uf,popt_extract_without_path,popt_overwrite,password)
 
                     printf("The file %s exists. Overwrite ? [y]es, [n]o, [A]ll: ",write_filename);
                     ret = scanf("%1s",answer);
-                    if (ret != 1)
+                    if (ret != 1) 
                     {
                        exit(EXIT_FAILURE);
                     }
@@ -569,7 +569,7 @@ int main(argc,argv)
         return do_list(uf);
     else if (opt_do_extract==1)
     {
-        if (opt_extractdir && chdir(dirname))
+        if (opt_extractdir && chdir(dirname)) 
         {
           printf("Error changing into %s, aborting\n", dirname);
           exit(-1);

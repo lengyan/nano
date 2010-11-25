@@ -1,4 +1,4 @@
-// $Id: test_tli_acceptor.cpp 91673 2010-09-08 18:49:47Z johnnyw $
+// $Id: test_tli_acceptor.cpp 80826 2008-03-04 14:51:23Z wotte $
 
 // ACE_TLI Server.
 
@@ -6,6 +6,10 @@
 #include "ace/INET_Addr.h"
 #include "ace/Service_Config.h"
 #include "CPP-acceptor.h"
+
+ACE_RCSID (non_blocking,
+           test_tli_acceptor,
+           "$Id: test_tli_acceptor.cpp 80826 2008-03-04 14:51:23Z wotte $")
 
 #if defined (ACE_HAS_TLI)
 typedef Svc_Handler<ACE_TLI_STREAM> SVC_HANDLER;

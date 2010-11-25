@@ -1,4 +1,4 @@
-// $Id: address.cpp 91670 2010-09-08 18:02:26Z johnnyw $
+// $Id: address.cpp 88870 2010-02-06 12:59:37Z mcorino $
 
 // ============================================================================
 //
@@ -44,6 +44,8 @@
 #include "ace/OS_NS_stdio.h"
 #include "ace/OS_NS_ctype.h"
 #include "ace/OS_Memory.h"
+
+ACE_RCSID(asnmp, address, "$Id: address.cpp 88870 2010-02-06 12:59:37Z mcorino $")
 
 //=================================================================
 //======== Abstract Address Class Implementation ==================
@@ -670,7 +672,7 @@ Address_Iter::Address_Iter (const char *hostname)
 {
   ACE_OS::memset (&buffer_, 0, sizeof (ACE_HOSTENT_DATA));
   ACE_OS::memset (&lookupResult_, 0, sizeof (struct hostent));
-
+  
   if (ACE_OS::inet_addr (hostname) == (unsigned long) -1)
     {
       valid_ = query_dns (hostname);

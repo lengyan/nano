@@ -3,7 +3,7 @@
 	ProjectType="Visual C++"
 	Version="9.00"
 	Name="Allocator"
-	ProjectGUID="{EF287633-FECA-1BAD-8408-181CEBDC7FA8}"
+	ProjectGUID="{EF287633-FECA-1BAD-8408-181CE6951C9B}"
 	RootNamespace="Allocator"
 	Keyword="Win32Proj"
 	SignManifests="true"

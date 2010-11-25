@@ -3,7 +3,7 @@
 	ProjectType="Visual C++"
 	Version="9.00"
 	Name="SV_Shared_Memory"
-	ProjectGUID="{DCE5DB1B-FECA-1BAD-0000-0000D5A70449}"
+	ProjectGUID="{DCE5DB1B-FECA-1BAD-0000-0000E573927A}"
 	RootNamespace="SV_Shared_Memory"
 	Keyword="Win32Proj"
 	SignManifests="true"

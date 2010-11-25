@@ -1,4 +1,4 @@
-// $Id: Thread_Creation_Threshold_Test.cpp 91671 2010-09-08 18:39:23Z johnnyw $
+// $Id: Thread_Creation_Threshold_Test.cpp 80826 2008-03-04 14:51:23Z wotte $
 
 // ============================================================================
 //
@@ -26,7 +26,7 @@
 #include "test_config.h"
 #include "ace/Task.h"
 
-
+ACE_RCSID(tests, Thread_Pool_Test, "$Id: Thread_Creation_Threshold_Test.cpp 80826 2008-03-04 14:51:23Z wotte $")
 
 #if defined (ACE_HAS_THREADS)
 #include "ace/Lock_Adapter_T.h"

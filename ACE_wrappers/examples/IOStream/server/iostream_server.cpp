@@ -1,4 +1,4 @@
-// $Id: iostream_server.cpp 91670 2010-09-08 18:02:26Z johnnyw $
+// $Id: iostream_server.cpp 80826 2008-03-04 14:51:23Z wotte $
 
 // This is a simple example of using the ACE_IOStream and
 // ACE_Streambuf_T templates to create an object based on ACE_*_Stream
@@ -12,6 +12,8 @@
 
 #include "iostream_server.h"
 #include "ace/OS_NS_unistd.h"
+
+ACE_RCSID(server, iostream_server, "$Id: iostream_server.cpp 80826 2008-03-04 14:51:23Z wotte $")
 
 #if !defined (ACE_LACKS_ACE_IOSTREAM)
 

@@ -5,7 +5,7 @@ package PerlACE::TestTarget_VxWorks;
 # Description : Creates a PerlACE::ProcessVX
 # Author      : Chad Elliott
 # Create Date : 6/20/2008
-#          $Id: TestTarget_VxWorks.pm 91813 2010-09-17 07:52:52Z johnnyw $
+#          $Id: TestTarget_VxWorks.pm 89840 2010-04-12 09:36:32Z mcorino $
 # ******************************************************************
 
 # ******************************************************************
@@ -86,7 +86,7 @@ sub KillAll ($)
 {
     my $self = shift;
     my $procmask = shift;
-    PerlACE::ProcessVX::kill_all ($procmask, $self);
+    PerlACE::ProcessVX::kill_all ($procmask, $self);    
 }
 
 1;

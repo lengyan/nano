@@ -3,7 +3,7 @@
 	ProjectType="Visual C++"
 	Version="9.00"
 	Name="Semaphore"
-	ProjectGUID="{D7852F2C-FECA-1BAD-2D78-F933D2AB8F03}"
+	ProjectGUID="{D7852F2C-FECA-1BAD-2D78-F9339BC8BC0E}"
 	RootNamespace="Semaphore"
 	Keyword="Win32Proj"
 	SignManifests="true"

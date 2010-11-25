@@ -3,7 +3,7 @@
 	ProjectType="Visual C++"
 	Version="8.00"
 	Name="SPIPE_SAP_NPClient"
-	ProjectGUID="{A12E9B9F-FECA-1BAD-A714-C623708DC274}"
+	ProjectGUID="{A12E9B9F-FECA-1BAD-A714-C623E6BEF2A0}"
 	RootNamespace="SPIPE_SAP_NPClient"
 	Keyword="Win32Proj"
 	SignManifests="true"

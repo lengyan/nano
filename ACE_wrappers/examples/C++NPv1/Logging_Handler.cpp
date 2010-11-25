@@ -1,5 +1,5 @@
 /*
-** $Id: Logging_Handler.cpp 91813 2010-09-17 07:52:52Z johnnyw $
+** $Id: Logging_Handler.cpp 82610 2008-08-12 19:46:36Z parsons $
 **
 ** Copyright 2001 Addison Wesley. All Rights Reserved.
 */
@@ -73,7 +73,7 @@ int Logging_Handler::recv_log_record (ACE_Message_Block *&mblk)
   return -1;
 }
 
-int
+int 
 Logging_Handler::write_log_record (ACE_Message_Block *mblk)
 {
   // Peer hostname is in the <mblk> and the log record data

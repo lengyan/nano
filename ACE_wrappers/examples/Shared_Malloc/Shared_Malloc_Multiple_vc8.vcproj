@@ -3,7 +3,7 @@
 	ProjectType="Visual C++"
 	Version="8.00"
 	Name="Shared_Malloc_Multiple"
-	ProjectGUID="{CBBBDD43-FECA-1BAD-4CD2-91813C3C36BA}"
+	ProjectGUID="{CBBBDD43-FECA-1BAD-4CD2-91810CE8A089}"
 	RootNamespace="Shared_Malloc_Multiple"
 	Keyword="Win32Proj"
 	SignManifests="true"

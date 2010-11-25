@@ -3,7 +3,7 @@
 	ProjectType="Visual C++"
 	Version="8.00"
 	Name="Multihomed_INET_Addr_Test"
-	ProjectGUID="{55A48CA2-FECA-1BAD-2431-8A1100722433}"
+	ProjectGUID="{55A48CA2-FECA-1BAD-2431-8A11337F6D50}"
 	RootNamespace="Multihomed_INET_Addr_Test"
 	Keyword="Win32Proj"
 	SignManifests="true"

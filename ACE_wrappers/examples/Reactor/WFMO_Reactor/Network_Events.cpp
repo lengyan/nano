@@ -1,4 +1,4 @@
-// $Id: Network_Events.cpp 91671 2010-09-08 18:39:23Z johnnyw $
+// $Id: Network_Events.cpp 80826 2008-03-04 14:51:23Z wotte $
 //
 // ============================================================================
 //
@@ -38,7 +38,7 @@
 #include "ace/SOCK_Acceptor.h"
 #include "ace/OS_main.h"
 
-
+ACE_RCSID(WFMO_Reactor, Network_Events, "$Id: Network_Events.cpp 80826 2008-03-04 14:51:23Z wotte $")
 
 class Network_Handler : public ACE_Event_Handler
 {

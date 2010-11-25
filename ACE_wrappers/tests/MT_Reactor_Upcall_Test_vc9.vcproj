@@ -3,7 +3,7 @@
 	ProjectType="Visual C++"
 	Version="9.00"
 	Name="MT_Reactor_Upcall_Test"
-	ProjectGUID="{7B454F53-FECA-1BAD-2431-8A1100722433}"
+	ProjectGUID="{7B454F53-FECA-1BAD-2431-8A11337F6D50}"
 	RootNamespace="MT_Reactor_Upcall_Test"
 	Keyword="Win32Proj"
 	SignManifests="true"

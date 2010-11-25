@@ -1,4 +1,4 @@
-// $Id: CPP-unserver.cpp 91671 2010-09-08 18:39:23Z johnnyw $
+// $Id: CPP-unserver.cpp 80826 2008-03-04 14:51:23Z wotte $
 
 // This example tests the features of the ACE_LSOCK_Acceptor and
 // ACE_LSOCK_Stream classes.  If the platform supports threads it uses
@@ -9,7 +9,7 @@
 #include "ace/OS_main.h"
 #include "ace/OS_NS_unistd.h"
 
-
+ACE_RCSID(SOCK_SAP, CPP_unserver, "$Id: CPP-unserver.cpp 80826 2008-03-04 14:51:23Z wotte $")
 
 #if !defined (ACE_LACKS_UNIX_DOMAIN_SOCKETS)
 

@@ -1,4 +1,4 @@
-// $Id: Reactor_Timer_Test.cpp 91671 2010-09-08 18:39:23Z johnnyw $
+// $Id: Reactor_Timer_Test.cpp 80826 2008-03-04 14:51:23Z wotte $
 
 // ============================================================================
 //
@@ -28,7 +28,7 @@
 #include "ace/Recursive_Thread_Mutex.h"
 #include "ace/Log_Msg.h"
 
-
+ACE_RCSID(tests, Reactor_Timer_Test, "$Id: Reactor_Timer_Test.cpp 80826 2008-03-04 14:51:23Z wotte $")
 
 static int done = 0;
 static int the_count = 0;

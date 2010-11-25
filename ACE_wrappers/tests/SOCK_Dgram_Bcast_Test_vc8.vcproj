@@ -3,7 +3,7 @@
 	ProjectType="Visual C++"
 	Version="8.00"
 	Name="SOCK_Dgram_Bcast_Test"
-	ProjectGUID="{08EA88DA-FECA-1BAD-2431-8A1100722433}"
+	ProjectGUID="{08EA88DA-FECA-1BAD-2431-8A11337F6D50}"
 	RootNamespace="SOCK_Dgram_Bcast_Test"
 	Keyword="Win32Proj"
 	SignManifests="true"

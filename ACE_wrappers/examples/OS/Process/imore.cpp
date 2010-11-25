@@ -1,5 +1,5 @@
 // ============================================================================
-// $Id: imore.cpp 91671 2010-09-08 18:39:23Z johnnyw $
+// $Id: imore.cpp 85356 2009-05-16 18:03:26Z johnnyw $
 //
 // = LIBRARY
 //    examples
@@ -34,7 +34,7 @@
 #include "ace/Process.h"
 #include "ace/Signal.h"
 
-
+ACE_RCSID(Process, imore, "$Id: imore.cpp 85356 2009-05-16 18:03:26Z johnnyw $")
 
 #if defined (ACE_WIN32)
 static const ACE_TCHAR *executable = ACE_TEXT("MORE.COM");

@@ -1,9 +1,9 @@
-// $Id: main.cpp 91671 2010-09-08 18:39:23Z johnnyw $
+// $Id: main.cpp 80826 2008-03-04 14:51:23Z wotte $
 
 #include "JAWS/Server.h"
 #include "HTTP_10.h"
 
-
+ACE_RCSID(PROTOTYPE, main, "$Id: main.cpp 80826 2008-03-04 14:51:23Z wotte $")
 
 #ifdef ACE_HAS_SIG_C_FUNC
 extern "C"

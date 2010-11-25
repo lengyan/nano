@@ -3,7 +3,7 @@
 	ProjectType="Visual C++"
 	Version="9.00"
 	Name="Logger_Simple_Server"
-	ProjectGUID="{8931BE45-FECA-1BAD-035B-A790F8AEE4FF}"
+	ProjectGUID="{8931BE45-FECA-1BAD-035B-A790CBA3AD9C}"
 	RootNamespace="Logger_Simple_Server"
 	Keyword="Win32Proj"
 	SignManifests="true"

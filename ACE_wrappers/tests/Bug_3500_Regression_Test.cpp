@@ -1,7 +1,7 @@
 /**
  * @file Bug_3500_Regression_Test.cpp
  *
- * $Id: Bug_3500_Regression_Test.cpp 91673 2010-09-08 18:49:47Z johnnyw $
+ * $Id: Bug_3500_Regression_Test.cpp 90163 2010-05-18 21:42:20Z mitza $
  *
  * Reproduces the problems reported in bug 3500:
  *   http://deuce.doc.wustl.edu/bugzilla/show_bug.cgi?id=3500
@@ -12,6 +12,10 @@
 #include "ace/OS_NS_sys_mman.h"
 #include "ace/SString.h"
 #include "test_config.h"
+
+ACE_RCSID (tests,
+           Bug_3500_Regression_Test,
+           "$Id: Bug_3500_Regression_Test.cpp 90163 2010-05-18 21:42:20Z mitza $")
 
 int
 run_main (int, ACE_TCHAR *[])

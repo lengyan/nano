@@ -1,14 +1,18 @@
 // ACE_HTBP_Filter.cpp
-// $Id: HTBP_Inside_Squid_Filter.cpp 91730 2010-09-13 09:31:11Z johnnyw $
+// $Id: HTBP_Inside_Squid_Filter.cpp 87228 2009-10-26 10:45:28Z vzykov $
 
 #include "ace/Log_Msg.h"
-#include "ace/OS_NS_stdio.h"
+
+//#include <sstream>
+
 #include "HTBP_Session.h"
 #include "HTBP_Inside_Squid_Filter.h"
 
 #if !defined (__ACE_INLINE__)
 #include "HTBP_Inside_Squid_Filter.inl"
 #endif
+
+ACE_RCSID(HTBP,ACE_HTBP_Inside_Squid_Filter,"$Id: HTBP_Inside_Squid_Filter.cpp 87228 2009-10-26 10:45:28Z vzykov $")
 
 ACE_BEGIN_VERSIONED_NAMESPACE_DECL
 

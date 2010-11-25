@@ -1,7 +1,7 @@
 /**
  * @file Bug_2540_Regression_Test.cpp
  *
- * $Id: Bug_2540_Regression_Test.cpp 91673 2010-09-08 18:49:47Z johnnyw $
+ * $Id: Bug_2540_Regression_Test.cpp 85559 2009-06-08 09:51:49Z johnnyw $
  *
  * Reproduces the problems reported in bug 2540
  *   http://deuce.doc.wustl.edu/bugzilla/show_bug.cgi?id=2540
@@ -17,6 +17,10 @@
 #include "ace/Reactor.h"
 #include "ace/Select_Reactor.h"
 #include "ace/Auto_Ptr.h"
+
+ACE_RCSID (tests,
+           Bug_2540_Regression_Test,
+           "$Id: Bug_2540_Regression_Test.cpp 85559 2009-06-08 09:51:49Z johnnyw $")
 
 int const nhandlers = 3;
 
@@ -264,7 +268,7 @@ int Timer::handle_timeout(ACE_Time_Value const &, void const *)
       // The first iterations are there just to prime things.
       return 0;
     }
-
+    
     if (iteration_ == initial_iterations)
     {
       // We expect the special_handler() to work normally after this

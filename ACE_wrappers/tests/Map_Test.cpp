@@ -1,4 +1,4 @@
-// $Id: Map_Test.cpp 91671 2010-09-08 18:39:23Z johnnyw $
+// $Id: Map_Test.cpp 80826 2008-03-04 14:51:23Z wotte $
 
 // ============================================================================
 //
@@ -22,7 +22,7 @@
 #include "ace/Map_T.h"
 #include "ace/Profile_Timer.h"
 
-
+ACE_RCSID(tests, Map_Test, "$Id: Map_Test.cpp 80826 2008-03-04 14:51:23Z wotte $")
 
 #undef THIS_IS_NOT_AN_ASSERT_IT_IS_A_NON_DEBUG_TEST_AS_WELL
 #define THIS_IS_NOT_AN_ASSERT_IT_IS_A_NON_DEBUG_TEST_AS_WELL(X) \

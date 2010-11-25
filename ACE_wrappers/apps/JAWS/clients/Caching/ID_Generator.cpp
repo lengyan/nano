@@ -1,10 +1,12 @@
-// $Id: ID_Generator.cpp 91670 2010-09-08 18:02:26Z johnnyw $
+// $Id: ID_Generator.cpp 81993 2008-06-16 20:26:16Z sowayaa $
 
 #if !defined (ACE_ID_GENERATOR_C)
 #define ACE_ID_GENERATOR_C
 
 #include "ace/Object_Manager.h"
 #include "ID_Generator.h"
+
+ACE_RCSID(Caching, ID_Generator, "$Id: ID_Generator.cpp 81993 2008-06-16 20:26:16Z sowayaa $")
 
 time_t ACE_ID_Generator::last_time_ = 0;
 

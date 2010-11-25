@@ -1,7 +1,7 @@
 /**
  * @file Bug_3319_Regression_Test.cpp
  *
- * $Id: Bug_3319_Regression_Test.cpp 91673 2010-09-08 18:49:47Z johnnyw $
+ * $Id: Bug_3319_Regression_Test.cpp 90163 2010-05-18 21:42:20Z mitza $
  *
  * Reproduces the problems reported in bug 2975:
  *   http://deuce.doc.wustl.edu/bugzilla/show_bug.cgi?id=3319
@@ -13,6 +13,10 @@
 #include "ace/ARGV.h"
 #include "ace/Log_Msg.h"
 
+ACE_RCSID (tests,
+           Bug_3319_Regression_Test,
+           "$Id: Bug_3319_Regression_Test.cpp 90163 2010-05-18 21:42:20Z mitza $")
+
 int
 run_main (int, ACE_TCHAR *[])
 {
@@ -23,7 +27,7 @@ run_main (int, ACE_TCHAR *[])
   args.add (ACE_TEXT("MyProgram"), true);
   int ret = ACE_Service_Config::open(args.argc(), args.argv(),
                                      ACE_DEFAULT_LOGGER_KEY,
-                                     1, 1, 1);
+                                     1, 0, 1);
 
   if (ACE_OS::strcmp (log_msg->program_name (), ACE_TEXT("MyProgram")) != 0)
   {

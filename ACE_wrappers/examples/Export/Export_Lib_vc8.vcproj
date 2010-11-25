@@ -3,7 +3,7 @@
 	ProjectType="Visual C++"
 	Version="8.00"
 	Name="Export_Lib"
-	ProjectGUID="{B2E9FA1F-FECA-1BAD-6856-8E4C79C8CEF6}"
+	ProjectGUID="{B2E9FA1F-FECA-1BAD-6856-8E4C7481ADC5}"
 	RootNamespace="Export_Lib"
 	Keyword="Win32Proj"
 	SignManifests="true"

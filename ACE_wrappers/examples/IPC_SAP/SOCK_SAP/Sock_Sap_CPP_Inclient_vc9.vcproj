@@ -3,7 +3,7 @@
 	ProjectType="Visual C++"
 	Version="9.00"
 	Name="Sock_Sap_CPP_Inclient"
-	ProjectGUID="{F936767F-FECA-1BAD-8565-D33D58B27113}"
+	ProjectGUID="{F936767F-FECA-1BAD-8565-D33D11D1421E}"
 	RootNamespace="Sock_Sap_CPP_Inclient"
 	Keyword="Win32Proj"
 	SignManifests="true"

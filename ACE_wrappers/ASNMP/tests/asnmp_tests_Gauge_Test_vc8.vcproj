@@ -3,7 +3,7 @@
 	ProjectType="Visual C++"
 	Version="8.00"
 	Name="asnmp_tests_Gauge_Test"
-	ProjectGUID="{65348DC8-FECA-1BAD-2431-8A1182826049}"
+	ProjectGUID="{65348DC8-FECA-1BAD-2431-8A11E1B16D00}"
 	RootNamespace="asnmp_tests_Gauge_Test"
 	Keyword="Win32Proj"
 	SignManifests="true"

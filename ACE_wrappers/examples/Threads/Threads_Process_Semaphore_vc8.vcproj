@@ -3,7 +3,7 @@
 	ProjectType="Visual C++"
 	Version="8.00"
 	Name="Threads_Process_Semaphore"
-	ProjectGUID="{908574FA-FECA-1BAD-3731-D8978C8E5D14}"
+	ProjectGUID="{908574FA-FECA-1BAD-3731-D89758186E24}"
 	RootNamespace="Threads_Process_Semaphore"
 	Keyword="Win32Proj"
 	SignManifests="true"

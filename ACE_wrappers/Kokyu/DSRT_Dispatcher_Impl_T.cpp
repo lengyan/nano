@@ -1,4 +1,4 @@
-// $Id: DSRT_Dispatcher_Impl_T.cpp 91670 2010-09-08 18:02:26Z johnnyw $
+// $Id: DSRT_Dispatcher_Impl_T.cpp 80826 2008-03-04 14:51:23Z wotte $
 
 #ifndef DSRT_DISPATCHER_IMPL_T_CPP
 #define DSRT_DISPATCHER_IMPL_T_CPP
@@ -9,12 +9,14 @@
 #include "DSRT_Dispatcher_Impl_T.inl"
 #endif /* __ACE_INLINE__ */
 
+ACE_RCSID(Kokyu, DSRT_Dispatcher_Impl, "$Id: DSRT_Dispatcher_Impl_T.cpp 80826 2008-03-04 14:51:23Z wotte $")
+
 namespace Kokyu
 {
 
 template <class DSRT_Scheduler_Traits>
 DSRT_Dispatcher_Impl<DSRT_Scheduler_Traits>::
-DSRT_Dispatcher_Impl (ACE_Sched_Params::Policy sched_policy,
+DSRT_Dispatcher_Impl (ACE_Sched_Params::Policy sched_policy, 
                           int sched_scope)
   : sched_policy_ (sched_policy),
     sched_scope_ (sched_scope),

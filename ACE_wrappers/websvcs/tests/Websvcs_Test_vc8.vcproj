@@ -3,7 +3,7 @@
 	ProjectType="Visual C++"
 	Version="8.00"
 	Name="Websvcs_Test"
-	ProjectGUID="{5A152CDC-FECA-1BAD-2431-8A1141F31173}"
+	ProjectGUID="{5A152CDC-FECA-1BAD-2431-8A1172FE5810}"
 	RootNamespace="Websvcs_Test"
 	Keyword="Win32Proj"
 	SignManifests="true"

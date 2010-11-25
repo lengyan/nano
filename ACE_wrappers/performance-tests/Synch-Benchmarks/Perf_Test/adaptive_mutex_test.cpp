@@ -1,9 +1,11 @@
-// $Id: adaptive_mutex_test.cpp 91670 2010-09-08 18:02:26Z johnnyw $
+// $Id: adaptive_mutex_test.cpp 80826 2008-03-04 14:51:23Z wotte $
 
 #define  ACE_BUILD_SVC_DLL
 #include "ace/Log_Msg.h"
 #include "Adaptive_Lock_Performance_Test_Base.h"
 #include "ace/Lock_Adapter_T.h"
+
+ACE_RCSID(Synch_Benchmarks, adaptive_mutex_test, "$Id: adaptive_mutex_test.cpp 80826 2008-03-04 14:51:23Z wotte $")
 
 #if defined (ACE_HAS_THREADS)
 

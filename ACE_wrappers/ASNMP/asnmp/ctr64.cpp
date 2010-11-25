@@ -1,4 +1,4 @@
-// $Id: ctr64.cpp 91670 2010-09-08 18:02:26Z johnnyw $
+// $Id: ctr64.cpp 80826 2008-03-04 14:51:23Z wotte $
 
 // ============================================================================
 //
@@ -33,6 +33,8 @@
 
 #include "asnmp/ctr64.h"
 #include "ace/OS_NS_stdio.h"
+
+ACE_RCSID(asnmp, ctr64, "$Id: ctr64.cpp 80826 2008-03-04 14:51:23Z wotte $")
 
 #define MAX32 4294967295u
 

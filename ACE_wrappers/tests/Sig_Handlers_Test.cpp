@@ -1,4 +1,4 @@
-// $Id: Sig_Handlers_Test.cpp 91671 2010-09-08 18:39:23Z johnnyw $
+// $Id: Sig_Handlers_Test.cpp 85011 2009-04-02 09:03:59Z johnnyw $
 
 // ============================================================================
 //
@@ -28,7 +28,7 @@
 #include "ace/Assert.h"
 #include "ace/SString.h"
 
-
+ACE_RCSID(tests, Reactor_Timer_Test, "$Id: Sig_Handlers_Test.cpp 85011 2009-04-02 09:03:59Z johnnyw $")
 
 class Test_SIGINT_Handler : public ACE_Event_Handler
 {

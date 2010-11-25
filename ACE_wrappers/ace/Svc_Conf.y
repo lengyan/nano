@@ -1,5 +1,5 @@
 %{
-// $Id: Svc_Conf.y 91368 2010-08-16 13:03:34Z mhengstmengel $
+// $Id: Svc_Conf.y 82136 2008-06-23 15:28:40Z sma $
 
 #include "ace/Svc_Conf.h"
 
@@ -9,6 +9,10 @@
 #include "ace/Stream.h"
 #include "ace/Service_Types.h"
 #include "ace/ace_wchar.h"
+
+ACE_RCSID (ace,
+           Svc_Conf_y,
+           "$Id: Svc_Conf.y 82136 2008-06-23 15:28:40Z sma $")
 
 ACE_BEGIN_VERSIONED_NAMESPACE_DECL
 

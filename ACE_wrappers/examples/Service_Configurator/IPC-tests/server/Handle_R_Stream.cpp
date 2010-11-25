@@ -1,6 +1,8 @@
-// $Id: Handle_R_Stream.cpp 91670 2010-09-08 18:02:26Z johnnyw $
+// $Id: Handle_R_Stream.cpp 81986 2008-06-16 18:33:50Z sowayaa $
 
 #include "Handle_R_Stream.h"
+
+ACE_RCSID(server, Handle_R_Stream, "$Id: Handle_R_Stream.cpp 81986 2008-06-16 18:33:50Z sowayaa $")
 
 #if defined (SunOS4)
 extern "C"

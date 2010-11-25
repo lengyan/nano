@@ -3,7 +3,7 @@
 	ProjectType="Visual C++"
 	Version="9.00"
 	Name="Connection_Non_Blocking_TLIServer"
-	ProjectGUID="{CBB36F32-FECA-1BAD-D57C-7CD528BEBF5B}"
+	ProjectGUID="{CBB36F32-FECA-1BAD-D57C-7CD5FC288C6B}"
 	RootNamespace="Connection_Non_Blocking_TLIServer"
 	Keyword="Win32Proj"
 	SignManifests="true"

@@ -1,4 +1,4 @@
-// $Id: HAStatus.cpp 91626 2010-09-07 10:59:20Z johnnyw $
+// $Id: HAStatus.cpp 80826 2008-03-04 14:51:23Z wotte $
 
 #include "ace/OS_NS_sys_time.h"
 #include "ace/os_include/os_netdb.h"
@@ -170,7 +170,7 @@ ClientService::handle_input (ACE_HANDLE)
                       0);
   if (send_cnt == -1)
     send_cnt = 0;
-  ACE_Message_Block *mb = 0;
+  ACE_Message_Block *mb;
   size_t remaining =
     static_cast<size_t> ((recv_cnt - send_cnt));
   ACE_NEW_RETURN (mb, ACE_Message_Block (remaining), -1);
@@ -196,7 +196,7 @@ ClientService::handle_input (ACE_HANDLE)
 int
 ClientService::handle_output (ACE_HANDLE)
 {
-  ACE_Message_Block *mb = 0;
+  ACE_Message_Block *mb;
   ACE_Time_Value nowait (ACE_OS::gettimeofday ());
   while (0 <= this->output_queue_.dequeue_head
                                     (mb, &nowait))

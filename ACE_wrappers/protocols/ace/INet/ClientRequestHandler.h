@@ -1,4 +1,4 @@
-// $Id: ClientRequestHandler.h 91801 2010-09-16 13:38:56Z mcorino $
+// $Id: ClientRequestHandler.h 90737 2010-06-21 09:46:14Z mcorino $
 
 /**
  * @file ClientRequestHandler.h
@@ -11,12 +11,12 @@
 
 #include /**/ "ace/pre.h"
 
-#include "ace/SString.h"
 #include "ace/Singleton.h"
 #include "ace/Synch_Traits.h"
 #include "ace/Null_Mutex.h"
 #include "ace/Thread_Mutex.h"
 #include "ace/INet/INet_Export.h"
+#include "ace/INet/URLBase.h"
 #include "ace/INet/RequestHandler.h"
 #include "ace/INet/ConnectionCache.h"
 #include <iostream>
@@ -27,7 +27,6 @@ namespace ACE
   {
     namespace INet
       {
-        class URL_Base; // forward
 
         /**
         * @class ACE_INet_ClientRequestHandler
@@ -68,17 +67,14 @@ namespace ACE
               ClientINetRequestHandler ();
               virtual ~ClientINetRequestHandler ();
 
+            protected:
               /**
               * @class ACE_INet_INetConnectionKey
               *
               * @brief
               *
               */
-#if (_MSC_VER < 1600)
-              class ACE_INET_Export INetConnectionKey
-#else
               class INetConnectionKey
-#endif
                 : public ConnectionKey
                 {
                   public:

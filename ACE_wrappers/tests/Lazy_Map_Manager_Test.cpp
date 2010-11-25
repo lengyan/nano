@@ -1,4 +1,4 @@
-// $Id: Lazy_Map_Manager_Test.cpp 91671 2010-09-08 18:39:23Z johnnyw $
+// $Id: Lazy_Map_Manager_Test.cpp 80826 2008-03-04 14:51:23Z wotte $
 
 // ============================================================================
 //
@@ -22,7 +22,7 @@
 #include "ace/Map_Manager.h"
 #include "ace/Active_Map_Manager.h"
 
-
+ACE_RCSID(tests, Map_Manager_Test, "$Id: Lazy_Map_Manager_Test.cpp 80826 2008-03-04 14:51:23Z wotte $")
 
 // Simple map manager.
 typedef ACE_Map_Manager<int, int, ACE_Null_Mutex> LAZY_MAP;

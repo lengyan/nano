@@ -1,4 +1,4 @@
-// $Id: Guards.cpp 91626 2010-09-07 10:59:20Z johnnyw $
+// $Id: Guards.cpp 80826 2008-03-04 14:51:23Z wotte $
 #include "ace/config-lite.h"
 #if defined (ACE_HAS_THREADS)
 
@@ -50,9 +50,7 @@ HA_Device_Repository::update_device (int device_id)
   // Construct a guard specifying the type of the mutex as
   // a template parameter and passing in the mutex to hold
   // as a parameter.
-  // FUZZ: disable check_for_ACE_Guard
   ACE_Guard<ACE_Thread_Mutex> guard (this->mutex_);
-  // FUZZ: enable check_for_ACE_Guard
 
   // This can throw an exception that is not caught here.
   ACE_NEW_RETURN (object, Object, -1);

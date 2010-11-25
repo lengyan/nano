@@ -1,4 +1,4 @@
-/* $Id: genrand.c 91813 2010-09-17 07:52:52Z johnnyw $ */
+/* $Id: genrand.c 81998 2008-06-17 09:31:15Z sma $ */
 /**************************************************************************
  *
  *     Copyright (C) 1995 Silicon Graphics, Inc.
@@ -31,13 +31,13 @@ main(const int argc, char* argv[])
   int size;
   char *cp;
 
-  if (argc != 3)
+  if (argc != 3) 
     {
       printf("usage: %s file_size_in_bytes[K|M] name\n", argv[0]);
       exit(2);
     }
 
-  if ((file = fopen(argv[2], "w")) == 0)
+  if ((file = fopen(argv[2], "w")) == 0) 
     {
       perror("fopen");
       exit(1);
@@ -45,9 +45,9 @@ main(const int argc, char* argv[])
 
   size = atoi(argv[1]);
 
-  for (cp = argv[1]; *cp; cp++)
+  for (cp = argv[1]; *cp; cp++) 
   {
-    switch(*cp)
+    switch(*cp) 
       {
         case 'k':
         case 'K':
@@ -60,7 +60,7 @@ main(const int argc, char* argv[])
       }
   }
 
-  for (i = 0; i < size; i++)
+  for (i = 0; i < size; i++) 
     {
       my_random = ((RANDOM() % 94) + 33);
       fputc((char)my_random, file);

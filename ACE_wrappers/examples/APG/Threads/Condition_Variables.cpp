@@ -1,11 +1,10 @@
-// $Id: Condition_Variables.cpp 91633 2010-09-07 14:27:13Z johnnyw $
+// $Id: Condition_Variables.cpp 80826 2008-03-04 14:51:23Z wotte $
 
 #include "ace/config-lite.h"
 #if defined (ACE_HAS_THREADS)
 
 #include "ace/Task.h"
 #include "ace/Synch.h"
-#include "ace/Condition_T.h"
 
 // Listing 1 code/ch12
 class HA_Device_Repository

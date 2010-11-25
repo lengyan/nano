@@ -3,7 +3,7 @@
 	ProjectType="Visual C++"
 	Version="9.00"
 	Name="SendRecv_Test_Server"
-	ProjectGUID="{F31C590B-FECA-1BAD-1A52-BE0C301D82A2}"
+	ProjectGUID="{F31C590B-FECA-1BAD-1A52-BE0C032D5634}"
 	RootNamespace="SendRecv_Test_Server"
 	Keyword="Win32Proj"
 	SignManifests="true"

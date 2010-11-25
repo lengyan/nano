@@ -1,4 +1,4 @@
-// $Id: FTP_URL.cpp 91118 2010-07-17 10:29:57Z mcorino $
+// $Id: FTP_URL.cpp 90891 2010-06-28 09:55:39Z mcorino $
 
 #include "ace/INet/FTP_URL.h"
 
@@ -15,13 +15,7 @@ namespace ACE
 {
   namespace FTP
   {
-    const char* URL::PROTOCOL = "ftp";
-
-    const ACE_CString& URL::protocol ()
-      {
-        static const ACE_CString protocol_ (PROTOCOL);
-        return protocol_;
-      }
+    const ACE_CString URL::PROTOCOL ("ftp");
 
     URL::URL ()
       : URL_INetAuthBase (FTP_PORT)
@@ -81,7 +75,7 @@ namespace ACE
 
     const ACE_CString& URL::Factory::protocol ()
       {
-        return URL::protocol ();
+        return URL::PROTOCOL;
       }
 
     ACE::INet::URL_Base* URL::Factory::create_from_string (const ACE_CString& url_string)

@@ -1,4 +1,4 @@
-// $Id: newres.h 91743 2010-09-13 18:24:51Z johnnyw $
+// $Id: newres.h 85848 2009-06-29 23:42:35Z johnnyw $
 
 #ifndef __NEWRES_H__
 #define __NEWRES_H__
@@ -31,7 +31,7 @@
 #ifndef _INC_WINDOWS
 #define _INC_WINDOWS
     #include "winuser.h"           // extract from windows header
-    #include "winver.h"
+    #include "winver.h"   
     #include "windows.h"
 #endif
 #endif

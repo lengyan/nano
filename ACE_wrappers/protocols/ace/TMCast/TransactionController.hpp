@@ -1,5 +1,6 @@
-// $Id: TransactionController.hpp 91626 2010-09-07 10:59:20Z johnnyw $
+// file      : ACE_TMCast/TransactionController.hpp
 // author    : Boris Kolpackov <boris@dre.vanderbilt.edu>
+// cvs-id    : $Id: TransactionController.hpp 80826 2008-03-04 14:51:23Z wotte $
 
 #include "ace/OS_NS_string.h"
 #include "ace/OS_NS_stdlib.h"
@@ -366,9 +367,7 @@ namespace ACE_TMCast
     }
 
   private:
-    // FUZZ: disable check_for_ACE_Guard
     typedef ACE_Guard<ACE_Thread_Mutex> AutoLock;
-    // FUZZ: enable check_for_ACE_Guard
 
     bool trace_;
 

@@ -3,7 +3,7 @@
 	ProjectType="Visual C++"
 	Version="8.00"
 	Name="cppinset"
-	ProjectGUID="{505608EC-FECA-1BAD-2431-8A1123F3B457}"
+	ProjectGUID="{505608EC-FECA-1BAD-2431-8A11F7658767}"
 	RootNamespace="cppinset"
 	Keyword="Win32Proj"
 	SignManifests="true"

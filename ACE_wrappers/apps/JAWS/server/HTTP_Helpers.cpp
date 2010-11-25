@@ -1,4 +1,4 @@
-// $Id: HTTP_Helpers.cpp 91670 2010-09-08 18:02:26Z johnnyw $
+// $Id: HTTP_Helpers.cpp 81993 2008-06-16 20:26:16Z sowayaa $
 
 // HTTP_Helpers.cpp -- Helper utilities for both server and client
 
@@ -8,6 +8,8 @@
 #include "ace/Guard_T.h"
 #include "ace/OS_NS_time.h"
 #include "ace/OS_NS_stdio.h"
+
+ACE_RCSID(server, HTTP_Helpers, "$Id: HTTP_Helpers.cpp 81993 2008-06-16 20:26:16Z sowayaa $")
 
 // = Static initialization.
 const char *const
@@ -101,7 +103,7 @@ HTTP_Helper::HTTP_mktime (const char *httpdate)
   {
 
 #if !defined (ACE_HAS_REENTRANT_LIBC)
-    ACE_MT (ACE_GUARD_RETURN (ACE_SYNCH_MUTEX, g, HTTP_Helper::mutex_, -1));
+    ACE_MT (ACE_Guard<ACE_SYNCH_MUTEX> g (HTTP_Helper::mutex_));
 #endif /* NOT ACE_HAS_REENTRANT_LIBC */
 
     return ACE_OS::mktime (&tms);
@@ -113,7 +115,7 @@ HTTP_Helper::HTTP_date (void)
 {
   if (HTTP_Helper::date_string_ == 0)
     {
-      ACE_MT (ACE_GUARD_RETURN (ACE_SYNCH_MUTEX, m, HTTP_Helper::mutex_, 0));
+      ACE_MT (ACE_Guard<ACE_SYNCH_MUTEX> m (HTTP_Helper::mutex_));
 
       if (HTTP_Helper::date_string_ == 0)
         {
@@ -385,7 +387,7 @@ HTTP_Status_Code::instance (void)
 {
   if (HTTP_Status_Code::instance_ == 0)
     {
-      ACE_MT (ACE_GUARD_RETURN (ACE_SYNCH_MUTEX, g, lock_, 0));
+      ACE_MT (ACE_Guard<ACE_SYNCH_MUTEX> g (lock_));
 
       if (HTTP_Status_Code::instance_ == 0)
         {

@@ -1,4 +1,4 @@
-// $Id: soreduce.cpp 91670 2010-09-08 18:02:26Z johnnyw $
+// $Id: soreduce.cpp 82543 2008-08-06 18:21:48Z parsons $
 
 // File: soreduce.cpp
 
@@ -29,28 +29,30 @@
 
 #include "SO_Group.h"
 
+ACE_RCSID (src, soreduce, "$Id: soreduce.cpp 82543 2008-08-06 18:21:48Z parsons $")
+
 int
 ACE_TMAIN (int argc, ACE_TCHAR *argv[])
 {
   SO_Group group;
 
   ACE_DEBUG ((LM_DEBUG, "discovering libraries\n"));
-
+  
   for (int i = 1; i < argc; group.add_executable (argv[i++]))
     {
       // No action.
     }
-
+  
   ACE_DEBUG ((LM_DEBUG, "loading object modules\n"));
   group.load_modules ();
   group.list_libs ();
-
+  
   ACE_DEBUG ((LM_DEBUG, "Starting analysis\n"));
   group.analize ();
-
+  
   ACE_DEBUG ((LM_DEBUG, "Writing results\n"));
   group.write_results ();
-
+  
   ACE_DEBUG ((LM_DEBUG, "Done.\n"));
   return 0;
 }

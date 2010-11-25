@@ -1,4 +1,4 @@
-// $Id: benchd.cpp 91670 2010-09-08 18:02:26Z johnnyw $
+// $Id: benchd.cpp 82739 2008-09-16 12:20:46Z johnnyw $
 
 // benchd: Adapted from the "ntalker" example.
 // Sumedh Mungee
@@ -10,6 +10,8 @@
 #include "ace/Get_Opt.h"
 #include "ace/ARGV.h"
 #include "ace/OS_NS_stdio.h"
+
+ACE_RCSID(stress_testing, benchd, "$Id: benchd.cpp 82739 2008-09-16 12:20:46Z johnnyw $")
 
 #if defined (ACE_HAS_IP_MULTICAST)
 // network interface to subscribe to

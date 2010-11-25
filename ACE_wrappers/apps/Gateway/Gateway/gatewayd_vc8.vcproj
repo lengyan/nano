@@ -3,7 +3,7 @@
 	ProjectType="Visual C++"
 	Version="8.00"
 	Name="gatewayd"
-	ProjectGUID="{886B0DF8-FECA-1BAD-216B-EB0100066773}"
+	ProjectGUID="{886B0DF8-FECA-1BAD-216B-EB013336B3E5}"
 	RootNamespace="gatewayd"
 	Keyword="Win32Proj"
 	SignManifests="true"

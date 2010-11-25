@@ -1,4 +1,4 @@
-// $Id: URL_Array_Helper.cpp 91670 2010-09-08 18:02:26Z johnnyw $
+// $Id: URL_Array_Helper.cpp 80826 2008-03-04 14:51:23Z wotte $
 
 // URL_Array_Helper.cpp
 
@@ -6,6 +6,8 @@
 #define ACE_URL_ARRAY_HELPER_C
 
 #include "URL_Array_Helper.h"
+
+ACE_RCSID(Caching, URL_Array_Helper, "$Id: URL_Array_Helper.cpp 80826 2008-03-04 14:51:23Z wotte $")
 
 // Some helper functions for encoding/decoding
 

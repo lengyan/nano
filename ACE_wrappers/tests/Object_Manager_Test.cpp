@@ -1,4 +1,4 @@
-// $Id: Object_Manager_Test.cpp 91671 2010-09-08 18:39:23Z johnnyw $
+// $Id: Object_Manager_Test.cpp 80826 2008-03-04 14:51:23Z wotte $
 
 // ============================================================================
 //
@@ -21,7 +21,7 @@
 #include "ace/OS_Memory.h"
 #include "ace/ACE.h"
 
-
+ACE_RCSID(tests, Object_Manager_Test, "$Id: Object_Manager_Test.cpp 80826 2008-03-04 14:51:23Z wotte $")
 
 static u_int *ip;
 

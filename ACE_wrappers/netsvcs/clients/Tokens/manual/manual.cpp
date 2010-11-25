@@ -1,4 +1,4 @@
-// $Id: manual.cpp 91671 2010-09-08 18:39:23Z johnnyw $
+// $Id: manual.cpp 82739 2008-09-16 12:20:46Z johnnyw $
 
 // ============================================================================
 //
@@ -28,7 +28,7 @@
 
 #if defined (ACE_HAS_THREADS) && defined (ACE_HAS_THREADS_LIBRARY)
 
-
+ACE_RCSID(manual, manual, "$Id: manual.cpp 82739 2008-09-16 12:20:46Z johnnyw $")
 
 typedef ACE_Token_Invariant_Manager ACE_TOKEN_INVARIANTS;
 

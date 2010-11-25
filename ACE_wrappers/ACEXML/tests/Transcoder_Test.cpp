@@ -1,11 +1,12 @@
-// -*- C++ -*- $Id: Transcoder_Test.cpp 91257 2010-08-03 11:54:04Z johnnyw $
+// -*- C++ -*- $Id: Transcoder_Test.cpp 80826 2008-03-04 14:51:23Z wotte $
 
 #include "ACEXML/common/Transcode.h"
 #include "ace/Log_Msg.h"
 #include "ace/OS_NS_string.h"
 #include "ace/OS_main.h"
 
-void dump_utf16 (const ACEXML_UTF16 *data, size_t len)
+void dump_utf16 (const ACEXML_UTF16 *data,
+                 size_t len)
 {
   size_t ptr = 0;
 

@@ -1,9 +1,11 @@
-// $Id: URL_Locator.cpp 91670 2010-09-08 18:02:26Z johnnyw $
+// $Id: URL_Locator.cpp 80826 2008-03-04 14:51:23Z wotte $
 
 #if !defined (ACE_URL_LOCATOR_C)
 #define ACE_URL_LOCATOR_C
 
 #include "URL_Locator.h"
+
+ACE_RCSID(Caching, URL_Locator, "$Id: URL_Locator.cpp 80826 2008-03-04 14:51:23Z wotte $")
 
 const char * const
 ACE_URL_Locator::opname[] =

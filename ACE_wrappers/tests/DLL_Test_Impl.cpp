@@ -1,4 +1,4 @@
-// $Id: DLL_Test_Impl.cpp 91673 2010-09-08 18:49:47Z johnnyw $
+// $Id: DLL_Test_Impl.cpp 80826 2008-03-04 14:51:23Z wotte $
 
 // ============================================================================
 //
@@ -21,6 +21,10 @@
 #include "ace/OS_Errno.h"
 #include "ace/svc_export.h"
 #include "ace/OS_NS_string.h"
+
+ACE_RCSID (tests,
+           DLL_Test_Impl,
+           "$Id: DLL_Test_Impl.cpp 80826 2008-03-04 14:51:23Z wotte $")
 
 Hello_Impl::Hello_Impl (void)
 {

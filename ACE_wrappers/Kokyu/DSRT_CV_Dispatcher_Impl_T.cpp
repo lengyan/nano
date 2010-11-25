@@ -1,4 +1,4 @@
-// $Id: DSRT_CV_Dispatcher_Impl_T.cpp 91670 2010-09-08 18:02:26Z johnnyw $
+// $Id: DSRT_CV_Dispatcher_Impl_T.cpp 84565 2009-02-23 08:20:39Z johnnyw $
 
 #ifndef DSRT_CV_DISPATCHER_IMPL_T_CPP
 #define DSRT_CV_DISPATCHER_IMPL_T_CPP
@@ -8,6 +8,8 @@
 #if !defined (__ACE_INLINE__)
 //#include "DSRT_CV_Dispatcher_Impl_T.i"
 #endif /* __ACE_INLINE__ */
+
+ACE_RCSID(Kokyu, DSRT_CV_Dispatcher_Impl_T, "$Id: DSRT_CV_Dispatcher_Impl_T.cpp 84565 2009-02-23 08:20:39Z johnnyw $")
 
 namespace Kokyu
 {

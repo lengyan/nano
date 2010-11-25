@@ -1,4 +1,4 @@
-// $Id: FIFO-test.cpp 91671 2010-09-08 18:39:23Z johnnyw $
+// $Id: FIFO-test.cpp 81978 2008-06-16 16:57:12Z sowayaa $
 
 // Purpose: This program uses ACE_FIFO wrappers to perform
 // interprocess communication between a parent process and a child
@@ -14,7 +14,7 @@
 #include "ace/OS_NS_stdlib.h"
 #include "ace/OS_NS_fcntl.h"
 
-
+ACE_RCSID(FIFO_SAP, FIFO_test, "$Id: FIFO-test.cpp 81978 2008-06-16 16:57:12Z sowayaa $")
 
 #define PERMS                   0666
 #define EXEC_NAME               "more"

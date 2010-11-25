@@ -1,8 +1,8 @@
-// $Id: UPIPE_Connector.cpp 91286 2010-08-05 09:04:31Z johnnyw $
+// $Id: UPIPE_Connector.cpp 80826 2008-03-04 14:51:23Z wotte $
 
 #include "ace/UPIPE_Connector.h"
 
-
+ACE_RCSID(ace, UPIPE_Connector, "$Id: UPIPE_Connector.cpp 80826 2008-03-04 14:51:23Z wotte $")
 
 #if defined (ACE_HAS_THREADS)
 

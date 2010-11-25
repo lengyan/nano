@@ -4,7 +4,7 @@
 /**
  * @file Linux_Network_Interface_Monitor.h
  *
- * $Id: Linux_Network_Interface_Monitor.h 91743 2010-09-13 18:24:51Z johnnyw $
+ * $Id: Linux_Network_Interface_Monitor.h 82115 2008-06-20 20:43:13Z parsons $
  *
  * @author Jeff Parsons <j.parsons@vanderbilt.edu>
  */
@@ -53,9 +53,9 @@ namespace ACE
 
     protected:
       ACE_UINT64 value_;
-
+      
     private:
-      /// Common code.
+      /// Common code.      
       void init (void);
 
     private:

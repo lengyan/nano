@@ -3,7 +3,7 @@
 	ProjectType="Visual C++"
 	Version="9.00"
 	Name="Condition_Variables"
-	ProjectGUID="{30459837-FECA-1BAD-3731-F897C8D3AD0C}"
+	ProjectGUID="{30459837-FECA-1BAD-3731-F897FBE3799A}"
 	RootNamespace="Condition_Variables"
 	Keyword="Win32Proj"
 	SignManifests="true"

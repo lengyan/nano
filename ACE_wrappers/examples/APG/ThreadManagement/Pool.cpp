@@ -1,4 +1,4 @@
-// $Id: Pool.cpp 91626 2010-09-07 10:59:20Z johnnyw $
+// $Id: Pool.cpp 84565 2009-02-23 08:20:39Z johnnyw $
 
 #include "ace/config-lite.h"
 #if defined (ACE_HAS_THREADS)
@@ -13,7 +13,7 @@ public:
   virtual int svc (void)
   {
     ACE_DEBUG ((LM_DEBUG, ACE_TEXT ("(%t) starting up\n")));
-    ACE_Message_Block *mb = 0;
+    ACE_Message_Block *mb;
     if (this->getq (mb) == -1)
       return -1;
     // ... do something with the message.

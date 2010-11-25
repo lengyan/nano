@@ -3,7 +3,7 @@
 	ProjectType="Visual C++"
 	Version="9.00"
 	Name="QoS"
-	ProjectGUID="{BC7E1C9A-FECA-1BAD-7781-8A636757A7A3}"
+	ProjectGUID="{BC7E1C9A-FECA-1BAD-7781-8A636A1EC490}"
 	RootNamespace="QoS"
 	Keyword="Win32Proj"
 	SignManifests="true"
@@ -428,7 +428,7 @@
 		</Filter>
 		<Filter
 			Name="Pkgconfig Files"
-			Filter="pcin">
+			Filter="in">
 			<File
 				RelativePath="ACE_QoS.pc.in">
 				<FileConfiguration

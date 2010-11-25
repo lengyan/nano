@@ -1,7 +1,7 @@
 /**
  * @file Bug_2368_Regression_Test.cpp
  *
- * $Id: Bug_2368_Regression_Test.cpp 91673 2010-09-08 18:49:47Z johnnyw $
+ * $Id: Bug_2368_Regression_Test.cpp 80826 2008-03-04 14:51:23Z wotte $
  *
  * Reproduces the problems reported in bug 2368:
  *   http://deuce.doc.wustl.edu/bugzilla/show_bug.cgi?id=2368
@@ -14,6 +14,10 @@
 #include "ace/Reactor.h"
 #include "ace/Log_Msg.h"
 #include "ace/Signal.h"
+
+ACE_RCSID (tests,
+           Bug_2368_Regression_Test,
+           "$Id: Bug_2368_Regression_Test.cpp 80826 2008-03-04 14:51:23Z wotte $")
 
 static bool handleA_close_called = false;
 static bool handleB_close_called = false;

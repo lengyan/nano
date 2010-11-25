@@ -1,4 +1,4 @@
-// $Id: Message_Queue_Notifications_Test.cpp 91671 2010-09-08 18:39:23Z johnnyw $
+// $Id: Message_Queue_Notifications_Test.cpp 85332 2009-05-14 07:17:45Z johnnyw $
 
 // ============================================================================
 //
@@ -46,7 +46,7 @@
 #include "ace/OS_NS_string.h"
 #include "ace/OS_NS_unistd.h"
 
-
+ACE_RCSID(tests, Message_Queue_Notifications_Test, "$Id: Message_Queue_Notifications_Test.cpp 85332 2009-05-14 07:17:45Z johnnyw $")
 
 static int iterations = 10;
 

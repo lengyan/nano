@@ -1242,6 +1242,9 @@
 /* Compiler complains about use of obsolete "pragma once" */
 #undef ACE_LACKS_PRAGMA_ONCE
 
+/* Platform/compiler lacks the pread() and pwrite() prototypes */
+#undef ACE_LACKS_PREAD_PROTOTYPE
+
 /* Define to 1 if the system lacks the type 'pri_t'. */
 #undef ACE_LACKS_PRI_T
 
@@ -1485,10 +1488,6 @@
 
 /* Define to 1 if the system lacks the type `struct dirent'. */
 #undef ACE_LACKS_STRUCT_DIR
-
-/* Define to 1 if the system uses int instead of `struct lifnum' for
-   SIOCGIFNUM ioctl. */
-#undef ACE_LACKS_STRUCT_LIFNUM
 
 /* Define to 1 if the system lacks the type 'suseconds_t'. */
 #undef ACE_LACKS_SUSECONDS_T

@@ -3,7 +3,7 @@
 	ProjectType="Visual C++"
 	Version="9.00"
 	Name="RMCast"
-	ProjectGUID="{2C606CCC-FECA-1BAD-5646-8F0AEFF53BB3}"
+	ProjectGUID="{2C606CCC-FECA-1BAD-5646-8F0ADCC5EF25}"
 	RootNamespace="RMCast"
 	Keyword="Win32Proj"
 	SignManifests="true"
@@ -461,7 +461,7 @@
 		</Filter>
 		<Filter
 			Name="Pkgconfig Files"
-			Filter="pcin">
+			Filter="in">
 			<File
 				RelativePath="ACE_RMCast.pc.in">
 				<FileConfiguration

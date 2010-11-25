@@ -1,4 +1,4 @@
-// $Id: Select_Reactor_Base.cpp 91368 2010-08-16 13:03:34Z mhengstmengel $
+// $Id: Select_Reactor_Base.cpp 88832 2010-02-04 09:57:42Z johnnyw $
 
 #include "ace/Select_Reactor_Base.h"
 #include "ace/Reactor.h"
@@ -17,6 +17,11 @@
 #ifndef ACE_WIN32
 # include <algorithm>
 #endif  /* !ACE_WIN32 */
+
+ACE_RCSID (ace,
+           Select_Reactor_Base,
+           "$Id: Select_Reactor_Base.cpp 88832 2010-02-04 09:57:42Z johnnyw $")
+
 
 ACE_BEGIN_VERSIONED_NAMESPACE_DECL
 
@@ -78,7 +83,7 @@ ACE_Select_Reactor_Handler_Repository::handle_in_range (ACE_HANDLE handle)
 }
 
 int
-ACE_Select_Reactor_Handler_Repository::open (size_type size)
+ACE_Select_Reactor_Handler_Repository::open (size_t size)
 {
   ACE_TRACE ("ACE_Select_Reactor_Handler_Repository::open");
 

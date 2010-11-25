@@ -1,4 +1,4 @@
-// $Id: Connection_Handler.cpp 91671 2010-09-08 18:39:23Z johnnyw $
+// $Id: Connection_Handler.cpp 84565 2009-02-23 08:20:39Z johnnyw $
 
 // ============================================================================
 //
@@ -24,7 +24,7 @@
 
 #include "Connection_Handler.h"
 
-
+ACE_RCSID(misc, Connection_Handler, "$Id: Connection_Handler.cpp 84565 2009-02-23 08:20:39Z johnnyw $")
 
 int
 Connection_Handler::open (void *)

@@ -1,4 +1,4 @@
-// $Id: Peer_Router.cpp 91671 2010-09-08 18:39:23Z johnnyw $
+// $Id: Peer_Router.cpp 84565 2009-02-23 08:20:39Z johnnyw $
 
 #if !defined (_PEER_ROUTER_C)
 
@@ -10,7 +10,7 @@
 #include "Peer_Router.h"
 #include "Options.h"
 
-
+ACE_RCSID(UPIPE_Event_Server, Peer_Router, "$Id: Peer_Router.cpp 84565 2009-02-23 08:20:39Z johnnyw $")
 
 #if defined (ACE_HAS_THREADS)
 

@@ -1,4 +1,4 @@
-// $Id: Supplier_Router.cpp 91671 2010-09-08 18:39:23Z johnnyw $
+// $Id: Supplier_Router.cpp 84068 2008-12-24 18:32:05Z shuston $
 
 #include "ace/os_include/os_assert.h"
 #include "ace/OS_NS_stdio.h"
@@ -7,7 +7,7 @@
 #include "Supplier_Router.h"
 #include "Options.h"
 
-
+ACE_RCSID(Event_Server, Supplier_Router, "$Id: Supplier_Router.cpp 84068 2008-12-24 18:32:05Z shuston $")
 
 // Handle outgoing messages in a separate thread.
 

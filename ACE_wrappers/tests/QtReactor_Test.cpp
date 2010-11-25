@@ -1,5 +1,5 @@
 /* -*- C++ -*- */
-// $Id: QtReactor_Test.cpp 91626 2010-09-07 10:59:20Z johnnyw $
+// $Id: QtReactor_Test.cpp 84565 2009-02-23 08:20:39Z johnnyw $
 
 // ============================================================================
 //
@@ -40,6 +40,10 @@
 // ============================================================================
 
 #include "test_config.h"
+
+ACE_RCSID (tests,
+           QtReactor_Test,
+           "$Id: QtReactor_Test.cpp 84565 2009-02-23 08:20:39Z johnnyw $")
 
 #include <assert.h>
 #include <qapplication.h>

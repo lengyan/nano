@@ -1,4 +1,4 @@
-// $Id: SSL-server-fancy.cpp 91685 2010-09-09 09:35:14Z johnnyw $
+// $Id: SSL-server-fancy.cpp 84565 2009-02-23 08:20:39Z johnnyw $
 
 // This example tests the features of the <ACE_SSL_SOCK_Acceptor>,
 // <ACE_SSL_SOCK_Stream>, and <ACE_Svc_Handler> classes.  If the platform
@@ -15,6 +15,10 @@
 #include "ace/SSL/SSL_SOCK_Acceptor.h"
 
 #include "SSL-server-fancy.h"
+
+ACE_RCSID (SSL_SAP,
+           SSL_server_fancy,
+           "$Id: SSL-server-fancy.cpp 84565 2009-02-23 08:20:39Z johnnyw $")
 
 // Forward declaration.
 class Handler;
@@ -57,7 +61,7 @@ private:
   // Oneway acceptor factory.
 };
 
-class Handler : public ACE_Svc_Handler<ACE_SSL_SOCK_Stream, ACE_NULL_SYNCH>
+class Handler : public ACE_Svc_Handler<ACE_SSL_SOCK_STREAM, ACE_NULL_SYNCH>
 {
   // = TITLE
   //   Base class for the oneway and twoway handlers.

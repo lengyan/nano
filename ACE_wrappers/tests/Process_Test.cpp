@@ -1,4 +1,4 @@
-// $Id: Process_Test.cpp 91671 2010-09-08 18:39:23Z johnnyw $
+// $Id: Process_Test.cpp 90501 2010-06-09 14:44:52Z mitza $
 
 // ============================================================================
 //
@@ -26,7 +26,7 @@
 #include "ace/SString.h"
 #include "ace/OS_NS_stdlib.h"
 
-
+ACE_RCSID(tests, Process_Test, "$Id: Process_Test.cpp 90501 2010-06-09 14:44:52Z mitza $")
 
 // This will only work on Linux. Even UNIX-ish with /proc filesys lacks the
 // 'self' level and link to the opened file name.

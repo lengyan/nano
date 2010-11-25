@@ -1,4 +1,4 @@
-// $Id: FILE.cpp 91813 2010-09-17 07:52:52Z johnnyw $
+// $Id: FILE.cpp 80826 2008-03-04 14:51:23Z wotte $
 
 #include "ace/config-all.h"
 #include "ace/Guard_T.h"
@@ -7,7 +7,7 @@
 
 #ifndef JAWS_BUILD_DLL
 #define JAWS_BUILD_DLL
-#endif
+#endif 
 
 #include "jaws3/FILE.h"
 
@@ -52,7 +52,7 @@ JAWS_FILE::mem_map (int length,
 
   if (this->map_ == 0)
     {
-      ACE_GUARD_RETURN (ACE_SYNCH_MUTEX, g, this->lock_, 0);
+      ACE_Guard<ACE_SYNCH_MUTEX> g (this->lock_);
 
       if (this->map_ == 0)
         {

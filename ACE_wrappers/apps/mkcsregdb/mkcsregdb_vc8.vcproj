@@ -3,7 +3,7 @@
 	ProjectType="Visual C++"
 	Version="8.00"
 	Name="mkcsregdb"
-	ProjectGUID="{EA10B1DE-FECA-1BAD-314B-5E27D22340B9}"
+	ProjectGUID="{EA10B1DE-FECA-1BAD-314B-5E27E2F7D68A}"
 	RootNamespace="mkcsregdb"
 	Keyword="Win32Proj"
 	SignManifests="true"

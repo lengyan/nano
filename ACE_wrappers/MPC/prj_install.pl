@@ -6,7 +6,7 @@ eval '(exit $?0)' && eval 'exec perl -w -S $0 ${1+"$@"}'
 # ******************************************************************
 #      Author: Chad Elliott
 # Create Date: 3/09/2004
-#         $Id: prj_install.pl 1906 2010-09-14 19:39:33Z mitza $
+#         $Id: prj_install.pl 1761 2010-05-18 20:48:49Z mitza $
 # ******************************************************************
 
 # ******************************************************************
@@ -88,7 +88,7 @@ sub copyFiles {
   foreach my $file (@$files) {
     if (-l $file) {
       my $dest = readlink($file);
-      if (exists $linkTargets{$dest} && $file ne $linkTargets{$dest}) {
+      if (exists $linkTargets{$dest}) {
         if (length $file <= length $linkTargets{$dest}) {
           $localLink{$file} = $linkTargets{$dest};
         }

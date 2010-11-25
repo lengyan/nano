@@ -1,4 +1,4 @@
-// $Id: Task.cpp 91368 2010-08-16 13:03:34Z mhengstmengel $
+// $Id: Task.cpp 80826 2008-03-04 14:51:23Z wotte $
 
 #include "ace/Task.h"
 #include "ace/Module.h"
@@ -7,6 +7,10 @@
 #include "ace/Task.inl"
 #endif /* __ACE_INLINE__ */
 
+
+ACE_RCSID (ace,
+           Task,
+           "$Id: Task.cpp 80826 2008-03-04 14:51:23Z wotte $")
 
 ACE_BEGIN_VERSIONED_NAMESPACE_DECL
 

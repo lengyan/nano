@@ -1,4 +1,4 @@
-// $Id: pdu.cpp 91670 2010-09-08 18:02:26Z johnnyw $
+// $Id: pdu.cpp 80826 2008-03-04 14:51:23Z wotte $
 
 // ============================================================================
 //
@@ -36,6 +36,8 @@
 #include "asnmp/pdu.h"       // include Pdu class definition
 #include "ace/OS_NS_string.h"
 #include "ace/OS_NS_stdio.h"
+
+ACE_RCSID(asnmp, pdu, "$Id: pdu.cpp 80826 2008-03-04 14:51:23Z wotte $")
 
 //=====================[ constructor no args ]=========================
 Pdu::Pdu( void): vb_count_(0), error_status_(0), error_index_(0),

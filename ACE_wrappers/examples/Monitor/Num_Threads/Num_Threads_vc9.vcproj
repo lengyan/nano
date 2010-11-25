@@ -3,7 +3,7 @@
 	ProjectType="Visual C++"
 	Version="9.00"
 	Name="Num_Threads"
-	ProjectGUID="{FEE496B5-FECA-1BAD-7E09-28972A531BE9}"
+	ProjectGUID="{FEE496B5-FECA-1BAD-7E09-28971963CF7F}"
 	RootNamespace="Num_Threads"
 	Keyword="Win32Proj"
 	SignManifests="true"

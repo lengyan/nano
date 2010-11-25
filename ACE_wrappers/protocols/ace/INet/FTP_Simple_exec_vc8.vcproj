@@ -3,7 +3,7 @@
 	ProjectType="Visual C++"
 	Version="8.00"
 	Name="FTP_Simple_exec"
-	ProjectGUID="{61B8BE0B-FECA-1BAD-F826-8A65F7EE4449}"
+	ProjectGUID="{61B8BE0B-FECA-1BAD-F826-8A6561DD749D}"
 	RootNamespace="FTP_Simple_exec"
 	Keyword="Win32Proj"
 	SignManifests="true"
@@ -398,9 +398,6 @@
 				RelativePath="HeaderBase.h">
 			</File>
 			<File
-				RelativePath="HTTP_BasicAuthentication.h">
-			</File>
-			<File
 				RelativePath="HTTP_ClientRequestHandler.h">
 			</File>
 			<File
@@ -419,9 +416,6 @@
 				RelativePath="HTTP_Session.h">
 			</File>
 			<File
-				RelativePath="HTTP_SessionBase.h">
-			</File>
-			<File
 				RelativePath="HTTP_Status.h">
 			</File>
 			<File
@@ -434,25 +428,10 @@
 				RelativePath="HTTP_URL.h">
 			</File>
 			<File
-				RelativePath="HTTPS_Context.h">
-			</File>
-			<File
-				RelativePath="HTTPS_Session.h">
-			</File>
-			<File
-				RelativePath="HTTPS_SessionFactory.h">
-			</File>
-			<File
-				RelativePath="HTTPS_URL.h">
-			</File>
-			<File
 				RelativePath="INet_Export.h">
 			</File>
 			<File
 				RelativePath="INet_Log.h">
-			</File>
-			<File
-				RelativePath="INet_SSL_Export.h">
 			</File>
 			<File
 				RelativePath="IOS_util.h">
@@ -468,24 +447,6 @@
 			</File>
 			<File
 				RelativePath="Sock_IOStream.h">
-			</File>
-			<File
-				RelativePath="SSL_CallbackManager.h">
-			</File>
-			<File
-				RelativePath="SSL_CertificateCallback.h">
-			</File>
-			<File
-				RelativePath="SSL_PasswordCallback.h">
-			</File>
-			<File
-				RelativePath="SSL_Proxy_Connector.h">
-			</File>
-			<File
-				RelativePath="SSL_X509Cert.h">
-			</File>
-			<File
-				RelativePath="SSLSock_IOStream.h">
 			</File>
 			<File
 				RelativePath="StreamHandler.h">
@@ -505,29 +466,6 @@
 			Filter="mpc;mpb;mwc">
 			<File
 				RelativePath="inet.mpc">
-				<FileConfiguration
-					Name="Debug|Win32"
-					ExcludedFromBuild="true"
-				>
-				</FileConfiguration>
-				<FileConfiguration
-					Name="Release|Win32"
-					ExcludedFromBuild="true"
-				>
-				</FileConfiguration>
-				<FileConfiguration
-					Name="Debug|x64"
-					ExcludedFromBuild="true"
-				>
-				</FileConfiguration>
-				<FileConfiguration
-					Name="Release|x64"
-					ExcludedFromBuild="true"
-				>
-				</FileConfiguration>
-			</File>
-			<File
-				RelativePath="inet_ssl.mpc">
 				<FileConfiguration
 					Name="Debug|Win32"
 					ExcludedFromBuild="true"
@@ -581,9 +519,6 @@
 				RelativePath="HeaderBase.inl">
 			</File>
 			<File
-				RelativePath="HTTP_BasicAuthentication.inl">
-			</File>
-			<File
 				RelativePath="HTTP_ClientRequestHandler.inl">
 			</File>
 			<File
@@ -599,28 +534,10 @@
 				RelativePath="HTTP_Response.inl">
 			</File>
 			<File
-				RelativePath="HTTP_SessionBase.inl">
-			</File>
-			<File
 				RelativePath="HTTP_Status.inl">
 			</File>
 			<File
 				RelativePath="HTTP_URL.inl">
-			</File>
-			<File
-				RelativePath="HTTPS_Context.inl">
-			</File>
-			<File
-				RelativePath="HTTPS_URL.inl">
-			</File>
-			<File
-				RelativePath="SSL_CallbackManager.inl">
-			</File>
-			<File
-				RelativePath="SSL_CertificateCallback.inl">
-			</File>
-			<File
-				RelativePath="SSL_X509Cert.inl">
 			</File>
 			<File
 				RelativePath="URLBase.inl">

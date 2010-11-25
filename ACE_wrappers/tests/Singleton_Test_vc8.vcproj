@@ -3,7 +3,7 @@
 	ProjectType="Visual C++"
 	Version="8.00"
 	Name="Singleton_Test"
-	ProjectGUID="{F33A4E54-FECA-1BAD-2431-8A1100722433}"
+	ProjectGUID="{F33A4E54-FECA-1BAD-2431-8A11337F6D50}"
 	RootNamespace="Singleton_Test"
 	Keyword="Win32Proj"
 	SignManifests="true"

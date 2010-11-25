@@ -3,7 +3,7 @@
 	ProjectType="Visual C++"
 	Version="9.00"
 	Name="Reactor_Fairness_Test"
-	ProjectGUID="{5FB0C6A2-FECA-1BAD-2431-8A1100722433}"
+	ProjectGUID="{5FB0C6A2-FECA-1BAD-2431-8A11337F6D50}"
 	RootNamespace="Reactor_Fairness_Test"
 	Keyword="Win32Proj"
 	SignManifests="true"

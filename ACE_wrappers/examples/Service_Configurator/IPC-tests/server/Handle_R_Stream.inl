@@ -1,5 +1,5 @@
 /* -*- C++ -*- */
-// $Id: Handle_R_Stream.inl 91813 2010-09-17 07:52:52Z johnnyw $
+// $Id: Handle_R_Stream.inl 82577 2008-08-09 17:43:11Z mitza $
 
 #include "ace/Get_Opt.h"
 #include "ace/WFMO_Reactor.h"
@@ -52,7 +52,7 @@ Handle_R_Stream::info (ACE_TCHAR **strp, size_t length) const
     {
       ACE_OS::strncpy (*strp, buf, length);
     }
-
+    
   return ACE_Utils::truncate_cast<int> (ACE_OS::strlen (buf));
 }
 

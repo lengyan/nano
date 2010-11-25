@@ -3,7 +3,7 @@
 /**
  *  @file    main_reactor.cpp
  *
- *  $Id: main_reactor.cpp 91673 2010-09-08 18:49:47Z johnnyw $
+ *  $Id: main_reactor.cpp 90086 2010-05-06 12:02:19Z johnnyw $
  *
  *    Implements an reactive timer queue.
  *    This code exercises the Timer_Queue_Test_Driver class using
@@ -19,6 +19,10 @@
 #include "ace/Auto_Ptr.h"
 #include "Reactor_Timer_Queue_Test.h"
 #include "Driver.h"
+
+ACE_RCSID (Timer_Queue,
+           main_reactor,
+           "$Id: main_reactor.cpp 90086 2010-05-06 12:02:19Z johnnyw $")
 
 typedef Timer_Queue_Test_Driver <ACE_Timer_Heap,
                                  Input_Handler,

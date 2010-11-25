@@ -1,6 +1,10 @@
-// $Id: OS_Thread_Adapter.cpp 91368 2010-08-16 13:03:34Z mhengstmengel $
+// $Id: OS_Thread_Adapter.cpp 80826 2008-03-04 14:51:23Z wotte $
 
 #include "ace/OS_Thread_Adapter.h"
+
+ACE_RCSID (ace,
+           OS_Thread_Adapter,
+           "$Id: OS_Thread_Adapter.cpp 80826 2008-03-04 14:51:23Z wotte $")
 
 #include "ace/Thread_Hook.h"
 #include "ace/Object_Manager_Base.h"

@@ -3,7 +3,7 @@
 	ProjectType="Visual C++"
 	Version="9.00"
 	Name="C++NPv2_TPLS"
-	ProjectGUID="{59D2ABCD-FECA-1BAD-B750-CBFC9FE5DD75}"
+	ProjectGUID="{59D2ABCD-FECA-1BAD-B750-CBFC4B73EE45}"
 	RootNamespace="C++NPv2_TPLS"
 	Keyword="Win32Proj"
 	SignManifests="true"

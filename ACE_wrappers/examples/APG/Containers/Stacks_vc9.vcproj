@@ -3,7 +3,7 @@
 	ProjectType="Visual C++"
 	Version="9.00"
 	Name="Stacks"
-	ProjectGUID="{9E581CCE-FECA-1BAD-8408-181CEBDC7FA8}"
+	ProjectGUID="{9E581CCE-FECA-1BAD-8408-181CE6951C9B}"
 	RootNamespace="Stacks"
 	Keyword="Win32Proj"
 	SignManifests="true"

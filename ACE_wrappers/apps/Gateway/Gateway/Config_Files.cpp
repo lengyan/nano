@@ -1,4 +1,4 @@
-// $Id: Config_Files.cpp 91670 2010-09-08 18:02:26Z johnnyw $
+// $Id: Config_Files.cpp 80826 2008-03-04 14:51:23Z wotte $
 
 #define ACE_BUILD_SVC_DLL
 
@@ -8,6 +8,8 @@
 #if defined (GATEWAY_DEBUGGING)
 #include "ace/Log_Msg.h"
 #endif /* GATEWAY_DEBUGGING */
+
+ACE_RCSID(Gateway, Config_Files, "$Id: Config_Files.cpp 80826 2008-03-04 14:51:23Z wotte $")
 
 // This fixes a nasty bug with cfront-based compilers (like
 // Centerline).

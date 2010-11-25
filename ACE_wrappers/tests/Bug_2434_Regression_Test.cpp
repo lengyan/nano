@@ -1,4 +1,4 @@
-// $Id: Bug_2434_Regression_Test.cpp 91671 2010-09-08 18:39:23Z johnnyw $
+// $Id: Bug_2434_Regression_Test.cpp 88685 2010-01-23 18:48:47Z johnnyw $
 
 // ============================================================================
 //
@@ -22,7 +22,7 @@
 // Note, for this test the config.h file *must* come first!
 #include "ace/config-all.h"
 
-
+ACE_RCSID(tests, Bug_2434_Regression_Test, "$Id: Bug_2434_Regression_Test.cpp 88685 2010-01-23 18:48:47Z johnnyw $")
 
 #include "test_config.h"
 #include "ace/ACE.h"

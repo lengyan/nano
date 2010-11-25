@@ -3,7 +3,7 @@
 	ProjectType="Visual C++"
 	Version="9.00"
 	Name="Bug_2980_Regression_Dll"
-	ProjectGUID="{1E761894-FECA-1BAD-2431-8A1100722433}"
+	ProjectGUID="{1E761894-FECA-1BAD-2431-8A11337F6D50}"
 	RootNamespace="Bug_2980_Regression_Dll"
 	Keyword="Win32Proj"
 	SignManifests="true"

@@ -1,6 +1,6 @@
 #!/pkg/gnu/bin//perl5
 #
-#$Id: WebStone-common.pl 91813 2010-09-17 07:52:52Z johnnyw $
+#$Id: WebStone-common.pl 80826 2008-03-04 14:51:23Z wotte $
 #
 
 1;
@@ -35,7 +35,7 @@ sub html_begin {
 <IMG SRC="$wd/doc/webstone.gif" ALT="WebStone" BORDER=0 ></A>
 <H1>World Wide Web Server Benchmarking</H1>
 <DL>
-<DT><EM>If you have any questions, please read the
+<DT><EM>If you have any questions, please read the 
 <A HREF="$wd/doc/FAQ-webstone.html">WebStone FAQ</A>.</EM>
 <HR>
 EOF

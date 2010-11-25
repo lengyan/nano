@@ -1,5 +1,6 @@
-// $Id: MTQueue.hpp 91633 2010-09-07 14:27:13Z johnnyw $
+// file      : ACE_TMCast/MTQueue.hpp
 // author    : Boris Kolpackov <boris@dre.vanderbilt.edu>
+// cvs-id    : $Id: MTQueue.hpp 80826 2008-03-04 14:51:23Z wotte $
 
 #ifndef TMCAST_MT_QUEUE_HPP
 #define TMCAST_MT_QUEUE_HPP
@@ -8,7 +9,6 @@
 #include "ace/Unbounded_Set.h"
 #include "ace/Unbounded_Queue.h"
 #include "ace/os_include/sys/os_types.h"
-#include "ace/Condition_T.h"
 
 namespace ACE_TMCast
 {

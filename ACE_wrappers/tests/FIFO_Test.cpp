@@ -1,4 +1,4 @@
-// $Id: FIFO_Test.cpp 91671 2010-09-08 18:39:23Z johnnyw $
+// $Id: FIFO_Test.cpp 80826 2008-03-04 14:51:23Z wotte $
 
 // ============================================================================
 //
@@ -32,7 +32,7 @@
 #include "ace/Thread.h"
 #include "ace/Thread_Manager.h"
 
-
+ACE_RCSID(tests, SOCK_Test, "$Id: FIFO_Test.cpp 80826 2008-03-04 14:51:23Z wotte $")
 
 #if !defined (ACE_LACKS_MKFIFO)
 

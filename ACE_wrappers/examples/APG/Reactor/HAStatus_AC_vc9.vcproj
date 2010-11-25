@@ -3,7 +3,7 @@
 	ProjectType="Visual C++"
 	Version="9.00"
 	Name="HAStatus_AC"
-	ProjectGUID="{9B755EF9-FECA-1BAD-4280-FE54CE10D8BD}"
+	ProjectGUID="{9B755EF9-FECA-1BAD-4280-FE54FD200C2B}"
 	RootNamespace="HAStatus_AC"
 	Keyword="Win32Proj"
 	SignManifests="true"

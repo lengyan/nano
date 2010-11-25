@@ -1,5 +1,5 @@
 /*
-** $Id: AIO_Client_Logging_Daemon.cpp 91626 2010-09-07 10:59:20Z johnnyw $
+** $Id: AIO_Client_Logging_Daemon.cpp 80826 2008-03-04 14:51:23Z wotte $
 **
 ** Copyright 2002 Addison Wesley. All Rights Reserved.
 */
@@ -94,7 +94,7 @@ void AIO_Output_Handler::open
   reader_.open (*this, new_handle, 0, proactor ());
   writer_.open (*this, new_handle, 0, proactor ());
 
-  ACE_Message_Block *mb = 0;
+  ACE_Message_Block *mb;
   ACE_NEW (mb, ACE_Message_Block (1));
   reader_.read (*mb, 1);
   ACE_Sig_Action no_sigpipe ((ACE_SignalHandler) SIG_IGN);

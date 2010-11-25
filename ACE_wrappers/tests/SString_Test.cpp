@@ -1,4 +1,4 @@
-// $Id: SString_Test.cpp 91671 2010-09-08 18:39:23Z johnnyw $
+// $Id: SString_Test.cpp 86340 2009-08-04 03:33:02Z hillj $
 
 // ============================================================================
 //
@@ -23,7 +23,7 @@
 #include "ace/Auto_Ptr.h"
 #include "ace/SString.h"
 
-
+ACE_RCSID(tests, SString_Test, "$Id: SString_Test.cpp 86340 2009-08-04 03:33:02Z hillj $")
 
 static int testConcatenation() {
 #ifdef ACE_HAS_WCHAR

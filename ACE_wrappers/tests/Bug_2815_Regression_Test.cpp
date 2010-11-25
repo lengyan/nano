@@ -1,7 +1,7 @@
 /**
  * @file Bug_2815_Regression_Test.cpp
  *
- * $Id: Bug_2815_Regression_Test.cpp 91673 2010-09-08 18:49:47Z johnnyw $
+ * $Id: Bug_2815_Regression_Test.cpp 80826 2008-03-04 14:51:23Z wotte $
  *
  * Verify that the notification queue can be used with large numbers
  * of event handlers.
@@ -29,6 +29,9 @@
 #include "ace/Reactor.h"
 #include "ace/TP_Reactor.h"
 #include "ace/Select_Reactor.h"
+
+ACE_RCSID(tests,
+          Bug_2815_Regression_Test, "$Id: Bug_2815_Regression_Test.cpp 80826 2008-03-04 14:51:23Z wotte $")
 
 class One_Shot_Handler;
 

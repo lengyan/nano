@@ -1,4 +1,4 @@
-// $Id: Env_Value_Test.cpp 91626 2010-09-07 10:59:20Z johnnyw $
+// $Id: Env_Value_Test.cpp 80826 2008-03-04 14:51:23Z wotte $
 
 // ============================================================================
 //
@@ -19,6 +19,8 @@
 #include "ace/OS_NS_string.h"
 #include "ace/Process.h"
 #include "ace/Env_Value_T.h"
+
+ACE_RCSID(tests, Env_Value_Test, "$Id: Env_Value_Test.cpp 80826 2008-03-04 14:51:23Z wotte $")
 
 #define TEST_THIS(type, varname, defval, expval) \
 do { \

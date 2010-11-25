@@ -1,4 +1,4 @@
-// $Id: Local_Locator.cpp 91670 2010-09-08 18:02:26Z johnnyw $
+// $Id: Local_Locator.cpp 81994 2008-06-16 21:23:17Z sowayaa $
 
 #if !defined (ACE_LOCAL_LOCATOR_C)
 #define ACE_LOCAL_LOCATOR_C
@@ -8,6 +8,8 @@
 #if !defined (__ACE_INLINE__)
 #include "Local_Locator.inl"
 #endif /* __ACE_INLINE__ */
+
+ACE_RCSID(Caching, Local_Locator, "$Id: Local_Locator.cpp 81994 2008-06-16 21:23:17Z sowayaa $")
 
 int
 ACE_URL_Local_Locator::url_query (const ACE_URL_Locator::ACE_Selection_Criteria how,

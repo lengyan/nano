@@ -3,7 +3,7 @@
 	ProjectType="Visual C++"
 	Version="9.00"
 	Name="ACE_ETCL_Parser"
-	ProjectGUID="{D756716B-FECA-1BAD-007E-8A67757B007A}"
+	ProjectGUID="{D756716B-FECA-1BAD-007E-8A67A1ED334A}"
 	RootNamespace="ACE_ETCL_Parser"
 	Keyword="Win32Proj"
 	SignManifests="true"
@@ -410,7 +410,7 @@
 		</Filter>
 		<Filter
 			Name="Pkgconfig Files"
-			Filter="pcin">
+			Filter="in">
 			<File
 				RelativePath="ACE_ETCL_Parser.pc.in">
 				<FileConfiguration

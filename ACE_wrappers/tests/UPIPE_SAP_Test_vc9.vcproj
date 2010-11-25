@@ -3,7 +3,7 @@
 	ProjectType="Visual C++"
 	Version="9.00"
 	Name="UPIPE_SAP_Test"
-	ProjectGUID="{5760CB8F-FECA-1BAD-2431-8A1100722433}"
+	ProjectGUID="{5760CB8F-FECA-1BAD-2431-8A11337F6D50}"
 	RootNamespace="UPIPE_SAP_Test"
 	Keyword="Win32Proj"
 	SignManifests="true"

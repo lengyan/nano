@@ -3,7 +3,7 @@
 	ProjectType="Visual C++"
 	Version="8.00"
 	Name="Netlocal"
-	ProjectGUID="{0053A4B8-FECA-1BAD-BF85-8CE4FD25C624}"
+	ProjectGUID="{0053A4B8-FECA-1BAD-BF85-8CE49E16CB6D}"
 	RootNamespace="Netlocal"
 	Keyword="Win32Proj"
 	SignManifests="true"

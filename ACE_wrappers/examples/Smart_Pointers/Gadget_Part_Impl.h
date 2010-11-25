@@ -3,7 +3,7 @@
 /**
  *  @file    Gadget_Part_Impl.h
  *
- *  $Id: Gadget_Part_Impl.h 91743 2010-09-13 18:24:51Z johnnyw $
+ *  $Id: Gadget_Part_Impl.h 80826 2008-03-04 14:51:23Z wotte $
  *
  *  @author Christopher Kohlhoff <chris@kohlhoff.com>
  */
@@ -25,7 +25,7 @@ class Gadget_Part_Impl : public Gadget_Part
 public:
   /// Constructor.
   Gadget_Part_Impl (Gadget_ptr owner, const char* name, int size);
-
+  
   /// Destructor.
   virtual ~Gadget_Part_Impl (void);
 
@@ -37,7 +37,7 @@ public:
 
 private:
   /// The gadget that contains this part.
-  ///
+  ///  
   /// Some things to note about the choice of ACE_Weak_Bound_Ptr (from the
   /// typedef for Gadget_ptr):
   /// - We cannot use an ACE_Strong_Bound_Ptr (Gadget_var) since that would

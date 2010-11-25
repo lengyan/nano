@@ -3,7 +3,7 @@
 	ProjectType="Visual C++"
 	Version="9.00"
 	Name="Logging_Strategy_Test"
-	ProjectGUID="{F177B7B8-FECA-1BAD-2431-8A1100722433}"
+	ProjectGUID="{F177B7B8-FECA-1BAD-2431-8A11337F6D50}"
 	RootNamespace="Logging_Strategy_Test"
 	Keyword="Win32Proj"
 	SignManifests="true"

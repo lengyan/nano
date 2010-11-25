@@ -1,4 +1,4 @@
-// $Id: Malloc.cpp 91671 2010-09-08 18:39:23Z johnnyw $
+// $Id: Malloc.cpp 80826 2008-03-04 14:51:23Z wotte $
 
 #include "Options.h"
 #include "Malloc.h"
@@ -16,7 +16,7 @@
 #include "ace/Process_Mutex.h"
 #include "ace/Malloc_T.h"
 
-
+ACE_RCSID(Shared_Malloc, Malloc, "$Id: Malloc.cpp 80826 2008-03-04 14:51:23Z wotte $")
 
 // Strategic typedefs for memory allocation.
 

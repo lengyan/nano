@@ -2,7 +2,7 @@
 /**
  *  @file   Kokyu_defs.h
  *
- *  $Id: Kokyu_defs.h 91626 2010-09-07 10:59:20Z johnnyw $
+ *  $Id: Kokyu_defs.h 80826 2008-03-04 14:51:23Z wotte $
  *
  *  @author Venkita Subramonian (venkita@cs.wustl.edu)
  *
@@ -11,7 +11,7 @@
 #ifndef KOKYU_DEFS_H
 #define KOKYU_DEFS_H
 #include /**/ "ace/pre.h"
-#include "ace/Containers_T.h"
+#include "ace/Array.h"
 #include "ace/Time_Value.h"
 #include "ace/Auto_Ptr.h"
 #include "ace/Message_Block.h"

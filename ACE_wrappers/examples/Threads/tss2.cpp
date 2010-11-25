@@ -1,4 +1,4 @@
-// $Id: tss2.cpp 91671 2010-09-08 18:39:23Z johnnyw $
+// $Id: tss2.cpp 80826 2008-03-04 14:51:23Z wotte $
 
 // ============================================================================
 //
@@ -25,7 +25,7 @@
 #include "TSS_Obj.h"
 #include "TSS_Task.h"
 
-
+ACE_RCSID(Threads, tss2, "$Id: tss2.cpp 80826 2008-03-04 14:51:23Z wotte $")
 
 #if defined (ACE_HAS_THREADS)
 

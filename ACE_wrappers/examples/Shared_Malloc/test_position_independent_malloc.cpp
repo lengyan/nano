@@ -1,4 +1,4 @@
-// $Id: test_position_independent_malloc.cpp 91671 2010-09-08 18:39:23Z johnnyw $
+// $Id: test_position_independent_malloc.cpp 80826 2008-03-04 14:51:23Z wotte $
 
 // Test the capability of the "position-independent" <ACE_Malloc> to
 // handle a single malloc that can be rooted at different base
@@ -14,7 +14,7 @@
 #include "ace/Malloc_T.h"
 #include "ace/MMAP_Memory_Pool.h"
 
-
+ACE_RCSID(Shared_Malloc, test_multiple_mallocs, "$Id: test_position_independent_malloc.cpp 80826 2008-03-04 14:51:23Z wotte $")
 
 #if (ACE_HAS_POSITION_INDEPENDENT_POINTERS == 1)
 typedef ACE_PI_Control_Block CONTROL_BLOCK;

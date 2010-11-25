@@ -1,4 +1,4 @@
-// $Id: test_early_timeouts.cpp 91671 2010-09-08 18:39:23Z johnnyw $
+// $Id: test_early_timeouts.cpp 80826 2008-03-04 14:51:23Z wotte $
 
 // ================================================================
 //
@@ -25,7 +25,7 @@
 #include "ace/OS_NS_sys_time.h"
 #include "ace/OS_NS_sys_select.h"
 
-
+ACE_RCSID(Misc, test_early_timeouts, "$Id: test_early_timeouts.cpp 80826 2008-03-04 14:51:23Z wotte $")
 
 int
 ACE_TMAIN (int, ACE_TCHAR *[])

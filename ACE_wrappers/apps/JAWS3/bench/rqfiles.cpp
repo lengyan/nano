@@ -1,5 +1,6 @@
-// $Id: rqfiles.cpp 91730 2010-09-13 09:31:11Z johnnyw $
+// $Id: rqfiles.cpp 83329 2008-10-20 13:19:06Z johnnyw $
 
+#include "ace/OS.h"
 #include "ace/Get_Opt.h"
 #include "ace/Svc_Handler.h"
 #include "ace/Reactor.h"

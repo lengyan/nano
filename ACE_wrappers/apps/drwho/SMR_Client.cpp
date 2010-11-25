@@ -1,4 +1,4 @@
-// $Id: SMR_Client.cpp 91813 2010-09-17 07:52:52Z johnnyw $
+// $Id: SMR_Client.cpp 80826 2008-03-04 14:51:23Z wotte $
 
 #include "Options.h"
 #include "PMC_All.h"
@@ -12,7 +12,7 @@ SMR_Client::SMR_Client (short port_number)
 {
   if (CM_Client::open (port_number) < 0)
     ACE_ERROR ((LM_ERROR,
-                "%p\n%a",
+                "%p\n%a", 
                 Options::program_name,
                 1));
 }

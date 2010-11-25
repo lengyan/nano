@@ -3,7 +3,7 @@
 	ProjectType="Visual C++"
 	Version="8.00"
 	Name="dev_sap_reader"
-	ProjectGUID="{BDA3697C-FECA-1BAD-4A76-D4027A608480}"
+	ProjectGUID="{BDA3697C-FECA-1BAD-4A76-D4027729E7B3}"
 	RootNamespace="dev_sap_reader"
 	Keyword="Win32Proj"
 	SignManifests="true"

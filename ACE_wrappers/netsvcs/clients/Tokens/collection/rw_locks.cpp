@@ -1,4 +1,4 @@
-// $Id: rw_locks.cpp 91671 2010-09-08 18:39:23Z johnnyw $
+// $Id: rw_locks.cpp 82739 2008-09-16 12:20:46Z johnnyw $
 
 #include "ace/Get_Opt.h"
 #include "ace/Local_Tokens.h"
@@ -7,7 +7,7 @@
 
 #if defined (ACE_HAS_THREADS) && defined (ACE_HAS_THREADS_LIBRARY)
 
-
+ACE_RCSID(collection, rw_locks, "$Id: rw_locks.cpp 82739 2008-09-16 12:20:46Z johnnyw $")
 
 static ACE_Token_Proxy *global_rlock;
 static ACE_Token_Proxy *global_wlock;

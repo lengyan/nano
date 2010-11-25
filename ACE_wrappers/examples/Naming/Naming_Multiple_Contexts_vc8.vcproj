@@ -3,7 +3,7 @@
 	ProjectType="Visual C++"
 	Version="8.00"
 	Name="Naming_Multiple_Contexts"
-	ProjectGUID="{957C42CA-FECA-1BAD-BF85-8EE479601925}"
+	ProjectGUID="{957C42CA-FECA-1BAD-BF85-8EE474297A16}"
 	RootNamespace="Naming_Multiple_Contexts"
 	Keyword="Win32Proj"
 	SignManifests="true"

@@ -1,4 +1,4 @@
-// $Id: cancel.cpp 91670 2010-09-08 18:02:26Z johnnyw $
+// $Id: cancel.cpp 80826 2008-03-04 14:51:23Z wotte $
 
 // Test out the cooperative thread cancellation mechanisms provided by
 // the ACE_Thread_Manager.
@@ -7,6 +7,8 @@
 #include "ace/OS_main.h"
 #include "ace/Service_Config.h"
 #include "ace/Thread_Manager.h"
+
+ACE_RCSID(Threads, cancel, "$Id: cancel.cpp 80826 2008-03-04 14:51:23Z wotte $")
 
 #if defined (ACE_HAS_THREADS)
 

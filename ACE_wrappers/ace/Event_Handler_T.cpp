@@ -1,6 +1,6 @@
 // Event_Handler_T.cpp
 //
-// $Id: Event_Handler_T.cpp 91626 2010-09-07 10:59:20Z johnnyw $
+// $Id: Event_Handler_T.cpp 80826 2008-03-04 14:51:23Z wotte $
 
 #ifndef ACE_EVENT_HANDLER_T_CPP
 #define ACE_EVENT_HANDLER_T_CPP
@@ -10,6 +10,8 @@
 #if !defined (ACE_LACKS_PRAGMA_ONCE)
 # pragma once
 #endif /* ACE_LACKS_PRAGMA_ONCE */
+
+#if defined (ACE_HAS_TEMPLATE_TYPEDEFS)
 
 #if !defined (__ACE_INLINE__)
 #include "ace/Event_Handler_T.inl"
@@ -117,5 +119,7 @@ ACE_Event_Handler_T<T>::handle_signal (int signum, siginfo_t *s, ucontext_t *u)
 }
 
 ACE_END_VERSIONED_NAMESPACE_DECL
+
+#endif /* ACE_HAS_TEMPLATE_TYPEDEFS */
 
 #endif /* ACE_EVENT_HANDLER_T_CPP */

@@ -3,7 +3,7 @@
 	ProjectType="Visual C++"
 	Version="8.00"
 	Name="AO"
-	ProjectGUID="{A941DC9A-FECA-1BAD-1A31-155B449A6390}"
+	ProjectGUID="{A941DC9A-FECA-1BAD-1A31-155B27A96ED9}"
 	RootNamespace="AO"
 	Keyword="Win32Proj"
 	SignManifests="true"

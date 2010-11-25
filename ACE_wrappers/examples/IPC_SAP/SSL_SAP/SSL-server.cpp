@@ -1,4 +1,4 @@
-// $Id: SSL-server.cpp 91671 2010-09-08 18:39:23Z johnnyw $
+// $Id: SSL-server.cpp 84565 2009-02-23 08:20:39Z johnnyw $
 
 // This example tests the features of the <ACE_SSL_SOCK_Acceptor>,
 // <ACE_SSL_SOCK_Stream>, and <ACE_Svc_Handler> classes.  If the platform
@@ -12,7 +12,7 @@
 
 #include "ace/SSL/SSL_SOCK_Acceptor.h"
 
-
+ACE_RCSID(SSL_SAP, SSL_server, "$Id: SSL-server.cpp 84565 2009-02-23 08:20:39Z johnnyw $")
 
 // Are we running verbosely?
 static int verbose = 0;

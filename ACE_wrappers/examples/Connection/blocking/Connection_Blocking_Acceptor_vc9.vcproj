@@ -3,7 +3,7 @@
 	ProjectType="Visual C++"
 	Version="9.00"
 	Name="Connection_Blocking_Acceptor"
-	ProjectGUID="{FD8D7218-FECA-1BAD-63A6-43B4A3F0BDAC}"
+	ProjectGUID="{FD8D7218-FECA-1BAD-63A6-43B490C0693A}"
 	RootNamespace="Connection_Blocking_Acceptor"
 	Keyword="Win32Proj"
 	SignManifests="true"

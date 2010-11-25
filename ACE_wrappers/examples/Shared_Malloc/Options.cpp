@@ -1,10 +1,14 @@
-// $Id: Options.cpp 91673 2010-09-08 18:49:47Z johnnyw $
+// $Id: Options.cpp 80826 2008-03-04 14:51:23Z wotte $
 
 #include "ace/Get_Opt.h"
 #include "Options.h"
 #include "ace/Log_Msg.h"
 #include "ace/OS_NS_stdlib.h"
 #include "ace/OS_NS_string.h"
+
+ACE_RCSID (Shared_Malloc,
+           Options,
+           "$Id: Options.cpp 80826 2008-03-04 14:51:23Z wotte $")
 
 // Static Singleton instance.
 Options *Options::instance_ = 0;

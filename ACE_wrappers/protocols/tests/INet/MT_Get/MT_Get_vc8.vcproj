@@ -3,7 +3,7 @@
 	ProjectType="Visual C++"
 	Version="8.00"
 	Name="MT_Get"
-	ProjectGUID="{B2166CD2-FECA-1BAD-2246-8A6466E9CA6C}"
+	ProjectGUID="{B2166CD2-FECA-1BAD-2246-8A6405DAC725}"
 	RootNamespace="MT_Get"
 	Keyword="Win32Proj"
 	SignManifests="true"

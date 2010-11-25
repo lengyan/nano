@@ -3,7 +3,7 @@
 /**
  *  @file    Widget_Part_Impl.h
  *
- *  $Id: Widget_Part_Impl.h 91743 2010-09-13 18:24:51Z johnnyw $
+ *  $Id: Widget_Part_Impl.h 80826 2008-03-04 14:51:23Z wotte $
  *
  *  @author Christopher Kohlhoff <chris@kohlhoff.com>
  */
@@ -25,7 +25,7 @@ class Widget_Part_Impl : public Widget_Part
 public:
   /// Constructor.
   Widget_Part_Impl (Widget *owner, const char* name, int size);
-
+  
   /// Destructor.
   virtual ~Widget_Part_Impl (void);
 

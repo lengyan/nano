@@ -1,8 +1,8 @@
-// $Id: Pipeline.cpp 91671 2010-09-08 18:39:23Z johnnyw $
+// $Id: Pipeline.cpp 80826 2008-03-04 14:51:23Z wotte $
 
 #include "JAWS/Pipeline.h"
 
-
+ACE_RCSID(JAWS, Pipeline, "$Id: Pipeline.cpp 80826 2008-03-04 14:51:23Z wotte $")
 
 JAWS_Pipeline::JAWS_Pipeline (void)
 {

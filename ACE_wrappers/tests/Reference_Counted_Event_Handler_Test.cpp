@@ -1,4 +1,4 @@
-// $Id: Reference_Counted_Event_Handler_Test.cpp 91626 2010-09-07 10:59:20Z johnnyw $
+// $Id: Reference_Counted_Event_Handler_Test.cpp 88534 2010-01-13 21:19:46Z olli $
 
 // ============================================================================
 //
@@ -25,6 +25,8 @@
 #include "ace/Dev_Poll_Reactor.h"
 #include "ace/Get_Opt.h"
 #include "ace/ACE.h"
+
+ACE_RCSID(tests, Reference_Counted_Event_Handler_Test, "$Id: Reference_Counted_Event_Handler_Test.cpp 88534 2010-01-13 21:19:46Z olli $")
 
 static const char message[] = "abcdefghijklmnopqrstuvwxyz";
 static const int message_size = 26;

@@ -7,7 +7,7 @@
   <meta http-equiv="Content-Type" content="text/html; charset=us-ascii">
   <meta http-equiv="Content-Style-Type" content="text/css">
   <meta name="id" content=
-  "$Id: MakeProjectCreator.html 1908 2010-09-17 11:27:20Z elliott_c $">
+  "$Id: MakeProjectCreator.html 1759 2010-05-18 15:27:01Z mitza $">
   <link rel="STYLESHEET" href="MakeProjectCreator.css" charset="ISO-8859-1"
   type="text/css">
 
@@ -3103,25 +3103,6 @@
                   <tr>
                     <td rowspan="1" colspan="1">
                       <p class="Tbl-Body"><em class=
-                      "TableCode">dependent_libs</em></p>
-                    </td>
-
-                    <td rowspan="1" colspan="1">
-                      <p class="Tbl-Body">If this is given a value, then a dependency upon that
-                      library value will be given to all of the generated files.
-                      The format for this entry should be the basename for the
-                      library (no library prefix, postfix, or extension)
-                      preceded by any relative or absolute path to the library.
-                      The typical use for this would be so that a project is
-                      rebuilt when a library needs to be rebuilt for its
-                      dependent executable. The default for this is unset and no
-                      dependency will be generated.</p>
-                    </td>
-                  </tr>
-
-                  <tr>
-                    <td rowspan="1" colspan="1">
-                      <p class="Tbl-Body"><em class=
                       "TableCode">inputext</em></p>
                     </td>
 
@@ -3839,8 +3820,8 @@
               keywords that can be used within the custom file type component
               lists: <em class="Code">command</em>, <em class=
               "Code">commandflags</em>, <em class="Code">dependent</em>,
-              <em class="Code">dependent_libs</em>, <em class="Code">gendir</em>,
-              <em class="Code">postcommand</em>, and <em class=
+              <em class="Code">gendir</em>, <em class=
+              "Code">postcommand</em>, and <em class=
               "Code">recurse</em>.</li>
 
               <li class="Body">The <em class="Code">recurse</em> keyword
@@ -3848,8 +3829,7 @@
               class="XRef">Assignment Keywords</a>.</li>
 
               <li class="Body">The <em class="Code">command</em>, <em class=
-              "Code">commandflags</em>, <em class="Code">dependent</em>,
-              <em class="Code">dependent_libs</em> and
+              "Code">commandflags</em>, <em class="Code">dependent</em> and
               <em class="Code">postcommand</em> keywords can be used to
               augment or override the value defined in the <em class=
               "Code">Define_Custom</em> section.</li>
@@ -5464,19 +5444,6 @@
                 <tr>
                   <td rowspan="1" colspan="1">
                     <p class="Tbl-Body"><em class=
-                    "TableCode">deref</em></p>
-                  </td>
-
-                  <td rowspan="1" colspan="1">
-                    <p class="Tbl-Body">Dereference the variable passed as
-                    a parameter, treating its value as another variable
-                    name and returning that variable's value.</p>
-                  </td>
-                </tr>
-
-                <tr>
-                  <td rowspan="1" colspan="1">
-                    <p class="Tbl-Body"><em class=
                     "TableCode">dirname</em></p>
                   </td>
 
@@ -5560,8 +5527,8 @@
 
                   <td rowspan="1" colspan="1">
                     <p class="Tbl-Body">This is similar to eval in perl. The
-                    template variable passed to this function will be
-                    evaluated within the context of the current template.</p>
+                    template code passed to this function will be evaluated
+                    within the context of the current template.</p>
                   </td>
                 </tr>
 
@@ -5841,19 +5808,6 @@
 
                 <tr>
                   <td rowspan="1" colspan="1">
-                    <p class="Tbl-Body"><em class="TableCode">set</em></p>
-                  </td>
-
-                  <td rowspan="1" colspan="1">
-                    <p class="Tbl-Body">This function is used to set or
-                    create a template variable.  This function takes two
-                    parameters; the first is the template variable name
-                    and the second is the variable value.</p>
-                  </td>
-                </tr>
-
-                <tr>
-                  <td rowspan="1" colspan="1">
                     <p class="Tbl-Body"><em class="TableCode">sort</em></p>
                   </td>
 
@@ -5887,22 +5841,6 @@
                     portion of a variable value with something that can be
                     used as a relative path. The current working directory is
                     removed and ".." is replaced with "dotdot".</p>
-                  </td>
-                </tr>
-
-                <tr>
-                  <td rowspan="1" colspan="1">
-                    <p class="Tbl-Body"><em class="TableCode">translate_vars</em></p>
-                  </td>
-
-                  <td rowspan="1" colspan="1">
-                    <p class="Tbl-Body">The first parameter to this function
-                    is the name of a variable.  The second, optional,
-                    parameter is the operating system for which the
-                    project is being generated (e.g., linux, solaris,
-                    win32, etc.)  It replaces $(...) found within the
-                    value of the variable with the equivalent environment
-                    variable reference based on the operating system.</p>
                   </td>
                 </tr>
 

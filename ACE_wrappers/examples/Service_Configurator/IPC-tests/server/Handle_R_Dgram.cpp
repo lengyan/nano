@@ -1,9 +1,11 @@
-// $Id: Handle_R_Dgram.cpp 91670 2010-09-08 18:02:26Z johnnyw $
+// $Id: Handle_R_Dgram.cpp 80826 2008-03-04 14:51:23Z wotte $
 
 #include "Handle_R_Dgram.h"
 
+ACE_RCSID(server, Handle_R_Dgram, "Handle_R_Dgram.cpp,v 4.2 1998/07/31 22:55:19 gonzo Exp")
+
 #if defined (SunOS4)
-extern "C"
+extern "C" 
 {
   int init (void);
   int fini (void);
@@ -11,14 +13,14 @@ extern "C"
   void __std__Handle_R_Dgram_C_init_();
 }
 
-int
+int 
 init (void)
 {
   __sti__Handle_R_Dgram_C_init_();
   return 0;
 }
 
-int
+int 
 fini (void)
 {
   __std__Handle_R_Dgram_C_init_();

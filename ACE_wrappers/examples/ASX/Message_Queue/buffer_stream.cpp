@@ -1,4 +1,4 @@
-// $Id: buffer_stream.cpp 91671 2010-09-08 18:39:23Z johnnyw $
+// $Id: buffer_stream.cpp 82610 2008-08-12 19:46:36Z parsons $
 
 // This short program copies stdin to stdout via the use of an ASX
 // Stream.  It illustrates an implementation of the classic "bounded
@@ -19,7 +19,7 @@
 #include "ace/Task.h"
 #include "ace/Truncate.h"
 
-
+ACE_RCSID(Message_Queue, buffer_stream, "$Id: buffer_stream.cpp 82610 2008-08-12 19:46:36Z parsons $")
 
 #if defined (ACE_HAS_THREADS)
 

@@ -1,6 +1,8 @@
-// $Id: Signature.cpp 91691 2010-09-09 11:57:39Z johnnyw $
-
 #include "Signature.h"
+
+ACE_RCSID(src, Signature, "$Id: Signature.cpp 80826 2008-03-04 14:51:23Z wotte $")
+
+//-----------------------------------------------------------------------------
 
 Signature::Signature (const ACE_CString &name)
   :name_(name),
@@ -9,13 +11,13 @@ Signature::Signature (const ACE_CString &name)
 {
 }
 
-void
+void 
 Signature::used ()
-{
+{  
   used_++;
 }
 
-int
+int 
 Signature::used_count() const
 {
   return used_;

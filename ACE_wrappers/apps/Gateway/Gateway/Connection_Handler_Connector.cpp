@@ -1,7 +1,9 @@
-// $Id: Connection_Handler_Connector.cpp 91670 2010-09-08 18:02:26Z johnnyw $
+// $Id: Connection_Handler_Connector.cpp 80826 2008-03-04 14:51:23Z wotte $
 
 #include "Connection_Handler_Connector.h"
 #include "ace/os_include/os_netdb.h"
+
+ACE_RCSID(Gateway, Connection_Handler_Connector, "$Id: Connection_Handler_Connector.cpp 80826 2008-03-04 14:51:23Z wotte $")
 
 Connection_Handler_Connector::Connection_Handler_Connector (void)
 {

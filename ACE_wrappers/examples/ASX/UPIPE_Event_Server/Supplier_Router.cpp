@@ -1,4 +1,4 @@
-// $Id: Supplier_Router.cpp 91671 2010-09-08 18:39:23Z johnnyw $
+// $Id: Supplier_Router.cpp 84068 2008-12-24 18:32:05Z shuston $
 
 #include "ace/OS_NS_stdio.h"
 #include "ace/OS_NS_string.h"
@@ -6,7 +6,7 @@
 #include "Options.h"
 #include "Supplier_Router.h"
 
-
+ACE_RCSID(UPIPE_Event_Server, Supplier_Router, "$Id: Supplier_Router.cpp 84068 2008-12-24 18:32:05Z shuston $")
 
 #if defined (ACE_HAS_THREADS)
 
@@ -132,7 +132,7 @@ Supplier_Router::info (ACE_TCHAR **strp, size_t length) const
     return -1;
   else
     ACE_OS::strncpy (*strp, module_name, length);
-
+    
   return ACE_Utils::truncate_cast<int> (ACE_OS::strlen (module_name));
 }
 

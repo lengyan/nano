@@ -3,7 +3,7 @@
 	ProjectType="Visual C++"
 	Version="9.00"
 	Name="Gateway_Peer"
-	ProjectGUID="{5E542DF6-FECA-1BAD-6320-8A6461A17566}"
+	ProjectGUID="{5E542DF6-FECA-1BAD-6320-8A6428C2466B}"
 	RootNamespace="Gateway_Peer"
 	Keyword="Win32Proj"
 	SignManifests="true"

@@ -1,4 +1,4 @@
-// $Id: HTTP_URL.cpp 91118 2010-07-17 10:29:57Z mcorino $
+// $Id: HTTP_URL.cpp 90737 2010-06-21 09:46:14Z mcorino $
 
 #include "ace/INet/HTTP_URL.h"
 
@@ -15,13 +15,7 @@ namespace ACE
 {
   namespace HTTP
   {
-    const char* URL::PROTOCOL = "http";
-
-    const ACE_CString& URL::protocol ()
-      {
-        static const ACE_CString protocol_ (PROTOCOL);
-        return protocol_;
-      }
+    const ACE_CString URL::PROTOCOL ("http");
 
     URL::URL ()
       : URL_INetAuthBase (HTTP_PORT),
@@ -40,12 +34,6 @@ namespace ACE
       : URL_INetAuthBase (0)
       {
         *this = url;
-      }
-
-    URL::URL (u_short port)
-      : URL_INetAuthBase (port),
-        proxy_port_ (HTTP_PROXY_PORT)
-      {
       }
 
     URL::~URL ()
@@ -119,7 +107,7 @@ namespace ACE
 
     const ACE_CString& URL::Factory::protocol ()
       {
-        return URL::protocol ();
+        return URL::PROTOCOL;
       }
 
     ACE::INet::URL_Base* URL::Factory::create_from_string (const ACE_CString& url_string)

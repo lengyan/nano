@@ -1,4 +1,4 @@
-// $Id: test_tli_connector.cpp 91671 2010-09-08 18:39:23Z johnnyw $
+// $Id: test_tli_connector.cpp 80826 2008-03-04 14:51:23Z wotte $
 
 // ACE_TLI Client.
 
@@ -6,7 +6,7 @@
 #include "ace/INET_Addr.h"
 #include "CPP-connector.h"
 
-
+ACE_RCSID(non_blocking, test_tli_connector, "$Id: test_tli_connector.cpp 80826 2008-03-04 14:51:23Z wotte $")
 
 #if defined (ACE_HAS_TLI)
 

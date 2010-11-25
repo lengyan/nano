@@ -1,4 +1,4 @@
-// $Id: Arg_Shifter_Test.cpp 91671 2010-09-08 18:39:23Z johnnyw $
+// $Id: Arg_Shifter_Test.cpp 83749 2008-11-14 18:39:10Z johnnyw $
 
 // ============================================================================
 //
@@ -16,7 +16,7 @@
 #include "ace/Arg_Shifter.h"
 #include "test_config.h"
 
-
+ACE_RCSID(tests, Arg_Shifter_Test, "$Id: Arg_Shifter_Test.cpp 83749 2008-11-14 18:39:10Z johnnyw $")
 
 int
 run_main (int, ACE_TCHAR *[])

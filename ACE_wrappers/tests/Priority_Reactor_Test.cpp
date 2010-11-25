@@ -1,4 +1,4 @@
-// $Id: Priority_Reactor_Test.cpp 91671 2010-09-08 18:39:23Z johnnyw $
+// $Id: Priority_Reactor_Test.cpp 80826 2008-03-04 14:51:23Z wotte $
 
 // ============================================================================
 //
@@ -37,7 +37,7 @@
 #include "ace/OS_NS_sys_wait.h"
 #include "ace/OS_NS_unistd.h"
 
-
+ACE_RCSID(tests, Priority_Reactor_Test, "$Id: Priority_Reactor_Test.cpp 80826 2008-03-04 14:51:23Z wotte $")
 
 static const char ACE_ALPHABET[] = "abcdefghijklmnopqrstuvwxyz";
 

@@ -2,7 +2,7 @@
 /**
  *  @file    Dev_Poll_Reactor_Test.cpp
  *
- *  $Id: Dev_Poll_Reactor_Test.cpp 91673 2010-09-08 18:49:47Z johnnyw $
+ *  $Id: Dev_Poll_Reactor_Test.cpp 90145 2010-05-17 11:47:31Z vzykov $
  *
  *  This test verifies that the Dev_Poll_Reactor is functioning
  *  properly, and demonstrates how "speculative reads" can be
@@ -20,6 +20,11 @@
 //=============================================================================
 
 #include "test_config.h"
+
+ACE_RCSID (tests,
+           Dev_Poll_Reactor_Test,
+           "$Id: Dev_Poll_Reactor_Test.cpp 90145 2010-05-17 11:47:31Z vzykov $")
+
 
 #if defined (ACE_HAS_DEV_POLL) || defined (ACE_HAS_EVENT_POLL)
 

@@ -3,7 +3,7 @@
 	ProjectType="Visual C++"
 	Version="9.00"
 	Name="Process_Manual_Event_Test"
-	ProjectGUID="{46FCAC0D-FECA-1BAD-2431-8A1100722433}"
+	ProjectGUID="{46FCAC0D-FECA-1BAD-2431-8A11337F6D50}"
 	RootNamespace="Process_Manual_Event_Test"
 	Keyword="Win32Proj"
 	SignManifests="true"

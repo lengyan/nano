@@ -1,4 +1,4 @@
-// $Id: New_Fail_Test.cpp 91671 2010-09-08 18:39:23Z johnnyw $
+// $Id: New_Fail_Test.cpp 85321 2009-05-12 08:31:31Z johnnyw $
 
 // ============================================================================
 //
@@ -28,7 +28,7 @@
 #include "ace/OS_Memory.h"
 #include "ace/CORBA_macros.h"
 
-
+ACE_RCSID(tests, New_Fail_Test, "$Id: New_Fail_Test.cpp 85321 2009-05-12 08:31:31Z johnnyw $")
 
 #if (!defined (__SUNPRO_CC) && !defined (__GNUG__)) || \
   defined (ACE_HAS_EXCEPTIONS)

@@ -1,4 +1,4 @@
-// $Id: test_dll.cpp 91671 2010-09-08 18:39:23Z johnnyw $
+// $Id: test_dll.cpp 80826 2008-03-04 14:51:23Z wotte $
 
 // This program tests out how the various objects can be loaded
 // dynamically and method calls made on them.
@@ -8,7 +8,7 @@
 #include "ace/Auto_Ptr.h"
 #include "ace/Log_Msg.h"
 
-
+ACE_RCSID(DLL, test_dll, "$Id: test_dll.cpp 80826 2008-03-04 14:51:23Z wotte $")
 
 typedef Magazine* (*Magazine_Creator) (void);
 

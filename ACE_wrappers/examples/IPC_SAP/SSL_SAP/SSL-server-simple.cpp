@@ -1,4 +1,4 @@
-// $Id: SSL-server-simple.cpp 91671 2010-09-08 18:39:23Z johnnyw $
+// $Id: SSL-server-simple.cpp 80826 2008-03-04 14:51:23Z wotte $
 
 // This example tests the features of the <ACE_SSL_SOCK_Acceptor>,
 // <ACE_SSL_SOCK_Stream>, and <ACE_Svc_Handler> classes.
@@ -10,7 +10,7 @@
 
 #include "ace/SSL/SSL_SOCK_Acceptor.h"
 
-
+ACE_RCSID(SSL_SAP, SSL_server_simple, "$Id: SSL-server-simple.cpp 80826 2008-03-04 14:51:23Z wotte $")
 
 // Are we running verbosely?
 static int verbose = 1;

@@ -1,4 +1,4 @@
-// $Id: test_mutex.cpp 91671 2010-09-08 18:39:23Z johnnyw $
+// $Id: test_mutex.cpp 82739 2008-09-16 12:20:46Z johnnyw $
 
 // ============================================================================
 //
@@ -23,7 +23,7 @@
 
 #if defined (ACE_HAS_THREADS) && defined (ACE_HAS_THREADS_LIBRARY)
 
-
+ACE_RCSID(mutex, test_mutex, "$Id: test_mutex.cpp 82739 2008-09-16 12:20:46Z johnnyw $")
 
 static ACE_Token_Proxy *mutex;
 static int remote_mutexes = 0;

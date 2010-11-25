@@ -3,7 +3,7 @@
 	ProjectType="Visual C++"
 	Version="9.00"
 	Name="Dev_Poll_Reactor_Test"
-	ProjectGUID="{9D2D47B0-FECA-1BAD-2431-8A1100722433}"
+	ProjectGUID="{9D2D47B0-FECA-1BAD-2431-8A11337F6D50}"
 	RootNamespace="Dev_Poll_Reactor_Test"
 	Keyword="Win32Proj"
 	SignManifests="true"

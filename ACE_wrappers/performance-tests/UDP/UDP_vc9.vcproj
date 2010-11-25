@@ -3,7 +3,7 @@
 	ProjectType="Visual C++"
 	Version="9.00"
 	Name="UDP"
-	ProjectGUID="{BC152C9A-FECA-1BAD-5112-8A636F3FD2BA}"
+	ProjectGUID="{BC152C9A-FECA-1BAD-5112-8A635C329BD9}"
 	RootNamespace="UDP"
 	Keyword="Win32Proj"
 	SignManifests="true"

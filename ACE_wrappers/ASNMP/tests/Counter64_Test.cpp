@@ -1,4 +1,4 @@
-// $Id: Counter64_Test.cpp 92173 2010-10-07 12:36:17Z olli $
+// $Id: Counter64_Test.cpp 80826 2008-03-04 14:51:23Z wotte $
 
 // ============================================================================
 //
@@ -41,6 +41,8 @@ DAMAGES.
 #include "ace/OS_main.h"
 #include "asnmp/ctr64.h"
 #include "test_config.h"
+
+ACE_RCSID(tests, Counter64_Test, "$Id: Counter64_Test.cpp 80826 2008-03-04 14:51:23Z wotte $")
 
 // TODO: verify this with ACE folks
 #if defined(_WIN32)
@@ -106,7 +108,7 @@ static void TestCounter64()
 
   Counter64 c6;
   c6.assign(ld);
-  ACE_ASSERT(ACE::is_equal(c6.to_long_double(), ld));
+  ACE_ASSERT(c6.to_long_double() == ld);
 
   Counter64 c7(ull);
   ACE_ASSERT(c7 == ull);

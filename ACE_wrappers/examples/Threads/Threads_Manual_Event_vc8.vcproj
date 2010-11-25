@@ -3,7 +3,7 @@
 	ProjectType="Visual C++"
 	Version="8.00"
 	Name="Threads_Manual_Event"
-	ProjectGUID="{60B06C37-FECA-1BAD-3731-D8978C8E5D14}"
+	ProjectGUID="{60B06C37-FECA-1BAD-3731-D89758186E24}"
 	RootNamespace="Threads_Manual_Event"
 	Keyword="Win32Proj"
 	SignManifests="true"

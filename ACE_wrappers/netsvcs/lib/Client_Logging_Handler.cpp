@@ -1,4 +1,4 @@
-// $Id: Client_Logging_Handler.cpp 91673 2010-09-08 18:49:47Z johnnyw $
+// $Id: Client_Logging_Handler.cpp 90023 2010-04-28 09:25:41Z johnnyw $
 
 #include "ace/Get_Opt.h"
 #include "ace/Acceptor.h"
@@ -15,6 +15,10 @@
 #include "ace/SString.h"
 #include "ace/INET_Addr.h"
 #include "Client_Logging_Handler.h"
+
+ACE_RCSID(lib,
+          Client_Logging_Handler,
+          "$Id: Client_Logging_Handler.cpp 90023 2010-04-28 09:25:41Z johnnyw $")
 
 ACE_Client_Logging_Handler::ACE_Client_Logging_Handler (ACE_HANDLE output_handle)
   : logging_output_ (output_handle)
@@ -131,9 +135,9 @@ ACE_Client_Logging_Handler::handle_input (ACE_HANDLE handle)
   int flags = 0;
 
   // We've got a framed IPC mechanism, so we can just to a <recv>.
-  ssize_t result = spipe.recv (&header_msg,
-                               (ACE_Str_Buf *) 0,
-                               &flags);
+  int result = spipe.recv (&header_msg,
+                           (ACE_Str_Buf *) 0,
+                           &flags);
 
   if (result < 0 || header_msg.len == 0)
     {
@@ -237,7 +241,7 @@ ACE_Client_Logging_Handler::handle_input (ACE_HANDLE handle)
                        &payload_msg,
                        &flags);
 
-  if (result < 0 || payload_msg.len != (int)length)
+  if (result < 0 || payload_msg.len != length)
     {
       ACE_DEBUG ((LM_DEBUG,
                   ACE_TEXT ("%p\n"),

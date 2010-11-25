@@ -1,4 +1,4 @@
-// $Id: Dump_Restore.cpp 91671 2010-09-08 18:39:23Z johnnyw $
+// $Id: Dump_Restore.cpp 84565 2009-02-23 08:20:39Z johnnyw $
 
 #include "ace/Malloc_Base.h"
 #include "ace/Read_Buffer.h"
@@ -13,7 +13,7 @@
 #include "ace/OS_NS_string.h"
 #include "ace/OS_NS_unistd.h"
 
-
+ACE_RCSID(Dump_Restore, Dump_Restore, "$Id: Dump_Restore.cpp 84565 2009-02-23 08:20:39Z johnnyw $")
 
 Dump_Restore::Dump_Restore (int argc, ACE_TCHAR *argv[])
   : infile_ (0)

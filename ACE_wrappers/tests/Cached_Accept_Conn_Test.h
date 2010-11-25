@@ -1,4 +1,4 @@
-// $Id: Cached_Accept_Conn_Test.h 92097 2010-09-30 05:41:49Z msmit $
+// $Id: Cached_Accept_Conn_Test.h 83251 2008-10-15 10:55:13Z vzykov $
 
 // ============================================================================
 //
@@ -49,7 +49,7 @@ public:
 };
 
 typedef size_t ATTRIBUTES;
-typedef std::pair<Client_Svc_Handler *, ATTRIBUTES>
+typedef ACE_Pair<Client_Svc_Handler *, ATTRIBUTES>
         CACHED_HANDLER;
 typedef ACE_Refcounted_Hash_Recyclable<ACE_INET_Addr>
         ACE_ADDR;

@@ -1,10 +1,10 @@
-// $Id: Iterators.cpp 91671 2010-09-08 18:39:23Z johnnyw $
+// $Id: Iterators.cpp 82610 2008-08-12 19:46:36Z parsons $
 
 #include "ace/Truncate.h"
 #include "Options.h"
 #include "Iterators.h"
 
-
+ACE_RCSID(Web_Crawler, Iterators, "$Id: Iterators.cpp 82610 2008-08-12 19:46:36Z parsons $")
 
 URL_Iterator::~URL_Iterator (void)
 {
@@ -53,7 +53,7 @@ HTML_Body_Iterator::next (ACE_CString &url)
           int start_index =
             ACE_Utils::truncate_cast<int> (
               buffer.find ('\"', href_index));
-
+              
           if (start_index <= 0)
             break;
 
@@ -62,7 +62,7 @@ HTML_Body_Iterator::next (ACE_CString &url)
           int end_index =
             ACE_Utils::truncate_cast<int> (
               buffer.find ('\"', start_index + 1));
-
+              
           if (end_index <= 0)
             break;
 

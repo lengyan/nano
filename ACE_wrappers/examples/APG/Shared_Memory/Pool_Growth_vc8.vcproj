@@ -3,7 +3,7 @@
 	ProjectType="Visual C++"
 	Version="8.00"
 	Name="Pool_Growth"
-	ProjectGUID="{E46F352A-FECA-1BAD-5E18-93A5247C7980}"
+	ProjectGUID="{E46F352A-FECA-1BAD-5E18-93A5B24F4954}"
 	RootNamespace="Pool_Growth"
 	Keyword="Win32Proj"
 	SignManifests="true"

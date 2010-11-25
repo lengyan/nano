@@ -3,7 +3,7 @@
 	ProjectType="Visual C++"
 	Version="8.00"
 	Name="Registry_Iterator"
-	ProjectGUID="{AC75F1A6-FECA-1BAD-435E-C97DA4B8E121}"
+	ProjectGUID="{AC75F1A6-FECA-1BAD-435E-C97DEDDBD22C}"
 	RootNamespace="Registry_Iterator"
 	Keyword="Win32Proj"
 	SignManifests="true"

@@ -3,7 +3,7 @@
 	ProjectType="Visual C++"
 	Version="9.00"
 	Name="QOS_Simple_Receiver"
-	ProjectGUID="{24FCC2F0-FECA-1BAD-A3FD-E03CBCFDDE18}"
+	ProjectGUID="{24FCC2F0-FECA-1BAD-A3FD-E03CDFCED351}"
 	RootNamespace="QOS_Simple_Receiver"
 	Keyword="Win32Proj"
 	SignManifests="true"

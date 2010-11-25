@@ -1,10 +1,10 @@
-// $Id: HTTP_10.cpp 91671 2010-09-08 18:39:23Z johnnyw $
+// $Id: HTTP_10.cpp 80826 2008-03-04 14:51:23Z wotte $
 
 #include "HTTP_10.h"
 
 #include "JAWS/JAWS.h"
 
-
+ACE_RCSID(PROTOTYPE, HTTP_10, "$Id: HTTP_10.cpp 80826 2008-03-04 14:51:23Z wotte $")
 
 char *
 JAWS_HTTP_10_Helper::HTTP_decode_string (char *path)

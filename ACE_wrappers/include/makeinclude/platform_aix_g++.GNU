@@ -1,4 +1,4 @@
-# $Id: platform_aix_g++.GNU 91285 2010-08-05 08:29:30Z johnnyw $
+# $Id: platform_aix_g++.GNU 80951 2008-03-14 19:57:24Z johnnyw $
 #
 # Platform macros for building on AIX with g++.  This has been tested on
 # AIX 4.3 and 5 with gcc 3. Earlier versions of gcc may compile, but are
@@ -9,6 +9,7 @@
 
 debug ?= 1
 distrib ?= 0
+exceptions ?= 1
 optimize ?= 1
 threads ?= 1
 buildbits ?= 32

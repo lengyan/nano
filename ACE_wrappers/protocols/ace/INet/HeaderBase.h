@@ -1,4 +1,4 @@
-// $Id: HeaderBase.h 91626 2010-09-07 10:59:20Z johnnyw $
+// $Id: HeaderBase.h 90737 2010-06-21 09:46:14Z mcorino $
 
 /**
  * @file HeaderBase.h
@@ -19,7 +19,7 @@
 
 #include "ace/SString.h"
 #include "ace/Containers_T.h"
-#include "ace/Containers_T.h"
+#include "ace/Array.h"
 #include "ace/OS_NS_ctype.h"
 #include "ace/INet/INet_Export.h"
 #include <iostream>
@@ -30,12 +30,6 @@ namespace ACE
   {
     namespace INet
       {
-        /**
-        * @class ACE_INet_NVPair
-        *
-        * @brief Name/Value pair holder class.
-        *
-        */
         class NVPair
           {
             public:
@@ -116,25 +110,15 @@ namespace ACE
 
               static const ACE_CString EMPTY;
 
-              /// Sets header <name> to <value>. Overwrites existing vaues.
+            protected:
               void    set (const ACE_CString& name, const ACE_CString& value);
-
-              /// Adds header <name> with <value>. Allows duplicates.
               void    add (const ACE_CString& name, const ACE_CString& value);
-
-              /// Removes header <name> (first found).
               void    remove (const ACE_CString& name);
-
-              /// Retrieves value for header <name> into <value> (first found).
               bool    get (const ACE_CString& name, ACE_CString& value) const;
-
-              /// Returns true if a header <name> exists (1 or more), false otherwise.
               bool    has (const ACE_CString& name) const;
 
-              /// Retrieves values for all headers <name> into <values>.
               void    get_values (const ACE_CString& name, ACE_Array<ACE_CString>& values) const;
 
-            protected:
               int     read_field (std::istream& str, ACE_CString& var, size_t maxlen, char delim);
               int     read_ws_field (std::istream& str, ACE_CString& var, size_t maxlen);
 

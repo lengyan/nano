@@ -1,4 +1,4 @@
-# $Id: platform_freebsd.GNU 91285 2010-08-05 08:29:30Z johnnyw $
+# $Id: platform_freebsd.GNU 89023 2010-02-16 09:52:10Z johnnyw $
 
 # platform_freebsd.GNU
 
@@ -14,6 +14,7 @@ ifeq ($(RET),1)
 versioned_so = 1
 endif
 
+exceptions ?= 1
 threads ?= 1
 debug ?= 1
 optimize ?= 1

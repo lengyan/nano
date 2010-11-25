@@ -1,4 +1,4 @@
-// $Id: client.cpp 91822 2010-09-17 09:00:19Z johnnyw $
+// $Id: client.cpp 85323 2009-05-12 18:26:12Z johnnyw $
 
 #include "ace/HTBP/HTBP_Session.h"
 #include "ace/HTBP/HTBP_Stream.h"
@@ -8,7 +8,6 @@
 
 #include "ace/Log_Msg.h"
 #include "ace/Get_Opt.h"
-#include "ace/OS_NS_sys_socket.h"
 
 const ssize_t Send_Size = 4*1024;
 const size_t Loops = 10;
@@ -46,7 +45,7 @@ parse_args (int argc, ACE_TCHAR *argv[])
                            argv [0]),
                           -1);
       }
-  // Indicates successful parsing of the command line
+  // Indicates sucessful parsing of the command line
   return 0;
 }
 

@@ -1,4 +1,4 @@
-// $Id: MM_Shared_Memory_Test.cpp 91671 2010-09-08 18:39:23Z johnnyw $
+// $Id: MM_Shared_Memory_Test.cpp 83583 2008-11-06 13:08:46Z johnnyw $
 
 // ============================================================================
 //
@@ -30,7 +30,7 @@
 #include "ace/OS_NS_string.h"
 #include "ace/OS_NS_unistd.h"
 
-
+ACE_RCSID(tests, MM_Shared_Memory_Test, "$Id: MM_Shared_Memory_Test.cpp 83583 2008-11-06 13:08:46Z johnnyw $")
 
 #if !defined (ACE_LACKS_MMAP)
 

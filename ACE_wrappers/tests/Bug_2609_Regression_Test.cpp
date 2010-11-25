@@ -1,7 +1,7 @@
 /**
  * @file Bug_2609_Regression_Test.cpp
  *
- * $Id: Bug_2609_Regression_Test.cpp 91673 2010-09-08 18:49:47Z johnnyw $
+ * $Id: Bug_2609_Regression_Test.cpp 89268 2010-02-27 06:19:36Z johnnyw $
  *
  * Reproduces the problems reported in bug 2609:
  *   http://deuce.doc.wustl.edu/bugzilla/show_bug.cgi?id=2609
@@ -10,6 +10,11 @@
  */
 
 #include "test_config.h"
+
+ACE_RCSID (tests,
+           Bug_2609_Regression_Test,
+           "$Id: Bug_2609_Regression_Test.cpp 89268 2010-02-27 06:19:36Z johnnyw $")
+
 #include "ace/Svc_Handler.h"
 #include "ace/Acceptor.h"
 #include "ace/SOCK_Stream.h"

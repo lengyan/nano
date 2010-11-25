@@ -1,4 +1,4 @@
-// $Id: Num_Threads_Monitor.cpp 91813 2010-09-17 07:52:52Z johnnyw $
+// $Id: Num_Threads_Monitor.cpp 86518 2009-08-18 12:30:56Z olli $
 
 #include "ace/Monitor_Control/Num_Threads_Monitor.h"
 
@@ -78,7 +78,7 @@ namespace ACE
     {
       return Num_Threads_Monitor::default_name_;
     }
-
+    
     void
     Num_Threads_Monitor::clear_i (void)
     {

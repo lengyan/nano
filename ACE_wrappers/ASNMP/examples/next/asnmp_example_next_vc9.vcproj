@@ -3,7 +3,7 @@
 	ProjectType="Visual C++"
 	Version="9.00"
 	Name="asnmp_example_next"
-	ProjectGUID="{B3AA929F-FECA-1BAD-82F6-8A65208B2128}"
+	ProjectGUID="{B3AA929F-FECA-1BAD-82F6-8A6543B82C61}"
 	RootNamespace="asnmp_example_next"
 	Keyword="Win32Proj"
 	SignManifests="true"

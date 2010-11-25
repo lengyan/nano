@@ -4,7 +4,7 @@
 /**
  *  @file    EntityResolver.h
  *
- *  $Id: EntityResolver.h 91257 2010-08-03 11:54:04Z johnnyw $
+ *  $Id: EntityResolver.h 80826 2008-03-04 14:51:23Z wotte $
  *
  *  @author Nanbor Wang <nanbor@cs.wustl.edu>
  */
@@ -19,6 +19,7 @@
 #pragma once
 #endif /* ACE_LACKS_PRAGMA_ONCE */
 
+#include "ACEXML/common/Env.h"
 #include "ACEXML/common/InputSource.h"
 #include "ACEXML/common/SAXExceptions.h"
 
@@ -50,7 +51,8 @@ public:
    * Allow the application to resolve external entities.
    */
   virtual ACEXML_InputSource *resolveEntity (const ACEXML_Char *publicId,
-                                             const ACEXML_Char *systemId) = 0;
+                                             const ACEXML_Char *systemId ACEXML_ENV_ARG_DECL)
+        = 0;
 };
 
 

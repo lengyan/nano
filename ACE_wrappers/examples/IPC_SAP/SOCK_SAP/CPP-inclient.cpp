@@ -1,4 +1,4 @@
-// $Id: CPP-inclient.cpp 91671 2010-09-08 18:39:23Z johnnyw $
+// $Id: CPP-inclient.cpp 82610 2008-08-12 19:46:36Z parsons $
 
 // This tests the features of the <ACE_SOCK_Connector> and
 // <ACE_SOCK_Stream> classes.  In addition, it can be used to test the
@@ -20,7 +20,7 @@
 #include "ace/OS_NS_unistd.h"
 #include "ace/OS_main.h"
 
-
+ACE_RCSID(SOCK_SAP, CPP_inclient, "$Id: CPP-inclient.cpp 82610 2008-08-12 19:46:36Z parsons $")
 
 Options::Options (void)
   : host_ (ACE_DEFAULT_SERVER_HOST),
@@ -69,7 +69,7 @@ Options::init (void)
   // Copy the length into the beginning of the message.
   ACE_UINT32 length =
     ACE_NTOHL (ACE_Utils::truncate_cast<ACE_UINT32> (this->message_len_));
-
+    
   ACE_OS::memcpy ((void *) this->message_buf_,
                   (void *) &length,
                   sizeof length);

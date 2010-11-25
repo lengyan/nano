@@ -3,7 +3,7 @@
 	ProjectType="Visual C++"
 	Version="8.00"
 	Name="HA_Proactive_Status"
-	ProjectGUID="{FFDCBB77-FECA-1BAD-4287-FEF4D6EEE17E}"
+	ProjectGUID="{FFDCBB77-FECA-1BAD-4287-FEF4E5E3A81D}"
 	RootNamespace="HA_Proactive_Status"
 	Keyword="Win32Proj"
 	SignManifests="true"

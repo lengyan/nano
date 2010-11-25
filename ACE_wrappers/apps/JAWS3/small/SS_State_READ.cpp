@@ -1,4 +1,6 @@
-// $Id: SS_State_READ.cpp 91730 2010-09-13 09:31:11Z johnnyw $
+// $Id: SS_State_READ.cpp 80826 2008-03-04 14:51:23Z wotte $
+
+#include "ace/OS.h"
 
 #include "jaws3/IO.h"
 #include "jaws3/Event_Completer.h"

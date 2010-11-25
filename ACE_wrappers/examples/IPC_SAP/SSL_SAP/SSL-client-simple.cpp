@@ -1,4 +1,4 @@
-// $Id: SSL-client-simple.cpp 91673 2010-09-08 18:49:47Z johnnyw $
+// $Id: SSL-client-simple.cpp 82612 2008-08-13 05:30:14Z johnnyw $
 
 // This tests the features of the <ACE_SSL_SOCK_Connector> and
 // <ACE_SSL_SOCK_Stream> classes.  In addition, it can be used to test the
@@ -19,6 +19,11 @@
 #include "ace/SSL/SSL_SOCK_Connector.h"
 
 #include "SSL-client-simple.h"
+
+ACE_RCSID (SSL_SAP,
+           SSL_client_simple,
+           "$Id: SSL-client-simple.cpp 82612 2008-08-13 05:30:14Z johnnyw $")
+
 
 Options::Options (void)
   : host_ (ACE_DEFAULT_SERVER_HOST),

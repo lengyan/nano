@@ -3,7 +3,7 @@
 	ProjectType="Visual C++"
 	Version="9.00"
 	Name="HA_Configurable_Server_Static"
-	ProjectGUID="{0B89E93F-FECA-1BAD-87B5-E33A12FA7C15}"
+	ProjectGUID="{0B89E93F-FECA-1BAD-87B5-E33A1FB31F26}"
 	RootNamespace="HA_Configurable_Server_Static"
 	Keyword="Win32Proj"
 	SignManifests="true"

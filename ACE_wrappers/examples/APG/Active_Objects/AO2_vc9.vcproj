@@ -3,7 +3,7 @@
 	ProjectType="Visual C++"
 	Version="9.00"
 	Name="AO2"
-	ProjectGUID="{BD580C9A-FECA-1BAD-1A31-155B449A6390}"
+	ProjectGUID="{BD580C9A-FECA-1BAD-1A31-155B27A96ED9}"
 	RootNamespace="AO2"
 	Keyword="Win32Proj"
 	SignManifests="true"

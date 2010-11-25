@@ -3,7 +3,7 @@
 	ProjectType="Visual C++"
 	Version="8.00"
 	Name="TMCast"
-	ProjectGUID="{3C606CCA-FECA-1BAD-5646-8F6AEF953BB3}"
+	ProjectGUID="{3C606CCA-FECA-1BAD-5646-8F6ADCA5EF25}"
 	RootNamespace="TMCast"
 	Keyword="Win32Proj"
 	SignManifests="true"
@@ -428,7 +428,7 @@
 		</Filter>
 		<Filter
 			Name="Pkgconfig Files"
-			Filter="pcin">
+			Filter="in">
 			<File
 				RelativePath="ACE_TMCast.pc.in">
 				<FileConfiguration

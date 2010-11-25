@@ -3,7 +3,7 @@
 	ProjectType="Visual C++"
 	Version="9.00"
 	Name="file_sap_client"
-	ProjectGUID="{B6B80F00-FECA-1BAD-FBC0-B3C30E4C7112}"
+	ProjectGUID="{B6B80F00-FECA-1BAD-FBC0-B3C3472F421F}"
 	RootNamespace="file_sap_client"
 	Keyword="Win32Proj"
 	SignManifests="true"

@@ -3,7 +3,7 @@
 	ProjectType="Visual C++"
 	Version="9.00"
 	Name="Message_Queue_Size"
-	ProjectGUID="{0C056AFD-FECA-1BAD-5016-EC184EF1264A}"
+	ProjectGUID="{0C056AFD-FECA-1BAD-5016-EC182DC22B03}"
 	RootNamespace="Message_Queue_Size"
 	Keyword="Win32Proj"
 	SignManifests="true"

@@ -1,4 +1,4 @@
-// $Id: server.cpp 91671 2010-09-08 18:39:23Z johnnyw $
+// $Id: server.cpp 81978 2008-06-16 16:57:12Z sowayaa $
 
 #include "ace/Service_Config.h"
 #include "ace/Reactor.h"
@@ -8,7 +8,7 @@
 #include "ace/OS_NS_unistd.h"
 #include "ace/OS_NS_stropts.h"
 
-
+ACE_RCSID(FIFO, server, "$Id: server.cpp 81978 2008-06-16 16:57:12Z sowayaa $")
 
 class FIFO_Recv_Handler : public ACE_Event_Handler
 {

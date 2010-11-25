@@ -2,7 +2,7 @@
 /**
  *  @file   Kokyu.h
  *
- *  $Id: Kokyu.h 91743 2010-09-13 18:24:51Z johnnyw $
+ *  $Id: Kokyu.h 80826 2008-03-04 14:51:23Z wotte $
  *
  *  @author Venkita Subramonian (venkita@cs.wustl.edu)
  *
@@ -35,7 +35,7 @@
 //#################################################################
 //Beware that this interface will be subject to change in the future
 //since this is the very initial release. We will be working on
-//trying to merge the DSRT and EC mechanisms in the future. If you
+//trying to merge the DSRT and EC mechanisms in the future. If you 
 //are a user of this interface, kindly let us know so that we can
 //coordinate with you when we refactor this interface.
 //##################################################################

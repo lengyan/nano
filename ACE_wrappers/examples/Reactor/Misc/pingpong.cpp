@@ -1,4 +1,4 @@
-// $Id: pingpong.cpp 91671 2010-09-08 18:39:23Z johnnyw $
+// $Id: pingpong.cpp 88870 2010-02-06 12:59:37Z mcorino $
 
 /* Simple program that illustrates many features of the ACE_Reactor:
 
@@ -48,7 +48,7 @@
 #  include "ace/Thread.h"
 #endif
 
-
+ACE_RCSID(Misc, pingpong, "$Id: pingpong.cpp 88870 2010-02-06 12:59:37Z mcorino $")
 
 class Ping_Pong : public ACE_Test_and_Set<ACE_Null_Mutex, sig_atomic_t>
 {

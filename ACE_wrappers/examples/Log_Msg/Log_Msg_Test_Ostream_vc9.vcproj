@@ -3,7 +3,7 @@
 	ProjectType="Visual C++"
 	Version="9.00"
 	Name="Log_Msg_Test_Ostream"
-	ProjectGUID="{65855D4C-FECA-1BAD-BA55-C0F194E8D070}"
+	ProjectGUID="{65855D4C-FECA-1BAD-BA55-C0F1407EE340}"
 	RootNamespace="Log_Msg_Test_Ostream"
 	Keyword="Win32Proj"
 	SignManifests="true"

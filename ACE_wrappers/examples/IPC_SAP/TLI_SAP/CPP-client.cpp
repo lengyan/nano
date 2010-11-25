@@ -1,4 +1,4 @@
-// $Id: CPP-client.cpp 91671 2010-09-08 18:39:23Z johnnyw $
+// $Id: CPP-client.cpp 81978 2008-06-16 16:57:12Z sowayaa $
 
 #include "ace/TLI_Connector.h"
 #include "ace/INET_Addr.h"
@@ -7,7 +7,7 @@
 #include "ace/OS_NS_unistd.h"
 #include "ace/Time_Value.h"
 
-
+ACE_RCSID(TLI_SAP, CPP_client, "$Id: CPP-client.cpp 81978 2008-06-16 16:57:12Z sowayaa $")
 
 #if defined (ACE_HAS_TLI)
 

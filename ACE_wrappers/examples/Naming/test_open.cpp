@@ -1,10 +1,12 @@
-// $Id: test_open.cpp 91670 2010-09-08 18:02:26Z johnnyw $
+// $Id: test_open.cpp 80826 2008-03-04 14:51:23Z wotte $
 
 #include "ace/OS_main.h"
 #include "ace/Naming_Context.h"
 #include "ace/Log_Msg.h"
 #include "ace/OS_NS_stdio.h"
 #include "ace/OS_NS_unistd.h"
+
+ACE_RCSID(Naming, test_open, "$Id: test_open.cpp 80826 2008-03-04 14:51:23Z wotte $")
 
 int
 ACE_TMAIN (int argc, ACE_TCHAR **argv)

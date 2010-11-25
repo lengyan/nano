@@ -1,4 +1,4 @@
-// $Id: Linux_Network_Interface_Monitor.cpp 91813 2010-09-17 07:52:52Z johnnyw $
+// $Id: Linux_Network_Interface_Monitor.cpp 82115 2008-06-20 20:43:13Z parsons $
 
 #include "ace/Monitor_Control/Linux_Network_Interface_Monitor.h"
 
@@ -70,7 +70,7 @@ namespace ACE
     {
       this->init ();
     }
-
+    
     void
     Linux_Network_Interface_Monitor::init (void)
     {

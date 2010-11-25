@@ -1,4 +1,4 @@
-// $Id: SSL_Asynch_Stream_Test.cpp 91671 2010-09-08 18:39:23Z johnnyw $
+// $Id: SSL_Asynch_Stream_Test.cpp 90163 2010-05-18 21:42:20Z mitza $
 
 // ============================================================================
 //
@@ -44,7 +44,7 @@
 #include "ace/SSL/SSL_SOCK_Acceptor.h"
 #include "ace/SSL/SSL_SOCK_Stream.h"
 
-
+ACE_RCSID(tests, SSL_Asynch_Stream_Test, "$Id: SSL_Asynch_Stream_Test.cpp 90163 2010-05-18 21:42:20Z mitza $")
 
 #if defined (ACE_HAS_THREADS) && ((defined (ACE_WIN32) && !defined (ACE_HAS_WINCE)) || (defined (ACE_HAS_AIO_CALLS)))
   // This only works on Win32 platforms and on Unix platforms

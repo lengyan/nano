@@ -1,4 +1,4 @@
-// $Id: transceiver.cpp 91673 2010-09-08 18:49:47Z johnnyw $
+// $Id: transceiver.cpp 84565 2009-02-23 08:20:39Z johnnyw $
 
 // Test program for the event transceiver.  This program can play the
 // role of either Consumer or Supplier.  You can terminate this
@@ -14,6 +14,10 @@
 #include "ace/OS_NS_unistd.h"
 
 #include "transceiver.h"
+
+ACE_RCSID (Transceiver,
+           transceiver,
+           "$Id: transceiver.cpp 84565 2009-02-23 08:20:39Z johnnyw $")
 
 // Handle the command-line arguments.
 

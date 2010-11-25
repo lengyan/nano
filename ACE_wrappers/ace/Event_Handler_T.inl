@@ -1,5 +1,6 @@
 // -*- C++ -*-
-// $Id: Event_Handler_T.inl 91626 2010-09-07 10:59:20Z johnnyw $
+//
+// $Id: Event_Handler_T.inl 80826 2008-03-04 14:51:23Z wotte $
 
 #include "ace/Global_Macros.h"
 

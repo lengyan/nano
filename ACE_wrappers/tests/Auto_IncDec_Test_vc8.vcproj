@@ -3,7 +3,7 @@
 	ProjectType="Visual C++"
 	Version="8.00"
 	Name="Auto_IncDec_Test"
-	ProjectGUID="{A0D8588E-FECA-1BAD-2431-8A1100722433}"
+	ProjectGUID="{A0D8588E-FECA-1BAD-2431-8A11337F6D50}"
 	RootNamespace="Auto_IncDec_Test"
 	Keyword="Win32Proj"
 	SignManifests="true"

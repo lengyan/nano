@@ -3,7 +3,7 @@
 	ProjectType="Visual C++"
 	Version="8.00"
 	Name="Mem_Map_File_Reverse"
-	ProjectGUID="{5093CDBD-FECA-1BAD-997C-981CB0707EDF}"
+	ProjectGUID="{5093CDBD-FECA-1BAD-997C-981C837D37BC}"
 	RootNamespace="Mem_Map_File_Reverse"
 	Keyword="Win32Proj"
 	SignManifests="true"

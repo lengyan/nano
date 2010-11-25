@@ -1,9 +1,10 @@
-# $Id: platform_openbsd.GNU 91285 2010-08-05 08:29:30Z johnnyw $
+# $Id: platform_openbsd.GNU 86709 2009-09-14 09:05:18Z olli $
 
 # platform_openbsd.GNU
 
 versioned_so = 1
 
+exceptions ?= 1
 debug ?= 1
 optimize ?= 1
 threads ?= 1

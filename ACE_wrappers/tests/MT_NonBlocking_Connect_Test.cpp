@@ -1,4 +1,4 @@
-// $Id: MT_NonBlocking_Connect_Test.cpp 91673 2010-09-08 18:49:47Z johnnyw $
+// $Id: MT_NonBlocking_Connect_Test.cpp 89706 2010-03-30 07:51:31Z vzykov $
 
 // ============================================================================
 //
@@ -36,6 +36,10 @@
 #include "ace/Connector.h"
 #include "ace/SOCK_Connector.h"
 #include "ace/Thread_Mutex.h"
+
+ACE_RCSID(tests,
+          MT_NonBlocking_Connect_Test,
+          "$Id: MT_NonBlocking_Connect_Test.cpp 89706 2010-03-30 07:51:31Z vzykov $")
 
 #if defined (ACE_HAS_THREADS)
 

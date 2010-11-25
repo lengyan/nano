@@ -3,7 +3,7 @@
 	ProjectType="Visual C++"
 	Version="9.00"
 	Name="Reschedule"
-	ProjectGUID="{8A6A59C4-FECA-1BAD-4280-FE54CE10D8BD}"
+	ProjectGUID="{8A6A59C4-FECA-1BAD-4280-FE54FD200C2B}"
 	RootNamespace="Reschedule"
 	Keyword="Win32Proj"
 	SignManifests="true"

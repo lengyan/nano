@@ -1,4 +1,4 @@
-// $Id: Client_Test.cpp 91673 2010-09-08 18:49:47Z johnnyw $
+// $Id: Client_Test.cpp 80826 2008-03-04 14:51:23Z wotte $
 
 #include "ace/Service_Config.h"
 #include "ace/Naming_Context.h"
@@ -14,6 +14,10 @@
 #include "ace/os_include/os_assert.h"
 
 #include "Client_Test.h"
+
+ACE_RCSID (Client,
+           Client_Test,
+           "$Id: Client_Test.cpp 80826 2008-03-04 14:51:23Z wotte $")
 
 // Get the instance of Name_Service using Dynamic_Service
 

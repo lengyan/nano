@@ -3,7 +3,7 @@
 	ProjectType="Visual C++"
 	Version="9.00"
 	Name="Shared_Memory_Hash_Map"
-	ProjectGUID="{3CAD8919-FECA-1BAD-5E18-93A5247C7980}"
+	ProjectGUID="{3CAD8919-FECA-1BAD-5E18-93A5B24F4954}"
 	RootNamespace="Shared_Memory_Hash_Map"
 	Keyword="Win32Proj"
 	SignManifests="true"

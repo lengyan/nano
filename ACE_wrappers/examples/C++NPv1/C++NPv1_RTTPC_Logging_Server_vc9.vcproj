@@ -3,7 +3,7 @@
 	ProjectType="Visual C++"
 	Version="9.00"
 	Name="C++NPv1_RTTPC_Logging_Server"
-	ProjectGUID="{EB977FD1-FECA-1BAD-B753-CBFC9FE5DD76}"
+	ProjectGUID="{EB977FD1-FECA-1BAD-B753-CBFC4B73EE46}"
 	RootNamespace="C++NPv1_RTTPC_Logging_Server"
 	Keyword="Win32Proj"
 	SignManifests="true"

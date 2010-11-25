@@ -1,4 +1,4 @@
-// $Id: token.cpp 91671 2010-09-08 18:39:23Z johnnyw $
+// $Id: token.cpp 81978 2008-06-16 16:57:12Z sowayaa $
 
 // Test out the ACE Token class.
 
@@ -7,7 +7,7 @@
 #include "ace/Task.h"
 #include "ace/OS_NS_time.h"
 
-
+ACE_RCSID(Threads, token, "$Id: token.cpp 81978 2008-06-16 16:57:12Z sowayaa $")
 
 #if defined (ACE_HAS_THREADS)
 

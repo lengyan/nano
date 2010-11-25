@@ -1,4 +1,4 @@
-// $Id: Framework_Component_Test.cpp 91671 2010-09-08 18:39:23Z johnnyw $
+// $Id: Framework_Component_Test.cpp 90163 2010-05-18 21:42:20Z mitza $
 
 // ============================================================================
 //
@@ -23,7 +23,7 @@
 #include "ace/ARGV.h"
 #include "ace/DLL_Manager.h"
 
-
+ACE_RCSID(tests, Framework_Component_Test, "$Id: Framework_Component_Test.cpp 90163 2010-05-18 21:42:20Z mitza $")
 
 // Define a few macros--because they're so much fun, and keep the
 // code below a little cleaner...

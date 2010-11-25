@@ -1,4 +1,4 @@
-// $Id: Svc_Handler_Test.cpp 91688 2010-09-09 11:21:50Z johnnyw $
+// $Id: Svc_Handler_Test.cpp 83501 2008-10-30 12:16:38Z johnnyw $
 
 // ============================================================================
 //
@@ -26,7 +26,9 @@
 #include "ace/Svc_Handler.h"
 #include "ace/Synch_Traits.h"
 
-typedef ACE_Buffered_Svc_Handler <ACE_FILE_IO, ACE_NULL_SYNCH> SVC_HANDLER;
+ACE_RCSID(tests, Svc_Handler_Test, "$Id: Svc_Handler_Test.cpp 83501 2008-10-30 12:16:38Z johnnyw $")
+
+typedef ACE_Buffered_Svc_Handler <ACE_FILE_STREAM, ACE_NULL_SYNCH> SVC_HANDLER;
 
 static void
 run_test (SVC_HANDLER &svc_handler,

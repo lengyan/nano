@@ -1,4 +1,4 @@
-// $Id: Handle_Thr_Stream.cpp 91670 2010-09-08 18:02:26Z johnnyw $
+// $Id: Handle_Thr_Stream.cpp 82574 2008-08-08 19:35:06Z parsons $
 
 #if !defined (ACE_HANDLE_THR_STREAM_C)
 #define ACE_HANDLE_THR_STREAM_C
@@ -10,6 +10,8 @@
 #include "ace/INET_Addr.h"
 #include "ace/TLI_Acceptor.h"
 #include "Handle_Thr_Stream.h"
+
+ACE_RCSID(server, Handle_Thr_Stream, "$Id: Handle_Thr_Stream.cpp 82574 2008-08-08 19:35:06Z parsons $")
 
 #if defined (ACE_HAS_THREADS)
 
@@ -56,7 +58,7 @@ Handle_Thr_Acceptor<SVH, PR_AC_2>::info (ACE_TCHAR **strp,
     {
       ACE_OS::strncpy (*strp, buf, length);
     }
-
+    
   return ACE_Utils::truncate_cast<int> (ACE_OS::strlen (buf));
 }
 

@@ -3,7 +3,7 @@
 	ProjectType="Visual C++"
 	Version="8.00"
 	Name="ContentHandler_Test"
-	ProjectGUID="{0101D484-FECA-1BAD-2431-8A119E86733F}"
+	ProjectGUID="{0101D484-FECA-1BAD-2431-8A11ADB6A7A9}"
 	RootNamespace="ContentHandler_Test"
 	Keyword="Win32Proj"
 	SignManifests="true"

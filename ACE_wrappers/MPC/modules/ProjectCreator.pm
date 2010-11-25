@@ -87,7 +87,6 @@ my %customDefined = ('automatic_in'                => 0x04,
                      'command'                     => 0x14,
                      'commandflags'                => 0x14,
                      'dependent'                   => 0x14,
-                     'dependent_libs'              => 0x14,
                      'precommand'                  => 0x14,
                      'postcommand'                 => 0x14,
                      'inputext'                    => 0x01,
@@ -135,7 +134,6 @@ my %customDefined = ('automatic_in'                => 0x04,
 my %custom = ('command'       => 1,
               'commandflags'  => 1,
               'dependent'     => 1,
-              'dependent_libs'=> 1,
               'gendir'        => 0,
               'precommand'    => 1,
               'postcommand'   => 1,
@@ -203,7 +201,6 @@ my %csvc = ('source_files'        => [ "\\.cs" ],
             'aspx_files'          => [ "\\.aspx" ],
             'ico_files'           => [ "\\.ico" ],
             'documentation_files' => [ "README", "readme", "\\.doc", "\\.txt", "\\.html" ],
-            'embedded_resource_files' => [],
            );
 
 my %csma = ('source_files' => [ 'dependent_upon',
@@ -442,14 +439,6 @@ sub process_assignment {
         $self->{'dependency_attributes'}->{$2} = $3;
       }
 
-      ## Check the after value and warn the user in the event that it
-      ## contains a value that can not be used within a project name.
-      if (!$self->valid_project_name($value)) {
-        $self->warning("after '$value' contains an invalid project name in " .
-                       $self->{'current_input'} . ' at line ' .
-                       $self->get_line_number() . '.');
-      }
-
       ## Support the '*' mechanism as in the project name, to allow
       ## the user to correctly depend on another project within the same
       ## directory.
@@ -467,7 +456,7 @@ sub process_assignment {
     }
 
     ## If the assignment name is valid and requires parameter (<%...%>)
-    ## replacement, then do so.  But, only do so on actual keywords.
+    ## replacement, then do so.  But, only do so on actual keywords. 
     ## User defined keywords must not have the parameters replaced in
     ## order for them to get the correct replacement values later on.
     if (defined $validNames{$name} &&
@@ -887,7 +876,12 @@ sub parse_line {
         ## Set up the default project name
         if ($status) {
           if (defined $name) {
-            if ($self->valid_project_name($name)) {
+            if ($name =~ /[\/\\]/) {
+              $status = 0;
+              $errorString = 'Projects can not have a slash ' .
+                             'or a back slash in the name';
+            }
+            else {
               ## We should only set the project name if we are not
               ## reading in a parent project.
               if (!defined $self->{'reading_parent'}->[0]) {
@@ -908,11 +902,6 @@ sub parse_line {
                 $self->warning("Ignoring project name " .
                                "$name in a base project.");
               }
-            }
-            else {
-              $status = 0;
-              $errorString = 'Projects can not have the following in ' .
-                             'the name: / \\ = ? : & " < > | # %';
             }
           }
         }
@@ -3384,7 +3373,7 @@ sub list_generated_file {
 
 sub add_corresponding_component_files {
   my($self, $filecomp, $tag) = @_;
-  my $grname = $grouped_key . $tag;
+  my $grname   = $grouped_key . $tag;
 
   ## Create a hash array keyed off of the existing files of the type
   ## that we plan on adding.
@@ -3687,12 +3676,6 @@ sub generate_defaults {
     }
   }
 
-  ## The code to add template files automatically when it is left
-  ## defaulted by the user may add source files that happen to end in _t
-  ## (minus the extension).  If we do not remove template files that are
-  ## also listed as source files, the generated projects can be invalid.
-  $self->remove_duplicated_files('template_files', 'source_files');
-
   ## Now that all of the other files have been added
   ## we need to remove those that have need to be removed
   my @rmkeys = keys %{$self->{'remove_files'}};
@@ -3877,18 +3860,6 @@ sub get_special_value {
   }
   elsif (index($type, $grouped_key) == 0) {
     return $self->get_grouped_value($type, $cmd, $based);
-  }
-  elsif (defined $self->get_addtemp()->{$type . 's'}) {
-    if ($cmd eq '_default') {
-      $based =~ /^([^:]+):/;
-      return defined $1 ? $1 : $based;
-    }
-    else {
-      if ($based =~ /:(.*)/) {
-        my %attr = map { split('=', $_) } split(',', $1);
-        return $attr{$cmd};
-      }
-    }
   }
   else {
     my $language = $self->get_language();
@@ -4454,9 +4425,6 @@ sub need_to_write_project {
   ## files first and then for custom input files.
   foreach my $key ('source_files', $self->get_resource_tag(),
                    keys %{$self->{'generated_exts'}}) {
-    ## For implicitly-discovered projects, just having a resource file without
-    ## source or generated file is not enough to write a project.
-    next if $self->{'current_input'} eq '' && $key eq $self->get_resource_tag();
     my $names = $self->{$key};
     foreach my $name (keys %$names) {
       foreach my $key (keys %{$names->{$name}}) {
@@ -4538,8 +4506,7 @@ sub write_output_file {
       ($status, $error) = $tp->parse_file($tfile);
       last if (!$status);
 
-      if (defined $self->{'source_callback'} &&
-          $self->file_visible($self->{'current_template'})) {
+      if (defined $self->{'source_callback'}) {
         my $cb     = $self->{'source_callback'};
         my $pjname = $self->get_assignment('project_name');
         my @list   = $self->get_component_list('source_files');
@@ -4594,11 +4561,7 @@ sub write_output_file {
           if ($different) {
             unlink($name);
             if (rename($tmp, $name)) {
-              $error = $self->post_file_creation($name);
-              if (defined $error) {
-                $status = 0;
-                last;
-              }
+              $self->post_file_creation($name);
             }
             else {
               $error = "Unable to open $name for output.";
@@ -4618,11 +4581,7 @@ sub write_output_file {
               print $fh $line;
             }
             close($fh);
-            $error = $self->post_file_creation($name);
-            if (defined $error) {
-              $status = 0;
-              last;
-            }
+            $self->post_file_creation($name);
           }
           else {
             $error = "Unable to open $name for output.";
@@ -4680,7 +4639,7 @@ sub get_install_info {
         if (defined $$array[0]) {
           &$callback("$vc:\n");
           foreach my $file (@$array) {
-            if (defined $self->{'flag_overrides'}->{$vc} &&
+            if (defined $self->{'flag_overrides'}->{$vc} && 
                 defined $self->{'flag_overrides'}->{$vc}->{$file} &&
                 defined $self->{'flag_overrides'}->{$vc}->{$file}->{'gendir'}) {
               &$callback(join(' ', map {/ / ? "\"$_\"" : $_} ($file,
@@ -4767,12 +4726,6 @@ sub write_project {
               }
             }
           }
-        }
-
-        ## Hook for implementing type-specific behavior.
-        ($status, $error) = $self->pre_write_output_file($webapp);
-        if (!$status) {
-          return $status, $error;
         }
 
         ## We don't need to pass a file name here.  write_output_file()
@@ -5366,15 +5319,13 @@ sub get_resource_tag {
 
 sub find_command_helper {
   my($self, $tag) = @_;
-
-  ## No tag results in no command helper
-  return undef if (!defined $tag);
-
-  ## See if we have a command helper for this tag
+  if (!defined $tag) {
+    return undef;
+  }
   my $ch = CommandHelper::get($tag);
-  return $ch if (defined $ch);
-
-  ## None for the base define custom, try again with the parent
+  if (defined $ch) {
+    return $ch;
+  }
   return $self->find_command_helper($self->{'define_custom_parent'}->{$tag});
 }
 
@@ -5382,11 +5333,6 @@ sub get_dependency_attribute {
   ## Return the dependency attribute specified as the first parameter to
   ## this method (not counting the ProjectCreator object).
   return $_[0]->{'dependency_attributes'}->{$_[1]};
-}
-
-sub valid_project_name {
-  #my($self, $name) = @_;
-  return $_[1] !~ /[\/\\=\?:&"<>|#%]/;
 }
 
 # ************************************************************
@@ -5436,7 +5382,6 @@ sub use_win_compatibility_commands {
 sub post_file_creation {
   #my $self = shift;
   #my $file = shift;
-  return undef;
 }
 
 
@@ -5581,10 +5526,6 @@ sub requires_forward_slashes {
 }
 
 sub warn_useless_project {
-  return 1;
-}
-
-sub pre_write_output_file {
   return 1;
 }
 

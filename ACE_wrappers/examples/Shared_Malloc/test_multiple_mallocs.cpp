@@ -1,4 +1,4 @@
-// $Id: test_multiple_mallocs.cpp 91671 2010-09-08 18:39:23Z johnnyw $
+// $Id: test_multiple_mallocs.cpp 80826 2008-03-04 14:51:23Z wotte $
 
 // Test the capability of <ACE_Malloc> to handle multiple mallocs
 // rooted at different base addresses.
@@ -9,7 +9,7 @@
 #include "ace/Auto_Ptr.h"
 #include "ace/Process_Mutex.h"
 
-
+ACE_RCSID(Shared_Malloc, test_multiple_mallocs, "$Id: test_multiple_mallocs.cpp 80826 2008-03-04 14:51:23Z wotte $")
 
 typedef ACE_Malloc <ACE_MMAP_MEMORY_POOL, ACE_Process_Mutex> TEST_MALLOC;
 

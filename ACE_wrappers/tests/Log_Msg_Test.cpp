@@ -1,4 +1,4 @@
-// $Id: Log_Msg_Test.cpp 91813 2010-09-17 07:52:52Z johnnyw $
+// $Id: Log_Msg_Test.cpp 90802 2010-06-23 14:19:07Z vzykov $
 
 // ============================================================================
 //
@@ -36,7 +36,8 @@
 #include "ace/OS_NS_sys_time.h"
 #include "ace/OS_NS_time.h"
 #include "ace/Time_Value.h"
-#include "ace/Thread.h"
+
+ACE_RCSID(tests, Log_Msg_Test, "$Id: Log_Msg_Test.cpp 90802 2010-06-23 14:19:07Z vzykov $")
 
 static void
 cleanup (void)
@@ -548,7 +549,7 @@ Log_Spec_Verify::log (ACE_Log_Record &log_record)
         }
         else if (ACE_OS::strncmp (b, ACE_TEXT ("l5:"), 3) == 0)
         {
-          b += 3;
+          b += 3;          
           switch (log_record.type())
           {
             case (LM_SHUTDOWN): expect = ACE_TEXT("S"); break;
@@ -564,7 +565,7 @@ Log_Spec_Verify::log (ACE_Log_Record &log_record)
             case (LM_EMERGENCY): expect = ACE_TEXT("!"); break;
             default: expect = ACE_TEXT("?"); break;
           }
-
+          
         }
       else
         {
@@ -636,8 +637,6 @@ test_format_specs (void)
   ACE_DEBUG ((LM_DEBUG, ACE_TEXT ("%T\n")));
   ACE_DEBUG ((LM_DEBUG, ACE_TEXT ("%#T\n"), &tv));
 
-  ACE_DEBUG ((LM_DEBUG, ACE_TEXT ("thread id %t\n")));
-
   Log_Spec_Verify  verifier;
 
   ACE_LOG_MSG->msg_callback (&verifier);
@@ -649,21 +648,21 @@ test_format_specs (void)
   ACE_LOG_MSG->log (LM_DEBUG, ACE_TEXT ("l1:%l"));
   ACE_LOG_MSG->log (LM_DEBUG, ACE_TEXT ("l2:%5l"));
   ACE_LOG_MSG->log (LM_DEBUG, ACE_TEXT ("l3N1:%0*l,%.7N"), 4);
-  ACE_DEBUG ((LM_DEBUG, ACE_TEXT ("l4:%T")));
+  ACE_DEBUG ((LM_DEBUG, ACE_TEXT ("l4:%T")));  
 
-  ACE_LOG_MSG->priority_mask (LM_SHUTDOWN |
-                              LM_TRACE |
-                              LM_DEBUG |
-                              LM_INFO |
-                              LM_NOTICE |
-                              LM_WARNING |
-                              LM_STARTUP |
-                              LM_ERROR |
-                              LM_CRITICAL |
-                              LM_ALERT |
+  ACE_LOG_MSG->priority_mask (LM_SHUTDOWN | 
+                              LM_TRACE | 
+                              LM_DEBUG | 
+                              LM_INFO | 
+                              LM_NOTICE | 
+                              LM_WARNING | 
+                              LM_STARTUP | 
+                              LM_ERROR | 
+                              LM_CRITICAL | 
+                              LM_ALERT | 
                               LM_EMERGENCY,
                               ACE_Log_Msg::PROCESS);
-  ACE_DEBUG ((LM_SHUTDOWN, ACE_TEXT ("l5:%.1M")));
+  ACE_DEBUG ((LM_SHUTDOWN, ACE_TEXT ("l5:%.1M")));  
   ACE_DEBUG ((LM_TRACE, ACE_TEXT ("l5:%.1M")));
   ACE_DEBUG ((LM_DEBUG, ACE_TEXT ("l5:%.1M")));
   ACE_DEBUG ((LM_INFO, ACE_TEXT ("l5:%.1M")));
@@ -674,7 +673,7 @@ test_format_specs (void)
   ACE_DEBUG ((LM_CRITICAL, ACE_TEXT ("l5:%.1M")));
   ACE_DEBUG ((LM_ALERT, ACE_TEXT ("l5:%.1M")));
   ACE_DEBUG ((LM_EMERGENCY, ACE_TEXT ("l5:%.1M")));
-
+  
   ACE_LOG_MSG->msg_ostream (ace_file_stream::instance ()->output_file ());
   ACE_LOG_MSG->msg_callback (0);
   ACE_LOG_MSG->set_flags (ACE_Log_Msg::OSTREAM);

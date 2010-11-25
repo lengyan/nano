@@ -1,4 +1,4 @@
-// $Id: FTP_Response.h 91626 2010-09-07 10:59:20Z johnnyw $
+// $Id: FTP_Response.h 90895 2010-06-28 11:36:25Z mcorino $
 
 /**
  * @file FTP_Response.h
@@ -14,7 +14,7 @@
 #include "ace/INet/INet_Export.h"
 #include "ace/INet/Response.h"
 #include "ace/SString.h"
-#include "ace/Containers_T.h"
+#include "ace/Array.h"
 #include <iostream>
 
 ACE_BEGIN_VERSIONED_NAMESPACE_DECL

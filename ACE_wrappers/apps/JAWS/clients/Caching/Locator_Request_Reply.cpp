@@ -1,4 +1,4 @@
-// $Id: Locator_Request_Reply.cpp 91670 2010-09-08 18:02:26Z johnnyw $
+// $Id: Locator_Request_Reply.cpp 81993 2008-06-16 20:26:16Z sowayaa $
 
 #if !defined (ACE_LOCATOR_REQUEST_REPLY_C)
 #define ACE_LOCATOR_REQUEST_REPLY_C
@@ -13,6 +13,8 @@
 #include "URL_Properties.h"
 #include "URL_Array_Helper.h"
 #include "URL_Locator.h"
+
+ACE_RCSID(Caching, Locator_Request_Reply, "$Id: Locator_Request_Reply.cpp 81993 2008-06-16 20:26:16Z sowayaa $")
 
 int
 ACE_URL_Locator_Request::url_query (const int how,

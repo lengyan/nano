@@ -1,5 +1,5 @@
 //  -*- MPC -*-
-// $Id: tests.mpc 92222 2010-10-14 18:33:51Z johnnyw $
+// $Id: tests.mpc 90826 2010-06-24 09:07:33Z johnnyw $
 
 project(Test_Output) : acelib, script {
   libout       = .
@@ -110,7 +110,6 @@ project(ACE Init Test) : acetest {
   exename = ACE_Init_Test
   Source_Files {
     ACE_Init_Test.cpp
-    ACE_Init_TestDlg.cpp
   }
   Resource_Files {
     ACE_Init_Test.rc
@@ -361,13 +360,6 @@ project(Bug_3532_Regression_Test) : acetest {
   }
 }
 
-project(Bug_3539_Regression_Test) : acetest {
-  exename = Bug_3539_Regression_Test
-  Source_Files {
-    Bug_3539_Regression_Test.cpp
-  }
-}
-
 project(Bug_3541_Regression_Test) : acetest {
   exename = Bug_3541_Regression_Test
   Source_Files {
@@ -414,21 +406,6 @@ project(Bug_3758_Regression_Test) : acetest {
   exename = Bug_3758_Regression_Test
   Source_Files {
     Bug_3758_Regression_Test.cpp
-  }
-}
-
-project(Bug_3878_Regression_Test) : acetest {
-  exename = Bug_3878_Regression_Test
-  Source_Files {
-    Bug_3878_Regression_Test.cpp
-  }
-}
-
-project(Bug_3911_Regression_Test) : acetest {
-  avoids += ace_for_tao
-  exename = Bug_3911_Regression_Test
-  Source_Files {
-    Bug_3911_Regression_Test.cpp
   }
 }
 
@@ -1919,12 +1896,5 @@ project(Bug_3334_Regression_Test) : acetest {
   exename = Bug_3334_Regression_Test
   Source_Files {
     Bug_3334_Regression_Test.cpp
-  }
-}
-
-project(Missing_Svc_Conf_Test) : acetest {
-  exename = Missing_Svc_Conf_Test
-  Source_Files {
-    Missing_Svc_Conf_Test.cpp
   }
 }

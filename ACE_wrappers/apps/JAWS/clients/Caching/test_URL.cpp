@@ -1,9 +1,14 @@
-// $Id: test_URL.cpp 91670 2010-09-08 18:02:26Z johnnyw $
+// $Id: test_URL.cpp 80826 2008-03-04 14:51:23Z wotte $
 
 #include "Locator_Request_Reply.h"
 
-int ACE_TMAIN (int , ACE_TCHAR *[])
+ACE_RCSID(Caching, test_URL, "$Id: test_URL.cpp 80826 2008-03-04 14:51:23Z wotte $")
+
+int ACE_TMAIN (int argc, ACE_TCHAR *argv[])
 {
+  ACE_UNUSED_ARG (argc);
+  ACE_UNUSED_ARG (argv);
+
   ACE_URL_Locator_Request original, derived;
 
   ACE_URL_Property_Seq ouch1(3);

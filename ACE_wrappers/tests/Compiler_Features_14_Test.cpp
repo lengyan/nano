@@ -1,4 +1,4 @@
-// $Id: Compiler_Features_14_Test.cpp 91626 2010-09-07 10:59:20Z johnnyw $
+// $Id: Compiler_Features_14_Test.cpp 86333 2009-08-03 17:05:19Z coryan $
 
 /**
  * @file
@@ -13,6 +13,8 @@
  */
 
 #include "test_config.h"
+
+ACE_RCSID(tests, Compiler_Features_14_Test, "$Id: Compiler_Features_14_Test.cpp 86333 2009-08-03 17:05:19Z coryan $")
 
 // We are going to test if partial template specializations work by
 // demonstrating a standard technique in generic programming, i.e.,

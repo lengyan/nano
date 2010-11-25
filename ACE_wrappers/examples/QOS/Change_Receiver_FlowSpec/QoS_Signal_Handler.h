@@ -1,5 +1,5 @@
 /* -*- C++ -*- */
-// $Id: QoS_Signal_Handler.h 91743 2010-09-13 18:24:51Z johnnyw $
+// $Id: QoS_Signal_Handler.h 80826 2008-03-04 14:51:23Z wotte $
 
 // =====================================================================
 //
@@ -27,18 +27,18 @@ class QoS_Signal_Handler : public ACE_Event_Handler
   //   Useful to gracefully release QoS sessions.
 
 public:
-
+  
   QoS_Signal_Handler (ACE_QoS_Session *qos_session);
   // constructor.
-
+  
   int handle_signal(int signum, siginfo_t*,ucontext_t*);
   // Override this method to implement graceful shutdown.
-
+  
 private:
-
+  
   ACE_QoS_Session *qos_session_;
   // Session to be gracefully shutdown.
-
+ 
 };
 
 #endif /* QOS_SIGNAL_HANDLER_H */

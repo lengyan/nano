@@ -3,7 +3,7 @@
 	ProjectType="Visual C++"
 	Version="9.00"
 	Name="Proactor_Cancel"
-	ProjectGUID="{56156E5B-FECA-1BAD-4285-FEF4D045C8F0}"
+	ProjectGUID="{56156E5B-FECA-1BAD-4285-FEF49926FBFD}"
 	RootNamespace="Proactor_Cancel"
 	Keyword="Win32Proj"
 	SignManifests="true"

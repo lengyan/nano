@@ -1,4 +1,4 @@
-// $Id: Svc_Conf_Lexer.cpp 92178 2010-10-08 07:44:20Z olli $
+// $Id: Svc_Conf_Lexer.cpp 81312 2008-04-09 21:01:34Z iliyan $
 #include "ace/Svc_Conf_Lexer.h"
 
 #if (ACE_USES_CLASSIC_SVC_CONF == 1)
@@ -239,7 +239,9 @@ ACE_Svc_Conf_Lexer::input (ACE_Svc_Conf_Param* param,
           if (errno == EINTR)
             {
               errno = 0;
+#if !defined (ACE_LACKS_CLEARERR)
               ACE_OS::clearerr (param->source.file);
+#endif /* !ACE_LACKS_CLEARERR */
             }
           else
             {
@@ -393,7 +395,7 @@ ACE_Svc_Conf_Lexer::scan (YYSTYPE* ace_yylval,
 
                 if (current == buffer->index_ + 1)
                   {
-                    int const lower = ACE_OS::ace_tolower (
+                    int lower = ACE_OS::ace_tolower (
                                           buffer->input_[current - 1]);
                     if (c == ':' &&
                         (buffer->input_[current - 1] == '%' ||

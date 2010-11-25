@@ -1,4 +1,4 @@
-// $Id: Signal_Test.cpp 91671 2010-09-08 18:39:23Z johnnyw $
+// $Id: Signal_Test.cpp 90501 2010-06-09 14:44:52Z mitza $
 
 // ============================================================================
 //
@@ -31,7 +31,7 @@
 #include "ace/OS_NS_stdlib.h"
 #include "ace/SString.h"
 
-
+ACE_RCSID(tests, Signal_Test, "$Id: Signal_Test.cpp 90501 2010-06-09 14:44:52Z mitza $")
 
 #if !defined (ACE_LACKS_UNIX_SIGNALS)
 

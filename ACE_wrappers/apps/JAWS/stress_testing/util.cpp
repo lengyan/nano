@@ -1,6 +1,8 @@
-// $Id: util.cpp 91670 2010-09-08 18:02:26Z johnnyw $
+// $Id: util.cpp 80826 2008-03-04 14:51:23Z wotte $
 
 #include "util.h"
+
+ACE_RCSID(stress_testing, util, "$Id: util.cpp 80826 2008-03-04 14:51:23Z wotte $")
 
 URL::URL(char *input_buf) {
 

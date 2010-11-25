@@ -3,7 +3,7 @@
 	ProjectType="Visual C++"
 	Version="8.00"
 	Name="ASX_Message_Queue_Bounded_Buffer"
-	ProjectGUID="{07921EE6-FECA-1BAD-1624-F77E007731F8}"
+	ProjectGUID="{07921EE6-FECA-1BAD-1624-F77E9644012C}"
 	RootNamespace="ASX_Message_Queue_Bounded_Buffer"
 	Keyword="Win32Proj"
 	SignManifests="true"

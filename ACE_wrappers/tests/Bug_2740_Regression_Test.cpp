@@ -1,7 +1,7 @@
 /**
  * @file Bug_2740_Regression_Test.cpp
  *
- * $Id: Bug_2740_Regression_Test.cpp 91673 2010-09-08 18:49:47Z johnnyw $
+ * $Id: Bug_2740_Regression_Test.cpp 90004 2010-04-26 09:08:04Z vzykov $
  *
  * Reproduces the problems reported in bug 2740
  *   http://deuce.doc.wustl.edu/bugzilla/show_bug.cgi?id=2740
@@ -10,6 +10,10 @@
  */
 
 #include "test_config.h"
+
+ACE_RCSID (tests,
+           Bug_2740_Regression_Test,
+           "$Id: Bug_2740_Regression_Test.cpp 90004 2010-04-26 09:08:04Z vzykov $")
 
 #if defined (ACE_HAS_DEV_POLL) || defined (ACE_HAS_EVENT_POLL)
 

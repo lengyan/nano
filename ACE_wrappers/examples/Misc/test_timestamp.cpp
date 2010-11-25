@@ -1,4 +1,4 @@
-// $Id: test_timestamp.cpp 91671 2010-09-08 18:39:23Z johnnyw $
+// $Id: test_timestamp.cpp 80826 2008-03-04 14:51:23Z wotte $
 
 // Test the ACE::timestamp method.
 
@@ -6,7 +6,7 @@
 #include "ace/ACE.h"
 #include "ace/Log_Msg.h"
 
-
+ACE_RCSID(Misc, test_timestamp, "$Id: test_timestamp.cpp 80826 2008-03-04 14:51:23Z wotte $")
 
 int
 ACE_TMAIN (int, ACE_TCHAR *[])

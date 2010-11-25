@@ -1,4 +1,4 @@
-// $Id: Timer_Queue_T.cpp 92285 2010-10-20 16:34:57Z shuston $
+// $Id: Timer_Queue_T.cpp 89254 2010-02-25 22:10:39Z cleeland $
 
 #ifndef ACE_TIMER_QUEUE_T_CPP
 #define ACE_TIMER_QUEUE_T_CPP
@@ -18,7 +18,6 @@
 #include "ace/Guard_T.h"
 #include "ace/Log_Msg.h"
 #include "ace/Reactor_Timer_Interface.h"
-#include "ace/Reverse_Lock_T.h"
 #include "ace/Null_Mutex.h"
 #include "ace/OS_NS_sys_time.h"
 
@@ -268,9 +267,6 @@ ACE_Timer_Queue_T<TYPE, FUNCTOR, ACE_LOCK>::expire (const ACE_Time_Value &cur_ti
 
   while ((result = this->dispatch_info_i (cur_time, info)) != 0)
     {
-      ACE_MT (ACE_Reverse_Lock<ACE_LOCK> rev_lk(this->mutex_));
-      ACE_MT (ACE_GUARD_RETURN (ACE_Reverse_Lock<ACE_LOCK>, rmon, rev_lk, -1));
-
       const void *upcall_act = 0;
 
       this->preinvoke (info, cur_time, upcall_act);

@@ -1,8 +1,10 @@
-// $Id: Handle_L_CODgram.cpp 91670 2010-09-08 18:02:26Z johnnyw $
+// $Id: Handle_L_CODgram.cpp 80826 2008-03-04 14:51:23Z wotte $
 
 #include "Handle_L_CODgram.h"
 
 #if !defined (ACE_LACKS_UNIX_DOMAIN_SOCKETS)
+
+ACE_RCSID(server, Handle_L_CODgram, "$Id: Handle_L_CODgram.cpp 80826 2008-03-04 14:51:23Z wotte $")
 
 const ACE_TCHAR *Handle_L_CODgram::DEFAULT_RENDEZVOUS =
   ACE_TEXT ("/tmp/foo_codgram");

@@ -1,4 +1,4 @@
-// $Id: bounded_buffer.cpp 91671 2010-09-08 18:39:23Z johnnyw $
+// $Id: bounded_buffer.cpp 82610 2008-08-12 19:46:36Z parsons $
 
 // This short program copies stdin to stdout via the use of an ASX
 // Message_Queue.  It illustrates an implementation of the classic
@@ -10,7 +10,7 @@
 #include "ace/OS_NS_time.h"
 #include "ace/OS_NS_unistd.h"
 
-
+ACE_RCSID(Message_Queue, bounded_buffer, "$Id: bounded_buffer.cpp 82610 2008-08-12 19:46:36Z parsons $")
 
 #if defined (ACE_HAS_THREADS)
 
@@ -28,7 +28,7 @@ producer (ACE_Message_Queue<ACE_MT_SYNCH> *msg_queue)
   for (int n; ; )
     {
       // Allocate a new message.
-      ACE_Message_Block *mb = 0;
+      ACE_Message_Block *mb;
 
       ACE_NEW_RETURN (mb, ACE_Message_Block (BUFSIZ), 0);
 
@@ -73,7 +73,7 @@ static void *consumer (ACE_Message_Queue<ACE_MT_SYNCH> *msg_queue)
 
   for (;;)
     {
-      ACE_Message_Block *mb = 0;
+      ACE_Message_Block *mb;
 
       ACE_Time_Value timeout (ACE_OS::time (0) + 4, 0); // Wait for upto 4 seconds
 

@@ -3,7 +3,7 @@
 	ProjectType="Visual C++"
 	Version="8.00"
 	Name="Svc_Cfg_IPC_Server_Test"
-	ProjectGUID="{0A221239-FECA-1BAD-7EA4-8B61A9309D00}"
+	ProjectGUID="{0A221239-FECA-1BAD-7EA4-8B6199E40B33}"
 	RootNamespace="Svc_Cfg_IPC_Server_Test"
 	Keyword="Win32Proj"
 	SignManifests="true"

@@ -1,4 +1,4 @@
-// $Id: process_semaphore.cpp 91671 2010-09-08 18:39:23Z johnnyw $
+// $Id: process_semaphore.cpp 80826 2008-03-04 14:51:23Z wotte $
 
 // This program tests ACE_Process_Semaphore.  To run it, open 3 or 4
 // windows and run this program in each window...
@@ -10,7 +10,7 @@
 #include "ace/Process_Semaphore.h"
 #include "ace/OS_NS_stdlib.h"
 
-
+ACE_RCSID(Threads, process_semaphore, "$Id: process_semaphore.cpp 80826 2008-03-04 14:51:23Z wotte $")
 
 static sig_atomic_t done;
 

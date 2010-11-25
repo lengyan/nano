@@ -1,5 +1,5 @@
 // ============================================================================
-// $Id: get_async.cpp 91670 2010-09-08 18:02:26Z johnnyw $
+// $Id: get_async.cpp 84565 2009-02-23 08:20:39Z johnnyw $
 // = LIBRARY
 //    asnmp
 //
@@ -39,7 +39,11 @@
 // FUZZ: disable check_for_streams_include
 #include "ace/streams.h"
 
+ACE_RCSID(get, get_async, "$Id: get_async.cpp 84565 2009-02-23 08:20:39Z johnnyw $")
+
+//
 // SNMPv1 Get Application
+//
 class getapp : public Snmp_Result {
   public:
   getapp(int argc, char **argv); // process command line args

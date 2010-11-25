@@ -1,4 +1,4 @@
-// $Id: task_three.cpp 91671 2010-09-08 18:39:23Z johnnyw $
+// $Id: task_three.cpp 80826 2008-03-04 14:51:23Z wotte $
 
 // Exercise more tests for the <ACE_Task>s.  This also shows off some
 // Interesting uses of the <ACE_Log_Msg>'s ability to print to
@@ -23,7 +23,7 @@
 
 #include "ace/Signal.h"
 
-
+ACE_RCSID(Threads, task_three, "$Id: task_three.cpp 80826 2008-03-04 14:51:23Z wotte $")
 
 #if defined (ACE_HAS_THREADS)
 

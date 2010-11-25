@@ -1,9 +1,9 @@
-// $Id: Proactor_Test_IPV6.cpp 91673 2010-09-08 18:49:47Z johnnyw $
+// $Id: Proactor_Test_IPV6.cpp 90004 2010-04-26 09:08:04Z vzykov $
 // ============================================================================
 /**
  *  @file Proactor_Test_IPV6.cpp
  *
- *  $Id: Proactor_Test_IPV6.cpp 91673 2010-09-08 18:49:47Z johnnyw $
+ *  $Id: Proactor_Test_IPV6.cpp 90004 2010-04-26 09:08:04Z vzykov $
  *
  *  This program illustrates how the ACE_Proactor can be used to
  *  implement an application that does various asynchronous
@@ -15,6 +15,10 @@
 // ============================================================================
 
 #include "test_config.h"
+
+ACE_RCSID (tests,
+           Proactor_Test,
+           "$Id: Proactor_Test_IPV6.cpp 90004 2010-04-26 09:08:04Z vzykov $")
 
 #if defined (ACE_HAS_THREADS) && (defined (ACE_HAS_WIN32_OVERLAPPED_IO) || defined (ACE_HAS_AIO_CALLS))
   // This only works on Win32 platforms and on Unix platforms
@@ -948,7 +952,7 @@ Server::handle_read_stream (const ACE_Asynch_Read_Stream::Result &result)
     else
       mb.release ();
 
-    --this->io_count_;
+    this->io_count_--;
     if (this->io_count_ > 0)
       return;
   }
@@ -1044,7 +1048,7 @@ Server::handle_write_stream (const ACE_Asynch_Write_Stream::Result &result)
           this->initiate_read_stream ();
       }
 
-    --this->io_count_;
+    this->io_count_--;
     if (this->io_count_ > 0)
       return;
   }
@@ -1630,7 +1634,7 @@ Client::handle_write_stream (const ACE_Asynch_Write_Stream::Result &result)
           this->initiate_read_stream ();
       }
 
-    --this->io_count_;
+    this->io_count_--;
     if (this->io_count_ > 0)
       return;
   }
@@ -1747,7 +1751,7 @@ Client::handle_read_stream (const ACE_Asynch_Read_Stream::Result &result)
           this->initiate_write_stream ();
       }
 
-    --this->io_count_;
+    this->io_count_--;
     if (this->io_count_ > 0)
       return;
   }

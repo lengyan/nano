@@ -1,4 +1,4 @@
-// $Id: Task_Timer.cpp 91813 2010-09-17 07:52:52Z johnnyw $
+// $Id: Task_Timer.cpp 80826 2008-03-04 14:51:23Z wotte $
 
 #ifndef JAWS_BUILD_DLL
 #define JAWS_BUILD_DLL
@@ -16,7 +16,7 @@ JAWS_Task_Timer::JAWS_Task_Timer (void)
 }
 
 
-void
+void 
 JAWS_Task_Timer::schedule_timer ( long *timer_id
                                 , const ACE_Time_Value &delta
                                 , JAWS_Event_Completer *completer
@@ -44,7 +44,7 @@ JAWS_Task_Timer::schedule_timer ( long *timer_id
 }
 
 
-void
+void 
 JAWS_Task_Timer::schedule_absolute_timer ( long *timer_id
                                          , const ACE_Time_Value &tv
                                          , JAWS_Event_Completer *completer

@@ -1,4 +1,4 @@
-// $Id: local_spipe_client_test.cpp 91670 2010-09-08 18:02:26Z johnnyw $
+// $Id: local_spipe_client_test.cpp 80826 2008-03-04 14:51:23Z wotte $
 
 // Send a file through ACE_SPIPE communication channel by
 // breaking it (the file) into pieces.
@@ -8,6 +8,8 @@
 #include "ace/SPIPE_Connector.h"
 #include "ace/Get_Opt.h"
 #include "ace/Log_Msg.h"
+
+ACE_RCSID(client, local_spipe_client_test, "$Id: local_spipe_client_test.cpp 80826 2008-03-04 14:51:23Z wotte $")
 
 #if defined (ACE_HAS_STREAM_PIPES)
 

@@ -1,4 +1,4 @@
-// $Id: SPIPE_Test.cpp 91671 2010-09-08 18:39:23Z johnnyw $
+// $Id: SPIPE_Test.cpp 80826 2008-03-04 14:51:23Z wotte $
 
 // ============================================================================
 //
@@ -30,7 +30,7 @@
 #include "ace/OS_NS_string.h"
 #include "ace/OS_NS_unistd.h"
 
-
+ACE_RCSID(tests, SPIPE_Test, "SPIPE_Test.cpp,v 4.36 2002/03/06 21:48:03 nanbor Exp")
 
 #if defined (ACE_HAS_STREAM_PIPES) || defined (ACE_HAS_WIN32_NAMED_PIPES)
 # define TEST_HAS_STREAM_PIPES

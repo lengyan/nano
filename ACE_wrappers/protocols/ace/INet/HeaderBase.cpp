@@ -1,4 +1,4 @@
-// $Id: HeaderBase.cpp 91671 2010-09-08 18:39:23Z johnnyw $
+// $Id: HeaderBase.cpp 90891 2010-06-28 09:55:39Z mcorino $
 
 #include "ace/INet/HeaderBase.h"
 #include "ace/OS_NS_stdlib.h"
@@ -9,7 +9,7 @@
 
 #include "ace/INet/INet_Log.h"
 
-
+ACE_RCSID(NET_CLIENT,ACE_INet_HeaderBase,"$Id: HeaderBase.cpp 90891 2010-06-28 09:55:39Z mcorino $")
 
 ACE_BEGIN_VERSIONED_NAMESPACE_DECL
 

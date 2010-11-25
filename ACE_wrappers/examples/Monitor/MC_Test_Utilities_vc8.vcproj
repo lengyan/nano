@@ -3,7 +3,7 @@
 	ProjectType="Visual C++"
 	Version="8.00"
 	Name="MC_Test_Utilities"
-	ProjectGUID="{6FE8A8C2-FECA-1BAD-6ECA-CFEF95E288A5}"
+	ProjectGUID="{6FE8A8C2-FECA-1BAD-6ECA-CFEF4174BB95}"
 	RootNamespace="MC_Test_Utilities"
 	Keyword="Win32Proj"
 	SignManifests="true"

@@ -3,7 +3,7 @@
 	ProjectType="Visual C++"
 	Version="8.00"
 	Name="Transceiver"
-	ProjectGUID="{923275CF-FECA-1BAD-B367-1F304733F83A}"
+	ProjectGUID="{923275CF-FECA-1BAD-B367-1F30743EB159}"
 	RootNamespace="Transceiver"
 	Keyword="Win32Proj"
 	SignManifests="true"

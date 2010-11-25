@@ -1,11 +1,11 @@
-// $Id: Event_Analyzer.cpp 91671 2010-09-08 18:39:23Z johnnyw $
+// $Id: Event_Analyzer.cpp 82610 2008-08-12 19:46:36Z parsons $
 
 #include "ace/OS_NS_string.h"
 #include "ace/Truncate.h"
 #include "Options.h"
 #include "Event_Analyzer.h"
 
-
+ACE_RCSID(Event_Server, Event_Analyzer, "$Id: Event_Analyzer.cpp 82610 2008-08-12 19:46:36Z parsons $")
 
 int
 Event_Analyzer::open (void *)
@@ -77,6 +77,6 @@ Event_Analyzer::info (ACE_TCHAR **strp, size_t length) const
     return -1;
   else
     ACE_OS::strncpy (*strp, mod_name, length);
-
+    
   return ACE_Utils::truncate_cast<int> (ACE_OS::strlen (mod_name));
 }

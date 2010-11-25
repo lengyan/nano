@@ -1,5 +1,5 @@
 /* -*- C++ -*- */
-// $Id: ConfigTreeCtrl.h 91743 2010-09-13 18:24:51Z johnnyw $
+// $Id: ConfigTreeCtrl.h 80826 2008-03-04 14:51:23Z wotte $
 
 #ifndef _ConfigurationViewer_ConfigTreeCtrl_H
 #define _ConfigurationViewer_ConfigTreeCtrl_H
@@ -43,7 +43,7 @@ protected:
   void ResolveKey(wxTreeItemId Item, ACE_Configuration_Section_Key& Key);
 private:
   DECLARE_EVENT_TABLE()
-
+  
   ACE_Configuration*    m_pConfig;
   ValueListCtrl*        m_pListCtrl;
 };

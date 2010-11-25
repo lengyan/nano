@@ -1,4 +1,4 @@
-// $Id: Service_Config_Stream_Test.cpp 91671 2010-09-08 18:39:23Z johnnyw $
+// $Id: Service_Config_Stream_Test.cpp 86389 2009-08-05 23:35:46Z shuston $
 
 // ============================================================================
 //
@@ -19,7 +19,7 @@
 #include "ace/Service_Config.h"
 #include "ace/Task.h"
 
-
+ACE_RCSID(tests, Service_Config_Stream_Test, "$Id: Service_Config_Stream_Test.cpp 86389 2009-08-05 23:35:46Z shuston $")
 
 /*
  * The Decrypter service is static and is configured into a stream

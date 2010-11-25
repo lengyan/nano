@@ -3,7 +3,7 @@
 	ProjectType="Visual C++"
 	Version="8.00"
 	Name="DLList"
-	ProjectGUID="{23E06CDA-FECA-1BAD-8408-181CEBDC7FA8}"
+	ProjectGUID="{23E06CDA-FECA-1BAD-8408-181CE6951C9B}"
 	RootNamespace="DLList"
 	Keyword="Win32Proj"
 	SignManifests="true"

@@ -3,7 +3,7 @@
 	ProjectType="Visual C++"
 	Version="9.00"
 	Name="Misc_Childbirth_Time"
-	ProjectGUID="{AA3EF2E9-FECA-1BAD-BE51-8A67F3FC84F5}"
+	ProjectGUID="{AA3EF2E9-FECA-1BAD-BE51-8A67C32812C6}"
 	RootNamespace="Misc_Childbirth_Time"
 	Keyword="Win32Proj"
 	SignManifests="true"

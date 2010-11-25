@@ -1,10 +1,10 @@
-// $Id: createfile.cpp 91671 2010-09-08 18:39:23Z johnnyw $
+// $Id: createfile.cpp 80826 2008-03-04 14:51:23Z wotte $
 
 #include "ace/OS_NS_stdio.h"
 #include "ace/OS_NS_string.h"
 #include "ace/ACE.h"
 
-
+ACE_RCSID(Dump_Restore, createfile, "$Id: createfile.cpp 80826 2008-03-04 14:51:23Z wotte $")
 
 int
 ACE_TMAIN(int argc, ACE_TCHAR *argv[])

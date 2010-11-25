@@ -3,7 +3,7 @@
 /**
  *  @file    Widget_Part_Impl.cpp
  *
- *  $Id: Widget_Part_Impl.cpp 91813 2010-09-17 07:52:52Z johnnyw $
+ *  $Id: Widget_Part_Impl.cpp 80826 2008-03-04 14:51:23Z wotte $
  *
  *  @author Christopher Kohlhoff <chris@kohlhoff.com>
  */
@@ -23,7 +23,7 @@ Widget_Part_Impl::Widget_Part_Impl (Widget *owner, const char* name, int size)
 {
   ACE_DEBUG ((LM_DEBUG, "Widget_Part_Impl constructor\n"));
 }
-
+  
 Widget_Part_Impl::~Widget_Part_Impl (void)
 {
   ACE_DEBUG ((LM_DEBUG, "Widget_Part_Impl destructor\n"));

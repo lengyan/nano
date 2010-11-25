@@ -1,8 +1,8 @@
-// $Id: URL_Addr.cpp 91671 2010-09-08 18:39:23Z johnnyw $
+// $Id: URL_Addr.cpp 80826 2008-03-04 14:51:23Z wotte $
 
 #include "ACEXML/common/URL_Addr.h"
 
-
+ACE_RCSID(common, ACEXML_URL_Addr, "$Id: URL_Addr.cpp 80826 2008-03-04 14:51:23Z wotte $")
 
 #if !defined (__ACEXML_INLINE__)
 #include "ACEXML/common/URL_Addr.inl"

@@ -1,4 +1,4 @@
-// $Id: peerd.cpp 91670 2010-09-08 18:02:26Z johnnyw $
+// $Id: peerd.cpp 80826 2008-03-04 14:51:23Z wotte $
 
 // ============================================================================
 //
@@ -20,6 +20,8 @@
 
 #include "ace/OS_NS_unistd.h"
 #include "Peer.h"
+
+ACE_RCSID(Peer, peerd, "$Id: peerd.cpp 80826 2008-03-04 14:51:23Z wotte $")
 
 int
 ACE_TMAIN (int argc, ACE_TCHAR *argv[])

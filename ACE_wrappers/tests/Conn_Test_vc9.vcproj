@@ -3,7 +3,7 @@
 	ProjectType="Visual C++"
 	Version="9.00"
 	Name="Conn_Test"
-	ProjectGUID="{1B243511-FECA-1BAD-2431-8A1100722433}"
+	ProjectGUID="{1B243511-FECA-1BAD-2431-8A11337F6D50}"
 	RootNamespace="Conn_Test"
 	Keyword="Win32Proj"
 	SignManifests="true"

@@ -1,4 +1,4 @@
-// $Id: StreamHandler.cpp 91118 2010-07-17 10:29:57Z mcorino $
+// $Id: StreamHandler.cpp 90900 2010-06-28 12:54:45Z mcorino $
 
 #ifndef ACE_IOS_STREAM_HANDLER_CPP
 #define ACE_IOS_STREAM_HANDLER_CPP
@@ -160,8 +160,8 @@ namespace ACE
               }
             if (send_cnt <= 0)
               {
-                INET_ERROR (1, (LM_ERROR, DLINFO
-                            ACE_TEXT ("%p; ACE_IOS_StreamHandler - "),
+                ACE_ERROR ((LM_ERROR,
+                            ACE_TEXT ("(%P|%t) %p; ACE_IOS_StreamHandler - "),
                             ACE_TEXT ("send failed\n")));
                 this->connected_ = false;
                 return this->using_reactor () ? -1 : 0;

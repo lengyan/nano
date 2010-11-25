@@ -1,9 +1,11 @@
-// $Id: Connection_Handler_Acceptor.cpp 91670 2010-09-08 18:02:26Z johnnyw $
+// $Id: Connection_Handler_Acceptor.cpp 80826 2008-03-04 14:51:23Z wotte $
 
 #define ACE_BUILD_SVC_DLL
 
 #include "Event_Channel.h"
 #include "Connection_Handler_Acceptor.h"
+
+ACE_RCSID(Gateway, Connection_Handler_Acceptor, "$Id: Connection_Handler_Acceptor.cpp 80826 2008-03-04 14:51:23Z wotte $")
 
 int
 Connection_Handler_Acceptor::make_svc_handler (Connection_Handler *&ch)

@@ -3,7 +3,7 @@
 	ProjectType="Visual C++"
 	Version="8.00"
 	Name="Mem_Map_Test"
-	ProjectGUID="{4018D7FF-FECA-1BAD-2431-8A1100722433}"
+	ProjectGUID="{4018D7FF-FECA-1BAD-2431-8A11337F6D50}"
 	RootNamespace="Mem_Map_Test"
 	Keyword="Win32Proj"
 	SignManifests="true"

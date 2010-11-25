@@ -1,4 +1,4 @@
-// $Id: Talker.cpp 91671 2010-09-08 18:39:23Z johnnyw $
+// $Id: Talker.cpp 80826 2008-03-04 14:51:23Z wotte $
 
 // ============================================================================
 //
@@ -147,7 +147,7 @@
 #include "ace/Task.h"
 #include "ace/OS_NS_unistd.h"
 
-
+ACE_RCSID(WFMO_Reactor, Talker, "$Id: Talker.cpp 80826 2008-03-04 14:51:23Z wotte $")
 
 typedef ACE_Task<ACE_MT_SYNCH> MT_TASK;
 
@@ -412,7 +412,7 @@ Peer_Handler::handle_close (ACE_HANDLE, ACE_Reactor_Mask)
 int
 Peer_Handler::handle_output (ACE_HANDLE)
 {
-  ACE_Message_Block *mb = 0;
+  ACE_Message_Block *mb;
 
   ACE_Time_Value tv (ACE_Time_Value::zero);
 

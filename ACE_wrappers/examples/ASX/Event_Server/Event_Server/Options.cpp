@@ -1,4 +1,4 @@
-// $Id: Options.cpp 91671 2010-09-08 18:39:23Z johnnyw $
+// $Id: Options.cpp 84565 2009-02-23 08:20:39Z johnnyw $
 
 #include "ace/Get_Opt.h"
 #include "ace/Thread.h"
@@ -10,7 +10,7 @@
 
 #include "Options.h"
 
-
+ACE_RCSID(Event_Server, Options, "$Id: Options.cpp 84565 2009-02-23 08:20:39Z johnnyw $")
 
 /* static */
 Options *Options::instance_ = 0;

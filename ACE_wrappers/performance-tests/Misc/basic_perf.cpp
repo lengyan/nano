@@ -1,4 +1,4 @@
-// $Id: basic_perf.cpp 91670 2010-09-08 18:02:26Z johnnyw $
+// $Id: basic_perf.cpp 80826 2008-03-04 14:51:23Z wotte $
 
 // ============================================================================
 //
@@ -26,6 +26,8 @@
 #include "ace/Log_Msg.h"
 #include "ace/OS_NS_stdlib.h"
 #include "ace/OS_NS_sys_utsname.h"
+
+ACE_RCSID(Misc, basic_perf, "$Id: basic_perf.cpp 80826 2008-03-04 14:51:23Z wotte $")
 
 static const char usage [] = "[-? |\n"
                              "            [-i <iterations> [1000000]]";

@@ -1,4 +1,4 @@
-// $Id: local_fifo_client_test.cpp 91670 2010-09-08 18:02:26Z johnnyw $
+// $Id: local_fifo_client_test.cpp 80826 2008-03-04 14:51:23Z wotte $
 
 // Send a file through ACE_FIFO communication channel by
 // breaking it (the file) into pieces.
@@ -10,6 +10,8 @@
 #include "ace/Log_Msg.h"
 #include "ace/OS_NS_stdlib.h"
 #include "ace/OS_NS_stropts.h"
+
+ACE_RCSID(client, local_fifo_client_test, "$Id: local_fifo_client_test.cpp 80826 2008-03-04 14:51:23Z wotte $")
 
 // Name of the program.
 static ACE_TCHAR *program_name;

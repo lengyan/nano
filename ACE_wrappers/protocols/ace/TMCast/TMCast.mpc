@@ -1,7 +1,7 @@
 //  -*- MPC -*-
-// $Id: TMCast.mpc 91294 2010-08-06 08:46:45Z johnnyw $
+// $Id: TMCast.mpc 90163 2010-05-18 21:42:20Z mitza $
 
-project : acelib, ace_output, install, threads {
+project : acelib, ace_output, install, exceptions, threads {
   avoids = ace_for_tao
   sharedname    = ACE_TMCast
   dynamicflags += TMCAST_BUILD_DLL

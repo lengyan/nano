@@ -1,4 +1,4 @@
-// $Id: resource.h 91743 2010-09-13 18:24:51Z johnnyw $
+// $Id: resource.h 80826 2008-03-04 14:51:23Z wotte $
 
 //{{NO_DEPENDENCIES}}
 // Microsoft Developer Studio generated include file.
@@ -34,7 +34,7 @@
 #define ID_TOOLS_SAVETOFILE             40012
 
 // Next default values for new objects
-//
+// 
 #ifdef APSTUDIO_INVOKED
 #ifndef APSTUDIO_READONLY_SYMBOLS
 #define _APS_NEXT_RESOURCE_VALUE        116

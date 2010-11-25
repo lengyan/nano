@@ -3,7 +3,7 @@
 	ProjectType="Visual C++"
 	Version="9.00"
 	Name="Bug_2820_Regression_Test"
-	ProjectGUID="{DEB52C70-FECA-1BAD-2431-8A1100722433}"
+	ProjectGUID="{DEB52C70-FECA-1BAD-2431-8A11337F6D50}"
 	RootNamespace="Bug_2820_Regression_Test"
 	Keyword="Win32Proj"
 	SignManifests="true"

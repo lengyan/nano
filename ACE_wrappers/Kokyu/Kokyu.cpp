@@ -1,4 +1,4 @@
-// $Id: Kokyu.cpp 91670 2010-09-08 18:02:26Z johnnyw $
+// $Id: Kokyu.cpp 84972 2009-03-25 19:09:06Z johnnyw $
 
 #include "Kokyu.h"
 
@@ -7,6 +7,8 @@
 #if ! defined (__ACE_INLINE__)
 #include "Kokyu.inl"
 #endif /* __ACE_INLINE__ */
+
+ACE_RCSID(Kokyu, Kokyu, "$Id: Kokyu.cpp 84972 2009-03-25 19:09:06Z johnnyw $")
 
 namespace Kokyu
 {

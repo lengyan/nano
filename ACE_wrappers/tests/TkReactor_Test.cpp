@@ -1,5 +1,3 @@
-// $Id: TkReactor_Test.cpp 91691 2010-09-09 11:57:39Z johnnyw $
-
 // ============================================================================
 //
 // = LIBRARY
@@ -25,6 +23,10 @@
 // ============================================================================
 
 #include "test_config.h"
+
+ACE_RCSID (tests,
+           TkReactor_Test,
+           "$Id: TkReactor_Test.cpp 80826 2008-03-04 14:51:23Z wotte $")
 
 #include "ace/Event_Handler.h"
 #include "ace/Acceptor.h"

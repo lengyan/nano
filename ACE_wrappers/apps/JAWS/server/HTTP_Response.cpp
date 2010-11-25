@@ -1,4 +1,4 @@
-// $Id: HTTP_Response.cpp 91670 2010-09-08 18:02:26Z johnnyw $
+// $Id: HTTP_Response.cpp 86444 2009-08-10 11:40:16Z wotte $
 
 #include "ace/OS_NS_stdio.h"
 #include "ace/OS_NS_string.h"
@@ -12,6 +12,8 @@
 #include "HTTP_Helpers.h"
 #include "HTTP_Config.h"
 #include "JAWS_IO.h"
+
+ACE_RCSID(server, HTTP_Response, "$Id: HTTP_Response.cpp 86444 2009-08-10 11:40:16Z wotte $")
 
 #if defined (ACE_JAWS_BASELINE)
 static char * const EMPTY_HEADER = "";

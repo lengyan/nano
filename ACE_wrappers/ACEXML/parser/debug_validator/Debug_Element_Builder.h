@@ -4,7 +4,7 @@
 /**
  *  @file    Debug_Element_Builder.h
  *
- *  $Id: Debug_Element_Builder.h 91257 2010-08-03 11:54:04Z johnnyw $
+ *  $Id: Debug_Element_Builder.h 80826 2008-03-04 14:51:23Z wotte $
  *
  *  @author Nanbor Wang <nanbor@cs.wustl.edu>
  */
@@ -44,21 +44,24 @@ public:
    */
   virtual int setElementName (const ACEXML_Char *namespaceURI,
                               const ACEXML_Char *localName,
-                              const ACEXML_Char *qName);
+                              const ACEXML_Char *qName ACEXML_ENV_ARG_DECL)
+    ;
 
   /**
    * Define the content type of the element.
    *
    * @retval 0 if valid, -1 otherwise.
    */
-  virtual int setContentType (CONTENT_TYPE type);
+  virtual int setContentType (CONTENT_TYPE type ACEXML_ENV_ARG_DECL)
+    ;
 
   /**
    * Insert one more element into Mixed definition.
    */
   virtual int insertMixedElement (const ACEXML_Char *namespaceURI,
                                   const ACEXML_Char *localName,
-                                  const ACEXML_Char *qName);
+                                  const ACEXML_Char *qName ACEXML_ENV_ARG_DECL)
+    ;
 
   /**
    * Start a new group of children.
@@ -70,7 +73,7 @@ public:
    *
    * @retval 0 on success.
    */
-  virtual int endChildGroup (CARDINALITY card);
+  virtual int endChildGroup (CARDINALITY card ACEXML_ENV_ARG_DECL);
 
   /**
    * Set the type of current child group to Choice.
@@ -97,7 +100,7 @@ public:
    */
   virtual int insertElement  (const ACEXML_Char *namespaceURI,
                               const ACEXML_Char *localName,
-                              const ACEXML_Char *qName)
+                              const ACEXML_Char *qName ACEXML_ENV_ARG_DECL)
     ;
 
   /**

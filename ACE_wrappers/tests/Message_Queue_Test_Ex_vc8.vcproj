@@ -3,7 +3,7 @@
 	ProjectType="Visual C++"
 	Version="8.00"
 	Name="Message_Queue_Test_Ex"
-	ProjectGUID="{39D0D7B6-FECA-1BAD-2431-8A1100722433}"
+	ProjectGUID="{39D0D7B6-FECA-1BAD-2431-8A11337F6D50}"
 	RootNamespace="Message_Queue_Test_Ex"
 	Keyword="Win32Proj"
 	SignManifests="true"

@@ -1,6 +1,10 @@
-// $Id: HTBP_Environment.cpp 91673 2010-09-08 18:49:47Z johnnyw $
+// $Id: HTBP_Environment.cpp 87228 2009-10-26 10:45:28Z vzykov $
 
 #include "HTBP_Environment.h"
+
+ACE_RCSID (HTBP,
+           ACE_HTBP_Environment,
+           "$Id: HTBP_Environment.cpp 87228 2009-10-26 10:45:28Z vzykov $")
 
 ACE_BEGIN_VERSIONED_NAMESPACE_DECL
 

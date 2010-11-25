@@ -3,7 +3,7 @@
 	ProjectType="Visual C++"
 	Version="9.00"
 	Name="Array"
-	ProjectGUID="{DC42BC9E-FECA-1BAD-8408-181CEBDC7FA8}"
+	ProjectGUID="{DC42BC9E-FECA-1BAD-8408-181CE6951C9B}"
 	RootNamespace="Array"
 	Keyword="Win32Proj"
 	SignManifests="true"

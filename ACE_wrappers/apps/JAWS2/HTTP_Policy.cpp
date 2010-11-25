@@ -1,8 +1,8 @@
-// $Id: HTTP_Policy.cpp 91671 2010-09-08 18:39:23Z johnnyw $
+// $Id: HTTP_Policy.cpp 80826 2008-03-04 14:51:23Z wotte $
 
 #include "HTTP_Policy.h"
 
-
+ACE_RCSID(PROTOTYPE, HTTP_Policy, "$Id: HTTP_Policy.cpp 80826 2008-03-04 14:51:23Z wotte $")
 
 HTTP_Policy::HTTP_Policy (JAWS_Concurrency_Base *concurrency)
   : concurrency_ (concurrency)

@@ -1,4 +1,4 @@
-// $Id: remote_stream_client_test.cpp 91670 2010-09-08 18:02:26Z johnnyw $
+// $Id: remote_stream_client_test.cpp 82610 2008-08-12 19:46:36Z parsons $
 
 // Test program for the INET IPC-SAPs...
 
@@ -13,6 +13,8 @@
 #include "ace/Get_Opt.h"
 #include "ace/Log_Msg.h"
 #include "ace/Truncate.h"
+
+ACE_RCSID(client, remote_stream_client_test, "$Id: remote_stream_client_test.cpp 82610 2008-08-12 19:46:36Z parsons $")
 
 // Name of the program.
 static const ACE_TCHAR *program_name;

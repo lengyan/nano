@@ -1,5 +1,5 @@
 # -*- Makefile -*-
-# $Id: platform_vxworks6.2.GNU 91285 2010-08-05 08:29:30Z johnnyw $
+# $Id: platform_vxworks6.2.GNU 86432 2009-08-09 18:56:15Z johnnyw $
 # VxWorks 6.2
 
 #### Notes:
@@ -20,6 +20,7 @@ CROSS-COMPILE = 1
 debug ?= 1
 optimize ?= 1
 threads ?= 1
+exceptions ?= 1
 rtp ?= 1
 ifeq ($(rtp),0)
   pthread ?= 0
@@ -306,10 +307,18 @@ endif
 endif  # TOOL_FAMILY == gnu
 
 ifeq ("$(TOOL_FAMILY)","diab")
+ifeq ($(exceptions),1)
   C++FLAGS += -Xexceptions
 else
+  C++FLAGS += -Xexceptions-off
+endif
+else
 ifeq ("$(TOOL_FAMILY)","gnu")
+ifeq ($(exceptions),1)
   C++FLAGS += -fexceptions
+else
+  C++FLAGS += -fno-exceptions
+endif
 endif
 endif
 

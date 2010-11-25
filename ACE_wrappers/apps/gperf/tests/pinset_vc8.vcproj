@@ -3,7 +3,7 @@
 	ProjectType="Visual C++"
 	Version="8.00"
 	Name="pinset"
-	ProjectGUID="{50566CEC-FECA-1BAD-2431-8A1123F3B457}"
+	ProjectGUID="{50566CEC-FECA-1BAD-2431-8A11F7658767}"
 	RootNamespace="pinset"
 	Keyword="Win32Proj"
 	SignManifests="true"

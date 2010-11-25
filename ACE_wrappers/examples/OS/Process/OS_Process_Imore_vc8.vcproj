@@ -3,7 +3,7 @@
 	ProjectType="Visual C++"
 	Version="8.00"
 	Name="OS_Process_Imore"
-	ProjectGUID="{2615129B-FECA-1BAD-56E7-2D2A01EB2B05}"
+	ProjectGUID="{2615129B-FECA-1BAD-56E7-2D2A62D8264C}"
 	RootNamespace="OS_Process_Imore"
 	Keyword="Win32Proj"
 	SignManifests="true"

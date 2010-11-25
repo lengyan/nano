@@ -1,5 +1,5 @@
 /*
- * $Id: shexp.h 91995 2010-09-24 12:45:24Z johnnyw $
+ * $Id: shexp.h 80826 2008-03-04 14:51:23Z wotte $
  *
  * Copyright (c) 1994, 1995.  Netscape Communications Corporation.  All
  * rights reserved.
@@ -24,7 +24,7 @@
  * o ? matches one character
  * o \ will escape a special character
  * o $ matches the end of the string
- * o [abc] matches one occurrence of a, b, or c. The only character that needs
+ * o [abc] matches one occurence of a, b, or c. The only character that needs
  *         to be escaped in this is ], all others are not special.
  * o [a-z] matches any character between a and z
  * o [^az] matches any character except a or z

@@ -1,4 +1,4 @@
-// $Id: Server_Logging_Handler_T.cpp 91671 2010-09-08 18:39:23Z johnnyw $
+// $Id: Server_Logging_Handler_T.cpp 84481 2009-02-17 10:58:31Z johnnyw $
 
 #ifndef ACE_SERVER_LOGGING_HANDLERT_C
 #define ACE_SERVER_LOGGING_HANDLERT_C
@@ -10,7 +10,7 @@
 #include "Server_Logging_Handler_T.h"
 #include "ace/Signal.h"
 
-
+ACE_RCSID(lib, Server_Logging_Handler_T, "$Id: Server_Logging_Handler_T.cpp 84481 2009-02-17 10:58:31Z johnnyw $")
 
 #if !defined (ACE_LACKS_STATIC_DATA_MEMBER_TEMPLATES)
 // Track number of requests.

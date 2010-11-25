@@ -3,7 +3,7 @@
 	ProjectType="Visual C++"
 	Version="8.00"
 	Name="soreduce"
-	ProjectGUID="{9A31091E-FECA-1BAD-3350-D2205825444D}"
+	ProjectGUID="{9A31091E-FECA-1BAD-3350-D2206B280D2E}"
 	RootNamespace="soreduce"
 	Keyword="Win32Proj"
 	SignManifests="true"

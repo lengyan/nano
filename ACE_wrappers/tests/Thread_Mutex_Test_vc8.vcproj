@@ -3,7 +3,7 @@
 	ProjectType="Visual C++"
 	Version="8.00"
 	Name="Thread_Mutex_Test"
-	ProjectGUID="{7A9F61F4-FECA-1BAD-2431-8A1100722433}"
+	ProjectGUID="{7A9F61F4-FECA-1BAD-2431-8A11337F6D50}"
 	RootNamespace="Thread_Mutex_Test"
 	Keyword="Win32Proj"
 	SignManifests="true"

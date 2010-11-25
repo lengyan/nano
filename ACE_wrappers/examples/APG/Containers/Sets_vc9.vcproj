@@ -3,7 +3,7 @@
 	ProjectType="Visual C++"
 	Version="9.00"
 	Name="Sets"
-	ProjectGUID="{EC271C9A-FECA-1BAD-8408-181CEBDC7FA8}"
+	ProjectGUID="{EC271C9A-FECA-1BAD-8408-181CE6951C9B}"
 	RootNamespace="Sets"
 	Keyword="Win32Proj"
 	SignManifests="true"

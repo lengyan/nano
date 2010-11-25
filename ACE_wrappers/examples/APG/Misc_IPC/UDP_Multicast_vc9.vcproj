@@ -3,7 +3,7 @@
 	ProjectType="Visual C++"
 	Version="9.00"
 	Name="UDP_Multicast"
-	ProjectGUID="{5D3BCF2D-FECA-1BAD-9E67-34351C2F1FBE}"
+	ProjectGUID="{5D3BCF2D-FECA-1BAD-9E67-34352F2256DD}"
 	RootNamespace="UDP_Multicast"
 	Keyword="Win32Proj"
 	SignManifests="true"

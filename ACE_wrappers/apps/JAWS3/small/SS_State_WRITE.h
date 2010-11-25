@@ -1,9 +1,10 @@
 /* -*- c++ -*- */
-// $Id: SS_State_WRITE.h 91730 2010-09-13 09:31:11Z johnnyw $
+// $Id: SS_State_WRITE.h 80826 2008-03-04 14:51:23Z wotte $
 
 #ifndef TERA_SS_STATE_WRITE_H
 #define TERA_SS_STATE_WRITE_H
 
+#include "ace/OS.h"
 #include "ace/Singleton.h"
 
 #include "jaws3/Protocol_Handler.h"

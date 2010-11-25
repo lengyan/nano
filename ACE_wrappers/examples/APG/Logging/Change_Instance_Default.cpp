@@ -1,5 +1,5 @@
 /**
- * $Id: Change_Instance_Default.cpp 91813 2010-09-17 07:52:52Z johnnyw $
+ * $Id: Change_Instance_Default.cpp 80826 2008-03-04 14:51:23Z wotte $
  *
  * Sample code from The ACE Programmer's Guide,
  * Copyright 2003 Addison-Wesley. All Rights Reserved.
@@ -11,7 +11,7 @@
 #include "ace/Log_Msg.h"
 #include "ace/Thread_Manager.h"
 
-ACE_THR_FUNC_RETURN worker (void *)
+ACE_THR_FUNC_RETURN worker (void *) 
 {
   // do some work
   return 0;

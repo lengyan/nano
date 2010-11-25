@@ -3,7 +3,7 @@
 	ProjectType="Visual C++"
 	Version="8.00"
 	Name="Token_Strategy_Test"
-	ProjectGUID="{4D4F9C2C-FECA-1BAD-2431-8A1100722433}"
+	ProjectGUID="{4D4F9C2C-FECA-1BAD-2431-8A11337F6D50}"
 	RootNamespace="Token_Strategy_Test"
 	Keyword="Win32Proj"
 	SignManifests="true"

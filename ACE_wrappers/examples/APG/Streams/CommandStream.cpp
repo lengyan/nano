@@ -1,4 +1,4 @@
-// $Id: CommandStream.cpp 91626 2010-09-07 10:59:20Z johnnyw $
+// $Id: CommandStream.cpp 80826 2008-03-04 14:51:23Z wotte $
 
 #include "ace/Log_Msg.h"
 #include "ace/OS_Memory.h"
@@ -76,7 +76,7 @@ int CommandStream::open (void *arg,
 // Listing 04 code/ch18
 Command *CommandStream::execute (Command *command)
 {
-  ACE_Message_Block *mb = 0;
+  ACE_Message_Block *mb;
   ACE_NEW_RETURN (mb, ACE_Message_Block (command), 0);
   if (this->put (mb) == -1)
     ACE_ERROR_RETURN ((LM_ERROR,

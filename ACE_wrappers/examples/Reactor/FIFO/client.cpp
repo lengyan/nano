@@ -1,10 +1,10 @@
-// $Id: client.cpp 91671 2010-09-08 18:39:23Z johnnyw $
+// $Id: client.cpp 81978 2008-06-16 16:57:12Z sowayaa $
 
 #include "ace/FIFO_Send_Msg.h"
 #include "ace/Log_Msg.h"
 #include "ace/OS_NS_stropts.h"
 
-
+ACE_RCSID(FIFO, client, "$Id: client.cpp 81978 2008-06-16 16:57:12Z sowayaa $")
 
 int
 ACE_TMAIN (int, ACE_TCHAR *[])

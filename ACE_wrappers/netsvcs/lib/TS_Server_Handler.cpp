@@ -1,4 +1,4 @@
-// $Id: TS_Server_Handler.cpp 91671 2010-09-08 18:39:23Z johnnyw $
+// $Id: TS_Server_Handler.cpp 90023 2010-04-28 09:25:41Z johnnyw $
 
 #include "ace/SString.h"
 #include "ace/Containers.h"
@@ -7,7 +7,7 @@
 #include "ace/OS_NS_time.h"
 #include "ace/Signal.h"
 
-
+ACE_RCSID(lib, TS_Server_Handler, "$Id: TS_Server_Handler.cpp 90023 2010-04-28 09:25:41Z johnnyw $")
 
 int
 ACE_TS_Server_Acceptor::parse_args (int argc, ACE_TCHAR *argv[])

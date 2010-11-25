@@ -3,7 +3,7 @@
 	ProjectType="Visual C++"
 	Version="9.00"
 	Name="Bounded_Packet_Relay"
-	ProjectGUID="{1854ECB1-FECA-1BAD-150E-88D9A0C7F2AA}"
+	ProjectGUID="{1854ECB1-FECA-1BAD-150E-88D993CABBC9}"
 	RootNamespace="Bounded_Packet_Relay"
 	Keyword="Win32Proj"
 	SignManifests="true"

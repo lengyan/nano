@@ -53,12 +53,12 @@ sub pre_workspace {
 
   print $fh '# -*- makefile -*-', $crlf;
   $self->workspace_preamble($fh, $crlf, 'GNU ACE Workspace',
-                            '$Id: GNUACEWorkspaceCreator.pm 91813 2010-09-17 07:52:52Z johnnyw $');
+                            '$Id: GNUACEWorkspaceCreator.pm 90264 2010-05-24 15:19:01Z mitza $');
   print $fh 'MAKEFILE = ', $self->get_modified_workspace_name($base, '', 1),
             $crlf;
 }
-
-
+  
+  
 sub write_project_targets {
   my($self)   = shift;
   my($fh)     = shift;

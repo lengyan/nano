@@ -3,7 +3,7 @@
 	ProjectType="Visual C++"
 	Version="8.00"
 	Name="SOCK_Send_Recv_Test_IPV6"
-	ProjectGUID="{CB38B8C8-FECA-1BAD-2431-8A1100722433}"
+	ProjectGUID="{CB38B8C8-FECA-1BAD-2431-8A11337F6D50}"
 	RootNamespace="SOCK_Send_Recv_Test_IPV6"
 	Keyword="Win32Proj"
 	SignManifests="true"

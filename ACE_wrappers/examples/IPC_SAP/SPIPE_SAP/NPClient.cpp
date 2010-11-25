@@ -1,4 +1,4 @@
-// $Id: NPClient.cpp 91671 2010-09-08 18:39:23Z johnnyw $
+// $Id: NPClient.cpp 82610 2008-08-12 19:46:36Z parsons $
 
 #include "ace/OS_main.h"
 #include "ace/SPIPE_Addr.h"
@@ -9,7 +9,7 @@
 #include "ace/OS_NS_stdlib.h"
 #include "ace/OS_Memory.h"
 
-
+ACE_RCSID(SPIPE_SAP, NPClient, "$Id: NPClient.cpp 82610 2008-08-12 19:46:36Z parsons $")
 
 #if defined (ACE_WIN32)
 #define MAKE_PIPE_NAME(X) ACE_TEXT ("\\\\.\\pipe\\") ACE_TEXT (X)

@@ -1,5 +1,5 @@
 // -*- MPC -*-
-// $Id: lib.mpc 91073 2010-07-13 11:10:19Z johnnyw $
+// $Id: lib.mpc 84498 2009-02-17 18:08:47Z johnnyw $
 
 project(netsvcs): ace_output, acelib {
   avoids       += ace_for_tao
@@ -11,12 +11,10 @@ project(netsvcs): ace_output, acelib {
     TS_Clerk_Handler.cpp
     Client_Logging_Handler.cpp
     Name_Handler.cpp
+    Server_Logging_Handler_T.cpp
     Log_Message_Receiver.cpp
     Server_Logging_Handler.cpp
     Token_Handler.cpp
     Base_Optimizer.cpp
-  }
-  Template_Files {
-    Server_Logging_Handler_T.cpp
   }
 }

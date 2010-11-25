@@ -3,7 +3,7 @@
 	ProjectType="Visual C++"
 	Version="9.00"
 	Name="Reactor_Notification_Queue_Test"
-	ProjectGUID="{DBA1764E-FECA-1BAD-2431-8A1100722433}"
+	ProjectGUID="{DBA1764E-FECA-1BAD-2431-8A11337F6D50}"
 	RootNamespace="Reactor_Notification_Queue_Test"
 	Keyword="Win32Proj"
 	SignManifests="true"

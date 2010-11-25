@@ -3,7 +3,7 @@
 /**
  *  @file    FaCE.h
  *
- *  $Id: FaCE.h 91730 2010-09-13 09:31:11Z johnnyw $
+ *  $Id: FaCE.h 80826 2008-03-04 14:51:23Z wotte $
  *
  *  @author Si Mong Park <spark@ociweb.com>
  */
@@ -37,6 +37,7 @@ int main_i(int, wchar_t**);
 
 #else
 
+#include <ace/OS.h>
 #include <ace/CE_Screen_Output.h>
 
 int ace_main_i(int, ACE_TCHAR**);

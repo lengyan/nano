@@ -1,7 +1,7 @@
 # -*- Makefile -*-
 
 #----------------------------------------------------------------------------
-#  $Id: wrapper_macros.GNU 92151 2010-10-05 07:27:20Z johnnyw $
+#  $Id: wrapper_macros.GNU 90650 2010-06-16 21:54:18Z mitza $
 #----------------------------------------------------------------------------
 #
 #  ACE supports the following flags.  They can be enabled either on
@@ -26,7 +26,11 @@
 #                   to CPPFLAGS, PLATFORM_DMALLOC_LDFLAGS to LDFLAGS, and
 #                   PLATFORM_DMALLOC_LIBS to LIBS. For more information on
 #                   dmalloc, see http://dmalloc.com.
+#  exceptions       Enable exception handling (not supported by all platforms).
 #  fast             Enable -fast option, e.g., with Sun C++.
+#  include_env      Enable usage of CORBA::Environment parameters that is
+#                   compatible with TAO versions before 1.2.2.  Default:
+#                   disabled.  Has no effect when building with exceptions=0
 #  inline           Enable ACE inlining.  Some platforms enable inlining by
 #                   default, others do not. If platform_macros.GNU does not
 #                   set this, inline is enabled.
@@ -202,8 +206,6 @@ ACE_MINOR_VERSION := $(shell awk '/ACE_MINOR_VERSION/ { print $$3}' ${ACE_ROOT}/
 ACE_BETA_VERSION := $(shell awk '/ACE_BETA_VERSION/ { print $$3}' ${ACE_ROOT}/ace/Version.h)
 endif
 
-ACE_VERSION = $(ACE_MAJOR_VERSION).$(ACE_MINOR_VERSION).$(ACE_BETA_VERSION)
-
 # Define some variables to silence warnings
 SHR_FILTER ?=
 
@@ -232,9 +234,10 @@ ifeq ($(threads),0)
 endif # threads
 
 ####
-#### Defaults are fast off (0), threads on (1)
+#### Defaults are exceptions on (1), fast off (0), threads on (1)
 #### and versioned_so on (1).
 ####
+exceptions ?= 1
 fast ?= 0
 versioned_so ?= 1
 use_dep_libs ?= 1
@@ -679,10 +682,23 @@ endif
 ec_typed_events ?= 1
 zlib ?= 1
 
-valgrind ?=
-ifeq ($(valgrind),1)
-  CPPFLAGS += -DACE_HAS_VALGRIND
-endif
+ifeq ($(exceptions),0)
+    #### Disable the default exception handling of g++ >= 2.8.0.
+    ifneq ($(ACE_GNUG_ON_UNIXWARE),)
+      CCFLAGS += -fcheck-new
+    else
+      CCFLAGS += -fno-exceptions -fcheck-new
+    endif # ! ACE_GNUG_ON_UNIXWARE
+else  # exceptions
+  CPPFLAGS += -DACE_HAS_EXCEPTIONS
+  ifndef include_env
+    include_env ?=
+  endif
+  ifeq ($(include_env),1)
+    CPPFLAGS += -DACE_ENV_BKWD_COMPAT
+  endif
+  ACE_MAKE_OPTIONS += exceptions
+endif # exceptions
 
 profile ?=
 ifeq ($(profile),0)

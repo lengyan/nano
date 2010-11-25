@@ -4,7 +4,7 @@
 /**
  *  @file   Debug_Attributes_Builder.h
  *
- *  $Id: Debug_Attributes_Builder.h 91257 2010-08-03 11:54:04Z johnnyw $
+ *  $Id: Debug_Attributes_Builder.h 80826 2008-03-04 14:51:23Z wotte $
  *
  *  @author Nanbor Wang <nanbor@cs.wustl.edu>
  */
@@ -50,17 +50,19 @@ public:
   /**
    * Set the attribute type.
    */
-  virtual int setAttType (const ATT_TYPE type);
+  virtual int setAttType (const ATT_TYPE type ACEXML_ENV_ARG_DECL);
 
   /**
    * Insert an element for NOTATION or ENUMERATION type attribute.
    */
-  virtual int insertList (const ACEXML_Char *Name);
+  virtual int insertList (const ACEXML_Char *Name ACEXML_ENV_ARG_DECL);
 
   /**
    * Set default attribute declaration.
    */
-  virtual int setDefault (const DEFAULT_DECL def, const ACEXML_Char *value);
+  virtual int setDefault (const DEFAULT_DECL def,
+                          const ACEXML_Char *value ACEXML_ENV_ARG_DECL)
+    ;
 
   /**
    * Check validity of the current attribute definition being built.

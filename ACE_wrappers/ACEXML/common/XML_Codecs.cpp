@@ -1,11 +1,11 @@
-// -*- C++ -*-  $Id: XML_Codecs.cpp 91671 2010-09-08 18:39:23Z johnnyw $
+// -*- C++ -*-  $Id: XML_Codecs.cpp 80826 2008-03-04 14:51:23Z wotte $
 
 #include "ace/Auto_Ptr.h"
 #include "ace/OS_Memory.h"
 #include "ace/OS_NS_string.h"
 #include "ACEXML/common/XML_Codecs.h"
 
-
+ACE_RCSID (common, XML_Codecs, "$Id: XML_Codecs.cpp 80826 2008-03-04 14:51:23Z wotte $")
 
 ACEXML_Char*
 ACEXML_Base64::encode (const ACEXML_Char* input,

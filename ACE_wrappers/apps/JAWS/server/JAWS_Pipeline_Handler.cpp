@@ -1,9 +1,11 @@
-// $Id: JAWS_Pipeline_Handler.cpp 91670 2010-09-08 18:02:26Z johnnyw $
+// $Id: JAWS_Pipeline_Handler.cpp 80826 2008-03-04 14:51:23Z wotte $
 
 #ifndef JAWS_PIPELINE_HANDLER_CPP
 #define JAWS_PIPELINE_HANDLER_CPP
 
 #include "JAWS_Pipeline_Handler.h"
+
+ACE_RCSID(server, JAWS_Pipeline_Handler, "$Id: JAWS_Pipeline_Handler.cpp 80826 2008-03-04 14:51:23Z wotte $")
 
 template <class TYPE>
 JAWS_Pipeline_Handler<TYPE>::JAWS_Pipeline_Handler (void)

@@ -1,4 +1,4 @@
-// $Id: PMS_All.cpp 91813 2010-09-17 07:52:52Z johnnyw $
+// $Id: PMS_All.cpp 80826 2008-03-04 14:51:23Z wotte $
 
 #include "Options.h"
 #include "HT_Server.h"
@@ -37,8 +37,8 @@ PMS_All::encode (char *packet, int &packet_length)
   for (;
        (prp = this->get_next_friend ()) != 0;
        *buf_ptr++ = '\t')
-    buf_ptr =
-      this->handle_protocol_entries (ACE_OS::strecpy
+    buf_ptr = 
+      this->handle_protocol_entries (ACE_OS::strecpy 
                                        (ACE_OS::strecpy (buf_ptr,
                                                          prp->get_login ()),
                                         prp->get_real ()),

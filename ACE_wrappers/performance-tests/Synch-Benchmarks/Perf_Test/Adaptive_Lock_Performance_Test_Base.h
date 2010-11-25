@@ -1,8 +1,10 @@
-// $Id: Adaptive_Lock_Performance_Test_Base.h 91670 2010-09-08 18:02:26Z johnnyw $
+// $Id: Adaptive_Lock_Performance_Test_Base.h 80826 2008-03-04 14:51:23Z wotte $
 
 #ifndef ACE_ADAPTIVE_LOCK_PERFORMANCE_TEST_BASE_H
 #define ACE_ADAPTIVE_LOCK_PERFORMANCE_TEST_BASE_H
 #include "Benchmark_Performance.h"
+
+ACE_RCSID(Synch_Benchmarks, Adaptive_Lock_Performance_Test_Base, "$Id: Adaptive_Lock_Performance_Test_Base.h 80826 2008-03-04 14:51:23Z wotte $")
 
 #if defined (ACE_HAS_THREADS)
 

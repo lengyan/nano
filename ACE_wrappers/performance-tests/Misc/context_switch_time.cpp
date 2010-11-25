@@ -1,4 +1,4 @@
-// $Id: context_switch_time.cpp 91670 2010-09-08 18:02:26Z johnnyw $
+// $Id: context_switch_time.cpp 80826 2008-03-04 14:51:23Z wotte $
 
 // ============================================================================
 //
@@ -60,6 +60,8 @@ static const char usage [] = "[-? |\n"
 #include "ace/Barrier.h"
 #include "ace/OS_NS_unistd.h"
 #include "ace/OS_NS_errno.h"
+
+ACE_RCSID(Misc, context_switch_time, "$Id: context_switch_time.cpp 80826 2008-03-04 14:51:23Z wotte $")
 
 #if defined (ACE_HAS_THREADS)
 

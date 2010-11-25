@@ -1,4 +1,4 @@
-// $Id: Windows_Monitor.cpp 91813 2010-09-17 07:52:52Z johnnyw $
+// $Id: Windows_Monitor.cpp 82132 2008-06-23 13:54:43Z parsons $
 
 #include "ace/Monitor_Control/Windows_Monitor.h"
 
@@ -21,27 +21,27 @@ namespace ACE
     {
       this->init ();
     }
-
+    
     void
     Windows_Monitor::update_i (void)
     {
       PdhCollectQueryData (this->query_);
       PDH_FMT_COUNTERVALUE pdh_value;
-
+      
       PdhGetFormattedCounterValue (this->counter_,
                                    PDH_FMT_DOUBLE,
                                    0,
                                    &pdh_value);
-
+                                   
       this->value_ = pdh_value.doubleValue;
     }
-
+    
     void
     Windows_Monitor::clear_impl (void)
     {
       this->init ();
     }
-
+    
     void
     Windows_Monitor::init (void)
     {

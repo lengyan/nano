@@ -3,7 +3,7 @@
 	ProjectType="Visual C++"
 	Version="8.00"
 	Name="Time_Service_Test"
-	ProjectGUID="{AE004C7A-FECA-1BAD-2431-8A1100722433}"
+	ProjectGUID="{AE004C7A-FECA-1BAD-2431-8A11337F6D50}"
 	RootNamespace="Time_Service_Test"
 	Keyword="Win32Proj"
 	SignManifests="true"

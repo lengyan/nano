@@ -1,10 +1,11 @@
-# $Id: platform_macosx.GNU 91285 2010-08-05 08:29:30Z johnnyw $
+# $Id: platform_macosx.GNU 80826 2008-03-04 14:51:23Z wotte $
 # platform_macosx.GNU
 # support for Mac OS X 10.2 (jaguar), 10.3 (panther)
 # Note: /sw/lib & /sw/include are inserted for the convience of Fink
 #       users. Non-Fink users should simply create these directories to
 #       eliminate the warnings.
 
+exceptions ?= 1
 threads ?= 1
 debug ?= 1
 optimize ?= 0

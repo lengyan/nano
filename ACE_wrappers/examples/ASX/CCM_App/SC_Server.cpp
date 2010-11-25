@@ -1,4 +1,4 @@
-// $Id: SC_Server.cpp 91671 2010-09-08 18:39:23Z johnnyw $
+// $Id: SC_Server.cpp 89934 2010-04-19 18:37:32Z cbeaulac $
 
 // Simple driver program for the server.  This driver dynamically
 // links in all the services in the <svc.conf> file.
@@ -10,7 +10,7 @@
 #include "ace/Reactor.h"
 #include "ace/Sig_Adapter.h"
 
-
+ACE_RCSID(CCM_App, SC_Server, "$Id: SC_Server.cpp 89934 2010-04-19 18:37:32Z cbeaulac $")
 
 class Event_Handler : public ACE_Event_Handler
 {
@@ -82,6 +82,6 @@ ACE_TMAIN (int argc, ACE_TCHAR *argv[])
   // Perform logging service until we receive SIGINT.
 
   ACE_Reactor::instance ()->run_reactor_event_loop ();
-  handler.remove_stdin_handler (ACE_Reactor::instance (),ACE_Thread_Manager::instance ());
+  handler.remove_stdin_handler (ACE_Reactor::instance (),ACE_Thread_Manager::instance ());  
   return 0;
 }

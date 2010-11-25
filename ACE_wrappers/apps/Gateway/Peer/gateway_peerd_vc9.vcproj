@@ -3,7 +3,7 @@
 	ProjectType="Visual C++"
 	Version="9.00"
 	Name="gateway_peerd"
-	ProjectGUID="{CC027A54-FECA-1BAD-6320-8A6461A17566}"
+	ProjectGUID="{CC027A54-FECA-1BAD-6320-8A6428C2466B}"
 	RootNamespace="gateway_peerd"
 	Keyword="Win32Proj"
 	SignManifests="true"

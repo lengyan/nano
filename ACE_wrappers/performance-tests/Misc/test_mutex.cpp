@@ -1,4 +1,4 @@
-// $Id: test_mutex.cpp 91670 2010-09-08 18:02:26Z johnnyw $
+// $Id: test_mutex.cpp 80826 2008-03-04 14:51:23Z wotte $
 
 // This test program illustrates the performance difference between
 // three versions of wrappers for thread mutexes.  These three
@@ -51,6 +51,8 @@
 #include "ace/Profile_Timer.h"
 #include "ace/OS_main.h"
 #include "ace/OS_NS_Thread.h"
+
+ACE_RCSID(Misc, test_mutex, "$Id: test_mutex.cpp 80826 2008-03-04 14:51:23Z wotte $")
 
 #if defined (ACE_HAS_THREADS)
 

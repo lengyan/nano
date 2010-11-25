@@ -1,4 +1,4 @@
-// $Id: ftp-server.cpp 91671 2010-09-08 18:39:23Z johnnyw $
+// $Id: ftp-server.cpp 80826 2008-03-04 14:51:23Z wotte $
 
 // Simple file transfer example
 
@@ -6,7 +6,7 @@
 #include "ace/Thread_Manager.h"
 #include "ace/TLI_Acceptor.h"
 
-
+ACE_RCSID(TLI_SAP, ftp_server, "$Id: ftp-server.cpp 80826 2008-03-04 14:51:23Z wotte $")
 
 #if defined (ACE_HAS_THREADS) && defined (ACE_HAS_TLI)
 

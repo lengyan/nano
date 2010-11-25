@@ -1,4 +1,4 @@
-// $Id: Naming_Test.cpp 91671 2010-09-08 18:39:23Z johnnyw $
+// $Id: Naming_Test.cpp 84565 2009-02-23 08:20:39Z johnnyw $
 
 // ============================================================================
 //
@@ -28,7 +28,7 @@
 #include "ace/OS_NS_string.h"
 #include "ace/OS_NS_unistd.h"
 
-
+ACE_RCSID(tests, Naming_Test, "$Id: Naming_Test.cpp 84565 2009-02-23 08:20:39Z johnnyw $")
 
 static char name[BUFSIZ];
 static char value[BUFSIZ];

@@ -1,4 +1,4 @@
-# $Id: platform_qnx_neutrino.GNU 91626 2010-09-07 10:59:20Z johnnyw $
+# $Id: platform_qnx_neutrino.GNU 80826 2008-03-04 14:51:23Z wotte $
 
 # QNX 4.25 hosted GNU g++ for Neutrino 2.0
 
@@ -8,6 +8,7 @@ static_libs_only = 1
 debug ?= 1
 optimize ?= 1
 pipes ?= 1
+
 CC      ?= i386-nto-gcc
 CXX     ?= i386-nto-g++
 

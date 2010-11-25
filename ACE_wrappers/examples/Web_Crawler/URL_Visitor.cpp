@@ -1,11 +1,11 @@
-// $Id: URL_Visitor.cpp 91671 2010-09-08 18:39:23Z johnnyw $
+// $Id: URL_Visitor.cpp 82610 2008-08-12 19:46:36Z parsons $
 
 #include "ace/OS_NS_string.h"
 #include "ace/Truncate.h"
 #include "URL_Visitor.h"
 #include "Command_Processor.h"
 
-
+ACE_RCSID(Web_Crawler, URL_Visitor, "$Id: URL_Visitor.cpp 82610 2008-08-12 19:46:36Z parsons $")
 
 URL_Processing_Strategy::URL_Processing_Strategy (URL &url,
                                                   URL_Iterator &iterator)

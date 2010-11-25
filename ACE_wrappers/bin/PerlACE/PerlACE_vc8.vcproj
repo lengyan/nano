@@ -3,7 +3,7 @@
 	ProjectType="Visual C++"
 	Version="8.00"
 	Name="PerlACE"
-	ProjectGUID="{E15379F8-FECA-1BAD-A757-FC47A624E189}"
+	ProjectGUID="{E15379F8-FECA-1BAD-A757-FC47C517ECC0}"
 	RootNamespace="PerlACE"
 	Keyword="Win32Proj"
 	SignManifests="true"

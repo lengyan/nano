@@ -1,5 +1,5 @@
 /*
-** $Id: Logging_Event_Handler_Ex.cpp 91813 2010-09-17 07:52:52Z johnnyw $
+** $Id: Logging_Event_Handler_Ex.cpp 80826 2008-03-04 14:51:23Z wotte $
 **
 ** Copyright 2002 Addison Wesley. All Rights Reserved.
 */
@@ -17,7 +17,7 @@ int Logging_Event_Handler_Ex::open () {
   int result = PARENT::open ();
   if (result != -1) {
     ACE_Time_Value reschedule (max_client_timeout_.sec () / 4);
-    result =
+    result = 
       reactor ()->schedule_timer
         (this,
          0,
@@ -34,7 +34,7 @@ int Logging_Event_Handler_Ex::handle_timeout
   return 0;
 }
 
-int Logging_Event_Handler_Ex::handle_close (ACE_HANDLE,
+int Logging_Event_Handler_Ex::handle_close (ACE_HANDLE, 
                                             ACE_Reactor_Mask) {
   reactor ()->cancel_timer (this);
   return PARENT::handle_close ();

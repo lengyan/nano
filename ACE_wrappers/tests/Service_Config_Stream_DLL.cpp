@@ -1,10 +1,10 @@
-// $Id: Service_Config_Stream_DLL.cpp 91671 2010-09-08 18:39:23Z johnnyw $
+// $Id: Service_Config_Stream_DLL.cpp 86267 2009-07-28 21:38:16Z shuston $
 
 #include "Service_Config_Stream_DLL.h"
 #include "ace/Service_Repository.h"
 #include "ace/Service_Types.h"
 
-
+ACE_RCSID(tests, Service_Config_Stream_DLL, "$Id: Service_Config_Stream_DLL.cpp 86267 2009-07-28 21:38:16Z shuston $")
 
 int
 Test_Task::open (void *)

@@ -1,4 +1,4 @@
-// $Id: Parse_Headers.cpp 91670 2010-09-08 18:02:26Z johnnyw $
+// $Id: Parse_Headers.cpp 80826 2008-03-04 14:51:23Z wotte $
 
 #include "ace/Log_Msg.h"
 
@@ -7,6 +7,8 @@
 #include "ace/OS_NS_strings.h"
 #include "ace/OS_NS_stdlib.h"
 #include "ace/OS_NS_ctype.h"
+
+ACE_RCSID(server, Parse_Headers, "$Id: Parse_Headers.cpp 80826 2008-03-04 14:51:23Z wotte $")
 
 // Implementation of class Headers
 

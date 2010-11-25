@@ -3,7 +3,7 @@
 	ProjectType="Visual C++"
 	Version="8.00"
 	Name="SPIPE_SAP_Server"
-	ProjectGUID="{CCA11F73-FECA-1BAD-A714-C623708DC274}"
+	ProjectGUID="{CCA11F73-FECA-1BAD-A714-C623E6BEF2A0}"
 	RootNamespace="SPIPE_SAP_Server"
 	Keyword="Win32Proj"
 	SignManifests="true"

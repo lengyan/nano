@@ -3,7 +3,7 @@
 // Current program version number.
 
 /**
- * $Id: Version.cpp 91671 2010-09-08 18:39:23Z johnnyw $
+ * $Id: Version.cpp 86019 2009-07-14 12:13:09Z wotte $
  *
  * Copyright (C) 1989 Free Software Foundation, Inc.
  * written by Douglas C. Schmidt (schmidt@cs.wustl.edu)
@@ -27,6 +27,6 @@
 
 #include "ace/ACE.h"
 
-
+ACE_RCSID(src, Version, "$Id: Version.cpp 86019 2009-07-14 12:13:09Z wotte $")
 
 const char *version_string = "2.8 (ACE version)";

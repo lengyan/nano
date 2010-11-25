@@ -1,4 +1,4 @@
-// $Id: FTP_URL.h 91118 2010-07-17 10:29:57Z mcorino $
+// $Id: FTP_URL.h 90923 2010-06-29 08:58:20Z mcorino $
 
 /**
  * @file FTP_URL.h
@@ -49,9 +49,7 @@ namespace ACE
 
               virtual u_short default_port () const;
 
-              static const char* PROTOCOL;
-
-              static const ACE_CString& protocol ();
+              static const ACE_CString PROTOCOL;
 
               enum
               {

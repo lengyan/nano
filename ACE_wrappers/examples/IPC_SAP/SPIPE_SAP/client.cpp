@@ -1,4 +1,4 @@
-// $Id: client.cpp 91671 2010-09-08 18:39:23Z johnnyw $
+// $Id: client.cpp 80826 2008-03-04 14:51:23Z wotte $
 
 #include "ace/OS_main.h"
 #include "ace/SPIPE_Addr.h"
@@ -7,7 +7,7 @@
 #include "ace/OS_NS_stdio.h"
 #include "ace/OS_NS_string.h"
 
-
+ACE_RCSID(SPIPE_SAP, client, "$Id: client.cpp 80826 2008-03-04 14:51:23Z wotte $")
 
 #if defined (ACE_HAS_STREAM_PIPES)
 

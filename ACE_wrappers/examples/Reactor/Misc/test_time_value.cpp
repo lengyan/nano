@@ -1,4 +1,4 @@
-// $Id: test_time_value.cpp 91671 2010-09-08 18:39:23Z johnnyw $
+// $Id: test_time_value.cpp 80826 2008-03-04 14:51:23Z wotte $
 
 // FUZZ: disable check_for_streams_include
 #include "ace/streams.h"
@@ -6,7 +6,7 @@
 #include "ace/Log_Msg.h"
 #include "ace/Time_Value.h"
 
-
+ACE_RCSID(Misc, test_time_value, "$Id: test_time_value.cpp 80826 2008-03-04 14:51:23Z wotte $")
 
 inline int my_abs (int d) { return d > 0 ? d : -d; }
 

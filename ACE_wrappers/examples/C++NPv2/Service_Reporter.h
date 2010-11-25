@@ -1,5 +1,5 @@
 /*
-** $Id: Service_Reporter.h 91743 2010-09-13 18:24:51Z johnnyw $
+** $Id: Service_Reporter.h 80826 2008-03-04 14:51:23Z wotte $
 **
 ** Copyright 2002 Addison Wesley. All Rights Reserved.
 */
@@ -27,7 +27,7 @@ protected:
 
   // Reactor hook methods.
   virtual int handle_input (ACE_HANDLE);
-  virtual ACE_HANDLE get_handle () const
+  virtual ACE_HANDLE get_handle () const 
   { return acceptor_.get_handle (); }
 
 private:

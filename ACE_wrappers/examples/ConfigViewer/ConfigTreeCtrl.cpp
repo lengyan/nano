@@ -1,4 +1,4 @@
-// $Id: ConfigTreeCtrl.cpp 91813 2010-09-17 07:52:52Z johnnyw $
+// $Id: ConfigTreeCtrl.cpp 80826 2008-03-04 14:51:23Z wotte $
 #include "stdafx.h"
 #include "ConfigTreeCtrl.h"
 #include "MainFrame.h"
@@ -65,7 +65,7 @@ void ConfigTreeCtrl::OnRightDown(wxMouseEvent& event)
 void ConfigTreeCtrl::OnRightUp(wxMouseEvent& event)
 {
   wxTreeItemId ItemID = GetSelection();
-
+  
   wxMenu* pMenu = new wxMenu;
   wxMenu* pNewMenu = new wxMenu;
   pNewMenu->Append(CFGNEWKEY, "Key");
@@ -127,7 +127,7 @@ void ConfigTreeCtrl::OnNewKey(wxCommandEvent& event)
   ACE_Configuration_Section_Key Key, NewKey;
   ResolveKey(ItemID, Key);
   m_pConfig->open_section(Key, Value, 1, NewKey);
-  wxTreeItemId NewItemID = AppendItem(ItemID, Value);
+  wxTreeItemId NewItemID = AppendItem(ItemID, Value);  
   EnsureVisible(NewItemID);
 }
 

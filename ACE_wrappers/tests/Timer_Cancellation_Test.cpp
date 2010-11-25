@@ -1,4 +1,4 @@
-// $Id: Timer_Cancellation_Test.cpp 91671 2010-09-08 18:39:23Z johnnyw $
+// $Id: Timer_Cancellation_Test.cpp 90163 2010-05-18 21:42:20Z mitza $
 
 // ============================================================================
 //
@@ -22,7 +22,7 @@
 #include "ace/TP_Reactor.h"
 #include "ace/Task.h"
 
-
+ACE_RCSID(tests, Timer_Cancellation_Test, "$Id: Timer_Cancellation_Test.cpp 90163 2010-05-18 21:42:20Z mitza $")
 
 #if defined (ACE_HAS_THREADS)
 

@@ -3,7 +3,7 @@
 	ProjectType="Visual C++"
 	Version="9.00"
 	Name="Naming_Non_Existent"
-	ProjectGUID="{472161F6-FECA-1BAD-BF85-8EE479601925}"
+	ProjectGUID="{472161F6-FECA-1BAD-BF85-8EE474297A16}"
 	RootNamespace="Naming_Non_Existent"
 	Keyword="Win32Proj"
 	SignManifests="true"

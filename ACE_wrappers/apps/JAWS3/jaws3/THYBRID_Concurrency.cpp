@@ -1,4 +1,4 @@
-// $Id: THYBRID_Concurrency.cpp 91813 2010-09-17 07:52:52Z johnnyw $
+// $Id: THYBRID_Concurrency.cpp 80826 2008-03-04 14:51:23Z wotte $
 
 #include "ace/OS_NS_stdlib.h"
 #include "ace/Message_Block.h"
@@ -121,7 +121,7 @@ JAWS_THYBRID_Concurrency::getq (JAWS_Protocol_Handler *&ph)
               task->putq (mb);
               result = -1;
             }
-
+ 
         }
     }
 

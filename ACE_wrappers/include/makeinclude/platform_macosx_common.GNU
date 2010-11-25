@@ -1,11 +1,13 @@
-# $Id: platform_macosx_common.GNU 91285 2010-08-05 08:29:30Z johnnyw $
+# $Id: platform_macosx_common.GNU 87538 2009-11-13 01:54:36Z wotte $
 # platform_macosx.GNU
 # support for Mac OS X 10.4 (Tiger)
 # By default, this uses the default compiler selected using gcc_select.
 
+cidl = 1
 boost = 1
 zzip = 1
 zlib = 1
+exceptions ?= 1
 threads ?= 1
 debug ?= 1
 optimize ?= 0
@@ -27,8 +29,8 @@ pipes ?= 1
 
 CFLAGS  += $(FLAGS_C_CC)
 
-CC              ?= gcc
-CXX             ?= g++
+CC              = gcc
+CXX             = g++
 CFLAGS          += -Wall -Wpointer-arith 
 
 DCFLAGS         += -g
@@ -44,11 +46,8 @@ SOBUILD			= -o $(VSHDIR)$*.dylib $<
 
 # Test for template instantiation, add to SOFLAGS if versioned_so set,
 # add -E to LDFLAGS if using GNU ld
-ifeq ($(findstring g++,$(CXX)),)#
-  include $(ACE_ROOT)/include/makeinclude/platform_g++_common.GNU
-else
-  include $(ACE_ROOT)/include/makeinclude/platform_clang_common.GNU
-endif
+#
+include $(ACE_ROOT)/include/makeinclude/platform_g++_common.GNU
 
 LDFLAGS         += -flat_namespace
 CCFLAGS         += $(CFLAGS) $(TEMPLATES_FLAG)

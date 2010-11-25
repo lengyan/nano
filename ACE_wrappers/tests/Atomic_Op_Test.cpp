@@ -1,4 +1,4 @@
-// $Id: Atomic_Op_Test.cpp 91671 2010-09-08 18:39:23Z johnnyw $
+// $Id: Atomic_Op_Test.cpp 90163 2010-05-18 21:42:20Z mitza $
 
 // ============================================================================
 //
@@ -21,7 +21,7 @@
 
 #include "test_config.h"
 
-
+ACE_RCSID(tests, Atomic_Op_Test, "$Id: Atomic_Op_Test.cpp 90163 2010-05-18 21:42:20Z mitza $")
 
 #include "ace/Atomic_Op.h"
 #include "ace/Synch_Traits.h"
@@ -240,7 +240,7 @@ int test (const ACE_TCHAR* type, int iterations)
   diff = ACE_OS::gettimeofday () - diff;
   diff.to_usec (usec);
   ACE_DEBUG ((LM_DEBUG, ACE_TEXT ("Ending <%s> comparison %D, took %Q\n"), type, usec));
-
+  
   return retval;
 }
 

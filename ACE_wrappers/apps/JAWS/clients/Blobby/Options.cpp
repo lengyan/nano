@@ -1,10 +1,12 @@
-// $Id: Options.cpp 91670 2010-09-08 18:02:26Z johnnyw $
+// $Id: Options.cpp 81993 2008-06-16 20:26:16Z sowayaa $
 
 #include "ace/Get_Opt.h"
 #include "ace/ARGV.h"
 #include "Blob.h"
 #include "Blob_Handler.h"
 #include "Options.h"
+
+ACE_RCSID(Blobby, Options, "$Id: Options.cpp 81993 2008-06-16 20:26:16Z sowayaa $")
 
 Options *Options::instance_ = 0;
 
