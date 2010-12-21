@@ -1,4 +1,7 @@
 #include "ClientService.h"
+#include <fstream>
+#include <string>
+#include <iostream>
 
 int ClientService::open(void *p) {
 	if (super::open(p) == -1)
@@ -25,6 +28,24 @@ int ClientService::handle_input(ACE_HANDLE) {
 					ACE_TEXT("(%P|%t) Connection closed\n")));
 		return -1;
 	}
+
+    // 打印接受的信息
+	ACE_DEBUG((LM_DEBUG,
+				ACE_TEXT("recv: %s\n"),
+                buffer));
+    // std::string flash_request = "<policy-file-request/>";
+
+    // 如果是策略文件请求
+    if (std::string("<policy-file-request/>").compare(buffer) == 0) {
+        std::cout << "send crossdomain" << std::endl;
+        // send crossdomain
+        std::ifstream ifs("crossdomain.xml");
+        std::string content((std::istreambuf_iterator<char>(ifs)), 
+                            (std::istreambuf_iterator<char>()));
+        this->peer().send(content.c_str(), content.length() + 1);
+        return 0;
+    }
+
 	send_cnt = this->peer().send(buffer, ACE_static_cast(size_t, recv_cnt));
 	if (send_cnt == recv_cnt)
 		return 0;
