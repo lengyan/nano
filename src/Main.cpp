@@ -5,7 +5,7 @@
 #include "ace/Reactor.h"
 #include "ace/Acceptor.h"
 #include "ClientService.h"
-#include "utils/config/Config.h"
+#include "utils/Config.h"
 
 typedef ACE_Acceptor<ClientService, ACE_SOCK_ACCEPTOR> ClientAcceptor;
 

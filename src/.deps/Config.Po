@@ -1,4 +1,4 @@
-Config.o: utils/config/Config.cpp utils/config/Config.h \
+Config.o: utils/Config.cpp utils/Config.h \
  ../dep/include/ace/Configuration.h ../dep/include/ace/pre.h \
  ../dep/include/ace/SStringfwd.h ../dep/include/ace/Basic_Types.h \
  ../dep/include/ace/config-lite.h ../dep/include/ace/config-macros.h \
@@ -264,7 +264,7 @@ Config.o: utils/config/Config.cpp utils/config/Config.h \
  ../dep/include/ace/Configuration_Import_Export.h \
  ../dep/include/ace/SString.h ../dep/include/ace/SString.inl
 
-utils/config/Config.h:
+utils/Config.h:
 
 ../dep/include/ace/Configuration.h:
 
