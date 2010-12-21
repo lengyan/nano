@@ -18,8 +18,8 @@
 	<Configurations>
 		<Configuration
 			Name="Debug|Win32"
-			OutputDirectory="$(SolutionDir)bin/$(ConfigurationName)"
-			IntermediateDirectory="$(ConfigurationName)"
+			OutputDirectory="..\bin\$(ConfigurationName)"
+			IntermediateDirectory="..\bin\$(ConfigurationName)"
 			ConfigurationType="1"
 			CharacterSet="1"
 			>
@@ -41,7 +41,7 @@
 			<Tool
 				Name="VCCLCompilerTool"
 				Optimization="0"
-				AdditionalIncludeDirectories="$(SolutionDir)ACE_wrappers"
+				AdditionalIncludeDirectories="..\dep\include"
 				PreprocessorDefinitions="WIN32;_DEBUG;_CONSOLE"
 				MinimalRebuild="true"
 				BasicRuntimeChecks="3"
@@ -63,7 +63,7 @@
 				Name="VCLinkerTool"
 				AdditionalDependencies="ACEd.lib"
 				LinkIncremental="2"
-				AdditionalLibraryDirectories="$(SolutionDir)lib"
+				AdditionalLibraryDirectories="..\dep\lib\win32"
 				GenerateDebugInformation="true"
 				SubSystem="1"
 				TargetMachine="1"
@@ -92,7 +92,7 @@
 		</Configuration>
 		<Configuration
 			Name="Release|Win32"
-			OutputDirectory="$(SolutionDir)$(ConfigurationName)"
+			OutputDirectory="..\bin\$(ConfigurationName)"
 			IntermediateDirectory="$(ConfigurationName)"
 			ConfigurationType="1"
 			CharacterSet="1"
@@ -117,7 +117,7 @@
 				Name="VCCLCompilerTool"
 				Optimization="2"
 				EnableIntrinsicFunctions="true"
-				AdditionalIncludeDirectories="D:\nano\nano\ACE_wrappers"
+				AdditionalIncludeDirectories="..\dep\include"
 				PreprocessorDefinitions="WIN32;NDEBUG;_CONSOLE"
 				RuntimeLibrary="2"
 				EnableFunctionLevelLinking="true"
@@ -137,7 +137,7 @@
 			<Tool
 				Name="VCLinkerTool"
 				LinkIncremental="1"
-				AdditionalLibraryDirectories="D:\nano\nano\ACE_wrappers\lib"
+				AdditionalLibraryDirectories="..\dep\lib\win32"
 				GenerateDebugInformation="true"
 				SubSystem="1"
 				OptimizeReferences="2"
@@ -176,15 +176,15 @@
 			UniqueIdentifier="{4FC737F1-C7A5-4376-A066-2A32D752A2FF}"
 			>
 			<File
-				RelativePath=".\ClientService.cpp"
+				RelativePath="..\src\ClientService.cpp"
 				>
 			</File>
 			<File
-				RelativePath=".\ClientService.h"
+				RelativePath="..\src\ClientService.h"
 				>
 			</File>
 			<File
-				RelativePath=".\Main.cpp"
+				RelativePath="..\src\Main.cpp"
 				>
 			</File>
 		</Filter>
