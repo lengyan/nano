@@ -203,26 +203,13 @@ Main.o: Main.cpp ../dep/include/ace/Log_Msg.h ../dep/include/ace/pre.h \
  ../dep/include/ace/os_include/os_wctype.h \
  ../dep/include/ace/OS_NS_ctype.inl ../dep/include/ace/SOCK_IO.inl \
  ../dep/include/ace/SOCK_Stream.inl ../dep/include/ace/SOCK_Acceptor.inl \
- ../dep/include/ace/Reactor.h ../dep/include/ace/Timer_Queuefwd.h \
- ../dep/include/ace/Reactor_Timer_Interface.h \
- ../dep/include/ace/Event_Handler.h ../dep/include/ace/Event_Handler.inl \
- ../dep/include/ace/Reactor.inl ../dep/include/ace/Reactor_Impl.h \
- ../dep/include/ace/Countdown_Time.h ../dep/include/ace/Copy_Disabled.h \
- ../dep/include/ace/Countdown_Time.inl ../dep/include/ace/Acceptor.h \
- ../dep/include/ace/Service_Object.h ../dep/include/ace/Shared_Object.h \
- ../dep/include/ace/Shared_Object.inl \
- ../dep/include/ace/Svc_Conf_Tokens.h \
- ../dep/include/ace/Svc_Conf_Token_Table.h ../dep/include/ace/DLL.h \
- ../dep/include/ace/os_include/os_dlfcn.h /usr/include/dlfcn.h \
- /usr/include/bits/dlfcn.h ../dep/include/ace/Service_Gestalt.h \
- ../dep/include/ace/Auto_Ptr.h /usr/include/c++/4.4/memory \
- /usr/include/c++/4.4/bits/allocator.h \
- /usr/include/c++/4.4/x86_64-linux-gnu/bits/c++allocator.h \
- /usr/include/c++/4.4/ext/new_allocator.h \
- /usr/include/c++/4.4/bits/stl_raw_storage_iter.h \
- /usr/include/c++/4.4/backward/auto_ptr.h ../dep/include/ace/Auto_Ptr.inl \
- ../dep/include/ace/Auto_Ptr.cpp ../dep/include/ace/SString.h \
- ../dep/include/ace/SStringfwd.h ../dep/include/ace/String_Base.h \
+ ../dep/include/ace/Configuration_Import_Export.h \
+ ../dep/include/ace/Configuration.h ../dep/include/ace/SStringfwd.h \
+ ../dep/include/ace/Hash_Map_With_Allocator_T.h \
+ ../dep/include/ace/Hash_Map_Manager_T.h ../dep/include/ace/Functor_T.h \
+ ../dep/include/ace/Functor.h ../dep/include/ace/Functor.inl \
+ ../dep/include/ace/Functor_String.h \
+ ../dep/include/ace/Functor_String.inl ../dep/include/ace/String_Base.h \
  ../dep/include/ace/String_Base_Const.h ../dep/include/ace/Malloc_Base.h \
  /usr/include/c++/4.4/iterator /usr/include/c++/4.4/ostream \
  /usr/include/c++/4.4/ios /usr/include/c++/4.4/bits/char_traits.h \
@@ -236,6 +223,9 @@ Main.o: Main.cpp ../dep/include/ace/Log_Msg.h ../dep/include/ace/pre.h \
  /usr/include/c++/4.4/x86_64-linux-gnu/bits/gthr-default.h \
  /usr/include/c++/4.4/x86_64-linux-gnu/bits/atomic_word.h \
  /usr/include/c++/4.4/bits/locale_classes.h /usr/include/c++/4.4/string \
+ /usr/include/c++/4.4/bits/allocator.h \
+ /usr/include/c++/4.4/x86_64-linux-gnu/bits/c++allocator.h \
+ /usr/include/c++/4.4/ext/new_allocator.h \
  /usr/include/c++/4.4/bits/ostream_insert.h \
  /usr/include/c++/4.4/cxxabi-forced.h \
  /usr/include/c++/4.4/bits/stl_function.h \
@@ -255,15 +245,49 @@ Main.o: Main.cpp ../dep/include/ace/Log_Msg.h ../dep/include/ace/pre.h \
  /usr/include/c++/4.4/bits/istream.tcc \
  /usr/include/c++/4.4/bits/stream_iterator.h \
  ../dep/include/ace/String_Base.inl ../dep/include/ace/Min_Max.h \
- ../dep/include/ace/String_Base.cpp ../dep/include/ace/SString.inl \
- ../dep/include/ace/Unbounded_Queue.h ../dep/include/ace/Node.h \
- ../dep/include/ace/Node.cpp ../dep/include/ace/Unbounded_Queue.inl \
- ../dep/include/ace/Unbounded_Queue.cpp \
+ ../dep/include/ace/String_Base.cpp ../dep/include/ace/Auto_Ptr.h \
+ /usr/include/c++/4.4/memory \
+ /usr/include/c++/4.4/bits/stl_raw_storage_iter.h \
+ /usr/include/c++/4.4/backward/auto_ptr.h ../dep/include/ace/Auto_Ptr.inl \
+ ../dep/include/ace/Auto_Ptr.cpp ../dep/include/ace/Functor_T.inl \
+ ../dep/include/ace/Functor_T.cpp \
+ ../dep/include/ace/Hash_Map_Manager_T.inl \
+ ../dep/include/ace/Hash_Map_Manager_T.cpp \
+ ../dep/include/ace/Null_Mutex.h \
+ ../dep/include/ace/Hash_Map_With_Allocator_T.inl \
+ ../dep/include/ace/Hash_Map_With_Allocator_T.cpp \
+ ../dep/include/ace/Malloc_T.h ../dep/include/ace/Malloc.h \
+ ../dep/include/ace/Malloc.inl ../dep/include/ace/Malloc_Allocator.h \
+ ../dep/include/ace/Malloc_Allocator.inl ../dep/include/ace/Free_List.h \
+ ../dep/include/ace/Free_List.cpp ../dep/include/ace/Malloc_T.inl \
+ ../dep/include/ace/Malloc_T.cpp ../dep/include/ace/MMAP_Memory_Pool.h \
+ ../dep/include/ace/Event_Handler.h ../dep/include/ace/Event_Handler.inl \
+ ../dep/include/ace/Sig_Handler.h ../dep/include/ace/Sig_Handler.inl \
+ ../dep/include/ace/Mem_Map.h ../dep/include/ace/Mem_Map.inl \
+ ../dep/include/ace/MMAP_Memory_Pool.inl \
+ ../dep/include/ace/Local_Memory_Pool.h \
  ../dep/include/ace/Unbounded_Set.h ../dep/include/ace/Unbounded_Set_Ex.h \
+ ../dep/include/ace/Node.h ../dep/include/ace/Node.cpp \
  ../dep/include/ace/Unbounded_Set_Ex.inl \
  ../dep/include/ace/Unbounded_Set_Ex.cpp \
  ../dep/include/ace/Unbounded_Set.inl \
  ../dep/include/ace/Unbounded_Set.cpp \
+ ../dep/include/ace/Configuration.inl ../dep/include/ace/SString.h \
+ ../dep/include/ace/SString.inl ../dep/include/ace/Reactor.h \
+ ../dep/include/ace/Timer_Queuefwd.h \
+ ../dep/include/ace/Reactor_Timer_Interface.h \
+ ../dep/include/ace/Reactor.inl ../dep/include/ace/Reactor_Impl.h \
+ ../dep/include/ace/Countdown_Time.h ../dep/include/ace/Copy_Disabled.h \
+ ../dep/include/ace/Countdown_Time.inl ../dep/include/ace/Acceptor.h \
+ ../dep/include/ace/Service_Object.h ../dep/include/ace/Shared_Object.h \
+ ../dep/include/ace/Shared_Object.inl \
+ ../dep/include/ace/Svc_Conf_Tokens.h \
+ ../dep/include/ace/Svc_Conf_Token_Table.h ../dep/include/ace/DLL.h \
+ ../dep/include/ace/os_include/os_dlfcn.h /usr/include/dlfcn.h \
+ /usr/include/bits/dlfcn.h ../dep/include/ace/Service_Gestalt.h \
+ ../dep/include/ace/Unbounded_Queue.h \
+ ../dep/include/ace/Unbounded_Queue.inl \
+ ../dep/include/ace/Unbounded_Queue.cpp \
  ../dep/include/ace/Service_Repository.h \
  ../dep/include/ace/Recursive_Thread_Mutex.h \
  ../dep/include/ace/Recursive_Thread_Mutex.inl \
@@ -290,13 +314,6 @@ Main.o: Main.cpp ../dep/include/ace/Log_Msg.h ../dep/include/ace/pre.h \
  ../dep/include/ace/os_include/os_typeinfo.h \
  /usr/include/c++/4.4/typeinfo ../dep/include/ace/Service_Gestalt.inl \
  ../dep/include/ace/Service_Object.inl ../dep/include/ace/Strategies_T.h \
- ../dep/include/ace/Hash_Map_Manager_T.h ../dep/include/ace/Functor_T.h \
- ../dep/include/ace/Functor.h ../dep/include/ace/Functor.inl \
- ../dep/include/ace/Functor_String.h \
- ../dep/include/ace/Functor_String.inl ../dep/include/ace/Functor_T.inl \
- ../dep/include/ace/Functor_T.cpp \
- ../dep/include/ace/Hash_Map_Manager_T.inl \
- ../dep/include/ace/Hash_Map_Manager_T.cpp \
  ../dep/include/ace/Thread_Manager.h ../dep/include/ace/Thread_Exit.h \
  ../dep/include/ace/Thread_Control.h \
  ../dep/include/ace/Thread_Control.inl \
@@ -306,15 +323,13 @@ Main.o: Main.cpp ../dep/include/ace/Log_Msg.h ../dep/include/ace/pre.h \
  ../dep/include/ace/Containers_T.h ../dep/include/ace/Array_Base.h \
  ../dep/include/ace/Array_Base.inl ../dep/include/ace/Array_Base.cpp \
  ../dep/include/ace/Containers_T.inl ../dep/include/ace/Containers_T.cpp \
- ../dep/include/ace/Free_List.h ../dep/include/ace/Free_List.cpp \
  ../dep/include/ace/Thread_Manager.inl \
  ../dep/include/ace/Connection_Recycling_Strategy.h \
  ../dep/include/ace/Recyclable.h ../dep/include/ace/Recyclable.inl \
  ../dep/include/ace/Refcountable.h ../dep/include/ace/Refcountable_T.h \
  ../dep/include/ace/Refcountable_T.inl \
- ../dep/include/ace/Refcountable_T.cpp ../dep/include/ace/Null_Mutex.h \
- ../dep/include/ace/Hashable.h ../dep/include/ace/Hashable.inl \
- ../dep/include/ace/Reverse_Lock_T.h \
+ ../dep/include/ace/Refcountable_T.cpp ../dep/include/ace/Hashable.h \
+ ../dep/include/ace/Hashable.inl ../dep/include/ace/Reverse_Lock_T.h \
  ../dep/include/ace/Reverse_Lock_T.inl \
  ../dep/include/ace/Reverse_Lock_T.cpp \
  ../dep/include/ace/Strategies_T.inl ../dep/include/ace/Strategies_T.cpp \
@@ -381,7 +396,7 @@ Main.o: Main.cpp ../dep/include/ace/Log_Msg.h ../dep/include/ace/pre.h \
  ../dep/include/ace/os_include/os_syslog.h /usr/include/syslog.h \
  /usr/include/sys/syslog.h /usr/include/bits/syslog-path.h \
  /usr/include/bits/syslog.h ../dep/include/ace/OS.inl \
- /usr/include/malloc.h /usr/include/ifaddrs.h
+ /usr/include/malloc.h /usr/include/ifaddrs.h utils/config/Config.h
 
 ../dep/include/ace/Log_Msg.h:
 
@@ -1067,69 +1082,25 @@ Main.o: Main.cpp ../dep/include/ace/Log_Msg.h ../dep/include/ace/pre.h \
 
 ../dep/include/ace/SOCK_Acceptor.inl:
 
-../dep/include/ace/Reactor.h:
+../dep/include/ace/Configuration_Import_Export.h:
 
-../dep/include/ace/Timer_Queuefwd.h:
-
-../dep/include/ace/Reactor_Timer_Interface.h:
-
-../dep/include/ace/Event_Handler.h:
-
-../dep/include/ace/Event_Handler.inl:
-
-../dep/include/ace/Reactor.inl:
-
-../dep/include/ace/Reactor_Impl.h:
-
-../dep/include/ace/Countdown_Time.h:
-
-../dep/include/ace/Copy_Disabled.h:
-
-../dep/include/ace/Countdown_Time.inl:
-
-../dep/include/ace/Acceptor.h:
-
-../dep/include/ace/Service_Object.h:
-
-../dep/include/ace/Shared_Object.h:
-
-../dep/include/ace/Shared_Object.inl:
-
-../dep/include/ace/Svc_Conf_Tokens.h:
-
-../dep/include/ace/Svc_Conf_Token_Table.h:
-
-../dep/include/ace/DLL.h:
-
-../dep/include/ace/os_include/os_dlfcn.h:
-
-/usr/include/dlfcn.h:
-
-/usr/include/bits/dlfcn.h:
-
-../dep/include/ace/Service_Gestalt.h:
-
-../dep/include/ace/Auto_Ptr.h:
-
-/usr/include/c++/4.4/memory:
-
-/usr/include/c++/4.4/bits/allocator.h:
-
-/usr/include/c++/4.4/x86_64-linux-gnu/bits/c++allocator.h:
-
-/usr/include/c++/4.4/ext/new_allocator.h:
-
-/usr/include/c++/4.4/bits/stl_raw_storage_iter.h:
-
-/usr/include/c++/4.4/backward/auto_ptr.h:
-
-../dep/include/ace/Auto_Ptr.inl:
-
-../dep/include/ace/Auto_Ptr.cpp:
-
-../dep/include/ace/SString.h:
+../dep/include/ace/Configuration.h:
 
 ../dep/include/ace/SStringfwd.h:
+
+../dep/include/ace/Hash_Map_With_Allocator_T.h:
+
+../dep/include/ace/Hash_Map_Manager_T.h:
+
+../dep/include/ace/Functor_T.h:
+
+../dep/include/ace/Functor.h:
+
+../dep/include/ace/Functor.inl:
+
+../dep/include/ace/Functor_String.h:
+
+../dep/include/ace/Functor_String.inl:
 
 ../dep/include/ace/String_Base.h:
 
@@ -1170,6 +1141,12 @@ Main.o: Main.cpp ../dep/include/ace/Log_Msg.h ../dep/include/ace/pre.h \
 /usr/include/c++/4.4/bits/locale_classes.h:
 
 /usr/include/c++/4.4/string:
+
+/usr/include/c++/4.4/bits/allocator.h:
+
+/usr/include/c++/4.4/x86_64-linux-gnu/bits/c++allocator.h:
+
+/usr/include/c++/4.4/ext/new_allocator.h:
 
 /usr/include/c++/4.4/bits/ostream_insert.h:
 
@@ -1217,21 +1194,75 @@ Main.o: Main.cpp ../dep/include/ace/Log_Msg.h ../dep/include/ace/pre.h \
 
 ../dep/include/ace/String_Base.cpp:
 
-../dep/include/ace/SString.inl:
+../dep/include/ace/Auto_Ptr.h:
 
-../dep/include/ace/Unbounded_Queue.h:
+/usr/include/c++/4.4/memory:
 
-../dep/include/ace/Node.h:
+/usr/include/c++/4.4/bits/stl_raw_storage_iter.h:
 
-../dep/include/ace/Node.cpp:
+/usr/include/c++/4.4/backward/auto_ptr.h:
 
-../dep/include/ace/Unbounded_Queue.inl:
+../dep/include/ace/Auto_Ptr.inl:
 
-../dep/include/ace/Unbounded_Queue.cpp:
+../dep/include/ace/Auto_Ptr.cpp:
+
+../dep/include/ace/Functor_T.inl:
+
+../dep/include/ace/Functor_T.cpp:
+
+../dep/include/ace/Hash_Map_Manager_T.inl:
+
+../dep/include/ace/Hash_Map_Manager_T.cpp:
+
+../dep/include/ace/Null_Mutex.h:
+
+../dep/include/ace/Hash_Map_With_Allocator_T.inl:
+
+../dep/include/ace/Hash_Map_With_Allocator_T.cpp:
+
+../dep/include/ace/Malloc_T.h:
+
+../dep/include/ace/Malloc.h:
+
+../dep/include/ace/Malloc.inl:
+
+../dep/include/ace/Malloc_Allocator.h:
+
+../dep/include/ace/Malloc_Allocator.inl:
+
+../dep/include/ace/Free_List.h:
+
+../dep/include/ace/Free_List.cpp:
+
+../dep/include/ace/Malloc_T.inl:
+
+../dep/include/ace/Malloc_T.cpp:
+
+../dep/include/ace/MMAP_Memory_Pool.h:
+
+../dep/include/ace/Event_Handler.h:
+
+../dep/include/ace/Event_Handler.inl:
+
+../dep/include/ace/Sig_Handler.h:
+
+../dep/include/ace/Sig_Handler.inl:
+
+../dep/include/ace/Mem_Map.h:
+
+../dep/include/ace/Mem_Map.inl:
+
+../dep/include/ace/MMAP_Memory_Pool.inl:
+
+../dep/include/ace/Local_Memory_Pool.h:
 
 ../dep/include/ace/Unbounded_Set.h:
 
 ../dep/include/ace/Unbounded_Set_Ex.h:
+
+../dep/include/ace/Node.h:
+
+../dep/include/ace/Node.cpp:
 
 ../dep/include/ace/Unbounded_Set_Ex.inl:
 
@@ -1240,6 +1271,56 @@ Main.o: Main.cpp ../dep/include/ace/Log_Msg.h ../dep/include/ace/pre.h \
 ../dep/include/ace/Unbounded_Set.inl:
 
 ../dep/include/ace/Unbounded_Set.cpp:
+
+../dep/include/ace/Configuration.inl:
+
+../dep/include/ace/SString.h:
+
+../dep/include/ace/SString.inl:
+
+../dep/include/ace/Reactor.h:
+
+../dep/include/ace/Timer_Queuefwd.h:
+
+../dep/include/ace/Reactor_Timer_Interface.h:
+
+../dep/include/ace/Reactor.inl:
+
+../dep/include/ace/Reactor_Impl.h:
+
+../dep/include/ace/Countdown_Time.h:
+
+../dep/include/ace/Copy_Disabled.h:
+
+../dep/include/ace/Countdown_Time.inl:
+
+../dep/include/ace/Acceptor.h:
+
+../dep/include/ace/Service_Object.h:
+
+../dep/include/ace/Shared_Object.h:
+
+../dep/include/ace/Shared_Object.inl:
+
+../dep/include/ace/Svc_Conf_Tokens.h:
+
+../dep/include/ace/Svc_Conf_Token_Table.h:
+
+../dep/include/ace/DLL.h:
+
+../dep/include/ace/os_include/os_dlfcn.h:
+
+/usr/include/dlfcn.h:
+
+/usr/include/bits/dlfcn.h:
+
+../dep/include/ace/Service_Gestalt.h:
+
+../dep/include/ace/Unbounded_Queue.h:
+
+../dep/include/ace/Unbounded_Queue.inl:
+
+../dep/include/ace/Unbounded_Queue.cpp:
 
 ../dep/include/ace/Service_Repository.h:
 
@@ -1313,26 +1394,6 @@ Main.o: Main.cpp ../dep/include/ace/Log_Msg.h ../dep/include/ace/pre.h \
 
 ../dep/include/ace/Strategies_T.h:
 
-../dep/include/ace/Hash_Map_Manager_T.h:
-
-../dep/include/ace/Functor_T.h:
-
-../dep/include/ace/Functor.h:
-
-../dep/include/ace/Functor.inl:
-
-../dep/include/ace/Functor_String.h:
-
-../dep/include/ace/Functor_String.inl:
-
-../dep/include/ace/Functor_T.inl:
-
-../dep/include/ace/Functor_T.cpp:
-
-../dep/include/ace/Hash_Map_Manager_T.inl:
-
-../dep/include/ace/Hash_Map_Manager_T.cpp:
-
 ../dep/include/ace/Thread_Manager.h:
 
 ../dep/include/ace/Thread_Exit.h:
@@ -1361,10 +1422,6 @@ Main.o: Main.cpp ../dep/include/ace/Log_Msg.h ../dep/include/ace/pre.h \
 
 ../dep/include/ace/Containers_T.cpp:
 
-../dep/include/ace/Free_List.h:
-
-../dep/include/ace/Free_List.cpp:
-
 ../dep/include/ace/Thread_Manager.inl:
 
 ../dep/include/ace/Connection_Recycling_Strategy.h:
@@ -1380,8 +1437,6 @@ Main.o: Main.cpp ../dep/include/ace/Log_Msg.h ../dep/include/ace/pre.h \
 ../dep/include/ace/Refcountable_T.inl:
 
 ../dep/include/ace/Refcountable_T.cpp:
-
-../dep/include/ace/Null_Mutex.h:
 
 ../dep/include/ace/Hashable.h:
 
@@ -1614,3 +1669,5 @@ ClientService.h:
 /usr/include/malloc.h:
 
 /usr/include/ifaddrs.h:
+
+utils/config/Config.h:

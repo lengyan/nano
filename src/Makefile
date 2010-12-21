@@ -45,7 +45,8 @@ CONFIG_CLEAN_FILES =
 CONFIG_CLEAN_VPATH_FILES =
 am__installdirs = "$(DESTDIR)$(bindir)"
 PROGRAMS = $(bin_PROGRAMS)
-am_nano_OBJECTS = Main.$(OBJEXT) ClientService.$(OBJEXT)
+am_nano_OBJECTS = Main.$(OBJEXT) ClientService.$(OBJEXT) \
+	Config.$(OBJEXT)
 nano_OBJECTS = $(am_nano_OBJECTS)
 nano_DEPENDENCIES = ../dep/lib/ubuntu
 DEFAULT_INCLUDES = -I. -I$(top_builddir)
@@ -156,7 +157,7 @@ top_builddir = ..
 top_srcdir = ..
 AUTOMAKE_OPTIONS = foreign
 INCLUDES = -I ../dep/include
-nano_SOURCES = Main.cpp ClientService.cpp
+nano_SOURCES = Main.cpp ClientService.cpp utils/config/Config.cpp
 #nano_LDADD=-lACE-5.8  -L ~/nanoTest/lib/ubuntu/lib
 nano_LDADD = -lACE  -L ../dep/lib/ubuntu
 all: all-am
@@ -241,6 +242,7 @@ distclean-compile:
 	-rm -f *.tab.c
 
 include ./$(DEPDIR)/ClientService.Po
+include ./$(DEPDIR)/Config.Po
 include ./$(DEPDIR)/Main.Po
 
 .cpp.o:
@@ -256,6 +258,20 @@ include ./$(DEPDIR)/Main.Po
 #	source='$<' object='$@' libtool=no \
 #	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
 #	$(CXXCOMPILE) -c -o $@ `$(CYGPATH_W) '$<'`
+
+Config.o: utils/config/Config.cpp
+	$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT Config.o -MD -MP -MF $(DEPDIR)/Config.Tpo -c -o Config.o `test -f 'utils/config/Config.cpp' || echo '$(srcdir)/'`utils/config/Config.cpp
+	$(am__mv) $(DEPDIR)/Config.Tpo $(DEPDIR)/Config.Po
+#	source='utils/config/Config.cpp' object='Config.o' libtool=no \
+#	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
+#	$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o Config.o `test -f 'utils/config/Config.cpp' || echo '$(srcdir)/'`utils/config/Config.cpp
+
+Config.obj: utils/config/Config.cpp
+	$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT Config.obj -MD -MP -MF $(DEPDIR)/Config.Tpo -c -o Config.obj `if test -f 'utils/config/Config.cpp'; then $(CYGPATH_W) 'utils/config/Config.cpp'; else $(CYGPATH_W) '$(srcdir)/utils/config/Config.cpp'; fi`
+	$(am__mv) $(DEPDIR)/Config.Tpo $(DEPDIR)/Config.Po
+#	source='utils/config/Config.cpp' object='Config.obj' libtool=no \
+#	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
+#	$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o Config.obj `if test -f 'utils/config/Config.cpp'; then $(CYGPATH_W) 'utils/config/Config.cpp'; else $(CYGPATH_W) '$(srcdir)/utils/config/Config.cpp'; fi`
 
 ID: $(HEADERS) $(SOURCES) $(LISP) $(TAGS_FILES)
 	list='$(SOURCES) $(HEADERS) $(LISP) $(TAGS_FILES)'; \
