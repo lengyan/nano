@@ -1,3 +1,4 @@
+== 目录情况 ==
 \bin                  生成可执行文件地址
 \dep
     \include          依赖的第三方include
@@ -6,7 +7,7 @@
 \win                  vs项目文件
 
 
-编译说明
+== 编译说明 == 
 
 win32平台下载5.8.0版本的ace，并将编译生成的include及lib放入dep目录下
 linux平台使用automake，autoconf工具（目前对此工具不熟悉）
