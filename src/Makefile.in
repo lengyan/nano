@@ -45,8 +45,8 @@ CONFIG_CLEAN_FILES =
 CONFIG_CLEAN_VPATH_FILES =
 am__installdirs = "$(DESTDIR)$(bindir)"
 PROGRAMS = $(bin_PROGRAMS)
-am_nano_OBJECTS = Main.$(OBJEXT) ClientService.$(OBJEXT) \
-	Config.$(OBJEXT)
+am_nano_OBJECTS = Main.$(OBJEXT) World.$(OBJEXT) Config.$(OBJEXT) \
+	WorldSocket.$(OBJEXT)
 nano_OBJECTS = $(am_nano_OBJECTS)
 nano_DEPENDENCIES = ../dep/lib/ubuntu
 DEFAULT_INCLUDES = -I.@am__isrc@ -I$(top_builddir)
@@ -157,7 +157,7 @@ top_builddir = @top_builddir@
 top_srcdir = @top_srcdir@
 AUTOMAKE_OPTIONS = foreign
 INCLUDES = -I ../dep/include
-nano_SOURCES = Main.cpp ClientService.cpp utils/Config.cpp
+nano_SOURCES = Main.cpp World.cpp utils/Config.cpp WorldSocket.cpp 
 #nano_LDADD=-lACE-5.8  -L ~/nanoTest/lib/ubuntu/lib
 nano_LDADD = -lACE  -L ../dep/lib/ubuntu
 all: all-am
@@ -241,9 +241,10 @@ mostlyclean-compile:
 distclean-compile:
 	-rm -f *.tab.c
 
-@AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/ClientService.Po@am__quote@
 @AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/Config.Po@am__quote@
 @AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/Main.Po@am__quote@
+@AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/World.Po@am__quote@
+@AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/WorldSocket.Po@am__quote@
 
 .cpp.o:
 @am__fastdepCXX_TRUE@	$(CXXCOMPILE) -MT $@ -MD -MP -MF $(DEPDIR)/$*.Tpo -c -o $@ $<

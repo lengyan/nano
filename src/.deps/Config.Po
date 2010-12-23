@@ -262,7 +262,26 @@ Config.o: utils/Config.cpp utils/Config.h \
  ../dep/include/ace/Unbounded_Set.cpp \
  ../dep/include/ace/Configuration.inl \
  ../dep/include/ace/Configuration_Import_Export.h \
- ../dep/include/ace/SString.h ../dep/include/ace/SString.inl
+ ../dep/include/ace/SString.h ../dep/include/ace/SString.inl \
+ ../dep/include/ace/Singleton.h ../dep/include/ace/TSS_T.h \
+ ../dep/include/ace/TSS_T.inl ../dep/include/ace/TSS_T.cpp \
+ ../dep/include/ace/Thread.h ../dep/include/ace/Thread_Adapter.h \
+ ../dep/include/ace/Thread_Adapter.inl ../dep/include/ace/Thread.inl \
+ ../dep/include/ace/Singleton.inl ../dep/include/ace/Singleton.cpp \
+ ../dep/include/ace/Object_Manager.h \
+ ../dep/include/ace/Recursive_Thread_Mutex.h \
+ ../dep/include/ace/Recursive_Thread_Mutex.inl \
+ ../dep/include/ace/Static_Object_Lock.h \
+ ../dep/include/ace/Object_Manager.inl \
+ ../dep/include/ace/Managed_Object.h \
+ ../dep/include/ace/Managed_Object.inl \
+ ../dep/include/ace/Managed_Object.cpp \
+ ../dep/include/ace/Framework_Component.h \
+ ../dep/include/ace/Framework_Component.inl \
+ ../dep/include/ace/Framework_Component_T.h \
+ ../dep/include/ace/Framework_Component_T.cpp \
+ ../dep/include/ace/os_include/os_typeinfo.h \
+ /usr/include/c++/4.4/typeinfo
 
 utils/Config.h:
 
@@ -1109,3 +1128,51 @@ utils/Config.h:
 ../dep/include/ace/SString.h:
 
 ../dep/include/ace/SString.inl:
+
+../dep/include/ace/Singleton.h:
+
+../dep/include/ace/TSS_T.h:
+
+../dep/include/ace/TSS_T.inl:
+
+../dep/include/ace/TSS_T.cpp:
+
+../dep/include/ace/Thread.h:
+
+../dep/include/ace/Thread_Adapter.h:
+
+../dep/include/ace/Thread_Adapter.inl:
+
+../dep/include/ace/Thread.inl:
+
+../dep/include/ace/Singleton.inl:
+
+../dep/include/ace/Singleton.cpp:
+
+../dep/include/ace/Object_Manager.h:
+
+../dep/include/ace/Recursive_Thread_Mutex.h:
+
+../dep/include/ace/Recursive_Thread_Mutex.inl:
+
+../dep/include/ace/Static_Object_Lock.h:
+
+../dep/include/ace/Object_Manager.inl:
+
+../dep/include/ace/Managed_Object.h:
+
+../dep/include/ace/Managed_Object.inl:
+
+../dep/include/ace/Managed_Object.cpp:
+
+../dep/include/ace/Framework_Component.h:
+
+../dep/include/ace/Framework_Component.inl:
+
+../dep/include/ace/Framework_Component_T.h:
+
+../dep/include/ace/Framework_Component_T.cpp:
+
+../dep/include/ace/os_include/os_typeinfo.h:
+
+/usr/include/c++/4.4/typeinfo:
