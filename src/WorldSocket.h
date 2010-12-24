@@ -1,9 +1,18 @@
+#ifndef _WORLDSOCKET_H
+#define _WORLDSOCKET_H
+
 #include "ace/Message_Block.h"
 #include "ace/SOCK_Stream.h"
 #include "ace/Svc_Handler.h"
 #include "ace/OS.h"
 #include "ace/SOCK_Acceptor.h"
 #include "ace/Acceptor.h"
+
+// 客户端包头格式
+struct ClientPktHeader {
+    ACE_UINT16 size;
+    ACE_UINT16 cmd;
+};
 
 class WorldSocket : public ACE_Svc_Handler<ACE_SOCK_STREAM, ACE_NULL_SYNCH> {
 public:
@@ -16,8 +25,13 @@ public:
 	virtual int handle_close(ACE_HANDLE handle, ACE_Reactor_Mask close_mask);
     int handle_input_header(void);
     int handle_input_body(void);
+    int processMessage();
 private:
     typedef ACE_Svc_Handler<ACE_SOCK_STREAM, ACE_NULL_SYNCH> super;
     ACE_Message_Block headerBuffer;
     ACE_Message_Block *bodyBuffer;
+    ClientPktHeader *header;
 };
+
+
+#endif

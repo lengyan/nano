@@ -1,3 +1,6 @@
+#ifndef _WORLD_H
+#define _WORLD_H
+
 #include "WorldSession.h"
 #include "ace/Basic_Types.h"
 #include "ace/Singleton.h"
@@ -24,3 +27,5 @@ class World
 };
 
 #define sWorld ACE_Singleton<World, ACE_Recursive_Thread_Mutex>::instance()
+
+#endif
