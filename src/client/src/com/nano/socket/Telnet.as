@@ -140,7 +140,7 @@ package com.nano.socket {
          * After appending text, call the setScroll() method which controls
          * the scrolling of the TextArea.
          */
-        private function msg(value:String):void {
+        public function msg(value:String):void {
             ta.text += value;
             ta.dispatchEvent(new Event(Event.CHANGE));
             setTimeout(setScroll, 100);

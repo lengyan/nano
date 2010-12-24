@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <projectDescription>
-	<name>nanoClient</name>
+	<name>client</name>
 	<comment></comment>
 	<projects>
 	</projects>
@@ -19,7 +19,7 @@
 		<link>
 			<name>bin-debug</name>
 			<type>2</type>
-			<location>D:/wamp/www/nanoClient-debug</location>
+			<location>D:/dalton/wamp/www/nanoClient-debug</location>
 		</link>
 	</linkedResources>
 </projectDescription>
