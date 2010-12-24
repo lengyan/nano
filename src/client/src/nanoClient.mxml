@@ -13,9 +13,17 @@
 			}
 			private function sendCommand():void {
 				var ba:ByteArray = new ByteArray();
-				ba.writeMultiByte(command.text + "\n", "UTF-8");
+				// length在中文的时候是错的
+				ba.writeShort(getLength(command.text));
+				ba.writeShort(0);
+				ba.writeUTFBytes(command.text);
 				telnetClient.writeBytesToSocket(ba);
 				command.text = "";
+			}
+			private function getLength(str:String):uint {
+				var b:ByteArray = new ByteArray();
+				b.writeUTFBytes(str);
+				return b.length;
 			}
 		]]>
 	</mx:Script>
@@ -24,7 +32,7 @@
 	
 	<mx:ApplicationControlBar width="100%">
 		<mx:Label text="Server:" />
-		<mx:TextInput id="serverName" width="100%"  text="192.168.1.106"/>
+		<mx:TextInput id="serverName" width="100%"  text="172.17.232.216"/>
 		<mx:Spacer />
 		<mx:Label text="Port:" />
 		<mx:TextInput id="portNumber" text="6060" textAlign="right" maxChars="5" restrict="0-9" />
