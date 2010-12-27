@@ -8,6 +8,11 @@
 #include "ace/SOCK_Acceptor.h"
 #include "ace/Acceptor.h"
 
+// 服务端包头格式
+struct ServerPktHeader {
+    ACE_UINT16 size;
+    ACE_UINT16 cmd;
+};
 // 客户端包头格式
 struct ClientPktHeader {
     ACE_UINT16 size;
@@ -26,6 +31,7 @@ public:
     int handle_input_header(void);
     int handle_input_body(void);
     int processMessage();
+    int sendPacket(ACE_Message_Block &buffer);
 private:
     typedef ACE_Svc_Handler<ACE_SOCK_STREAM, ACE_NULL_SYNCH> super;
     ACE_Message_Block headerBuffer;

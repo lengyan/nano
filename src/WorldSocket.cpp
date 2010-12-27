@@ -119,25 +119,52 @@ int WorldSocket::handle_input(ACE_HANDLE) {
 
             handle_input_body();
         }
+    }
+    ACE_Message_Block sendBuffer(4096);
+    ServerPktHeader header;
+    std::string test = "/hello motohello motohello motohello motohello motohello motohello motohello motohello motohello motohello motohello motohello motohello motohello motohello motohello motohello motohello motohello motohello motohello motohello motohello motohello motohello motohello motohello motohello motohello motohello motohello motohello motohello motohello motohello motohello motohello motohello motohello motohello motohello motohello motohello motohello motohello motohello motohello motohello motohello motohello motohello motohello motohello motohello motohello motohello motohello motohello motohello motohello motohello motohello motohello motohello motohello motohello motohello motohello motohello motohello moto/";
+    header.size = htons(test.length() + 1);
+    header.cmd = htons(0);
 
-        // 对返回值不是特别理解
-        return 0;
+    int i = 0;
+    while(1) {
+        sendBuffer.copy((char *)&header, sizeof(header));
+        sendBuffer.copy(test.c_str());
+        //ACE_DEBUG((LM_DEBUG, ACE_TEXT("return code:%i\n"), sendPacket(sendBuffer)));
+        if (-1 == sendPacket(sendBuffer)) break;
+        sendBuffer.reset();
+        ACE_OS::sleep(ACE_Time_Value(0, 1000*100));
+        if (i++ > 50) break;
     }
 
-    /*
-	send_cnt = this->peer().send(buffer, ACE_static_cast(size_t, recv_cnt));
-	if (send_cnt == recv_cnt)
+	return 0;
+}
+
+/**
+ * 发送服务端包
+ *
+ * */
+int WorldSocket::sendPacket(ACE_Message_Block &buffer) {
+    ssize_t sendCnt,
+            bufferCnt = ACE_static_cast(size_t, buffer.length());
+	sendCnt = this->peer().send(buffer.rd_ptr(), bufferCnt);
+    // send
+    // ACE_HEX_DUMP((LM_DEBUG, buffer.rd_ptr(), buffer.length(), "send:"));
+    ACE_DEBUG((LM_DEBUG, ACE_TEXT("%i\n"), sendCnt)); 
+	if (sendCnt == bufferCnt)
 		return 0;
-	if (send_cnt == -1 && ACE_OS::last_error() != EWOULDBLOCK)
+	if (sendCnt == -1 && ACE_OS::last_error() != EWOULDBLOCK)
 		ACE_ERROR_RETURN((LM_ERROR,
 						ACE_TEXT("%P|%t) %p\n"),
 						ACE_TEXT("send")),
-						0);
-	if (send_cnt == -1)
-		send_cnt = 0;
+						-1);
+	if (sendCnt == -1)
+		sendCnt = 0;
+    // 移动指针
+    buffer.rd_ptr(sendCnt);
 	ACE_Message_Block *mb;
-	size_t remaining = ACE_static_cast(size_t, (recv_cnt - send_cnt));
-	ACE_NEW_RETURN(mb, ACE_Message_Block(&buffer[send_cnt], remaining), -1);
+	size_t remaining = ACE_static_cast(size_t, (bufferCnt - sendCnt));
+	ACE_NEW_RETURN(mb, ACE_Message_Block(buffer.rd_ptr(), remaining), -1);
 	int output_off = this->msg_queue()->is_empty();
 	ACE_Time_Value nowait(ACE_OS::gettimeofday());
 	if (this->putq(mb, &nowait) == -1) {
@@ -149,10 +176,11 @@ int WorldSocket::handle_input(ACE_HANDLE) {
 	}
 	if (output_off)
 		return this->reactor()->register_handler(this, ACE_Event_Handler::WRITE_MASK);
-    */
-	return 0;
 }
 
+/**
+ * 处理输出,reator输出事件回调函数
+ * */
 int WorldSocket::handle_output(ACE_HANDLE) {
 	ACE_Message_Block *mb;
 	ACE_Time_Value nowait(ACE_OS::gettimeofday());
@@ -174,6 +202,7 @@ int WorldSocket::handle_output(ACE_HANDLE) {
 }
 
 // 处理接收到的头部
+// FIXME header第一次出错后如何处理
 int WorldSocket::handle_input_header(void) {
     header = (ClientPktHeader *) headerBuffer.rd_ptr();
     // 网络字节序->小端字节序
@@ -221,7 +250,6 @@ int WorldSocket::processMessage() {
     ACE_UINT16 opcode = header->cmd;
     switch (opcode) {
         case CMSG_TEST:
-            ACE_DEBUG((LM_DEBUG, ACE_TEXT("test")));
             break;
     }
     return 0;

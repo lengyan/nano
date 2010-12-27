@@ -9,7 +9,7 @@
  * */
 enum Opcodes
 {
-    CMSG_TEST                           = 0x0001
+    CMSG_TEST                           = 0x0000
 };
 
 #endif
