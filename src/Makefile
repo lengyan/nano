@@ -46,7 +46,8 @@ CONFIG_CLEAN_VPATH_FILES =
 am__installdirs = "$(DESTDIR)$(bindir)"
 PROGRAMS = $(bin_PROGRAMS)
 am_nano_OBJECTS = Main.$(OBJEXT) World.$(OBJEXT) Config.$(OBJEXT) \
-	WorldSocket.$(OBJEXT)
+	WorldSocket.$(OBJEXT) WorldTask.$(OBJEXT) \
+	WorldSession.$(OBJEXT)
 nano_OBJECTS = $(am_nano_OBJECTS)
 nano_DEPENDENCIES = ../dep/lib/ubuntu
 DEFAULT_INCLUDES = -I. -I$(top_builddir)
@@ -157,7 +158,7 @@ top_builddir = ..
 top_srcdir = ..
 AUTOMAKE_OPTIONS = foreign
 INCLUDES = -I ../dep/include
-nano_SOURCES = Main.cpp World.cpp utils/Config.cpp WorldSocket.cpp 
+nano_SOURCES = Main.cpp World.cpp utils/Config.cpp WorldSocket.cpp WorldTask.cpp WorldSession.cpp
 #nano_LDADD=-lACE-5.8  -L ~/nanoTest/lib/ubuntu/lib
 nano_LDADD = -lACE  -L ../dep/lib/ubuntu
 all: all-am
@@ -244,7 +245,9 @@ distclean-compile:
 include ./$(DEPDIR)/Config.Po
 include ./$(DEPDIR)/Main.Po
 include ./$(DEPDIR)/World.Po
+include ./$(DEPDIR)/WorldSession.Po
 include ./$(DEPDIR)/WorldSocket.Po
+include ./$(DEPDIR)/WorldTask.Po
 
 .cpp.o:
 	$(CXXCOMPILE) -MT $@ -MD -MP -MF $(DEPDIR)/$*.Tpo -c -o $@ $<

@@ -958,7 +958,7 @@
 
 /* Define to 1 to support unaligned CDR */
 /* #undef ACE_LACKS_CDR_ALIGNMENT */
-
+//#define ACE_LACKS_CDR_ALIGNMENT 1
 /* Compiler does not have any istream operator>> for chars, u_chars, or signed
    chars. */
 #define ACE_LACKS_CHAR_RIGHT_SHIFTS 1

@@ -18,7 +18,8 @@ WorldSocket::WorldSocket():headerBuffer(sizeof(ClientPktHeader)),
 WorldSocket::~WorldSocket() {
     if (bodyBuffer)
         delete bodyBuffer;
-    
+    if (header)
+        delete header;
 }
 
 int WorldSocket::open(void *p) {
@@ -36,7 +37,10 @@ int WorldSocket::open(void *p) {
 
 	return 0;
 }
-
+/**
+ * 处理输入
+ * @return int -1代表此次处理出错,将调用handleclose,0代表继续检测事件,>0代表调用检测事件(需小心,除非你真有把握没读取完),并继续检测
+ **/
 int WorldSocket::handle_input(ACE_HANDLE) {
 	const size_t INPUT_SIZE = 4096;
 	char buffer[INPUT_SIZE];
@@ -93,7 +97,7 @@ int WorldSocket::handle_input(ACE_HANDLE) {
                 ACE_ASSERT(readBuffer.length() == 0);
                 // 当前资源不可用,等下再读
                 errno = EWOULDBLOCK;
-                return -1;
+                return 0;
             }
             if (handle_input_header() == -1) {
                 return -1;
@@ -114,27 +118,11 @@ int WorldSocket::handle_input(ACE_HANDLE) {
                 ACE_ASSERT(readBuffer.length() == 0);
                 // 当前资源不可用,等下再读
                 errno = EWOULDBLOCK;
-                return -1;
+                return 0;
             }
 
             handle_input_body();
         }
-    }
-    ACE_Message_Block sendBuffer(4096);
-    ServerPktHeader header;
-    std::string test = "/hello motohello motohello motohello motohello motohello motohello motohello motohello motohello motohello motohello motohello motohello motohello motohello motohello motohello motohello motohello motohello motohello motohello motohello motohello motohello motohello motohello motohello motohello motohello motohello motohello motohello motohello motohello motohello motohello motohello motohello motohello motohello motohello motohello motohello motohello motohello motohello motohello motohello motohello motohello motohello motohello motohello motohello motohello motohello motohello motohello motohello motohello motohello motohello motohello motohello motohello motohello motohello motohello motohello moto/";
-    header.size = htons(test.length() + 1);
-    header.cmd = htons(0);
-
-    int i = 0;
-    while(1) {
-        sendBuffer.copy((char *)&header, sizeof(header));
-        sendBuffer.copy(test.c_str());
-        //ACE_DEBUG((LM_DEBUG, ACE_TEXT("return code:%i\n"), sendPacket(sendBuffer)));
-        if (-1 == sendPacket(sendBuffer)) break;
-        sendBuffer.reset();
-        ACE_OS::sleep(ACE_Time_Value(0, 1000*100));
-        if (i++ > 50) break;
     }
 
 	return 0;
@@ -147,6 +135,7 @@ int WorldSocket::handle_input(ACE_HANDLE) {
 int WorldSocket::sendPacket(ACE_Message_Block &buffer) {
     ssize_t sendCnt,
             bufferCnt = ACE_static_cast(size_t, buffer.length());
+    // FIXME 发送给一个已经关闭的peer,会出错的
 	sendCnt = this->peer().send(buffer.rd_ptr(), bufferCnt);
     // send
     // ACE_HEX_DUMP((LM_DEBUG, buffer.rd_ptr(), buffer.length(), "send:"));
@@ -202,7 +191,6 @@ int WorldSocket::handle_output(ACE_HANDLE) {
 }
 
 // 处理接收到的头部
-// FIXME header第一次出错后如何处理
 int WorldSocket::handle_input_header(void) {
     header = (ClientPktHeader *) headerBuffer.rd_ptr();
     // 网络字节序->小端字节序
@@ -248,6 +236,7 @@ int WorldSocket::handle_input_body(void) {
  * */
 int WorldSocket::processMessage() {
     ACE_UINT16 opcode = header->cmd;
+    // 插入处理队列,多线程处理游戏逻辑,不在这里处理,否则会阻塞
     switch (opcode) {
         case CMSG_TEST:
             break;

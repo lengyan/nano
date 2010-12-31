@@ -36,3 +36,7 @@ void World::run() {
     ACE_DEBUG((LM_DEBUG, ACE_TEXT("start reactor\n")));
 	// ACE_Reactor::instance()->run_reactor_event_loop();
 }
+
+void World::addSession(WorldSession* s) {
+    sessionList.push_back(s);
+}
