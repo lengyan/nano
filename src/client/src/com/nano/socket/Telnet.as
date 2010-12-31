@@ -21,6 +21,11 @@ package com.nano.socket {
         private var socket:Socket;
         private var ta:TextArea;
         private var state:int = 0;
+		private var isReadHead:Boolean = false;
+		private var headLen:uint = 4;
+		private var bodyLen:uint;
+		private var headerBuffer:ByteArray = new ByteArray();
+		private var bodyBuffer:ByteArray = new ByteArray();
         
         public function Telnet(server:String, port:int, output:TextArea) {
             // set class variables to the values passed to the constructor.
@@ -95,44 +100,81 @@ package com.nano.socket {
          * This method is called when the socket receives data from the server.
          */
         private function dataHandler(event:ProgressEvent):void {
-            var n:int = socket.bytesAvailable;
-            // Loop through each available byte returned from the socket connection.
-            while (--n >= 0) {
-                // Read next available byte.
-                var b:int = socket.readUnsignedByte();
-                switch (state) {
-                    case 0:
-                        // If the current byte is the "Interpret as Command" code, set the state to 1.
-                        if (b == IAC) {
-                            state = 1;
-                        // Else, if the byte is not a carriage return, display the character using the msg() method.
-                        } else if (b != CR) {
-                            msg(String.fromCharCode(b));
-                        }
-                        break;
-                    case 1:
-                        // If the current byte is the "DO" code, set the state to 2.
-                        if (b == DO) {
-                            state = 2;
-                        } else {
-                            state = 0;
-                        }
-                        break;
-                    // Blindly reject the option.
-                    case 2:
-                        /*
-                            Write the "Interpret as Command" code, "WONT" code, 
-                            and current byte to the socket and send the contents 
-                            to the server by calling the flush() method.
-                        */
-                        socket.writeByte(IAC);
-                        socket.writeByte(WONT);
-                        socket.writeByte(b);
-                        socket.flush();
-                        state = 0;
-                        break;
-                }
-            }
+//			var n:int = socket.bytesAvailable;
+//			trace(n);
+//			msg("recv:" + socket.readUTFBytes(n));
+//			msg("\n");
+			var readLen:uint = 0;
+			
+			trace(socket.bytesAvailable);
+			// 如果头长度还不够
+			if (headerBuffer.length < headLen) {
+				readLen = socket.bytesAvailable > (headLen - headerBuffer.length) ? (headLen - headerBuffer.length) : socket.bytesAvailable;
+				if (readLen > 0) {
+					//处理数据
+					socket.readBytes(headerBuffer, headerBuffer.length, readLen);                   
+					
+					if (headerBuffer.length < headLen)
+						return;
+					
+					bodyLen = headerBuffer.readShort();
+					trace("bodyLen:" + bodyLen);
+					trace("cmd:" + headerBuffer.readShort()); 
+					headerBuffer.clear();
+				}
+			}
+			if (bodyBuffer.length < bodyLen) {
+				readLen = socket.bytesAvailable > (bodyLen - bodyBuffer.length) ? (bodyLen - bodyBuffer.length) : socket.bytesAvailable;
+				if (readLen > 0) {
+					//处理数据
+					socket.readBytes(bodyBuffer, bodyBuffer.length, readLen);
+					
+					if (bodyBuffer.length < bodyLen)
+						return;
+					var lsStr:String = bodyBuffer.readUTFBytes(bodyLen);
+					msg("recv:" + lsStr + "\n");
+					bodyBuffer.clear();
+				}
+			}
+			
+//            var n:int = socket.bytesAvailable;
+//            // Loop through each available byte returned from the socket connection.
+//            while (--n >= 0) {
+//                // Read next available byte.
+//                var b:int = socket.readUnsignedByte();
+//                switch (state) {
+//                    case 0:
+//                        // If the current byte is the "Interpret as Command" code, set the state to 1.
+//                        if (b == IAC) {
+//                            state = 1;
+//                        // Else, if the byte is not a carriage return, display the character using the msg() method.
+//                        } else if (b != CR) {
+//                            msg(String.fromCharCode(b));
+//                        }
+//                        break;
+//                    case 1:
+//                        // If the current byte is the "DO" code, set the state to 2.
+//                        if (b == DO) {
+//                            state = 2;
+//                        } else {
+//                            state = 0;
+//                        }
+//                        break;
+//                    // Blindly reject the option.
+//                    case 2:
+//                        /*
+//                            Write the "Interpret as Command" code, "WONT" code, 
+//                            and current byte to the socket and send the contents 
+//                            to the server by calling the flush() method.
+//                        */
+//                        socket.writeByte(IAC);
+//                        socket.writeByte(WONT);
+//                        socket.writeByte(b);
+//                        socket.flush();
+//                        state = 0;
+//                        break;
+//                }
+//            }
         }
         
         /**
