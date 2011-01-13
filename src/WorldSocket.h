@@ -1,3 +1,16 @@
+/*
+ * Title: 世界Socket管理
+ * Description: 世界Socket管理
+ * Copyright (c) 2010 Nano.Studio, All rights reserved.
+ * 
+ * Version : 1.0
+ *
+ * Create    
+ *     Author: Dalton
+ *     Date: 2011-01-03
+ *     Email: zhust2003@gmail.com 
+ */
+
 #ifndef _WORLDSOCKET_H
 #define _WORLDSOCKET_H
 
@@ -7,17 +20,22 @@
 #include "ace/OS.h"
 #include "ace/SOCK_Acceptor.h"
 #include "ace/Acceptor.h"
+#include "WorldPacket.h"
+#include "WorldSession.h"
+#include "World.h"
 
 // 服务端包头格式
 struct ServerPktHeader {
-    ACE_UINT16 size;
-    ACE_UINT16 cmd;
+    uint16 size;
+    uint16 cmd;
 };
 // 客户端包头格式
 struct ClientPktHeader {
-    ACE_UINT16 size;
-    ACE_UINT16 cmd;
+    uint16 size;
+    uint16 cmd;
 };
+
+
 
 class WorldSocket : public ACE_Svc_Handler<ACE_SOCK_STREAM, ACE_NULL_SYNCH> {
 public:
@@ -34,9 +52,14 @@ public:
     int sendPacket(ACE_Message_Block &buffer);
 private:
     typedef ACE_Svc_Handler<ACE_SOCK_STREAM, ACE_NULL_SYNCH> super;
+    // 消息头缓冲区
     ACE_Message_Block headerBuffer;
-    ACE_Message_Block *bodyBuffer;
-    ClientPktHeader *header;
+    // 消息体缓冲区
+    ACE_Message_Block bodyBuffer;
+    // 包里的消息
+    WorldPacket* packet;
+    // 世界会话
+    WorldSession* session;
 };
 
 

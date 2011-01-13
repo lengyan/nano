@@ -2,9 +2,8 @@
 #define _WORLD_H
 
 #include "WorldSession.h"
-#include "ace/Basic_Types.h"
 #include "ace/Singleton.h"
-#include <vector>
+#include <deque>
 
 // 世界,用来管理所有的游戏会话
 
@@ -23,11 +22,11 @@ class World
 
         // 维护会话
         void addSession(WorldSession* s);
-        bool removeSession(ACE_UINT32 id);
+        bool removeSession(uint32 id);
     private:
-        std::vector<WorldSession*> sessionList;
+        LockedQueue<WorldSession*, ACE_Thread_Mutex> sessionDeque;
 };
 
-#define sWorld ACE_Singleton<World, ACE_Recursive_Thread_Mutex>::instance()
+#define gWorld ACE_Singleton<World, ACE_Recursive_Thread_Mutex>::instance()
 
 #endif

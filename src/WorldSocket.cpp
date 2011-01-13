@@ -1,27 +1,40 @@
+/**
+ * @file WorldSocket.cpp
+ * @brief  世界Socket管理
+ * @author Dalton
+ * @version 0.1
+ * @date 2011-01-08
+ */
+
 #include "WorldSocket.h"
 #include <fstream>
 #include <string>
 #include <iostream>
 #include "ace/Basic_Types.h"
 #include "Opcodes.h"
+#include "utils/Logger.h"
 
-
-
-// 构造函数
+/**
+ * @brief   WorldSocket 构造函数
+ *
+ */
 WorldSocket::WorldSocket():headerBuffer(sizeof(ClientPktHeader)),
-                           bodyBuffer(0),                        
-                           header(0)
+                           bodyBuffer()
 {
 
 }
 
 WorldSocket::~WorldSocket() {
-    if (bodyBuffer)
-        delete bodyBuffer;
-    if (header)
-        delete header;
+    delete packet;
 }
 
+/**
+ * @brief   open 打开socket
+ *
+ * @param   p
+ *
+ * @return  
+ */
 int WorldSocket::open(void *p) {
     // 不知到干啥的
 	if (super::open(p) == -1)
@@ -37,10 +50,16 @@ int WorldSocket::open(void *p) {
 
 	return 0;
 }
+
 /**
- * 处理输入
- * @return int -1代表此次处理出错,将调用handleclose,0代表继续检测事件,>0代表调用检测事件(需小心,除非你真有把握没读取完),并继续检测
- **/
+ * @brief   handle_input 处理输入
+ *
+ * @param   ACE_HANDLE
+ *
+ * @return  -1代表此次处理出错,将调用handleclose,
+ *          0代表继续检测事件,
+ *          >0代表调用检测事件(需小心,除非你真有把握没读取完),并继续检测
+ */
 int WorldSocket::handle_input(ACE_HANDLE) {
 	const size_t INPUT_SIZE = 4096;
 	char buffer[INPUT_SIZE];
@@ -72,7 +91,7 @@ int WorldSocket::handle_input(ACE_HANDLE) {
 
     // 如果是策略文件请求
     if (flashRequest.compare(readBuffer.rd_ptr()) == 0) {
-        std::cout << "send crossdomain" << std::endl;
+        gLogger->info("send crossdomain\n");
         // send crossdomain
         std::ifstream ifs("crossdomain.xml");
         std::string content((std::istreambuf_iterator<char>(ifs)), 
@@ -105,15 +124,15 @@ int WorldSocket::handle_input(ACE_HANDLE) {
         }
 
         // 如果包体有空余
-        if (bodyBuffer->space() > 0) {
+        if (bodyBuffer.space() > 0) {
             // 最多只取头部那么大
-            const size_t copySize = (readBuffer.length() > bodyBuffer->space() ? bodyBuffer->space() : readBuffer.length());
-            bodyBuffer->copy(readBuffer.rd_ptr(), copySize);
+            const size_t copySize = (readBuffer.length() > bodyBuffer.space() ? bodyBuffer.space() : readBuffer.length());
+            bodyBuffer.copy(readBuffer.rd_ptr(), copySize);
             // 移动指针
             readBuffer.rd_ptr(copySize);
 
             // 如果还是没接收完头部,重新接收
-            if (bodyBuffer->space() > 0) {
+            if (bodyBuffer.space() > 0) {
                 // 应该不可能还没有读完缓存
                 ACE_ASSERT(readBuffer.length() == 0);
                 // 当前资源不可用,等下再读
@@ -129,9 +148,12 @@ int WorldSocket::handle_input(ACE_HANDLE) {
 }
 
 /**
- * 发送服务端包
+ * @brief   sendPacket 发送服务端包
  *
- * */
+ * @param   buffer
+ *
+ * @return  
+ */
 int WorldSocket::sendPacket(ACE_Message_Block &buffer) {
     ssize_t sendCnt,
             bufferCnt = ACE_static_cast(size_t, buffer.length());
@@ -168,8 +190,12 @@ int WorldSocket::sendPacket(ACE_Message_Block &buffer) {
 }
 
 /**
- * 处理输出,reator输出事件回调函数
- * */
+ * @brief   handle_output 处理输出,reator输出事件回调函数
+ *
+ * @param   ACE_HANDLE
+ *
+ * @return  
+ */
 int WorldSocket::handle_output(ACE_HANDLE) {
 	ACE_Message_Block *mb;
 	ACE_Time_Value nowait(ACE_OS::gettimeofday());
@@ -190,9 +216,13 @@ int WorldSocket::handle_output(ACE_HANDLE) {
 	return (this->msg_queue()->is_empty()) ? -1 : 0;
 }
 
-// 处理接收到的头部
+/**
+ * @brief   handle_input_header 处理接收到的头部
+ *
+ * @return  
+ */
 int WorldSocket::handle_input_header(void) {
-    header = (ClientPktHeader *) headerBuffer.rd_ptr();
+    ClientPktHeader* header = (ClientPktHeader*) headerBuffer.rd_ptr();
     // 网络字节序->小端字节序
     // intel为小端
     header->size = ntohs(header->size);
@@ -205,46 +235,72 @@ int WorldSocket::handle_input_header(void) {
         return -1;
     }
     // 打印头部的信息
-    ACE_HEX_DUMP((LM_DEBUG, headerBuffer.rd_ptr(), headerBuffer.length(), "header:"));
-    ACE_DEBUG((LM_DEBUG, ACE_TEXT("header size %i, header cmd %i\n"), header->size, header->cmd));
-    // 初始化bodyBuffer大小
-    bodyBuffer = new ACE_Message_Block(header->size);
+    gLogger->hexDump(LM_DEBUG, headerBuffer.rd_ptr(), headerBuffer.length(), "header:");
+    gLogger->debug("header size %i, header cmd %i\n", header->size, header->cmd);
+    
+    // 初始化世界包
+    ACE_NEW_RETURN(packet, WorldPacket(header->cmd, header->size), -1);
+
+    // 分配空间
+    packet->resize(header->size);
+    
+    // 重新初始化bodyBuffer
+    bodyBuffer.init((char*) packet->contents(),packet->size());
 }
 
 /**
- * 处理包体信息
+ * @brief   handle_input_body 处理包体信息
  *
- * @return int
- * */
+ * @return  
+ */
 int WorldSocket::handle_input_body(void) {
     // 断言包头及包体应该都接收满
     ACE_ASSERT(headerBuffer.space() == 0);
-    ACE_ASSERT(bodyBuffer->space() == 0);
+    ACE_ASSERT(bodyBuffer.space() == 0);
+    
     // 打印头部的信息
-    ACE_HEX_DUMP((LM_DEBUG, bodyBuffer->rd_ptr(), bodyBuffer->length(), "body:"));
+    gLogger->hexDump(LM_DEBUG, (char*)packet->contents(), packet->size(), "body:");
     processMessage();
 
     // 重置缓存
     headerBuffer.reset();
-    bodyBuffer->reset();
+    bodyBuffer.reset();
 
     return 0;
 }
 
 /**
- * 处理消息
- * */
+ * @brief   processMessage 处理消息
+ *
+ * @return  
+ */
 int WorldSocket::processMessage() {
-    ACE_UINT16 opcode = header->cmd;
+    uint16 opcode = packet->getOpcode();
+    uint32 id = 1;
     // 插入处理队列,多线程处理游戏逻辑,不在这里处理,否则会阻塞
     switch (opcode) {
+        // 用户认证协议
+        case CMSG_AUTH_SESSION:
+            // TODO 一堆验证逻辑
+            // 生成会话对象
+            ACE_NEW_RETURN(session, WorldSession(id, this), -1);
+            // 给世界增加会话
+            gWorld->addSession(session);
+            break;
         case CMSG_TEST:
             break;
     }
     return 0;
 }
 
-// 处理关闭
+/**
+ * @brief   handle_close 处理关闭
+ *
+ * @param   h
+ * @param   mask
+ *
+ * @return  
+ */
 int WorldSocket::handle_close(ACE_HANDLE h, ACE_Reactor_Mask mask) {
 	if (mask == ACE_Event_Handler::WRITE_MASK)
 		return 0;

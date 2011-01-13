@@ -1,15 +1,25 @@
+/*
+ * Title: 世界心跳任务
+ * Description: 世界心跳任务
+ * Copyright (c) 2010 Nano.Studio, All rights reserved.
+ * 
+ * Version : 1.0
+ *
+ * Create    
+ *     Author: Dalton
+ *     Date: 2011-01-03
+ *     Email: zhust2003@gmail.com 
+ */
+
 #ifndef _WORLDTASK_H
 #define _WORLDTASK_H
 
 #include "ace/Task.h"
-// world task
-// 世界心跳更新
-// 主要流程,迭代会话,执行会话更新
-// ok
+
 class WorldTask : public ACE_Task_Base
 {
     public:
-        int svc(void);
+        virtual int svc(void);
 };
 
 #endif

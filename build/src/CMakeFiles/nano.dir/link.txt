@@ -1,0 +1,1 @@
+/usr/bin/c++      CMakeFiles/nano.dir/Main.cpp.o CMakeFiles/nano.dir/World.cpp.o CMakeFiles/nano.dir/utils/Config.cpp.o CMakeFiles/nano.dir/utils/Logger.cpp.o CMakeFiles/nano.dir/WorldSocket.cpp.o CMakeFiles/nano.dir/WorldSession.cpp.o CMakeFiles/nano.dir/WorldTask.cpp.o  -o nano -rdynamic -L/home/dalton/nano/dep/lib/ubuntu -lACE -Wl,-rpath,/home/dalton/nano/dep/lib/ubuntu 

@@ -18,4 +18,4 @@ class Config
         ACE_Configuration_Heap config;
 };
 
-#define sConfig ACE_Singleton<Config, ACE_Recursive_Thread_Mutex>::instance()
+#define gConfig ACE_Singleton<Config, ACE_Recursive_Thread_Mutex>::instance()

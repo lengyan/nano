@@ -1,11 +1,27 @@
+/*
+ * Title: 世界心跳任务
+ * Description: 世界心跳任务
+ * Copyright (c) 2010 Nano.Studio, All rights reserved.
+ * 
+ * Version : 1.0
+ *
+ * Create    
+ *     Author: Dalton
+ *     Date: 2011-01-03
+ *     Email: zhust2003@gmail.com 
+ */
+ 
 #include "WorldTask.h"
+#include "World.h"
+#include "utils/Logger.h"
 
 /**
  * 世界运行线程
  * */
 int WorldTask::svc(void) {
     while(1) {
-        ACE_DEBUG((LM_DEBUG, ACE_TEXT("world thread run\n")));
+        gLogger->debug("world thread run\n");
+        gWorld->update();
         ACE_OS::sleep(4);
     }
 }
