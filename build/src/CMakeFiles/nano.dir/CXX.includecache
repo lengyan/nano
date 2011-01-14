@@ -3322,6 +3322,12 @@ utils/Logger.h
 ace/Basic_Types.h
 /home/dalton/nano/src/ace/Basic_Types.h
 
+/home/dalton/nano/src/ChatHandler.cpp
+string
+-
+WorldSession.h
+/home/dalton/nano/src/WorldSession.h
+
 /home/dalton/nano/src/Common.h
 set
 -
@@ -3364,7 +3370,13 @@ utils/Logger.h
 vector
 -
 
+/home/dalton/nano/src/Opcodes.cpp
+Opcodes.h
 /home/dalton/nano/src/Opcodes.h
+
+/home/dalton/nano/src/Opcodes.h
+WorldSession.h
+/home/dalton/nano/src/WorldSession.h
 
 /home/dalton/nano/src/World.cpp
 World.h
@@ -3389,7 +3401,7 @@ WorldSession.h
 /home/dalton/nano/src/WorldSession.h
 ace/Singleton.h
 /home/dalton/nano/src/ace/Singleton.h
-deque
+map
 -
 
 /home/dalton/nano/src/WorldPacket.h
@@ -3399,6 +3411,8 @@ ByteBuffer.h
 /home/dalton/nano/src/WorldSession.cpp
 WorldSession.h
 /home/dalton/nano/src/WorldSession.h
+Opcodes.h
+/home/dalton/nano/src/Opcodes.h
 
 /home/dalton/nano/src/WorldSession.h
 deque
@@ -3460,10 +3474,6 @@ utils/Logger.h
 ace/Task.h
 /home/dalton/nano/src/ace/Task.h
 
-/home/dalton/nano/src/utils/Config.cpp
-Config.h
-/home/dalton/nano/src/utils/Config.h
-
 /home/dalton/nano/src/utils/Config.h
 ace/Configuration.h
 /home/dalton/nano/src/utils/ace/Configuration.h
@@ -3471,10 +3481,6 @@ ace/Configuration_Import_Export.h
 /home/dalton/nano/src/utils/ace/Configuration_Import_Export.h
 ace/Singleton.h
 /home/dalton/nano/src/utils/ace/Singleton.h
-
-/home/dalton/nano/src/utils/Logger.cpp
-Logger.h
-/home/dalton/nano/src/utils/Logger.h
 
 /home/dalton/nano/src/utils/Logger.h
 ace/Singleton.h

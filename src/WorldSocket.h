@@ -50,6 +50,7 @@ public:
     int handle_input_body(void);
     int processMessage();
     int sendPacket(ACE_Message_Block &buffer);
+    bool isClosed();
 private:
     typedef ACE_Svc_Handler<ACE_SOCK_STREAM, ACE_NULL_SYNCH> super;
     // 消息头缓冲区
@@ -60,6 +61,8 @@ private:
     WorldPacket* packet;
     // 世界会话
     WorldSession* session;
+    // 是否已经关闭会话
+    bool isClose;
 };
 
 

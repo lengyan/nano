@@ -6,6 +6,8 @@ FILE(REMOVE_RECURSE
   "CMakeFiles/nano.dir/WorldSocket.cpp.o"
   "CMakeFiles/nano.dir/WorldSession.cpp.o"
   "CMakeFiles/nano.dir/WorldTask.cpp.o"
+  "CMakeFiles/nano.dir/ChatHandler.cpp.o"
+  "CMakeFiles/nano.dir/Opcodes.cpp.o"
   "nano.pdb"
   "nano"
 )

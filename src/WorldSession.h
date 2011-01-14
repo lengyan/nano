@@ -35,9 +35,14 @@ class WorldSession
         WorldSession(uint32 id, WorldSocket* worldSocket);
         WorldSession(uint32 id);
         ~WorldSession();
-        void update();
+        bool update();
+        uint32 getUserId();
         void pushMessage(WorldPacket*);
         void echo();
+
+        // handler
+        void handleChat(WorldPacket& packet);
+        void handleNull(WorldPacket& packet);
     private:
         uint32 id;
         WorldSocket* worldSocket;

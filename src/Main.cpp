@@ -19,8 +19,7 @@
 #include "WorldTask.h"
 #include "utils/Logger.h"
 #include <vector>
-#define A 10
-#define B A*10
+
 /**
  * @brief   ACE_TMAIN 
  *
@@ -30,7 +29,6 @@
  * @return  
  */
 int ACE_TMAIN(int argc, ACE_TCHAR **argv) {    
-    gLogger->info("%d", B);
     gLogger->info("<============================================================================>\n");
     gLogger->info(" )HQQQQc      :HQQQ8[        ]QQ(      9WQQQm       3$QQWH`     <yQ@T?VQQw.   \n");
     gLogger->info("   -$QQm        :Qf         .QQQ[        )QQQc        3Q`     .yQ@'    'WWm,  \n");

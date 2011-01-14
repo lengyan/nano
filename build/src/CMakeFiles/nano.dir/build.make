@@ -214,6 +214,54 @@ src/CMakeFiles/nano.dir/WorldTask.cpp.o.provides: src/CMakeFiles/nano.dir/WorldT
 src/CMakeFiles/nano.dir/WorldTask.cpp.o.provides.build: src/CMakeFiles/nano.dir/WorldTask.cpp.o
 .PHONY : src/CMakeFiles/nano.dir/WorldTask.cpp.o.provides.build
 
+src/CMakeFiles/nano.dir/ChatHandler.cpp.o: src/CMakeFiles/nano.dir/flags.make
+src/CMakeFiles/nano.dir/ChatHandler.cpp.o: ../src/ChatHandler.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/dalton/nano/build/CMakeFiles $(CMAKE_PROGRESS_8)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/CMakeFiles/nano.dir/ChatHandler.cpp.o"
+	cd /home/dalton/nano/build/src && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/nano.dir/ChatHandler.cpp.o -c /home/dalton/nano/src/ChatHandler.cpp
+
+src/CMakeFiles/nano.dir/ChatHandler.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/nano.dir/ChatHandler.cpp.i"
+	cd /home/dalton/nano/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/dalton/nano/src/ChatHandler.cpp > CMakeFiles/nano.dir/ChatHandler.cpp.i
+
+src/CMakeFiles/nano.dir/ChatHandler.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/nano.dir/ChatHandler.cpp.s"
+	cd /home/dalton/nano/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/dalton/nano/src/ChatHandler.cpp -o CMakeFiles/nano.dir/ChatHandler.cpp.s
+
+src/CMakeFiles/nano.dir/ChatHandler.cpp.o.requires:
+.PHONY : src/CMakeFiles/nano.dir/ChatHandler.cpp.o.requires
+
+src/CMakeFiles/nano.dir/ChatHandler.cpp.o.provides: src/CMakeFiles/nano.dir/ChatHandler.cpp.o.requires
+	$(MAKE) -f src/CMakeFiles/nano.dir/build.make src/CMakeFiles/nano.dir/ChatHandler.cpp.o.provides.build
+.PHONY : src/CMakeFiles/nano.dir/ChatHandler.cpp.o.provides
+
+src/CMakeFiles/nano.dir/ChatHandler.cpp.o.provides.build: src/CMakeFiles/nano.dir/ChatHandler.cpp.o
+.PHONY : src/CMakeFiles/nano.dir/ChatHandler.cpp.o.provides.build
+
+src/CMakeFiles/nano.dir/Opcodes.cpp.o: src/CMakeFiles/nano.dir/flags.make
+src/CMakeFiles/nano.dir/Opcodes.cpp.o: ../src/Opcodes.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/dalton/nano/build/CMakeFiles $(CMAKE_PROGRESS_9)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/CMakeFiles/nano.dir/Opcodes.cpp.o"
+	cd /home/dalton/nano/build/src && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/nano.dir/Opcodes.cpp.o -c /home/dalton/nano/src/Opcodes.cpp
+
+src/CMakeFiles/nano.dir/Opcodes.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/nano.dir/Opcodes.cpp.i"
+	cd /home/dalton/nano/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/dalton/nano/src/Opcodes.cpp > CMakeFiles/nano.dir/Opcodes.cpp.i
+
+src/CMakeFiles/nano.dir/Opcodes.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/nano.dir/Opcodes.cpp.s"
+	cd /home/dalton/nano/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/dalton/nano/src/Opcodes.cpp -o CMakeFiles/nano.dir/Opcodes.cpp.s
+
+src/CMakeFiles/nano.dir/Opcodes.cpp.o.requires:
+.PHONY : src/CMakeFiles/nano.dir/Opcodes.cpp.o.requires
+
+src/CMakeFiles/nano.dir/Opcodes.cpp.o.provides: src/CMakeFiles/nano.dir/Opcodes.cpp.o.requires
+	$(MAKE) -f src/CMakeFiles/nano.dir/build.make src/CMakeFiles/nano.dir/Opcodes.cpp.o.provides.build
+.PHONY : src/CMakeFiles/nano.dir/Opcodes.cpp.o.provides
+
+src/CMakeFiles/nano.dir/Opcodes.cpp.o.provides.build: src/CMakeFiles/nano.dir/Opcodes.cpp.o
+.PHONY : src/CMakeFiles/nano.dir/Opcodes.cpp.o.provides.build
+
 # Object files for target nano
 nano_OBJECTS = \
 "CMakeFiles/nano.dir/Main.cpp.o" \
@@ -222,7 +270,9 @@ nano_OBJECTS = \
 "CMakeFiles/nano.dir/utils/Logger.cpp.o" \
 "CMakeFiles/nano.dir/WorldSocket.cpp.o" \
 "CMakeFiles/nano.dir/WorldSession.cpp.o" \
-"CMakeFiles/nano.dir/WorldTask.cpp.o"
+"CMakeFiles/nano.dir/WorldTask.cpp.o" \
+"CMakeFiles/nano.dir/ChatHandler.cpp.o" \
+"CMakeFiles/nano.dir/Opcodes.cpp.o"
 
 # External object files for target nano
 nano_EXTERNAL_OBJECTS =
@@ -234,6 +284,8 @@ src/nano: src/CMakeFiles/nano.dir/utils/Logger.cpp.o
 src/nano: src/CMakeFiles/nano.dir/WorldSocket.cpp.o
 src/nano: src/CMakeFiles/nano.dir/WorldSession.cpp.o
 src/nano: src/CMakeFiles/nano.dir/WorldTask.cpp.o
+src/nano: src/CMakeFiles/nano.dir/ChatHandler.cpp.o
+src/nano: src/CMakeFiles/nano.dir/Opcodes.cpp.o
 src/nano: src/CMakeFiles/nano.dir/build.make
 src/nano: src/CMakeFiles/nano.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --red --bold "Linking CXX executable nano"
@@ -250,6 +302,8 @@ src/CMakeFiles/nano.dir/requires: src/CMakeFiles/nano.dir/utils/Logger.cpp.o.req
 src/CMakeFiles/nano.dir/requires: src/CMakeFiles/nano.dir/WorldSocket.cpp.o.requires
 src/CMakeFiles/nano.dir/requires: src/CMakeFiles/nano.dir/WorldSession.cpp.o.requires
 src/CMakeFiles/nano.dir/requires: src/CMakeFiles/nano.dir/WorldTask.cpp.o.requires
+src/CMakeFiles/nano.dir/requires: src/CMakeFiles/nano.dir/ChatHandler.cpp.o.requires
+src/CMakeFiles/nano.dir/requires: src/CMakeFiles/nano.dir/Opcodes.cpp.o.requires
 .PHONY : src/CMakeFiles/nano.dir/requires
 
 src/CMakeFiles/nano.dir/clean:

@@ -6,3 +6,12 @@
  * @date 2011-01-13
  */
 
+
+class Chat {
+public:
+    Chat ();
+    virtual ~Chat ();
+
+private:
+    /* data */
+};

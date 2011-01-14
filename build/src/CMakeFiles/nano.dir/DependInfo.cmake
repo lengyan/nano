@@ -4,7 +4,9 @@ SET(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 SET(CMAKE_DEPENDS_CHECK_CXX
+  "/home/dalton/nano/src/ChatHandler.cpp" "/home/dalton/nano/build/src/CMakeFiles/nano.dir/ChatHandler.cpp.o"
   "/home/dalton/nano/src/Main.cpp" "/home/dalton/nano/build/src/CMakeFiles/nano.dir/Main.cpp.o"
+  "/home/dalton/nano/src/Opcodes.cpp" "/home/dalton/nano/build/src/CMakeFiles/nano.dir/Opcodes.cpp.o"
   "/home/dalton/nano/src/World.cpp" "/home/dalton/nano/build/src/CMakeFiles/nano.dir/World.cpp.o"
   "/home/dalton/nano/src/WorldSession.cpp" "/home/dalton/nano/build/src/CMakeFiles/nano.dir/WorldSession.cpp.o"
   "/home/dalton/nano/src/WorldSocket.cpp" "/home/dalton/nano/build/src/CMakeFiles/nano.dir/WorldSocket.cpp.o"

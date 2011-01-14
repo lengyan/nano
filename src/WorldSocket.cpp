@@ -19,13 +19,18 @@
  *
  */
 WorldSocket::WorldSocket():headerBuffer(sizeof(ClientPktHeader)),
-                           bodyBuffer()
+                           bodyBuffer(),
+                           packet(0),
+                           session(0),
+                           isClose(false)
 {
 
 }
 
 WorldSocket::~WorldSocket() {
+    // 这个不知道什么时候调用
     delete packet;
+    delete session;
 }
 
 /**
@@ -265,6 +270,8 @@ int WorldSocket::handle_input_body(void) {
     // 重置缓存
     headerBuffer.reset();
     bodyBuffer.reset();
+    // 空指针,好习惯
+    packet = NULL;
 
     return 0;
 }
@@ -275,19 +282,28 @@ int WorldSocket::handle_input_body(void) {
  * @return  
  */
 int WorldSocket::processMessage() {
+    // 因为这里是队列的方式,无法用智能指针删除.
+    // 所以这里删除的同时,在sessionUpdate也需要删除.
+    ACE_Auto_Ptr<WorldPacket> aptr(packet);
     uint16 opcode = packet->getOpcode();
     uint32 id = 1;
     // 插入处理队列,多线程处理游戏逻辑,不在这里处理,否则会阻塞
+    // FIXME 异常处理
     switch (opcode) {
         // 用户认证协议
         case CMSG_AUTH_SESSION:
             // TODO 一堆验证逻辑
             // 生成会话对象
+            // 虽然在这里new,但不在这里delete,在worldupdate循环中删除
             ACE_NEW_RETURN(session, WorldSession(id, this), -1);
             // 给世界增加会话
             gWorld->addSession(session);
             break;
-        case CMSG_TEST:
+        default:
+            // 这里不给智能指针进行清理
+            // 交给session update处理
+            aptr.release ();
+            session->pushMessage(packet);
             break;
     }
     return 0;
@@ -304,5 +320,21 @@ int WorldSocket::processMessage() {
 int WorldSocket::handle_close(ACE_HANDLE h, ACE_Reactor_Mask mask) {
 	if (mask == ACE_Event_Handler::WRITE_MASK)
 		return 0;
+    // 退出
+    // 设定关闭标志位
+    // 设定session为空指针
+    // delete放置在world中
+    gLogger->debug("some one close\n");
+    isClose = true;
+    session = NULL;
 	return super::handle_close(h, mask);
+}
+
+/**
+ * @brief   isClose 返回客户端是否已关闭
+ *
+ * @return  
+ */
+bool WorldSocket::isClosed() {
+    return isClose;
 }

@@ -109,6 +109,30 @@ nano/fast:
 	cd /home/dalton/nano/build && $(MAKE) -f src/CMakeFiles/nano.dir/build.make src/CMakeFiles/nano.dir/build
 .PHONY : nano/fast
 
+ChatHandler.o: ChatHandler.cpp.o
+.PHONY : ChatHandler.o
+
+# target to build an object file
+ChatHandler.cpp.o:
+	cd /home/dalton/nano/build && $(MAKE) -f src/CMakeFiles/nano.dir/build.make src/CMakeFiles/nano.dir/ChatHandler.cpp.o
+.PHONY : ChatHandler.cpp.o
+
+ChatHandler.i: ChatHandler.cpp.i
+.PHONY : ChatHandler.i
+
+# target to preprocess a source file
+ChatHandler.cpp.i:
+	cd /home/dalton/nano/build && $(MAKE) -f src/CMakeFiles/nano.dir/build.make src/CMakeFiles/nano.dir/ChatHandler.cpp.i
+.PHONY : ChatHandler.cpp.i
+
+ChatHandler.s: ChatHandler.cpp.s
+.PHONY : ChatHandler.s
+
+# target to generate assembly for a file
+ChatHandler.cpp.s:
+	cd /home/dalton/nano/build && $(MAKE) -f src/CMakeFiles/nano.dir/build.make src/CMakeFiles/nano.dir/ChatHandler.cpp.s
+.PHONY : ChatHandler.cpp.s
+
 Main.o: Main.cpp.o
 .PHONY : Main.o
 
@@ -132,6 +156,30 @@ Main.s: Main.cpp.s
 Main.cpp.s:
 	cd /home/dalton/nano/build && $(MAKE) -f src/CMakeFiles/nano.dir/build.make src/CMakeFiles/nano.dir/Main.cpp.s
 .PHONY : Main.cpp.s
+
+Opcodes.o: Opcodes.cpp.o
+.PHONY : Opcodes.o
+
+# target to build an object file
+Opcodes.cpp.o:
+	cd /home/dalton/nano/build && $(MAKE) -f src/CMakeFiles/nano.dir/build.make src/CMakeFiles/nano.dir/Opcodes.cpp.o
+.PHONY : Opcodes.cpp.o
+
+Opcodes.i: Opcodes.cpp.i
+.PHONY : Opcodes.i
+
+# target to preprocess a source file
+Opcodes.cpp.i:
+	cd /home/dalton/nano/build && $(MAKE) -f src/CMakeFiles/nano.dir/build.make src/CMakeFiles/nano.dir/Opcodes.cpp.i
+.PHONY : Opcodes.cpp.i
+
+Opcodes.s: Opcodes.cpp.s
+.PHONY : Opcodes.s
+
+# target to generate assembly for a file
+Opcodes.cpp.s:
+	cd /home/dalton/nano/build && $(MAKE) -f src/CMakeFiles/nano.dir/build.make src/CMakeFiles/nano.dir/Opcodes.cpp.s
+.PHONY : Opcodes.cpp.s
 
 World.o: World.cpp.o
 .PHONY : World.o
@@ -286,9 +334,15 @@ help:
 	@echo "... edit_cache"
 	@echo "... nano"
 	@echo "... rebuild_cache"
+	@echo "... ChatHandler.o"
+	@echo "... ChatHandler.i"
+	@echo "... ChatHandler.s"
 	@echo "... Main.o"
 	@echo "... Main.i"
 	@echo "... Main.s"
+	@echo "... Opcodes.o"
+	@echo "... Opcodes.i"
+	@echo "... Opcodes.s"
 	@echo "... World.o"
 	@echo "... World.i"
 	@echo "... World.s"

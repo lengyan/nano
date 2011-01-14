@@ -19,6 +19,7 @@ int World::init() {
     u_int config_port;
     ACE_TString config_host;
 
+    // 获取配置文件信息
     gConfig->getInteger(ACE_TEXT("Global"), ACE_TEXT("port"), config_port);
 	gConfig->getString(ACE_TEXT("Global"), ACE_TEXT("host"), config_host);
 
@@ -39,16 +40,44 @@ int World::init() {
 void World::run() {
 }
 
-// 世界更新
+/**
+ * @brief   update 世界更新
+ */
 void World::update() {
+    // 这个要在哪里加锁?大循环外还是里面
+    // 如果这里用锁的方式进行处理,这里假设获得锁,removeSession阻塞,但是实际上远端点已退出,那对其操作没意义
+    // 所以用锁的话,还是不太好.最好是每次迭代,判断session的有效性,如果无效,删除之.
+    // 此方案为mangoes方案
     WorldSession* session;
-    // 处理消息队列
-    while (sessionDeque.next(session)) {
-        session->update();
+    // 处理所有会话
+    for (SessionMap::iterator itr = sessionMap.begin(); itr != sessionMap.end(); itr++) {
+        gLogger->debug("start read\n");
+        ACE_OS::sleep(4);
+        session = itr->second;
+        // 会话更新,如果是假,则要删除这个会话了
+        if (! session->update()) {
+            gLogger->debug("someone close in world update\n");
+            removeSession(session->getUserId());
+            delete session;
+            session = NULL;
+        }
+        gLogger->debug("end read\n");
     }
 }
 
-// 增加会话
+/**
+ * @brief   addSession 增加会话
+ *
+ * @param   s
+ */
 void World::addSession(WorldSession* s) {
-    sessionDeque.add(s);
+    sessionMap[s->getUserId()] = s;
+}
+/**
+ * @brief   removeSession 删除会话
+ *
+ * @param   id
+ */
+void World::removeSession(uint32 id) {
+    sessionMap.erase(id);
 }

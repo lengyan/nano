@@ -20,7 +20,6 @@
  * */
 int WorldTask::svc(void) {
     while(1) {
-        gLogger->debug("world thread run\n");
         gWorld->update();
         ACE_OS::sleep(4);
     }

@@ -1,11 +1,17 @@
+/**
+ * @file World.h
+ * @brief   世界类
+ * @author Dalton
+ * @version 0.1
+ * @date 2011-01-13
+ */
 #ifndef _WORLD_H
 #define _WORLD_H
 
 #include "WorldSession.h"
 #include "ace/Singleton.h"
-#include <deque>
+#include <map>
 
-// 世界,用来管理所有的游戏会话
 
 class World 
 {
@@ -22,9 +28,11 @@ class World
 
         // 维护会话
         void addSession(WorldSession* s);
-        bool removeSession(uint32 id);
+        void removeSession(uint32 id);
+        WorldSession* findSession(uint32 id) const;
     private:
-        LockedQueue<WorldSession*, ACE_Thread_Mutex> sessionDeque;
+        typedef std::map<uint32, WorldSession*> SessionMap;
+        SessionMap sessionMap;
 };
 
 #define gWorld ACE_Singleton<World, ACE_Recursive_Thread_Mutex>::instance()

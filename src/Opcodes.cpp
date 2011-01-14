@@ -1,31 +1,18 @@
-/* Copyright (C) 
- * 2011 - Dalton
- * This program is free software; you can redistribute it and/or
- * modify it under the terms of the GNU General Public License
- * as published by the Free Software Foundation; either version 2
- * of the License, or (at your option) any later version.
- * 
- * This program is distributed in the hope that it will be useful,
- * but WITHOUT ANY WARRANTY; without even the implied warranty of
- * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
- * GNU General Public License for more details.
- * 
- * You should have received a copy of the GNU General Public License
- * along with this program; if not, write to the Free Software
- * Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA  02111-1307, USA.
- * 
- */
-/**
- * @file Opcodes.cpp
- * @brief   opcode handle
- * @author Dalton
- * @version 0.1
- * @date 2011-01-08
- */
 
 #include "Opcodes.h"
 
 OpcodeHandler opcodeTable[NUM_MSG_TYPES] = {
-
-
-}
+    { "CMSG_AUTH_SESSION"               , &WorldSession::handleNull },
+    { "CMSG_CHAT_SAY"                   , &WorldSession::handleChat },
+    { "SMSG_CHAT_SAY"                   , &WorldSession::handleNull },
+    { "CMSG_CHAT_WHISPER"               , &WorldSession::handleChat },
+    { "SMSG_CHAT_WHISPER"               , &WorldSession::handleNull }, 
+    { "CMSG_CHAT_CHANNEL"               , &WorldSession::handleNull },
+    { "SMSG_CHAT_CHANNEL"               , &WorldSession::handleNull },
+    { "CMSG_CHAT_CHANNEL_JOIN"          , &WorldSession::handleNull }, 
+    { "SMSG_CHAT_CHANNEL_JOIN"          , &WorldSession::handleNull },
+    { "CMSG_CHAT_CHANNEL_LEAVE"         , &WorldSession::handleNull },
+    { "SMSG_CHAT_CHANNEL_LEAVE"         , &WorldSession::handleNull },
+    { "CMSG_CHAT_CHANNEL_LIST"          , &WorldSession::handleNull },
+    { "SMSG_CHAT_CHANNEL_LIST"          , &WorldSession::handleNull },
+};
