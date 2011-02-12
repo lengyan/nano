@@ -30,6 +30,7 @@ class World
         void addSession(WorldSession* s);
         void removeSession(uint32 id);
         WorldSession* findSession(uint32 id) const;
+        void sendGlobalMessage(WorldPacket* worldPacket);
     private:
         typedef std::map<uint32, WorldSession*> SessionMap;
         SessionMap sessionMap;

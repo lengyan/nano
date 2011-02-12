@@ -89,7 +89,7 @@ int WorldSocket::handle_input(ACE_HANDLE) {
     readBuffer.wr_ptr(recv_cnt);
 
     // 打印接受的信息
-    ACE_HEX_DUMP((LM_DEBUG, readBuffer.rd_ptr(), recv_cnt, "recv:"));
+    //ACE_HEX_DUMP((LM_DEBUG, readBuffer.rd_ptr(), recv_cnt, "recv:"));
 
     // 请求策略文件字符串
     std::string flashRequest = "<policy-file-request/>";
@@ -159,16 +159,21 @@ int WorldSocket::handle_input(ACE_HANDLE) {
  *
  * @return  
  */
-int WorldSocket::sendPacket(ACE_Message_Block &buffer) {
+int WorldSocket::sendPacket(const WorldPacket& packet) {
+    ServerPktHeader header = { htons(packet.size()), htons(packet.getOpcode()) };
+    ACE_Message_Block buffer(packet.size() + 4);
+    buffer.copy((char*) &header, 4);
+    buffer.copy((const char*)packet.contents(), packet.size());
+    //gLogger->hexDump(LM_DEBUG, buffer.rd_ptr(), buffer.length(), "packet to send:");
+    
     ssize_t sendCnt,
             bufferCnt = ACE_static_cast(size_t, buffer.length());
     // FIXME 发送给一个已经关闭的peer,会出错的
 	sendCnt = this->peer().send(buffer.rd_ptr(), bufferCnt);
-    // send
-    // ACE_HEX_DUMP((LM_DEBUG, buffer.rd_ptr(), buffer.length(), "send:"));
-    ACE_DEBUG((LM_DEBUG, ACE_TEXT("%i\n"), sendCnt)); 
+    // 全部发送
 	if (sendCnt == bufferCnt)
 		return 0;
+
 	if (sendCnt == -1 && ACE_OS::last_error() != EWOULDBLOCK)
 		ACE_ERROR_RETURN((LM_ERROR,
 						ACE_TEXT("%P|%t) %p\n"),
@@ -176,6 +181,7 @@ int WorldSocket::sendPacket(ACE_Message_Block &buffer) {
 						-1);
 	if (sendCnt == -1)
 		sendCnt = 0;
+
     // 移动指针
     buffer.rd_ptr(sendCnt);
 	ACE_Message_Block *mb;
@@ -240,8 +246,8 @@ int WorldSocket::handle_input_header(void) {
         return -1;
     }
     // 打印头部的信息
-    gLogger->hexDump(LM_DEBUG, headerBuffer.rd_ptr(), headerBuffer.length(), "header:");
-    gLogger->debug("header size %i, header cmd %i\n", header->size, header->cmd);
+    //gLogger->hexDump(LM_DEBUG, headerBuffer.rd_ptr(), headerBuffer.length(), "header:");
+    //gLogger->debug("header size %i, header cmd %i\n", header->size, header->cmd);
     
     // 初始化世界包
     ACE_NEW_RETURN(packet, WorldPacket(header->cmd, header->size), -1);
@@ -264,7 +270,7 @@ int WorldSocket::handle_input_body(void) {
     ACE_ASSERT(bodyBuffer.space() == 0);
     
     // 打印头部的信息
-    gLogger->hexDump(LM_DEBUG, (char*)packet->contents(), packet->size(), "body:");
+    //gLogger->hexDump(LM_DEBUG, (char*)packet->contents(), packet->size(), "body:");
     processMessage();
 
     // 重置缓存
@@ -324,7 +330,6 @@ int WorldSocket::handle_close(ACE_HANDLE h, ACE_Reactor_Mask mask) {
     // 设定关闭标志位
     // 设定session为空指针
     // delete放置在world中
-    gLogger->debug("some one close\n");
     isClose = true;
     session = NULL;
 	return super::handle_close(h, mask);

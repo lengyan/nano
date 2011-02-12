@@ -7,6 +7,7 @@
 #include "WorldSocket.h"
 #include "utils/Config.h"
 
+
 World::World() {
 
 }
@@ -41,6 +42,16 @@ void World::run() {
 }
 
 /**
+ * @brief   sendGlobalMessage 发送给所有人信息
+ *
+ * @param   worldPacket
+ */
+void sendGlobalMessage(WorldPacket* worldPacket) {
+
+
+}
+
+/**
  * @brief   update 世界更新
  */
 void World::update() {
@@ -51,17 +62,13 @@ void World::update() {
     WorldSession* session;
     // 处理所有会话
     for (SessionMap::iterator itr = sessionMap.begin(); itr != sessionMap.end(); itr++) {
-        gLogger->debug("start read\n");
-        ACE_OS::sleep(4);
         session = itr->second;
         // 会话更新,如果是假,则要删除这个会话了
         if (! session->update()) {
-            gLogger->debug("someone close in world update\n");
             removeSession(session->getUserId());
             delete session;
             session = NULL;
         }
-        gLogger->debug("end read\n");
     }
 }
 

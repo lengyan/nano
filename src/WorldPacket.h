@@ -24,7 +24,7 @@ class WorldPacket : public ByteBuffer
         {
         }
         // 禁止隐式转换
-        explicit WorldPacket(uint16 opcode, size_t res) : _opcode(opcode), ByteBuffer(res)
+        explicit WorldPacket(uint16 opcode, size_t res = 200) : _opcode(opcode), ByteBuffer(res)
         {
         }
         

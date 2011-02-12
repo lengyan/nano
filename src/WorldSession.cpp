@@ -25,6 +25,10 @@ WorldSession::WorldSession(uint32 id, WorldSocket* worldSocket):id(id),
                                                                 worldSocket(worldSocket)
 {
 }
+WorldSession::WorldSession(uint32 id):id(id) {
+
+
+}
 /**
  * @brief   ~WorldSession 
  */
@@ -56,7 +60,6 @@ uint32 WorldSession::getUserId() {
  */
 bool WorldSession::update() {
     WorldPacket* packet;
-    gLogger->debug("update session %d\n", id);
 
     // 如果客户端已经关闭了,则通知世界删除他
     if (worldSocket->isClosed()) {
@@ -81,7 +84,7 @@ bool WorldSession::update() {
  * @param   packet
  */
 void WorldSession::pushMessage(WorldPacket* packet) {
-    gLogger->debug("add packet %d\n", packet->getOpcode());
+    //gLogger->debug("add packet %d\n", packet->getOpcode());
     messageQueue.add(packet);    
 }
 

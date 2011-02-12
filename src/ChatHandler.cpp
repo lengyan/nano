@@ -7,9 +7,14 @@
  */
 #include <string>
 #include "WorldSession.h"
+#include "Opcodes.h"
+#include "WorldSocket.h"
 
 void WorldSession::handleChat(WorldPacket& packet) {
     std::string s; 
     packet >> s;
     gLogger->debug("chat: %s\n", s.c_str());
+    WorldPacket p(SMSG_CHAT_SAY);
+    p << s;
+    worldSocket->sendPacket(p);
 }

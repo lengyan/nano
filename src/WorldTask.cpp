@@ -15,12 +15,13 @@
 #include "World.h"
 #include "utils/Logger.h"
 
+#define WORLD_SLEEP_CONST 50
 /**
  * 世界运行线程
  * */
 int WorldTask::svc(void) {
     while(1) {
         gWorld->update();
-        ACE_OS::sleep(4);
+        ACE_OS::sleep(ACE_Time_Value(0, 1000 * WORLD_SLEEP_CONST));
     }
 }
