@@ -4,20 +4,20 @@
 	<mx:Style source="nanoClient.css"/>
 	<mx:Script>
 		<![CDATA[
-			import com.nano.socket.Telnet;
-			private var telnetClient:Telnet;
+			import com.nano.socket.*;
+			private var client:Client;
 			private function connect():void {
-				telnetClient = new Telnet(serverName.text, int(portNumber.text), output);
+				client = new Client();
+				client.connect(serverName.text, int(portNumber.text));
+                client.addEventListener(Opcode.EventTypes[Opcode.SMSG_CHAT_SAY], handleSay);
 				console.title = "Connecting to " + serverName.text + ":" + portNumber.text;
 				console.enabled = true;
 			}
 			private function sendCommand():void {
-				var ba:ByteArray = new ByteArray();
+				var ba:ByteBuffer = new ByteBuffer();
 				// length在中文的时候是错的
-				ba.writeShort(getLength(command.text));
-				ba.writeShort(0);
-				ba.writeUTFBytes(command.text);
-				telnetClient.writeBytesToSocket(ba);
+				ba.writeString(command.text);
+				client.send(Opcode.CMSG_CHAT_SAY, ba);
 				command.text = "";
 			}
 			private function getLength(str:String):uint {
@@ -25,6 +25,11 @@
 				b.writeUTFBytes(str);
 				return b.length;
 			}
+            
+            private function handleSay(e:OpcodeEvent):void {
+                var s:String = e.packet.readString();
+                output.text += '我说:' + s + "\n";
+            }
 		]]>
 	</mx:Script>
 	
